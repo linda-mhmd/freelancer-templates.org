@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+{{ partial "site-nav.html" . }}
+
+<!-- ============================================================
+     PAGE HEADER
+     ============================================================ -->
+<section class="uc-header">
+  <div class="container">
+    <div class="uc-header__eyebrow">
+      <i data-lucide="zap"></i>
+      Automation Use Cases
+    </div>
+    <h1 class="uc-header__title">Stop doing manually what a template can do</h1>
+    <p class="uc-header__desc">Practical guides for automating the most time-consuming parts of freelance work - from invoicing to client onboarding to content creation.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     USE CASES GRID
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+
+    <div class="uc-list-grid">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="uc-list-card">
+        <div class="uc-list-card__icon">
+          <i data-lucide="{{ .Params.icon | default "file-text" }}"></i>
+        </div>
+        <div class="uc-list-card__title">{{ .Title }}</div>
+        <div class="uc-list-card__desc">{{ .Description }}</div>
+        <div class="uc-list-card__arrow">
+          Read guide <i data-lucide="arrow-right"></i>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     UPSELL
+     ============================================================ -->
+<section class="upsell">
+  <div class="container">
+    <div class="upsell__inner">
+      <h2 class="upsell__title">Want the full automation system, not just templates?</h2>
+      <p class="upsell__sub">freelancer-automation.com builds the complete pipeline - AI proposal drafts, automated invoicing, client onboarding sequences, and CRM - so you can run a freelance business at scale.</p>
+      <a href="https://freelancer-automation.com" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+        <i data-lucide="arrow-up-right"></i>
+        Visit freelancer-automation.com
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ partial "site-footer.html" . }}
+
+{{ end }}
