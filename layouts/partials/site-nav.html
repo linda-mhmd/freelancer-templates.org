@@ -1,0 +1,28 @@
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="/" class="nav__wordmark">freelancer<em>-templates</em></a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="/#categories" class="nav__link">Library</a></li>
+        <li><a href="/#remotion" class="nav__link">Remotion</a></li>
+        <li><a href="/use-cases/" class="nav__link{{ if eq .Section "use-cases" }} nav__link--active{{ end }}">Use Cases</a></li>
+        <li><a href="/#license" class="nav__link">License</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+          <span class="icon-wrap-light"><i data-lucide="sun"></i></span>
+          <span class="icon-wrap-dark"><i data-lucide="moon"></i></span>
+        </button>
+        <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+          <i data-lucide="github"></i>
+          View on GitHub
+        </a>
+        <button class="nav__hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

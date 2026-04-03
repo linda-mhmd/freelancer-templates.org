@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+{{ partial "site-nav.html" . }}
+
+<!-- ============================================================
+     PAGE HEADER
+     ============================================================ -->
+<section class="uc-header">
+  <div class="container">
+    <a href="/use-cases/" class="uc-back">
+      <i data-lucide="arrow-left"></i>
+      All Use Cases
+    </a>
+    <div class="uc-header__eyebrow">
+      <i data-lucide="zap"></i>
+      Freelancer Automation
+    </div>
+    <h1 class="uc-header__title">{{ .Title }}</h1>
+    <p class="uc-header__desc">{{ .Description }}</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTENT
+     ============================================================ -->
+<div class="uc-content">
+  <div class="container">
+    <div class="uc-prose">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+{{ partial "site-footer.html" . }}
+
+{{ end }}
