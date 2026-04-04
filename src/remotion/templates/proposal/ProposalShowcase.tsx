@@ -33,17 +33,17 @@ const SAMPLE_SPEC: ProposalSpec = {
     "Your support team handles 500+ tickets/day manually. Response times average 4 hours. Customers are churning because they can't get fast answers.",
   solution_points: [
     {
-      icon: "🤖",
+      icon: "layers",
       title: "AI Triage Bot",
       description: "Auto-classify and route tickets by intent and urgency",
     },
     {
-      icon: "⚡",
+      icon: "zap",
       title: "Instant Responses",
       description: "Handle 60% of common questions with AI-generated answers",
     },
     {
-      icon: "📊",
+      icon: "chart-bar",
       title: "Analytics Dashboard",
       description: "Real-time metrics on resolution time, satisfaction, and volume",
     },
@@ -62,22 +62,22 @@ const SAMPLE_SPEC_DESIGN: ProposalSpec = {
     "Your current site loads in 8+ seconds and has a 70% mobile bounce rate. The checkout flow loses 40% of users at step 3.",
   solution_points: [
     {
-      icon: "🎨",
+      icon: "palette",
       title: "Modern UI Overhaul",
       description: "Clean, fast interface built with Next.js and Tailwind",
     },
     {
-      icon: "📱",
+      icon: "smartphone",
       title: "Mobile-First Design",
       description: "Responsive layouts optimized for thumb-friendly navigation",
     },
     {
-      icon: "🛒",
+      icon: "box",
       title: "Streamlined Checkout",
       description: "3-step checkout with Apple Pay, Google Pay, and Stripe",
     },
     {
-      icon: "🚀",
+      icon: "rocket",
       title: "Performance Boost",
       description: "Target sub-2s load time with edge caching and image optimization",
     },

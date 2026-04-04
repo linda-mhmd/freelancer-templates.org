@@ -207,7 +207,7 @@ const FeatureGridLayout: React.FC<{
                 padding: 24,
               }}>
                 <div style={{ fontSize: TYPE.title, fontWeight: theme.headingWeight, color: theme.accent, marginBottom: 8 }}>
-                  {f.icon ?? "✦"}
+                  {f.icon ?? "+"}
                 </div>
                 <div style={{ fontSize: TYPE.cardTitle, fontWeight: 600 }}>{f.label}</div>
               </GlassCard>
@@ -225,7 +225,7 @@ const ComparisonLayout: React.FC<{
 }> = ({ spec, theme, frame, fps, bgStyle }) => {
   const titleSpring = springEntrance(frame, fps, TIMING.titleStart, SPRING.default);
   const rows = spec.features.slice(0, 6).map((f) => ({
-    label: f.label, left: "✓", right: "—",
+    label: f.label, left: "+", right: "—",
   }));
 
   return (

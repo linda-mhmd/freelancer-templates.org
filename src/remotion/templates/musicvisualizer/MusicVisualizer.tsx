@@ -183,7 +183,7 @@ const RadialLayout: React.FC<{
             display: "flex", alignItems: "center", justifyContent: "center",
             fontSize: TYPE.stat, fontWeight: theme.headingWeight,
           }}>
-            ♪
+            ~
           </div>
         </div>
 

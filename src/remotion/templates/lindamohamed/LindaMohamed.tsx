@@ -51,6 +51,7 @@ import {
   SPRING,
 } from "../_shared/animations";
 import { PADDING, TOP_SAFE } from "../_shared/layouts";
+import { Icon, IconName } from "../_shared/Icon";
 
 // ── Design Tokens (matching slide deck) ─────────────────────────
 const GREEN = "#2E7D32";
@@ -174,7 +175,7 @@ export const Folie1Cover: React.FC = () => {
         {/* Subtitle */}
         <div
           style={{
-            fontSize: 22,
+            fontSize: 24,
             fontWeight: 400,
             color: "rgba(255,255,255,0.85)",
             textAlign: "center",
@@ -187,7 +188,7 @@ export const Folie1Cover: React.FC = () => {
         {/* Tagline */}
         <div
           style={{
-            fontSize: 16,
+            fontSize: 24,
             fontWeight: 400,
             color: "rgba(255,255,255,0.6)",
             textAlign: "center",
@@ -234,7 +235,7 @@ const StatBadge: React.FC<StatBadgeProps> = ({ value, label, frame, delay, fps }
       }}
     >
       <div style={{ fontSize: 28, fontWeight: 800, color: GREEN }}>{value}</div>
-      <div style={{ fontSize: 11, fontWeight: 500, color: TEXT_GRAY, marginTop: 4, textAlign: "center" }}>
+      <div style={{ fontSize: 24, fontWeight: 500, color: TEXT_GRAY, marginTop: 4, textAlign: "center" }}>
         {label}
       </div>
     </div>
@@ -302,7 +303,7 @@ export const Folie2AboutMe: React.FC = () => {
         {/* Section label */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -330,7 +331,7 @@ export const Folie2AboutMe: React.FC = () => {
         {/* Title */}
         <div
           style={{
-            fontSize: 18,
+            fontSize: 24,
             fontWeight: 500,
             color: GREEN,
             marginTop: 4,
@@ -343,7 +344,7 @@ export const Folie2AboutMe: React.FC = () => {
         {/* Bio text */}
         <div
           style={{
-            fontSize: 14,
+            fontSize: 24,
             fontWeight: 400,
             color: TEXT_GRAY,
             lineHeight: 1.6,
@@ -380,7 +381,7 @@ export const Folie2AboutMe: React.FC = () => {
         {/* Volunteering & Education note */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             color: TEXT_MUTED,
             marginTop: 20,
             opacity: fadeIn(frame, 120, 20),
@@ -402,7 +403,7 @@ interface StepCardProps {
   number: number;
   title: string;
   description: string;
-  icon: string;
+  icon: IconName;
   frame: number;
   delay: number;
   fps: number;
@@ -436,7 +437,7 @@ const StepCard: React.FC<StepCardProps> = ({ number, title, description, icon, f
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          fontSize: 20,
+          fontSize: 24,
           fontWeight: 700,
           color: WHITE,
           marginBottom: 12,
@@ -444,11 +445,11 @@ const StepCard: React.FC<StepCardProps> = ({ number, title, description, icon, f
       >
         {number}
       </div>
-      <div style={{ fontSize: 24, marginBottom: 8 }}>{icon}</div>
-      <div style={{ fontSize: 16, fontWeight: 700, color: TEXT_BLACK, textAlign: "center", marginBottom: 6 }}>
+      <div style={{ marginBottom: 10 }}><Icon name={icon} size={32} color={GREEN} /></div>
+      <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, textAlign: "center", marginBottom: 8 }}>
         {title}
       </div>
-      <div style={{ fontSize: 12, color: TEXT_GRAY, textAlign: "center", lineHeight: 1.5 }}>
+      <div style={{ fontSize: 24, color: TEXT_GRAY, textAlign: "center", lineHeight: 1.5 }}>
         {description}
       </div>
     </div>
@@ -464,9 +465,9 @@ export const Folie3WhatIOffer: React.FC = () => {
   const mvpOpacity = fadeIn(frame, 120, 25);
 
   const steps = [
-    { icon: "🎯", title: "Goal", description: "Define your vision,\nidentify challenges" },
-    { icon: "💡", title: "Concept", description: "Develop solutions,\nevaluate options" },
-    { icon: "✅", title: "Decision", description: "Choose approach,\nplan next steps" },
+    { icon: "target" as IconName, title: "Goal", description: "Define your vision,\nidentify challenges" },
+    { icon: "lightbulb" as IconName, title: "Concept", description: "Develop solutions,\nevaluate options" },
+    { icon: "check-circle" as IconName, title: "Decision", description: "Choose approach,\nplan next steps" },
   ];
 
   return (
@@ -483,7 +484,7 @@ export const Folie3WhatIOffer: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -553,14 +554,14 @@ export const Folie3WhatIOffer: React.FC = () => {
               borderRadius: 24,
               background: `linear-gradient(135deg, ${GREEN}, ${GREEN_LIGHTER})`,
               color: WHITE,
-              fontSize: 14,
+              fontSize: 24,
               fontWeight: 600,
               display: "flex",
               alignItems: "center",
               gap: 8,
             }}
           >
-            🚀 + MVP Development Support
+            <Icon name="rocket" size={20} color={WHITE} /> + MVP Development Support
           </div>
         </div>
       </div>
@@ -600,10 +601,10 @@ const PricingRow: React.FC<PricingRowProps> = ({ service, price, note, frame, de
       }}
     >
       <div>
-        <div style={{ fontSize: 14, fontWeight: 600, color: TEXT_BLACK }}>{service}</div>
-        {note && <div style={{ fontSize: 11, color: TEXT_MUTED, marginTop: 2 }}>{note}</div>}
+        <div style={{ fontSize: 24, fontWeight: 600, color: TEXT_BLACK }}>{service}</div>
+        {note && <div style={{ fontSize: 24, color: TEXT_MUTED, marginTop: 2 }}>{note}</div>}
       </div>
-      <div style={{ fontSize: 18, fontWeight: 800, color: GREEN }}>{price}</div>
+      <div style={{ fontSize: 24, fontWeight: 800, color: GREEN }}>{price}</div>
     </div>
   );
 };
@@ -642,7 +643,7 @@ export const Folie4CostsPackages: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -669,7 +670,7 @@ export const Folie4CostsPackages: React.FC = () => {
         <div style={{ display: "flex", gap: 32, flex: 1 }}>
           {/* Left: Rate card */}
           <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 10 }}>
-            <div style={{ fontSize: 14, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>
+            <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>
               Rates
             </div>
             {rates.map((r, i) => (
@@ -696,7 +697,7 @@ export const Folie4CostsPackages: React.FC = () => {
               opacity: packagesOpacity,
             }}
           >
-            <div style={{ fontSize: 14, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>
+            <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>
               Package Examples
             </div>
             {packages.map((pkg, i) => {
@@ -714,10 +715,10 @@ export const Folie4CostsPackages: React.FC = () => {
                   }}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                    <div style={{ fontSize: 16, fontWeight: 700, color: TEXT_BLACK }}>{pkg.name}</div>
-                    <div style={{ fontSize: 20, fontWeight: 800, color: GREEN }}>{pkg.price}</div>
+                    <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK }}>{pkg.name}</div>
+                    <div style={{ fontSize: 24, fontWeight: 800, color: GREEN }}>{pkg.price}</div>
                   </div>
-                  <div style={{ fontSize: 12, color: TEXT_GRAY, marginTop: 4 }}>{pkg.items}</div>
+                  <div style={{ fontSize: 24, color: TEXT_GRAY, marginTop: 4 }}>{pkg.items}</div>
                 </div>
               );
             })}
@@ -807,7 +808,7 @@ export const SectionDivider: React.FC<SectionDividerProps> = ({ title, slideImag
         {subtitle && (
           <div
             style={{
-              fontSize: 18,
+              fontSize: 24,
               color: "rgba(255,255,255,0.7)",
               marginTop: 16,
               opacity: subtitleOpacity,
@@ -878,7 +879,7 @@ export const Folie6WorkshopModules: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -916,7 +917,7 @@ export const Folie6WorkshopModules: React.FC = () => {
               padding: "12px 16px",
               backgroundColor: GREEN,
               borderRadius: "8px 0 0 0",
-              fontSize: 12,
+              fontSize: 24,
               fontWeight: 700,
               color: WHITE,
               opacity: fadeIn(frame, 20, 15),
@@ -931,7 +932,7 @@ export const Folie6WorkshopModules: React.FC = () => {
                 padding: "12px 16px",
                 backgroundColor: GREEN,
                 borderRadius: i === columns.length - 1 ? "0 8px 0 0" : 0,
-                fontSize: 12,
+                fontSize: 24,
                 fontWeight: 700,
                 color: WHITE,
                 opacity: fadeIn(frame, 20 + (i + 1) * 5, 15),
@@ -964,7 +965,7 @@ export const Folie6WorkshopModules: React.FC = () => {
                   padding: "14px 16px",
                   backgroundColor: "rgba(46,125,50,0.08)",
                   borderRadius: isLast ? "0 0 0 8px" : 0,
-                  fontSize: 13,
+                  fontSize: 24,
                   fontWeight: 700,
                   color: GREEN,
                 }}
@@ -978,7 +979,7 @@ export const Folie6WorkshopModules: React.FC = () => {
                     padding: "14px 16px",
                     backgroundColor: rowIdx % 2 === 0 ? GREEN_BG : WHITE,
                     borderRadius: isLast && colIdx === 2 ? "0 0 8px 0" : 0,
-                    fontSize: 12,
+                    fontSize: 24,
                     color: TEXT_GRAY,
                     lineHeight: 1.5,
                   }}
@@ -1026,7 +1027,7 @@ export const Folie7FirstWorkshop: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -1051,7 +1052,7 @@ export const Folie7FirstWorkshop: React.FC = () => {
         </div>
         <div
           style={{
-            fontSize: 15,
+            fontSize: 24,
             color: TEXT_GRAY,
             opacity: fadeIn(frame, 25, 20),
             marginBottom: 32,
@@ -1088,7 +1089,7 @@ export const Folie7FirstWorkshop: React.FC = () => {
                     borderRadius: 8,
                     backgroundColor: GREEN,
                     color: WHITE,
-                    fontSize: 14,
+                    fontSize: 24,
                     fontWeight: 700,
                     textAlign: "center",
                   }}
@@ -1096,8 +1097,8 @@ export const Folie7FirstWorkshop: React.FC = () => {
                   {item.time}
                 </div>
                 <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: TEXT_BLACK }}>{item.topic}</div>
-                  <div style={{ fontSize: 12, color: TEXT_GRAY, marginTop: 2 }}>{item.desc}</div>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK }}>{item.topic}</div>
+                  <div style={{ fontSize: 24, color: TEXT_GRAY, marginTop: 2 }}>{item.desc}</div>
                 </div>
                 {/* Step number */}
                 <div
@@ -1109,7 +1110,7 @@ export const Folie7FirstWorkshop: React.FC = () => {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    fontSize: 14,
+                    fontSize: 24,
                     fontWeight: 700,
                     color: GREEN,
                   }}
@@ -1157,7 +1158,7 @@ export const Folie8NextSteps: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -1217,7 +1218,7 @@ export const Folie8NextSteps: React.FC = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      fontSize: 22,
+                      fontSize: 24,
                       fontWeight: 800,
                       color: i === 0 ? WHITE : GREEN,
                     }}
@@ -1226,7 +1227,7 @@ export const Folie8NextSteps: React.FC = () => {
                   </div>
                   <div
                     style={{
-                      fontSize: 14,
+                      fontSize: 24,
                       fontWeight: 700,
                       color: TEXT_BLACK,
                       marginTop: 12,
@@ -1237,7 +1238,7 @@ export const Folie8NextSteps: React.FC = () => {
                   </div>
                   <div
                     style={{
-                      fontSize: 11,
+                      fontSize: 24,
                       color: TEXT_MUTED,
                       marginTop: 4,
                       textAlign: "center",
@@ -1300,12 +1301,12 @@ export const Folie10Results: React.FC = () => {
 
   const titleSpring = springEntrance(frame, fps, 10, SPRING.default);
 
-  const stages = [
-    { icon: "💡", label: "Clarity", desc: "Understand the problem" },
-    { icon: "📋", label: "Concept", desc: "Design the solution" },
-    { icon: "🔧", label: "Prototype", desc: "Build a demo" },
-    { icon: "🚀", label: "MVP", desc: "Ship minimum viable" },
-    { icon: "✅", label: "Product", desc: "Production-ready" },
+  const stages: { icon: IconName; label: string; desc: string }[] = [
+    { icon: "lightbulb", label: "Clarity", desc: "Understand the problem" },
+    { icon: "pencil", label: "Concept", desc: "Design the solution" },
+    { icon: "wrench", label: "Prototype", desc: "Build a demo" },
+    { icon: "rocket", label: "MVP", desc: "Ship minimum viable" },
+    { icon: "check-circle", label: "Product", desc: "Production-ready" },
   ];
 
   return (
@@ -1322,7 +1323,7 @@ export const Folie10Results: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -1382,14 +1383,13 @@ export const Folie10Results: React.FC = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      fontSize: 28,
                     }}
                   >
-                    {stage.icon}
+                    <Icon name={stage.icon} size={28} color={GREEN} />
                   </div>
                   <div
                     style={{
-                      fontSize: 14,
+                      fontSize: 24,
                       fontWeight: 700,
                       color: TEXT_BLACK,
                       marginTop: 12,
@@ -1400,7 +1400,7 @@ export const Folie10Results: React.FC = () => {
                   </div>
                   <div
                     style={{
-                      fontSize: 11,
+                      fontSize: 24,
                       color: TEXT_GRAY,
                       marginTop: 4,
                       textAlign: "center",
@@ -1492,7 +1492,7 @@ export const Folie11Staircase: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -1544,7 +1544,7 @@ export const Folie11Staircase: React.FC = () => {
                 {/* Label on top */}
                 <div
                   style={{
-                    fontSize: 12,
+                    fontSize: 24,
                     fontWeight: 700,
                     color: GREEN,
                     marginBottom: 8,
@@ -1620,7 +1620,7 @@ export const Folie16Pipeline: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -1661,9 +1661,9 @@ export const Folie16Pipeline: React.FC = () => {
                   transform: `translateY(${slideIn(s, "up", 20)}px)`,
                 }}
               >
-                <div style={{ fontSize: 15, fontWeight: 700, color: TEXT_BLACK }}>{p.phase}</div>
-                <div style={{ fontSize: 12, color: GREEN, fontWeight: 600, marginTop: 4 }}>{p.duration}</div>
-                <div style={{ fontSize: 11, color: TEXT_GRAY, marginTop: 8 }}>
+                <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK }}>{p.phase}</div>
+                <div style={{ fontSize: 24, color: GREEN, fontWeight: 600, marginTop: 4 }}>{p.duration}</div>
+                <div style={{ fontSize: 24, color: TEXT_GRAY, marginTop: 8 }}>
                   {p.tools.join(" · ")}
                 </div>
               </div>
@@ -1701,7 +1701,7 @@ export const Folie16Pipeline: React.FC = () => {
                   borderRadius: 20,
                   backgroundColor: GREEN_BG,
                   border: `1px solid ${CARD_BORDER}`,
-                  fontSize: 12,
+                  fontSize: 24,
                   fontWeight: 600,
                   color: GREEN,
                   opacity: badgeOpacity,
@@ -1750,7 +1750,7 @@ export const Folie18AISystems: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -1808,7 +1808,7 @@ export const Folie18AISystems: React.FC = () => {
                 {i === layers.length - 1 && (
                   <div
                     style={{
-                      fontSize: 13,
+                      fontSize: 24,
                       fontWeight: 700,
                       color: GREEN,
                       textAlign: "center",
@@ -1832,7 +1832,7 @@ export const Folie18AISystems: React.FC = () => {
                   position: "absolute",
                   top: `calc(50% + ${yOffset}px)`,
                   left: "calc(50% + 10px)",
-                  fontSize: 11,
+                  fontSize: 24,
                   fontWeight: 600,
                   color: GREEN,
                   opacity: labelOpacity,
@@ -1881,7 +1881,7 @@ export const Folie19Cloud: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -1934,8 +1934,8 @@ export const Folie19Cloud: React.FC = () => {
                   transform: `translateY(${slideIn(s, "up", 15)}px)`,
                 }}
               >
-                <div style={{ fontSize: 16, fontWeight: 700, color: TEXT_BLACK }}>{layer.label}</div>
-                <div style={{ fontSize: 11, color: TEXT_GRAY }}>{layer.desc}</div>
+                <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK }}>{layer.label}</div>
+                <div style={{ fontSize: 24, color: TEXT_GRAY }}>{layer.desc}</div>
               </div>
             );
           })}
@@ -1956,12 +1956,12 @@ export const Folie20Collaboration: React.FC = () => {
 
   const titleSpring = springEntrance(frame, fps, 10, SPRING.default);
 
-  const services = [
-    { icon: "🤖", title: "AI & ML", desc: "Model development, fine-tuning, deployment" },
-    { icon: "☁️", title: "Cloud", desc: "Architecture, migration, optimization" },
-    { icon: "🔧", title: "DevOps", desc: "CI/CD, IaC, monitoring" },
-    { icon: "📊", title: "Data", desc: "Analytics, pipelines, governance" },
-    { icon: "🎯", title: "Strategy", desc: "Workshops, roadmaps, consulting" },
+  const services: { icon: IconName; title: string; desc: string }[] = [
+    { icon: "layers", title: "AI & ML", desc: "Model development, fine-tuning, deployment" },
+    { icon: "cloud", title: "Cloud", desc: "Architecture, migration, optimization" },
+    { icon: "wrench", title: "DevOps", desc: "CI/CD, IaC, monitoring" },
+    { icon: "chart-bar", title: "Data", desc: "Analytics, pipelines, governance" },
+    { icon: "target", title: "Strategy", desc: "Workshops, roadmaps, consulting" },
   ];
 
   const partners = ["ebcont", "auvaria", "kawa", "sviss", "devoteam", "orbit", "adversary"];
@@ -1980,7 +1980,7 @@ export const Folie20Collaboration: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -2022,9 +2022,9 @@ export const Folie20Collaboration: React.FC = () => {
                   transform: `translateY(${slideIn(s, "up", 20)}px)`,
                 }}
               >
-                <div style={{ fontSize: 28, marginBottom: 8 }}>{svc.icon}</div>
-                <div style={{ fontSize: 13, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>{svc.title}</div>
-                <div style={{ fontSize: 10, color: TEXT_GRAY, lineHeight: 1.4 }}>{svc.desc}</div>
+                <div style={{ marginBottom: 8 }}><Icon name={svc.icon} size={28} color={GREEN} /></div>
+                <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>{svc.title}</div>
+                <div style={{ fontSize: 24, color: TEXT_GRAY, lineHeight: 1.4 }}>{svc.desc}</div>
               </div>
             );
           })}
@@ -2040,7 +2040,7 @@ export const Folie20Collaboration: React.FC = () => {
             opacity: fadeIn(frame, 120, 25),
           }}
         >
-          <div style={{ fontSize: 12, fontWeight: 600, color: TEXT_MUTED, marginRight: 8, alignSelf: "center" }}>
+          <div style={{ fontSize: 24, fontWeight: 600, color: TEXT_MUTED, marginRight: 8, alignSelf: "center" }}>
             Partners:
           </div>
           {partners.map((p, i) => (
@@ -2051,7 +2051,7 @@ export const Folie20Collaboration: React.FC = () => {
                 borderRadius: 16,
                 backgroundColor: WHITE,
                 border: `1px solid ${CARD_BORDER}`,
-                fontSize: 11,
+                fontSize: 24,
                 fontWeight: 600,
                 color: TEXT_GRAY,
                 opacity: fadeIn(frame, staggerDelay(i, 130, 8), 12),
@@ -2098,7 +2098,7 @@ export const Folie21CloudFundings: React.FC = () => {
         {/* Header */}
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -2151,17 +2151,17 @@ export const Folie21CloudFundings: React.FC = () => {
                       padding: "3px 10px",
                       borderRadius: 6,
                       backgroundColor: f.provider === "AWS" ? "rgba(255,153,0,0.1)" : "rgba(0,120,212,0.1)",
-                      fontSize: 11,
+                      fontSize: 24,
                       fontWeight: 700,
                       color: f.provider === "AWS" ? "#FF9900" : "#0078D4",
                     }}
                   >
                     {f.provider}
                   </div>
-                  <div style={{ fontSize: 20, fontWeight: 800, color: GREEN }}>{f.amount}</div>
+                  <div style={{ fontSize: 24, fontWeight: 800, color: GREEN }}>{f.amount}</div>
                 </div>
-                <div style={{ fontSize: 15, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>{f.program}</div>
-                <div style={{ fontSize: 12, color: TEXT_GRAY }}>{f.desc}</div>
+                <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>{f.program}</div>
+                <div style={{ fontSize: 24, color: TEXT_GRAY }}>{f.desc}</div>
               </div>
             );
           })}
@@ -2256,7 +2256,7 @@ export const Folie22ThankYou: React.FC = () => {
         {/* Contact info */}
         <div
           style={{
-            fontSize: 16,
+            fontSize: 24,
             color: TEXT_GRAY,
             textAlign: "center",
             opacity: contactOpacity,
@@ -2288,8 +2288,8 @@ export const Folie22ThankYou: React.FC = () => {
                 opacity: fadeIn(frame, staggerDelay(i, 85, 15), 15),
               }}
             >
-              <div style={{ fontSize: 11, fontWeight: 700, color: GREEN }}>{s.platform}</div>
-              <div style={{ fontSize: 10, color: TEXT_MUTED, marginTop: 2 }}>{s.handle}</div>
+              <div style={{ fontSize: 24, fontWeight: 700, color: GREEN }}>{s.platform}</div>
+              <div style={{ fontSize: 24, color: TEXT_MUTED, marginTop: 2 }}>{s.handle}</div>
             </div>
           ))}
         </div>
@@ -2329,7 +2329,7 @@ export const Folie9NextStepsCustomer: React.FC = () => {
       >
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -2354,7 +2354,7 @@ export const Folie9NextStepsCustomer: React.FC = () => {
         </div>
         <div
           style={{
-            fontSize: 14,
+            fontSize: 24,
             color: TEXT_MUTED,
             opacity: fadeIn(frame, 20, 15),
             marginBottom: 36,
@@ -2390,7 +2390,7 @@ export const Folie9NextStepsCustomer: React.FC = () => {
                     borderRadius: 8,
                     backgroundColor: m.done ? GREEN : GREEN_BG,
                     color: m.done ? WHITE : GREEN,
-                    fontSize: 13,
+                    fontSize: 24,
                     fontWeight: 700,
                     textAlign: "center",
                   }}
@@ -2398,11 +2398,11 @@ export const Folie9NextStepsCustomer: React.FC = () => {
                   {m.date}
                 </div>
                 <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: TEXT_BLACK }}>{m.label}</div>
-                  <div style={{ fontSize: 12, color: TEXT_GRAY, marginTop: 2 }}>{m.result}</div>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK }}>{m.label}</div>
+                  <div style={{ fontSize: 24, color: TEXT_GRAY, marginTop: 2 }}>{m.result}</div>
                 </div>
                 {/* Status */}
-                <div style={{ fontSize: 18 }}>{m.done ? "✅" : "⏳"}</div>
+                <Icon name={m.done ? "check-circle" : "clock"} size={24} color={m.done ? GREEN : TEXT_MUTED} />
               </div>
             );
           })}
@@ -2423,11 +2423,11 @@ export const Folie12StaircaseDetailed: React.FC = () => {
   const titleSpring = springEntrance(frame, fps, 10, SPRING.default);
 
   const steps = [
-    { level: "Clarity", persona: "👤 Stakeholder", question: "What problem are we solving?", height: 70 },
-    { level: "Concept", persona: "👩‍💻 Architect", question: "How should we build it?", height: 130 },
-    { level: "Prototype", persona: "🧑‍🔬 Developer", question: "Does it work?", height: 190 },
-    { level: "MVP", persona: "📊 Product Owner", question: "Do users want it?", height: 250 },
-    { level: "Product", persona: "🚀 Team", question: "Can we scale it?", height: 310 },
+    { level: "Clarity", persona: "Stakeholder", question: "What problem are we solving?", height: 70 },
+    { level: "Concept", persona: "Architect", question: "How should we build it?", height: 130 },
+    { level: "Prototype", persona: "Developer", question: "Does it work?", height: 190 },
+    { level: "MVP", persona: "Product Owner", question: "Do users want it?", height: 250 },
+    { level: "Product", persona: "Team", question: "Can we scale it?", height: 310 },
   ];
 
   return (
@@ -2443,7 +2443,7 @@ export const Folie12StaircaseDetailed: React.FC = () => {
       >
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -2492,13 +2492,13 @@ export const Folie12StaircaseDetailed: React.FC = () => {
                   width: 120,
                 }}
               >
-                <div style={{ fontSize: 11, fontWeight: 600, color: TEXT_GRAY, opacity: s, marginBottom: 2 }}>
+                <div style={{ fontSize: 24, fontWeight: 600, color: TEXT_GRAY, opacity: s, marginBottom: 2 }}>
                   {step.persona}
                 </div>
-                <div style={{ fontSize: 10, color: TEXT_MUTED, opacity: s, marginBottom: 6, textAlign: "center", fontStyle: "italic" }}>
+                <div style={{ fontSize: 24, color: TEXT_MUTED, opacity: s, marginBottom: 6, textAlign: "center", fontStyle: "italic" }}>
                   "{step.question}"
                 </div>
-                <div style={{ fontSize: 12, fontWeight: 700, color: GREEN, marginBottom: 6, opacity: s }}>
+                <div style={{ fontSize: 24, fontWeight: 700, color: GREEN, marginBottom: 6, opacity: s }}>
                   {step.level}
                 </div>
                 <div
@@ -2532,19 +2532,19 @@ export const Folie13FlexibleDeepDive: React.FC = () => {
 
   const titleSpring = springEntrance(frame, fps, 10, SPRING.default);
 
-  const tracks = [
+  const tracks: { icon: IconName; title: string; items: string[] }[] = [
     {
-      icon: "🔧",
+      icon: "wrench",
       title: "Prototype / Demo",
       items: ["Interactive prototype", "Live demo environment", "User testing feedback"],
     },
     {
-      icon: "💼",
+      icon: "layers",
       title: "Business Case",
       items: ["ROI calculation", "Market analysis", "Competitive positioning"],
     },
     {
-      icon: "💰",
+      icon: "dollar",
       title: "TCO Analysis",
       items: ["Infrastructure costs", "Licensing & operations", "3-year projection"],
     },
@@ -2563,7 +2563,7 @@ export const Folie13FlexibleDeepDive: React.FC = () => {
       >
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -2606,8 +2606,8 @@ export const Folie13FlexibleDeepDive: React.FC = () => {
                   flexDirection: "column",
                 }}
               >
-                <div style={{ fontSize: 32, marginBottom: 12 }}>{track.icon}</div>
-                <div style={{ fontSize: 16, fontWeight: 700, color: TEXT_BLACK, marginBottom: 16 }}>
+                <div style={{ marginBottom: 12 }}><Icon name={track.icon} size={32} color={GREEN} /></div>
+                <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 16 }}>
                   {track.title}
                 </div>
                 {track.items.map((item, j) => (
@@ -2630,7 +2630,7 @@ export const Folie13FlexibleDeepDive: React.FC = () => {
                         flexShrink: 0,
                       }}
                     />
-                    <div style={{ fontSize: 12, color: TEXT_GRAY }}>{item}</div>
+                    <div style={{ fontSize: 24, color: TEXT_GRAY }}>{item}</div>
                   </div>
                 ))}
               </div>
@@ -2652,11 +2652,11 @@ export const Folie14VideoFocused: React.FC = () => {
 
   const titleSpring = springEntrance(frame, fps, 10, SPRING.default);
 
-  const deliverables = [
-    { icon: "🎬", title: "Explainer Video", desc: "2-3 min animated overview of the solution", duration: "1 week" },
-    { icon: "📊", title: "Data Story Video", desc: "Visualized metrics and business impact", duration: "3-5 days" },
-    { icon: "🖥️", title: "Demo Recording", desc: "Screen recording of prototype walkthrough", duration: "2-3 days" },
-    { icon: "📱", title: "Social Clips", desc: "Short-form clips for LinkedIn / social media", duration: "1-2 days" },
+  const deliverables: { icon: IconName; title: string; desc: string; duration: string }[] = [
+    { icon: "film", title: "Explainer Video", desc: "2-3 min animated overview of the solution", duration: "1 week" },
+    { icon: "chart-bar", title: "Data Story Video", desc: "Visualized metrics and business impact", duration: "3-5 days" },
+    { icon: "laptop", title: "Demo Recording", desc: "Screen recording of prototype walkthrough", duration: "2-3 days" },
+    { icon: "smartphone", title: "Social Clips", desc: "Short-form clips for LinkedIn / social media", duration: "1-2 days" },
   ];
 
   return (
@@ -2672,7 +2672,7 @@ export const Folie14VideoFocused: React.FC = () => {
       >
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -2714,13 +2714,13 @@ export const Folie14VideoFocused: React.FC = () => {
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
-                  <div style={{ fontSize: 28 }}>{d.icon}</div>
+                  <Icon name={d.icon} size={28} color={GREEN} />
                   <div
                     style={{
                       padding: "3px 10px",
                       borderRadius: 6,
                       backgroundColor: "rgba(46,125,50,0.08)",
-                      fontSize: 11,
+                      fontSize: 24,
                       fontWeight: 600,
                       color: GREEN,
                     }}
@@ -2728,8 +2728,8 @@ export const Folie14VideoFocused: React.FC = () => {
                     {d.duration}
                   </div>
                 </div>
-                <div style={{ fontSize: 15, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>{d.title}</div>
-                <div style={{ fontSize: 12, color: TEXT_GRAY, lineHeight: 1.4 }}>{d.desc}</div>
+                <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>{d.title}</div>
+                <div style={{ fontSize: 24, color: TEXT_GRAY, lineHeight: 1.4 }}>{d.desc}</div>
               </div>
             );
           })}
@@ -2789,7 +2789,7 @@ export const Folie17PipelineDetailed: React.FC = () => {
       >
         <div
           style={{
-            fontSize: 12,
+            fontSize: 24,
             fontWeight: 600,
             color: GREEN,
             textTransform: "uppercase" as const,
@@ -2832,10 +2832,10 @@ export const Folie17PipelineDetailed: React.FC = () => {
                   flexDirection: "column",
                 }}
               >
-                <div style={{ fontSize: 16, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>{p.phase}</div>
+                <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 4 }}>{p.phase}</div>
                 <div
                   style={{
-                    fontSize: 12,
+                    fontSize: 24,
                     fontWeight: 700,
                     color: GREEN,
                     marginBottom: 14,
@@ -2859,7 +2859,7 @@ export const Folie17PipelineDetailed: React.FC = () => {
                     }}
                   >
                     <div style={{ width: 5, height: 5, borderRadius: "50%", backgroundColor: GREEN, flexShrink: 0 }} />
-                    <div style={{ fontSize: 11, color: TEXT_GRAY }}>{act}</div>
+                    <div style={{ fontSize: 24, color: TEXT_GRAY }}>{act}</div>
                   </div>
                 ))}
               </div>

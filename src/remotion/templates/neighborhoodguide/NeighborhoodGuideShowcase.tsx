@@ -6,18 +6,18 @@ const BASE_SPEC: NeighborhoodGuideSpec = {
   city_name: "Vienna",
   guide_title: "Neubau Neighborhood Guide",
   categories: [
-    { category_name: "Cafés", emoji: "☕", places: [
+    { category_name: "Cafés", emoji: "star", places: [
       { name: "Café Harvest", description: "Organic bowls and specialty coffee", rating: 4.8 },
       { name: "Kaffemik", description: "Cozy third-wave coffee spot", rating: 4.5 },
     ]},
-    { category_name: "Restaurants", emoji: "🍽️", places: [
+    { category_name: "Restaurants", emoji: "star", places: [
       { name: "Ramasuri", description: "Creative Austrian-fusion plates", rating: 4.4 },
       { name: "Tian Bistro", description: "Vegetarian fine dining", rating: 4.7 },
     ]},
-    { category_name: "Parks", emoji: "🌳", places: [
+    { category_name: "Parks", emoji: "globe", places: [
       { name: "Volksgarten", description: "Rose garden and open-air café", rating: 4.6 },
     ]},
-    { category_name: "Shops", emoji: "🛍️", places: [
+    { category_name: "Shops", emoji: "tag", places: [
       { name: "Die Sellerie", description: "Vintage clothing and vinyl", rating: 4.3 },
     ]},
   ],

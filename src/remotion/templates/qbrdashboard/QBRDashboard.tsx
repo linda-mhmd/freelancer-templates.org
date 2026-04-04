@@ -76,7 +76,7 @@ export const QBRDashboard: React.FC<{ spec: QBRDashboardSpec }> = ({ spec }) => 
       >
         {spec.achievements.slice(0, 3).map((a, i) => (
           <GlassCard key={`a-${i}`} theme={theme} style={{ padding: "8px 12px" }}>
-            <div style={{ fontSize: TYPE.label, color: theme.textPrimary, fontFamily: theme.fontFamily }}>✓ {a}</div>
+            <div style={{ fontSize: TYPE.label, color: theme.textPrimary, fontFamily: theme.fontFamily }}>{a}</div>
           </GlassCard>
         ))}
         {spec.next_quarter_goals.slice(0, 3).map((g, i) => (

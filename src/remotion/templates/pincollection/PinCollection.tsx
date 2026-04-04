@@ -41,7 +41,7 @@ export const PinCollection: React.FC<{ spec: PinCollectionSpec }> = ({ spec }) =
         subtitle={`${spec.region} · Curated by ${spec.curator_name}`}
         leftContent={
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", gap: 12 }}>
-            <div style={{ fontSize: 48, opacity: 0.3 }}>📍</div>
+            <svg viewBox="0 0 24 24" width={48} height={48} style={{ opacity: 0.3 }} fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
             <div style={{ fontSize: TYPE.cardTitle, color: theme.textSecondary, fontFamily: theme.fontFamily, textAlign: "center" }}>{spec.region}</div>
             <div style={{ fontSize: TYPE.caption, color: theme.textMuted, fontFamily: theme.fontFamily }}>{spec.total_pins} pins</div>
           </div>

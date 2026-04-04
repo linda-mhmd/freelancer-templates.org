@@ -173,10 +173,10 @@ const TiersLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
                       marginBottom: 10, opacity: featOpacity,
                     }}>
                       <span style={{
-                        fontSize: 14,
+                        fontSize: 24,
                         color: feat.included ? "#22c55e" : theme.textMuted,
                       }}>
-                        {feat.included ? "✓" : "✗"}
+                        {feat.included ? "+" : "-"}
                       </span>
                       <span style={{
                         fontSize: TYPE.body - 1,
@@ -280,8 +280,8 @@ const ComparisonLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) =>
               {spec.tiers.map((tier, ti) => {
                 const included = tier.features.some(f => f.text === featText && f.included);
                 return (
-                  <div key={ti} style={{ textAlign: "center", fontSize: 16, color: included ? "#22c55e" : theme.textMuted }}>
-                    {included ? "✓" : "—"}
+                  <div key={ti} style={{ textAlign: "center", fontSize: 24, color: included ? "#22c55e" : theme.textMuted }}>
+                    {included ? "+" : "-"}
                   </div>
                 );
               })}
@@ -366,7 +366,7 @@ const SpotlightLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
             const opacity = fadeIn(frame, delay, 12);
             return (
               <div key={fi} style={{ display: "flex", alignItems: "center", gap: 6, opacity }}>
-                <span style={{ color: "#22c55e", fontSize: 13 }}>✓</span>
+                <svg viewBox="0 0 24 24" width={16} height={16} fill="none" stroke="#22c55e" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
                 <span style={{ fontSize: TYPE.body - 1, color: theme.textSecondary }}>{feat.text}</span>
               </div>
             );

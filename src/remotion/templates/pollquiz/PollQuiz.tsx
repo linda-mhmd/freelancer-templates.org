@@ -381,7 +381,7 @@ const RevealLayout: React.FC<{
                     color: isCorrect && showHighlight ? "#ffffff" : theme.textSecondary,
                     flexShrink: 0,
                   }}>
-                    {isCorrect && showHighlight ? "✓" : letter}
+                    {isCorrect && showHighlight ? "+" : letter}
                   </div>
                   <span style={{
                     fontSize: TYPE.subtitle,

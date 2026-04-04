@@ -196,7 +196,7 @@ const ScorecardLayout: React.FC<{
                   marginBottom: 8,
                 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                    <span style={{ color: theme.accent, fontSize: 16, fontWeight: 700 }}>✓</span>
+                    <svg viewBox="0 0 24 24" width={20} height={20} fill="none" stroke={theme.accent} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
                     <span style={{ fontSize: TYPE.body, color: theme.textPrimary }}>{pro}</span>
                   </div>
                 </GlassCard>
@@ -227,7 +227,7 @@ const ScorecardLayout: React.FC<{
                   marginBottom: 8,
                 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                    <span style={{ color: theme.textMuted, fontSize: 16, fontWeight: 700 }}>✗</span>
+                    <svg viewBox="0 0 24 24" width={20} height={20} fill="none" stroke={theme.textMuted} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
                     <span style={{ fontSize: TYPE.body, color: theme.textMuted }}>{con}</span>
                   </div>
                 </GlassCard>
@@ -434,7 +434,7 @@ const VerdictLayout: React.FC<{
                   opacity: s,
                   transform: `translateX(${slideIn(s, "left", 20)}px)`,
                 }}>
-                  <span style={{ color: theme.accent, fontSize: 14, fontWeight: 700 }}>✓</span>
+                  <svg viewBox="0 0 24 24" width={20} height={20} fill="none" stroke={theme.accent} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
                   <span style={{ fontSize: TYPE.body, color: theme.textPrimary }}>{pro}</span>
                 </div>
               );
@@ -452,7 +452,7 @@ const VerdictLayout: React.FC<{
                 opacity: s,
                 transform: `translateX(${slideIn(s, "left", 20)}px)`,
               }}>
-                <span style={{ color: theme.textMuted, fontSize: 14, fontWeight: 700 }}>✗</span>
+                <svg viewBox="0 0 24 24" width={20} height={20} fill="none" stroke={theme.textMuted} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
                 <span style={{ fontSize: TYPE.body, color: theme.textMuted }}>{con}</span>
               </div>
             );

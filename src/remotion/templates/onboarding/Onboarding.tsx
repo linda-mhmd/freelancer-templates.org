@@ -154,7 +154,7 @@ const ToolChip: React.FC<{
     fontWeight: 600,
     color: theme.textPrimary,
   }}>
-    <span style={{ fontSize: 14 }}>{tool.icon}</span>
+    <span style={{ fontSize: 24 }}>{tool.icon}</span>
     {tool.name}
   </div>
 );
@@ -196,7 +196,7 @@ const FriendlyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
           fontSize: 40,
           marginBottom: 10,
         }}>
-          👋
+          <svg viewBox="0 0 24 24" width={48} height={48} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0v5" /><path d="M14 10V4a2 2 0 0 0-4 0v2" /><path d="M10 10.5V6a2 2 0 0 0-4 0v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg>
         </div>
         <div style={{
           fontSize: TYPE.hero,
@@ -529,7 +529,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
           gap: 16,
           marginBottom: 8,
         }}>
-          <div style={{ fontSize: 48 }}>🎉</div>
+          <div style={{ fontSize: 48 }}><svg viewBox="0 0 24 24" width={48} height={48} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg></div>
           <div>
             <div style={{
               fontSize: TYPE.hero + 4,
@@ -565,7 +565,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
             const delay = staggerDelay(i, 100, 25);
             const s = springEntrance(frame, fps, delay, SPRING.bouncy);
             const op = fadeIn(frame, delay, 18);
-            const emojis = ["🚀", "⚡", "✨"];
+            const emojis = ["+", "~", "*"];
             return (
               <GlassCard key={i} theme={theme} style={{
                 opacity: op,
@@ -575,7 +575,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
                 textAlign: "center" as const,
               }}>
                 <div style={{ fontSize: 28, marginBottom: 8 }}>
-                  {emojis[i] || "📌"}
+                  {emojis[i] || "+"}
                 </div>
                 <div style={{
                   fontSize: TYPE.cardTitle,
@@ -624,7 +624,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
             opacity: ctaOp,
             transform: `scale(${0.85 + 0.15 * ctaS})`,
           }}>
-            <GradientBadge text={`🗓 ${spec.timeline_overview}`} theme={theme} fontSize={13} />
+            <GradientBadge text={`${spec.timeline_overview}`} theme={theme} fontSize={13} />
           </div>
         </div>
       </Sequence>

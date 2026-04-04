@@ -138,8 +138,8 @@ interface LayoutProps {
 const EventTypeBadge: React.FC<{ type?: string; theme: Theme; opacity: number }> = ({ type, theme, opacity }) => {
   if (!type) return null;
   const labels: Record<string, string> = {
-    meetup: "🤝 Meetup", workshop: "🛠 Workshop",
-    conference: "🎤 Conference", webinar: "💻 Webinar",
+    meetup: "Meetup", workshop: "Workshop",
+    conference: "Conference", webinar: "Webinar",
   };
   return (
     <div style={{
@@ -202,11 +202,11 @@ const HeroLayout: React.FC<LayoutProps> = ({ spec, theme, bgPattern, frame, fps,
           transform: `translateY(${slideIn(dateSpring, "up", 16)}px)`,
         }}>
           <span style={{ fontSize: TYPE.subtitle, color: theme.accent, fontWeight: 600 }}>
-            📅 {spec.event_date}
+            {spec.event_date}
           </span>
           {spec.event_location && (
             <span style={{ fontSize: TYPE.subtitle, color: theme.textSecondary }}>
-              📍 {spec.event_location}
+               {spec.event_location}
             </span>
           )}
         </div>
@@ -315,7 +315,7 @@ const SpeakersLayout: React.FC<LayoutProps> = ({ spec, theme, bgPattern, frame, 
               {spec.event_name}
             </div>
             <div style={{ fontSize: TYPE.body, color: theme.textSecondary, marginTop: 4 }}>
-              📅 {spec.event_date}{spec.event_location ? ` · 📍 ${spec.event_location}` : ""}
+              {spec.event_date}{spec.event_location ? ` · ${spec.event_location}` : ""}
             </div>
           </div>
           {/* Stats on the right */}
@@ -431,7 +431,7 @@ const CountdownLayout: React.FC<LayoutProps> = ({ spec, theme, bgPattern, frame,
           opacity: dateSpring,
           transform: `scale(${dateSpring})`,
         }}>
-          📅 {spec.event_date}
+          {spec.event_date}
         </div>
 
         {/* Location */}
@@ -440,7 +440,7 @@ const CountdownLayout: React.FC<LayoutProps> = ({ spec, theme, bgPattern, frame,
             fontSize: TYPE.subtitle, color: theme.textSecondary, marginTop: 8,
             opacity: fadeIn(frame, TIMING.dateStart + 15),
           }}>
-            📍 {spec.event_location}
+             {spec.event_location}
           </div>
         )}
 

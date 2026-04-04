@@ -103,7 +103,7 @@ export const StarRating: React.FC<{
           transform: `scale(${interpolate(s, [0, 1], [0.3, 1])})`,
           color: filled ? color : "rgba(255,255,255,0.15)",
         }}>
-          ★
+          x
         </div>
       );
     })}
@@ -434,7 +434,7 @@ export const StepIndicator: React.FC<{
           flexShrink: 0,
         }}
       >
-        {status === "completed" ? "✓" : stepNumber}
+        {status === "completed" ? "+" : stepNumber}
       </div>
       <span
         style={{

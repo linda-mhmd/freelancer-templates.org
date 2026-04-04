@@ -35,7 +35,7 @@ export const CheckmarkAtom: React.FC<CheckmarkAtomProps> = ({
       }}
     >
       {checked && (
-        <span style={{ color: "#fff", fontSize: size * 0.6, lineHeight: 1 }}>✓</span>
+        <svg viewBox="0 0 24 24" width={size * 0.6} height={size * 0.6} fill="none" stroke="#fff" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
       )}
     </div>
   );

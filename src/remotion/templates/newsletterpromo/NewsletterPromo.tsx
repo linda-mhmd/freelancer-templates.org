@@ -157,7 +157,7 @@ const SubscribeCtaLayout: React.FC<{
           marginBottom: 16,
           fontSize: 48,
         }}>
-          ✉️
+          
         </div>
 
         {/* Newsletter Name */}

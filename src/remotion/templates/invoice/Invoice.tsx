@@ -132,9 +132,9 @@ const InvoiceStatus: React.FC<{
   theme: Theme;
 }> = ({ status }) => {
   const map: Record<string, { bg: string; text: string; label: string; icon: string }> = {
-    due: { bg: "rgba(59,130,246,0.15)", text: "#3b82f6", label: "Payment Due", icon: "📋" },
-    overdue: { bg: "rgba(239,68,68,0.15)", text: "#ef4444", label: "Overdue", icon: "⚠️" },
-    paid: { bg: "rgba(34,197,94,0.15)", text: "#22c55e", label: "Paid", icon: "✅" },
+    due: { bg: "rgba(59,130,246,0.15)", text: "#3b82f6", label: "Payment Due", icon: "" },
+    overdue: { bg: "rgba(239,68,68,0.15)", text: "#ef4444", label: "Overdue", icon: "" },
+    paid: { bg: "rgba(34,197,94,0.15)", text: "#22c55e", label: "Paid", icon: "" },
   };
   const s = map[status] || map.due;
   return (
@@ -144,7 +144,7 @@ const InvoiceStatus: React.FC<{
       gap: 6,
       padding: "5px 14px",
       borderRadius: 999,
-      fontSize: 13,
+      fontSize: 24,
       fontWeight: 700,
       background: s.bg,
       color: s.text,
@@ -188,7 +188,7 @@ const FriendlyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         transform: `translateY(${slideIn(greetS, "up", 25)}px)`,
         textAlign: "center" as const,
       }}>
-        <div style={{ fontSize: 36, marginBottom: 8 }}>💌</div>
+        <svg viewBox="0 0 24 24" width={36} height={36} fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
         <div style={{
           fontSize: TYPE.hero,
           fontWeight: theme.headingWeight,
@@ -538,7 +538,7 @@ const UrgentLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
           fontSize: 32,
           marginBottom: 8,
         }}>
-          {spec.status === "overdue" ? "🚨" : spec.status === "paid" ? "🎉" : "📄"}
+          {spec.status === "overdue" ? "" : spec.status === "paid" ? "" : ""}
         </div>
         <div style={{
           fontSize: TYPE.label,
@@ -667,7 +667,7 @@ const UrgentLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
             </div>
           )}
           <GradientBadge
-            text={spec.status === "overdue" ? "⚡ Pay Now — Overdue" : "Pay Now →"}
+            text={spec.status === "overdue" ? "Pay Now - Overdue" : "Pay Now →"}
             theme={theme}
             fontSize={15}
             style={spec.status === "overdue" ? {

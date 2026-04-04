@@ -88,9 +88,9 @@ const SPEC: TutorialSpec = {
         type: "list",
         data: {
           items: [
-            { icon: "📥", title: "Path 1: Automated", desc: "Upload → EventBridge → Step Functions → AI output. Zero human involvement.", color: "#4ADE80" },
-            { icon: "💬", title: "Path 2: Prompt-Driven", desc: '"Find clips from Vienna mentioning pricing" → AI searches archive → assembles edit.', color: "#FF9900" },
-            { icon: "⚠️", title: "The Catch", desc: "Enterprise data doesn't start on S3. Petabyte migration is not an option.", color: "#F87171" },
+            { icon: "arrow-up", title: "Path 1: Automated", desc: "Upload → EventBridge → Step Functions → AI output. Zero human involvement.", color: "#4ADE80" },
+            { icon: "chat", title: "Path 2: Prompt-Driven", desc: '"Find clips from Vienna mentioning pricing" → AI searches archive → assembles edit.', color: "#FF9900" },
+            { icon: "warning", title: "The Catch", desc: "Enterprise data doesn't start on S3. Petabyte migration is not an option.", color: "#F87171" },
           ],
         },
       },
@@ -106,9 +106,9 @@ const SPEC: TutorialSpec = {
         type: "list",
         data: {
           items: [
-            { icon: "💸", title: "Migration costs a fortune", desc: "Petabyte-scale data movement: $0.09/GB × hundreds of TB", color: "#F87171" },
-            { icon: "🔒", title: "Compliance blocks migration", desc: "GDPR, HIPAA, data sovereignty — data must stay on-prem", color: "#F87171" },
-            { icon: "🚧", title: "Operational disruption", desc: "You cannot pause a broadcaster's archive for 18 months", color: "#F87171" },
+            { icon: "dollar", title: "Migration costs a fortune", desc: "Petabyte-scale data movement: $0.09/GB × hundreds of TB", color: "#F87171" },
+            { icon: "lock", title: "Compliance blocks migration", desc: "GDPR, HIPAA, data sovereignty — data must stay on-prem", color: "#F87171" },
+            { icon: "warning", title: "Operational disruption", desc: "You cannot pause a broadcaster's archive for 18 months", color: "#F87171" },
           ],
         },
       },
@@ -142,10 +142,10 @@ const SPEC: TutorialSpec = {
         type: "list",
         data: {
           items: [
-            { icon: "🧹", title: "Pre-Processing",     desc: "File Sanitizer + Metadata Extractor + proxy creation", color: "#A78BFA" },
-            { icon: "👁️", title: "Parallel AI Analysis", desc: "Rekognition (visual) + Transcribe (audio) + custom vocabulary", color: "#FF9900" },
-            { icon: "🧠", title: "8-Agent Film Crew",   desc: "Director · Editor · Fact Checker · Pacing Analyst — all deliberating", color: "#0072CE" },
-            { icon: "🎬", title: "MediaConvert Output", desc: "16:9 YouTube · 9:16 Instagram · 1:1 LinkedIn — all in one run", color: "#4ADE80" },
+            { icon: "gear", title: "Pre-Processing",     desc: "File Sanitizer + Metadata Extractor + proxy creation", color: "#A78BFA" },
+            { icon: "target", title: "Parallel AI Analysis", desc: "Rekognition (visual) + Transcribe (audio) + custom vocabulary", color: "#FF9900" },
+            { icon: "layers", title: "8-Agent Film Crew",   desc: "Director · Editor · Fact Checker · Pacing Analyst — all deliberating", color: "#0072CE" },
+            { icon: "film", title: "MediaConvert Output", desc: "16:9 YouTube · 9:16 Instagram · 1:1 LinkedIn — all in one run", color: "#4ADE80" },
           ],
         },
       },
@@ -172,10 +172,10 @@ const SPEC: TutorialSpec = {
         type: "list",
         data: {
           items: [
-            { icon: "📡", title: "Broadcast & Media",     desc: "Decades of archive footage — suddenly searchable & monetizable", color: "#FF9900" },
-            { icon: "🏢", title: "Enterprise Comms",      desc: "Training, testimonials, all-hands — published in hours not weeks", color: "#0072CE" },
-            { icon: "💍", title: "Event Videography",     desc: "Highlight reel delivered before the client unpacks", color: "#F472B6" },
-            { icon: "🏥", title: "Healthcare & Education", desc: "HIPAA-compliant, AI-indexed, data sovereignty preserved", color: "#4ADE80" },
+            { icon: "globe", title: "Broadcast & Media",     desc: "Decades of archive footage — suddenly searchable & monetizable", color: "#FF9900" },
+            { icon: "layers", title: "Enterprise Comms",      desc: "Training, testimonials, all-hands — published in hours not weeks", color: "#0072CE" },
+            { icon: "star", title: "Event Videography",     desc: "Highlight reel delivered before the client unpacks", color: "#F472B6" },
+            { icon: "shield", title: "Healthcare & Education", desc: "HIPAA-compliant, AI-indexed, data sovereignty preserved", color: "#4ADE80" },
           ],
         },
       },

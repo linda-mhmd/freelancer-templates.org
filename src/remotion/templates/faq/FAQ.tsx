@@ -114,7 +114,7 @@ const AccordionLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
               {/* Question */}
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
                 <span style={{
-                  fontSize: 18, fontWeight: theme.headingWeight,
+                  fontSize: 24, fontWeight: theme.headingWeight,
                   color: theme.accent, flexShrink: 0,
                 }}>
                   {item.icon || "Q"}
@@ -179,7 +179,7 @@ const CardsLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
             }}>
               {/* Icon + Question */}
               <div style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 10 }}>
-                <span style={{ fontSize: 20, flexShrink: 0 }}>{item.icon || "❓"}</span>
+                <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon || "?"}</span>
                 <span style={{ fontSize: TYPE.cardTitle, fontWeight: 700, color: theme.textPrimary, lineHeight: 1.3 }}>
                   {item.question}
                 </span>
@@ -249,7 +249,7 @@ const InterviewLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
                 display: "flex", alignItems: "center", gap: 10,
                 transform: `translateX(${slideIn(qS, "left", 30)}px)`,
               }}>
-                <span style={{ fontSize: 22, flexShrink: 0 }}>{item.icon || "💬"}</span>
+                <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon || "?"}</span>
                 <span style={{ fontSize: TYPE.cardTitle, fontWeight: 700, color: "#ffffff", lineHeight: 1.3 }}>
                   {item.question}
                 </span>

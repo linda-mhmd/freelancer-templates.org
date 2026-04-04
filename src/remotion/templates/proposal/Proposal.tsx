@@ -205,7 +205,7 @@ const ExecutiveLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
           color: theme.accent,
           marginBottom: 16,
         }}>
-          📋 Proposal
+          Proposal
         </div>
         <div style={{
           fontSize: TYPE.hero - 8,
@@ -292,7 +292,7 @@ const ExecutiveLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
                   transform: `translateX(${slideIn(s, "right", 30)}px)`,
                 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                    <div style={{ fontSize: 20, flexShrink: 0 }}>{pt.icon}</div>
+                    <div style={{ fontSize: 24, flexShrink: 0 }}>{pt.icon}</div>
                     <div>
                       <div style={{
                         fontSize: TYPE.cardTitle,
@@ -330,7 +330,7 @@ const ExecutiveLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
               <div style={{ fontSize: TYPE.body, fontWeight: 600, color: theme.textPrimary }}>{spec.timeline}</div>
             </GlassCard>
             <GlassCard theme={theme} style={{ flex: 1, padding: "12px 16px" }}>
-              <div style={{ fontSize: TYPE.caption, color: theme.textMuted, marginBottom: 4 }}>💰 Investment</div>
+              <div style={{ fontSize: TYPE.caption, color: theme.textMuted, marginBottom: 4 }}><svg viewBox="0 0 24 24" width={20} height={20} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg> Investment</div>
               <div style={{ fontSize: TYPE.body, fontWeight: 600, color: theme.textPrimary }}>{spec.budget_range}</div>
             </GlassCard>
           </div>
@@ -439,7 +439,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
             lineHeight: 1.5,
             maxWidth: 800,
           }}>
-            💡 {spec.problem_statement}
+            <svg viewBox="0 0 24 24" width={20} height={20} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M9 21h6M12 3a6 6 0 0 0-4 10.5V17h8v-3.5A6 6 0 0 0 12 3z" /></svg> {spec.problem_statement}
           </div>
         </div>
       </Sequence>
@@ -511,7 +511,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
             fontSize: TYPE.body,
             color: theme.textSecondary,
           }}>
-            💰 {spec.budget_range}
+            <svg viewBox="0 0 24 24" width={20} height={20} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg> {spec.budget_range}
           </div>
           <div style={{
             width: 1,
@@ -623,7 +623,7 @@ const PitchLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
                 flex: "1 1 auto",
                 minWidth: 200,
               }}>
-                <div style={{ fontSize: 22 }}>{pt.icon}</div>
+                <div style={{ fontSize: 24 }}>{pt.icon}</div>
                 <div>
                   <div style={{
                     fontSize: TYPE.cardTitle,

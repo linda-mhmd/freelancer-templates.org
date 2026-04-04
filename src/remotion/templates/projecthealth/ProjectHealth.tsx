@@ -82,7 +82,7 @@ export const ProjectHealth: React.FC<{ spec: ProjectHealthSpec }> = ({ spec }) =
             <GlassCard theme={theme} style={{ padding: "8px 10px" }}>
               <div style={{ fontSize: TYPE.caption, fontWeight: 600, color: theme.accent, fontFamily: theme.fontFamily, marginBottom: 4 }}>Risks</div>
               {spec.risks.slice(0, 2).map((r, i) => (
-                <div key={i} style={{ fontSize: TYPE.caption, color: theme.textSecondary, fontFamily: theme.fontFamily }}>⚠ {r.title} ({r.severity})</div>
+                <div key={i} style={{ fontSize: TYPE.caption, color: theme.textSecondary, fontFamily: theme.fontFamily }}>{r.title} ({r.severity})</div>
               ))}
             </GlassCard>
           )}

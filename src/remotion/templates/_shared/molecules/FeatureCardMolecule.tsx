@@ -23,7 +23,7 @@ export const FeatureCardMolecule: React.FC<FeatureCardMoleculeProps> = ({
   frame,
   fps,
   delay = 0,
-  icon = "✦",
+  icon = "+",
   title,
   description,
 }) => {

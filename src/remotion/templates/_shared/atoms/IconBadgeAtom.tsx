@@ -45,5 +45,5 @@ export const IconBadgeAtomMeta: AtomMeta = registerAtom({
     "ContributorShell",
   ],
   requiredProps: ["icon"],
-  defaultProps: { icon: "⚡", size: 36 },
+  defaultProps: { icon: "zap", size: 36 },
 });

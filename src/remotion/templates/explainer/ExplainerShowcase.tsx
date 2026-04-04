@@ -29,8 +29,8 @@ const SAMPLE_AI_SPEC: ExplainerSpec = {
   tagline: "I help businesses automate repetitive work with custom AI agents and workflows.",
   pain_points: [
     { icon: "⏰", text: "Teams waste 20+ hours/week on manual tasks" },
-    { icon: "💸", text: "Hiring more people doesn't scale" },
-    { icon: "🔄", text: "Existing tools don't talk to each other" },
+    { icon: "dollar", text: "Hiring more people doesn't scale" },
+    { icon: "refresh", text: "Existing tools don't talk to each other" },
   ],
   solution_steps: [
     { number: 1, title: "Audit & Map", description: "I map your workflows and identify the highest-ROI automation opportunities" },
@@ -51,10 +51,10 @@ const SAMPLE_WEB_SPEC: ExplainerSpec = {
   service_name: "Full-Stack Web Development",
   tagline: "Modern, fast, accessible web apps built with Next.js, TypeScript, and AWS.",
   pain_points: [
-    { icon: "🐌", text: "Slow page loads killing conversions" },
-    { icon: "📱", text: "Mobile experience is broken" },
-    { icon: "🔒", text: "Security vulnerabilities in legacy code" },
-    { icon: "🧩", text: "No CI/CD or automated testing" },
+    { icon: "clock", text: "Slow page loads killing conversions" },
+    { icon: "smartphone", text: "Mobile experience is broken" },
+    { icon: "lock", text: "Security vulnerabilities in legacy code" },
+    { icon: "layers", text: "No CI/CD or automated testing" },
   ],
   solution_steps: [
     { number: 1, title: "Discovery", description: "Technical audit, user research, and architecture planning" },
