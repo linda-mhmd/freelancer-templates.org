@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<section class="tpl-hero">
+  <div class="container">
+    <a href="{{ "library/" | relURL }}" class="tpl-hero__back">
+      <i data-lucide="arrow-left"></i> Back to library
+    </a>
+    <div class="tpl-hero__hd">
+      <div class="tpl-hero__icon"><i data-lucide="{{ .Params.icon }}"></i></div>
+      <div>
+        <h1 class="tpl-hero__title">{{ .Title }}</h1>
+        <p class="tpl-hero__desc">{{ .Description }}</p>
+      </div>
+    </div>
+    <div class="tpl-hero__meta">
+      <span class="tpl-badge">{{ .Params.variantCount }} style variants</span>
+      <span class="tpl-badge">Remotion composition</span>
+      <span class="tpl-badge">CC-BY-NC-SA</span>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-variants">
+  <div class="container">
+    <h2 class="tpl-variants__hd">All {{ .Params.variantCount }} style variants</h2>
+    <div class="tpl-variants__grid">
+      {{ range .Params.variants }}
+      <div class="tpl-var-card">
+        <div class="tpl-var-card__media">
+          <img src="{{ (printf "previews/showcase/%s.png" .id) | relURL }}"
+               alt="{{ $.Title }} - {{ .name }}" loading="lazy" class="tpl-var-card__img">
+          <video class="tpl-var-card__vid" muted loop playsinline preload="none">
+            <source src="{{ (printf "previews/hero/%s.mp4" .id) | relURL }}" type="video/mp4">
+          </video>
+          <div class="tpl-var-card__style tpl-var-card__style--{{ .style }}">{{ .style }}</div>
+        </div>
+        <div class="tpl-var-card__name">{{ .name }}</div>
+        <div class="tpl-var-card__id">{{ .id }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="tpl-cta-section">
+  <div class="container">
+    <div class="tpl-cta-box">
+      <div>
+        <h3 class="tpl-cta-box__title">Use this template</h3>
+        <p class="tpl-cta-box__desc">Clone the repo, customize props, render with Remotion CLI or Lambda.</p>
+        <div class="tpl-cta-box__code">
+          <span class="cc"># Render {{ .Title }} with your data</span><br>
+          <span class="ck">npx</span> remotion render <span class="ca">{{ .Params.camel }}-{{ .Params.primaryVariant }}</span> out/video.mp4
+        </div>
+      </div>
+      <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary">
+        <i data-lucide="github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+// Video hover
+document.querySelectorAll('.tpl-var-card').forEach(function(card) {
+  var vid = card.querySelector('video');
+  if (!vid) return;
+  card.addEventListener('mouseenter', function() { vid.play().catch(function(){}); });
+  card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
+});
+</script>
+
+{{ partial "site-footer.html" . }}
+{{ end }}

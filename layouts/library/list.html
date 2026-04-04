@@ -1,0 +1,157 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<section class="lib-hero">
+  <div class="container">
+    <div class="eyebrow">Full Library</div>
+    <h1 class="lib-hero__title">169 video compositions, 29 template types</h1>
+    <p class="lib-hero__sub">Every template in 6 style variants — Dark, Clean, Bold, Warm, Minimal, Neon. Hover to preview. Click to see all variants.</p>
+
+    <div class="lib-controls">
+      <div class="lib-search-wrap">
+        <i data-lucide="search"></i>
+        <input type="text" id="libSearch" class="lib-search" placeholder="Search templates...">
+      </div>
+      <div class="lib-style-filters">
+        <button class="lib-sf active" data-style="all">All</button>
+        <button class="lib-sf lib-sf--dark" data-style="dark">Dark</button>
+        <button class="lib-sf lib-sf--clean" data-style="clean">Clean</button>
+        <button class="lib-sf lib-sf--bold" data-style="bold">Bold</button>
+        <button class="lib-sf lib-sf--warm" data-style="warm">Warm</button>
+        <button class="lib-sf lib-sf--minimal" data-style="minimal">Minimal</button>
+        <button class="lib-sf lib-sf--neon" data-style="neon">Neon</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Showcase Templates -->
+<section class="lib-section-block" id="showcase">
+  <div class="container">
+    <div class="lib-section-hd">
+      <h2 class="lib-section-hd__title">Showcase Templates</h2>
+      <span class="lib-section-hd__count">29 types · 169 compositions</span>
+    </div>
+
+    <div class="lib-grid" id="libGrid">
+      {{ range .Site.Pages }}{{ if eq .Section "library" }}{{ if ne .File.ContentBaseName "_index" }}
+      <a href="{{ .RelPermalink }}" class="lib-card" data-name="{{ lower .Title }}" data-slug="{{ .Params.slug }}">
+        <div class="lib-card__media">
+          <img src="{{ (printf "previews/showcase/%s-%s.png" .Params.camel .Params.primaryVariant) | relURL }}"
+               alt="{{ .Title }} preview" class="lib-card__img" loading="lazy">
+          {{ $vidPath := printf "previews/hero/%s-%s.mp4" .Params.camel .Params.primaryVariant }}
+          {{ $vidFile := printf "static/%s" $vidPath }}
+          <video class="lib-card__vid" muted loop playsinline preload="none">
+            <source src="{{ $vidPath | relURL }}" type="video/mp4">
+          </video>
+          <div class="lib-card__count">{{ .Params.variantCount }} variants</div>
+        </div>
+        <div class="lib-card__body">
+          <div class="lib-card__icon"><i data-lucide="{{ .Params.icon }}"></i></div>
+          <div class="lib-card__name">{{ .Title }}</div>
+          <div class="lib-card__desc">{{ .Description }}</div>
+        </div>
+      </a>
+      {{ end }}{{ end }}{{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Component Library (Molecules) -->
+<section class="lib-section-block lib-section-block--alt" id="components">
+  <div class="container">
+    <div class="lib-section-hd">
+      <h2 class="lib-section-hd__title">Component Library</h2>
+      <span class="lib-section-hd__count">15 molecules · 7 themes each · 105 components</span>
+    </div>
+    <p class="lib-section-sub">Reusable building blocks. Each molecule works across multiple shells and supports all 7 hand-crafted themes.</p>
+
+    <div class="lib-grid lib-grid--mol" id="libMolGrid">
+      {{ range .Site.Data.molecules }}{{ $mol := . }}
+      <div class="lib-mol-card" data-name="{{ lower $mol.name }}">
+        <div class="lib-mol-card__thumbs">
+          {{ range $mol.themes }}
+          <div class="lib-mol-card__thumb {{ if eq . "dark" }}lib-mol-card__thumb--active{{ end }}" data-theme="{{ . }}">
+            <img src="{{ (printf "previews/molecules/%s/%s.png" $mol.id .) | relURL }}"
+                 alt="{{ $mol.name }} {{ . }} theme" loading="lazy"
+                 onerror="this.closest('.lib-mol-card__thumb').style.display='none'">
+          </div>
+          {{ end }}
+        </div>
+        <div class="lib-mol-card__body">
+          <div class="lib-mol-card__icon"><i data-lucide="{{ $mol.icon }}"></i></div>
+          <div class="lib-mol-card__name">{{ $mol.name }}</div>
+          <div class="lib-mol-card__themes">
+            {{ range $mol.themes }}
+            <button class="lib-mol-theme {{ if eq . "dark" }}active{{ end }}" data-theme="{{ . }}">{{ . }}</button>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<script>
+// Search
+document.getElementById('libSearch').addEventListener('input', function() {
+  var q = this.value.toLowerCase();
+  document.querySelectorAll('.lib-card, .lib-mol-card').forEach(function(c) {
+    c.style.display = (c.dataset.name || '').includes(q) ? '' : 'none';
+  });
+});
+
+// Style filter
+document.querySelectorAll('.lib-sf').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.lib-sf').forEach(function(b) { b.classList.remove('active'); });
+    this.classList.add('active');
+    var style = this.dataset.style;
+    document.querySelectorAll('.lib-card').forEach(function(card) {
+      if (style === 'all') { card.style.display = ''; return; }
+      var href = card.href || '';
+      // Swap the preview image to show the matching style variant
+      var img = card.querySelector('.lib-card__img');
+      var slug = card.dataset.slug;
+      // find variant matching style from embedded data
+      var tpl = window.__TPLS__ && window.__TPLS__[slug];
+      if (tpl) {
+        var variant = tpl.variants.find(function(v) { return v.style === style; });
+        if (variant && img) {
+          img.src = img.src.replace(/\/showcase\/[^/]+\.png/, '/showcase/' + variant.id + '.png');
+        }
+      }
+      card.style.display = '';
+    });
+  });
+});
+
+// Molecule theme switcher
+document.querySelectorAll('.lib-mol-card').forEach(function(card) {
+  card.querySelectorAll('.lib-mol-theme').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var theme = this.dataset.theme;
+      card.querySelectorAll('.lib-mol-theme').forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      card.querySelectorAll('.lib-mol-card__thumb').forEach(function(t) {
+        t.classList.toggle('lib-mol-card__thumb--active', t.dataset.theme === theme);
+      });
+    });
+  });
+});
+
+// Video hover on lib-cards
+document.querySelectorAll('.lib-card').forEach(function(card) {
+  var vid = card.querySelector('video');
+  if (!vid) return;
+  card.addEventListener('mouseenter', function() { vid.play().catch(function(){}); });
+  card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
+});
+
+// Embed template data for style switching
+window.__TPLS__ = {{ .Site.Data.templates | jsonify }};
+</script>
+
+{{ partial "site-footer.html" . }}
+{{ end }}

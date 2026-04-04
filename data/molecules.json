@@ -1,0 +1,227 @@
+[
+  {
+    "id": "CTABanner",
+    "name": "CTA Banner",
+    "description": "Call-to-action banners for driving conversions",
+    "icon": "megaphone",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "ComparisonRow",
+    "name": "Comparison Row",
+    "description": "Side-by-side comparison tables and rows",
+    "icon": "columns",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "DataTableRow",
+    "name": "Data Table Row",
+    "description": "Structured data tables with animated rows",
+    "icon": "table",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "FAQItem",
+    "name": "FAQ Item",
+    "description": "Animated FAQ accordion items and Q&A cards",
+    "icon": "help-circle",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "FeatureCard",
+    "name": "Feature Card",
+    "description": "Feature highlight cards with icons and descriptions",
+    "icon": "zap",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "MetricRow",
+    "name": "Metric Row",
+    "description": "Animated metric and KPI display rows",
+    "icon": "trending-up",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "NavItem",
+    "name": "Nav Item",
+    "description": "Navigation flow items and step indicators",
+    "icon": "navigation",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "PricingTier",
+    "name": "Pricing Tier",
+    "description": "Pricing plan tier cards with feature lists",
+    "icon": "tag",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "ProfileCard",
+    "name": "Profile Card",
+    "description": "Team member and contributor profile cards",
+    "icon": "user",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "QuoteBlock",
+    "name": "Quote Block",
+    "description": "Blockquote animations with attribution",
+    "icon": "quote",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "ReviewCard",
+    "name": "Review Card",
+    "description": "Customer review cards with star ratings",
+    "icon": "star",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "StatRow",
+    "name": "Stat Row",
+    "description": "Animated statistics and number displays",
+    "icon": "hash",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "StepCard",
+    "name": "Step Card",
+    "description": "Process step cards with numbered sequences",
+    "icon": "list-ordered",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "TestimonialCard",
+    "name": "Testimonial Card",
+    "description": "Client testimonial cards with photo and quote",
+    "icon": "message-square",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  },
+  {
+    "id": "TimelineEntry",
+    "name": "Timeline Entry",
+    "description": "Timeline event entries with dates and descriptions",
+    "icon": "clock",
+    "themes": [
+      "dark",
+      "clean",
+      "bold",
+      "warm",
+      "minimal",
+      "neon",
+      "lindamohamed"
+    ]
+  }
+]

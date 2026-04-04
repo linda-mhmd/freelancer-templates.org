@@ -1,0 +1,1195 @@
+[
+  {
+    "slug": "affiliatereview",
+    "camel": "AffiliateReview",
+    "name": "Affiliate Review",
+    "description": "Product comparisons, score cards, and review verdicts",
+    "icon": "star",
+    "color": "blue",
+    "primaryVariant": "DarkScorecard",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "AffiliateReview-DarkScorecard",
+        "name": "Dark Scorecard",
+        "style": "dark"
+      },
+      {
+        "id": "AffiliateReview-BoldScorecard",
+        "name": "Bold Scorecard",
+        "style": "bold"
+      },
+      {
+        "id": "AffiliateReview-DarkComparison",
+        "name": "Dark Comparison",
+        "style": "dark"
+      },
+      {
+        "id": "AffiliateReview-BoldComparison",
+        "name": "Bold Comparison",
+        "style": "bold"
+      },
+      {
+        "id": "AffiliateReview-DarkVerdict",
+        "name": "Dark Verdict",
+        "style": "dark"
+      },
+      {
+        "id": "AffiliateReview-BoldVerdict",
+        "name": "Bold Verdict",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "beforeafter",
+    "camel": "BeforeAfter",
+    "name": "Before / After",
+    "description": "Transformation reveals, comparison sliders, and metrics",
+    "icon": "columns",
+    "color": "indigo",
+    "primaryVariant": "DarkSplitScreen",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "BeforeAfter-DarkSplitScreen",
+        "name": "Dark Split Screen",
+        "style": "dark"
+      },
+      {
+        "id": "BeforeAfter-WarmSplitScreen",
+        "name": "Warm Split Screen",
+        "style": "warm"
+      },
+      {
+        "id": "BeforeAfter-DarkRevealWipe",
+        "name": "Dark Reveal Wipe",
+        "style": "dark"
+      },
+      {
+        "id": "BeforeAfter-WarmRevealWipe",
+        "name": "Warm Reveal Wipe",
+        "style": "warm"
+      },
+      {
+        "id": "BeforeAfter-DarkMetricsCompare",
+        "name": "Dark Metrics Compare",
+        "style": "dark"
+      },
+      {
+        "id": "BeforeAfter-WarmMetricsCompare",
+        "name": "Warm Metrics Compare",
+        "style": "warm"
+      }
+    ]
+  },
+  {
+    "slug": "behindthescenes",
+    "camel": "BehindTheScenes",
+    "name": "Behind The Scenes",
+    "description": "Process walkthroughs, timeline reveals, and scene documentation",
+    "icon": "camera",
+    "color": "orange",
+    "primaryVariant": "DarkSceneCards",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "BehindTheScenes-DarkSceneCards",
+        "name": "Dark Scene Cards",
+        "style": "dark"
+      },
+      {
+        "id": "BehindTheScenes-WarmSceneCards",
+        "name": "Warm Scene Cards",
+        "style": "warm"
+      },
+      {
+        "id": "BehindTheScenes-DarkTimeline",
+        "name": "Dark Timeline",
+        "style": "dark"
+      },
+      {
+        "id": "BehindTheScenes-WarmTimeline",
+        "name": "Warm Timeline",
+        "style": "warm"
+      },
+      {
+        "id": "BehindTheScenes-DarkProcessFlow",
+        "name": "Dark Process Flow",
+        "style": "dark"
+      },
+      {
+        "id": "BehindTheScenes-WarmProcessFlow",
+        "name": "Warm Process Flow",
+        "style": "warm"
+      }
+    ]
+  },
+  {
+    "slug": "casestudy",
+    "camel": "CaseStudy",
+    "name": "Case Study",
+    "description": "Before/after reveals, results animations, and impact metrics",
+    "icon": "trending-up",
+    "color": "orange",
+    "primaryVariant": "NeonSpotlight",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "CaseStudy-DarkNarrative",
+        "name": "Dark Narrative",
+        "style": "dark"
+      },
+      {
+        "id": "CaseStudy-CleanComparison",
+        "name": "Clean Comparison",
+        "style": "clean"
+      },
+      {
+        "id": "CaseStudy-BoldSpotlight",
+        "name": "Bold Spotlight",
+        "style": "bold"
+      },
+      {
+        "id": "CaseStudy-WarmNarrative",
+        "name": "Warm Narrative",
+        "style": "warm"
+      },
+      {
+        "id": "CaseStudy-MinimalComparison",
+        "name": "Minimal Comparison",
+        "style": "minimal"
+      },
+      {
+        "id": "CaseStudy-NeonSpotlight",
+        "name": "Neon Spotlight",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "collaboration",
+    "camel": "Collaboration",
+    "name": "Collaboration",
+    "description": "Partnership reveals, team announcements, and split-screen intros",
+    "icon": "users",
+    "color": "purple",
+    "primaryVariant": "DarkSplitScreen",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Collaboration-DarkSplitScreen",
+        "name": "Dark Split Screen",
+        "style": "dark"
+      },
+      {
+        "id": "Collaboration-BoldSplitScreen",
+        "name": "Bold Split Screen",
+        "style": "bold"
+      },
+      {
+        "id": "Collaboration-DarkAnnouncement",
+        "name": "Dark Announcement",
+        "style": "dark"
+      },
+      {
+        "id": "Collaboration-BoldAnnouncement",
+        "name": "Bold Announcement",
+        "style": "bold"
+      },
+      {
+        "id": "Collaboration-DarkStatsMerge",
+        "name": "Dark Stats Merge",
+        "style": "dark"
+      },
+      {
+        "id": "Collaboration-BoldStatsMerge",
+        "name": "Bold Stats Merge",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "countdownhype",
+    "camel": "CountdownHype",
+    "name": "Countdown Hype",
+    "description": "Countdown timers, launch teasers, and urgency sequences",
+    "icon": "clock",
+    "color": "green",
+    "primaryVariant": "NeonTimer",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "CountdownHype-DarkTimer",
+        "name": "Dark Timer",
+        "style": "dark"
+      },
+      {
+        "id": "CountdownHype-NeonTimer",
+        "name": "Neon Timer",
+        "style": "neon"
+      },
+      {
+        "id": "CountdownHype-DarkTeaser",
+        "name": "Dark Teaser",
+        "style": "dark"
+      },
+      {
+        "id": "CountdownHype-NeonTeaser",
+        "name": "Neon Teaser",
+        "style": "neon"
+      },
+      {
+        "id": "CountdownHype-DarkUrgency",
+        "name": "Dark Urgency",
+        "style": "dark"
+      },
+      {
+        "id": "CountdownHype-NeonUrgency",
+        "name": "Neon Urgency",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "coursepromo",
+    "camel": "CoursePromo",
+    "name": "Course Promo",
+    "description": "Curriculum previews, instructor intros, and course overviews",
+    "icon": "graduation-cap",
+    "color": "orange",
+    "primaryVariant": "DarkOverview",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "CoursePromo-DarkOverview",
+        "name": "Dark Overview",
+        "style": "dark"
+      },
+      {
+        "id": "CoursePromo-CleanOverview",
+        "name": "Clean Overview",
+        "style": "clean"
+      },
+      {
+        "id": "CoursePromo-DarkCurriculum",
+        "name": "Dark Curriculum",
+        "style": "dark"
+      },
+      {
+        "id": "CoursePromo-CleanCurriculum",
+        "name": "Clean Curriculum",
+        "style": "clean"
+      },
+      {
+        "id": "CoursePromo-DarkInstructor",
+        "name": "Dark Instructor",
+        "style": "dark"
+      },
+      {
+        "id": "CoursePromo-CleanInstructor",
+        "name": "Clean Instructor",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "event",
+    "camel": "Event",
+    "name": "Event",
+    "description": "Event promos, speaker lineups, and countdown reveals",
+    "icon": "calendar",
+    "color": "indigo",
+    "primaryVariant": "NeonCountdown",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Event-DarkHero",
+        "name": "Dark Hero",
+        "style": "dark"
+      },
+      {
+        "id": "Event-CleanSpeakers",
+        "name": "Clean Speakers",
+        "style": "clean"
+      },
+      {
+        "id": "Event-BoldCountdown",
+        "name": "Bold Countdown",
+        "style": "bold"
+      },
+      {
+        "id": "Event-WarmHero",
+        "name": "Warm Hero",
+        "style": "warm"
+      },
+      {
+        "id": "Event-MinimalSpeakers",
+        "name": "Minimal Speakers",
+        "style": "minimal"
+      },
+      {
+        "id": "Event-NeonCountdown",
+        "name": "Neon Countdown",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "explainer",
+    "camel": "Explainer",
+    "name": "Explainer",
+    "description": "Product demos, how-it-works guides, and feature breakdowns",
+    "icon": "lightbulb",
+    "color": "purple",
+    "primaryVariant": "NeonCinematic",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Explainer-DarkCinematic",
+        "name": "Dark Cinematic",
+        "style": "dark"
+      },
+      {
+        "id": "Explainer-CleanWhiteboard",
+        "name": "Clean Whiteboard",
+        "style": "clean"
+      },
+      {
+        "id": "Explainer-BoldProcess",
+        "name": "Bold Process",
+        "style": "bold"
+      },
+      {
+        "id": "Explainer-WarmWhiteboard",
+        "name": "Warm Whiteboard",
+        "style": "warm"
+      },
+      {
+        "id": "Explainer-MinimalProcess",
+        "name": "Minimal Process",
+        "style": "minimal"
+      },
+      {
+        "id": "Explainer-NeonCinematic",
+        "name": "Neon Cinematic",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "faq",
+    "camel": "Faq",
+    "name": "FAQ",
+    "description": "Common questions, interview formats, and Q&A breakdowns",
+    "icon": "help-circle",
+    "color": "orange",
+    "primaryVariant": "NeonInterview",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Faq-DarkAccordion",
+        "name": "Dark Accordion",
+        "style": "dark"
+      },
+      {
+        "id": "Faq-CleanCards",
+        "name": "Clean Cards",
+        "style": "clean"
+      },
+      {
+        "id": "Faq-BoldInterview",
+        "name": "Bold Interview",
+        "style": "bold"
+      },
+      {
+        "id": "Faq-WarmAccordion",
+        "name": "Warm Accordion",
+        "style": "warm"
+      },
+      {
+        "id": "Faq-MinimalCards",
+        "name": "Minimal Cards",
+        "style": "minimal"
+      },
+      {
+        "id": "Faq-NeonInterview",
+        "name": "Neon Interview",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "fitnessroutine",
+    "camel": "FitnessRoutine",
+    "name": "Fitness Routine",
+    "description": "Circuit timers, exercise sequences, and workout breakdowns",
+    "icon": "activity",
+    "color": "amber",
+    "primaryVariant": "NeonExerciseList",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "FitnessRoutine-BoldExerciseList",
+        "name": "Bold Exercise List",
+        "style": "bold"
+      },
+      {
+        "id": "FitnessRoutine-NeonExerciseList",
+        "name": "Neon Exercise List",
+        "style": "neon"
+      },
+      {
+        "id": "FitnessRoutine-BoldTimerFocus",
+        "name": "Bold Timer Focus",
+        "style": "bold"
+      },
+      {
+        "id": "FitnessRoutine-NeonTimerFocus",
+        "name": "Neon Timer Focus",
+        "style": "neon"
+      },
+      {
+        "id": "FitnessRoutine-BoldCircuit",
+        "name": "Bold Circuit",
+        "style": "bold"
+      },
+      {
+        "id": "FitnessRoutine-NeonCircuit",
+        "name": "Neon Circuit",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "invoice",
+    "camel": "Invoice",
+    "name": "Invoice",
+    "description": "Payment reminders, invoice summaries, and billing overviews",
+    "icon": "receipt",
+    "color": "blue",
+    "primaryVariant": "NeonUrgent",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Invoice-DarkProfessional",
+        "name": "Dark Professional",
+        "style": "dark"
+      },
+      {
+        "id": "Invoice-CleanProfessional",
+        "name": "Clean Professional",
+        "style": "clean"
+      },
+      {
+        "id": "Invoice-BoldUrgent",
+        "name": "Bold Urgent",
+        "style": "bold"
+      },
+      {
+        "id": "Invoice-WarmFriendly",
+        "name": "Warm Friendly",
+        "style": "warm"
+      },
+      {
+        "id": "Invoice-MinimalProfessional",
+        "name": "Minimal Professional",
+        "style": "minimal"
+      },
+      {
+        "id": "Invoice-NeonUrgent",
+        "name": "Neon Urgent",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "listing",
+    "camel": "Listing",
+    "name": "Listing",
+    "description": "Feature grids, showcase cards, and comparison lists",
+    "icon": "list",
+    "color": "yellow",
+    "primaryVariant": "CleanShowcase",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Listing-CleanShowcase",
+        "name": "Clean Showcase",
+        "style": "clean"
+      },
+      {
+        "id": "Listing-MinimalShowcase",
+        "name": "Minimal Showcase",
+        "style": "minimal"
+      },
+      {
+        "id": "Listing-CleanFeatureGrid",
+        "name": "Clean Feature Grid",
+        "style": "clean"
+      },
+      {
+        "id": "Listing-MinimalFeatureGrid",
+        "name": "Minimal Feature Grid",
+        "style": "minimal"
+      },
+      {
+        "id": "Listing-CleanComparison",
+        "name": "Clean Comparison",
+        "style": "clean"
+      },
+      {
+        "id": "Listing-MinimalComparison",
+        "name": "Minimal Comparison",
+        "style": "minimal"
+      }
+    ]
+  },
+  {
+    "slug": "milestone",
+    "camel": "Milestone",
+    "name": "Milestone",
+    "description": "Goal celebrations, anniversary announcements, and journey recaps",
+    "icon": "star",
+    "color": "rose",
+    "primaryVariant": "NeonCelebration",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Milestone-DarkCelebration",
+        "name": "Dark Celebration",
+        "style": "dark"
+      },
+      {
+        "id": "Milestone-CleanJourney",
+        "name": "Clean Journey",
+        "style": "clean"
+      },
+      {
+        "id": "Milestone-BoldCelebration",
+        "name": "Bold Celebration",
+        "style": "bold"
+      },
+      {
+        "id": "Milestone-WarmGratitude",
+        "name": "Warm Gratitude",
+        "style": "warm"
+      },
+      {
+        "id": "Milestone-MinimalJourney",
+        "name": "Minimal Journey",
+        "style": "minimal"
+      },
+      {
+        "id": "Milestone-NeonCelebration",
+        "name": "Neon Celebration",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "musicvisualizer",
+    "camel": "MusicVisualizer",
+    "name": "Music Visualizer",
+    "description": "Audio reactions, lyric videos, and waveform animations",
+    "icon": "music",
+    "color": "yellow",
+    "primaryVariant": "NeonBars",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "MusicVisualizer-DarkBars",
+        "name": "Dark Bars",
+        "style": "dark"
+      },
+      {
+        "id": "MusicVisualizer-NeonBars",
+        "name": "Neon Bars",
+        "style": "neon"
+      },
+      {
+        "id": "MusicVisualizer-DarkRadial",
+        "name": "Dark Radial",
+        "style": "dark"
+      },
+      {
+        "id": "MusicVisualizer-NeonRadial",
+        "name": "Neon Radial",
+        "style": "neon"
+      },
+      {
+        "id": "MusicVisualizer-DarkLyrics",
+        "name": "Dark Lyrics",
+        "style": "dark"
+      },
+      {
+        "id": "MusicVisualizer-NeonLyrics",
+        "name": "Neon Lyrics",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "newsletterpromo",
+    "camel": "NewsletterPromo",
+    "name": "Newsletter Promo",
+    "description": "Issue previews, subscribe CTAs, and testimonial blends",
+    "icon": "mail",
+    "color": "green",
+    "primaryVariant": "DarkSubscribeCta",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "NewsletterPromo-DarkSubscribeCta",
+        "name": "Dark Subscribe CTA",
+        "style": "dark"
+      },
+      {
+        "id": "NewsletterPromo-CleanSubscribeCta",
+        "name": "Clean Subscribe CTA",
+        "style": "clean"
+      },
+      {
+        "id": "NewsletterPromo-DarkIssuePreview",
+        "name": "Dark Issue Preview",
+        "style": "dark"
+      },
+      {
+        "id": "NewsletterPromo-CleanIssuePreview",
+        "name": "Clean Issue Preview",
+        "style": "clean"
+      },
+      {
+        "id": "NewsletterPromo-DarkTestimonialBlend",
+        "name": "Dark Testimonial Blend",
+        "style": "dark"
+      },
+      {
+        "id": "NewsletterPromo-CleanTestimonialBlend",
+        "name": "Clean Testimonial Blend",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "onboarding",
+    "camel": "Onboarding",
+    "name": "Onboarding",
+    "description": "New client intros, welcome sequences, and process overviews",
+    "icon": "user-plus",
+    "color": "purple",
+    "primaryVariant": "NeonCreative",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Onboarding-DarkProfessional",
+        "name": "Dark Professional",
+        "style": "dark"
+      },
+      {
+        "id": "Onboarding-CleanProfessional",
+        "name": "Clean Professional",
+        "style": "clean"
+      },
+      {
+        "id": "Onboarding-BoldCreative",
+        "name": "Bold Creative",
+        "style": "bold"
+      },
+      {
+        "id": "Onboarding-WarmFriendly",
+        "name": "Warm Friendly",
+        "style": "warm"
+      },
+      {
+        "id": "Onboarding-MinimalProfessional",
+        "name": "Minimal Professional",
+        "style": "minimal"
+      },
+      {
+        "id": "Onboarding-NeonCreative",
+        "name": "Neon Creative",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "podcastaudiogram",
+    "camel": "PodcastAudiogram",
+    "name": "Podcast Audiogram",
+    "description": "Waveform animations, quote cards, and episode promos",
+    "icon": "mic",
+    "color": "blue",
+    "primaryVariant": "DarkWaveform",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "PodcastAudiogram-DarkWaveform",
+        "name": "Dark Waveform",
+        "style": "dark"
+      },
+      {
+        "id": "PodcastAudiogram-WarmWaveform",
+        "name": "Warm Waveform",
+        "style": "warm"
+      },
+      {
+        "id": "PodcastAudiogram-DarkQuoteCard",
+        "name": "Dark Quote Card",
+        "style": "dark"
+      },
+      {
+        "id": "PodcastAudiogram-WarmQuoteCard",
+        "name": "Warm Quote Card",
+        "style": "warm"
+      },
+      {
+        "id": "PodcastAudiogram-DarkEpisodePromo",
+        "name": "Dark Episode Promo",
+        "style": "dark"
+      },
+      {
+        "id": "PodcastAudiogram-WarmEpisodePromo",
+        "name": "Warm Episode Promo",
+        "style": "warm"
+      }
+    ]
+  },
+  {
+    "slug": "pollquiz",
+    "camel": "PollQuiz",
+    "name": "Poll / Quiz",
+    "description": "Question reveals, result bars, and poll animations",
+    "icon": "bar-chart-2",
+    "color": "purple",
+    "primaryVariant": "NeonQuestionCard",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "PollQuiz-DarkQuestionCard",
+        "name": "Dark Question Card",
+        "style": "dark"
+      },
+      {
+        "id": "PollQuiz-NeonQuestionCard",
+        "name": "Neon Question Card",
+        "style": "neon"
+      },
+      {
+        "id": "PollQuiz-DarkResultsBar",
+        "name": "Dark Results Bar",
+        "style": "dark"
+      },
+      {
+        "id": "PollQuiz-NeonResultsBar",
+        "name": "Neon Results Bar",
+        "style": "neon"
+      },
+      {
+        "id": "PollQuiz-DarkReveal",
+        "name": "Dark Reveal",
+        "style": "dark"
+      },
+      {
+        "id": "PollQuiz-NeonReveal",
+        "name": "Neon Reveal",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "portfolio",
+    "camel": "Portfolio",
+    "name": "Portfolio",
+    "description": "Work showcases, project case studies, and gallery reels",
+    "icon": "briefcase",
+    "color": "rose",
+    "primaryVariant": "NeonReel",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Portfolio-DarkGallery",
+        "name": "Dark Gallery",
+        "style": "dark"
+      },
+      {
+        "id": "Portfolio-CleanCaseStudy",
+        "name": "Clean Case Study",
+        "style": "clean"
+      },
+      {
+        "id": "Portfolio-BoldReel",
+        "name": "Bold Reel",
+        "style": "bold"
+      },
+      {
+        "id": "Portfolio-WarmGallery",
+        "name": "Warm Gallery",
+        "style": "warm"
+      },
+      {
+        "id": "Portfolio-MinimalCaseStudy",
+        "name": "Minimal Case Study",
+        "style": "minimal"
+      },
+      {
+        "id": "Portfolio-NeonReel",
+        "name": "Neon Reel",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "pricing",
+    "camel": "Pricing",
+    "name": "Pricing",
+    "description": "Plan comparisons, tier spotlights, and offer reveals",
+    "icon": "tag",
+    "color": "indigo",
+    "primaryVariant": "NeonSpotlight",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Pricing-DarkTiers",
+        "name": "Dark Tiers",
+        "style": "dark"
+      },
+      {
+        "id": "Pricing-CleanComparison",
+        "name": "Clean Comparison",
+        "style": "clean"
+      },
+      {
+        "id": "Pricing-BoldSpotlight",
+        "name": "Bold Spotlight",
+        "style": "bold"
+      },
+      {
+        "id": "Pricing-WarmTiers",
+        "name": "Warm Tiers",
+        "style": "warm"
+      },
+      {
+        "id": "Pricing-MinimalComparison",
+        "name": "Minimal Comparison",
+        "style": "minimal"
+      },
+      {
+        "id": "Pricing-NeonSpotlight",
+        "name": "Neon Spotlight",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "productlaunch",
+    "camel": "ProductLaunch",
+    "name": "Product Launch",
+    "description": "Feature reveals, countdown teasers, and launch sequences",
+    "icon": "rocket",
+    "color": "yellow",
+    "primaryVariant": "DarkHeroReveal",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "ProductLaunch-DarkHeroReveal",
+        "name": "Dark Hero Reveal",
+        "style": "dark"
+      },
+      {
+        "id": "ProductLaunch-BoldHeroReveal",
+        "name": "Bold Hero Reveal",
+        "style": "bold"
+      },
+      {
+        "id": "ProductLaunch-DarkFeatureGrid",
+        "name": "Dark Feature Grid",
+        "style": "dark"
+      },
+      {
+        "id": "ProductLaunch-BoldFeatureGrid",
+        "name": "Bold Feature Grid",
+        "style": "bold"
+      },
+      {
+        "id": "ProductLaunch-DarkCountdown",
+        "name": "Dark Countdown",
+        "style": "dark"
+      },
+      {
+        "id": "ProductLaunch-BoldCountdown",
+        "name": "Bold Countdown",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "proposal",
+    "camel": "Proposal",
+    "name": "Project Proposal",
+    "description": "Scope walkthroughs, timeline visualizations, and pricing animations",
+    "icon": "file-text",
+    "color": "rose",
+    "primaryVariant": "NeonPitch",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Proposal-DarkExecutive",
+        "name": "Dark Executive",
+        "style": "dark"
+      },
+      {
+        "id": "Proposal-CleanCreative",
+        "name": "Clean Creative",
+        "style": "clean"
+      },
+      {
+        "id": "Proposal-BoldPitch",
+        "name": "Bold Pitch",
+        "style": "bold"
+      },
+      {
+        "id": "Proposal-WarmExecutive",
+        "name": "Warm Executive",
+        "style": "warm"
+      },
+      {
+        "id": "Proposal-MinimalCreative",
+        "name": "Minimal Creative",
+        "style": "minimal"
+      },
+      {
+        "id": "Proposal-NeonPitch",
+        "name": "Neon Pitch",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "recap",
+    "camel": "Recap",
+    "name": "Recap",
+    "description": "Project wrap-ups, sprint reviews, and milestone summaries",
+    "icon": "bar-chart",
+    "color": "green",
+    "primaryVariant": "NeonTimeline",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Recap-DarkDashboard",
+        "name": "Dark Dashboard",
+        "style": "dark"
+      },
+      {
+        "id": "Recap-CleanTimeline",
+        "name": "Clean Timeline",
+        "style": "clean"
+      },
+      {
+        "id": "Recap-BoldCards",
+        "name": "Bold Cards",
+        "style": "bold"
+      },
+      {
+        "id": "Recap-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
+      },
+      {
+        "id": "Recap-MinimalCards",
+        "name": "Minimal Cards",
+        "style": "minimal"
+      },
+      {
+        "id": "Recap-NeonTimeline",
+        "name": "Neon Timeline",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "recipestep",
+    "camel": "RecipeStep",
+    "name": "Recipe Step",
+    "description": "Ingredient lists, step sequences, and recipe cards",
+    "icon": "utensils",
+    "color": "rose",
+    "primaryVariant": "WarmIngredientList",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "RecipeStep-WarmIngredientList",
+        "name": "Warm Ingredient List",
+        "style": "warm"
+      },
+      {
+        "id": "RecipeStep-CleanIngredientList",
+        "name": "Clean Ingredient List",
+        "style": "clean"
+      },
+      {
+        "id": "RecipeStep-WarmStepSequence",
+        "name": "Warm Step Sequence",
+        "style": "warm"
+      },
+      {
+        "id": "RecipeStep-CleanStepSequence",
+        "name": "Clean Step Sequence",
+        "style": "clean"
+      },
+      {
+        "id": "RecipeStep-WarmSummaryCard",
+        "name": "Warm Summary Card",
+        "style": "warm"
+      },
+      {
+        "id": "RecipeStep-CleanSummaryCard",
+        "name": "Clean Summary Card",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "socialproof",
+    "camel": "SocialProof",
+    "name": "Social Proof",
+    "description": "Achievement badges, metric milestones, and announcement reveals",
+    "icon": "award",
+    "color": "amber",
+    "primaryVariant": "NeonAnnouncement",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "SocialProof-DarkMilestone",
+        "name": "Dark Milestone",
+        "style": "dark"
+      },
+      {
+        "id": "SocialProof-CleanAchievement",
+        "name": "Clean Achievement",
+        "style": "clean"
+      },
+      {
+        "id": "SocialProof-BoldAnnouncement",
+        "name": "Bold Announcement",
+        "style": "bold"
+      },
+      {
+        "id": "SocialProof-WarmMilestone",
+        "name": "Warm Milestone",
+        "style": "warm"
+      },
+      {
+        "id": "SocialProof-MinimalAchievement",
+        "name": "Minimal Achievement",
+        "style": "minimal"
+      },
+      {
+        "id": "SocialProof-NeonAnnouncement",
+        "name": "Neon Announcement",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "testimonial",
+    "camel": "Testimonial",
+    "name": "Testimonial",
+    "description": "Client quote animations, social proof reels, and review highlights",
+    "icon": "message-square",
+    "color": "amber",
+    "primaryVariant": "NeonSplit",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Testimonial-DarkCentered",
+        "name": "Dark Centered",
+        "style": "dark"
+      },
+      {
+        "id": "Testimonial-CleanSplit",
+        "name": "Clean Split",
+        "style": "clean"
+      },
+      {
+        "id": "Testimonial-BoldEditorial",
+        "name": "Bold Editorial",
+        "style": "bold"
+      },
+      {
+        "id": "Testimonial-WarmCentered",
+        "name": "Warm Centered",
+        "style": "warm"
+      },
+      {
+        "id": "Testimonial-MinimalEditorial",
+        "name": "Minimal Editorial",
+        "style": "minimal"
+      },
+      {
+        "id": "Testimonial-NeonSplit",
+        "name": "Neon Split",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "tutorial",
+    "camel": "Tutorial",
+    "name": "Tutorial",
+    "description": "Step-by-step guides, demo walkthroughs, and how-to content",
+    "icon": "book-open",
+    "color": "amber",
+    "primaryVariant": "DarkNumberedSteps",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "Tutorial-DarkNumberedSteps",
+        "name": "Dark Numbered Steps",
+        "style": "dark"
+      },
+      {
+        "id": "Tutorial-CleanNumberedSteps",
+        "name": "Clean Numbered Steps",
+        "style": "clean"
+      },
+      {
+        "id": "Tutorial-DarkCardSequence",
+        "name": "Dark Card Sequence",
+        "style": "dark"
+      },
+      {
+        "id": "Tutorial-CleanCardSequence",
+        "name": "Clean Card Sequence",
+        "style": "clean"
+      },
+      {
+        "id": "Tutorial-DarkSplitDemo",
+        "name": "Dark Split Demo",
+        "style": "dark"
+      },
+      {
+        "id": "Tutorial-CleanSplitDemo",
+        "name": "Clean Split Demo",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "youtubetuorial",
+    "camel": "YouTubeTutorial",
+    "name": "YouTube Tutorial",
+    "description": "Pipeline explainers, tutorial sequences, and how-it-works",
+    "icon": "play-circle",
+    "color": "blue",
+    "primaryVariant": "VideoFlowPipeline",
+    "variantCount": 1,
+    "variants": [
+      {
+        "id": "YouTubeTutorial-VideoFlowPipeline",
+        "name": "VideoFlow Pipeline",
+        "style": "dark"
+      }
+    ]
+  }
+]

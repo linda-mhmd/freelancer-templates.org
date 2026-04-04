@@ -4,8 +4,8 @@
       <a href="{{ "" | relURL }}" class="nav__wordmark">freelancer<em>-templates</em></a>
 
       <ul class="nav__links" role="list">
-        <li><a href="{{ "" | relURL }}#categories" class="nav__link">Library</a></li>
-        <li><a href="{{ "" | relURL }}#remotion" class="nav__link">Remotion</a></li>
+        <li><a href="{{ "library/" | relURL }}" class="nav__link{{ if eq .Section "library" }} nav__link--active{{ end }}">Library</a></li>
+        <li><a href="{{ "" | relURL }}#remotion" class="nav__link">Templates</a></li>
         <li><a href="{{ "use-cases/" | relURL }}" class="nav__link{{ if eq .Section "use-cases" }} nav__link--active{{ end }}">Use Cases</a></li>
         <li><a href="{{ "" | relURL }}#license" class="nav__link">License</a></li>
       </ul>
