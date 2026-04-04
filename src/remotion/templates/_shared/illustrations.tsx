@@ -7,7 +7,7 @@
  *   - Uses `size` prop for dimensions (default 48)
  *   - Multi-layer SVG with semi-transparent fills for depth
  *   - Detail strokes at 1–1.5px
- *   - NO emoji — all visual indicators are SVG
+ *   - NO emoji - all visual indicators are SVG
  */
 
 import React from "react";
@@ -30,9 +30,9 @@ export const BookOpenIllustration: React.FC<IllustrationProps> = ({
     {/* Right cover with curve */}
     <path d="M42 14C42 11.8 40.2 10 38 10H26C26 10 25 10 25 11V37C25 37 26 38 27 37.5C30 36 36 35 38 35H40C41.1 35 42 34.1 42 33V14Z"
       fill={color} opacity={0.75} />
-    {/* Left page — curved */}
+    {/* Left page - curved */}
     <path d="M9 13C9 13 14 12.5 21 13V34C14 33.5 9 34 9 34V13Z" fill="white" opacity={0.92} />
-    {/* Right page — curved */}
+    {/* Right page - curved */}
     <path d="M39 13C39 13 34 12.5 27 13V34C34 33.5 39 34 39 34V13Z" fill="white" opacity={0.92} />
     {/* Page lines left */}
     <line x1="11" y1="17" x2="19" y2="16.8" stroke={color} strokeWidth="0.7" opacity={0.25} />
@@ -45,13 +45,13 @@ export const BookOpenIllustration: React.FC<IllustrationProps> = ({
     <line x1="29" y1="19.8" x2="37" y2="20" stroke={color} strokeWidth="0.7" opacity={0.25} />
     <line x1="29" y1="22.8" x2="36" y2="23" stroke={color} strokeWidth="0.7" opacity={0.2} />
     <line x1="29" y1="25.8" x2="37" y2="26" stroke={color} strokeWidth="0.7" opacity={0.25} />
-    {/* Spine — center fold */}
+    {/* Spine - center fold */}
     <path d="M24 9V38" stroke={color} strokeWidth="1.5" opacity={0.4} />
     {/* Spine glow */}
     <path d="M24 10V37" stroke="white" strokeWidth="0.5" opacity={0.15} />
-    {/* Page curl — bottom left */}
+    {/* Page curl - bottom left */}
     <path d="M9 34Q12 36 15 34.5" stroke={color} strokeWidth="0.6" opacity={0.2} fill="none" />
-    {/* Page curl — bottom right */}
+    {/* Page curl - bottom right */}
     <path d="M39 34Q36 36 33 34.5" stroke={color} strokeWidth="0.6" opacity={0.2} fill="none" />
     {/* Bookmark ribbon */}
     <path d="M20 10V18L18.5 16L17 18V10" fill={color} opacity={0.5} />
@@ -241,15 +241,15 @@ export const ChecklistBoardIllustration: React.FC<IllustrationProps> = ({
     {/* Clip */}
     <rect x="18" y="4" width="12" height="8" rx="2" fill={color} opacity={0.7} />
     <rect x="20" y="6" width="8" height="4" rx="1" fill="white" opacity={0.25} />
-    {/* Row 1 — checked */}
+    {/* Row 1 - checked */}
     <circle cx="16" cy="20" r="3" fill={color} opacity={0.2} />
     <path d="M14 20L15.5 21.5L18 18.5" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity={0.8} />
     <line x1="22" y1="20" x2="36" y2="20" stroke={color} strokeWidth="1" opacity={0.3} />
-    {/* Row 2 — checked */}
+    {/* Row 2 - checked */}
     <circle cx="16" cy="28" r="3" fill={color} opacity={0.2} />
     <path d="M14 28L15.5 29.5L18 26.5" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity={0.8} />
     <line x1="22" y1="28" x2="34" y2="28" stroke={color} strokeWidth="1" opacity={0.3} />
-    {/* Row 3 — unchecked */}
+    {/* Row 3 - unchecked */}
     <circle cx="16" cy="36" r="3" stroke={color} strokeWidth="1" opacity={0.4} fill="none" />
     <line x1="22" y1="36" x2="35" y2="36" stroke={color} strokeWidth="1" opacity={0.2} />
   </svg>
@@ -291,7 +291,7 @@ export const RocketIllustration: React.FC<IllustrationProps> = ({
   color = "#6366f1",
 }) => (
   <svg width={size} height={size} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* Exhaust flame — layered triangles */}
+    {/* Exhaust flame - layered triangles */}
     <path d="M20 38L24 46L28 38" fill="#ef4444" opacity={0.6} />
     <path d="M21 38L24 44L27 38" fill="#f97316" opacity={0.7} />
     <path d="M22 38L24 42L26 38" fill="#fbbf24" opacity={0.8} />

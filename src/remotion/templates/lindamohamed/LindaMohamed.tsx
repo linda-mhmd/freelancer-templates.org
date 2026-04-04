@@ -1,5 +1,5 @@
 /**
- * LindaMohamed Template — Packages & Workshops Slide Deck
+ * LindaMohamed Template - Packages & Workshops Slide Deck
  *
  * Recreates the 22-slide corporate presentation as animated Remotion compositions.
  * Design language: white/light backgrounds, dark green (#2E7D32) accents,
@@ -9,28 +9,28 @@
  * composition sequences them together.
  *
  * SLIDE MAP:
- *   Folie 1  — Cover: "Intro & Packages"
- *   Folie 2  — About Me: Bio + experience stats
- *   Folie 3  — What I Offer: 3-step workshop flow
- *   Folie 4  — Costs & Packages: Pricing table
- *   Folie 5  — Section Divider: "Workshops"
- *   Folie 6  — Workshop Modules: 3-row table
- *   Folie 7  — The First Workshop: Agenda
- *   Folie 8  — Next Steps: Journey roadmap
- *   Folie 9  — Next Steps: Customer-specific (Nov 2025)
- *   Folie 10 — Results: Horizontal maturity flow
- *   Folie 11 — Results: Staircase visualization
- *   Folie 12 — Results Step by Step: Detailed staircase
- *   Folie 13 — Results Step by Step: Flexible deep-dive
- *   Folie 14 — Results Step by Step: Video-focused
- *   Folie 15 — Section Divider: "More Information"
- *   Folie 16 — Idea-to-Prototype Pipeline: Timeline
- *   Folie 17 — Idea-to-Prototype Pipeline: Detailed
- *   Folie 18 — Components: AI Systems (concentric arcs)
- *   Folie 19 — Components: Cloud (pyramid)
- *   Folie 20 — Collaboration in Teams
- *   Folie 21 — Cloud Fundings
- *   Folie 22 — Thank You / Contact
+ *   Folie 1  - Cover: "Intro & Packages"
+ *   Folie 2  - About Me: Bio + experience stats
+ *   Folie 3  - What I Offer: 3-step workshop flow
+ *   Folie 4  - Costs & Packages: Pricing table
+ *   Folie 5  - Section Divider: "Workshops"
+ *   Folie 6  - Workshop Modules: 3-row table
+ *   Folie 7  - The First Workshop: Agenda
+ *   Folie 8  - Next Steps: Journey roadmap
+ *   Folie 9  - Next Steps: Customer-specific (Nov 2025)
+ *   Folie 10 - Results: Horizontal maturity flow
+ *   Folie 11 - Results: Staircase visualization
+ *   Folie 12 - Results Step by Step: Detailed staircase
+ *   Folie 13 - Results Step by Step: Flexible deep-dive
+ *   Folie 14 - Results Step by Step: Video-focused
+ *   Folie 15 - Section Divider: "More Information"
+ *   Folie 16 - Idea-to-Prototype Pipeline: Timeline
+ *   Folie 17 - Idea-to-Prototype Pipeline: Detailed
+ *   Folie 18 - Components: AI Systems (concentric arcs)
+ *   Folie 19 - Components: Cloud (pyramid)
+ *   Folie 20 - Collaboration in Teams
+ *   Folie 21 - Cloud Fundings
+ *   Folie 22 - Thank You / Contact
  */
 
 import React from "react";
@@ -83,9 +83,9 @@ const InfinityLogo: React.FC<{ size?: number; color?: string }> = ({
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 1 — Cover: "Intro & Packages"
+// FOLIE 1 - Cover: "Intro & Packages"
 // Full-bleed photo, dark gradient left, logo top-left,
-// large all-caps title bottom-left — matches original PPTX slide.
+// large all-caps title bottom-left - matches original PPTX slide.
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie1Cover: React.FC = () => {
@@ -215,7 +215,7 @@ export const Folie1Cover: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 2 — About Me: Bio, experience stats, logos
+// FOLIE 2 - About Me: Bio, experience stats, logos
 // Split layout: photo left, content right
 // ═══════════════════════════════════════════════════════════════
 
@@ -409,7 +409,7 @@ export const Folie2AboutMe: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 3 — What I Offer: 3-step workshop flow + MVP support
+// FOLIE 3 - What I Offer: 3-step workshop flow + MVP support
 // ═══════════════════════════════════════════════════════════════
 
 interface StepCardProps {
@@ -584,7 +584,7 @@ export const Folie3WhatIOffer: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 4 — Costs & Packages: Pricing table + package examples
+// FOLIE 4 - Costs & Packages: Pricing table + package examples
 // ═══════════════════════════════════════════════════════════════
 
 interface PricingRowProps {
@@ -744,11 +744,11 @@ export const Folie4CostsPackages: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 5 — Section Divider: "Workshops" (photo + title)
+// FOLIE 5 - Section Divider: "Workshops" (photo + title)
 // Reusable for Folie 15 ("More Information") too
 // ═══════════════════════════════════════════════════════════════
 
-// White-left / photo-right section divider — matches Folie5 and Folie15 layouts
+// White-left / photo-right section divider - matches Folie5 and Folie15 layouts
 interface SectionDividerProps {
   titleLine1: string;
   titleLine2?: string;
@@ -850,7 +850,7 @@ export const Folie15MoreInfo: React.FC = () => (
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 6 — Workshop Modules: 3-row table
+// FOLIE 6 - Workshop Modules: 3-row table
 // Content/Result/Perspective columns
 // ═══════════════════════════════════════════════════════════════
 
@@ -1015,7 +1015,7 @@ export const Folie6WorkshopModules: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 7 — The First Workshop: Agenda table
+// FOLIE 7 - The First Workshop: Agenda table
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie7FirstWorkshop: React.FC = () => {
@@ -1146,7 +1146,7 @@ export const Folie7FirstWorkshop: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 8 — Next Steps: Generic journey roadmap (0→1→2→3)
+// FOLIE 8 - Next Steps: Generic journey roadmap (0→1→2→3)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie8NextSteps: React.FC = () => {
@@ -1309,7 +1309,7 @@ export const Folie8NextSteps: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 10 — Results: Horizontal maturity flow
+// FOLIE 10 - Results: Horizontal maturity flow
 // Clarity → Concept → Prototype → MVP → Product
 // ═══════════════════════════════════════════════════════════════
 
@@ -1479,7 +1479,7 @@ export const Folie10Results: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 11 — Results: Staircase visualization of maturity levels
+// FOLIE 11 - Results: Staircase visualization of maturity levels
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie11Staircase: React.FC = () => {
@@ -1604,7 +1604,7 @@ export const Folie11Staircase: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 16 — Idea-to-Prototype Pipeline: Timeline with tech stack
+// FOLIE 16 - Idea-to-Prototype Pipeline: Timeline with tech stack
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie16Pipeline: React.FC = () => {
@@ -1737,7 +1737,7 @@ export const Folie16Pipeline: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 18 — Components: AI Systems
+// FOLIE 18 - Components: AI Systems
 // AI/ML/DL/GenAI breakdown with concentric arcs
 // ═══════════════════════════════════════════════════════════════
 
@@ -1869,7 +1869,7 @@ export const Folie18AISystems: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 19 — Components: Cloud (SaaS/PaaS/IaaS/On-Prem pyramid)
+// FOLIE 19 - Components: Cloud (SaaS/PaaS/IaaS/On-Prem pyramid)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie19Cloud: React.FC = () => {
@@ -1965,7 +1965,7 @@ export const Folie19Cloud: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 20 — Collaboration in Teams: 5 service areas + partners
+// FOLIE 20 - Collaboration in Teams: 5 service areas + partners
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie20Collaboration: React.FC = () => {
@@ -2022,7 +2022,7 @@ export const Folie20Collaboration: React.FC = () => {
           Collaboration in Teams
         </div>
 
-        {/* Service cards — 5 columns */}
+        {/* Service cards - 5 columns */}
         <div style={{ display: "flex", gap: 12, marginBottom: 28 }}>
           {services.map((svc, i) => {
             const s = springEntrance(frame, fps, staggerDelay(i, 30, 20), SPRING.default);
@@ -2086,7 +2086,7 @@ export const Folie20Collaboration: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 21 — Cloud Fundings: Funding models (€10K–€500K)
+// FOLIE 21 - Cloud Fundings: Funding models (€10K–€500K)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie21CloudFundings: React.FC = () => {
@@ -2140,7 +2140,7 @@ export const Folie21CloudFundings: React.FC = () => {
           Cloud Fundings
         </div>
 
-        {/* Funding cards — 2×2 grid */}
+        {/* Funding cards - 2×2 grid */}
         <div
           style={{
             display: "grid",
@@ -2191,7 +2191,7 @@ export const Folie21CloudFundings: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 22 — Thank You: Contact info, social links, projects
+// FOLIE 22 - Thank You: Contact info, social links, projects
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie22ThankYou: React.FC = () => {
@@ -2300,7 +2300,7 @@ export const Folie22ThankYou: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 9 — Next Steps: Customer-specific variant (Nov 2025 dates)
+// FOLIE 9 - Next Steps: Customer-specific variant (Nov 2025 dates)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie9NextStepsCustomer: React.FC = () => {
@@ -2360,7 +2360,7 @@ export const Folie9NextStepsCustomer: React.FC = () => {
             marginBottom: 36,
           }}
         >
-          November 2025 — Customer-specific timeline
+          November 2025 - Customer-specific timeline
         </div>
 
         {/* Timeline */}
@@ -2413,7 +2413,7 @@ export const Folie9NextStepsCustomer: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 12 — Results Step by Step: Detailed staircase with personas
+// FOLIE 12 - Results Step by Step: Detailed staircase with personas
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie12StaircaseDetailed: React.FC = () => {
@@ -2522,7 +2522,7 @@ export const Folie12StaircaseDetailed: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 13 — Results Step by Step: Flexible deep-dive
+// FOLIE 13 - Results Step by Step: Flexible deep-dive
 // (Prototype/Demo, Business, TCO)
 // ═══════════════════════════════════════════════════════════════
 
@@ -2643,7 +2643,7 @@ export const Folie13FlexibleDeepDive: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 14 — Results Step by Step: Video-focused variant
+// FOLIE 14 - Results Step by Step: Video-focused variant
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie14VideoFocused: React.FC = () => {
@@ -2740,7 +2740,7 @@ export const Folie14VideoFocused: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 17 — Idea-to-Prototype Pipeline: Detailed with durations
+// FOLIE 17 - Idea-to-Prototype Pipeline: Detailed with durations
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie17PipelineDetailed: React.FC = () => {
@@ -2883,7 +2883,7 @@ export const Folie17PipelineDetailed: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// MAIN DECK — Sequences all slides together
+// MAIN DECK - Sequences all slides together
 // Each slide gets 150 frames (5 seconds at 30fps)
 // Total: 22 slides × 150 = 3300 frames (110 seconds)
 // ═══════════════════════════════════════════════════════════════

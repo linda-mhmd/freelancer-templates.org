@@ -1,13 +1,13 @@
 /**
- * Poll/Quiz Template — Creator Economy Templates (V5)
+ * Poll/Quiz Template - Creator Economy Templates (V5)
  *
  * A reusable, theme-aware poll/quiz video template.
  * Renders interactive-style question cards, answer reveals, and results displays.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "question-card" — Centered question with staggered answer option cards (default)
- *   "results-bar"   — Horizontal bar chart showing vote percentages with CountUp
- *   "reveal"        — Question followed by dramatic correct answer highlight
+ *   "question-card" - Centered question with staggered answer option cards (default)
+ *   "results-bar"   - Horizontal bar chart showing vote percentages with CountUp
+ *   "reveal"        - Question followed by dramatic correct answer highlight
  *
  * DATA CONTRACT (PollQuizSpec):
  *   {

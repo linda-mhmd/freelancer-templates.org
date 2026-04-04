@@ -1,16 +1,16 @@
 /**
- * Behind The Scenes Showcase — Pre-configured compositions for each layout × theme combo.
+ * Behind The Scenes Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, warm)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   BehindTheScenesDarkSceneCards     — Dark theme, scene-cards layout
- *   BehindTheScenesWarmSceneCards     — Warm theme, scene-cards layout
- *   BehindTheScenesDarkTimeline       — Dark theme, timeline layout
- *   BehindTheScenesWarmTimeline       — Warm theme, timeline layout
- *   BehindTheScenesDarkProcessFlow    — Dark theme, process-flow layout
- *   BehindTheScenesWarmProcessFlow    — Warm theme, process-flow layout
+ *   BehindTheScenesDarkSceneCards     - Dark theme, scene-cards layout
+ *   BehindTheScenesWarmSceneCards     - Warm theme, scene-cards layout
+ *   BehindTheScenesDarkTimeline       - Dark theme, timeline layout
+ *   BehindTheScenesWarmTimeline       - Warm theme, timeline layout
+ *   BehindTheScenesDarkProcessFlow    - Dark theme, process-flow layout
+ *   BehindTheScenesWarmProcessFlow    - Warm theme, process-flow layout
  */
 
 import React from "react";

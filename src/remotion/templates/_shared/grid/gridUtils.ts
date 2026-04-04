@@ -1,8 +1,8 @@
 /**
- * Grid System — Pure Calculation Functions
+ * Grid System - Pure Calculation Functions
  *
  * All layout math for the 12-column grid lives here.
- * No React, no side-effects — just numbers in, numbers out.
+ * No React, no side-effects - just numbers in, numbers out.
  *
  * Frame constants: 1280×720, 12 columns.
  * Default gutter: 16px, default padding: 40px.
@@ -55,7 +55,7 @@ export function clampColSpan(colSpan: number, colStart?: number): number {
     const maxSpan = COLUMNS - colStart + 1;
     if (span > maxSpan) {
       console.warn(
-        `[GridSystem] colStart(${colStart}) + colSpan(${span}) exceeds 12 — colSpan clamped to ${maxSpan}`,
+        `[GridSystem] colStart(${colStart}) + colSpan(${span}) exceeds 12 - colSpan clamped to ${maxSpan}`,
       );
       span = Math.max(1, maxSpan);
     }
@@ -85,7 +85,7 @@ export function calcAvailableWidth(
  *
  *   cellWidth = (colSpan / 12) × availableWidth
  *
- * This is the *content* width — gutters between spanned columns are
+ * This is the *content* width - gutters between spanned columns are
  * NOT included because the design treats each cell as a content box
  * and gutters sit between cells.
  *

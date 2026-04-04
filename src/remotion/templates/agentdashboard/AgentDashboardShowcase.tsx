@@ -2,7 +2,7 @@ import React from "react";
 import { AgentDashboard, AgentDashboardSpec } from "./AgentDashboard";
 
 const BASE_SPEC: AgentDashboardSpec = {
-  dashboard_title: "Freelance Automation — Agent Control",
+  dashboard_title: "Freelance Automation - Agent Control",
   agents: [
     { name: "Video Crew", role: "Remotion + ElevenLabs", status: "in-progress", tasks_completed: 47, current_task: "Rendering Q4 report video" },
     { name: "Proposal Writer", role: "Claude proposal drafting", status: "completed", tasks_completed: 23, current_task: "Idle" },
@@ -11,7 +11,7 @@ const BASE_SPEC: AgentDashboardSpec = {
   ],
   queue_stats: { pending: 12, processing: 3, completed: 156, failed: 2 },
   recent_completions: [
-    { task_name: "Client proposal — Mrs Lee G", timestamp: "2 min ago" },
+    { task_name: "Client proposal - Mrs Lee G", timestamp: "2 min ago" },
     { task_name: "Invoice #1089", timestamp: "8 min ago" },
   ],
 };

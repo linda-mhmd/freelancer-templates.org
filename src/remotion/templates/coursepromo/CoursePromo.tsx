@@ -1,13 +1,13 @@
 /**
- * Course Promo Template — Creator Economy Templates (V4)
+ * Course Promo Template - Creator Economy Templates (V4)
  *
  * A reusable, theme-aware course promotion video template.
  * Renders course overviews with curriculum highlights, instructor credentials, and enrollment CTAs.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "overview"     — Hero title + module list + stats row (StarRating + CountUp student count) (default)
- *   "curriculum"   — Expandable module cards with lesson counts, staggered ≥20 frames
- *   "instructor"   — Instructor bio card with credentials and course highlights
+ *   "overview"     - Hero title + module list + stats row (StarRating + CountUp student count) (default)
+ *   "curriculum"   - Expandable module cards with lesson counts, staggered ≥20 frames
+ *   "instructor"   - Instructor bio card with credentials and course highlights
  *
  * DATA CONTRACT (CoursePromoSpec):
  *   {

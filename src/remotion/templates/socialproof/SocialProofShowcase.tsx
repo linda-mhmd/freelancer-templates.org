@@ -1,5 +1,5 @@
 /**
- * SocialProof Showcase — 6 pre-configured compositions with sample data
+ * SocialProof Showcase - 6 pre-configured compositions with sample data
  * Each pairs a theme with the layout that suits it best.
  */
 
@@ -16,18 +16,18 @@ const SAMPLE_SPEC: SocialProofSpec = {
     { label: "Countries", value: 18 },
     { label: "5-Star Reviews", value: 94, suffix: "%" },
   ],
-  context: "From my first Upwork gig to building a global practice — thank you to every client who trusted the process.",
+  context: "From my first Upwork gig to building a global practice - thank you to every client who trusted the process.",
   hashtags: ["Milestone", "Freelancing", "100Clients"],
   freelancerName: "Linda Mohamed",
   freelancerTitle: "Full-Stack Developer & Consultant",
 };
 
-// Dark + Milestone — the classic celebratory look
+// Dark + Milestone - the classic celebratory look
 export const SocialProofDarkMilestone: React.FC = () => (
   <SocialProof spec={SAMPLE_SPEC} theme={THEME_DARK} layout="milestone" />
 );
 
-// Clean + Achievement — professional badge-centered
+// Clean + Achievement - professional badge-centered
 export const SocialProofCleanAchievement: React.FC = () => (
   <SocialProof spec={{
     ...SAMPLE_SPEC,
@@ -41,7 +41,7 @@ export const SocialProofCleanAchievement: React.FC = () => (
   }} theme={THEME_CLEAN} layout="achievement" />
 );
 
-// Bold + Announcement — high-impact news
+// Bold + Announcement - high-impact news
 export const SocialProofBoldAnnouncement: React.FC = () => (
   <SocialProof spec={{
     ...SAMPLE_SPEC,
@@ -56,7 +56,7 @@ export const SocialProofBoldAnnouncement: React.FC = () => (
   }} theme={THEME_BOLD} layout="announcement" />
 );
 
-// Warm + Milestone — friendly celebration
+// Warm + Milestone - friendly celebration
 export const SocialProofWarmMilestone: React.FC = () => (
   <SocialProof spec={{
     ...SAMPLE_SPEC,
@@ -71,7 +71,7 @@ export const SocialProofWarmMilestone: React.FC = () => (
   }} theme={THEME_WARM} layout="milestone" />
 );
 
-// Minimal + Achievement — understated elegance
+// Minimal + Achievement - understated elegance
 export const SocialProofMinimalAchievement: React.FC = () => (
   <SocialProof spec={{
     ...SAMPLE_SPEC,
@@ -85,12 +85,12 @@ export const SocialProofMinimalAchievement: React.FC = () => (
   }} theme={THEME_MINIMAL} layout="achievement" />
 );
 
-// Neon + Announcement — energetic tech launch
+// Neon + Announcement - energetic tech launch
 export const SocialProofNeonAnnouncement: React.FC = () => (
   <SocialProof spec={{
     ...SAMPLE_SPEC,
     headline: "Open-Sourcing My Video Engine",
-    subheadline: "The same tool that powers 200+ client videos — now free for everyone.",
+    subheadline: "The same tool that powers 200+ client videos - now free for everyone.",
     mainStat: { label: "GitHub Stars", value: 2400 },
     supportingStats: [
       { label: "Contributors", value: 34 },

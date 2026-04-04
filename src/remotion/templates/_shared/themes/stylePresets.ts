@@ -1,5 +1,5 @@
 /**
- * Style Presets — Structural visual parameters for theme generation.
+ * Style Presets - Structural visual parameters for theme generation.
  *
  * Each preset defines the "feel" of a theme (glass opacity, shadow depth,
  * font weights, corner style, background pattern) independent of color.

@@ -1,13 +1,13 @@
 /**
- * Case Study Template — Before/After Project Deep Dives
+ * Case Study Template - Before/After Project Deep Dives
  *
  * Different from Portfolio: this focuses on a SINGLE project with
  * problem → solution → results narrative. Deeper storytelling.
  *
  * LAYOUTS:
- *   "narrative"   — Linear story: problem → approach → results
- *   "comparison"  — Side-by-side before/after with metrics
- *   "spotlight"   — Hero result stat with supporting story cards
+ *   "narrative"   - Linear story: problem → approach → results
+ *   "comparison"  - Side-by-side before/after with metrics
+ *   "spotlight"   - Hero result stat with supporting story cards
  *
  * USAGE:
  *   <CaseStudy spec={spec} theme={THEME_DARK} layout="narrative" />

@@ -1,5 +1,5 @@
 /**
- * DesignTokens — Single source of truth for all visual constants.
+ * DesignTokens - Single source of truth for all visual constants.
  *
  * GUIDELINES:
  *
@@ -11,7 +11,7 @@
  * TYPE.body (32px) is the minimum for body copy. TYPE.label (26px)
  * is the minimum for supporting labels and badges.
  * When exported as a thumbnail (~4x smaller), TYPE.caption renders
- * at ~6px screen pixels — still legible at small sizes.
+ * at ~6px screen pixels - still legible at small sizes.
  *
  * Spacing
  * -------
@@ -20,10 +20,10 @@
  *
  * Border Radius
  * -------------
- * RADIUS.sm  — small elements (tags, pills)
- * RADIUS.md  — cards, inputs
- * RADIUS.lg  — large panels, hero cards
- * RADIUS.full — fully rounded (avatar, badge)
+ * RADIUS.sm  - small elements (tags, pills)
+ * RADIUS.md  - cards, inputs
+ * RADIUS.lg  - large panels, hero cards
+ * RADIUS.full - fully rounded (avatar, badge)
  *
  * Color
  * -----
@@ -43,7 +43,7 @@
  */
 
 // ── Typography Scale ────────────────────────────────────────────
-// Re-exported from layouts.ts — always import from here in new code.
+// Re-exported from layouts.ts - always import from here in new code.
 // Use makeType(fontScale) in compositions that accept a fontScale prop.
 export { TYPE, makeType } from "./layouts";
 

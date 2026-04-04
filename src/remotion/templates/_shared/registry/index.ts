@@ -1,5 +1,5 @@
 /**
- * Composition Registry — Fully populated registry index.
+ * Composition Registry - Fully populated registry index.
  *
  * Builds and exports a populated CompositionRegistry and AgentAPI
  * with all atoms, molecules, shells, and themes.

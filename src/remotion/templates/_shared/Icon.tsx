@@ -1,5 +1,5 @@
 /**
- * Icon — Inline SVG icon library for all Remotion templates.
+ * Icon - Inline SVG icon library for all Remotion templates.
  * Never use emoji characters in templates. Use this instead.
  *
  * Usage:

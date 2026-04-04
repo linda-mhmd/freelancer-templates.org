@@ -1,13 +1,13 @@
 /**
- * Affiliate Review Template — Creator Economy Templates (V5)
+ * Affiliate Review Template - Creator Economy Templates (V5)
  *
  * A reusable, theme-aware affiliate product review video template.
  * Renders product reviews with rating displays, comparison tables, and recommendation badges.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "scorecard"   — Large StarRating with pros/cons columns (default)
- *   "comparison"  — Side-by-side product comparison cards using ComparisonTable
- *   "verdict"     — Editorial-style review with GradientBadge recommendation
+ *   "scorecard"   - Large StarRating with pros/cons columns (default)
+ *   "comparison"  - Side-by-side product comparison cards using ComparisonTable
+ *   "verdict"     - Editorial-style review with GradientBadge recommendation
  *
  * DATA CONTRACT (AffiliateReviewSpec):
  *   {
@@ -275,8 +275,8 @@ const ComparisonLayout: React.FC<{
   const maxRows = Math.max(spec.pros.length, spec.cons.length);
   const comparisonRows = Array.from({ length: Math.min(maxRows, 5) }, (_, i) => ({
     label: `Feature ${i + 1}`,
-    left: spec.pros[i] ?? "—",
-    right: spec.cons[i] ?? "—",
+    left: spec.pros[i] ?? "-",
+    right: spec.cons[i] ?? "-",
   }));
 
   return (

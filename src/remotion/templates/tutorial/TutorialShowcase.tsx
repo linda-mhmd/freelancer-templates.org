@@ -1,16 +1,16 @@
 /**
- * Tutorial Showcase — Pre-configured compositions for each layout × theme combo.
+ * Tutorial Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, clean)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   TutorialDarkNumberedSteps     — Dark theme, numbered-steps layout
- *   TutorialCleanNumberedSteps    — Clean theme, numbered-steps layout
- *   TutorialDarkCardSequence      — Dark theme, card-sequence layout
- *   TutorialCleanCardSequence     — Clean theme, card-sequence layout
- *   TutorialDarkSplitDemo         — Dark theme, split-demo layout
- *   TutorialCleanSplitDemo        — Clean theme, split-demo layout
+ *   TutorialDarkNumberedSteps     - Dark theme, numbered-steps layout
+ *   TutorialCleanNumberedSteps    - Clean theme, numbered-steps layout
+ *   TutorialDarkCardSequence      - Dark theme, card-sequence layout
+ *   TutorialCleanCardSequence     - Clean theme, card-sequence layout
+ *   TutorialDarkSplitDemo         - Dark theme, split-demo layout
+ *   TutorialCleanSplitDemo        - Clean theme, split-demo layout
  */
 
 import React from "react";

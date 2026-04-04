@@ -1,13 +1,13 @@
 /**
- * FAQ Template — Animated Q&A Videos
+ * FAQ Template - Animated Q&A Videos
  *
  * Freelancers get the same questions repeatedly. This template turns
  * FAQ content into shareable animated videos for social media or websites.
  *
  * LAYOUTS:
- *   "accordion"  — Questions reveal answers one at a time (vertical stack)
- *   "cards"      — Q&A pairs as animated card grid
- *   "interview"  — Split layout: question left, answer right
+ *   "accordion"  - Questions reveal answers one at a time (vertical stack)
+ *   "cards"      - Q&A pairs as animated card grid
+ *   "interview"  - Split layout: question left, answer right
  *
  * USAGE:
  *   <FAQ spec={spec} theme={THEME_DARK} layout="accordion" />
@@ -214,7 +214,7 @@ const InterviewLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
   const headerS = springEntrance(frame, fps, 5, SPRING.default);
   const ctaOpacity = fadeIn(frame, 220, 25);
 
-  // Show items sequentially — each gets ~55 frames of screen time
+  // Show items sequentially - each gets ~55 frames of screen time
   const ITEM_DURATION = 55;
 
   return (
@@ -229,7 +229,7 @@ const InterviewLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
         )}
       </div>
 
-      {/* Q&A items — split layout */}
+      {/* Q&A items - split layout */}
       <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 14 }}>
         {spec.items.slice(0, 4).map((item, i) => {
           const baseDelay = staggerDelay(i, 30, ITEM_DURATION);

@@ -1,5 +1,5 @@
 /**
- * Molecule Registry Core — extracted to break circular dependency.
+ * Molecule Registry Core - extracted to break circular dependency.
  *
  * Molecule .tsx files import from HERE (not from ./index) so that
  * MOLECULE_REGISTRY is guaranteed to be initialised before any

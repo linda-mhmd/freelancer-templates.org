@@ -1,13 +1,13 @@
 /**
- * Collaboration / Duet Template — Creator Economy Templates (V6)
+ * Collaboration / Duet Template - Creator Economy Templates (V6)
  *
  * A reusable, theme-aware collaboration announcement video template.
  * Renders split-screen creator cards, announcements, and combined stats.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "split-screen"   — SplitScreen with side-by-side creator cards (default)
- *   "announcement"   — Hero collab title with creator names and project details
- *   "stats-merge"    — Combined audience CountUp with individual creator stat cards
+ *   "split-screen"   - SplitScreen with side-by-side creator cards (default)
+ *   "announcement"   - Hero collab title with creator names and project details
+ *   "stats-merge"    - Combined audience CountUp with individual creator stat cards
  */
 
 import React from "react";

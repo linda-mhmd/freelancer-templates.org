@@ -1,13 +1,13 @@
 /**
- * Product Launch Template — Creator Economy Templates (V4)
+ * Product Launch Template - Creator Economy Templates (V4)
  *
  * A reusable, theme-aware product launch video template.
  * Renders a product reveal with features, pricing, and CTA.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "hero-reveal"   — Full-screen product name + tagline with animated feature callouts (default)
- *   "feature-grid"  — Product title with 2×2 GlassCard feature cards
- *   "countdown"     — CountdownTimer component with product teaser
+ *   "hero-reveal"   - Full-screen product name + tagline with animated feature callouts (default)
+ *   "feature-grid"  - Product title with 2×2 GlassCard feature cards
+ *   "countdown"     - CountdownTimer component with product teaser
  *
  * DATA CONTRACT (ProductLaunchSpec):
  *   {

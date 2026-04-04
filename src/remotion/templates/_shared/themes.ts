@@ -1,5 +1,5 @@
 /**
- * Theme System — Color Palettes & Typography
+ * Theme System - Color Palettes & Typography
  * 
  * Each theme defines a complete visual identity: background, text colors,
  * accent colors, card styles, and font weights.

@@ -1,13 +1,13 @@
 /**
- * Explainer Showcase — Pre-configured compositions for each theme × layout combo.
+ * Explainer Showcase - Pre-configured compositions for each theme × layout combo.
  *
  * REGISTERED COMPOSITIONS:
- *   ExplainerDarkCinematic      — Dark theme, cinematic layout
- *   ExplainerCleanWhiteboard    — Clean theme, whiteboard layout
- *   ExplainerBoldProcess        — Bold theme, process layout
- *   ExplainerWarmWhiteboard     — Warm theme, whiteboard layout
- *   ExplainerMinimalProcess     — Minimal theme, process layout
- *   ExplainerNeonCinematic      — Neon theme, cinematic layout
+ *   ExplainerDarkCinematic      - Dark theme, cinematic layout
+ *   ExplainerCleanWhiteboard    - Clean theme, whiteboard layout
+ *   ExplainerBoldProcess        - Bold theme, process layout
+ *   ExplainerWarmWhiteboard     - Warm theme, whiteboard layout
+ *   ExplainerMinimalProcess     - Minimal theme, process layout
+ *   ExplainerNeonCinematic      - Neon theme, cinematic layout
  */
 
 import React from "react";
@@ -34,7 +34,7 @@ const SAMPLE_AI_SPEC: ExplainerSpec = {
   ],
   solution_steps: [
     { number: 1, title: "Audit & Map", description: "I map your workflows and identify the highest-ROI automation opportunities" },
-    { number: 2, title: "Build & Test", description: "Custom AI agents built with your tools — Slack, Notion, CRM, email" },
+    { number: 2, title: "Build & Test", description: "Custom AI agents built with your tools - Slack, Notion, CRM, email" },
     { number: 3, title: "Deploy & Train", description: "Deployed to production with monitoring, docs, and team training" },
   ],
   results: [

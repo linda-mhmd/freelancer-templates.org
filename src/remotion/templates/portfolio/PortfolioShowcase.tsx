@@ -1,13 +1,13 @@
 /**
- * Portfolio Showcase — Pre-configured compositions for each theme × layout combo.
+ * Portfolio Showcase - Pre-configured compositions for each theme × layout combo.
  *
  * REGISTERED COMPOSITIONS:
- *   PortfolioDarkGallery       — Dark theme, gallery layout
- *   PortfolioCleanCaseStudy    — Clean theme, case study layout
- *   PortfolioBoldReel          — Bold theme, reel layout
- *   PortfolioWarmGallery       — Warm theme, gallery layout
- *   PortfolioMinimalCaseStudy  — Minimal theme, case study layout
- *   PortfolioNeonReel          — Neon theme, reel layout
+ *   PortfolioDarkGallery       - Dark theme, gallery layout
+ *   PortfolioCleanCaseStudy    - Clean theme, case study layout
+ *   PortfolioBoldReel          - Bold theme, reel layout
+ *   PortfolioWarmGallery       - Warm theme, gallery layout
+ *   PortfolioMinimalCaseStudy  - Minimal theme, case study layout
+ *   PortfolioNeonReel          - Neon theme, reel layout
  */
 
 import React from "react";

@@ -42,7 +42,7 @@ export const ProjectHealth: React.FC<{ spec: ProjectHealthSpec }> = ({ spec }) =
     return (
       <ContributorShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Health`}
+        title={`${spec.project_name} - Health`}
         subtitle={`Client: ${spec.client_name} · PM: ${spec.project_manager}`}
         contributorCount={spec.workstreams.length}
       >
@@ -63,7 +63,7 @@ export const ProjectHealth: React.FC<{ spec: ProjectHealthSpec }> = ({ spec }) =
     return (
       <StatusBoardShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Health`}
+        title={`${spec.project_name} - Health`}
         subtitle={`Client: ${spec.client_name}`}
         centralMetric={{ label: "Completion", value: spec.completion_percent, suffix: "%" }}
       >
@@ -96,7 +96,7 @@ export const ProjectHealth: React.FC<{ spec: ProjectHealthSpec }> = ({ spec }) =
   return (
     <HeroStatShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.project_name} — Health`}
+      title={`${spec.project_name} - Health`}
       subtitle={`Client: ${spec.client_name} · PM: ${spec.project_manager}`}
       badge={spec.health_status}
       stats={[

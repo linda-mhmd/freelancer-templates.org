@@ -1,13 +1,13 @@
 /**
- * Fitness Routine Template — Creator Economy Templates (V6)
+ * Fitness Routine Template - Creator Economy Templates (V6)
  *
  * A reusable, theme-aware fitness workout video template.
  * Renders exercise lists, timer-focused views, and circuit layouts.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "exercise-list"  — Scrolling exercise GlassCards with CountUp rep/set counts (default)
- *   "timer-focus"    — Large CountdownTimer with current exercise name
- *   "circuit"        — Circular ProgressBar indicator with exercise sequence
+ *   "exercise-list"  - Scrolling exercise GlassCards with CountUp rep/set counts (default)
+ *   "timer-focus"    - Large CountdownTimer with current exercise name
+ *   "circuit"        - Circular ProgressBar indicator with exercise sequence
  */
 
 import React from "react";
@@ -158,7 +158,7 @@ const ExerciseListLayout: React.FC<{
                     ? <><CountUp target={ex.reps} frame={frame} startFrame={delay} suffix="" /> × {ex.sets}</>
                     : ex.duration != null
                     ? `${ex.duration} min`
-                    : "—"}
+                    : "-"}
                 </span>
               </GlassCard>
             );
@@ -263,7 +263,7 @@ const CircuitLayout: React.FC<{
                 </div>
                 <div style={{ fontSize: TYPE.cardTitle, fontWeight: 600 }}>{ex.name}</div>
                 <div style={{ fontSize: TYPE.caption, color: theme.textMuted, marginTop: 4 }}>
-                  {ex.reps != null ? `${ex.reps} reps` : ex.duration != null ? `${ex.duration} min` : "—"}
+                  {ex.reps != null ? `${ex.reps} reps` : ex.duration != null ? `${ex.duration} min` : "-"}
                 </div>
               </GlassCard>
             );

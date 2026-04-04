@@ -39,7 +39,7 @@ export const BugTracker: React.FC<{ spec: BugTrackerSpec }> = ({ spec }) => {
     return (
       <ContributorShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Bug Triage`}
+        title={`${spec.project_name} - Bug Triage`}
         subtitle={spec.time_period}
         contributorCount={statuses.length}
       >
@@ -66,7 +66,7 @@ export const BugTracker: React.FC<{ spec: BugTrackerSpec }> = ({ spec }) => {
     return (
       <HeroStatShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Bug Overview`}
+        title={`${spec.project_name} - Bug Overview`}
         subtitle={spec.time_period}
         stats={[
           { label: "Resolution Rate", value: spec.resolution_rate, suffix: "%" },
@@ -92,7 +92,7 @@ export const BugTracker: React.FC<{ spec: BugTrackerSpec }> = ({ spec }) => {
   return (
     <StatusBoardShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.project_name} — Bug Tracker`}
+      title={`${spec.project_name} - Bug Tracker`}
       subtitle={spec.time_period}
       centralMetric={{ label: "Resolution Rate", value: spec.resolution_rate, suffix: "%" }}
     >

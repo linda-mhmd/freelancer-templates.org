@@ -144,7 +144,7 @@ describe("PreviewGrid hashToHue", () => {
     for (const input of inputs) {
       hues.add(hashToHue(input));
     }
-    // At least 5 distinct hues out of 10 inputs — reasonable distribution
+    // At least 5 distinct hues out of 10 inputs - reasonable distribution
     expect(hues.size).toBeGreaterThanOrEqual(5);
   });
 

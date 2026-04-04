@@ -1,5 +1,5 @@
 /**
- * Molecule Registry — Barrel file
+ * Molecule Registry - Barrel file
  *
  * Molecules are composed groups of Atoms that form recognizable UI patterns.
  * Each Molecule declares which Atoms it uses and which Shells it's compatible with.

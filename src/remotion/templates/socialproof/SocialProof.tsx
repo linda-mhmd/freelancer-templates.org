@@ -1,14 +1,14 @@
 /**
- * Social Proof Template — Shareable Milestone & Achievement Videos
+ * Social Proof Template - Shareable Milestone & Achievement Videos
  *
  * Different from Testimonial: this is for the freelancer's OWN achievements,
  * milestones, and social media announcements. Think "I just hit 100 clients!"
  * or "Project milestone: 50k users reached."
  *
  * LAYOUTS:
- *   "milestone"  — Big number hero + supporting context cards
- *   "achievement" — Badge/trophy centered with radiating stats
- *   "announcement" — News-style with headline + detail cards
+ *   "milestone"  - Big number hero + supporting context cards
+ *   "achievement" - Badge/trophy centered with radiating stats
+ *   "announcement" - News-style with headline + detail cards
  *
  * USAGE:
  *   <SocialProof spec={spec} theme={THEME_DARK} layout="milestone" />
@@ -108,7 +108,7 @@ const MilestoneLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
         {spec.headline}
       </div>
 
-      {/* Main stat — big hero number */}
+      {/* Main stat - big hero number */}
       <div style={{
         fontSize: 96,
         fontWeight: theme.headingWeight,

@@ -1,22 +1,22 @@
 /**
- * Milestone Template — Celebrating achievements and anniversaries
+ * Milestone Template - Celebrating achievements and anniversaries
  *
  * For freelancers celebrating: 100th client, 1-year anniversary, revenue goals,
  * certifications earned, community milestones, etc.
  *
  * LAYOUTS:
- *   "celebration" — Big number hero with confetti-style accents + journey timeline
- *   "journey"     — Timeline-focused: past milestones leading to the current one
- *   "gratitude"   — Thank-you focused: names/logos of people who helped
+ *   "celebration" - Big number hero with confetti-style accents + journey timeline
+ *   "journey"     - Timeline-focused: past milestones leading to the current one
+ *   "gratitude"   - Thank-you focused: names/logos of people who helped
  *
  * SPEC SHAPE (MilestoneSpec):
- *   headline         — Main celebration text
- *   achievement      — The specific achievement { value, suffix, label }
- *   journey_points   — Array of { title, date, description }
- *   thank_you_names  — Array of names/entities to thank
- *   author_name      — Freelancer name
- *   author_title     — Freelancer title
- *   cta_text         — Call to action
+ *   headline         - Main celebration text
+ *   achievement      - The specific achievement { value, suffix, label }
+ *   journey_points   - Array of { title, date, description }
+ *   thank_you_names  - Array of names/entities to thank
+ *   author_name      - Freelancer name
+ *   author_title     - Freelancer title
+ *   cta_text         - Call to action
  */
 
 import React from "react";

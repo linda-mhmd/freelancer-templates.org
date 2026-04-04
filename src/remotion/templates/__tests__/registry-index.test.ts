@@ -1,4 +1,4 @@
-// Verification test for Task 10.1 — Registry Index
+// Verification test for Task 10.1 - Registry Index
 import { describe, it, expect } from 'vitest';
 import { registry, agentApi, COMBINATION_COUNT } from '../_shared/registry/index';
 

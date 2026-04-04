@@ -1,13 +1,13 @@
 /**
- * Tutorial / How-To Template — Creator Economy Templates (V4)
+ * Tutorial / How-To Template - Creator Economy Templates (V4)
  *
  * A reusable, theme-aware tutorial video template.
  * Renders step-by-step instructional content with progress indicators.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "numbered-steps"  — Vertical numbered list with StepIndicator + ProgressBar (default)
- *   "card-sequence"   — Horizontal scrolling step cards with GlassCard styling
- *   "split-demo"      — Step text on left, visual placeholder on right using SplitScreen
+ *   "numbered-steps"  - Vertical numbered list with StepIndicator + ProgressBar (default)
+ *   "card-sequence"   - Horizontal scrolling step cards with GlassCard styling
+ *   "split-demo"      - Step text on left, visual placeholder on right using SplitScreen
  *
  * DATA CONTRACT (TutorialSpec):
  *   {

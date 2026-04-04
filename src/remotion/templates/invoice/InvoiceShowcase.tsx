@@ -1,13 +1,13 @@
 /**
- * Invoice Showcase — Pre-configured compositions for each theme × layout combo.
+ * Invoice Showcase - Pre-configured compositions for each theme × layout combo.
  *
  * REGISTERED COMPOSITIONS:
- *   InvoiceDarkProfessional    — Dark theme, professional layout
- *   InvoiceCleanProfessional   — Clean theme, professional layout
- *   InvoiceBoldUrgent          — Bold theme, urgent layout
- *   InvoiceWarmFriendly        — Warm theme, friendly layout
- *   InvoiceMinimalProfessional — Minimal theme, professional layout
- *   InvoiceNeonUrgent          — Neon theme, urgent layout
+ *   InvoiceDarkProfessional    - Dark theme, professional layout
+ *   InvoiceCleanProfessional   - Clean theme, professional layout
+ *   InvoiceBoldUrgent          - Bold theme, urgent layout
+ *   InvoiceWarmFriendly        - Warm theme, friendly layout
+ *   InvoiceMinimalProfessional - Minimal theme, professional layout
+ *   InvoiceNeonUrgent          - Neon theme, urgent layout
  */
 
 import React from "react";
@@ -33,8 +33,8 @@ const SAMPLE_DUE_SPEC: InvoiceSpec = {
   due_date: "March 15, 2026",
   status: "due",
   items: [
-    { description: "UI/UX Design — Homepage & Product Pages", amount: 2000 },
-    { description: "Frontend Development — React + Next.js", amount: 1800 },
+    { description: "UI/UX Design - Homepage & Product Pages", amount: 2000 },
+    { description: "Frontend Development - React + Next.js", amount: 1800 },
     { description: "Responsive QA & Browser Testing", amount: 450 },
     { description: "Deployment & Launch Support", amount: 250 },
   ],
@@ -53,7 +53,7 @@ const SAMPLE_OVERDUE_SPEC: InvoiceSpec = {
   due_date: "February 20, 2026",
   status: "overdue",
   items: [
-    { description: "AI Workflow Audit — 2 Day On-Site", amount: 3000 },
+    { description: "AI Workflow Audit - 2 Day On-Site", amount: 3000 },
     { description: "Custom Agent Development (3 agents)", amount: 2800 },
     { description: "Integration & API Setup", amount: 900 },
     { description: "Team Training Workshop (4 hours)", amount: 500 },

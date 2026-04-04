@@ -99,7 +99,7 @@ export const ReleaseNotes: React.FC<{ spec: ReleaseNotesSpec }> = ({ spec }) => 
   return (
     <TimelineShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.product_name} ${spec.version} — Changelog`}
+      title={`${spec.product_name} ${spec.version} - Changelog`}
       subtitle={spec.release_date}
       badge="Release Notes"
       direction="vertical"

@@ -1,5 +1,5 @@
 /**
- * FAQ Showcase — 6 pre-configured compositions with sample data
+ * FAQ Showcase - 6 pre-configured compositions with sample data
  */
 
 import React from "react";
@@ -17,7 +17,7 @@ const SAMPLE_SPEC: FAQSpec = {
     },
     {
       question: "Do you offer revisions?",
-      answer: "Yes — all packages include at least one round of revisions. Pro and Enterprise plans include unlimited revisions.",
+      answer: "Yes - all packages include at least one round of revisions. Pro and Enterprise plans include unlimited revisions.",
       icon: "refresh",
     },
     {
@@ -32,20 +32,20 @@ const SAMPLE_SPEC: FAQSpec = {
     },
   ],
   ctaText: "Ready to get started? Let's talk →",
-  freelancerName: "Linda Mohamed — Full-Stack Developer",
+  freelancerName: "Linda Mohamed - Full-Stack Developer",
 };
 
-// Dark + Accordion — classic FAQ stack
+// Dark + Accordion - classic FAQ stack
 export const FAQDarkAccordion: React.FC = () => (
   <FAQ spec={SAMPLE_SPEC} theme={THEME_DARK} layout="accordion" />
 );
 
-// Clean + Cards — professional grid
+// Clean + Cards - professional grid
 export const FAQCleanCards: React.FC = () => (
   <FAQ spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="cards" />
 );
 
-// Bold + Interview — high-impact split
+// Bold + Interview - high-impact split
 export const FAQBoldInterview: React.FC = () => (
   <FAQ spec={{
     ...SAMPLE_SPEC,
@@ -54,12 +54,12 @@ export const FAQBoldInterview: React.FC = () => (
   }} theme={THEME_BOLD} layout="interview" />
 );
 
-// Warm + Accordion — friendly FAQ
+// Warm + Accordion - friendly FAQ
 export const FAQWarmAccordion: React.FC = () => (
   <FAQ spec={{
     ...SAMPLE_SPEC,
     headline: "Let's Clear Things Up",
-    subheadline: "No question is too small — here are the ones I hear most",
+    subheadline: "No question is too small - here are the ones I hear most",
     items: [
       { question: "Can I see examples of your work?", answer: "Absolutely! Check out my portfolio for recent projects, or I can send you case studies relevant to your industry.", icon: "palette" },
       { question: "What if I'm not happy with the result?", answer: "Your satisfaction is my priority. We'll iterate until you love it, and I offer a money-back guarantee for the first milestone.", icon: "handshake" },
@@ -69,7 +69,7 @@ export const FAQWarmAccordion: React.FC = () => (
   }} theme={THEME_WARM} layout="accordion" />
 );
 
-// Minimal + Cards — understated elegance
+// Minimal + Cards - understated elegance
 export const FAQMinimalCards: React.FC = () => (
   <FAQ spec={{
     ...SAMPLE_SPEC,
@@ -79,7 +79,7 @@ export const FAQMinimalCards: React.FC = () => (
   }} theme={THEME_MINIMAL} layout="cards" />
 );
 
-// Neon + Interview — tech-forward Q&A
+// Neon + Interview - tech-forward Q&A
 export const FAQNeonInterview: React.FC = () => (
   <FAQ spec={{
     ...SAMPLE_SPEC,
@@ -88,7 +88,7 @@ export const FAQNeonInterview: React.FC = () => (
     items: [
       { question: "What's your CI/CD setup?", answer: "GitHub Actions for CI, AWS CDK for infrastructure. Every PR gets automated tests, linting, and preview deployments.", icon: "rocket" },
       { question: "How do you handle security?", answer: "OWASP Top 10 compliance, automated dependency scanning, and regular penetration testing for production apps.", icon: "lock" },
-      { question: "Can you work with our existing codebase?", answer: "Yes — I'll start with a code audit to understand the architecture, then propose improvements alongside new features.", icon: "box" },
+      { question: "Can you work with our existing codebase?", answer: "Yes - I'll start with a code audit to understand the architecture, then propose improvements alongside new features.", icon: "box" },
       { question: "What about scalability?", answer: "I design for scale from day one. Serverless architectures, auto-scaling groups, and load testing are standard practice.", icon: "trending-up" },
     ],
   }} theme={THEME_NEON} layout="interview" />

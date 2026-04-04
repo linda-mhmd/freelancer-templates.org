@@ -39,7 +39,7 @@ export const QBRDashboard: React.FC<{ spec: QBRDashboardSpec }> = ({ spec }) => 
     return (
       <ListDetailShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.business_name} — ${spec.quarter_label}`}
+        title={`${spec.business_name} - ${spec.quarter_label}`}
         subtitle="Quarterly Business Review"
         badge="QBR"
         itemCount={spec.key_metrics.length + spec.top_clients.length}
@@ -69,7 +69,7 @@ export const QBRDashboard: React.FC<{ spec: QBRDashboardSpec }> = ({ spec }) => 
     return (
       <ComparisonShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.business_name} — ${spec.quarter_label}`}
+        title={`${spec.business_name} - ${spec.quarter_label}`}
         subtitle="Quarterly Business Review"
         leftLabel="Achievements"
         rightLabel="Next Quarter Goals"
@@ -92,7 +92,7 @@ export const QBRDashboard: React.FC<{ spec: QBRDashboardSpec }> = ({ spec }) => 
   return (
     <HeroStatShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.business_name} — ${spec.quarter_label}`}
+      title={`${spec.business_name} - ${spec.quarter_label}`}
       subtitle="Quarterly Business Review"
       badge="QBR"
       stats={[

@@ -1,13 +1,13 @@
 /**
- * Listing / Real Estate Template — Creator Economy Templates (V6)
+ * Listing / Real Estate Template - Creator Economy Templates (V6)
  *
  * A reusable, theme-aware listing video template.
  * Renders property showcases, feature grids, and comparison layouts.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "showcase"      — Hero property title with CountUp price badge and feature icons (default)
- *   "feature-grid"  — 2×2 GlassCard grid of property features
- *   "comparison"    — Side-by-side listing comparison cards
+ *   "showcase"      - Hero property title with CountUp price badge and feature icons (default)
+ *   "feature-grid"  - 2×2 GlassCard grid of property features
+ *   "comparison"    - Side-by-side listing comparison cards
  */
 
 import React from "react";
@@ -225,7 +225,7 @@ const ComparisonLayout: React.FC<{
 }> = ({ spec, theme, frame, fps, bgStyle }) => {
   const titleSpring = springEntrance(frame, fps, TIMING.titleStart, SPRING.default);
   const rows = spec.features.slice(0, 6).map((f) => ({
-    label: f.label, left: "+", right: "—",
+    label: f.label, left: "+", right: "-",
   }));
 
   return (

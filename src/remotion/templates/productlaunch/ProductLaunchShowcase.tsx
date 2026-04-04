@@ -1,16 +1,16 @@
 /**
- * Product Launch Showcase — Pre-configured compositions for each layout × theme combo.
+ * Product Launch Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, bold)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   ProductLaunchDarkHeroReveal     — Dark theme, hero-reveal layout
- *   ProductLaunchBoldHeroReveal     — Bold theme, hero-reveal layout
- *   ProductLaunchDarkFeatureGrid    — Dark theme, feature-grid layout
- *   ProductLaunchBoldFeatureGrid    — Bold theme, feature-grid layout
- *   ProductLaunchDarkCountdown      — Dark theme, countdown layout
- *   ProductLaunchBoldCountdown      — Bold theme, countdown layout
+ *   ProductLaunchDarkHeroReveal     - Dark theme, hero-reveal layout
+ *   ProductLaunchBoldHeroReveal     - Bold theme, hero-reveal layout
+ *   ProductLaunchDarkFeatureGrid    - Dark theme, feature-grid layout
+ *   ProductLaunchBoldFeatureGrid    - Bold theme, feature-grid layout
+ *   ProductLaunchDarkCountdown      - Dark theme, countdown layout
+ *   ProductLaunchBoldCountdown      - Bold theme, countdown layout
  */
 
 import React from "react";

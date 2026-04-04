@@ -1,16 +1,16 @@
 /**
- * Affiliate Review Showcase — Pre-configured compositions for each layout × theme combo.
+ * Affiliate Review Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, bold)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   AffiliateReviewDarkScorecard    — Dark theme, scorecard layout
- *   AffiliateReviewBoldScorecard    — Bold theme, scorecard layout
- *   AffiliateReviewDarkComparison   — Dark theme, comparison layout
- *   AffiliateReviewBoldComparison   — Bold theme, comparison layout
- *   AffiliateReviewDarkVerdict      — Dark theme, verdict layout
- *   AffiliateReviewBoldVerdict      — Bold theme, verdict layout
+ *   AffiliateReviewDarkScorecard    - Dark theme, scorecard layout
+ *   AffiliateReviewBoldScorecard    - Bold theme, scorecard layout
+ *   AffiliateReviewDarkComparison   - Dark theme, comparison layout
+ *   AffiliateReviewBoldComparison   - Bold theme, comparison layout
+ *   AffiliateReviewDarkVerdict      - Dark theme, verdict layout
+ *   AffiliateReviewBoldVerdict      - Bold theme, verdict layout
  */
 
 import React from "react";
@@ -38,7 +38,7 @@ const SAMPLE_SPEC_HEADPHONES: AffiliateReviewSpec = {
 
 // ── Sample Data: Project Management Tool Review ─────────────────
 const SAMPLE_SPEC_SOFTWARE: AffiliateReviewSpec = {
-  product_name: "TaskFlow Pro — Project Management",
+  product_name: "TaskFlow Pro - Project Management",
   rating: 5,
   pros: [
     "Intuitive drag-and-drop interface",

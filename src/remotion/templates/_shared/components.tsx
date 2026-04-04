@@ -2,15 +2,15 @@
  * Shared UI Components for Freelancer Video Templates
  * 
  * These are small, reusable building blocks used across multiple templates.
- * Each component is theme-aware — pass a Theme object for consistent styling.
+ * Each component is theme-aware - pass a Theme object for consistent styling.
  * 
  * Components:
- *   CountUp        — Animated number counter (0 → target)
- *   GradientBadge  — Pill-shaped badge with gradient background
- *   GlassCard      — Card with glassmorphism effect
- *   StarRating     — Animated star rating display (1–5)
- *   QuoteMarks     — Large decorative quotation marks
- *   BackgroundGrid — Subtle SVG grid overlay
+ *   CountUp        - Animated number counter (0 → target)
+ *   GradientBadge  - Pill-shaped badge with gradient background
+ *   GlassCard      - Card with glassmorphism effect
+ *   StarRating     - Animated star rating display (1–5)
+ *   QuoteMarks     - Large decorative quotation marks
+ *   BackgroundGrid - Subtle SVG grid overlay
  */
 
 import React from "react";
@@ -140,9 +140,9 @@ export const QuoteMarks: React.FC<{
 // Usage: <BackgroundGrid opacity={0.04} />
 // 
 // VARIANT OPTIONS:
-//   pattern="grid"  — square grid (default)
-//   pattern="dots"  — dot matrix
-//   pattern="hex"   — hexagonal pattern
+//   pattern="grid"  - square grid (default)
+//   pattern="dots"  - dot matrix
+//   pattern="hex"   - hexagonal pattern
 export const BackgroundGrid: React.FC<{
   opacity?: number;
   pattern?: "grid" | "dots" | "hex";

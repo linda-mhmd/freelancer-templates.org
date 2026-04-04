@@ -1,13 +1,13 @@
 /**
- * Pricing Template — Service Pricing Tables & Comparisons
+ * Pricing Template - Service Pricing Tables & Comparisons
  *
  * Freelancers need a visual way to present their pricing tiers.
  * This template turns pricing data into animated comparison videos.
  *
  * LAYOUTS:
- *   "tiers"     — 2–3 column pricing cards with feature lists
- *   "comparison" — Feature comparison table with checkmarks
- *   "spotlight"  — Single featured plan with value props
+ *   "tiers"     - 2–3 column pricing cards with feature lists
+ *   "comparison" - Feature comparison table with checkmarks
+ *   "spotlight"  - Single featured plan with value props
  *
  * USAGE:
  *   <Pricing spec={spec} theme={THEME_DARK} layout="tiers" />

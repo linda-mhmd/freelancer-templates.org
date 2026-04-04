@@ -1,16 +1,16 @@
 /**
- * Newsletter Promo Showcase — Pre-configured compositions for each layout × theme combo.
+ * Newsletter Promo Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, clean)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   NewsletterPromoDarkSubscribeCta     — Dark theme, subscribe-cta layout
- *   NewsletterPromoCleanSubscribeCta    — Clean theme, subscribe-cta layout
- *   NewsletterPromoDarkIssuePreview     — Dark theme, issue-preview layout
- *   NewsletterPromoCleanIssuePreview    — Clean theme, issue-preview layout
- *   NewsletterPromoDarkTestimonialBlend — Dark theme, testimonial-blend layout
- *   NewsletterPromoCleanTestimonialBlend— Clean theme, testimonial-blend layout
+ *   NewsletterPromoDarkSubscribeCta     - Dark theme, subscribe-cta layout
+ *   NewsletterPromoCleanSubscribeCta    - Clean theme, subscribe-cta layout
+ *   NewsletterPromoDarkIssuePreview     - Dark theme, issue-preview layout
+ *   NewsletterPromoCleanIssuePreview    - Clean theme, issue-preview layout
+ *   NewsletterPromoDarkTestimonialBlend - Dark theme, testimonial-blend layout
+ *   NewsletterPromoCleanTestimonialBlend- Clean theme, testimonial-blend layout
  */
 
 import React from "react";
@@ -21,7 +21,7 @@ import { THEME_DARK, THEME_CLEAN } from "../_shared/themes";
 // ── Sample Data: Tech Newsletter ────────────────────────────────
 const SAMPLE_SPEC_TECH: NewsletterPromoSpec = {
   newsletter_name: "The Weekly Dispatch",
-  tagline: "Curated insights for modern builders — AI, cloud, and beyond",
+  tagline: "Curated insights for modern builders - AI, cloud, and beyond",
   highlights: [
     { title: "AI in Production", description: "How top teams ship AI features 3x faster with structured prompts" },
     { title: "Remote Culture Playbook", description: "Building async-first teams that outperform co-located ones" },
@@ -38,7 +38,7 @@ const SAMPLE_SPEC_CREATOR: NewsletterPromoSpec = {
   tagline: "Weekly strategies for growing your audience and revenue",
   highlights: [
     { title: "Linda Mohamed, YouTuber", description: "This newsletter helped me double my sponsorship revenue in 6 months" },
-    { title: "Linda Mohamed, Podcaster", description: "The monetization frameworks are pure gold — actionable every single week" },
+    { title: "Linda Mohamed, Podcaster", description: "The monetization frameworks are pure gold - actionable every single week" },
     { title: "Mrs Lee G, Writer", description: "Finally a newsletter that understands the creator business model" },
   ],
   subscriber_count: 48000,

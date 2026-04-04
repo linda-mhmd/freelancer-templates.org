@@ -1,10 +1,10 @@
 /**
- * Onboarding Template — Personalized welcome videos for new clients.
+ * Onboarding Template - Personalized welcome videos for new clients.
  *
  * LAYOUTS:
- *   "friendly"      — Warm, soft gradients, welcoming icons, personal feel.
- *   "professional"   — Clean grid, timeline visualization, corporate palette.
- *   "creative"       — Colorful, animated icons, playful transitions.
+ *   "friendly"      - Warm, soft gradients, welcoming icons, personal feel.
+ *   "professional"   - Clean grid, timeline visualization, corporate palette.
+ *   "creative"       - Colorful, animated icons, playful transitions.
  *
  * BACKGROUND PATTERNS:
  *   "grid" | "dots" | "hex" | "none"
@@ -161,7 +161,7 @@ const ToolChip: React.FC<{
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 1: Friendly — Warm, welcoming, personal feel
+// LAYOUT 1: Friendly - Warm, welcoming, personal feel
 // Centered greeting, soft card entrances, emoji-rich.
 // Best with: THEME_WARM, THEME_CLEAN, THEME_DARK
 // ═══════════════════════════════════════════════════════════════
@@ -186,7 +186,7 @@ const FriendlyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
       justifyContent: "center",
       gap: 22,
     }}>
-      {/* Welcome greeting — centered, warm */}
+      {/* Welcome greeting - centered, warm */}
       <div style={{
         opacity: greetOp,
         transform: `translateY(${slideIn(greetS, "up", 25)}px)`,
@@ -228,7 +228,7 @@ const FriendlyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Next steps — horizontal cards */}
+      {/* Next steps - horizontal cards */}
       <Sequence from={100} layout="none">
         <div>
           <div style={{
@@ -333,7 +333,7 @@ const FriendlyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 2: Professional — Clean grid, timeline, corporate feel
+// LAYOUT 2: Professional - Clean grid, timeline, corporate feel
 // Left-aligned, structured, business-like. Numbered steps in a column.
 // Best with: THEME_CLEAN, THEME_MINIMAL, THEME_DARK
 // ═══════════════════════════════════════════════════════════════
@@ -358,7 +358,7 @@ const ProfessionalLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) 
       justifyContent: "center",
       gap: 22,
     }}>
-      {/* Header — left-aligned, professional */}
+      {/* Header - left-aligned, professional */}
       <div style={{
         opacity: headerOp,
         transform: `translateX(${slideIn(headerS, "left", 25)}px)`,
@@ -390,7 +390,7 @@ const ProfessionalLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) 
             color: theme.textSecondary,
             marginTop: 4,
           }}>
-            {spec.project_name} — by {spec.freelancer_name}
+            {spec.project_name} - by {spec.freelancer_name}
           </div>
         </div>
         <div style={{
@@ -416,7 +416,7 @@ const ProfessionalLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) 
         </div>
       </Sequence>
 
-      {/* Next steps — horizontal row */}
+      {/* Next steps - horizontal row */}
       <Sequence from={120} layout="none">
         <div>
           <div style={{
@@ -493,7 +493,7 @@ const ProfessionalLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) 
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 3: Creative — Colorful, playful, animated feel
+// LAYOUT 3: Creative - Colorful, playful, animated feel
 // Big emoji, bouncy cards, fun energy. Great for creative freelancers.
 // Best with: THEME_BOLD, THEME_NEON, THEME_WARM
 // ═══════════════════════════════════════════════════════════════
@@ -518,7 +518,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
       justifyContent: "center",
       gap: 20,
     }}>
-      {/* Big greeting — playful */}
+      {/* Big greeting - playful */}
       <div style={{
         opacity: greetOp,
         transform: `scale(${0.85 + 0.15 * greetS})`,
@@ -558,7 +558,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Steps — staggered bouncy cards */}
+      {/* Steps - staggered bouncy cards */}
       <Sequence from={90} layout="none">
         <div style={{ display: "flex", gap: 14 }}>
           {spec.next_steps.slice(0, 3).map((step, i) => {

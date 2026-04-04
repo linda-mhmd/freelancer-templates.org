@@ -1,5 +1,5 @@
 /**
- * RecipeStep Showcase Compositions — 6 variants (3 layouts × 2 themes)
+ * RecipeStep Showcase Compositions - 6 variants (3 layouts × 2 themes)
  */
 import React from "react";
 import { RecipeStep } from "./RecipeStep";

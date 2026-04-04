@@ -1,12 +1,12 @@
 /**
- * Sprint Dashboard Showcase — 6 compositions (3 layouts × 2 themes)
+ * Sprint Dashboard Showcase - 6 compositions (3 layouts × 2 themes)
  */
 
 import React from "react";
 import { SprintDashboard, SprintDashboardSpec } from "./SprintDashboard";
 
 const BASE_SPEC: SprintDashboardSpec = {
-  sprint_name: "Sprint 14 — Auth & Dashboard",
+  sprint_name: "Sprint 14 - Auth & Dashboard",
   sprint_number: 14,
   date_range: "Feb 10 – Feb 24, 2026",
   tasks_completed: 18,

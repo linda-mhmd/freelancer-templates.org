@@ -1,10 +1,10 @@
 /**
- * Portfolio Template — Visual showcase of freelancer work and projects.
+ * Portfolio Template - Visual showcase of freelancer work and projects.
  *
  * LAYOUTS:
- *   "gallery"     — Masonry-style grid, image-heavy, smooth transitions.
- *   "caseStudy"   — Split layout, detailed descriptions, before/after feel.
- *   "reel"        — Fast cuts, full-bleed cards, kinetic text overlays.
+ *   "gallery"     - Masonry-style grid, image-heavy, smooth transitions.
+ *   "caseStudy"   - Split layout, detailed descriptions, before/after feel.
+ *   "reel"        - Fast cuts, full-bleed cards, kinetic text overlays.
  *
  * BACKGROUND PATTERNS:
  *   "grid" | "dots" | "hex" | "none"
@@ -151,7 +151,7 @@ const ProjectNumber: React.FC<{
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 1: Gallery — Masonry-style grid, image-heavy feel
+// LAYOUT 1: Gallery - Masonry-style grid, image-heavy feel
 // Projects shown as cards in a 2×2 grid with staggered entrances.
 // Best with: THEME_DARK, THEME_CLEAN, THEME_WARM
 // ═══════════════════════════════════════════════════════════════
@@ -210,7 +210,7 @@ const GalleryLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Project grid — 2×2 */}
+      {/* Project grid - 2×2 */}
       <Sequence from={80} layout="none">
         <div style={{
           display: "grid",
@@ -310,7 +310,7 @@ const GalleryLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 2: Case Study — Split layout, detailed project descriptions
+// LAYOUT 2: Case Study - Split layout, detailed project descriptions
 // One project at a time, left info + right details. Professional feel.
 // Best with: THEME_CLEAN, THEME_MINIMAL, THEME_BOLD
 // ═══════════════════════════════════════════════════════════════
@@ -335,7 +335,7 @@ const CaseStudyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
       justifyContent: "center",
       gap: 22,
     }}>
-      {/* Hero — left-aligned, professional */}
+      {/* Hero - left-aligned, professional */}
       <div style={{
         opacity: heroOp,
         transform: `translateX(${slideIn(heroS, "left", 25)}px)`,
@@ -369,7 +369,7 @@ const CaseStudyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
         }} />
       </div>
 
-      {/* Featured projects — stacked case study cards */}
+      {/* Featured projects - stacked case study cards */}
       <Sequence from={70} layout="none">
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           {spec.projects.slice(0, 3).map((proj, i) => {
@@ -477,7 +477,7 @@ const CaseStudyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 3: Reel — Fast cuts, kinetic text, dynamic feel
+// LAYOUT 3: Reel - Fast cuts, kinetic text, dynamic feel
 // Projects fly in one at a time with bold typography. High energy.
 // Best with: THEME_BOLD, THEME_NEON, THEME_DARK
 // ═══════════════════════════════════════════════════════════════
@@ -502,7 +502,7 @@ const ReelLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
       justifyContent: "center",
       gap: 18,
     }}>
-      {/* Hero — big name, kinetic feel */}
+      {/* Hero - big name, kinetic feel */}
       <div style={{
         opacity: heroOp,
         transform: `translateX(${slideIn(heroS, "left", 40)}px)`,
@@ -540,7 +540,7 @@ const ReelLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Projects — alternating left/right slide-ins */}
+      {/* Projects - alternating left/right slide-ins */}
       <Sequence from={60} layout="none">
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {spec.projects.slice(0, 4).map((proj, i) => {
@@ -583,7 +583,7 @@ const ReelLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
                       fontWeight: 400,
                       marginLeft: 10,
                     }}>
-                      — {proj.client}
+                      - {proj.client}
                     </span>
                   </div>
                   <div style={{

@@ -1,5 +1,5 @@
 /**
- * Collaboration Showcase Compositions — 6 variants (3 layouts × 2 themes)
+ * Collaboration Showcase Compositions - 6 variants (3 layouts × 2 themes)
  */
 import React from "react";
 import { Collaboration } from "./Collaboration";

@@ -35,7 +35,7 @@ export const DeploymentStatus: React.FC<{ spec: DeploymentStatusSpec }> = ({ spe
     return (
       <PipelineShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Deployment Pipeline`}
+        title={`${spec.project_name} - Deployment Pipeline`}
         subtitle={`${spec.total_deployments} deployments`}
         stageCount={spec.environments.length}
       >
@@ -54,7 +54,7 @@ export const DeploymentStatus: React.FC<{ spec: DeploymentStatusSpec }> = ({ spe
     return (
       <StatusBoardShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Health`}
+        title={`${spec.project_name} - Health`}
         subtitle={`${spec.total_deployments} deployments`}
         centralMetric={{ label: "Uptime", value: spec.uptime_percent, suffix: "%" }}
       >
@@ -77,7 +77,7 @@ export const DeploymentStatus: React.FC<{ spec: DeploymentStatusSpec }> = ({ spe
   return (
     <ListDetailShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.project_name} — Deployments`}
+      title={`${spec.project_name} - Deployments`}
       subtitle={`${spec.total_deployments} total deployments`}
       itemCount={spec.environments.length}
     >

@@ -1,6 +1,6 @@
 /**
- * Tutorial — "From AI Demo to Enterprise Solutions"
- * 18-minute YouTube explainer — built chapter by chapter
+ * Tutorial - "From AI Demo to Enterprise Solutions"
+ * 18-minute YouTube explainer - built chapter by chapter
  *
  * Voice: Linda Mohamed custom clone (ElevenLabs ttn4VvmCIm5phDs4dj5o)
  * Voiceover: voiceover-full-explainer-v1.txt
@@ -12,10 +12,10 @@
  * ...
  * ─────────────────────────────────────────────────────────────────
  *
- * Timecodes are approximate — update from ElevenLabs subtitle data
+ * Timecodes are approximate - update from ElevenLabs subtitle data
  * once voiceover is regenerated (no colon in "re:Invent" → "AWS re Invent").
  *
- * Clips live in public/clips/ — symlink or copy from netapp-video-overlay/public/clips
+ * Clips live in public/clips/ - symlink or copy from netapp-video-overlay/public/clips
  */
 
 import React from "react";
@@ -47,7 +47,7 @@ export const TOTAL_FRAMES = 1138;
 
 // ── Scene offsets ─────────────────────────────────────────────────
 const S_HOOK = 0;
-// const S_ORIGIN = 1138; // next scene — uncomment when building
+// const S_ORIGIN = 1138; // next scene - uncomment when building
 
 // ── Helpers ───────────────────────────────────────────────────────
 
@@ -59,7 +59,7 @@ function fi(frame: number, at: number, dur = 12): number {
   });
 }
 
-/** Fade in then hold — text that stays on screen */
+/** Fade in then hold - text that stays on screen */
 function fih(frame: number, at: number, dur = 12): number {
   return interpolate(frame, [at, at + dur], [0, 1], {
     extrapolateLeft: "clamp",
@@ -95,7 +95,7 @@ const VideoBg: React.FC<{ src: string; startFrom?: number; opacity?: number }> =
 //   "I opened the folder. / I looked at the files."
 //   "And then I did what every engineer does when they should be editing."
 //   "I started overengineering." ← IMPACT MOMENT
-//   "Six months later — I had four enterprise customers. An open-source community project.
+//   "Six months later - I had four enterprise customers. An open-source community project.
 //    And an AI pipeline that runs on AWS."
 //   "This is that story."
 //
@@ -106,7 +106,7 @@ const SceneHook: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // ── Video background — phase-based clips ──
+  // ── Video background - phase-based clips ──
   // Las Vegas / re:Invent clips first, then conference clips
   const clips: Array<{ src: string; from: number; dur: number; startFrom?: number }> = [
     { src: "clips/reinvent_clip_1.mov", from: 0,   dur: 192 },
@@ -144,7 +144,7 @@ const SceneHook: React.FC = () => {
         </Sequence>
       ))}
 
-      {/* ── Gradient overlay — dark vignette, always on ── */}
+      {/* ── Gradient overlay - dark vignette, always on ── */}
       <AbsoluteFill style={{
         background: "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.20) 40%, rgba(0,0,0,0.70) 100%)",
         pointerEvents: "none",
@@ -159,7 +159,7 @@ const SceneHook: React.FC = () => {
       {/* ── Content layer ── */}
       <AbsoluteFill style={{ padding: "80px 100px" }}>
 
-        {/* Location tag — "Las Vegas. AWS re:Invent 2024." */}
+        {/* Location tag - "Las Vegas. AWS re:Invent 2024." */}
         <div style={{
           position: "absolute",
           top: 80,
@@ -183,7 +183,7 @@ const SceneHook: React.FC = () => {
           </span>
         </div>
 
-        {/* ── Main narrative stack — lines appear sequentially ── */}
+        {/* ── Main narrative stack - lines appear sequentially ── */}
         <div style={{
           position: "absolute",
           bottom: 200,
@@ -279,12 +279,12 @@ const SceneHook: React.FC = () => {
 
         </div>
 
-        {/* ── "I had told myself..." — mid-scene text ── */}
+        {/* ── "I had told myself..." - mid-scene text ── */}
         <Sequence from={390} durationInFrames={260} layout="none">
           <HookMidText frame={frame} />
         </Sequence>
 
-        {/* ── "I started overengineering." — IMPACT ── */}
+        {/* ── "I started overengineering." - IMPACT ── */}
         {frame >= impactAt && frame < 990 && (
           <AbsoluteFill style={{
             display: "flex",
@@ -321,7 +321,7 @@ const SceneHook: React.FC = () => {
           </AbsoluteFill>
         )}
 
-        {/* ── "Six months later..." — outcome stats ── */}
+        {/* ── "Six months later..." - outcome stats ── */}
         <Sequence from={990} durationInFrames={90} layout="none">
           <HookOutcome frame={frame - 990} />
         </Sequence>
@@ -444,7 +444,7 @@ const HookOutcome: React.FC<{ frame: number }> = ({ frame }) => {
         textAlign: "center",
         marginBottom: 16,
       }}>
-        Six months later —
+        Six months later -
       </div>
       <div style={{ display: "flex", gap: 48, alignItems: "flex-start" }}>
         {outcomes.map((o, i) => (
@@ -491,7 +491,7 @@ const HookOutcome: React.FC<{ frame: number }> = ({ frame }) => {
 export const AIDemoToEnterpriseTutorial: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: BG }}>
-      {/* Voiceover — uncomment when audio is ready */}
+      {/* Voiceover - uncomment when audio is ready */}
       {/* <Audio src={staticFile("audio/ai-demo-enterprise-v1.mp3")} volume={1.0} /> */}
 
       {/* ── Scene 1: HOOK (f0–1138) ── */}
@@ -499,7 +499,7 @@ export const AIDemoToEnterpriseTutorial: React.FC = () => {
         <SceneHook />
       </Sequence>
 
-      {/* ── Scene 2: ORIGIN — coming next ── */}
+      {/* ── Scene 2: ORIGIN - coming next ── */}
       {/* <Sequence from={1138} durationInFrames={...} layout="none">
         <SceneOrigin />
       </Sequence> */}

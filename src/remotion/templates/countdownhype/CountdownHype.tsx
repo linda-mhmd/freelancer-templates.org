@@ -1,13 +1,13 @@
 /**
- * Countdown/Hype Template — Creator Economy Templates (V4)
+ * Countdown/Hype Template - Creator Economy Templates (V4)
  *
  * A reusable, theme-aware countdown and hype video template.
  * Renders launch countdowns, event teasers, and limited-time offers.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "timer"    — Large CountdownTimer digits with pulsing glow effect (default)
- *   "teaser"   — Event title with spring reveal animation and date
- *   "urgency"  — Limited-time offer with ProgressBar showing remaining availability
+ *   "timer"    - Large CountdownTimer digits with pulsing glow effect (default)
+ *   "teaser"   - Event title with spring reveal animation and date
+ *   "urgency"  - Limited-time offer with ProgressBar showing remaining availability
  *
  * DATA CONTRACT (CountdownHypeSpec):
  *   {
@@ -86,7 +86,7 @@ const TIMING = {
 const QUICKSTART_DEFAULTS: Omit<CountdownHypeSpec, "event_title" | "theme" | "brandKit" | "layout"> = {
   countdown_value: 30,
   tagline: "The wait is almost over",
-  urgency_message: "Limited spots remaining — act now",
+  urgency_message: "Limited spots remaining - act now",
   availability_percent: 15,
 };
 
@@ -130,7 +130,7 @@ const TimerLayout: React.FC<{
   const taglineOpacity = fadeIn(frame, TIMING.taglineStart);
   const countdownSpring = springEntrance(frame, fps, TIMING.countdownStart, SPRING.default);
 
-  // Pulsing glow effect — oscillates between 0.4 and 1.0 opacity
+  // Pulsing glow effect - oscillates between 0.4 and 1.0 opacity
   const glowActive = frame >= TIMING.glowPulseStart;
   const glowCycle = glowActive
     ? interpolate(
@@ -276,7 +276,7 @@ const TeaserLayout: React.FC<{
           marginBottom: 32,
         }} />
 
-        {/* Event title — large spring reveal */}
+        {/* Event title - large spring reveal */}
         <div style={{
           fontSize: TYPE.hero,
           fontWeight: theme.headingWeight,
@@ -473,7 +473,7 @@ const UrgencyLayout: React.FC<{
             opacity: fadeIn(frame, TIMING.badgeStart),
             marginTop: 8,
           }}>
-            <GradientBadge text="Act Now — Limited Time" theme={theme} />
+            <GradientBadge text="Act Now - Limited Time" theme={theme} />
           </div>
         </div>
       </div>

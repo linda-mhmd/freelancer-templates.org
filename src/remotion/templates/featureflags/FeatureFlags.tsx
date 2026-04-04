@@ -36,7 +36,7 @@ export const FeatureFlags: React.FC<{ spec: FeatureFlagsSpec }> = ({ spec }) => 
     return (
       <ListDetailShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Experiment Results`}
+        title={`${spec.project_name} - Experiment Results`}
         subtitle={`${spec.total_flags} flags · ${spec.active_experiments} active`}
         badge="Results"
         itemCount={completed.length || spec.flags.length}
@@ -59,7 +59,7 @@ export const FeatureFlags: React.FC<{ spec: FeatureFlagsSpec }> = ({ spec }) => 
     return (
       <ListDetailShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Rollout Tracker`}
+        title={`${spec.project_name} - Rollout Tracker`}
         subtitle={`${spec.total_flags} flags · ${spec.active_experiments} active`}
         itemCount={spec.flags.length}
       >
@@ -80,7 +80,7 @@ export const FeatureFlags: React.FC<{ spec: FeatureFlagsSpec }> = ({ spec }) => 
   return (
     <CardGridShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.project_name} — Feature Flags`}
+      title={`${spec.project_name} - Feature Flags`}
       subtitle={`${spec.total_flags} flags · ${spec.active_experiments} active experiments`}
       columns={2}
     >

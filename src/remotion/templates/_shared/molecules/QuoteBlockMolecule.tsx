@@ -45,7 +45,7 @@ export const QuoteBlockMolecule: React.FC<QuoteBlockMoleculeProps> = ({
         <>
           <DividerAtom theme={theme} frame={frame} fps={fps} delay={delay} />
           <div style={{ marginTop: 8 }}>
-            <LabelAtom theme={theme} frame={frame} fps={fps} text={`— ${attribution}`} fontSize={12} color="muted" />
+            <LabelAtom theme={theme} frame={frame} fps={fps} text={`- ${attribution}`} fontSize={12} color="muted" />
           </div>
         </>
       )}

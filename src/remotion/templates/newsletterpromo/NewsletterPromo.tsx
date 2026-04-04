@@ -1,13 +1,13 @@
 /**
- * Newsletter Promo Template — Creator Economy Templates (V5)
+ * Newsletter Promo Template - Creator Economy Templates (V5)
  *
  * A reusable, theme-aware newsletter promotion video template.
  * Renders subscribe CTAs, content previews, and testimonial blends.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "subscribe-cta"      — Hero title + CountUp subscriber count + GradientBadge CTA (default)
- *   "issue-preview"      — Content highlight cards from recent issues, staggered ≥20 frames
- *   "testimonial-blend"  — Subscriber quotes with newsletter stats
+ *   "subscribe-cta"      - Hero title + CountUp subscriber count + GradientBadge CTA (default)
+ *   "issue-preview"      - Content highlight cards from recent issues, staggered ≥20 frames
+ *   "testimonial-blend"  - Subscriber quotes with newsletter stats
  *
  * DATA CONTRACT (NewsletterPromoSpec):
  *   {
@@ -455,7 +455,7 @@ const TestimonialBlendLayout: React.FC<{
                       fontWeight: 600,
                       color: theme.accent,
                     }}>
-                      — {quote.title}
+                      - {quote.title}
                     </div>
                   </div>
                 </div>

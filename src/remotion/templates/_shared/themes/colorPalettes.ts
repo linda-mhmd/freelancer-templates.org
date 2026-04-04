@@ -1,8 +1,8 @@
 /**
- * Color Palettes — Harmonious 5-color sets for theme generation.
+ * Color Palettes - Harmonious 5-color sets for theme generation.
  *
  * Each palette provides primary, secondary, accent, muted, and background
- * colors. Palettes are preset-agnostic — the theme generator combines
+ * colors. Palettes are preset-agnostic - the theme generator combines
  * any palette with any StylePreset to produce a full Theme.
  *
  * Background colors are in the dark range (#0a–#1a) so they work with
@@ -24,7 +24,7 @@ export interface ColorPalette {
   background: string;              // base background
 }
 
-// ── Ocean — Blues and teals ─────────────────────────────────────
+// ── Ocean - Blues and teals ─────────────────────────────────────
 const PALETTE_OCEAN: ColorPalette = {
   name: "ocean",
   primary: "#0ea5e9",
@@ -34,7 +34,7 @@ const PALETTE_OCEAN: ColorPalette = {
   background: "#0a1628",
 };
 
-// ── Sunset — Oranges and pinks ──────────────────────────────────
+// ── Sunset - Oranges and pinks ──────────────────────────────────
 const PALETTE_SUNSET: ColorPalette = {
   name: "sunset",
   primary: "#f97316",
@@ -44,7 +44,7 @@ const PALETTE_SUNSET: ColorPalette = {
   background: "#1a0f0a",
 };
 
-// ── Forest — Greens and earth tones ─────────────────────────────
+// ── Forest - Greens and earth tones ─────────────────────────────
 const PALETTE_FOREST: ColorPalette = {
   name: "forest",
   primary: "#22c55e",
@@ -54,7 +54,7 @@ const PALETTE_FOREST: ColorPalette = {
   background: "#0a1a0f",
 };
 
-// ── Arctic — Cool whites and light blues ────────────────────────
+// ── Arctic - Cool whites and light blues ────────────────────────
 const PALETTE_ARCTIC: ColorPalette = {
   name: "arctic",
   primary: "#7dd3fc",
@@ -64,7 +64,7 @@ const PALETTE_ARCTIC: ColorPalette = {
   background: "#0c1520",
 };
 
-// ── Ember — Reds and warm oranges ───────────────────────────────
+// ── Ember - Reds and warm oranges ───────────────────────────────
 const PALETTE_EMBER: ColorPalette = {
   name: "ember",
   primary: "#ef4444",
@@ -74,7 +74,7 @@ const PALETTE_EMBER: ColorPalette = {
   background: "#1a0a0a",
 };
 
-// ── Lavender — Purples and soft pinks ───────────────────────────
+// ── Lavender - Purples and soft pinks ───────────────────────────
 const PALETTE_LAVENDER: ColorPalette = {
   name: "lavender",
   primary: "#a78bfa",
@@ -84,7 +84,7 @@ const PALETTE_LAVENDER: ColorPalette = {
   background: "#120f1a",
 };
 
-// ── Slate — Grays and cool neutrals ────────────────────────────
+// ── Slate - Grays and cool neutrals ────────────────────────────
 const PALETTE_SLATE: ColorPalette = {
   name: "slate",
   primary: "#94a3b8",
@@ -94,7 +94,7 @@ const PALETTE_SLATE: ColorPalette = {
   background: "#0f1218",
 };
 
-// ── Coral — Coral pinks and warm tones ──────────────────────────
+// ── Coral - Coral pinks and warm tones ──────────────────────────
 const PALETTE_CORAL: ColorPalette = {
   name: "coral",
   primary: "#fb7185",
@@ -104,7 +104,7 @@ const PALETTE_CORAL: ColorPalette = {
   background: "#1a0e12",
 };
 
-// ── Mint — Mint greens and fresh tones ──────────────────────────
+// ── Mint - Mint greens and fresh tones ──────────────────────────
 const PALETTE_MINT: ColorPalette = {
   name: "mint",
   primary: "#34d399",
@@ -114,7 +114,7 @@ const PALETTE_MINT: ColorPalette = {
   background: "#0a1a16",
 };
 
-// ── Gold — Golds and warm yellows ───────────────────────────────
+// ── Gold - Golds and warm yellows ───────────────────────────────
 const PALETTE_GOLD: ColorPalette = {
   name: "gold",
   primary: "#eab308",

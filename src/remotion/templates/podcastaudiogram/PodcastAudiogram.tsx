@@ -1,13 +1,13 @@
 /**
- * Podcast Audiogram Template — Creator Economy Templates (V5)
+ * Podcast Audiogram Template - Creator Economy Templates (V5)
  *
  * A reusable, theme-aware podcast audiogram video template.
  * Renders waveform visualizations, quote cards, and episode promos.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "waveform"       — WaveformBars component with quote overlay text (default)
- *   "quote-card"     — Large QuoteMarks + quote text + guest attribution + episode info
- *   "episode-promo"  — Episode details with guest bio card and GradientBadge listen CTA
+ *   "waveform"       - WaveformBars component with quote overlay text (default)
+ *   "quote-card"     - Large QuoteMarks + quote text + guest attribution + episode info
+ *   "episode-promo"  - Episode details with guest bio card and GradientBadge listen CTA
  *
  * DATA CONTRACT (PodcastAudiogramSpec):
  *   {
@@ -306,7 +306,7 @@ const QuoteCardLayout: React.FC<{
             fontWeight: 700,
             color: theme.accent,
           }}>
-            — {spec.guest_name}
+            - {spec.guest_name}
           </div>
         </div>
 
@@ -436,7 +436,7 @@ const EpisodePromoLayout: React.FC<{
               fontWeight: 600,
               color: theme.accent,
             }}>
-              — {spec.guest_name}
+              - {spec.guest_name}
             </div>
           </GlassCard>
         </div>

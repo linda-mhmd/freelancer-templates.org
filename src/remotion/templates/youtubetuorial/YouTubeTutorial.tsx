@@ -1,13 +1,13 @@
 /**
- * YouTubeTutorial Template — "Linda Mohamed explains her projects"
+ * YouTubeTutorial Template - "Linda Mohamed explains her projects"
  *
  * A data-driven template for 15-minute YouTube explainer videos about
  * Linda's technical projects. Each video follows a consistent structure:
  *   Hook → Problem → Scale → Solution → Deep Dive → Demo → Use Cases → Economics → Outro
  *
  * LAYOUTS:
- *   "cinematic"  — Dark, tech-forward. For cloud/AI projects. (default)
- *   "clean"      — Light, educational. For broad audiences.
+ *   "cinematic"  - Dark, tech-forward. For cloud/AI projects. (default)
+ *   "clean"      - Light, educational. For broad audiences.
  *
  * DATA CONTRACT (TutorialSpec):
  *   {
@@ -53,9 +53,9 @@ export interface HookStat {
 }
 
 export interface ChapterContent {
-  /** Rendered inside the chapter — use ChapterSlide components below */
+  /** Rendered inside the chapter - use ChapterSlide components below */
   type: "stats" | "diagram" | "comparison" | "list" | "demo" | "blank";
-  /** Generic data payload — each type reads what it needs */
+  /** Generic data payload - each type reads what it needs */
   data?: Record<string, unknown>;
 }
 
@@ -77,7 +77,7 @@ export interface TutorialSpec {
   co_brand: { name: string; color: string };
   hook_stats: HookStat[];
   chapters: Chapter[];
-  voiceover_src?: string;  // staticFile path — omit if audio not yet generated
+  voiceover_src?: string;  // staticFile path - omit if audio not yet generated
   outro: {
     tagline: string;
     sub: string;

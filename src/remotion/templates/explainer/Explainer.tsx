@@ -1,10 +1,10 @@
 /**
- * Explainer Template — "What do you actually do?" service explainer videos.
+ * Explainer Template - "What do you actually do?" service explainer videos.
  *
  * LAYOUTS:
- *   "whiteboard"  — Educational feel. White-ish bg, step-by-step reveal, hand-drawn borders.
- *   "cinematic"   — Premium dark bg, gradient accents, parallax-style layers.
- *   "process"     — Numbered process flow, horizontal steps, clean and direct.
+ *   "whiteboard"  - Educational feel. White-ish bg, step-by-step reveal, hand-drawn borders.
+ *   "cinematic"   - Premium dark bg, gradient accents, parallax-style layers.
+ *   "process"     - Numbered process flow, horizontal steps, clean and direct.
  *
  * BACKGROUND PATTERNS:
  *   "grid" | "dots" | "hex" | "none"
@@ -139,7 +139,7 @@ const StepCircle: React.FC<{
 );
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 1: Whiteboard — Educational, step-by-step reveal
+// LAYOUT 1: Whiteboard - Educational, step-by-step reveal
 // Light feel even on dark themes. Dashed borders, numbered steps.
 // Best with: THEME_CLEAN, THEME_MINIMAL, THEME_WARM
 // ═══════════════════════════════════════════════════════════════
@@ -205,7 +205,7 @@ const WhiteboardLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) =>
         </div>
       </div>
 
-      {/* Pain points — horizontal row with dashed borders */}
+      {/* Pain points - horizontal row with dashed borders */}
       <Sequence from={80} layout="none">
         <div>
           <div style={{
@@ -258,7 +258,7 @@ const WhiteboardLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) =>
         </div>
       </Sequence>
 
-      {/* Solution steps — numbered vertical list */}
+      {/* Solution steps - numbered vertical list */}
       <Sequence from={200} layout="none">
         <div>
           <div style={{
@@ -364,7 +364,7 @@ const WhiteboardLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) =>
 };
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 2: Cinematic — Premium dark, gradient accents, layered
+// LAYOUT 2: Cinematic - Premium dark, gradient accents, layered
 // Full-width sections with dramatic reveals. Big text, bold stats.
 // Best with: THEME_DARK, THEME_BOLD, THEME_NEON
 // ═══════════════════════════════════════════════════════════════
@@ -394,7 +394,7 @@ const CinematicLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
       justifyContent: "center",
       gap: 24,
     }}>
-      {/* Hero — big service name with gradient underline */}
+      {/* Hero - big service name with gradient underline */}
       <div style={{
         opacity: heroOp,
         transform: `translateY(${slideIn(heroS, "up", 30)}px)`,
@@ -425,7 +425,7 @@ const CinematicLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
         </div>
       </div>
 
-      {/* Pain points — left-aligned with accent icons */}
+      {/* Pain points - left-aligned with accent icons */}
       <Sequence from={90} layout="none">
         <div style={{
           opacity: painOp,
@@ -474,7 +474,7 @@ const CinematicLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
         </div>
       </Sequence>
 
-      {/* Solution steps — horizontal numbered cards */}
+      {/* Solution steps - horizontal numbered cards */}
       <Sequence from={210} layout="none">
         <div>
           <div style={{
@@ -574,7 +574,7 @@ const CinematicLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
 };
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 3: Process — Numbered horizontal flow, clean and direct
+// LAYOUT 3: Process - Numbered horizontal flow, clean and direct
 // Emphasizes the step-by-step nature. Connected dots between steps.
 // Best with: THEME_CLEAN, THEME_BOLD, THEME_MINIMAL
 // ═══════════════════════════════════════════════════════════════
@@ -603,7 +603,7 @@ const ProcessLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
       justifyContent: "center",
       gap: 22,
     }}>
-      {/* Hero — left-aligned, punchy */}
+      {/* Hero - left-aligned, punchy */}
       <div style={{
         opacity: heroOp,
         transform: `translateX(${slideIn(heroS, "left", 25)}px)`,
@@ -625,7 +625,7 @@ const ProcessLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Pain points — inline pills */}
+      {/* Pain points - inline pills */}
       <Sequence from={70} layout="none">
         <div style={{
           display: "flex",
@@ -657,7 +657,7 @@ const ProcessLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </Sequence>
 
-      {/* Process steps — horizontal with connecting line */}
+      {/* Process steps - horizontal with connecting line */}
       <Sequence from={180} layout="none">
         <div>
           <div style={{

@@ -1,5 +1,5 @@
 /**
- * Pricing Showcase — 6 pre-configured compositions with sample data
+ * Pricing Showcase - 6 pre-configured compositions with sample data
  */
 
 import React from "react";
@@ -59,26 +59,26 @@ const SAMPLE_SPEC: PricingSpec = {
   freelancerName: "Linda Mohamed",
 };
 
-// Dark + Tiers — classic pricing cards
+// Dark + Tiers - classic pricing cards
 export const PricingDarkTiers: React.FC = () => (
   <Pricing spec={SAMPLE_SPEC} theme={THEME_DARK} layout="tiers" />
 );
 
-// Clean + Comparison — professional feature table
+// Clean + Comparison - professional feature table
 export const PricingCleanComparison: React.FC = () => (
   <Pricing spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="comparison" />
 );
 
-// Bold + Spotlight — featured plan hero
+// Bold + Spotlight - featured plan hero
 export const PricingBoldSpotlight: React.FC = () => (
   <Pricing spec={{
     ...SAMPLE_SPEC,
-    headline: "The Pro Plan — Built for Serious Growth",
+    headline: "The Pro Plan - Built for Serious Growth",
     subheadline: "Everything you need, nothing you don't",
   }} theme={THEME_BOLD} layout="spotlight" />
 );
 
-// Warm + Tiers — friendly pricing
+// Warm + Tiers - friendly pricing
 export const PricingWarmTiers: React.FC = () => (
   <Pricing spec={{
     ...SAMPLE_SPEC,
@@ -92,7 +92,7 @@ export const PricingWarmTiers: React.FC = () => (
   }} theme={THEME_WARM} layout="tiers" />
 );
 
-// Minimal + Comparison — clean data table
+// Minimal + Comparison - clean data table
 export const PricingMinimalComparison: React.FC = () => (
   <Pricing spec={{
     ...SAMPLE_SPEC,
@@ -101,7 +101,7 @@ export const PricingMinimalComparison: React.FC = () => (
   }} theme={THEME_MINIMAL} layout="comparison" />
 );
 
-// Neon + Spotlight — tech-forward featured plan
+// Neon + Spotlight - tech-forward featured plan
 export const PricingNeonSpotlight: React.FC = () => (
   <Pricing spec={{
     ...SAMPLE_SPEC,

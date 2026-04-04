@@ -1,19 +1,19 @@
 /**
  * Property-Based Tests for LindaMohamed Deck V2 Bugfix
  *
- * Property 1: Fault Condition — LindaMohamed V1 Visual Defects
+ * Property 1: Fault Condition - LindaMohamed V1 Visual Defects
  *
  * Tests the six defect categories in V1 by analyzing the source code of
  * LindaMohamed.tsx. These tests encode the EXPECTED (correct) behavior.
  * They are expected to FAIL on V1 (unfixed code), confirming the bugs exist.
  *
  * Defect Categories:
- *   1. Section Divider Layout — full-bleed photo + dark overlay instead of split-panel
- *   2. Typography Readability — body text fontSize < 16, card text < 14
- *   3. Logo Watermark Presence — non-cover slides missing InfinityLogo watermark
- *   4. SVG Icons vs Emoji — icon slides use emoji text instead of <svg> elements
- *   5. Content Completeness — content slides have < 50% of original word count
- *   6. Folie 2 AboutMe — unwanted overlay card, title visibility issues
+ *   1. Section Divider Layout - full-bleed photo + dark overlay instead of split-panel
+ *   2. Typography Readability - body text fontSize < 16, card text < 14
+ *   3. Logo Watermark Presence - non-cover slides missing InfinityLogo watermark
+ *   4. SVG Icons vs Emoji - icon slides use emoji text instead of <svg> elements
+ *   5. Content Completeness - content slides have < 50% of original word count
+ *   6. Folie 2 AboutMe - unwanted overlay card, title visibility issues
  *
  * **Validates: Requirements 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9**
  */
@@ -124,14 +124,14 @@ function countContentWords(source: string): number {
   return allText.split(/\s+/).filter((w) => w.length > 1).length;
 }
 
-// ── Property 1: Fault Condition — LindaMohamed V1 Visual Defects ─
+// ── Property 1: Fault Condition - LindaMohamed V1 Visual Defects ─
 
-describe("Property 1: Fault Condition — LindaMohamed V1 Visual Defects", () => {
+describe("Property 1: Fault Condition - LindaMohamed V1 Visual Defects", () => {
   // ── Defect 1: Section Divider Layout ──────────────────────────
   // Folie 1, 5, 15 should have split-panel layout (white left ≥45% + photo right)
   // V1 uses full-bleed photo with dark overlay instead
 
-  describe("Defect 1 — Section Divider Layout", () => {
+  describe("Defect 1 - Section Divider Layout", () => {
     const sectionDividerSource = extractComponentSource(v1Source, "SectionDivider");
 
     it("SectionDivider should use split-panel layout, not full-bleed photo + dark overlay", () => {
@@ -208,7 +208,7 @@ describe("Property 1: Fault Condition — LindaMohamed V1 Visual Defects", () =>
   // ── Defect 2: Typography Readability ─────────────────────────
   // Body text should be >= 16px, card text >= 14px
 
-  describe("Defect 2 — Typography Readability", () => {
+  describe("Defect 2 - Typography Readability", () => {
     // Components with body/description text that should be readable
     const contentComponents = [
       "Folie2AboutMe",
@@ -275,7 +275,7 @@ describe("Property 1: Fault Condition — LindaMohamed V1 Visual Defects", () =>
   // Non-cover slides should have InfinityLogo watermark
   // V1 only uses InfinityLogo on Folie1Cover and Folie22ThankYou
 
-  describe("Defect 3 — Logo Watermark Presence", () => {
+  describe("Defect 3 - Logo Watermark Presence", () => {
     // All non-cover slide components that should have a watermark
     const nonCoverSlides = [
       "Folie2AboutMe",
@@ -332,7 +332,7 @@ describe("Property 1: Fault Condition — LindaMohamed V1 Visual Defects", () =>
   // Icon slides should use <svg> elements, not emoji characters
   // V1 uses emoji like 🎯💡✅🚀 instead of SVG
 
-  describe("Defect 4 — SVG Icons vs Emoji", () => {
+  describe("Defect 4 - SVG Icons vs Emoji", () => {
     // Slides that should have SVG icons (per task: 3, 6, 7, 8, 9, 10, 16, 18, 19, 20)
     const iconSlides = [
       "Folie3WhatIOffer",
@@ -373,7 +373,7 @@ describe("Property 1: Fault Condition — LindaMohamed V1 Visual Defects", () =>
   // Content slides should have >= 50% of original PowerPoint word count
   // V1 oversimplifies content significantly
 
-  describe("Defect 5 — Content Completeness", () => {
+  describe("Defect 5 - Content Completeness", () => {
     // Expected minimum word counts per slide (based on original PowerPoint content)
     // These represent ~50% of the original content word count
     const contentSlideMinWords: { name: string; minWords: number }[] = [
@@ -412,7 +412,7 @@ describe("Property 1: Fault Condition — LindaMohamed V1 Visual Defects", () =>
   // Folie 2 should NOT have an unwanted overlay card
   // V1 has an "About Me" section label that acts as an overlay element
 
-  describe("Defect 6 — Folie 2 AboutMe Overlay", () => {
+  describe("Defect 6 - Folie 2 AboutMe Overlay", () => {
     it("Folie2AboutMe should not have an unwanted overlay card element", () => {
       const source = extractComponentSource(v1Source, "Folie2AboutMe");
 
@@ -420,7 +420,7 @@ describe("Property 1: Fault Condition — LindaMohamed V1 Visual Defects", () =>
       // - A positioned card/box overlaying the photo area
       // - An "About Me" card that covers content
       // The V1 has a section label "About Me" with textTransform uppercase
-      // that acts as an overlay element — the expected behavior is a clean
+      // that acts as an overlay element - the expected behavior is a clean
       // split layout without this extra card
 
       // Check for unwanted overlay patterns:

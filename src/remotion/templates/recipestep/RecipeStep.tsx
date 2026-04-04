@@ -1,13 +1,13 @@
 /**
- * Recipe / Step-by-Step Template — Creator Economy Templates (V6)
+ * Recipe / Step-by-Step Template - Creator Economy Templates (V6)
  *
  * A reusable, theme-aware recipe and step-by-step video template.
  * Renders ingredient lists, step sequences, and recipe summary cards.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "ingredient-list"  — Scrolling ingredient GlassCards with quantities (default)
- *   "step-sequence"    — Numbered steps with StepIndicator + timing indicators
- *   "summary-card"     — Recipe overview with CountUp stats
+ *   "ingredient-list"  - Scrolling ingredient GlassCards with quantities (default)
+ *   "step-sequence"    - Numbered steps with StepIndicator + timing indicators
+ *   "summary-card"     - Recipe overview with CountUp stats
  *
  * DATA CONTRACT (RecipeStepSpec):
  *   {

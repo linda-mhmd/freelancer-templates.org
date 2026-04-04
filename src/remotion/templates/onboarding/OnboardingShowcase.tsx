@@ -1,13 +1,13 @@
 /**
- * Onboarding Showcase — Pre-configured compositions for each theme × layout combo.
+ * Onboarding Showcase - Pre-configured compositions for each theme × layout combo.
  *
  * REGISTERED COMPOSITIONS:
- *   OnboardingDarkProfessional    — Dark theme, professional layout
- *   OnboardingCleanProfessional   — Clean theme, professional layout
- *   OnboardingBoldCreative        — Bold theme, creative layout
- *   OnboardingWarmFriendly        — Warm theme, friendly layout
- *   OnboardingMinimalProfessional — Minimal theme, professional layout
- *   OnboardingNeonCreative        — Neon theme, creative layout
+ *   OnboardingDarkProfessional    - Dark theme, professional layout
+ *   OnboardingCleanProfessional   - Clean theme, professional layout
+ *   OnboardingBoldCreative        - Bold theme, creative layout
+ *   OnboardingWarmFriendly        - Warm theme, friendly layout
+ *   OnboardingMinimalProfessional - Minimal theme, professional layout
+ *   OnboardingNeonCreative        - Neon theme, creative layout
  */
 
 import React from "react";
@@ -32,7 +32,7 @@ const SAMPLE_WEBDEV_SPEC: OnboardingSpec = {
   next_steps: [
     { step: 1, title: "Discovery Call", description: "30-min deep dive into your goals, brand guidelines, and technical requirements" },
     { step: 2, title: "Design Review", description: "I'll share wireframes and a clickable prototype for your feedback within 5 days" },
-    { step: 3, title: "Sprint Kickoff", description: "Weekly builds with live demos every Friday — you'll see progress in real time" },
+    { step: 3, title: "Sprint Kickoff", description: "Weekly builds with live demos every Friday - you'll see progress in real time" },
   ],
   tools_used: [
     { name: "Figma", icon: "palette" },
@@ -41,7 +41,7 @@ const SAMPLE_WEBDEV_SPEC: OnboardingSpec = {
     { name: "GitHub", icon: "layers" },
     { name: "Vercel", icon: "▲" },
   ],
-  timeline_overview: "8 weeks — Launch by April 15",
+  timeline_overview: "8 weeks - Launch by April 15",
 };
 
 // ── Sample Data: AI Consulting ──────────────────────────────────
@@ -53,7 +53,7 @@ const SAMPLE_AI_SPEC: OnboardingSpec = {
   welcome_message: "Welcome aboard! We're going to automate your team's most repetitive workflows using custom AI agents. I've mapped out a clear path to get you from manual chaos to automated bliss.",
   next_steps: [
     { step: 1, title: "Workflow Audit", description: "I'll shadow your team for 2 days to map every manual process and identify quick wins" },
-    { step: 2, title: "Agent Prototype", description: "First working AI agent delivered within 10 days — you'll test it with real data" },
+    { step: 2, title: "Agent Prototype", description: "First working AI agent delivered within 10 days - you'll test it with real data" },
     { step: 3, title: "Deploy & Train", description: "Production rollout with monitoring dashboards and team training sessions" },
   ],
   tools_used: [
@@ -62,7 +62,7 @@ const SAMPLE_AI_SPEC: OnboardingSpec = {
     { name: "Jira", icon: "document" },
     { name: "Python", icon: "code" },
   ],
-  timeline_overview: "6 weeks — Go-live by March 30",
+  timeline_overview: "6 weeks - Go-live by March 30",
 };
 
 // ── Composition: Dark + Professional ────────────────────────────

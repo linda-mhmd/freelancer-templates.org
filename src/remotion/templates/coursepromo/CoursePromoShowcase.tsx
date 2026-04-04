@@ -1,16 +1,16 @@
 /**
- * Course Promo Showcase — Pre-configured compositions for each layout × theme combo.
+ * Course Promo Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, clean)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   CoursePromoDarkOverview      — Dark theme, overview layout
- *   CoursePromoCleanOverview     — Clean theme, overview layout
- *   CoursePromoDarkCurriculum    — Dark theme, curriculum layout
- *   CoursePromoCleanCurriculum   — Clean theme, curriculum layout
- *   CoursePromoDarkInstructor    — Dark theme, instructor layout
- *   CoursePromoCleanInstructor   — Clean theme, instructor layout
+ *   CoursePromoDarkOverview      - Dark theme, overview layout
+ *   CoursePromoCleanOverview     - Clean theme, overview layout
+ *   CoursePromoDarkCurriculum    - Dark theme, curriculum layout
+ *   CoursePromoCleanCurriculum   - Clean theme, curriculum layout
+ *   CoursePromoDarkInstructor    - Dark theme, instructor layout
+ *   CoursePromoCleanInstructor   - Clean theme, instructor layout
  */
 
 import React from "react";
@@ -31,7 +31,7 @@ const SAMPLE_SPEC_WEBDEV: CoursePromoSpec = {
   ],
   student_count: 12500,
   rating: 4.8,
-  cta: "Enroll Now — $49",
+  cta: "Enroll Now - $49",
 };
 
 // ── Sample Data: Data Science Course ────────────────────────────

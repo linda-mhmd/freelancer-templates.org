@@ -1,16 +1,16 @@
 /**
- * Before/After Showcase — Pre-configured compositions for each layout × theme combo.
+ * Before/After Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, warm)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   BeforeAfterDarkSplitScreen     — Dark theme, split-screen layout
- *   BeforeAfterWarmSplitScreen     — Warm theme, split-screen layout
- *   BeforeAfterDarkRevealWipe      — Dark theme, reveal-wipe layout
- *   BeforeAfterWarmRevealWipe      — Warm theme, reveal-wipe layout
- *   BeforeAfterDarkMetricsCompare  — Dark theme, metrics-compare layout
- *   BeforeAfterWarmMetricsCompare  — Warm theme, metrics-compare layout
+ *   BeforeAfterDarkSplitScreen     - Dark theme, split-screen layout
+ *   BeforeAfterWarmSplitScreen     - Warm theme, split-screen layout
+ *   BeforeAfterDarkRevealWipe      - Dark theme, reveal-wipe layout
+ *   BeforeAfterWarmRevealWipe      - Warm theme, reveal-wipe layout
+ *   BeforeAfterDarkMetricsCompare  - Dark theme, metrics-compare layout
+ *   BeforeAfterWarmMetricsCompare  - Warm theme, metrics-compare layout
  */
 
 import React from "react";

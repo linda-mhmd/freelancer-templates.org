@@ -38,7 +38,7 @@ export const EffortTracking: React.FC<{ spec: EffortTrackingSpec }> = ({ spec })
     return (
       <HeroStatShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Effort`}
+        title={`${spec.project_name} - Effort`}
         subtitle={spec.time_period}
         badge="Capacity"
         stats={[
@@ -61,7 +61,7 @@ export const EffortTracking: React.FC<{ spec: EffortTrackingSpec }> = ({ spec })
     return (
       <SplitPanelShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.project_name} — Effort`}
+        title={`${spec.project_name} - Effort`}
         subtitle={spec.time_period}
         leftContent={
           <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -93,7 +93,7 @@ export const EffortTracking: React.FC<{ spec: EffortTrackingSpec }> = ({ spec })
   return (
     <ContributorShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.project_name} — Effort`}
+      title={`${spec.project_name} - Effort`}
       subtitle={spec.time_period}
       contributorCount={spec.team_members.length}
     >

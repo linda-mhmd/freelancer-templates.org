@@ -12,10 +12,10 @@ import { spring, interpolate } from "remotion";
 
 // ── Spring Configs ──────────────────────────────────────────────
 // Use these as the `config` param for spring(). Pick by feel:
-//   SPRING.default  — standard entrance (most elements)
-//   SPRING.snappy   — quick pop-in (badges, icons)
-//   SPRING.gentle   — slow float-in (backgrounds, large elements)
-//   SPRING.bouncy   — playful overshoot (fun/creative themes)
+//   SPRING.default  - standard entrance (most elements)
+//   SPRING.snappy   - quick pop-in (badges, icons)
+//   SPRING.gentle   - slow float-in (backgrounds, large elements)
+//   SPRING.bouncy   - playful overshoot (fun/creative themes)
 
 export const SPRING = {
   default: { damping: 14, stiffness: 120 },

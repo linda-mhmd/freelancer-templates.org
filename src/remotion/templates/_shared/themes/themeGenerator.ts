@@ -1,5 +1,5 @@
 /**
- * Theme Generator — Produces Theme objects from StylePreset × ColorPalette combinations.
+ * Theme Generator - Produces Theme objects from StylePreset × ColorPalette combinations.
  *
  * Pure functions: no side effects except console.log for contrast adjustments.
  *
@@ -92,7 +92,7 @@ export function extractBgColor(bg: string): string {
     );
   }
 
-  // Fallback — assume dark
+  // Fallback - assume dark
   return '#000000';
 }
 

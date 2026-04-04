@@ -1,5 +1,5 @@
 /**
- * MusicVisualizer Showcase Compositions — 6 variants (3 layouts × 2 themes)
+ * MusicVisualizer Showcase Compositions - 6 variants (3 layouts × 2 themes)
  */
 import React from "react";
 import { MusicVisualizer } from "./MusicVisualizer";

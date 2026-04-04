@@ -1,5 +1,5 @@
 /**
- * Theme Registry — Merges hand-crafted themes with generated themes.
+ * Theme Registry - Merges hand-crafted themes with generated themes.
  *
  * Hand-crafted themes always take priority. If a generated theme name
  * collides with an existing key, a numeric suffix is appended (e.g., "dark-2").
@@ -45,7 +45,7 @@ export function buildThemeRegistry(
       continue;
     }
 
-    // Collision — find a unique key with numeric suffix
+    // Collision - find a unique key with numeric suffix
     let suffix = 2;
     while (`${theme.name}-${suffix}` in registry) {
       suffix++;

@@ -1,13 +1,13 @@
 /**
- * Behind The Scenes Template — Creator Economy Templates (V5)
+ * Behind The Scenes Template - Creator Economy Templates (V5)
  *
  * A reusable, theme-aware behind-the-scenes video template.
  * Renders scene cards, timelines, and process flows.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "scene-cards"   — Sequential GlassCard scene cards with captions (default)
- *   "timeline"      — Vertical timeline with dots and scene descriptions
- *   "process-flow"  — Horizontal process steps with connecting arrows
+ *   "scene-cards"   - Sequential GlassCard scene cards with captions (default)
+ *   "timeline"      - Vertical timeline with dots and scene descriptions
+ *   "process-flow"  - Horizontal process steps with connecting arrows
  *
  * DATA CONTRACT (BehindTheScenesSpec):
  *   {

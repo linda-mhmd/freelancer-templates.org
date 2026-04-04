@@ -1,13 +1,13 @@
 /**
- * Milestone Showcase — Pre-configured compositions for each theme × layout combo.
+ * Milestone Showcase - Pre-configured compositions for each theme × layout combo.
  *
  * REGISTERED COMPOSITIONS:
- *   MilestoneDarkCelebration    — Dark theme, celebration layout
- *   MilestoneCleanJourney       — Clean theme, journey layout
- *   MilestoneBoldCelebration    — Bold theme, celebration layout
- *   MilestoneWarmGratitude      — Warm theme, gratitude layout
- *   MilestoneMinimalJourney     — Minimal theme, journey layout
- *   MilestoneNeonCelebration    — Neon theme, celebration layout
+ *   MilestoneDarkCelebration    - Dark theme, celebration layout
+ *   MilestoneCleanJourney       - Clean theme, journey layout
+ *   MilestoneBoldCelebration    - Bold theme, celebration layout
+ *   MilestoneWarmGratitude      - Warm theme, gratitude layout
+ *   MilestoneMinimalJourney     - Minimal theme, journey layout
+ *   MilestoneNeonCelebration    - Neon theme, celebration layout
  */
 
 import React from "react";

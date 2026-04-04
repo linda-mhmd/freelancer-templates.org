@@ -1,5 +1,5 @@
 /**
- * Recap / Report Template — Freelancer Video Automation Platform
+ * Recap / Report Template - Freelancer Video Automation Platform
  * 
  * A reusable, theme-aware monthly/weekly recap video template.
  * Renders key stats, milestones, next steps, and overall status.
@@ -11,9 +11,9 @@
  *   Pass any Theme from themes.ts. Built-in: dark, clean, bold, warm, minimal, neon
  * 
  * LAYOUT VARIANTS (via `layout` prop):
- *   "dashboard"  — Stats grid top, milestones below, status badge (default)
- *   "timeline"   — Vertical timeline with milestones, stats sidebar
- *   "cards"      — Full-width stacked cards, one per section
+ *   "dashboard"  - Stats grid top, milestones below, status badge (default)
+ *   "timeline"   - Vertical timeline with milestones, stats sidebar
+ *   "cards"      - Full-width stacked cards, one per section
  * 
  * DATA CONTRACT (RecapSpec):
  *   {
@@ -165,7 +165,7 @@ const DashboardLayout: React.FC<LayoutProps> = ({ spec, theme, bgPattern, frame,
           transform: `translateY(${slideIn(headerSpring, "up", 20)}px)`,
         }}>
           <div style={{ fontSize: T.subtitle, color: theme.textSecondary, fontWeight: 500 }}>
-            {spec.client_name ? `${spec.client_name} — ` : ""}{spec.period}
+            {spec.client_name ? `${spec.client_name} - ` : ""}{spec.period}
           </div>
           <div style={{ fontSize: T.hero, fontWeight: theme.headingWeight, marginTop: 4 }}>
             Monthly Recap
@@ -326,7 +326,7 @@ const TimelineLayout: React.FC<LayoutProps> = ({ spec, theme, bgPattern, frame, 
           marginBottom: 24,
         }}>
           <div style={{ fontSize: T.subtitle, color: theme.textSecondary, fontWeight: 500 }}>
-            {spec.client_name ? `${spec.client_name} — ` : ""}{spec.period}
+            {spec.client_name ? `${spec.client_name} - ` : ""}{spec.period}
           </div>
           <div style={{ fontSize: T.title, fontWeight: theme.headingWeight, marginTop: 4 }}>
             Project Timeline

@@ -1,13 +1,13 @@
 /**
- * Recap Showcase — Pre-configured compositions for each theme × layout combo.
+ * Recap Showcase - Pre-configured compositions for each theme × layout combo.
  * 
  * REGISTERED COMPOSITIONS:
- *   RecapDarkDashboard     — Dark theme, dashboard layout (stats grid + milestones)
- *   RecapCleanTimeline     — Clean/light theme, timeline layout
- *   RecapBoldCards         — Bold theme, cards layout
- *   RecapWarmDashboard     — Warm theme, dashboard layout
- *   RecapMinimalCards      — Minimal theme, cards layout
- *   RecapNeonTimeline      — Neon theme, timeline layout
+ *   RecapDarkDashboard     - Dark theme, dashboard layout (stats grid + milestones)
+ *   RecapCleanTimeline     - Clean/light theme, timeline layout
+ *   RecapBoldCards         - Bold theme, cards layout
+ *   RecapWarmDashboard     - Warm theme, dashboard layout
+ *   RecapMinimalCards      - Minimal theme, cards layout
+ *   RecapNeonTimeline      - Neon theme, timeline layout
  */
 
 import React from "react";

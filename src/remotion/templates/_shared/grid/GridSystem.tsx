@@ -102,10 +102,10 @@ export const GridCell: React.FC<GridCellProps> = ({
 
   // Overflow: CSS `overflow: hidden` clips content that exceeds cell bounds.
   // A render-time warning is logged so developers know clipping is active.
-  // (No useEffect — Remotion renders server-side.)
+  // (No useEffect - Remotion renders server-side.)
   if (width <= 0) {
     console.warn(
-      `[GridSystem] Cell has non-positive width (${width}px) — content will be clipped` +
+      `[GridSystem] Cell has non-positive width (${width}px) - content will be clipped` +
         ` (colSpan=${colSpan}${colStart !== undefined ? `, colStart=${colStart}` : ""})`,
     );
   }

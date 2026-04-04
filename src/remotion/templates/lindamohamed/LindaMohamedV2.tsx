@@ -1,5 +1,5 @@
 /**
- * LindaMohamed V2 — Packages & Workshops Slide Deck (Bugfix Version)
+ * LindaMohamed V2 - Packages & Workshops Slide Deck (Bugfix Version)
  *
  * Fixes six categories of visual defects from V1:
  *   1. Section dividers: split-panel layout (white left + photo right) instead of full-bleed overlay
@@ -31,7 +31,7 @@ import {
   SPRING,
 } from "../_shared/animations";
 
-// ── Design Tokens (THEME_LINDAMOHAMED — unchanged from V1) ─────
+// ── Design Tokens (THEME_LINDAMOHAMED - unchanged from V1) ─────
 const GREEN = "#2E7D32";
 const GREEN_LIGHT = "#43A047";
 const GREEN_LIGHTER = "#66BB6A";
@@ -141,7 +141,7 @@ const DataIcon: React.FC<{ size?: number }> = ({ size = 24 }) => (
 
 
 // ═══════════════════════════════════════════════════════════════
-// SECTION DIVIDER V2 — Split-panel layout (white left + photo right)
+// SECTION DIVIDER V2 - Split-panel layout (white left + photo right)
 // Used for Folie 1, 5, 15
 // ═══════════════════════════════════════════════════════════════
 
@@ -164,7 +164,7 @@ const SectionDividerV2: React.FC<SectionDividerV2Props> = ({ title, slideImage }
 
   return (
     <AbsoluteFill style={{ backgroundColor: WHITE, fontFamily: FONT }}>
-      {/* Left panel — white, logo + title */}
+      {/* Left panel - white, logo + title */}
       <div
         style={{
           position: "absolute",
@@ -225,7 +225,7 @@ const SectionDividerV2: React.FC<SectionDividerV2Props> = ({ title, slideImage }
         }}
       />
 
-      {/* Right panel — photo (cropped to show only the right portion of the original slide) */}
+      {/* Right panel - photo (cropped to show only the right portion of the original slide) */}
       <div
         style={{
           position: "absolute",
@@ -255,7 +255,7 @@ const SectionDividerV2: React.FC<SectionDividerV2Props> = ({ title, slideImage }
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 1 — Cover: "Intro & Packages" (split-panel)
+// FOLIE 1 - Cover: "Intro & Packages" (split-panel)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie1CoverV2: React.FC = () => (
@@ -264,7 +264,7 @@ export const Folie1CoverV2: React.FC = () => (
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 2 — About Me: Bio + experience stats (no overlay card)
+// FOLIE 2 - About Me: Bio + experience stats (no overlay card)
 // ═══════════════════════════════════════════════════════════════
 
 interface StatBadgeV2Props {
@@ -344,7 +344,7 @@ export const Folie2AboutMeV2: React.FC = () => {
         />
       </div>
 
-      {/* Right: Content — no overlay card */}
+      {/* Right: Content - no overlay card */}
       <div
         style={{
           position: "absolute",
@@ -450,7 +450,7 @@ export const Folie2AboutMeV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 3 — What I Offer: 3-step workshop flow + MVP support
+// FOLIE 3 - What I Offer: 3-step workshop flow + MVP support
 // SVG icons, full descriptions, full canvas width
 // ═══════════════════════════════════════════════════════════════
 
@@ -624,7 +624,7 @@ export const Folie3WhatIOfferV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 4 — Costs & Packages: Complete pricing table
+// FOLIE 4 - Costs & Packages: Complete pricing table
 // ═══════════════════════════════════════════════════════════════
 
 interface PricingRowV2Props {
@@ -783,7 +783,7 @@ export const Folie4CostsPackagesV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 5 — Section Divider: "Workshops" (split-panel)
+// FOLIE 5 - Section Divider: "Workshops" (split-panel)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie5WorkshopsV2: React.FC = () => (
@@ -791,7 +791,7 @@ export const Folie5WorkshopsV2: React.FC = () => (
 );
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 6 — Workshop Modules: Full table with all columns
+// FOLIE 6 - Workshop Modules: Full table with all columns
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie6WorkshopModulesV2: React.FC = () => {
@@ -946,7 +946,7 @@ export const Folie6WorkshopModulesV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 7 — The First Workshop: Complete agenda
+// FOLIE 7 - The First Workshop: Complete agenda
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie7FirstWorkshopV2: React.FC = () => {
@@ -1075,7 +1075,7 @@ export const Folie7FirstWorkshopV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 8 — Next Steps: Generic journey roadmap (0→1→2→3)
+// FOLIE 8 - Next Steps: Generic journey roadmap (0→1→2→3)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie8NextStepsV2: React.FC = () => {
@@ -1230,7 +1230,7 @@ export const Folie8NextStepsV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 9 — Next Steps: Customer-specific (Nov 2025)
+// FOLIE 9 - Next Steps: Customer-specific (Nov 2025)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie9NextStepsCustomerV2: React.FC = () => {
@@ -1290,7 +1290,7 @@ export const Folie9NextStepsCustomerV2: React.FC = () => {
             marginBottom: 32,
           }}
         >
-          November 2025 — Customer-specific timeline
+          November 2025 - Customer-specific timeline
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
@@ -1345,7 +1345,7 @@ export const Folie9NextStepsCustomerV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 10 — Results: Horizontal maturity flow with SVG icons
+// FOLIE 10 - Results: Horizontal maturity flow with SVG icons
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie10ResultsV2: React.FC = () => {
@@ -1514,7 +1514,7 @@ export const Folie10ResultsV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 11 — Results: Staircase visualization
+// FOLIE 11 - Results: Staircase visualization
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie11StaircaseV2: React.FC = () => {
@@ -1623,7 +1623,7 @@ export const Folie11StaircaseV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 12 — Results Step by Step: Detailed staircase with personas
+// FOLIE 12 - Results Step by Step: Detailed staircase with personas
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie12StaircaseDetailedV2: React.FC = () => {
@@ -1735,7 +1735,7 @@ export const Folie12StaircaseDetailedV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 13 — Results Step by Step: Flexible deep-dive
+// FOLIE 13 - Results Step by Step: Flexible deep-dive
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie13FlexibleDeepDiveV2: React.FC = () => {
@@ -1858,7 +1858,7 @@ export const Folie13FlexibleDeepDiveV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 14 — Results Step by Step: Video-focused variant
+// FOLIE 14 - Results Step by Step: Video-focused variant
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie14VideoFocusedV2: React.FC = () => {
@@ -1957,7 +1957,7 @@ export const Folie14VideoFocusedV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 15 — Section Divider: "More Information" (split-panel)
+// FOLIE 15 - Section Divider: "More Information" (split-panel)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie15MoreInfoV2: React.FC = () => (
@@ -1966,7 +1966,7 @@ export const Folie15MoreInfoV2: React.FC = () => (
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 16 — Idea-to-Prototype Pipeline: Timeline with tech stack
+// FOLIE 16 - Idea-to-Prototype Pipeline: Timeline with tech stack
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie16PipelineV2: React.FC = () => {
@@ -2100,7 +2100,7 @@ export const Folie16PipelineV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 17 — Idea-to-Prototype Pipeline: Detailed with activities
+// FOLIE 17 - Idea-to-Prototype Pipeline: Detailed with activities
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie17PipelineDetailedV2: React.FC = () => {
@@ -2251,7 +2251,7 @@ export const Folie17PipelineDetailedV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 18 — Components: AI Systems (concentric arcs)
+// FOLIE 18 - Components: AI Systems (concentric arcs)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie18AISystemsV2: React.FC = () => {
@@ -2395,7 +2395,7 @@ export const Folie18AISystemsV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 19 — Components: Cloud (SaaS/PaaS/IaaS/On-Prem pyramid)
+// FOLIE 19 - Components: Cloud (SaaS/PaaS/IaaS/On-Prem pyramid)
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie19CloudV2: React.FC = () => {
@@ -2405,10 +2405,10 @@ export const Folie19CloudV2: React.FC = () => {
   const titleSpring = springEntrance(frame, fps, 10, SPRING.default);
 
   const layers = [
-    { label: "SaaS", desc: "Software as a Service — ready-to-use applications", width: 300, alpha: 0.4, icon: <CloudIcon size={18} /> },
-    { label: "PaaS", desc: "Platform as a Service — managed runtime & middleware", width: 420, alpha: 0.28, icon: <CodeIcon size={18} /> },
-    { label: "IaaS", desc: "Infrastructure as a Service — virtual machines & storage", width: 540, alpha: 0.18, icon: <GearIcon size={18} /> },
-    { label: "On-Premises", desc: "Self-managed infrastructure — full control & responsibility", width: 660, alpha: 0.08, icon: <DataIcon size={18} /> },
+    { label: "SaaS", desc: "Software as a Service - ready-to-use applications", width: 300, alpha: 0.4, icon: <CloudIcon size={18} /> },
+    { label: "PaaS", desc: "Platform as a Service - managed runtime & middleware", width: 420, alpha: 0.28, icon: <CodeIcon size={18} /> },
+    { label: "IaaS", desc: "Infrastructure as a Service - virtual machines & storage", width: 540, alpha: 0.18, icon: <GearIcon size={18} /> },
+    { label: "On-Premises", desc: "Self-managed infrastructure - full control & responsibility", width: 660, alpha: 0.08, icon: <DataIcon size={18} /> },
   ];
 
   return (
@@ -2494,7 +2494,7 @@ export const Folie19CloudV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 20 — Collaboration in Teams: SVG icons + partners
+// FOLIE 20 - Collaboration in Teams: SVG icons + partners
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie20CollaborationV2: React.FC = () => {
@@ -2617,7 +2617,7 @@ export const Folie20CollaborationV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 21 — Cloud Fundings: Complete funding programs + partner logos
+// FOLIE 21 - Cloud Fundings: Complete funding programs + partner logos
 // ═══════════════════════════════════════════════════════════════
 
 const PartnerBadge: React.FC<{ name: string; color: string; bgColor: string }> = ({ name, color, bgColor }) => (
@@ -2696,7 +2696,7 @@ export const Folie21CloudFundingsV2: React.FC = () => {
           Cloud Fundings
         </div>
 
-        {/* Funding cards — 3×2 grid */}
+        {/* Funding cards - 3×2 grid */}
         <div
           style={{
             display: "grid",
@@ -2757,7 +2757,7 @@ export const Folie21CloudFundingsV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// FOLIE 22 — Thank You: Contact info, social links
+// FOLIE 22 - Thank You: Contact info, social links
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie22ThankYouV2: React.FC = () => {
@@ -2891,7 +2891,7 @@ export const Folie22ThankYouV2: React.FC = () => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// MAIN DECK V2 — Sequences all 22 V2 slides
+// MAIN DECK V2 - Sequences all 22 V2 slides
 // Each slide: 150 frames (5 seconds at 30fps)
 // Total: 22 × 150 = 3300 frames (110 seconds)
 // ═══════════════════════════════════════════════════════════════

@@ -1,16 +1,16 @@
 /**
- * Countdown/Hype Showcase — Pre-configured compositions for each layout × theme combo.
+ * Countdown/Hype Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, neon)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   CountdownHypeDarkTimer     — Dark theme, timer layout
- *   CountdownHypeNeonTimer     — Neon theme, timer layout
- *   CountdownHypeDarkTeaser    — Dark theme, teaser layout
- *   CountdownHypeNeonTeaser    — Neon theme, teaser layout
- *   CountdownHypeDarkUrgency   — Dark theme, urgency layout
- *   CountdownHypeNeonUrgency   — Neon theme, urgency layout
+ *   CountdownHypeDarkTimer     - Dark theme, timer layout
+ *   CountdownHypeNeonTimer     - Neon theme, timer layout
+ *   CountdownHypeDarkTeaser    - Dark theme, teaser layout
+ *   CountdownHypeNeonTeaser    - Neon theme, teaser layout
+ *   CountdownHypeDarkUrgency   - Dark theme, urgency layout
+ *   CountdownHypeNeonUrgency   - Neon theme, urgency layout
  */
 
 import React from "react";

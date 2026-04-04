@@ -5,19 +5,19 @@
  * and content arrangement. Templates become thin data adapters that map
  * their Spec fields to shell slot props.
  *
- * To change the visual design of any composition, swap the shell — no data changes needed.
+ * To change the visual design of any composition, swap the shell - no data changes needed.
  *
  * Shells:
- *   HeroStatShell       — Title + stats row + children section
- *   CardGridShell       — Header + CSS grid (2 or 3 columns)
- *   TimelineShell       — Header + vertical/horizontal timeline
- *   PipelineShell       — Header + horizontal pipeline stages
- *   SplitPanelShell     — Header + two-panel side-by-side
- *   CategoryGroupShell  — Header + grouped sections
- *   StatusBoardShell    — Header + central metric + details
- *   ListDetailShell     — Header + vertical staggered list
- *   ComparisonShell     — Header + two-column comparison
- *   ContributorShell    — Header + contributor sections
+ *   HeroStatShell       - Title + stats row + children section
+ *   CardGridShell       - Header + CSS grid (2 or 3 columns)
+ *   TimelineShell       - Header + vertical/horizontal timeline
+ *   PipelineShell       - Header + horizontal pipeline stages
+ *   SplitPanelShell     - Header + two-panel side-by-side
+ *   CategoryGroupShell  - Header + grouped sections
+ *   StatusBoardShell    - Header + central metric + details
+ *   ListDetailShell     - Header + vertical staggered list
+ *   ComparisonShell     - Header + two-column comparison
+ *   ContributorShell    - Header + contributor sections
  */
 
 import React from "react";

@@ -1,13 +1,13 @@
 /**
- * Proposal Showcase — Pre-configured compositions for each theme × layout combo.
+ * Proposal Showcase - Pre-configured compositions for each theme × layout combo.
  *
  * REGISTERED COMPOSITIONS:
- *   ProposalDarkExecutive     — Dark theme, executive layout
- *   ProposalCleanCreative     — Clean theme, creative layout
- *   ProposalBoldPitch         — Bold theme, pitch layout
- *   ProposalWarmExecutive     — Warm theme, executive layout
- *   ProposalMinimalCreative   — Minimal theme, creative layout
- *   ProposalNeonPitch         — Neon theme, pitch layout
+ *   ProposalDarkExecutive     - Dark theme, executive layout
+ *   ProposalCleanCreative     - Clean theme, creative layout
+ *   ProposalBoldPitch         - Bold theme, pitch layout
+ *   ProposalWarmExecutive     - Warm theme, executive layout
+ *   ProposalMinimalCreative   - Minimal theme, creative layout
+ *   ProposalNeonPitch         - Neon theme, pitch layout
  */
 
 import React from "react";

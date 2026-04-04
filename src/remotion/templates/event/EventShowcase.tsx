@@ -1,13 +1,13 @@
 /**
- * Event Showcase — Pre-configured compositions for each theme × layout combo.
+ * Event Showcase - Pre-configured compositions for each theme × layout combo.
  * 
  * REGISTERED COMPOSITIONS:
- *   EventDarkHero         — Dark theme, hero layout
- *   EventCleanSpeakers    — Clean theme, speakers layout
- *   EventBoldCountdown    — Bold theme, countdown layout
- *   EventWarmHero         — Warm theme, hero layout
- *   EventMinimalSpeakers  — Minimal theme, speakers layout
- *   EventNeonCountdown    — Neon theme, countdown layout
+ *   EventDarkHero         - Dark theme, hero layout
+ *   EventCleanSpeakers    - Clean theme, speakers layout
+ *   EventBoldCountdown    - Bold theme, countdown layout
+ *   EventWarmHero         - Warm theme, hero layout
+ *   EventMinimalSpeakers  - Minimal theme, speakers layout
+ *   EventNeonCountdown    - Neon theme, countdown layout
  */
 
 import React from "react";
@@ -39,7 +39,7 @@ const SAMPLE_SPEC: EventSpec = {
     { label: "User Groups", value: 57, suffix: "" },
     { label: "Countries", value: 12, suffix: "" },
   ],
-  cta_text: "Register Now — Free",
+  cta_text: "Register Now - Free",
 };
 
 const SAMPLE_SPEC_WORKSHOP: EventSpec = {

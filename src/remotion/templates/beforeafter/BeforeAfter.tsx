@@ -1,13 +1,13 @@
 /**
- * Before/After Template — Creator Economy Templates (V4)
+ * Before/After Template - Creator Economy Templates (V4)
  *
  * A reusable, theme-aware before/after comparison video template.
  * Renders transformation showcases with split-screen, wipe, and metrics layouts.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "split-screen"     — SplitScreen component with before/after labels and animated divider (default)
- *   "reveal-wipe"      — Animated wipe transition from before to after state
- *   "metrics-compare"  — Before/after stat cards with CountUp animating from before→after values
+ *   "split-screen"     - SplitScreen component with before/after labels and animated divider (default)
+ *   "reveal-wipe"      - Animated wipe transition from before to after state
+ *   "metrics-compare"  - Before/after stat cards with CountUp animating from before→after values
  *
  * DATA CONTRACT (BeforeAfterSpec):
  *   {

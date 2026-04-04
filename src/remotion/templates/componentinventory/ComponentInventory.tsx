@@ -35,7 +35,7 @@ export const ComponentInventory: React.FC<{ spec: ComponentInventorySpec }> = ({
     return (
       <StatusBoardShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.system_name} — Architecture`}
+        title={`${spec.system_name} - Architecture`}
         subtitle={spec.architecture_summary}
         centralMetric={{ label: "Components", value: spec.total_components }}
       >
@@ -58,7 +58,7 @@ export const ComponentInventory: React.FC<{ spec: ComponentInventorySpec }> = ({
     return (
       <ListDetailShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.system_name} — Component Inventory`}
+        title={`${spec.system_name} - Component Inventory`}
         subtitle={spec.architecture_summary}
         badge={`${spec.total_components} Components`}
         itemCount={spec.components.length}
@@ -85,7 +85,7 @@ export const ComponentInventory: React.FC<{ spec: ComponentInventorySpec }> = ({
   return (
     <CardGridShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.system_name} — Architecture`}
+      title={`${spec.system_name} - Architecture`}
       subtitle={spec.architecture_summary}
       columns={3}
     >

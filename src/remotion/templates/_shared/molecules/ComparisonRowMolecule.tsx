@@ -47,7 +47,7 @@ export const ComparisonRowMolecule: React.FC<ComparisonRowMoleculeProps> = ({
             val ? (
               <CheckmarkAtom theme={theme} frame={frame} fps={fps} delay={delay + i * 5} size={16} />
             ) : (
-              <span style={{ color: theme.textMuted, fontSize: 16 }}>—</span>
+              <span style={{ color: theme.textMuted, fontSize: 16 }}>-</span>
             )
           ) : (
             <LabelAtom theme={theme} frame={frame} fps={fps} text={val} fontSize={13} color="secondary" />

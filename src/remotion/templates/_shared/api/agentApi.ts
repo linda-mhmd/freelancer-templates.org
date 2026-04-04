@@ -1,15 +1,15 @@
 /**
- * Agent API — Programmatic interface for the video_generation_crew to list,
+ * Agent API - Programmatic interface for the video_generation_crew to list,
  * filter, and select valid composition combinations.
  *
  * Wraps a CompositionRegistry instance and provides:
- *   - listCombinations(filter?) — filtered combination listing
- *   - getCombinationProps(id) — full render props or AgentError
- *   - getCounts(filter?) — total + filtered counts
- *   - getRandomCombination(filter?) — random valid combination
- *   - getSimilar(unknownId) — string-similarity suggestions for unknown IDs
+ *   - listCombinations(filter?) - filtered combination listing
+ *   - getCombinationProps(id) - full render props or AgentError
+ *   - getCounts(filter?) - total + filtered counts
+ *   - getRandomCombination(filter?) - random valid combination
+ *   - getSimilar(unknownId) - string-similarity suggestions for unknown IDs
  *
- * Pure TypeScript — no React dependencies, no side effects.
+ * Pure TypeScript - no React dependencies, no side effects.
  */
 
 import type { Theme } from "../themes";
@@ -101,7 +101,7 @@ export class AgentAPI {
     if (this.registry.combinations.length === 0) {
       return {
         error: true,
-        message: "Registry is empty — no combinations available",
+        message: "Registry is empty - no combinations available",
         suggestions: [],
       };
     }

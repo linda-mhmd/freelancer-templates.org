@@ -1,17 +1,17 @@
 /**
- * Testimonial Showcase — Pre-configured compositions for each theme × layout combo.
+ * Testimonial Showcase - Pre-configured compositions for each theme × layout combo.
  * 
  * These are ready-to-register compositions with sample data.
  * In production, the AgentCore crew would generate these dynamically
  * by passing a TestimonialSpec + theme name.
  * 
  * REGISTERED COMPOSITIONS:
- *   TestimonialDarkCentered     — Dark theme, centered layout
- *   TestimonialCleanSplit       — Clean/light theme, split layout
- *   TestimonialBoldEditorial    — Bold theme, editorial layout
- *   TestimonialWarmCentered     — Warm theme, centered layout
- *   TestimonialMinimalEditorial — Minimal theme, editorial layout
- *   TestimonialNeonSplit        — Neon theme, split layout
+ *   TestimonialDarkCentered     - Dark theme, centered layout
+ *   TestimonialCleanSplit       - Clean/light theme, split layout
+ *   TestimonialBoldEditorial    - Bold theme, editorial layout
+ *   TestimonialWarmCentered     - Warm theme, centered layout
+ *   TestimonialMinimalEditorial - Minimal theme, editorial layout
+ *   TestimonialNeonSplit        - Neon theme, split layout
  */
 
 import React from "react";

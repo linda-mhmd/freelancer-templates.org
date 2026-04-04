@@ -1,5 +1,5 @@
 /**
- * Event Announcement Template — Freelancer Video Automation Platform
+ * Event Announcement Template - Freelancer Video Automation Platform
  * 
  * A reusable, theme-aware event promo video template.
  * Renders event name, date/location, speakers, stats, and registration CTA.
@@ -8,9 +8,9 @@
  *   <Event spec={eventSpec} theme={THEME_DARK} layout="hero" />
  * 
  * LAYOUT VARIANTS (via `layout` prop):
- *   "hero"      — Large event name, date/location below, speakers grid, CTA (default)
- *   "speakers"  — Speaker-focused: large speaker cards with bios
- *   "countdown" — Urgency-focused: big date, stats, pulsing CTA
+ *   "hero"      - Large event name, date/location below, speakers grid, CTA (default)
+ *   "speakers"  - Speaker-focused: large speaker cards with bios
+ *   "countdown" - Urgency-focused: big date, stats, pulsing CTA
  * 
  * DATA CONTRACT (EventSpec):
  *   {
@@ -59,7 +59,7 @@ import {
 export interface EventSpeaker {
   name: string;
   title?: string;
-  avatar_url?: string;       // optional — shows initial if missing
+  avatar_url?: string;       // optional - shows initial if missing
 }
 
 export interface EventStat {

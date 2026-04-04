@@ -36,7 +36,7 @@ export const VelocityChart: React.FC<{ spec: VelocityChartSpec }> = ({ spec }) =
     return (
       <ComparisonShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.team_name} — Velocity Trend`}
+        title={`${spec.team_name} - Velocity Trend`}
         subtitle={spec.velocity_trend}
         leftLabel="Planned"
         rightLabel="Completed"
@@ -58,7 +58,7 @@ export const VelocityChart: React.FC<{ spec: VelocityChartSpec }> = ({ spec }) =
     return (
       <HeroStatShell
         theme={theme} frame={frame} fps={fps}
-        title={`${spec.team_name} — Velocity`}
+        title={`${spec.team_name} - Velocity`}
         subtitle={spec.velocity_trend}
         badge="Summary"
         stats={[
@@ -83,7 +83,7 @@ export const VelocityChart: React.FC<{ spec: VelocityChartSpec }> = ({ spec }) =
   return (
     <SplitPanelShell
       theme={theme} frame={frame} fps={fps}
-      title={`${spec.team_name} — Velocity`}
+      title={`${spec.team_name} - Velocity`}
       subtitle={spec.velocity_trend}
       leftContent={
         <div style={{ display: "flex", alignItems: "flex-end", gap: 8, height: "100%", paddingBottom: 12 }}>

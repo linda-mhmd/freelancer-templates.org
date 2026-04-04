@@ -1,13 +1,13 @@
 /**
- * Music Visualizer Template — Creator Economy Templates (V6)
+ * Music Visualizer Template - Creator Economy Templates (V6)
  *
  * A reusable, theme-aware music visualizer video template.
  * Renders waveform bars, radial pulsing, and animated lyrics.
  *
  * LAYOUT VARIANTS (via `layout` prop):
- *   "bars"    — WaveformBars with track info overlay (default)
- *   "radial"  — Circular pulsing visualization with album art placeholder
- *   "lyrics"  — Animated lyric lines with timed fade-in/fade-out
+ *   "bars"    - WaveformBars with track info overlay (default)
+ *   "radial"  - Circular pulsing visualization with album art placeholder
+ *   "lyrics"  - Animated lyric lines with timed fade-in/fade-out
  */
 
 import React from "react";
@@ -229,7 +229,7 @@ const LyricsLayout: React.FC<{
           opacity: titleSpring, textAlign: "center",
         }}>
           <div style={{ fontSize: TYPE.cardTitle, color: theme.textMuted }}>
-            {spec.artist} — {spec.track_title}
+            {spec.artist} - {spec.track_title}
           </div>
         </div>
 

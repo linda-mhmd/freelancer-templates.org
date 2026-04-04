@@ -28,7 +28,7 @@ const SAMPLE_SPEC: ThoughtLeadershipSpec = {
     },
     {
       heading: "When Migration Actually Makes Sense",
-      body: "Sometimes you must move: security vulnerabilities, end-of-life dependencies, or fundamental architecture mismatches. But these are rare — not the norm.",
+      body: "Sometimes you must move: security vulnerabilities, end-of-life dependencies, or fundamental architecture mismatches. But these are rare - not the norm.",
     },
   ],
   closingThought: "Stay put. Go deep. The returns compound in ways that hopping never will.",

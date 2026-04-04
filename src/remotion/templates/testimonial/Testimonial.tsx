@@ -1,5 +1,5 @@
 /**
- * Testimonial Template — Freelancer Video Automation Platform
+ * Testimonial Template - Freelancer Video Automation Platform
  * 
  * A reusable, theme-aware testimonial video template.
  * Renders a client quote with rating, name, and CTA.
@@ -12,9 +12,9 @@
  *   Built-in themes: dark, clean, bold, warm, minimal, neon
  * 
  * LAYOUT VARIANTS (via `layout` prop):
- *   "centered"  — Quote centered, name below (default)
- *   "split"     — Quote left, avatar/info right
- *   "editorial" — Large quote marks, serif feel, minimal info
+ *   "centered"  - Quote centered, name below (default)
+ *   "split"     - Quote left, avatar/info right
+ *   "editorial" - Large quote marks, serif feel, minimal info
  * 
  * DATA CONTRACT (TestimonialSpec):
  *   {
@@ -76,7 +76,7 @@ export interface TestimonialSpec {
 export interface TestimonialProps {
   spec: TestimonialSpec;
   theme?: Theme;
-  /** "centered" | "split" | "editorial" — default "centered" */
+  /** "centered" | "split" | "editorial" - default "centered" */
   layout?: "centered" | "split" | "editorial";
   /** Background pattern: "grid" | "dots" | "hex" | "none" */
   bgPattern?: "grid" | "dots" | "hex" | "none";
@@ -295,7 +295,7 @@ const SplitLayout: React.FC<{
           transform: `translateX(${slideIn(cardSpring, "right", 40)}px)`,
         }}>
           <GlassCard theme={theme} style={{ textAlign: "center", padding: "32px 28px" }}>
-            {/* Avatar placeholder — large initial */}
+            {/* Avatar placeholder - large initial */}
             <div style={{
               width: 72, height: 72, borderRadius: "50%",
               background: theme.accentGradient,
@@ -396,7 +396,7 @@ const EditorialLayout: React.FC<{
           transform: `scaleX(${lineSpring})`,
         }} />
 
-        {/* Client info — minimal */}
+        {/* Client info - minimal */}
         <div style={{
           marginTop: 24,
           opacity: clientOpacity,

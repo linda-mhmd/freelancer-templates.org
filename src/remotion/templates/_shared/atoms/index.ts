@@ -1,5 +1,5 @@
 /**
- * Atom Registry — Barrel File
+ * Atom Registry - Barrel File
  *
  * Re-exports registry core (types, ATOM_REGISTRY, registerAtom) from
  * registry-core.ts to break circular dependencies, then re-exports

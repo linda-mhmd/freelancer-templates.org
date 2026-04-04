@@ -1,5 +1,5 @@
 /**
- * CaseStudy Showcase — 6 pre-configured compositions with sample data
+ * CaseStudy Showcase - 6 pre-configured compositions with sample data
  */
 
 import React from "react";
@@ -28,17 +28,17 @@ const SAMPLE_SPEC: CaseStudySpec = {
   heroStat: { label: "Revenue Increase", value: 183, suffix: "%" },
 };
 
-// Dark + Narrative — detailed project walkthrough
+// Dark + Narrative - detailed project walkthrough
 export const CaseStudyDarkNarrative: React.FC = () => (
   <CaseStudy spec={SAMPLE_SPEC} theme={THEME_DARK} layout="narrative" />
 );
 
-// Clean + Comparison — professional before/after
+// Clean + Comparison - professional before/after
 export const CaseStudyCleanComparison: React.FC = () => (
   <CaseStudy spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="comparison" />
 );
 
-// Bold + Spotlight — hero stat impact
+// Bold + Spotlight - hero stat impact
 export const CaseStudyBoldSpotlight: React.FC = () => (
   <CaseStudy spec={{
     ...SAMPLE_SPEC,
@@ -49,7 +49,7 @@ export const CaseStudyBoldSpotlight: React.FC = () => (
   }} theme={THEME_BOLD} layout="spotlight" />
 );
 
-// Warm + Narrative — friendly storytelling
+// Warm + Narrative - friendly storytelling
 export const CaseStudyWarmNarrative: React.FC = () => (
   <CaseStudy spec={{
     ...SAMPLE_SPEC,
@@ -71,7 +71,7 @@ export const CaseStudyWarmNarrative: React.FC = () => (
   }} theme={THEME_WARM} layout="narrative" />
 );
 
-// Minimal + Comparison — clean data presentation
+// Minimal + Comparison - clean data presentation
 export const CaseStudyMinimalComparison: React.FC = () => (
   <CaseStudy spec={{
     ...SAMPLE_SPEC,
@@ -86,7 +86,7 @@ export const CaseStudyMinimalComparison: React.FC = () => (
   }} theme={THEME_MINIMAL} layout="comparison" />
 );
 
-// Neon + Spotlight — tech-forward impact
+// Neon + Spotlight - tech-forward impact
 export const CaseStudyNeonSpotlight: React.FC = () => (
   <CaseStudy spec={{
     ...SAMPLE_SPEC,

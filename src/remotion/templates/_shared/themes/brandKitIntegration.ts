@@ -1,5 +1,5 @@
 /**
- * BrandKit Integration — Applies BrandKit overrides on top of generated themes.
+ * BrandKit Integration - Applies BrandKit overrides on top of generated themes.
  *
  * Uses the existing `applyBrandKit` function from `../themes.ts` and validates
  * contrast after override. Produces warnings when overrides break WCAG AA 4.5:1.
@@ -30,7 +30,7 @@ export interface BrandKitResult {
  * 2. After merging, checks the contrast ratio between textPrimary and bg.
  * 3. If contrast < 4.5:1, adds a warning string identifying the failing pair.
  *
- * Does NOT auto-adjust — the caller decides how to handle warnings.
+ * Does NOT auto-adjust - the caller decides how to handle warnings.
  */
 export function applyBrandKitToGenerated(
   theme: Theme,

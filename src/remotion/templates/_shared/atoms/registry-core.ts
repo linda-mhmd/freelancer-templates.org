@@ -1,5 +1,5 @@
 /**
- * Atom Registry Core — Types & Registration
+ * Atom Registry Core - Types & Registration
  *
  * Extracted from index.ts to break circular dependencies.
  * Atom files import from here instead of from index.ts.

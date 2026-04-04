@@ -91,7 +91,7 @@ const EditorialLayout: React.FC<{ spec: ThoughtLeadershipSpec; theme: Theme; fra
 }) => {
   const stagger = spec.sections.length > 5 ? 20 : 25;
   const sectionBase = 60;
-  // Show max 2 sections at a time — scroll through them over the timeline
+  // Show max 2 sections at a time - scroll through them over the timeline
   const visibleCount = 2;
   const scrollProgress = interpolate(
     frame,
@@ -140,7 +140,7 @@ const EditorialLayout: React.FC<{ spec: ThoughtLeadershipSpec; theme: Theme; fra
             </div>
           )}
         </div>
-        {/* Right: book illustration — larger, with glow */}
+        {/* Right: book illustration - larger, with glow */}
         <div style={{
           opacity: springEntrance(frame, fps, 12, SPRING.snappy),
           transform: `scale(${interpolate(springEntrance(frame, fps, 12, SPRING.snappy), [0, 1], [0.7, 1], { extrapolateRight: "clamp" })})`,
@@ -160,7 +160,7 @@ const EditorialLayout: React.FC<{ spec: ThoughtLeadershipSpec; theme: Theme; fra
         <AccentLine frame={frame} fps={fps} startFrame={30} color={theme.accent} colorSecondary={theme.accentSecondary} />
       </div>
 
-      {/* ── Sections area — two-column magazine grid ── */}
+      {/* ── Sections area - two-column magazine grid ── */}
       <div style={{
         padding: `16px ${PADDING}px 0`,
         display: "grid",
@@ -213,7 +213,7 @@ const EditorialLayout: React.FC<{ spec: ThoughtLeadershipSpec; theme: Theme; fra
                 {section.heading}
               </div>
 
-              {/* Body — with pull-quote treatment for first section */}
+              {/* Body - with pull-quote treatment for first section */}
               {isFirst ? (
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 10, flex: 1, overflow: "hidden" }}>
                   <div style={{ flexShrink: 0, marginTop: 2 }}>

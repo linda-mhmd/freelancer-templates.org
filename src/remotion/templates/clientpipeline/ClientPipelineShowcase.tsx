@@ -2,7 +2,7 @@ import React from "react";
 import { ClientPipeline, ClientPipelineSpec } from "./ClientPipeline";
 
 const BASE_SPEC: ClientPipelineSpec = {
-  dashboard_title: "Freelance Automation — Client Pipeline",
+  dashboard_title: "Freelance Automation - Client Pipeline",
   stages: [
     { stage_name: "Lead", count: 24, value: 180 },
     { stage_name: "Proposal", count: 12, value: 95 },

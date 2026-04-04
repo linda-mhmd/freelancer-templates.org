@@ -1,4 +1,4 @@
-// Shared template primitives — barrel export
+// Shared template primitives - barrel export
 export * from "./animations";
 export * from "./themes";
 export * from "./layouts";

@@ -1,16 +1,16 @@
 /**
- * Poll/Quiz Showcase — Pre-configured compositions for each layout × theme combo.
+ * Poll/Quiz Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, neon)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   PollQuizDarkQuestionCard    — Dark theme, question-card layout
- *   PollQuizNeonQuestionCard    — Neon theme, question-card layout
- *   PollQuizDarkResultsBar      — Dark theme, results-bar layout
- *   PollQuizNeonResultsBar      — Neon theme, results-bar layout
- *   PollQuizDarkReveal          — Dark theme, reveal layout
- *   PollQuizNeonReveal          — Neon theme, reveal layout
+ *   PollQuizDarkQuestionCard    - Dark theme, question-card layout
+ *   PollQuizNeonQuestionCard    - Neon theme, question-card layout
+ *   PollQuizDarkResultsBar      - Dark theme, results-bar layout
+ *   PollQuizNeonResultsBar      - Neon theme, results-bar layout
+ *   PollQuizDarkReveal          - Dark theme, reveal layout
+ *   PollQuizNeonReveal          - Neon theme, reveal layout
  */
 
 import React from "react";

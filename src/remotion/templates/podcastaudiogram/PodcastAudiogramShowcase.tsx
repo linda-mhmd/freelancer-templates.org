@@ -1,16 +1,16 @@
 /**
- * Podcast Audiogram Showcase — Pre-configured compositions for each layout × theme combo.
+ * Podcast Audiogram Showcase - Pre-configured compositions for each layout × theme combo.
  *
  * 6 showcases: 3 layouts × 2 featured themes (dark, warm)
  * Duration: 270 frames (9s at 30fps)
  *
  * REGISTERED COMPOSITIONS:
- *   PodcastAudiogramDarkWaveform     — Dark theme, waveform layout
- *   PodcastAudiogramWarmWaveform     — Warm theme, waveform layout
- *   PodcastAudiogramDarkQuoteCard    — Dark theme, quote-card layout
- *   PodcastAudiogramWarmQuoteCard    — Warm theme, quote-card layout
- *   PodcastAudiogramDarkEpisodePromo — Dark theme, episode-promo layout
- *   PodcastAudiogramWarmEpisodePromo — Warm theme, episode-promo layout
+ *   PodcastAudiogramDarkWaveform     - Dark theme, waveform layout
+ *   PodcastAudiogramWarmWaveform     - Warm theme, waveform layout
+ *   PodcastAudiogramDarkQuoteCard    - Dark theme, quote-card layout
+ *   PodcastAudiogramWarmQuoteCard    - Warm theme, quote-card layout
+ *   PodcastAudiogramDarkEpisodePromo - Dark theme, episode-promo layout
+ *   PodcastAudiogramWarmEpisodePromo - Warm theme, episode-promo layout
  */
 
 import React from "react";
@@ -22,7 +22,7 @@ import { THEME_DARK, THEME_WARM } from "../_shared/themes";
 const SAMPLE_SPEC_TECH: PodcastAudiogramSpec = {
   episode_title: "The Future of AI Agents in Production",
   guest_name: "Linda Mohamed",
-  quote: "Agents will replace 80% of manual workflows by 2027 — the question isn't if, but how gracefully we make the transition",
+  quote: "Agents will replace 80% of manual workflows by 2027 - the question isn't if, but how gracefully we make the transition",
   episode_number: 42,
   podcast_name: "Build Things Podcast",
 };

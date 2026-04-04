@@ -1,5 +1,5 @@
 /**
- * Listing Showcase Compositions — 6 variants (3 layouts × 2 themes)
+ * Listing Showcase Compositions - 6 variants (3 layouts × 2 themes)
  */
 import React from "react";
 import { Listing } from "./Listing";

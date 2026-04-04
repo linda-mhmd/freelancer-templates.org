@@ -467,7 +467,7 @@ describe("Property 4: Combination count updates on registration", () => {
           });
 
           const countAfter = registry.getCombinationCount();
-          // Count should not decrease — atoms alone don't create combinations
+          // Count should not decrease - atoms alone don't create combinations
           // (molecules do), but the count should remain stable or increase
           expect(countAfter).toBeGreaterThanOrEqual(countBefore);
         },
@@ -572,7 +572,7 @@ describe("Property 8: Filtering returns only matching combinations", () => {
         const results = registry.queryCombinations(filter);
         const resultIds = new Set(results.map((c) => c.id));
 
-        // Manually check every combination — any that matches all criteria must be in results
+        // Manually check every combination - any that matches all criteria must be in results
         for (const combo of allCombos) {
           let matches = true;
           if (filter.templateCategory && combo.category !== filter.templateCategory) matches = false;
@@ -653,7 +653,7 @@ describe("Property 10: Invalid combination returns descriptive error", () => {
   it("incompatible molecule-shell pair returns constraint error", () => {
     const registry = buildTestRegistry();
     // TestMol1 is "stats" category, compatible with TestShell1
-    // TestShell2 accepts "navigation" and "pricing" — not "stats"
+    // TestShell2 accepts "navigation" and "pricing" - not "stats"
     // TestMol1 also doesn't list TestShell2 in compatibleShells
     const result = registry.validateCombination({
       template: "TestMol1",
@@ -984,7 +984,7 @@ describe("Property 17: BrandKit override merge correctness", () => {
         const theme = generateTheme(preset, palette);
         const { theme: merged } = applyBrandKitToGenerated(theme, brandKit);
 
-        // (c) Result is a valid Theme — all required fields present with correct types
+        // (c) Result is a valid Theme - all required fields present with correct types
         const stringFields = [
           "name", "bg", "bgSecondary", "bgGlass",
           "textPrimary", "textSecondary", "textMuted",
@@ -1058,7 +1058,7 @@ describe("Property 18: Low contrast BrandKit warning", () => {
     const presetArb = fc.constantFrom(...STYLE_PRESETS);
     const paletteArb = fc.constantFrom(...COLOR_PALETTES);
 
-    // BrandKit with no primaryColor override — generated themes already pass contrast
+    // BrandKit with no primaryColor override - generated themes already pass contrast
     const safeBrandKitArb: fc.Arbitrary<BrandKit> = fc.record(
       {
         fontFamily: fc.option(

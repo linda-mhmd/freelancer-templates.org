@@ -1,10 +1,10 @@
 /**
- * Composition Registry — Central index of all compositions, metadata, and constraints.
+ * Composition Registry - Central index of all compositions, metadata, and constraints.
  *
  * Manages Atoms, Molecules, Shells, Themes, and their valid Combinations.
  * Provides query, filter, validation, and random-selection methods.
  *
- * Pure TypeScript — no React dependencies, no side effects except console warnings.
+ * Pure TypeScript - no React dependencies, no side effects except console warnings.
  *
  * Combination ID format: "{template}:{shell}:{theme}"
  */
@@ -98,7 +98,7 @@ export class CompositionRegistry {
   registerAtom(meta: AtomMeta): void {
     if (meta.compatibleShells.length === 0) {
       console.warn(
-        `[CompositionRegistry] Atom "${meta.name}" has no compatible shells — it won't appear in combinations.`,
+        `[CompositionRegistry] Atom "${meta.name}" has no compatible shells - it won't appear in combinations.`,
       );
     }
     this.atoms.set(meta.name, meta);
@@ -543,7 +543,7 @@ export class CompositionRegistry {
       }
     }
 
-    // Build the registry — bypass registerAtom/registerMolecule/registerShell
+    // Build the registry - bypass registerAtom/registerMolecule/registerShell
     // to avoid repeated recalculateCombinations calls. We restore combinations
     // directly from the serialized data.
     const registry = new CompositionRegistry();

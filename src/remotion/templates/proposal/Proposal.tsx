@@ -1,10 +1,10 @@
 /**
- * Proposal Template — Video proposals for freelancer pitches.
+ * Proposal Template - Video proposals for freelancer pitches.
  *
  * LAYOUTS:
- *   "executive"  — Formal split layout: greeting left, content right. Professional feel.
- *   "creative"   — Card-based with staggered solution cards. Playful, visual.
- *   "pitch"      — Direct, punchy. Big text, fast reveals. Startup energy.
+ *   "executive"  - Formal split layout: greeting left, content right. Professional feel.
+ *   "creative"   - Card-based with staggered solution cards. Playful, visual.
+ *   "pitch"      - Direct, punchy. Big text, fast reveals. Startup energy.
  *
  * BACKGROUND PATTERNS:
  *   "grid" | "dots" | "hex" | "none"
@@ -154,7 +154,7 @@ const SectionLabel: React.FC<{
 );
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 1: Executive — Formal split layout
+// LAYOUT 1: Executive - Formal split layout
 // Left: greeting + freelancer info. Right: problem → solutions → details.
 // Best with: THEME_DARK, THEME_CLEAN, THEME_MINIMAL
 // ═══════════════════════════════════════════════════════════════
@@ -187,7 +187,7 @@ const ExecutiveLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
       paddingTop: TOP_SAFE,
       gap: 48,
     }}>
-      {/* Left column — greeting + freelancer info */}
+      {/* Left column - greeting + freelancer info */}
       <div style={{
         width: 340,
         flexShrink: 0,
@@ -248,7 +248,7 @@ const ExecutiveLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
         </GlassCard>
       </div>
 
-      {/* Right column — problem, solutions, details */}
+      {/* Right column - problem, solutions, details */}
       <div style={{
         flex: 1,
         display: "flex",
@@ -351,7 +351,7 @@ const ExecutiveLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
 };
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 2: Creative — Card-based with staggered solution cards
+// LAYOUT 2: Creative - Card-based with staggered solution cards
 // Full-width sections stacked vertically. Playful, visual.
 // Best with: THEME_BOLD, THEME_WARM, THEME_NEON
 // ═══════════════════════════════════════════════════════════════
@@ -421,7 +421,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Problem statement — accent bar */}
+      {/* Problem statement - accent bar */}
       <Sequence from={70} layout="none">
         <div style={{
           opacity: probOp,
@@ -444,7 +444,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </Sequence>
 
-      {/* Solution cards — 2 or 3 column grid */}
+      {/* Solution cards - 2 or 3 column grid */}
       <Sequence from={140} layout="none">
         <div style={{
           display: "grid",
@@ -528,7 +528,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 3: Pitch — Direct, punchy. Big text, fast reveals.
+// LAYOUT 3: Pitch - Direct, punchy. Big text, fast reveals.
 // Full-screen sections that transition vertically. Startup energy.
 // Best with: THEME_BOLD, THEME_NEON, THEME_DARK
 // ═══════════════════════════════════════════════════════════════
@@ -538,7 +538,7 @@ const PitchLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
   const greetOp = fadeIn(frame, 0, 20);
   const greetS = springEntrance(frame, fps, 0, SPRING.snappy);
 
-  // Scene 2: Problem — big text (frames 60–140)
+  // Scene 2: Problem - big text (frames 60–140)
   const probOp = fadeIn(frame, 60, 20);
   const probS = springEntrance(frame, fps, 60, SPRING.snappy);
 
@@ -586,7 +586,7 @@ const PitchLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Problem — bold statement */}
+      {/* Problem - bold statement */}
       <Sequence from={60} layout="none">
         <div style={{
           opacity: probOp,
@@ -602,7 +602,7 @@ const PitchLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </Sequence>
 
-      {/* Solution points — horizontal pills */}
+      {/* Solution points - horizontal pills */}
       <Sequence from={130} layout="none">
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" as const }}>
           {spec.solution_points.slice(0, 4).map((pt, i) => {

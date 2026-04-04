@@ -2,7 +2,7 @@ import React from "react";
 import { IntegrationStatus, IntegrationStatusSpec } from "./IntegrationStatus";
 
 const BASE_SPEC: IntegrationStatusSpec = {
-  board_title: "Freelance Automation — Integrations",
+  board_title: "Freelance Automation - Integrations",
   integrations: [
     { service_name: "AWS Bedrock", status: "completed", category: "AI", last_sync: "2 min ago", uptime_percent: 99 },
     { service_name: "ElevenLabs", status: "completed", category: "AI", last_sync: "5 min ago", uptime_percent: 98 },

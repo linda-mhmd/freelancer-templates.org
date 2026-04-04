@@ -1,5 +1,5 @@
 /**
- * Tutorial #1 — AI Video Pipeline (video-flow)
+ * Tutorial #1 - AI Video Pipeline (video-flow)
  *
  * "Why 80% of Corporate Videos Never Get Published (And How AI Fixes It)"
  *
@@ -107,7 +107,7 @@ const SPEC: TutorialSpec = {
         data: {
           items: [
             { icon: "dollar", title: "Migration costs a fortune", desc: "Petabyte-scale data movement: $0.09/GB × hundreds of TB", color: "#F87171" },
-            { icon: "lock", title: "Compliance blocks migration", desc: "GDPR, HIPAA, data sovereignty — data must stay on-prem", color: "#F87171" },
+            { icon: "lock", title: "Compliance blocks migration", desc: "GDPR, HIPAA, data sovereignty - data must stay on-prem", color: "#F87171" },
             { icon: "warning", title: "Operational disruption", desc: "You cannot pause a broadcaster's archive for 18 months", color: "#F87171" },
           ],
         },
@@ -124,7 +124,7 @@ const SPEC: TutorialSpec = {
         type: "stats",
         data: {
           stats: [
-            { value: "$0",     label: "migration cost — data never moves",    color: "#4ADE80" },
+            { value: "$0",     label: "migration cost - data never moves",    color: "#4ADE80" },
             { value: "0",      label: "lines of ML training code required",   color: "#FF9900" },
             { value: "€0.50",  label: "per video processed end-to-end",       color: "#0072CE" },
           ],
@@ -144,8 +144,8 @@ const SPEC: TutorialSpec = {
           items: [
             { icon: "gear", title: "Pre-Processing",     desc: "File Sanitizer + Metadata Extractor + proxy creation", color: "#A78BFA" },
             { icon: "target", title: "Parallel AI Analysis", desc: "Rekognition (visual) + Transcribe (audio) + custom vocabulary", color: "#FF9900" },
-            { icon: "layers", title: "8-Agent Film Crew",   desc: "Director · Editor · Fact Checker · Pacing Analyst — all deliberating", color: "#0072CE" },
-            { icon: "film", title: "MediaConvert Output", desc: "16:9 YouTube · 9:16 Instagram · 1:1 LinkedIn — all in one run", color: "#4ADE80" },
+            { icon: "layers", title: "8-Agent Film Crew",   desc: "Director · Editor · Fact Checker · Pacing Analyst - all deliberating", color: "#0072CE" },
+            { icon: "film", title: "MediaConvert Output", desc: "16:9 YouTube · 9:16 Instagram · 1:1 LinkedIn - all in one run", color: "#4ADE80" },
           ],
         },
       },
@@ -154,7 +154,7 @@ const SPEC: TutorialSpec = {
       id: 7,
       name: "demo",
       number: "07",
-      title: "Live Demo — re:Invent 2025",
+      title: "Live Demo - re:Invent 2025",
       start_sec: 660,
       end_sec: 750,
       bg: "video",
@@ -172,8 +172,8 @@ const SPEC: TutorialSpec = {
         type: "list",
         data: {
           items: [
-            { icon: "globe", title: "Broadcast & Media",     desc: "Decades of archive footage — suddenly searchable & monetizable", color: "#FF9900" },
-            { icon: "layers", title: "Enterprise Comms",      desc: "Training, testimonials, all-hands — published in hours not weeks", color: "#0072CE" },
+            { icon: "globe", title: "Broadcast & Media",     desc: "Decades of archive footage - suddenly searchable & monetizable", color: "#FF9900" },
+            { icon: "layers", title: "Enterprise Comms",      desc: "Training, testimonials, all-hands - published in hours not weeks", color: "#0072CE" },
             { icon: "star", title: "Event Videography",     desc: "Highlight reel delivered before the client unpacks", color: "#F472B6" },
             { icon: "shield", title: "Healthcare & Education", desc: "HIPAA-compliant, AI-indexed, data sovereignty preserved", color: "#4ADE80" },
           ],
@@ -184,7 +184,7 @@ const SPEC: TutorialSpec = {
       id: 9,
       name: "economics",
       number: "09",
-      title: "The Economics — Scales to Zero",
+      title: "The Economics - Scales to Zero",
       start_sec: 810,
       end_sec: 870,
       content: {
@@ -215,7 +215,7 @@ const SPEC: TutorialSpec = {
   outro: {
     tagline: "Your data stays on NetApp.\nYour innovation runs on AWS.",
     sub: "One S3 Access Point. Three pretrained models. Zero migration.",
-    presenter: "Linda Mohamed — AWS Hero · NetApp Partner",
+    presenter: "Linda Mohamed - AWS Hero · NetApp Partner",
   },
 };
 

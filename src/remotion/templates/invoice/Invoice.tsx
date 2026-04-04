@@ -1,10 +1,10 @@
 /**
- * Invoice Template — Animated payment reminder videos for freelancers.
+ * Invoice Template - Animated payment reminder videos for freelancers.
  *
  * LAYOUTS:
- *   "friendly"      — Soft, gentle reminder tone. Warm colors, friendly icons.
- *   "professional"   — Clean, business-like invoice layout. Structured grid.
- *   "urgent"         — Bold, attention-grabbing. Red accents for overdue emphasis.
+ *   "friendly"      - Soft, gentle reminder tone. Warm colors, friendly icons.
+ *   "professional"   - Clean, business-like invoice layout. Structured grid.
+ *   "urgent"         - Bold, attention-grabbing. Red accents for overdue emphasis.
  *
  * BACKGROUND PATTERNS:
  *   "grid" | "dots" | "hex" | "none"
@@ -157,7 +157,7 @@ const InvoiceStatus: React.FC<{
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 1: Friendly — Soft, gentle reminder. "Just a heads up" tone.
+// LAYOUT 1: Friendly - Soft, gentle reminder. "Just a heads up" tone.
 // Centered, warm icons, rounded cards, non-threatening.
 // Best with: THEME_WARM, THEME_CLEAN, THEME_DARK
 // ═══════════════════════════════════════════════════════════════
@@ -182,7 +182,7 @@ const FriendlyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
       justifyContent: "center",
       gap: 22,
     }}>
-      {/* Greeting — centered, warm */}
+      {/* Greeting - centered, warm */}
       <div style={{
         opacity: greetOp,
         transform: `translateY(${slideIn(greetS, "up", 25)}px)`,
@@ -207,7 +207,7 @@ const FriendlyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Invoice card — centered, big amount */}
+      {/* Invoice card - centered, big amount */}
       <Sequence from={80} layout="none">
         <div style={{ display: "flex", justifyContent: "center" }}>
           <GlassCard theme={theme} style={{
@@ -311,7 +311,7 @@ const FriendlyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 2: Professional — Clean, structured invoice layout.
+// LAYOUT 2: Professional - Clean, structured invoice layout.
 // Left-aligned header, itemized table, business-like footer.
 // Best with: THEME_CLEAN, THEME_MINIMAL, THEME_DARK
 // ═══════════════════════════════════════════════════════════════
@@ -336,7 +336,7 @@ const ProfessionalLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) 
       justifyContent: "center",
       gap: 20,
     }}>
-      {/* Header — left-aligned, professional */}
+      {/* Header - left-aligned, professional */}
       <div style={{
         opacity: headerOp,
         transform: `translateX(${slideIn(headerS, "left", 25)}px)`,
@@ -497,7 +497,7 @@ const ProfessionalLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) 
 
 
 // ═══════════════════════════════════════════════════════════════
-// LAYOUT 3: Urgent — Bold, attention-grabbing. Red accents for overdue.
+// LAYOUT 3: Urgent - Bold, attention-grabbing. Red accents for overdue.
 // Big numbers, pulsing status, strong CTA. High urgency feel.
 // Best with: THEME_BOLD, THEME_NEON, THEME_DARK
 // ═══════════════════════════════════════════════════════════════
@@ -528,7 +528,7 @@ const UrgentLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
       justifyContent: "center",
       gap: 24,
     }}>
-      {/* Hero — big amount + status */}
+      {/* Hero - big amount + status */}
       <div style={{
         opacity: heroOp,
         transform: `scale(${0.85 + 0.15 * heroS})`,
@@ -569,7 +569,7 @@ const UrgentLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </div>
 
-      {/* Details — two-column: client info + line items */}
+      {/* Details - two-column: client info + line items */}
       <Sequence from={100} layout="none">
         <div style={{ display: "flex", gap: 16 }}>
           {/* Client info card */}
@@ -650,7 +650,7 @@ const UrgentLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
         </div>
       </Sequence>
 
-      {/* CTA — big, bold */}
+      {/* CTA - big, bold */}
       <Sequence from={300} layout="none">
         <div style={{
           opacity: ctaOp,
