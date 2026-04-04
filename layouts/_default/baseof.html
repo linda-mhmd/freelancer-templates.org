@@ -26,7 +26,7 @@
 <body>
   {{ block "main" . }}{{ end }}
 
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js"></script>
   {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
   <script src="{{ $js.RelPermalink }}"></script>
 </body>
