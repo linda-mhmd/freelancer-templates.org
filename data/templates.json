@@ -40,7 +40,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "AffiliateReview-DarkScorecard"
+    "primaryId": "AffiliateReview/DarkScorecard"
   },
   {
     "slug": "beforeafter",
@@ -83,7 +83,7 @@
         "style": "warm"
       }
     ],
-    "primaryId": "BeforeAfter-DarkSplitScreen"
+    "primaryId": "BeforeAfter/DarkSplitScreen"
   },
   {
     "slug": "behindthescenes",
@@ -126,7 +126,7 @@
         "style": "warm"
       }
     ],
-    "primaryId": "BehindTheScenes-DarkSceneCards"
+    "primaryId": "BehindTheScenes/DarkSceneCards"
   },
   {
     "slug": "casestudy",
@@ -169,7 +169,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "CaseStudy-NeonSpotlight"
+    "primaryId": "CaseStudy/NeonSpotlight"
   },
   {
     "slug": "collaboration",
@@ -212,7 +212,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "Collaboration-DarkSplitScreen"
+    "primaryId": "Collaboration/DarkSplitScreen"
   },
   {
     "slug": "countdownhype",
@@ -255,7 +255,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "CountdownHype-NeonTimer"
+    "primaryId": "CountdownHype/NeonTimer"
   },
   {
     "slug": "coursepromo",
@@ -298,7 +298,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "CoursePromo-DarkOverview"
+    "primaryId": "CoursePromo/DarkOverview"
   },
   {
     "slug": "event",
@@ -341,7 +341,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Event-NeonCountdown"
+    "primaryId": "Event/NeonCountdown"
   },
   {
     "slug": "explainer",
@@ -384,7 +384,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Explainer-NeonCinematic"
+    "primaryId": "Explainer/NeonCinematic"
   },
   {
     "slug": "faq",
@@ -427,7 +427,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Faq-NeonInterview"
+    "primaryId": "Faq/NeonInterview"
   },
   {
     "slug": "fitnessroutine",
@@ -470,7 +470,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "FitnessRoutine-NeonExerciseList"
+    "primaryId": "FitnessRoutine/NeonExerciseList"
   },
   {
     "slug": "invoice",
@@ -513,7 +513,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Invoice-NeonUrgent"
+    "primaryId": "Invoice/NeonUrgent"
   },
   {
     "slug": "listing",
@@ -556,7 +556,7 @@
         "style": "minimal"
       }
     ],
-    "primaryId": "Listing-CleanShowcase"
+    "primaryId": "Listing/CleanShowcase"
   },
   {
     "slug": "milestone",
@@ -599,7 +599,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Milestone-NeonCelebration"
+    "primaryId": "Milestone/NeonCelebration"
   },
   {
     "slug": "musicvisualizer",
@@ -642,7 +642,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "MusicVisualizer-NeonBars"
+    "primaryId": "MusicVisualizer/NeonBars"
   },
   {
     "slug": "newsletterpromo",
@@ -685,7 +685,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "NewsletterPromo-DarkSubscribeCta"
+    "primaryId": "NewsletterPromo/DarkSubscribeCta"
   },
   {
     "slug": "onboarding",
@@ -728,7 +728,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Onboarding-NeonCreative"
+    "primaryId": "Onboarding/NeonCreative"
   },
   {
     "slug": "podcastaudiogram",
@@ -771,7 +771,7 @@
         "style": "warm"
       }
     ],
-    "primaryId": "PodcastAudiogram-DarkWaveform"
+    "primaryId": "PodcastAudiogram/DarkWaveform"
   },
   {
     "slug": "pollquiz",
@@ -814,7 +814,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "PollQuiz-NeonQuestionCard"
+    "primaryId": "PollQuiz/NeonQuestionCard"
   },
   {
     "slug": "portfolio",
@@ -857,7 +857,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Portfolio-NeonReel"
+    "primaryId": "Portfolio/NeonReel"
   },
   {
     "slug": "pricing",
@@ -900,7 +900,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Pricing-NeonSpotlight"
+    "primaryId": "Pricing/NeonSpotlight"
   },
   {
     "slug": "productlaunch",
@@ -943,7 +943,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "ProductLaunch-DarkHeroReveal"
+    "primaryId": "ProductLaunch/DarkHeroReveal"
   },
   {
     "slug": "proposal",
@@ -986,7 +986,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Proposal-NeonPitch"
+    "primaryId": "Proposal/NeonPitch"
   },
   {
     "slug": "recap",
@@ -1029,7 +1029,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Recap-NeonTimeline"
+    "primaryId": "Recap/NeonTimeline"
   },
   {
     "slug": "recipestep",
@@ -1072,7 +1072,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "RecipeStep-WarmIngredientList"
+    "primaryId": "RecipeStep/WarmIngredientList"
   },
   {
     "slug": "socialproof",
@@ -1115,7 +1115,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "SocialProof-NeonAnnouncement"
+    "primaryId": "SocialProof/NeonAnnouncement"
   },
   {
     "slug": "testimonial",
@@ -1158,7 +1158,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "Testimonial-NeonSplit"
+    "primaryId": "Testimonial/NeonSplit"
   },
   {
     "slug": "tutorial",
@@ -1201,7 +1201,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "Tutorial-DarkNumberedSteps"
+    "primaryId": "Tutorial/DarkNumberedSteps"
   },
   {
     "slug": "youtubetuorial",
@@ -1219,7 +1219,7 @@
         "style": "dark"
       }
     ],
-    "primaryId": "YouTubeTutorial-VideoFlowPipeline"
+    "primaryId": "YouTubeTutorial/VideoFlowPipeline"
   },
   {
     "slug": "agentdashboard",
@@ -1262,7 +1262,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "AgentDashboard-ControlPanelDark"
+    "primaryId": "AgentDashboard/ControlPanelDark"
   },
   {
     "slug": "bugtracker",
@@ -1305,7 +1305,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "BugTracker-SeverityMatrixDark"
+    "primaryId": "BugTracker/SeverityMatrixDark"
   },
   {
     "slug": "bugtriage",
@@ -1348,7 +1348,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "BugTriage-PriorityColumnsDark"
+    "primaryId": "BugTriage/PriorityColumnsDark"
   },
   {
     "slug": "clientpipeline",
@@ -1391,7 +1391,7 @@
         "style": "warm"
       }
     ],
-    "primaryId": "ClientPipeline-FunnelDark"
+    "primaryId": "ClientPipeline/FunnelDark"
   },
   {
     "slug": "componentinventory",
@@ -1434,7 +1434,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "ComponentInventory-ArchitectureGridDark"
+    "primaryId": "ComponentInventory/ArchitectureGridDark"
   },
   {
     "slug": "conceptpitch",
@@ -1477,7 +1477,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "ConceptPitch-ArcDark"
+    "primaryId": "ConceptPitch/ArcDark"
   },
   {
     "slug": "deploymentstatus",
@@ -1520,7 +1520,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "DeploymentStatus-EnvironmentCardsDark"
+    "primaryId": "DeploymentStatus/EnvironmentCardsDark"
   },
   {
     "slug": "efforttracking",
@@ -1563,7 +1563,7 @@
         "style": "warm"
       }
     ],
-    "primaryId": "EffortTracking-TeamAllocationDark"
+    "primaryId": "EffortTracking/TeamAllocationDark"
   },
   {
     "slug": "eventvenue",
@@ -1606,7 +1606,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "EventVenue-ScheduleMapDark"
+    "primaryId": "EventVenue/ScheduleMapDark"
   },
   {
     "slug": "featureflags",
@@ -1649,7 +1649,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "FeatureFlags-ExperimentBoardDark"
+    "primaryId": "FeatureFlags/ExperimentBoardDark"
   },
   {
     "slug": "featureroadmap",
@@ -1692,7 +1692,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "FeatureRoadmap-TimelineDark"
+    "primaryId": "FeatureRoadmap/TimelineDark"
   },
   {
     "slug": "integrationstatus",
@@ -1735,7 +1735,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "IntegrationStatus-StatusWallDark"
+    "primaryId": "IntegrationStatus/StatusWallDark"
   },
   {
     "slug": "neighborhoodguide",
@@ -1778,7 +1778,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "NeighborhoodGuide-ExplorerWarm"
+    "primaryId": "NeighborhoodGuide/ExplorerWarm"
   },
   {
     "slug": "officedirectory",
@@ -1821,7 +1821,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "OfficeDirectory-WorldViewDark"
+    "primaryId": "OfficeDirectory/WorldViewDark"
   },
   {
     "slug": "pincollection",
@@ -1864,7 +1864,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "PinCollection-CardGalleryWarm"
+    "primaryId": "PinCollection/CardGalleryWarm"
   },
   {
     "slug": "platformoverview",
@@ -1907,7 +1907,7 @@
         "style": "neon"
       }
     ],
-    "primaryId": "PlatformOverview-CommandCenterDark"
+    "primaryId": "PlatformOverview/CommandCenterDark"
   },
   {
     "slug": "projecthealth",
@@ -1950,7 +1950,7 @@
         "style": "warm"
       }
     ],
-    "primaryId": "ProjectHealth-HealthScorecardDark"
+    "primaryId": "ProjectHealth/HealthScorecardDark"
   },
   {
     "slug": "qbrdashboard",
@@ -1993,7 +1993,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "QBRDashboard-ExecutiveDark"
+    "primaryId": "QBRDashboard/ExecutiveDark"
   },
   {
     "slug": "releasenotes",
@@ -2036,7 +2036,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "ReleaseNotes-ChangelogDark"
+    "primaryId": "ReleaseNotes/ChangelogDark"
   },
   {
     "slug": "sprintdashboard",
@@ -2079,7 +2079,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "SprintDashboard-KanbanDark"
+    "primaryId": "SprintDashboard/KanbanDark"
   },
   {
     "slug": "sprintrecap",
@@ -2122,7 +2122,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "SprintRecap-ShippedListDark"
+    "primaryId": "SprintRecap/ShippedListDark"
   },
   {
     "slug": "storelocator",
@@ -2165,7 +2165,7 @@
         "style": "minimal"
       }
     ],
-    "primaryId": "StoreLocator-FinderClean"
+    "primaryId": "StoreLocator/FinderClean"
   },
   {
     "slug": "thoughtleadership",
@@ -2208,7 +2208,7 @@
         "style": "clean"
       }
     ],
-    "primaryId": "ThoughtLeadership-EditorialDark"
+    "primaryId": "ThoughtLeadership/EditorialDark"
   },
   {
     "slug": "travelitinerary",
@@ -2251,7 +2251,7 @@
         "style": "bold"
       }
     ],
-    "primaryId": "TravelItinerary-DayByDayWarm"
+    "primaryId": "TravelItinerary/DayByDayWarm"
   },
   {
     "slug": "velocitychart",
@@ -2294,6 +2294,6 @@
         "style": "clean"
       }
     ],
-    "primaryId": "VelocityChart-BarChartDark"
+    "primaryId": "VelocityChart/BarChartDark"
   }
 ]
