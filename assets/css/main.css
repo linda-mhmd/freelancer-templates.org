@@ -404,6 +404,16 @@ html.dark .hero__stat-val { color: #e8f0fe; }
   height: 72px;
   border-radius: var(--r);
   margin-bottom: 12px;
+  overflow: hidden;
+}
+.mock-card__thumb--img {
+  background: none;
+}
+.mock-card__thumb--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .mock-card__name {
   font-size: 13px;
@@ -569,6 +579,15 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
 }
 .rmt-card__preview:hover::after {
   background: rgba(0,0,0,.55);
+}
+
+.rmt-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .rmt-card__overlay {
