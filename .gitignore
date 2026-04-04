@@ -2,3 +2,20 @@ public/
 .hugo_build.lock
 hugo_stats.json
 resources/_gen/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Tool state - never commit
+.claude/
+.claire/
