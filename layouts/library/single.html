@@ -27,9 +27,12 @@
 <section class="tpl-variants">
   <div class="container">
     <h2 class="tpl-variants__hd">All {{ .Params.variantCount }} style variants</h2>
-    <div class="tpl-variants__grid">
+    <div class="tpl-variants__grid" id="variantsGrid">
       {{ range .Params.variants }}
-      <div class="tpl-var-card">
+      <div class="tpl-var-card"
+           data-id="{{ .id }}"
+           data-name="{{ .name }}"
+           data-style="{{ .style }}">
         <div class="tpl-var-card__media">
           <img src="{{ (printf "previews/showcase/%s.png" .id) | relURL }}"
                alt="{{ $.Title }} - {{ .name }}" loading="lazy" class="tpl-var-card__img">
@@ -42,6 +45,24 @@
         <div class="tpl-var-card__id">{{ .id }}</div>
       </div>
       {{ end }}
+    </div>
+
+    <!-- Per-composition detail panel -->
+    <div class="tpl-detail" id="tplDetail">
+      <button class="tpl-detail__close" id="tplDetailClose" title="Close">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="tpl-detail__top">
+        <div class="tpl-detail__preview">
+          <img id="tplDetailImg" src="" alt="">
+        </div>
+        <div class="tpl-detail__meta">
+          <div class="tpl-detail__name" id="tplDetailName"></div>
+          <div class="tpl-detail__id" id="tplDetailId" title="Click to copy ID"></div>
+          <div class="tpl-detail__badges" id="tplDetailBadges"></div>
+        </div>
+      </div>
+      <div class="tpl-detail__cmds" id="tplDetailCmds"></div>
     </div>
   </div>
 </section>
@@ -150,12 +171,12 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
           Typography scale
         </h3>
-        <p class="tpl-design-card__desc">All font sizes come from <code>_shared/layouts.ts TYPE</code>. Edit once, updates every composition. Minimum <code>TYPE.body</code> (20px) keeps text legible in card previews.</p>
+        <p class="tpl-design-card__desc">All font sizes come from <code>_shared/layouts.ts TYPE</code>. Edit once, updates every composition. Minimum <code>TYPE.caption</code> (24px) - broadcast legibility standard for 1280x720.</p>
         <div class="tpl-type-scale">
-          <div class="tpl-type-row"><span class="tpl-type-label">hero</span><span class="tpl-type-val" style="font-size:22px;font-weight:800;">68px</span></div>
-          <div class="tpl-type-row"><span class="tpl-type-label">title</span><span class="tpl-type-val" style="font-size:18px;font-weight:700;">48px</span></div>
-          <div class="tpl-type-row"><span class="tpl-type-label">body</span><span class="tpl-type-val" style="font-size:15px;">20px</span></div>
-          <div class="tpl-type-row"><span class="tpl-type-label">label</span><span class="tpl-type-val" style="font-size:13px;">16px</span></div>
+          <div class="tpl-type-row"><span class="tpl-type-label">hero</span><span class="tpl-type-val" style="font-size:22px;font-weight:800;">72px</span></div>
+          <div class="tpl-type-row"><span class="tpl-type-label">title</span><span class="tpl-type-val" style="font-size:18px;font-weight:700;">52px</span></div>
+          <div class="tpl-type-row"><span class="tpl-type-label">body</span><span class="tpl-type-val" style="font-size:15px;">32px</span></div>
+          <div class="tpl-type-row"><span class="tpl-type-label">caption</span><span class="tpl-type-val" style="font-size:13px;">24px</span></div>
         </div>
       </div>
 
@@ -214,6 +235,122 @@ document.querySelectorAll('.tpl-var-card').forEach(function(card) {
   card.addEventListener('mouseenter', function() { vid.play().catch(function(){}); });
   card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
 });
+
+// Per-composition detail panel (XSS-safe: all user data set via textContent or DOM API)
+(function() {
+  var detail = document.getElementById('tplDetail');
+  if (!detail) return;
+  var detailImg = document.getElementById('tplDetailImg');
+  var detailName = document.getElementById('tplDetailName');
+  var detailId = document.getElementById('tplDetailId');
+  var detailBadges = document.getElementById('tplDetailBadges');
+  var detailCmds = document.getElementById('tplDetailCmds');
+  var closeBtn = document.getElementById('tplDetailClose');
+  var activeCard = null;
+
+  var styleColors = {
+    dark: '#94a3b8', clean: '#334155', bold: '#a78bfa',
+    warm: '#fb923c', minimal: '#64748b', neon: '#34d399', lindamohamed: '#a5d6a7'
+  };
+
+  function makeBadge(text, color) {
+    var s = document.createElement('span');
+    s.className = 'tpl-badge';
+    s.textContent = text;
+    if (color) { s.style.color = color; s.style.borderColor = color + '55'; }
+    return s;
+  }
+
+  function makeCmdBlock(label, parts, copyText) {
+    var wrap = document.createElement('div');
+    wrap.className = 'tpl-detail__cmd';
+    var lbl = document.createElement('div');
+    lbl.className = 'tpl-detail__cmd-label';
+    lbl.textContent = label;
+    wrap.appendChild(lbl);
+    var code = document.createElement('div');
+    code.className = 'tpl-detail__cmd-code';
+    parts.forEach(function(p) {
+      if (p.cls) {
+        var sp = document.createElement('span');
+        sp.className = p.cls;
+        sp.textContent = p.t;
+        code.appendChild(sp);
+      } else {
+        code.appendChild(document.createTextNode(p.t));
+      }
+    });
+    wrap.appendChild(code);
+    var btn = document.createElement('button');
+    btn.className = 'tpl-detail__cmd-copy';
+    btn.textContent = 'Copy';
+    btn.addEventListener('click', function() {
+      navigator.clipboard.writeText(copyText).then(function() {
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = 'Copy'; }, 1500);
+      });
+    });
+    wrap.appendChild(btn);
+    return wrap;
+  }
+
+  function openDetail(card) {
+    var id = card.dataset.id;
+    var name = card.dataset.name;
+    var style = card.dataset.style;
+
+    if (activeCard) activeCard.classList.remove('is-active');
+    activeCard = card;
+    card.classList.add('is-active');
+
+    detailImg.src = card.querySelector('.tpl-var-card__img').src;
+    detailImg.alt = name;
+    detailName.textContent = name;
+    detailId.textContent = id;
+
+    var color = styleColors[style] || '#94a3b8';
+    while (detailBadges.firstChild) detailBadges.removeChild(detailBadges.firstChild);
+    detailBadges.appendChild(makeBadge(style, color));
+    detailBadges.appendChild(makeBadge('Remotion', null));
+    detailBadges.appendChild(makeBadge('1280x720 \u00b7 30fps', null));
+
+    while (detailCmds.firstChild) detailCmds.removeChild(detailCmds.firstChild);
+    detailCmds.appendChild(makeCmdBlock('Render MP4',
+      [{cls:'ck',t:'npx'},{t:' remotion render '},{cls:'ca',t:id},{t:' out/' + id + '.mp4'}],
+      'npx remotion render ' + id + ' out/' + id + '.mp4'));
+    detailCmds.appendChild(makeCmdBlock('Export still (frame 0)',
+      [{cls:'ck',t:'npx'},{t:' remotion still '},{cls:'ca',t:id},{t:' --frame=0 out/' + id + '.png'}],
+      'npx remotion still ' + id + ' --frame=0 out/' + id + '.png'));
+    detailCmds.appendChild(makeCmdBlock('Export GIF',
+      [{cls:'ck',t:'npx'},{t:' remotion render '},{cls:'ca',t:id},{t:' out/' + id + '.gif'}],
+      'npx remotion render ' + id + ' out/' + id + '.gif'));
+
+    detail.classList.add('is-open');
+    detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function closeDetail() {
+    detail.classList.remove('is-open');
+    if (activeCard) { activeCard.classList.remove('is-active'); activeCard = null; }
+  }
+
+  document.querySelectorAll('.tpl-var-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      if (card === activeCard && detail.classList.contains('is-open')) { closeDetail(); }
+      else { openDetail(card); }
+    });
+  });
+
+  closeBtn.addEventListener('click', closeDetail);
+
+  detailId.addEventListener('click', function() {
+    var orig = detailId.textContent;
+    navigator.clipboard.writeText(orig).then(function() {
+      detailId.textContent = 'Copied!';
+      setTimeout(function() { detailId.textContent = orig; }, 1200);
+    });
+  });
+})();
 </script>
 
 {{ partial "site-footer.html" . }}

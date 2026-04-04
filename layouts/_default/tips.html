@@ -1,0 +1,239 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<!-- ── Hero ──────────────────────────────────────────────────── -->
+<section class="tips-hero">
+  <div class="container">
+    <div class="tips-hero__eyebrow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      Video Design Tips
+    </div>
+    <h1 class="tips-hero__title">Make videos that get watched - not skipped</h1>
+    <p class="tips-hero__sub">Research-backed principles from broadcast design, data visualization, and cognitive science. Applied to freelance video presentations at 1280x720.</p>
+    <div class="tips-hero__meta">
+      <span class="tips-badge">Typography</span>
+      <span class="tips-badge">Layout</span>
+      <span class="tips-badge">Color</span>
+      <span class="tips-badge">Animation</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Principle 1: Typography ────────────────────────────────── -->
+<section class="tips-section">
+  <div class="container">
+    <div class="tips-section__hd">
+      <div class="tips-section__num">01</div>
+      <div>
+        <h2 class="tips-section__title">Typography - size for the back row</h2>
+        <p class="tips-section__sub">Every text element must be readable when the video plays at 360p in an app sidebar. That means much bigger than you think.</p>
+      </div>
+    </div>
+
+    <div class="tips-grid tips-grid--3">
+
+      <div class="tips-card tips-card--rule">
+        <div class="tips-card__label">Rule</div>
+        <h3 class="tips-card__title">Minimum body text: 32px at 1280x720</h3>
+        <p class="tips-card__body">Broadcast standard requires text to be at least 2% of frame height. At 720px that is 14px - but that assumes a 40-inch TV at 2 meters. For web video watched on a laptop, scale up to 32px minimum for any readable text.</p>
+        <div class="tips-card__proof">Scaled from: BBC/EBU broadcast spec (1920x1080 minimum 40px body text)</div>
+      </div>
+
+      <div class="tips-card tips-card--rule">
+        <div class="tips-card__label">Rule</div>
+        <h3 class="tips-card__title">Maximum 4 levels of hierarchy per composition</h3>
+        <p class="tips-card__body">Hero, title, body, caption. Use each level for exactly one purpose. Never use font size to create emphasis inside a single level - use weight or color instead.</p>
+        <div class="tips-card__proof">Source: Bringhurst, The Elements of Typographic Style</div>
+      </div>
+
+      <div class="tips-card tips-card--example">
+        <div class="tips-card__label">This project</div>
+        <h3 class="tips-card__title">TYPE scale in layouts.ts</h3>
+        <div class="tips-type-demo">
+          <div class="tips-type-row"><span class="tips-type-name">hero</span><span class="tips-type-px">72px</span><span class="tips-type-use">Main headline only</span></div>
+          <div class="tips-type-row"><span class="tips-type-name">title</span><span class="tips-type-px">52px</span><span class="tips-type-use">Section titles</span></div>
+          <div class="tips-type-row"><span class="tips-type-name">subtitle</span><span class="tips-type-px">38px</span><span class="tips-type-use">Supporting text</span></div>
+          <div class="tips-type-row"><span class="tips-type-name">body</span><span class="tips-type-px">32px</span><span class="tips-type-use">All body copy</span></div>
+          <div class="tips-type-row"><span class="tips-type-name">label</span><span class="tips-type-px">26px</span><span class="tips-type-use">Badges, tags</span></div>
+          <div class="tips-type-row"><span class="tips-type-name">caption</span><span class="tips-type-px">24px</span><span class="tips-type-use">Minimum - never go below</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Principle 2: Signal to Noise ──────────────────────────── -->
+<section class="tips-section tips-section--alt">
+  <div class="container">
+    <div class="tips-section__hd">
+      <div class="tips-section__num">02</div>
+      <div>
+        <h2 class="tips-section__title">Signal to noise - ruthless reduction</h2>
+        <p class="tips-section__sub">Edward Tufte's core principle: maximize the ratio of data to ink. Every element that does not add meaning reduces it.</p>
+      </div>
+    </div>
+
+    <div class="tips-grid tips-grid--2">
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">One idea per scene</h3>
+        <p class="tips-card__body">If a viewer needs to read two things at once, they read neither. Each scene should answer exactly one question. If you have two points, use two scenes with a cut.</p>
+        <ul class="tips-list">
+          <li>One headline per frame - not a list of bullets</li>
+          <li>One number per stat card - not a dashboard</li>
+          <li>One action in the CTA - not "choose one of these"</li>
+        </ul>
+      </div>
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Remove decoration, keep structure</h3>
+        <p class="tips-card__body">Background textures, gradient overlays, drop shadows, and decorative borders are noise. Grid lines on charts are signal. Safe zones and consistent margins are signal. Animated blobs are noise.</p>
+        <ul class="tips-list">
+          <li>Background grids: use at 4-8% opacity maximum</li>
+          <li>Drop shadows: only when showing depth is the point</li>
+          <li>Borders on cards: 1px at 20-30% opacity</li>
+        </ul>
+      </div>
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Negative space is content</h3>
+        <p class="tips-card__body">A frame with 40% empty space reads as confident. A frame with 90% text reads as a document. For 1280x720, leave at least 80px safe zones on all sides and never fill more than 65% of the frame with content.</p>
+      </div>
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Consistent margins = visual trust</h3>
+        <p class="tips-card__body">Use the same padding value across every scene in a composition. Random-feeling spacing signals amateur work. This project uses PADDING=80 left/right and TOP_SAFE=48 - always use these constants, never hardcode.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Principle 3: Color ─────────────────────────────────────── -->
+<section class="tips-section">
+  <div class="container">
+    <div class="tips-section__hd">
+      <div class="tips-section__num">03</div>
+      <div>
+        <h2 class="tips-section__title">Color - contrast and purpose</h2>
+        <p class="tips-section__sub">Color has one job in a video: direct attention. Every color that is not directing attention is competing with the ones that are.</p>
+      </div>
+    </div>
+
+    <div class="tips-grid tips-grid--3">
+
+      <div class="tips-card tips-card--rule">
+        <div class="tips-card__label">Rule</div>
+        <h3 class="tips-card__title">4.5:1 contrast ratio minimum for all text</h3>
+        <p class="tips-card__body">WCAG AA requires 4.5:1 for body text. This is also the threshold for text to read cleanly when video is compressed (H.264 compression amplifies low-contrast artifacts).</p>
+        <div class="tips-card__proof">WCAG 2.1 Level AA / YouTube compression artifacts study, 2019</div>
+      </div>
+
+      <div class="tips-card tips-card--rule">
+        <div class="tips-card__label">Rule</div>
+        <h3 class="tips-card__title">One accent color, one supporting color</h3>
+        <p class="tips-card__body">Your accent is the "look here" color - used only for the most important element per scene. Supporting color is for secondary labels. Background and text are neutrals. Four colors maximum on screen at once.</p>
+      </div>
+
+      <div class="tips-card tips-card--rule">
+        <div class="tips-card__label">Rule</div>
+        <h3 class="tips-card__title">Never use color alone to convey meaning</h3>
+        <p class="tips-card__body">8% of men have color blindness. Use shape + color for status indicators, labels + color for categories, and icon + color for actions. A red warning badge must also say "Error" - the red alone is not enough.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Principle 4: Animation ─────────────────────────────────── -->
+<section class="tips-section tips-section--alt">
+  <div class="container">
+    <div class="tips-section__hd">
+      <div class="tips-section__num">04</div>
+      <div>
+        <h2 class="tips-section__title">Animation - purpose, not decoration</h2>
+        <p class="tips-section__sub">Every animation should direct focus, show a relationship, or give the viewer time to process information. If it does none of these, remove it.</p>
+      </div>
+    </div>
+
+    <div class="tips-grid tips-grid--2">
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Entrance timing: 0.3-0.6 seconds</h3>
+        <p class="tips-card__body">At 30fps: 9-18 frames. Faster than 9 frames (0.3s) and elements "pop in" - viewers miss the movement. Slower than 18 frames (0.6s) and viewers feel like they are waiting. This project's DUR.fast=9 and DUR.normal=18 hit these exactly.</p>
+      </div>
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Stagger: 15-25 frames between items</h3>
+        <p class="tips-card__body">When animating a list, stagger each item by half a second maximum. Longer staggers make a 4-item list feel like a 10-second video about nothing. Use staggerDelay() from animations.ts with 15-25 frame offsets.</p>
+      </div>
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Spring physics feel more natural than easing</h3>
+        <p class="tips-card__body">CSS ease-out is fine for simple fades. For translations and scales, spring physics (mass, stiffness, damping) feel physically real because they model how objects actually decelerate. This is why Remotion's useSpring is better than interpolate for entrances.</p>
+      </div>
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Idle frames = breathing room</h3>
+        <p class="tips-card__body">After all items have animated in, leave 30-60 idle frames (1-2 seconds) before the composition ends. This is when viewers actually read and retain the content. Cutting to black immediately after the last animation = zero retention.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Principle 5: Layout ─────────────────────────────────────── -->
+<section class="tips-section">
+  <div class="container">
+    <div class="tips-section__hd">
+      <div class="tips-section__num">05</div>
+      <div>
+        <h2 class="tips-section__title">Layout - visual hierarchy drives the eye</h2>
+        <p class="tips-section__sub">The eye enters a frame at the top-left and scans in a Z-pattern. Design your layout to match that path.</p>
+      </div>
+    </div>
+
+    <div class="tips-grid tips-grid--3">
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">F-pattern for data-heavy layouts</h3>
+        <p class="tips-card__body">The strongest position is top-left. Primary headline here. Secondary information goes on the second horizontal "stroke" of the F. Supporting details and stats fill the vertical "stem". Use BackgroundGrid to reinforce this structure visually.</p>
+      </div>
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Cards must be content-sized, not frame-filling</h3>
+        <p class="tips-card__body">Never use flex:1 or align-stretch on card grids. Cards should be as tall as their content plus consistent padding. A 32px label in a 120px card is a layout error. Use alignContent:"start" on grid containers so rows wrap to content height.</p>
+      </div>
+
+      <div class="tips-card">
+        <h3 class="tips-card__title">Grid columns: 2-3 maximum</h3>
+        <p class="tips-card__body">A 4-column grid at 1280px gives each column 280px after margins. At TYPE.body (32px), you can fit about 8-10 words per line. That is correct. Never go to 5+ columns - text wraps to 2-3 words per line which is unreadable.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Apply These Tips ───────────────────────────────────────── -->
+<section class="tips-cta-section">
+  <div class="container">
+    <div class="tips-cta-box">
+      <h2 class="tips-cta-box__title">All these principles are built into every template</h2>
+      <p class="tips-cta-box__desc">The shared design system - TYPE, SPACE, PADDING, DUR, themes.ts - encodes all of the above. Use the tokens, stay in the system, and your videos will be legible, focused, and professional by default.</p>
+      <div class="tips-cta-box__actions">
+        <a href="{{ "library/" | relURL }}" class="btn btn--primary btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Browse all templates
+        </a>
+        <a href="{{ "studio/" | relURL }}" class="btn btn--outline btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Open in Remotion Studio
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "site-footer.html" . }}
+{{ end }}
