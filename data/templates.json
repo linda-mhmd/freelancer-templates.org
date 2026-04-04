@@ -1191,5 +1191,1055 @@
         "style": "dark"
       }
     ]
+  },
+  {
+    "slug": "agentdashboard",
+    "camel": "AgentDashboard",
+    "name": "Agent Dashboard",
+    "description": "AI agent monitoring, task queues, and automation control panels",
+    "icon": "cpu",
+    "color": "indigo",
+    "primaryVariant": "ControlPanelDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "AgentDashboardControlPanelDark",
+        "name": "Control Panel Dark",
+        "style": "dark"
+      },
+      {
+        "id": "AgentDashboardControlPanelNeon",
+        "name": "Control Panel Neon",
+        "style": "neon"
+      },
+      {
+        "id": "AgentDashboardFlowDark",
+        "name": "Flow Dark",
+        "style": "dark"
+      },
+      {
+        "id": "AgentDashboardFlowNeon",
+        "name": "Flow Neon",
+        "style": "neon"
+      },
+      {
+        "id": "AgentDashboardMatrixDark",
+        "name": "Matrix Dark",
+        "style": "dark"
+      },
+      {
+        "id": "AgentDashboardMatrixNeon",
+        "name": "Matrix Neon",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "bugtracker",
+    "camel": "BugTracker",
+    "name": "Bug Tracker",
+    "description": "Severity matrices, triage boards, and bug overview dashboards",
+    "icon": "bug",
+    "color": "rose",
+    "primaryVariant": "SeverityMatrixDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "BugTrackerSeverityMatrixDark",
+        "name": "Severity Matrix Dark",
+        "style": "dark"
+      },
+      {
+        "id": "BugTrackerSeverityMatrixBold",
+        "name": "Severity Matrix Bold",
+        "style": "bold"
+      },
+      {
+        "id": "BugTrackerTriageBoardDark",
+        "name": "Triage Board Dark",
+        "style": "dark"
+      },
+      {
+        "id": "BugTrackerTriageBoardBold",
+        "name": "Triage Board Bold",
+        "style": "bold"
+      },
+      {
+        "id": "BugTrackerOverviewDark",
+        "name": "Overview Dark",
+        "style": "dark"
+      },
+      {
+        "id": "BugTrackerOverviewBold",
+        "name": "Overview Bold",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "bugtriage",
+    "camel": "BugTriage",
+    "name": "Bug Triage",
+    "description": "Priority columns, triage lists, and sprint bug summary dashboards",
+    "icon": "alert-triangle",
+    "color": "orange",
+    "primaryVariant": "PriorityColumnsDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "BugTriagePriorityColumnsDark",
+        "name": "Priority Columns Dark",
+        "style": "dark"
+      },
+      {
+        "id": "BugTriagePriorityColumnsBold",
+        "name": "Priority Columns Bold",
+        "style": "bold"
+      },
+      {
+        "id": "BugTriageTriageListDark",
+        "name": "Triage List Dark",
+        "style": "dark"
+      },
+      {
+        "id": "BugTriageTriageListBold",
+        "name": "Triage List Bold",
+        "style": "bold"
+      },
+      {
+        "id": "BugTriageSummaryDashboardDark",
+        "name": "Summary Dashboard Dark",
+        "style": "dark"
+      },
+      {
+        "id": "BugTriageSummaryDashboardBold",
+        "name": "Summary Dashboard Bold",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "clientpipeline",
+    "camel": "ClientPipeline",
+    "name": "Client Pipeline",
+    "description": "Sales funnel animations, pipeline boards, and revenue metrics",
+    "icon": "git-branch",
+    "color": "amber",
+    "primaryVariant": "FunnelDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "ClientPipelineFunnelDark",
+        "name": "Funnel Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ClientPipelineFunnelWarm",
+        "name": "Funnel Warm",
+        "style": "warm"
+      },
+      {
+        "id": "ClientPipelinePipelineBoardDark",
+        "name": "Pipeline Board Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ClientPipelinePipelineBoardWarm",
+        "name": "Pipeline Board Warm",
+        "style": "warm"
+      },
+      {
+        "id": "ClientPipelineMetricsDark",
+        "name": "Metrics Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ClientPipelineMetricsWarm",
+        "name": "Metrics Warm",
+        "style": "warm"
+      }
+    ]
+  },
+  {
+    "slug": "componentinventory",
+    "camel": "ComponentInventory",
+    "name": "Component Inventory",
+    "description": "Architecture grids, dependency maps, and component inventory lists",
+    "icon": "layers",
+    "color": "blue",
+    "primaryVariant": "ArchitectureGridDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "ComponentInventoryArchitectureGridDark",
+        "name": "Architecture Grid Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ComponentInventoryArchitectureGridClean",
+        "name": "Architecture Grid Clean",
+        "style": "clean"
+      },
+      {
+        "id": "ComponentInventoryDependencyMapDark",
+        "name": "Dependency Map Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ComponentInventoryDependencyMapClean",
+        "name": "Dependency Map Clean",
+        "style": "clean"
+      },
+      {
+        "id": "ComponentInventoryInventoryListDark",
+        "name": "Inventory List Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ComponentInventoryInventoryListClean",
+        "name": "Inventory List Clean",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "conceptpitch",
+    "camel": "ConceptPitch",
+    "name": "Concept Pitch",
+    "description": "Arc reveals, mood boards, and creative brief presentations",
+    "icon": "lightbulb",
+    "color": "purple",
+    "primaryVariant": "ArcDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "ConceptPitchArcDark",
+        "name": "Arc Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ConceptPitchArcBold",
+        "name": "Arc Bold",
+        "style": "bold"
+      },
+      {
+        "id": "ConceptPitchBoardDark",
+        "name": "Board Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ConceptPitchBoardBold",
+        "name": "Board Bold",
+        "style": "bold"
+      },
+      {
+        "id": "ConceptPitchBriefDark",
+        "name": "Brief Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ConceptPitchBriefBold",
+        "name": "Brief Bold",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "deploymentstatus",
+    "camel": "DeploymentStatus",
+    "name": "Deployment Status",
+    "description": "Environment cards, pipeline views, and health dashboards",
+    "icon": "rocket",
+    "color": "indigo",
+    "primaryVariant": "EnvironmentCardsDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "DeploymentStatusEnvironmentCardsDark",
+        "name": "Environment Cards Dark",
+        "style": "dark"
+      },
+      {
+        "id": "DeploymentStatusEnvironmentCardsNeon",
+        "name": "Environment Cards Neon",
+        "style": "neon"
+      },
+      {
+        "id": "DeploymentStatusPipelineViewDark",
+        "name": "Pipeline View Dark",
+        "style": "dark"
+      },
+      {
+        "id": "DeploymentStatusPipelineViewNeon",
+        "name": "Pipeline View Neon",
+        "style": "neon"
+      },
+      {
+        "id": "DeploymentStatusHealthDashboardDark",
+        "name": "Health Dashboard Dark",
+        "style": "dark"
+      },
+      {
+        "id": "DeploymentStatusHealthDashboardNeon",
+        "name": "Health Dashboard Neon",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "efforttracking",
+    "camel": "EffortTracking",
+    "name": "Effort Tracking",
+    "description": "Team allocation charts, capacity views, and effort breakdowns",
+    "icon": "bar-chart-2",
+    "color": "blue",
+    "primaryVariant": "TeamAllocationDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "EffortTrackingTeamAllocationDark",
+        "name": "Team Allocation Dark",
+        "style": "dark"
+      },
+      {
+        "id": "EffortTrackingTeamAllocationWarm",
+        "name": "Team Allocation Warm",
+        "style": "warm"
+      },
+      {
+        "id": "EffortTrackingCapacityDark",
+        "name": "Capacity Dark",
+        "style": "dark"
+      },
+      {
+        "id": "EffortTrackingCapacityWarm",
+        "name": "Capacity Warm",
+        "style": "warm"
+      },
+      {
+        "id": "EffortTrackingBreakdownDark",
+        "name": "Breakdown Dark",
+        "style": "dark"
+      },
+      {
+        "id": "EffortTrackingBreakdownWarm",
+        "name": "Breakdown Warm",
+        "style": "warm"
+      }
+    ]
+  },
+  {
+    "slug": "eventvenue",
+    "camel": "EventVenue",
+    "name": "Event Venue",
+    "description": "Schedule maps, venue cards, and event overview animations",
+    "icon": "map-pin",
+    "color": "purple",
+    "primaryVariant": "ScheduleMapDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "EventVenueScheduleMapDark",
+        "name": "Schedule Map Dark",
+        "style": "dark"
+      },
+      {
+        "id": "EventVenueScheduleMapBold",
+        "name": "Schedule Map Bold",
+        "style": "bold"
+      },
+      {
+        "id": "EventVenueVenueCardsDark",
+        "name": "Venue Cards Dark",
+        "style": "dark"
+      },
+      {
+        "id": "EventVenueVenueCardsBold",
+        "name": "Venue Cards Bold",
+        "style": "bold"
+      },
+      {
+        "id": "EventVenueEventOverviewDark",
+        "name": "Event Overview Dark",
+        "style": "dark"
+      },
+      {
+        "id": "EventVenueEventOverviewBold",
+        "name": "Event Overview Bold",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "featureflags",
+    "camel": "FeatureFlags",
+    "name": "Feature Flags",
+    "description": "Experiment boards, results views, and rollout trackers",
+    "icon": "toggle-left",
+    "color": "indigo",
+    "primaryVariant": "ExperimentBoardDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "FeatureFlagsExperimentBoardDark",
+        "name": "Experiment Board Dark",
+        "style": "dark"
+      },
+      {
+        "id": "FeatureFlagsExperimentBoardNeon",
+        "name": "Experiment Board Neon",
+        "style": "neon"
+      },
+      {
+        "id": "FeatureFlagsResultsViewDark",
+        "name": "Results View Dark",
+        "style": "dark"
+      },
+      {
+        "id": "FeatureFlagsResultsViewNeon",
+        "name": "Results View Neon",
+        "style": "neon"
+      },
+      {
+        "id": "FeatureFlagsRolloutTrackerDark",
+        "name": "Rollout Tracker Dark",
+        "style": "dark"
+      },
+      {
+        "id": "FeatureFlagsRolloutTrackerNeon",
+        "name": "Rollout Tracker Neon",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "featureroadmap",
+    "camel": "FeatureRoadmap",
+    "name": "Feature Roadmap",
+    "description": "Timeline views, swimlane charts, and grid roadmap presentations",
+    "icon": "map",
+    "color": "blue",
+    "primaryVariant": "TimelineDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "FeatureRoadmapTimelineDark",
+        "name": "Timeline Dark",
+        "style": "dark"
+      },
+      {
+        "id": "FeatureRoadmapTimelineClean",
+        "name": "Timeline Clean",
+        "style": "clean"
+      },
+      {
+        "id": "FeatureRoadmapSwimlaneDark",
+        "name": "Swimlane Dark",
+        "style": "dark"
+      },
+      {
+        "id": "FeatureRoadmapSwimlaneClean",
+        "name": "Swimlane Clean",
+        "style": "clean"
+      },
+      {
+        "id": "FeatureRoadmapGridDark",
+        "name": "Grid Dark",
+        "style": "dark"
+      },
+      {
+        "id": "FeatureRoadmapGridClean",
+        "name": "Grid Clean",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "integrationstatus",
+    "camel": "IntegrationStatus",
+    "name": "Integration Status",
+    "description": "Status walls, category groups, and health monitor dashboards",
+    "icon": "link-2",
+    "color": "green",
+    "primaryVariant": "StatusWallDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "IntegrationStatusStatusWallDark",
+        "name": "Status Wall Dark",
+        "style": "dark"
+      },
+      {
+        "id": "IntegrationStatusStatusWallClean",
+        "name": "Status Wall Clean",
+        "style": "clean"
+      },
+      {
+        "id": "IntegrationStatusCategoryGroupsDark",
+        "name": "Category Groups Dark",
+        "style": "dark"
+      },
+      {
+        "id": "IntegrationStatusCategoryGroupsClean",
+        "name": "Category Groups Clean",
+        "style": "clean"
+      },
+      {
+        "id": "IntegrationStatusHealthMonitorDark",
+        "name": "Health Monitor Dark",
+        "style": "dark"
+      },
+      {
+        "id": "IntegrationStatusHealthMonitorClean",
+        "name": "Health Monitor Clean",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "neighborhoodguide",
+    "camel": "NeighborhoodGuide",
+    "name": "Neighborhood Guide",
+    "description": "Area explorer maps, highlights reels, and location overviews",
+    "icon": "navigation",
+    "color": "warm",
+    "primaryVariant": "ExplorerWarm",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "NeighborhoodGuideExplorerWarm",
+        "name": "Explorer Warm",
+        "style": "warm"
+      },
+      {
+        "id": "NeighborhoodGuideExplorerNeon",
+        "name": "Explorer Neon",
+        "style": "neon"
+      },
+      {
+        "id": "NeighborhoodGuideHighlightsReelWarm",
+        "name": "Highlights Reel Warm",
+        "style": "warm"
+      },
+      {
+        "id": "NeighborhoodGuideHighlightsReelNeon",
+        "name": "Highlights Reel Neon",
+        "style": "neon"
+      },
+      {
+        "id": "NeighborhoodGuideOverviewWarm",
+        "name": "Overview Warm",
+        "style": "warm"
+      },
+      {
+        "id": "NeighborhoodGuideOverviewNeon",
+        "name": "Overview Neon",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "officedirectory",
+    "camel": "OfficeDirectory",
+    "name": "Office Directory",
+    "description": "World view maps, card lists, and regional team group animations",
+    "icon": "globe",
+    "color": "blue",
+    "primaryVariant": "WorldViewDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "OfficeDirectoryWorldViewDark",
+        "name": "World View Dark",
+        "style": "dark"
+      },
+      {
+        "id": "OfficeDirectoryWorldViewClean",
+        "name": "World View Clean",
+        "style": "clean"
+      },
+      {
+        "id": "OfficeDirectoryCardListDark",
+        "name": "Card List Dark",
+        "style": "dark"
+      },
+      {
+        "id": "OfficeDirectoryCardListClean",
+        "name": "Card List Clean",
+        "style": "clean"
+      },
+      {
+        "id": "OfficeDirectoryRegionGroupsDark",
+        "name": "Region Groups Dark",
+        "style": "dark"
+      },
+      {
+        "id": "OfficeDirectoryRegionGroupsClean",
+        "name": "Region Groups Clean",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "pincollection",
+    "camel": "PinCollection",
+    "name": "Pin Collection",
+    "description": "Card galleries, map lists, and category grid collections",
+    "icon": "bookmark",
+    "color": "warm",
+    "primaryVariant": "CardGalleryWarm",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "PinCollectionCardGalleryWarm",
+        "name": "Card Gallery Warm",
+        "style": "warm"
+      },
+      {
+        "id": "PinCollectionCardGalleryClean",
+        "name": "Card Gallery Clean",
+        "style": "clean"
+      },
+      {
+        "id": "PinCollectionMapListWarm",
+        "name": "Map List Warm",
+        "style": "warm"
+      },
+      {
+        "id": "PinCollectionMapListClean",
+        "name": "Map List Clean",
+        "style": "clean"
+      },
+      {
+        "id": "PinCollectionCategoryGridWarm",
+        "name": "Category Grid Warm",
+        "style": "warm"
+      },
+      {
+        "id": "PinCollectionCategoryGridClean",
+        "name": "Category Grid Clean",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "platformoverview",
+    "camel": "PlatformOverview",
+    "name": "Platform Overview",
+    "description": "Command center dashboards, module grids, and tech stack animations",
+    "icon": "monitor",
+    "color": "indigo",
+    "primaryVariant": "CommandCenterDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "PlatformOverviewCommandCenterDark",
+        "name": "Command Center Dark",
+        "style": "dark"
+      },
+      {
+        "id": "PlatformOverviewCommandCenterNeon",
+        "name": "Command Center Neon",
+        "style": "neon"
+      },
+      {
+        "id": "PlatformOverviewModuleGridDark",
+        "name": "Module Grid Dark",
+        "style": "dark"
+      },
+      {
+        "id": "PlatformOverviewModuleGridNeon",
+        "name": "Module Grid Neon",
+        "style": "neon"
+      },
+      {
+        "id": "PlatformOverviewStackDark",
+        "name": "Stack Dark",
+        "style": "dark"
+      },
+      {
+        "id": "PlatformOverviewStackNeon",
+        "name": "Stack Neon",
+        "style": "neon"
+      }
+    ]
+  },
+  {
+    "slug": "projecthealth",
+    "camel": "ProjectHealth",
+    "name": "Project Health",
+    "description": "Health scorecards, workstream views, and executive summaries",
+    "icon": "activity",
+    "color": "green",
+    "primaryVariant": "HealthScorecardDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "ProjectHealthHealthScorecardDark",
+        "name": "Health Scorecard Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectHealthHealthScorecardWarm",
+        "name": "Health Scorecard Warm",
+        "style": "warm"
+      },
+      {
+        "id": "ProjectHealthWorkstreamViewDark",
+        "name": "Workstream View Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectHealthWorkstreamViewWarm",
+        "name": "Workstream View Warm",
+        "style": "warm"
+      },
+      {
+        "id": "ProjectHealthExecutiveSummaryDark",
+        "name": "Executive Summary Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectHealthExecutiveSummaryWarm",
+        "name": "Executive Summary Warm",
+        "style": "warm"
+      }
+    ]
+  },
+  {
+    "slug": "qbrdashboard",
+    "camel": "QBRDashboard",
+    "name": "QBR Dashboard",
+    "description": "Executive summaries, detailed reviews, and quarterly comparison dashboards",
+    "icon": "pie-chart",
+    "color": "blue",
+    "primaryVariant": "ExecutiveDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "QBRDashboardExecutiveDark",
+        "name": "Executive Dark",
+        "style": "dark"
+      },
+      {
+        "id": "QBRDashboardExecutiveClean",
+        "name": "Executive Clean",
+        "style": "clean"
+      },
+      {
+        "id": "QBRDashboardDetailedDark",
+        "name": "Detailed Dark",
+        "style": "dark"
+      },
+      {
+        "id": "QBRDashboardDetailedClean",
+        "name": "Detailed Clean",
+        "style": "clean"
+      },
+      {
+        "id": "QBRDashboardComparisonDark",
+        "name": "Comparison Dark",
+        "style": "dark"
+      },
+      {
+        "id": "QBRDashboardComparisonClean",
+        "name": "Comparison Clean",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "releasenotes",
+    "camel": "ReleaseNotes",
+    "name": "Release Notes",
+    "description": "Changelog animations, feature highlights, and version compare views",
+    "icon": "tag",
+    "color": "green",
+    "primaryVariant": "ChangelogDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "ReleaseNotesChangelogDark",
+        "name": "Changelog Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ReleaseNotesChangelogClean",
+        "name": "Changelog Clean",
+        "style": "clean"
+      },
+      {
+        "id": "ReleaseNotesHighlightsDark",
+        "name": "Highlights Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ReleaseNotesHighlightsClean",
+        "name": "Highlights Clean",
+        "style": "clean"
+      },
+      {
+        "id": "ReleaseNotesVersionCompareDark",
+        "name": "Version Compare Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ReleaseNotesVersionCompareClean",
+        "name": "Version Compare Clean",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "sprintdashboard",
+    "camel": "SprintDashboard",
+    "name": "Sprint Dashboard",
+    "description": "Kanban boards, velocity charts, and burndown animations",
+    "icon": "trello",
+    "color": "indigo",
+    "primaryVariant": "KanbanDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "SprintDashboardKanbanDark",
+        "name": "Kanban Dark",
+        "style": "dark"
+      },
+      {
+        "id": "SprintDashboardKanbanBold",
+        "name": "Kanban Bold",
+        "style": "bold"
+      },
+      {
+        "id": "SprintDashboardVelocityDark",
+        "name": "Velocity Dark",
+        "style": "dark"
+      },
+      {
+        "id": "SprintDashboardVelocityBold",
+        "name": "Velocity Bold",
+        "style": "bold"
+      },
+      {
+        "id": "SprintDashboardBurndownDark",
+        "name": "Burndown Dark",
+        "style": "dark"
+      },
+      {
+        "id": "SprintDashboardBurndownBold",
+        "name": "Burndown Bold",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "sprintrecap",
+    "camel": "SprintRecap",
+    "name": "Sprint Recap",
+    "description": "Shipped list reveals, highlight cards, and team contribution animations",
+    "icon": "check-square",
+    "color": "green",
+    "primaryVariant": "ShippedListDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "SprintRecapShippedListDark",
+        "name": "Shipped List Dark",
+        "style": "dark"
+      },
+      {
+        "id": "SprintRecapShippedListBold",
+        "name": "Shipped List Bold",
+        "style": "bold"
+      },
+      {
+        "id": "SprintRecapHighlightCardsDark",
+        "name": "Highlight Cards Dark",
+        "style": "dark"
+      },
+      {
+        "id": "SprintRecapHighlightCardsBold",
+        "name": "Highlight Cards Bold",
+        "style": "bold"
+      },
+      {
+        "id": "SprintRecapTeamContributionsDark",
+        "name": "Team Contributions Dark",
+        "style": "dark"
+      },
+      {
+        "id": "SprintRecapTeamContributionsBold",
+        "name": "Team Contributions Bold",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "storelocator",
+    "camel": "StoreLocator",
+    "name": "Store Locator",
+    "description": "Store finder animations, map pin reveals, and directory listings",
+    "icon": "store",
+    "color": "warm",
+    "primaryVariant": "FinderClean",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "StoreLocatorFinderClean",
+        "name": "Finder Clean",
+        "style": "clean"
+      },
+      {
+        "id": "StoreLocatorFinderMinimal",
+        "name": "Finder Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "StoreLocatorMapPinsClean",
+        "name": "Map Pins Clean",
+        "style": "clean"
+      },
+      {
+        "id": "StoreLocatorMapPinsMinimal",
+        "name": "Map Pins Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "StoreLocatorDirectoryClean",
+        "name": "Directory Clean",
+        "style": "clean"
+      },
+      {
+        "id": "StoreLocatorDirectoryMinimal",
+        "name": "Directory Minimal",
+        "style": "minimal"
+      }
+    ]
+  },
+  {
+    "slug": "thoughtleadership",
+    "camel": "ThoughtLeadership",
+    "name": "Thought Leadership",
+    "description": "Editorial articles, narrative sequences, and keynote-style presentations",
+    "icon": "book-open",
+    "color": "purple",
+    "primaryVariant": "EditorialDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "ThoughtLeadershipEditorialDark",
+        "name": "Editorial Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ThoughtLeadershipEditorialClean",
+        "name": "Editorial Clean",
+        "style": "clean"
+      },
+      {
+        "id": "ThoughtLeadershipNarrativeDark",
+        "name": "Narrative Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ThoughtLeadershipNarrativeClean",
+        "name": "Narrative Clean",
+        "style": "clean"
+      },
+      {
+        "id": "ThoughtLeadershipKeynoteDark",
+        "name": "Keynote Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ThoughtLeadershipKeynoteClean",
+        "name": "Keynote Clean",
+        "style": "clean"
+      }
+    ]
+  },
+  {
+    "slug": "travelitinerary",
+    "camel": "TravelItinerary",
+    "name": "Travel Itinerary",
+    "description": "Day-by-day reveals, route overviews, and travel highlight animations",
+    "icon": "compass",
+    "color": "warm",
+    "primaryVariant": "DayByDayWarm",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "TravelItineraryDayByDayWarm",
+        "name": "Day By Day Warm",
+        "style": "warm"
+      },
+      {
+        "id": "TravelItineraryDayByDayBold",
+        "name": "Day By Day Bold",
+        "style": "bold"
+      },
+      {
+        "id": "TravelItineraryRouteOverviewWarm",
+        "name": "Route Overview Warm",
+        "style": "warm"
+      },
+      {
+        "id": "TravelItineraryRouteOverviewBold",
+        "name": "Route Overview Bold",
+        "style": "bold"
+      },
+      {
+        "id": "TravelItineraryHighlightsWarm",
+        "name": "Highlights Warm",
+        "style": "warm"
+      },
+      {
+        "id": "TravelItineraryHighlightsBold",
+        "name": "Highlights Bold",
+        "style": "bold"
+      }
+    ]
+  },
+  {
+    "slug": "velocitychart",
+    "camel": "VelocityChart",
+    "name": "Velocity Chart",
+    "description": "Bar chart animations, trend lines, and sprint velocity summaries",
+    "icon": "trending-up",
+    "color": "green",
+    "primaryVariant": "BarChartDark",
+    "variantCount": 6,
+    "variants": [
+      {
+        "id": "VelocityChartBarChartDark",
+        "name": "Bar Chart Dark",
+        "style": "dark"
+      },
+      {
+        "id": "VelocityChartBarChartClean",
+        "name": "Bar Chart Clean",
+        "style": "clean"
+      },
+      {
+        "id": "VelocityChartTrendLineDark",
+        "name": "Trend Line Dark",
+        "style": "dark"
+      },
+      {
+        "id": "VelocityChartTrendLineClean",
+        "name": "Trend Line Clean",
+        "style": "clean"
+      },
+      {
+        "id": "VelocityChartSummaryDark",
+        "name": "Summary Dark",
+        "style": "dark"
+      },
+      {
+        "id": "VelocityChartSummaryClean",
+        "name": "Summary Clean",
+        "style": "clean"
+      }
+    ]
   }
 ]

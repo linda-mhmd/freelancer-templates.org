@@ -1,0 +1,233 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<!-- ── Studio Hero ─────────────────────────────────────────────── -->
+<section class="studio-hero">
+  <div class="container">
+    <div class="studio-hero__eyebrow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      Remotion Studio
+    </div>
+    <h1 class="studio-hero__title">Preview templates live - adjust and export in seconds</h1>
+    <p class="studio-hero__sub">Remotion Studio is a local browser app that lets you scrub through every frame, change props, compare themes, and export to MP4, GIF, or PNG - all without touching config files.</p>
+    <div class="studio-hero__badges">
+      <span class="studio-badge">Free and open-source</span>
+      <span class="studio-badge">Runs at localhost:3000</span>
+      <span class="studio-badge">No account needed</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Quick Start ─────────────────────────────────────────────── -->
+<section class="studio-section">
+  <div class="container">
+    <h2 class="studio-section__hd">Quick start - 3 commands</h2>
+
+    <div class="studio-steps">
+
+      <div class="studio-step">
+        <div class="studio-step__num">1</div>
+        <div class="studio-step__body">
+          <h3 class="studio-step__title">Clone the repo and install</h3>
+          <p class="studio-step__desc">Get the full project including all 318 compositions and the shared design system.</p>
+          <div class="tpl-code-block">
+            <div class="tpl-code-block__header">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="tpl-code-block__label">terminal</span>
+            </div>
+            <div class="tpl-code-block__body">
+<span class="ck">git</span> clone https://github.com/mzzavaa/freelancer-templates.org<br/>
+<span class="ck">cd</span> freelancer-templates.org<br/>
+<span class="ck">npm</span> install
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-step">
+        <div class="studio-step__num">2</div>
+        <div class="studio-step__body">
+          <h3 class="studio-step__title">Start Remotion Studio</h3>
+          <p class="studio-step__desc">This opens a browser at <code>localhost:3000</code> with a live preview of every registered composition. Use the sidebar to switch templates and the timeline to scrub frames.</p>
+          <div class="tpl-code-block">
+            <div class="tpl-code-block__header">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="tpl-code-block__label">terminal</span>
+            </div>
+            <div class="tpl-code-block__body">
+<span class="ck">npx</span> remotion studio<br/>
+<span class="cc"># Opens at http://localhost:3000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-step">
+        <div class="studio-step__num">3</div>
+        <div class="studio-step__body">
+          <h3 class="studio-step__title">Edit props and see changes live</h3>
+          <p class="studio-step__desc">Open any <code>*Showcase.tsx</code> file, change the spec data, and the Studio hot-reloads instantly. No rebuild needed.</p>
+          <div class="tpl-code-block">
+            <div class="tpl-code-block__header">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="tpl-code-block__label">src/remotion/templates/testimonial/TestimonialShowcase.tsx</span>
+            </div>
+            <div class="tpl-code-block__body">
+<span class="ck">const</span> <span class="ca">MY_SPEC</span>: TestimonialSpec = {<br/>
+&nbsp;&nbsp;<span class="cs">client_name</span>: <span class="cp">"Your Client Name"</span>,<br/>
+&nbsp;&nbsp;<span class="cs">quote</span>: <span class="cp">"Working with you changed everything."</span>,<br/>
+&nbsp;&nbsp;<span class="cs">rating</span>: 5,<br/>
+&nbsp;&nbsp;<span class="cs">freelancer_name</span>: <span class="cp">"Linda Mohamed"</span>,<br/>
+};
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Export Options ──────────────────────────────────────────── -->
+<section class="studio-section studio-section--alt">
+  <div class="container">
+    <h2 class="studio-section__hd">Export to any format</h2>
+    <p class="studio-section__sub">All exports use the Remotion CLI. Run from the project root after <code>npm install</code>.</p>
+
+    <div class="studio-export-grid">
+
+      <div class="studio-export-card">
+        <div class="studio-export-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M8 12l4-4 4 4"/><path d="M12 8v8"/></svg>
+        </div>
+        <h3 class="studio-export-card__title">MP4 video</h3>
+        <p class="studio-export-card__desc">Full quality H.264 video. Use for LinkedIn, YouTube, client deliverables.</p>
+        <div class="tpl-code-block tpl-code-block--sm">
+          <div class="tpl-code-block__body">
+<span class="ck">npx</span> remotion render <span class="ca">Testimonial-NeonSplit</span> out/video.mp4
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-export-card">
+        <div class="studio-export-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        </div>
+        <h3 class="studio-export-card__title">PNG still</h3>
+        <p class="studio-export-card__desc">Export any single frame as a PNG. Great for thumbnails, social cards, and preview images.</p>
+        <div class="tpl-code-block tpl-code-block--sm">
+          <div class="tpl-code-block__body">
+<span class="cc"># Frame 0 = first frame (thumbnail)</span><br/>
+<span class="ck">npx</span> remotion still <span class="ca">Testimonial-NeonSplit</span> --frame=0 out/thumb.png<br/>
+<span class="cc"># Frame 45 = mid-animation</span><br/>
+<span class="ck">npx</span> remotion still <span class="ca">Testimonial-NeonSplit</span> --frame=45 out/mid.png
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-export-card">
+        <div class="studio-export-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M10 8l6 4-6 4V8z"/></svg>
+        </div>
+        <h3 class="studio-export-card__title">Animated GIF</h3>
+        <p class="studio-export-card__desc">Looping GIF for social media previews, README badges, and email signatures.</p>
+        <div class="tpl-code-block tpl-code-block--sm">
+          <div class="tpl-code-block__body">
+<span class="ck">npx</span> remotion render <span class="ca">Testimonial-NeonSplit</span> out/preview.gif<br/>
+<span class="cc"># Trim to first 90 frames (3s loop)</span><br/>
+<span class="ck">npx</span> remotion render <span class="ca">Testimonial-NeonSplit</span> --frames=0-89 out/loop.gif
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-export-card">
+        <div class="studio-export-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 class="studio-export-card__title">Render at scale with Lambda</h3>
+        <p class="studio-export-card__desc">Use Remotion Lambda to render hundreds of personalized videos in parallel. Costs pennies per video.</p>
+        <div class="tpl-code-block tpl-code-block--sm">
+          <div class="tpl-code-block__body">
+<span class="ck">npx</span> remotion lambda render <span class="ca">Testimonial-NeonSplit</span> out/video.mp4<br/>
+<span class="cc"># See remotion.dev/docs/lambda for setup</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Customize Design System ────────────────────────────────── -->
+<section class="studio-section">
+  <div class="container">
+    <h2 class="studio-section__hd">Customize the design system</h2>
+    <p class="studio-section__sub">All visual tokens live in two files. Edit them once and every template updates automatically.</p>
+
+    <div class="studio-ds-grid">
+
+      <div class="studio-ds-card">
+        <div class="studio-ds-card__file">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          src/remotion/templates/_shared/themes.ts
+        </div>
+        <h3 class="studio-ds-card__title">Colors and fonts</h3>
+        <p class="studio-ds-card__desc">Each <code>THEME_*</code> object defines the complete visual identity: background, text, accent, card, gradient. Add a new theme by copying an existing one and changing 5-6 color values.</p>
+        <div class="tpl-code-block tpl-code-block--sm">
+          <div class="tpl-code-block__body">
+<span class="ck">export const</span> <span class="ca">THEME_MYBRAND</span>: Theme = {<br/>
+&nbsp;&nbsp;<span class="cs">name</span>: <span class="cp">"mybrand"</span>,<br/>
+&nbsp;&nbsp;<span class="cs">bg</span>: <span class="cp">"#0d0d0d"</span>,<br/>
+&nbsp;&nbsp;<span class="cs">accent</span>: <span class="cp">"#ff6b35"</span>,<br/>
+&nbsp;&nbsp;<span class="cs">textPrimary</span>: <span class="cp">"#ffffff"</span>,<br/>
+&nbsp;&nbsp;<span class="cc">// ... copy remaining fields</span><br/>
+};
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-ds-card">
+        <div class="studio-ds-card__file">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          src/remotion/templates/_shared/layouts.ts
+        </div>
+        <h3 class="studio-ds-card__title">Font sizes and spacing</h3>
+        <p class="studio-ds-card__desc">The <code>TYPE</code> scale controls all font sizes. Increase values here to make text bigger across every template. Minimum <code>TYPE.body = 20</code> keeps text legible at thumbnail scale.</p>
+        <div class="tpl-code-block tpl-code-block--sm">
+          <div class="tpl-code-block__body">
+<span class="ck">export const</span> <span class="ca">TYPE</span> = {<br/>
+&nbsp;&nbsp;<span class="cs">hero</span>: <span class="cp">68</span>,     <span class="cc">// main headline</span><br/>
+&nbsp;&nbsp;<span class="cs">title</span>: <span class="cp">48</span>,    <span class="cc">// section title</span><br/>
+&nbsp;&nbsp;<span class="cs">body</span>: <span class="cp">20</span>,     <span class="cc">// min for thumbnails</span><br/>
+&nbsp;&nbsp;<span class="cs">label</span>: <span class="cp">16</span>,    <span class="cc">// badges, tags</span><br/>
+};
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Browse Templates CTA ───────────────────────────────────── -->
+<section class="studio-cta-section">
+  <div class="container">
+    <div class="studio-cta-box">
+      <h2 class="studio-cta-box__title">Ready to start?</h2>
+      <p class="studio-cta-box__desc">Browse all 318 compositions in the library, pick a template, and follow the steps above to get Remotion Studio running locally.</p>
+      <div class="studio-cta-box__actions">
+        <a href="{{ "library/" | relURL }}" class="btn btn--primary btn--lg">
+          <i data-lucide="grid"></i>
+          Browse the library
+        </a>
+        <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+          <i data-lucide="github"></i>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "site-footer.html" . }}
+{{ end }}
