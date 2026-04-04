@@ -216,6 +216,7 @@ html.dark .btn--primary:hover {
   -webkit-backdrop-filter: blur(14px);
   transition: background .2s;
 }
+.nav .container { height: 100%; }
 html.dark .nav { background: rgba(0, 16, 41, .88); }
 
 .nav__inner {
