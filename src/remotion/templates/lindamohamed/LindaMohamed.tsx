@@ -84,105 +84,114 @@ const InfinityLogo: React.FC<{ size?: number; color?: string }> = ({
 
 // ═══════════════════════════════════════════════════════════════
 // FOLIE 1 — Cover: "Intro & Packages"
-// Photo background with dark overlay, logo, title, tagline
+// Full-bleed photo, dark gradient left, logo top-left,
+// large all-caps title bottom-left — matches original PPTX slide.
 // ═══════════════════════════════════════════════════════════════
 
 export const Folie1Cover: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Animations
-  const bgScale = interpolate(frame, [0, 120], [1.05, 1], {
+  const bgScale = interpolate(frame, [0, 150], [1.06, 1], {
     extrapolateRight: "clamp",
     extrapolateLeft: "clamp",
   });
-  const overlayOpacity = fadeIn(frame, 0, 30);
-  const logoSpring = springEntrance(frame, fps, 15, SPRING.gentle);
-  const titleSpring = springEntrance(frame, fps, 30, SPRING.default);
-  const subtitleOpacity = fadeIn(frame, 50, 25);
-  const taglineOpacity = fadeIn(frame, 70, 25);
-  const lineWidth = interpolate(frame, [40, 80], [0, 200], {
-    extrapolateRight: "clamp",
-    extrapolateLeft: "clamp",
-  });
+  const overlayOpacity = fadeIn(frame, 0, 20);
+  const logoOpacity = springEntrance(frame, fps, 8, SPRING.gentle);
+  const line1Spring = springEntrance(frame, fps, 18, SPRING.default);
+  const line2Spring = springEntrance(frame, fps, 28, SPRING.default);
+  const taglineOpacity = fadeIn(frame, 50, 30);
 
   return (
-    <AbsoluteFill style={{ backgroundColor: WHITE, fontFamily: FONT }}>
-      {/* Background photo with subtle zoom */}
-      <AbsoluteFill style={{ transform: `scale(${bgScale})` }}>
+    <AbsoluteFill style={{ backgroundColor: "#0a0a0a", fontFamily: FONT }}>
+
+      {/* Full-bleed background photo with Ken Burns zoom */}
+      <AbsoluteFill style={{ transform: `scale(${bgScale})`, transformOrigin: "60% 50%" }}>
         <Img
-          src={staticFile("slides/lindamohamed/Folie1.png")}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          src={staticFile("slides/lindamohamed/linda-speaking.jpg")}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center top",
+          }}
         />
       </AbsoluteFill>
 
-      {/* Dark overlay for text readability */}
+      {/* Gradient overlay: heavy left for text legibility, fades to transparent right */}
       <AbsoluteFill
         style={{
-          background: "linear-gradient(135deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 100%)",
+          background: "linear-gradient(to right, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.65) 45%, rgba(0,0,0,0.18) 100%)",
           opacity: overlayOpacity,
         }}
       />
 
-      {/* Content */}
-      <AbsoluteFill
+      {/* Logo + domain - top left */}
+      <div
         style={{
+          position: "absolute",
+          top: TOP_SAFE,
+          left: PADDING,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: PADDING,
+          gap: 6,
+          opacity: logoOpacity,
+          transform: `translateY(${slideIn(logoOpacity, "up", 16)}px)`,
         }}
       >
-        {/* Logo */}
-        <div
-          style={{
-            opacity: logoSpring,
-            transform: `scale(${interpolate(logoSpring, [0, 1], [0.6, 1])})`,
-            marginBottom: 24,
-          }}
-        >
-          <InfinityLogo size={80} color={WHITE} />
-        </div>
-
-        {/* Title */}
-        <div
-          style={{
-            fontSize: 56,
-            fontWeight: 800,
-            color: WHITE,
-            textAlign: "center",
-            opacity: titleSpring,
-            transform: `translateY(${slideIn(titleSpring, "up", 30)}px)`,
-            letterSpacing: -1,
-          }}
-        >
-          Intro & Packages
-        </div>
-
-        {/* Green accent line */}
-        <div
-          style={{
-            width: lineWidth,
-            height: 3,
-            backgroundColor: GREEN_LIGHT,
-            borderRadius: 2,
-            marginTop: 16,
-            marginBottom: 16,
-          }}
-        />
-
-        {/* Subtitle */}
+        <InfinityLogo size={52} color={WHITE} />
         <div
           style={{
             fontSize: 24,
             fontWeight: 400,
-            color: "rgba(255,255,255,0.85)",
-            textAlign: "center",
-            opacity: subtitleOpacity,
+            color: "rgba(255,255,255,0.65)",
+            letterSpacing: 0.5,
           }}
         >
-          AI & Cloud Consulting
+          lindamohamed.com
+        </div>
+      </div>
+
+      {/* Title block - bottom left, matching PPTX layout */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 64,
+          left: PADDING,
+          right: "45%",
+        }}
+      >
+        {/* INTRO & */}
+        <div
+          style={{
+            fontSize: 88,
+            fontWeight: 900,
+            color: WHITE,
+            lineHeight: 0.92,
+            textTransform: "uppercase" as const,
+            letterSpacing: -2,
+            opacity: line1Spring,
+            transform: `translateY(${slideIn(line1Spring, "up", 32)}px)`,
+          }}
+        >
+          INTRO &
+        </div>
+
+        {/* PACKAGES */}
+        <div
+          style={{
+            fontSize: 88,
+            fontWeight: 900,
+            color: WHITE,
+            lineHeight: 0.92,
+            textTransform: "uppercase" as const,
+            letterSpacing: -2,
+            opacity: line2Spring,
+            transform: `translateY(${slideIn(line2Spring, "up", 32)}px)`,
+            marginBottom: 28,
+          }}
+        >
+          PACKAGES
         </div>
 
         {/* Tagline */}
@@ -190,15 +199,16 @@ export const Folie1Cover: React.FC = () => {
           style={{
             fontSize: 24,
             fontWeight: 400,
-            color: "rgba(255,255,255,0.6)",
-            textAlign: "center",
+            color: "rgba(255,255,255,0.80)",
+            lineHeight: 1.45,
             opacity: taglineOpacity,
-            marginTop: 8,
+            maxWidth: 560,
           }}
         >
-          Linda Mohamed — Freelance Consultant
+          AI & Cloud Consulting with focus on Data,{"\n"}
+          Prototyping & PoC Fundings for AI- und Cloud Projects
         </div>
-      </AbsoluteFill>
+      </div>
     </AbsoluteFill>
   );
 };
