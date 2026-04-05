@@ -48,3 +48,15 @@ export const SprintDashboardBurndownDark: React.FC<{ brandKit?: BrandKit }> = ({
 export const SprintDashboardBurndownBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "bold" }} brandKit={brandKit} />
 );
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const SprintDashboardOceanKanban: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "ocean" }} brandKit={brandKit} />;
+export const SprintDashboardSunsetKanban: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "sunset" }} brandKit={brandKit} />;
+export const SprintDashboardForestVelocity: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "forest" }} brandKit={brandKit} />;
+export const SprintDashboardRoseVelocity: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "rose" }} brandKit={brandKit} />;
+export const SprintDashboardGoldBurndown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "gold" }} brandKit={brandKit} />;
+export const SprintDashboardMidnightBurndown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "midnight" }} brandKit={brandKit} />;
+export const SprintDashboardCrimsonKanban: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "crimson" }} brandKit={brandKit} />;
+export const SprintDashboardLavenderKanban: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "lavender" }} brandKit={brandKit} />;
+export const SprintDashboardArcticVelocity: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "arctic" }} brandKit={brandKit} />;
+export const SprintDashboardEspressoVelocity: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "espresso" }} brandKit={brandKit} />;

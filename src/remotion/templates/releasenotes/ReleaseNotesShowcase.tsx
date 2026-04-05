@@ -24,3 +24,15 @@ export const ReleaseNotesHighlightsDark: React.FC<{ brandKit?: BrandKit }> = ({ 
 export const ReleaseNotesHighlightsClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "clean" }} brandKit={brandKit} />;
 export const ReleaseNotesVersionCompareDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "version-compare", theme: "dark" }} brandKit={brandKit} />;
 export const ReleaseNotesVersionCompareClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "version-compare", theme: "clean" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const ReleaseNotesOceanChangelog: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "changelog", theme: "ocean" }} brandKit={brandKit} />;
+export const ReleaseNotesSunsetChangelog: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "changelog", theme: "sunset" }} brandKit={brandKit} />;
+export const ReleaseNotesForestHighlights: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "forest" }} brandKit={brandKit} />;
+export const ReleaseNotesRoseHighlights: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "rose" }} brandKit={brandKit} />;
+export const ReleaseNotesGoldVersionCompare: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "version-compare", theme: "gold" }} brandKit={brandKit} />;
+export const ReleaseNotesMidnightVersionCompare: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "version-compare", theme: "midnight" }} brandKit={brandKit} />;
+export const ReleaseNotesCrimsonChangelog: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "changelog", theme: "crimson" }} brandKit={brandKit} />;
+export const ReleaseNotesLavenderChangelog: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "changelog", theme: "lavender" }} brandKit={brandKit} />;
+export const ReleaseNotesArcticHighlights: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "arctic" }} brandKit={brandKit} />;
+export const ReleaseNotesEspressoHighlights: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "espresso" }} brandKit={brandKit} />;

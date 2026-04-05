@@ -21,7 +21,8 @@ import {
   THEME_BOLD,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data ─────────────────────────────────────────────────
 const SAMPLE_SPEC: ProductLaunchSpec = {
@@ -78,4 +79,36 @@ export const ProductLaunchDarkCountdown: React.FC<{ brandKit?: BrandKit }> = ({ 
 // ── Composition: Bold + Countdown ───────────────────────────────
 export const ProductLaunchBoldCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <ProductLaunch spec={SAMPLE_SPEC_MINIMAL} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="countdown" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const ProductLaunchOceanHeroReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="hero-reveal" bgPattern="grid" />
+);
+export const ProductLaunchSunsetHeroReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="hero-reveal" bgPattern="none" />
+);
+export const ProductLaunchForestFeatureGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="feature-grid" bgPattern="hex" />
+);
+export const ProductLaunchRoseFeatureGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="feature-grid" bgPattern="dots" />
+);
+export const ProductLaunchGoldCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC_MINIMAL} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="countdown" bgPattern="none" />
+);
+export const ProductLaunchMidnightCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC_MINIMAL} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="countdown" bgPattern="grid" />
+);
+export const ProductLaunchCrimsonHeroReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="hero-reveal" bgPattern="none" />
+);
+export const ProductLaunchLavenderHeroReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="hero-reveal" bgPattern="hex" />
+);
+export const ProductLaunchArcticFeatureGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="feature-grid" bgPattern="dots" />
+);
+export const ProductLaunchEspressoFeatureGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="feature-grid" bgPattern="none" />
 );

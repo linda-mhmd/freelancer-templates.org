@@ -23,3 +23,15 @@ export const PinCollectionMapListWarm: React.FC<{ brandKit?: BrandKit }> = ({ br
 export const PinCollectionMapListClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "map-list", theme: "clean" }} brandKit={brandKit} />;
 export const PinCollectionCategoryGridWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "warm" }} brandKit={brandKit} />;
 export const PinCollectionCategoryGridClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "clean" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const PinCollectionOceanCardGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "card-gallery", theme: "ocean" }} brandKit={brandKit} />;
+export const PinCollectionSunsetMapList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "map-list", theme: "sunset" }} brandKit={brandKit} />;
+export const PinCollectionForestCardGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "card-gallery", theme: "forest" }} brandKit={brandKit} />;
+export const PinCollectionRoseCategoryGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "rose" }} brandKit={brandKit} />;
+export const PinCollectionGoldMapList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "map-list", theme: "gold" }} brandKit={brandKit} />;
+export const PinCollectionMidnightCardGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "card-gallery", theme: "midnight" }} brandKit={brandKit} />;
+export const PinCollectionCrimsonCategoryGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "crimson" }} brandKit={brandKit} />;
+export const PinCollectionLavenderMapList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "map-list", theme: "lavender" }} brandKit={brandKit} />;
+export const PinCollectionArcticCardGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "card-gallery", theme: "arctic" }} brandKit={brandKit} />;
+export const PinCollectionEspressoCategoryGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "espresso" }} brandKit={brandKit} />;

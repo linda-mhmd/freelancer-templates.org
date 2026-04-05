@@ -21,7 +21,8 @@ import {
   THEME_CLEAN,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data: Tech Newsletter ────────────────────────────────
 const SAMPLE_SPEC_TECH: NewsletterPromoSpec = {
@@ -79,4 +80,36 @@ export const NewsletterPromoDarkTestimonialBlend: React.FC<{ brandKit?: BrandKit
 // ── Composition: Clean + Testimonial Blend ──────────────────────
 export const NewsletterPromoCleanTestimonialBlend: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <NewsletterPromo spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="testimonial-blend" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const NewsletterPromoOceanSubscribeCta: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="subscribe-cta" bgPattern="grid" />
+);
+export const NewsletterPromoSunsetSubscribeCta: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="subscribe-cta" bgPattern="none" />
+);
+export const NewsletterPromoForestIssuePreview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="issue-preview" bgPattern="hex" />
+);
+export const NewsletterPromoRoseIssuePreview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="issue-preview" bgPattern="dots" />
+);
+export const NewsletterPromoGoldTestimonialBlend: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="testimonial-blend" bgPattern="none" />
+);
+export const NewsletterPromoMidnightTestimonialBlend: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="testimonial-blend" bgPattern="grid" />
+);
+export const NewsletterPromoCrimsonSubscribeCta: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="subscribe-cta" bgPattern="none" />
+);
+export const NewsletterPromoLavenderSubscribeCta: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="subscribe-cta" bgPattern="hex" />
+);
+export const NewsletterPromoArcticIssuePreview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="issue-preview" bgPattern="dots" />
+);
+export const NewsletterPromoEspressoIssuePreview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="issue-preview" bgPattern="none" />
 );

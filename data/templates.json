@@ -7,7 +7,7 @@
     "icon": "star",
     "color": "blue",
     "primaryVariant": "DarkScorecard",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "AffiliateReview-DarkScorecard",
@@ -50,7 +50,7 @@
     "icon": "columns",
     "color": "indigo",
     "primaryVariant": "DarkSplitScreen",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "BeforeAfter-DarkSplitScreen",
@@ -93,7 +93,7 @@
     "icon": "camera",
     "color": "orange",
     "primaryVariant": "DarkSceneCards",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "BehindTheScenes-DarkSceneCards",
@@ -136,7 +136,7 @@
     "icon": "trending-up",
     "color": "orange",
     "primaryVariant": "NeonSpotlight",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "CaseStudy-DarkNarrative",
@@ -179,7 +179,7 @@
     "icon": "users",
     "color": "purple",
     "primaryVariant": "DarkSplitScreen",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Collaboration-DarkSplitScreen",
@@ -222,7 +222,7 @@
     "icon": "clock",
     "color": "green",
     "primaryVariant": "NeonTimer",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "CountdownHype-DarkTimer",
@@ -265,7 +265,7 @@
     "icon": "graduation-cap",
     "color": "orange",
     "primaryVariant": "DarkOverview",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "CoursePromo-DarkOverview",
@@ -308,7 +308,7 @@
     "icon": "calendar",
     "color": "indigo",
     "primaryVariant": "NeonCountdown",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Event-DarkHero",
@@ -351,7 +351,7 @@
     "icon": "lightbulb",
     "color": "purple",
     "primaryVariant": "NeonCinematic",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Explainer-DarkCinematic",
@@ -394,7 +394,7 @@
     "icon": "help-circle",
     "color": "orange",
     "primaryVariant": "NeonInterview",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "FAQ-DarkAccordion",
@@ -437,7 +437,7 @@
     "icon": "activity",
     "color": "amber",
     "primaryVariant": "NeonExerciseList",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "FitnessRoutine-BoldExerciseList",
@@ -480,7 +480,7 @@
     "icon": "receipt",
     "color": "blue",
     "primaryVariant": "NeonUrgent",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Invoice-DarkProfessional",
@@ -523,7 +523,7 @@
     "icon": "list",
     "color": "yellow",
     "primaryVariant": "CleanShowcase",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Listing-CleanShowcase",
@@ -566,7 +566,7 @@
     "icon": "star",
     "color": "rose",
     "primaryVariant": "NeonCelebration",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Milestone-DarkCelebration",
@@ -609,7 +609,7 @@
     "icon": "music",
     "color": "yellow",
     "primaryVariant": "NeonBars",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "MusicVisualizer-DarkBars",
@@ -652,7 +652,7 @@
     "icon": "mail",
     "color": "green",
     "primaryVariant": "DarkSubscribeCta",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "NewsletterPromo-DarkSubscribeCta",
@@ -695,7 +695,7 @@
     "icon": "user-plus",
     "color": "purple",
     "primaryVariant": "NeonCreative",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Onboarding-DarkProfessional",
@@ -738,7 +738,7 @@
     "icon": "mic",
     "color": "blue",
     "primaryVariant": "DarkWaveform",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "PodcastAudiogram-DarkWaveform",
@@ -781,7 +781,7 @@
     "icon": "bar-chart-2",
     "color": "purple",
     "primaryVariant": "NeonQuestionCard",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "PollQuiz-DarkQuestionCard",
@@ -824,7 +824,7 @@
     "icon": "briefcase",
     "color": "rose",
     "primaryVariant": "NeonReel",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Portfolio-DarkGallery",
@@ -867,7 +867,7 @@
     "icon": "tag",
     "color": "indigo",
     "primaryVariant": "NeonSpotlight",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Pricing-DarkTiers",
@@ -910,7 +910,7 @@
     "icon": "rocket",
     "color": "yellow",
     "primaryVariant": "DarkHeroReveal",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "ProductLaunch-DarkHeroReveal",
@@ -953,7 +953,7 @@
     "icon": "file-text",
     "color": "rose",
     "primaryVariant": "NeonPitch",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Proposal-DarkExecutive",
@@ -996,7 +996,7 @@
     "icon": "bar-chart",
     "color": "green",
     "primaryVariant": "NeonTimeline",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Recap-DarkDashboard",
@@ -1039,7 +1039,7 @@
     "icon": "utensils",
     "color": "rose",
     "primaryVariant": "WarmIngredientList",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "RecipeStep-WarmIngredientList",
@@ -1082,7 +1082,7 @@
     "icon": "award",
     "color": "amber",
     "primaryVariant": "NeonAnnouncement",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "SocialProof-DarkMilestone",
@@ -1125,7 +1125,7 @@
     "icon": "message-square",
     "color": "amber",
     "primaryVariant": "NeonSplit",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Testimonial-DarkCentered",
@@ -1168,7 +1168,7 @@
     "icon": "book-open",
     "color": "amber",
     "primaryVariant": "DarkNumberedSteps",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "Tutorial-DarkNumberedSteps",
@@ -1234,7 +1234,7 @@
     "icon": "cpu",
     "color": "indigo",
     "primaryVariant": "ControlPanelDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "AgentDashboard-ControlPanelDark",
@@ -1277,7 +1277,7 @@
     "icon": "bug",
     "color": "rose",
     "primaryVariant": "SeverityMatrixDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "BugTracker-SeverityMatrixDark",
@@ -1320,7 +1320,7 @@
     "icon": "alert-triangle",
     "color": "orange",
     "primaryVariant": "PriorityColumnsDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "BugTriage-PriorityColumnsDark",
@@ -1363,7 +1363,7 @@
     "icon": "git-branch",
     "color": "amber",
     "primaryVariant": "FunnelDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "ClientPipeline-FunnelDark",
@@ -1406,7 +1406,7 @@
     "icon": "layers",
     "color": "blue",
     "primaryVariant": "ArchitectureGridDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "ComponentInventory-ArchitectureGridDark",
@@ -1449,7 +1449,7 @@
     "icon": "lightbulb",
     "color": "purple",
     "primaryVariant": "ArcDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "ConceptPitch-ArcDark",
@@ -1492,7 +1492,7 @@
     "icon": "rocket",
     "color": "indigo",
     "primaryVariant": "EnvironmentCardsDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "DeploymentStatus-EnvironmentCardsDark",
@@ -1535,7 +1535,7 @@
     "icon": "bar-chart-2",
     "color": "blue",
     "primaryVariant": "TeamAllocationDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "EffortTracking-TeamAllocationDark",
@@ -1578,7 +1578,7 @@
     "icon": "map-pin",
     "color": "purple",
     "primaryVariant": "ScheduleMapDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "EventVenue-ScheduleMapDark",
@@ -1621,7 +1621,7 @@
     "icon": "toggle-left",
     "color": "indigo",
     "primaryVariant": "ExperimentBoardDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "FeatureFlags-ExperimentBoardDark",
@@ -1664,7 +1664,7 @@
     "icon": "map",
     "color": "blue",
     "primaryVariant": "TimelineDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "FeatureRoadmap-TimelineDark",
@@ -1707,7 +1707,7 @@
     "icon": "link-2",
     "color": "green",
     "primaryVariant": "StatusWallDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "IntegrationStatus-StatusWallDark",
@@ -1750,7 +1750,7 @@
     "icon": "navigation",
     "color": "warm",
     "primaryVariant": "ExplorerWarm",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "NeighborhoodGuide-ExplorerWarm",
@@ -1793,7 +1793,7 @@
     "icon": "globe",
     "color": "blue",
     "primaryVariant": "WorldViewDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "OfficeDirectory-WorldViewDark",
@@ -1836,7 +1836,7 @@
     "icon": "bookmark",
     "color": "warm",
     "primaryVariant": "CardGalleryWarm",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "PinCollection-CardGalleryWarm",
@@ -1879,7 +1879,7 @@
     "icon": "monitor",
     "color": "indigo",
     "primaryVariant": "CommandCenterDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "PlatformOverview-CommandCenterDark",
@@ -1922,7 +1922,7 @@
     "icon": "activity",
     "color": "green",
     "primaryVariant": "HealthScorecardDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "ProjectHealth-HealthScorecardDark",
@@ -1965,7 +1965,7 @@
     "icon": "pie-chart",
     "color": "blue",
     "primaryVariant": "ExecutiveDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "QBRDashboard-ExecutiveDark",
@@ -2008,7 +2008,7 @@
     "icon": "tag",
     "color": "green",
     "primaryVariant": "ChangelogDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "ReleaseNotes-ChangelogDark",
@@ -2051,7 +2051,7 @@
     "icon": "trello",
     "color": "indigo",
     "primaryVariant": "KanbanDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "SprintDashboard-KanbanDark",
@@ -2094,7 +2094,7 @@
     "icon": "check-square",
     "color": "green",
     "primaryVariant": "ShippedListDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "SprintRecap-ShippedListDark",
@@ -2137,7 +2137,7 @@
     "icon": "store",
     "color": "warm",
     "primaryVariant": "FinderClean",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "StoreLocator-FinderClean",
@@ -2180,7 +2180,7 @@
     "icon": "book-open",
     "color": "purple",
     "primaryVariant": "EditorialDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "ThoughtLeadership-EditorialDark",
@@ -2223,7 +2223,7 @@
     "icon": "compass",
     "color": "warm",
     "primaryVariant": "DayByDayWarm",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "TravelItinerary-DayByDayWarm",
@@ -2266,7 +2266,7 @@
     "icon": "trending-up",
     "color": "green",
     "primaryVariant": "BarChartDark",
-    "variantCount": 6,
+    "variantCount": 16,
     "variants": [
       {
         "id": "VelocityChart-BarChartDark",

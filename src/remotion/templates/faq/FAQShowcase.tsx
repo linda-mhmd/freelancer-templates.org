@@ -13,7 +13,8 @@ import {
   THEME_NEON,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 const SAMPLE_SPEC: FAQSpec = {
   headline: "Frequently Asked Questions",
@@ -101,4 +102,36 @@ export const FAQNeonInterview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }
       { question: "What about scalability?", answer: "I design for scale from day one. Serverless architectures, auto-scaling groups, and load testing are standard practice.", icon: "trending-up" },
     ],
   }} theme={applyBrandKit(THEME_NEON, brandKit)} layout="interview" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const FAQOceanAccordion: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="accordion" bgPattern="grid" />
+);
+export const FAQSunsetCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="cards" bgPattern="none" />
+);
+export const FAQForestAccordion: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="accordion" bgPattern="hex" />
+);
+export const FAQRoseCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="cards" bgPattern="dots" />
+);
+export const FAQGoldAccordion: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="accordion" bgPattern="none" />
+);
+export const FAQMidnightCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="cards" bgPattern="grid" />
+);
+export const FAQCrimsonAccordion: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="accordion" bgPattern="none" />
+);
+export const FAQLavenderCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="cards" bgPattern="hex" />
+);
+export const FAQArcticAccordion: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="accordion" bgPattern="dots" />
+);
+export const FAQEspressoCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="cards" bgPattern="none" />
 );

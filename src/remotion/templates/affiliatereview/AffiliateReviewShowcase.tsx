@@ -21,7 +21,8 @@ import {
   THEME_BOLD,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data: Wireless Headphones Review ─────────────────────
 const SAMPLE_SPEC_HEADPHONES: AffiliateReviewSpec = {
@@ -90,4 +91,36 @@ export const AffiliateReviewDarkVerdict: React.FC<{ brandKit?: BrandKit }> = ({ 
 // ── Composition: Bold + Verdict ─────────────────────────────────
 export const AffiliateReviewBoldVerdict: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <AffiliateReview spec={SAMPLE_SPEC_SOFTWARE} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="verdict" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const AffiliateReviewOceanScorecard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_HEADPHONES} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="scorecard" bgPattern="grid" />
+);
+export const AffiliateReviewSunsetScorecard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_HEADPHONES} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="scorecard" bgPattern="none" />
+);
+export const AffiliateReviewForestComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_SOFTWARE} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="comparison" bgPattern="hex" />
+);
+export const AffiliateReviewRoseComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_SOFTWARE} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="comparison" bgPattern="dots" />
+);
+export const AffiliateReviewGoldVerdict: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_SOFTWARE} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="verdict" bgPattern="none" />
+);
+export const AffiliateReviewMidnightVerdict: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_SOFTWARE} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="verdict" bgPattern="grid" />
+);
+export const AffiliateReviewCrimsonScorecard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_HEADPHONES} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="scorecard" bgPattern="none" />
+);
+export const AffiliateReviewLavenderScorecard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_HEADPHONES} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="scorecard" bgPattern="hex" />
+);
+export const AffiliateReviewArcticComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_SOFTWARE} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="comparison" bgPattern="dots" />
+);
+export const AffiliateReviewEspressoComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <AffiliateReview spec={SAMPLE_SPEC_SOFTWARE} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="comparison" bgPattern="none" />
 );

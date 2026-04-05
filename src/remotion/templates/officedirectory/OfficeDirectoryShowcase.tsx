@@ -21,3 +21,15 @@ export const OfficeDirectoryCardListDark: React.FC<{ brandKit?: BrandKit }> = ({
 export const OfficeDirectoryCardListClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "card-list", theme: "clean" }} brandKit={brandKit} />;
 export const OfficeDirectoryRegionGroupsDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "region-groups", theme: "dark" }} brandKit={brandKit} />;
 export const OfficeDirectoryRegionGroupsClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "region-groups", theme: "clean" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const OfficeDirectoryOceanWorldView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "world-view", theme: "ocean" }} brandKit={brandKit} />;
+export const OfficeDirectorySunsetWorldView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "world-view", theme: "sunset" }} brandKit={brandKit} />;
+export const OfficeDirectoryForestCardList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "card-list", theme: "forest" }} brandKit={brandKit} />;
+export const OfficeDirectoryRoseCardList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "card-list", theme: "rose" }} brandKit={brandKit} />;
+export const OfficeDirectoryGoldRegionGroups: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "region-groups", theme: "gold" }} brandKit={brandKit} />;
+export const OfficeDirectoryMidnightRegionGroups: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "region-groups", theme: "midnight" }} brandKit={brandKit} />;
+export const OfficeDirectoryCrimsonWorldView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "world-view", theme: "crimson" }} brandKit={brandKit} />;
+export const OfficeDirectoryLavenderWorldView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "world-view", theme: "lavender" }} brandKit={brandKit} />;
+export const OfficeDirectoryArcticCardList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "card-list", theme: "arctic" }} brandKit={brandKit} />;
+export const OfficeDirectoryEspressoCardList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <OfficeDirectory spec={{ ...BASE_SPEC, layout: "card-list", theme: "espresso" }} brandKit={brandKit} />;

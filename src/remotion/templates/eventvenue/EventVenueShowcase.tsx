@@ -22,3 +22,15 @@ export const EventVenueVenueCardsDark: React.FC<{ brandKit?: BrandKit }> = ({ br
 export const EventVenueVenueCardsBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "venue-cards", theme: "bold" }} brandKit={brandKit} />;
 export const EventVenueEventOverviewDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "event-overview", theme: "dark" }} brandKit={brandKit} />;
 export const EventVenueEventOverviewBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "event-overview", theme: "bold" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const EventVenueOceanScheduleMap: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "schedule-map", theme: "ocean" }} brandKit={brandKit} />;
+export const EventVenueSunsetScheduleMap: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "schedule-map", theme: "sunset" }} brandKit={brandKit} />;
+export const EventVenueForestVenueCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "venue-cards", theme: "forest" }} brandKit={brandKit} />;
+export const EventVenueRoseVenueCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "venue-cards", theme: "rose" }} brandKit={brandKit} />;
+export const EventVenueGoldEventOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "event-overview", theme: "gold" }} brandKit={brandKit} />;
+export const EventVenueMidnightEventOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "event-overview", theme: "midnight" }} brandKit={brandKit} />;
+export const EventVenueCrimsonScheduleMap: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "schedule-map", theme: "crimson" }} brandKit={brandKit} />;
+export const EventVenueLavenderScheduleMap: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "schedule-map", theme: "lavender" }} brandKit={brandKit} />;
+export const EventVenueArcticVenueCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "venue-cards", theme: "arctic" }} brandKit={brandKit} />;
+export const EventVenueEspressoVenueCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EventVenue spec={{ ...BASE_SPEC, layout: "venue-cards", theme: "espresso" }} brandKit={brandKit} />;

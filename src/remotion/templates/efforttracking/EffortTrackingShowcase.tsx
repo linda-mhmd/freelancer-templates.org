@@ -22,3 +22,15 @@ export const EffortTrackingCapacityDark: React.FC<{ brandKit?: BrandKit }> = ({ 
 export const EffortTrackingCapacityWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "warm" }} brandKit={brandKit} />;
 export const EffortTrackingBreakdownDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "breakdown", theme: "dark" }} brandKit={brandKit} />;
 export const EffortTrackingBreakdownWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "breakdown", theme: "warm" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const EffortTrackingOceanTeamAllocation: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "team-allocation", theme: "ocean" }} brandKit={brandKit} />;
+export const EffortTrackingSunsetTeamAllocation: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "team-allocation", theme: "sunset" }} brandKit={brandKit} />;
+export const EffortTrackingForestCapacity: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "forest" }} brandKit={brandKit} />;
+export const EffortTrackingRoseCapacity: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "rose" }} brandKit={brandKit} />;
+export const EffortTrackingGoldBreakdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "breakdown", theme: "gold" }} brandKit={brandKit} />;
+export const EffortTrackingMidnightBreakdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "breakdown", theme: "midnight" }} brandKit={brandKit} />;
+export const EffortTrackingCrimsonTeamAllocation: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "team-allocation", theme: "crimson" }} brandKit={brandKit} />;
+export const EffortTrackingLavenderTeamAllocation: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "team-allocation", theme: "lavender" }} brandKit={brandKit} />;
+export const EffortTrackingArcticCapacity: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "arctic" }} brandKit={brandKit} />;
+export const EffortTrackingEspressoCapacity: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "espresso" }} brandKit={brandKit} />;

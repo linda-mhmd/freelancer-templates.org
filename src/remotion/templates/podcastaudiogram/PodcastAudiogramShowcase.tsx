@@ -21,7 +21,8 @@ import {
   THEME_WARM,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data: Tech Podcast ───────────────────────────────────
 const SAMPLE_SPEC_TECH: PodcastAudiogramSpec = {
@@ -69,4 +70,36 @@ export const PodcastAudiogramDarkEpisodePromo: React.FC<{ brandKit?: BrandKit }>
 // ── Composition: Warm + Episode Promo ───────────────────────────
 export const PodcastAudiogramWarmEpisodePromo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_WARM, brandKit)} layout="episode-promo" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const PodcastAudiogramOceanWaveform: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="waveform" bgPattern="grid" />
+);
+export const PodcastAudiogramSunsetWaveform: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="waveform" bgPattern="none" />
+);
+export const PodcastAudiogramForestQuoteCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="quote-card" bgPattern="hex" />
+);
+export const PodcastAudiogramRoseQuoteCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="quote-card" bgPattern="dots" />
+);
+export const PodcastAudiogramGoldEpisodePromo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="episode-promo" bgPattern="none" />
+);
+export const PodcastAudiogramMidnightEpisodePromo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="episode-promo" bgPattern="grid" />
+);
+export const PodcastAudiogramCrimsonWaveform: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="waveform" bgPattern="none" />
+);
+export const PodcastAudiogramLavenderWaveform: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="waveform" bgPattern="hex" />
+);
+export const PodcastAudiogramArcticQuoteCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="quote-card" bgPattern="dots" />
+);
+export const PodcastAudiogramEspressoQuoteCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="quote-card" bgPattern="none" />
 );

@@ -24,3 +24,15 @@ export const SprintRecapHighlightCardsDark: React.FC<{ brandKit?: BrandKit }> = 
 export const SprintRecapHighlightCardsBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "bold" }} brandKit={brandKit} />;
 export const SprintRecapTeamContributionsDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "team-contributions", theme: "dark" }} brandKit={brandKit} />;
 export const SprintRecapTeamContributionsBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "team-contributions", theme: "bold" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const SprintRecapOceanShippedList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "shipped-list", theme: "ocean" }} brandKit={brandKit} />;
+export const SprintRecapSunsetShippedList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "shipped-list", theme: "sunset" }} brandKit={brandKit} />;
+export const SprintRecapForestHighlightCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "forest" }} brandKit={brandKit} />;
+export const SprintRecapRoseHighlightCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "rose" }} brandKit={brandKit} />;
+export const SprintRecapGoldTeamContributions: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "team-contributions", theme: "gold" }} brandKit={brandKit} />;
+export const SprintRecapMidnightTeamContributions: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "team-contributions", theme: "midnight" }} brandKit={brandKit} />;
+export const SprintRecapCrimsonShippedList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "shipped-list", theme: "crimson" }} brandKit={brandKit} />;
+export const SprintRecapLavenderShippedList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "shipped-list", theme: "lavender" }} brandKit={brandKit} />;
+export const SprintRecapArcticHighlightCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "arctic" }} brandKit={brandKit} />;
+export const SprintRecapEspressoHighlightCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "espresso" }} brandKit={brandKit} />;

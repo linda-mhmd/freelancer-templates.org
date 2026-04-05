@@ -13,7 +13,8 @@ import {
   THEME_NEON,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 const SAMPLE_SPEC: PricingSpec = {
   headline: "Simple, Transparent Pricing",
@@ -122,4 +123,36 @@ export const PricingNeonSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ brandK
       { ...SAMPLE_SPEC.tiers[2], name: "Scale", price: 299, period: "/mo" },
     ],
   }} theme={applyBrandKit(THEME_NEON, brandKit)} layout="spotlight" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const PricingOceanTiers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="tiers" bgPattern="grid" />
+);
+export const PricingSunsetComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="comparison" bgPattern="none" />
+);
+export const PricingForestTiers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="tiers" bgPattern="hex" />
+);
+export const PricingRoseComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="comparison" bgPattern="dots" />
+);
+export const PricingGoldTiers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="tiers" bgPattern="none" />
+);
+export const PricingMidnightComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="comparison" bgPattern="grid" />
+);
+export const PricingCrimsonTiers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="tiers" bgPattern="none" />
+);
+export const PricingLavenderComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="comparison" bgPattern="hex" />
+);
+export const PricingArcticTiers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="tiers" bgPattern="dots" />
+);
+export const PricingEspressoComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="comparison" bgPattern="none" />
 );

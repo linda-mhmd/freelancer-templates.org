@@ -23,3 +23,15 @@ export const TravelItineraryRouteOverviewWarm: React.FC<{ brandKit?: BrandKit }>
 export const TravelItineraryRouteOverviewBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "bold" }} brandKit={brandKit} />;
 export const TravelItineraryHighlightsWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "highlights", theme: "warm" }} brandKit={brandKit} />;
 export const TravelItineraryHighlightsBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "highlights", theme: "bold" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const TravelItineraryOceanDayByDay: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "day-by-day", theme: "ocean" }} brandKit={brandKit} />;
+export const TravelItinerarySunsetDayByDay: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "day-by-day", theme: "sunset" }} brandKit={brandKit} />;
+export const TravelItineraryForestRouteOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "forest" }} brandKit={brandKit} />;
+export const TravelItineraryRoseRouteOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "rose" }} brandKit={brandKit} />;
+export const TravelItineraryGoldHighlights: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "highlights", theme: "gold" }} brandKit={brandKit} />;
+export const TravelItineraryMidnightHighlights: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "highlights", theme: "midnight" }} brandKit={brandKit} />;
+export const TravelItineraryCrimsonDayByDay: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "day-by-day", theme: "crimson" }} brandKit={brandKit} />;
+export const TravelItineraryLavenderDayByDay: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "day-by-day", theme: "lavender" }} brandKit={brandKit} />;
+export const TravelItineraryArcticRouteOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "arctic" }} brandKit={brandKit} />;
+export const TravelItineraryEspressoRouteOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "espresso" }} brandKit={brandKit} />;

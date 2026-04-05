@@ -21,7 +21,8 @@ import {
   THEME_NEON,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data: Programming Language Poll ──────────────────────
 const SAMPLE_SPEC_POLL: PollQuizSpec = {
@@ -74,4 +75,36 @@ export const PollQuizDarkReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit
 // ── Composition: Neon + Reveal ──────────────────────────────────
 export const PollQuizNeonReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <PollQuiz spec={SAMPLE_SPEC_QUIZ} theme={applyBrandKit(THEME_NEON, brandKit)} layout="reveal" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const PollQuizOceanQuestionCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="question-card" bgPattern="grid" />
+);
+export const PollQuizSunsetQuestionCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="question-card" bgPattern="none" />
+);
+export const PollQuizForestResultsBar: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="results-bar" bgPattern="hex" />
+);
+export const PollQuizRoseResultsBar: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="results-bar" bgPattern="dots" />
+);
+export const PollQuizGoldReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_QUIZ} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="reveal" bgPattern="none" />
+);
+export const PollQuizMidnightReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_QUIZ} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="reveal" bgPattern="grid" />
+);
+export const PollQuizCrimsonQuestionCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="question-card" bgPattern="none" />
+);
+export const PollQuizLavenderQuestionCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="question-card" bgPattern="hex" />
+);
+export const PollQuizArcticResultsBar: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="results-bar" bgPattern="dots" />
+);
+export const PollQuizEspressoResultsBar: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="results-bar" bgPattern="none" />
 );

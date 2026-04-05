@@ -19,3 +19,15 @@ export const DeploymentStatusPipelineViewDark: React.FC<{ brandKit?: BrandKit }>
 export const DeploymentStatusPipelineViewNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "neon" }} brandKit={brandKit} />;
 export const DeploymentStatusHealthDashboardDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "health-dashboard", theme: "dark" }} brandKit={brandKit} />;
 export const DeploymentStatusHealthDashboardNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "health-dashboard", theme: "neon" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const DeploymentStatusOceanEnvironmentCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "environment-cards", theme: "ocean" }} brandKit={brandKit} />;
+export const DeploymentStatusSunsetEnvironmentCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "environment-cards", theme: "sunset" }} brandKit={brandKit} />;
+export const DeploymentStatusForestPipelineView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "forest" }} brandKit={brandKit} />;
+export const DeploymentStatusRosePipelineView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "rose" }} brandKit={brandKit} />;
+export const DeploymentStatusGoldHealthDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "health-dashboard", theme: "gold" }} brandKit={brandKit} />;
+export const DeploymentStatusMidnightHealthDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "health-dashboard", theme: "midnight" }} brandKit={brandKit} />;
+export const DeploymentStatusCrimsonEnvironmentCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "environment-cards", theme: "crimson" }} brandKit={brandKit} />;
+export const DeploymentStatusLavenderEnvironmentCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "environment-cards", theme: "lavender" }} brandKit={brandKit} />;
+export const DeploymentStatusArcticPipelineView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "arctic" }} brandKit={brandKit} />;
+export const DeploymentStatusEspressoPipelineView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "espresso" }} brandKit={brandKit} />;

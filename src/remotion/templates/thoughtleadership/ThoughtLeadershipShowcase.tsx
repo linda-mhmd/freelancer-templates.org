@@ -80,3 +80,35 @@ export const ThoughtLeadershipKeynoteClean: React.FC<{ brandKit?: BrandKit }> = 
   <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="keynote" />
 );
 export const KEYNOTE_CLEAN_DURATION = calculateThoughtLeadershipDuration(SECTIONS_COUNT, "keynote");
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const ThoughtLeadershipOceanEditorial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="editorial" />
+);
+export const ThoughtLeadershipSunsetNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="narrative" />
+);
+export const ThoughtLeadershipForestKeynote: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="keynote" />
+);
+export const ThoughtLeadershipRoseEditorial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="editorial" />
+);
+export const ThoughtLeadershipGoldNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="narrative" />
+);
+export const ThoughtLeadershipMidnightKeynote: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="keynote" />
+);
+export const ThoughtLeadershipCrimsonEditorial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="editorial" />
+);
+export const ThoughtLeadershipLavenderNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="narrative" />
+);
+export const ThoughtLeadershipArcticKeynote: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="keynote" />
+);
+export const ThoughtLeadershipEspressoEditorial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="editorial" />
+);

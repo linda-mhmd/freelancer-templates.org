@@ -22,3 +22,15 @@ export const StoreLocatorMapPinsClean: React.FC<{ brandKit?: BrandKit }> = ({ br
 export const StoreLocatorMapPinsMinimal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "map-pins", theme: "minimal" }} brandKit={brandKit} />;
 export const StoreLocatorDirectoryClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "clean" }} brandKit={brandKit} />;
 export const StoreLocatorDirectoryMinimal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "minimal" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const StoreLocatorOceanFinder: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "finder", theme: "ocean" }} brandKit={brandKit} />;
+export const StoreLocatorSunsetMapPins: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "map-pins", theme: "sunset" }} brandKit={brandKit} />;
+export const StoreLocatorForestDirectory: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "forest" }} brandKit={brandKit} />;
+export const StoreLocatorRoseFinder: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "finder", theme: "rose" }} brandKit={brandKit} />;
+export const StoreLocatorGoldMapPins: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "map-pins", theme: "gold" }} brandKit={brandKit} />;
+export const StoreLocatorMidnightDirectory: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "midnight" }} brandKit={brandKit} />;
+export const StoreLocatorCrimsonFinder: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "finder", theme: "crimson" }} brandKit={brandKit} />;
+export const StoreLocatorLavenderMapPins: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "map-pins", theme: "lavender" }} brandKit={brandKit} />;
+export const StoreLocatorArcticDirectory: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "arctic" }} brandKit={brandKit} />;
+export const StoreLocatorEspressoFinder: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "finder", theme: "espresso" }} brandKit={brandKit} />;

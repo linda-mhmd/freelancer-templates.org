@@ -23,3 +23,15 @@ export const VelocityChartTrendLineDark: React.FC<{ brandKit?: BrandKit }> = ({ 
 export const VelocityChartTrendLineClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "clean" }} brandKit={brandKit} />;
 export const VelocityChartSummaryDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "summary", theme: "dark" }} brandKit={brandKit} />;
 export const VelocityChartSummaryClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "summary", theme: "clean" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const VelocityChartOceanBarChart: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "bar-chart", theme: "ocean" }} brandKit={brandKit} />;
+export const VelocityChartSunsetBarChart: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "bar-chart", theme: "sunset" }} brandKit={brandKit} />;
+export const VelocityChartForestTrendLine: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "forest" }} brandKit={brandKit} />;
+export const VelocityChartRoseTrendLine: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "rose" }} brandKit={brandKit} />;
+export const VelocityChartGoldSummary: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "summary", theme: "gold" }} brandKit={brandKit} />;
+export const VelocityChartMidnightSummary: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "summary", theme: "midnight" }} brandKit={brandKit} />;
+export const VelocityChartCrimsonBarChart: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "bar-chart", theme: "crimson" }} brandKit={brandKit} />;
+export const VelocityChartLavenderBarChart: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "bar-chart", theme: "lavender" }} brandKit={brandKit} />;
+export const VelocityChartArcticTrendLine: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "arctic" }} brandKit={brandKit} />;
+export const VelocityChartEspressoTrendLine: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "espresso" }} brandKit={brandKit} />;

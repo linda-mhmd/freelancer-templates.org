@@ -26,3 +26,15 @@ export const PlatformOverviewModuleGridDark: React.FC<{ brandKit?: BrandKit }> =
 export const PlatformOverviewModuleGridNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "neon" }} brandKit={brandKit} />;
 export const PlatformOverviewStackDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "stack", theme: "dark" }} brandKit={brandKit} />;
 export const PlatformOverviewStackNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "stack", theme: "neon" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const PlatformOverviewOceanCommandCenter: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "command-center", theme: "ocean" }} brandKit={brandKit} />;
+export const PlatformOverviewSunsetCommandCenter: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "command-center", theme: "sunset" }} brandKit={brandKit} />;
+export const PlatformOverviewForestModuleGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "forest" }} brandKit={brandKit} />;
+export const PlatformOverviewRoseModuleGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "rose" }} brandKit={brandKit} />;
+export const PlatformOverviewGoldStack: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "stack", theme: "gold" }} brandKit={brandKit} />;
+export const PlatformOverviewMidnightStack: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "stack", theme: "midnight" }} brandKit={brandKit} />;
+export const PlatformOverviewCrimsonCommandCenter: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "command-center", theme: "crimson" }} brandKit={brandKit} />;
+export const PlatformOverviewLavenderCommandCenter: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "command-center", theme: "lavender" }} brandKit={brandKit} />;
+export const PlatformOverviewArcticModuleGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "arctic" }} brandKit={brandKit} />;
+export const PlatformOverviewEspressoModuleGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "espresso" }} brandKit={brandKit} />;

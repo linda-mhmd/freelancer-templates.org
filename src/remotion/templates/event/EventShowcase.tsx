@@ -22,7 +22,8 @@ import {
   THEME_NEON,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data ─────────────────────────────────────────────────
 const SAMPLE_SPEC: EventSpec = {
@@ -88,4 +89,36 @@ export const EventMinimalSpeakers: React.FC<{ brandKit?: BrandKit }> = ({ brandK
 // ── Composition: Neon + Countdown ───────────────────────────────
 export const EventNeonCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Event spec={SAMPLE_SPEC_WORKSHOP} theme={applyBrandKit(THEME_NEON, brandKit)} layout="countdown" bgPattern="hex" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const EventOceanHero: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="hero" bgPattern="grid" />
+);
+export const EventSunsetSpeakers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="speakers" bgPattern="none" />
+);
+export const EventForestCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC_WORKSHOP} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="countdown" bgPattern="hex" />
+);
+export const EventRoseHero: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="hero" bgPattern="dots" />
+);
+export const EventGoldSpeakers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="speakers" bgPattern="none" />
+);
+export const EventMidnightCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC_WORKSHOP} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="countdown" bgPattern="grid" />
+);
+export const EventCrimsonHero: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="hero" bgPattern="none" />
+);
+export const EventLavenderSpeakers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="speakers" bgPattern="hex" />
+);
+export const EventArcticCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC_WORKSHOP} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="countdown" bgPattern="dots" />
+);
+export const EventEspressoHero: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="hero" bgPattern="none" />
 );

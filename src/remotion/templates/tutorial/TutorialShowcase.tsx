@@ -21,7 +21,8 @@ import {
   THEME_CLEAN,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data ─────────────────────────────────────────────────
 const SAMPLE_SPEC: TutorialSpec = {
@@ -73,4 +74,36 @@ export const TutorialDarkSplitDemo: React.FC<{ brandKit?: BrandKit }> = ({ brand
 // ── Composition: Clean + Split Demo ─────────────────────────────
 export const TutorialCleanSplitDemo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Tutorial spec={SAMPLE_SPEC_ALT} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="split-demo" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const TutorialOceanNumberedSteps: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="numbered-steps" bgPattern="grid" />
+);
+export const TutorialSunsetNumberedSteps: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="numbered-steps" bgPattern="none" />
+);
+export const TutorialForestCardSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="card-sequence" bgPattern="hex" />
+);
+export const TutorialRoseCardSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC_ALT} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="card-sequence" bgPattern="dots" />
+);
+export const TutorialGoldSplitDemo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC_ALT} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="split-demo" bgPattern="none" />
+);
+export const TutorialMidnightSplitDemo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC_ALT} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="split-demo" bgPattern="grid" />
+);
+export const TutorialCrimsonNumberedSteps: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="numbered-steps" bgPattern="none" />
+);
+export const TutorialLavenderNumberedSteps: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="numbered-steps" bgPattern="hex" />
+);
+export const TutorialArcticCardSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="card-sequence" bgPattern="dots" />
+);
+export const TutorialEspressoCardSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC_ALT} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="card-sequence" bgPattern="none" />
 );

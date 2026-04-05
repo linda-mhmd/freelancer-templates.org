@@ -23,3 +23,15 @@ export const AgentDashboardFlowDark: React.FC<{ brandKit?: BrandKit }> = ({ bran
 export const AgentDashboardFlowNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "neon" }} brandKit={brandKit} />;
 export const AgentDashboardMatrixDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "matrix", theme: "dark" }} brandKit={brandKit} />;
 export const AgentDashboardMatrixNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "matrix", theme: "neon" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const AgentDashboardOceanControlPanel: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "control-panel", theme: "ocean" }} brandKit={brandKit} />;
+export const AgentDashboardSunsetControlPanel: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "control-panel", theme: "sunset" }} brandKit={brandKit} />;
+export const AgentDashboardForestFlow: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "forest" }} brandKit={brandKit} />;
+export const AgentDashboardRoseFlow: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "rose" }} brandKit={brandKit} />;
+export const AgentDashboardGoldMatrix: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "matrix", theme: "gold" }} brandKit={brandKit} />;
+export const AgentDashboardMidnightMatrix: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "matrix", theme: "midnight" }} brandKit={brandKit} />;
+export const AgentDashboardCrimsonControlPanel: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "control-panel", theme: "crimson" }} brandKit={brandKit} />;
+export const AgentDashboardLavenderControlPanel: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "control-panel", theme: "lavender" }} brandKit={brandKit} />;
+export const AgentDashboardArcticFlow: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "arctic" }} brandKit={brandKit} />;
+export const AgentDashboardEspressoFlow: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "espresso" }} brandKit={brandKit} />;

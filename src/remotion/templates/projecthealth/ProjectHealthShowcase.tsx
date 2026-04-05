@@ -29,3 +29,15 @@ export const ProjectHealthWorkstreamViewDark: React.FC<{ brandKit?: BrandKit }> 
 export const ProjectHealthWorkstreamViewWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "warm" }} brandKit={brandKit} />;
 export const ProjectHealthExecutiveSummaryDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "executive-summary", theme: "dark" }} brandKit={brandKit} />;
 export const ProjectHealthExecutiveSummaryWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "executive-summary", theme: "warm" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const ProjectHealthOceanHealthScorecard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "health-scorecard", theme: "ocean" }} brandKit={brandKit} />;
+export const ProjectHealthSunsetHealthScorecard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "health-scorecard", theme: "sunset" }} brandKit={brandKit} />;
+export const ProjectHealthForestWorkstreamView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "forest" }} brandKit={brandKit} />;
+export const ProjectHealthRoseWorkstreamView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "rose" }} brandKit={brandKit} />;
+export const ProjectHealthGoldExecutiveSummary: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "executive-summary", theme: "gold" }} brandKit={brandKit} />;
+export const ProjectHealthMidnightExecutiveSummary: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "executive-summary", theme: "midnight" }} brandKit={brandKit} />;
+export const ProjectHealthCrimsonHealthScorecard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "health-scorecard", theme: "crimson" }} brandKit={brandKit} />;
+export const ProjectHealthLavenderHealthScorecard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "health-scorecard", theme: "lavender" }} brandKit={brandKit} />;
+export const ProjectHealthArcticWorkstreamView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "arctic" }} brandKit={brandKit} />;
+export const ProjectHealthEspressoWorkstreamView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "espresso" }} brandKit={brandKit} />;

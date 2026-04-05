@@ -21,7 +21,8 @@ import {
   THEME_WARM,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data: Fitness Transformation ─────────────────────────
 const SAMPLE_SPEC_FITNESS: BeforeAfterSpec = {
@@ -78,4 +79,36 @@ export const BeforeAfterDarkMetricsCompare: React.FC<{ brandKit?: BrandKit }> = 
 // ── Composition: Warm + Metrics Compare ─────────────────────────
 export const BeforeAfterWarmMetricsCompare: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_WARM, brandKit)} layout="metrics-compare" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const BeforeAfterOceanSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_FITNESS} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="split-screen" bgPattern="grid" />
+);
+export const BeforeAfterSunsetSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_FITNESS} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="split-screen" bgPattern="none" />
+);
+export const BeforeAfterForestRevealWipe: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="reveal-wipe" bgPattern="hex" />
+);
+export const BeforeAfterRoseRevealWipe: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="reveal-wipe" bgPattern="dots" />
+);
+export const BeforeAfterGoldMetricsCompare: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="metrics-compare" bgPattern="none" />
+);
+export const BeforeAfterMidnightMetricsCompare: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="metrics-compare" bgPattern="grid" />
+);
+export const BeforeAfterCrimsonSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_FITNESS} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="split-screen" bgPattern="none" />
+);
+export const BeforeAfterLavenderSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_FITNESS} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="split-screen" bgPattern="hex" />
+);
+export const BeforeAfterArcticRevealWipe: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="reveal-wipe" bgPattern="dots" />
+);
+export const BeforeAfterEspressoRevealWipe: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="reveal-wipe" bgPattern="none" />
 );

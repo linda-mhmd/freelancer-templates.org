@@ -22,3 +22,15 @@ export const FeatureRoadmapSwimlaneDark: React.FC<{ brandKit?: BrandKit }> = ({ 
 export const FeatureRoadmapSwimlaneClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "clean" }} brandKit={brandKit} />;
 export const FeatureRoadmapGridDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "dark" }} brandKit={brandKit} />;
 export const FeatureRoadmapGridClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "clean" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const FeatureRoadmapOceanTimeline: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "ocean" }} brandKit={brandKit} />;
+export const FeatureRoadmapSunsetTimeline: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "sunset" }} brandKit={brandKit} />;
+export const FeatureRoadmapForestSwimlane: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "forest" }} brandKit={brandKit} />;
+export const FeatureRoadmapRoseSwimlane: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "rose" }} brandKit={brandKit} />;
+export const FeatureRoadmapGoldGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "gold" }} brandKit={brandKit} />;
+export const FeatureRoadmapMidnightGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "midnight" }} brandKit={brandKit} />;
+export const FeatureRoadmapCrimsonTimeline: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "crimson" }} brandKit={brandKit} />;
+export const FeatureRoadmapLavenderTimeline: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "lavender" }} brandKit={brandKit} />;
+export const FeatureRoadmapArcticSwimlane: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "arctic" }} brandKit={brandKit} />;
+export const FeatureRoadmapEspressoSwimlane: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "espresso" }} brandKit={brandKit} />;

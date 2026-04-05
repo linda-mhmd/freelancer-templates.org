@@ -27,3 +27,15 @@ export const QBRDashboardDetailedDark: React.FC<{ brandKit?: BrandKit }> = ({ br
 export const QBRDashboardDetailedClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "clean" }} brandKit={brandKit} />;
 export const QBRDashboardComparisonDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "comparison", theme: "dark" }} brandKit={brandKit} />;
 export const QBRDashboardComparisonClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "comparison", theme: "clean" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const QBRDashboardOceanExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "executive", theme: "ocean" }} brandKit={brandKit} />;
+export const QBRDashboardSunsetExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "executive", theme: "sunset" }} brandKit={brandKit} />;
+export const QBRDashboardForestDetailed: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "forest" }} brandKit={brandKit} />;
+export const QBRDashboardRoseDetailed: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "rose" }} brandKit={brandKit} />;
+export const QBRDashboardGoldComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "comparison", theme: "gold" }} brandKit={brandKit} />;
+export const QBRDashboardMidnightComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "comparison", theme: "midnight" }} brandKit={brandKit} />;
+export const QBRDashboardCrimsonExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "executive", theme: "crimson" }} brandKit={brandKit} />;
+export const QBRDashboardLavenderExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "executive", theme: "lavender" }} brandKit={brandKit} />;
+export const QBRDashboardArcticDetailed: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "arctic" }} brandKit={brandKit} />;
+export const QBRDashboardEspressoDetailed: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "espresso" }} brandKit={brandKit} />;

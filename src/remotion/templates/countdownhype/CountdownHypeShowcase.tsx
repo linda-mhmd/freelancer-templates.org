@@ -21,7 +21,8 @@ import {
   THEME_NEON,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data: Product Launch Countdown ───────────────────────
 const SAMPLE_SPEC_LAUNCH: CountdownHypeSpec = {
@@ -69,4 +70,36 @@ export const CountdownHypeDarkUrgency: React.FC<{ brandKit?: BrandKit }> = ({ br
 // ── Composition: Neon + Urgency ─────────────────────────────────
 export const CountdownHypeNeonUrgency: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_NEON, brandKit)} layout="urgency" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const CountdownHypeOceanTimer: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_LAUNCH} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="timer" bgPattern="grid" />
+);
+export const CountdownHypeSunsetTimer: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_LAUNCH} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="timer" bgPattern="none" />
+);
+export const CountdownHypeForestTeaser: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="teaser" bgPattern="hex" />
+);
+export const CountdownHypeRoseTeaser: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="teaser" bgPattern="dots" />
+);
+export const CountdownHypeGoldUrgency: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="urgency" bgPattern="none" />
+);
+export const CountdownHypeMidnightUrgency: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="urgency" bgPattern="grid" />
+);
+export const CountdownHypeCrimsonTimer: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_LAUNCH} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="timer" bgPattern="none" />
+);
+export const CountdownHypeLavenderTimer: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_LAUNCH} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="timer" bgPattern="hex" />
+);
+export const CountdownHypeArcticTeaser: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="teaser" bgPattern="dots" />
+);
+export const CountdownHypeEspressoTeaser: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="teaser" bgPattern="none" />
 );

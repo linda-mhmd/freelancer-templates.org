@@ -78,3 +78,35 @@ export const ConceptPitchBriefBold: React.FC<{ brandKit?: BrandKit }> = ({ brand
   <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="brief" />
 );
 export const BRIEF_BOLD_DURATION = BRIEF_DURATION;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const ConceptPitchOceanArc: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="arc" />
+);
+export const ConceptPitchSunsetBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="board" />
+);
+export const ConceptPitchForestBrief: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="brief" />
+);
+export const ConceptPitchRoseArc: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="arc" />
+);
+export const ConceptPitchGoldBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="board" />
+);
+export const ConceptPitchMidnightBrief: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="brief" />
+);
+export const ConceptPitchCrimsonArc: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="arc" />
+);
+export const ConceptPitchLavenderBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="board" />
+);
+export const ConceptPitchArcticBrief: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="brief" />
+);
+export const ConceptPitchEspressoArc: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="arc" />
+);

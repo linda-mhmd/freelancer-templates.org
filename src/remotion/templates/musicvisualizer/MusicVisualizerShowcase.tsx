@@ -8,7 +8,8 @@ import {
   THEME_NEON,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 const SAMPLE_SPEC = {
   track_title: "Neon Horizons",
@@ -41,4 +42,36 @@ export const MusicVisualizerDarkLyrics: React.FC<{ brandKit?: BrandKit }> = ({ b
 );
 export const MusicVisualizerNeonLyrics: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="lyrics" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const MusicVisualizerOceanBars: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="bars" bgPattern="grid" />
+);
+export const MusicVisualizerSunsetBars: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="bars" bgPattern="none" />
+);
+export const MusicVisualizerForestRadial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="radial" bgPattern="hex" />
+);
+export const MusicVisualizerRoseRadial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="radial" bgPattern="dots" />
+);
+export const MusicVisualizerGoldLyrics: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="lyrics" bgPattern="none" />
+);
+export const MusicVisualizerMidnightLyrics: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="lyrics" bgPattern="grid" />
+);
+export const MusicVisualizerCrimsonBars: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="bars" bgPattern="none" />
+);
+export const MusicVisualizerLavenderBars: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="bars" bgPattern="hex" />
+);
+export const MusicVisualizerArcticRadial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="radial" bgPattern="dots" />
+);
+export const MusicVisualizerEspressoRadial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="radial" bgPattern="none" />
 );

@@ -21,3 +21,15 @@ export const IntegrationStatusCategoryGroupsDark: React.FC<{ brandKit?: BrandKit
 export const IntegrationStatusCategoryGroupsClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "clean" }} brandKit={brandKit} />;
 export const IntegrationStatusHealthMonitorDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "health-monitor", theme: "dark" }} brandKit={brandKit} />;
 export const IntegrationStatusHealthMonitorClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "health-monitor", theme: "clean" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const IntegrationStatusOceanStatusWall: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "status-wall", theme: "ocean" }} brandKit={brandKit} />;
+export const IntegrationStatusSunsetStatusWall: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "status-wall", theme: "sunset" }} brandKit={brandKit} />;
+export const IntegrationStatusForestCategoryGroups: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "forest" }} brandKit={brandKit} />;
+export const IntegrationStatusRoseCategoryGroups: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "rose" }} brandKit={brandKit} />;
+export const IntegrationStatusGoldHealthMonitor: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "health-monitor", theme: "gold" }} brandKit={brandKit} />;
+export const IntegrationStatusMidnightHealthMonitor: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "health-monitor", theme: "midnight" }} brandKit={brandKit} />;
+export const IntegrationStatusCrimsonStatusWall: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "status-wall", theme: "crimson" }} brandKit={brandKit} />;
+export const IntegrationStatusLavenderStatusWall: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "status-wall", theme: "lavender" }} brandKit={brandKit} />;
+export const IntegrationStatusArcticCategoryGroups: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "arctic" }} brandKit={brandKit} />;
+export const IntegrationStatusEspressoCategoryGroups: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "espresso" }} brandKit={brandKit} />;

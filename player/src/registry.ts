@@ -21,7 +21,7 @@ const STD = { fps: 30, width: 1280, height: 720, durationInFrames: 300 } as cons
 
 import { TestimonialDarkCentered, TestimonialCleanSplit, TestimonialBoldEditorial, TestimonialWarmCentered, TestimonialMinimalEditorial, TestimonialNeonSplit, TestimonialOceanCentered, TestimonialSunsetSplit, TestimonialForestCentered, TestimonialRoseEditorial, TestimonialGoldCentered, TestimonialMidnightCentered, TestimonialCrimsonEditorial, TestimonialLavenderSplit, TestimonialArcticSplit, TestimonialEspressoCentered } from "@templates/testimonial/TestimonialShowcase";
 import { RecapDarkDashboard, RecapCleanTimeline, RecapBoldCards, RecapWarmDashboard, RecapMinimalCards, RecapNeonTimeline, RecapOceanDashboard, RecapSunsetCards, RecapForestTimeline, RecapRoseCards, RecapGoldDashboard, RecapMidnightDashboard, RecapCrimsonCards, RecapLavenderTimeline, RecapArcticTimeline, RecapEspressoDashboard } from "@templates/recap/RecapShowcase";
-import { EventDarkHero, EventCleanSpeakers, EventBoldCountdown, EventWarmHero, EventMinimalSpeakers, EventNeonCountdown } from "@templates/event/EventShowcase";
+import { EventDarkHero, EventCleanSpeakers, EventBoldCountdown, EventWarmHero, EventMinimalSpeakers, EventNeonCountdown, EventOceanHero, EventSunsetSpeakers, EventForestCountdown, EventRoseHero, EventGoldSpeakers, EventMidnightCountdown, EventCrimsonHero, EventLavenderSpeakers, EventArcticCountdown, EventEspressoHero } from "@templates/event/EventShowcase";
 import { ProposalDarkExecutive, ProposalCleanCreative, ProposalBoldPitch, ProposalWarmExecutive, ProposalMinimalCreative, ProposalNeonPitch, ProposalOceanExecutive, ProposalSunsetCreative, ProposalForestExecutive, ProposalRoseCreative, ProposalGoldExecutive, ProposalMidnightExecutive, ProposalCrimsonPitch, ProposalLavenderCreative, ProposalArcticCreative, ProposalEspressoExecutive } from "@templates/proposal/ProposalShowcase";
 import { ExplainerDarkCinematic, ExplainerCleanWhiteboard, ExplainerBoldProcess, ExplainerWarmWhiteboard, ExplainerMinimalProcess, ExplainerNeonCinematic, ExplainerOceanCinematic, ExplainerSunsetProcess, ExplainerForestProcess, ExplainerRoseProcess, ExplainerGoldCinematic, ExplainerMidnightWhiteboard, ExplainerCrimsonProcess, ExplainerLavenderWhiteboard, ExplainerArcticWhiteboard, ExplainerEspressoProcess } from "@templates/explainer/ExplainerShowcase";
 import { PortfolioDarkGallery, PortfolioCleanCaseStudy, PortfolioBoldReel, PortfolioWarmGallery, PortfolioMinimalCaseStudy, PortfolioNeonReel, PortfolioOceanCaseStudy, PortfolioSunsetGallery, PortfolioForestCaseStudy, PortfolioRoseGallery, PortfolioGoldCaseStudy, PortfolioMidnightCaseStudy, PortfolioCrimsonReel, PortfolioLavenderGallery, PortfolioArcticCaseStudy, PortfolioEspressoGallery } from "@templates/portfolio/PortfolioShowcase";
@@ -29,49 +29,49 @@ import { OnboardingDarkProfessional, OnboardingCleanProfessional, OnboardingBold
 import { InvoiceDarkProfessional, InvoiceCleanProfessional, InvoiceBoldUrgent, InvoiceWarmFriendly, InvoiceMinimalProfessional, InvoiceNeonUrgent, InvoiceOceanProfessional, InvoiceSunsetFriendly, InvoiceForestProfessional, InvoiceRoseFriendly, InvoiceGoldProfessional, InvoiceMidnightProfessional, InvoiceCrimsonUrgent, InvoiceLavenderFriendly, InvoiceArcticProfessional, InvoiceEspressoFriendly } from "@templates/invoice/InvoiceShowcase";
 import { SocialProofDarkMilestone, SocialProofCleanAchievement, SocialProofBoldAnnouncement, SocialProofWarmMilestone, SocialProofMinimalAchievement, SocialProofNeonAnnouncement, SocialProofOceanAchievement, SocialProofSunsetAnnouncement, SocialProofForestMilestone, SocialProofRoseAnnouncement, SocialProofGoldAchievement, SocialProofMidnightAchievement, SocialProofCrimsonAnnouncement, SocialProofLavenderMilestone, SocialProofArcticAchievement, SocialProofEspressoMilestone } from "@templates/socialproof/SocialProofShowcase";
 import { CaseStudyDarkNarrative, CaseStudyCleanComparison, CaseStudyBoldSpotlight, CaseStudyWarmNarrative, CaseStudyMinimalComparison, CaseStudyNeonSpotlight, CaseStudyOceanNarrative, CaseStudySunsetSpotlight, CaseStudyForestNarrative, CaseStudyRoseSpotlight, CaseStudyGoldNarrative, CaseStudyMidnightNarrative, CaseStudyCrimsonSpotlight, CaseStudyLavenderComparison, CaseStudyArcticComparison, CaseStudyEspressoNarrative } from "@templates/casestudy/CaseStudyShowcase";
-import { PricingDarkTiers, PricingCleanComparison, PricingBoldSpotlight, PricingWarmTiers, PricingMinimalComparison, PricingNeonSpotlight } from "@templates/pricing/PricingShowcase";
-import { FAQDarkAccordion, FAQCleanCards, FAQBoldInterview, FAQWarmAccordion, FAQMinimalCards, FAQNeonInterview } from "@templates/faq/FAQShowcase";
+import { PricingDarkTiers, PricingCleanComparison, PricingBoldSpotlight, PricingWarmTiers, PricingMinimalComparison, PricingNeonSpotlight, PricingOceanTiers, PricingSunsetComparison, PricingForestTiers, PricingRoseComparison, PricingGoldTiers, PricingMidnightComparison, PricingCrimsonTiers, PricingLavenderComparison, PricingArcticTiers, PricingEspressoComparison } from "@templates/pricing/PricingShowcase";
+import { FAQDarkAccordion, FAQCleanCards, FAQBoldInterview, FAQWarmAccordion, FAQMinimalCards, FAQNeonInterview, FAQOceanAccordion, FAQSunsetCards, FAQForestAccordion, FAQRoseCards, FAQGoldAccordion, FAQMidnightCards, FAQCrimsonAccordion, FAQLavenderCards, FAQArcticAccordion, FAQEspressoCards } from "@templates/faq/FAQShowcase";
 import { MilestoneDarkCelebration, MilestoneCleanJourney, MilestoneBoldCelebration, MilestoneWarmGratitude, MilestoneMinimalJourney, MilestoneNeonCelebration, MilestoneOceanJourney, MilestoneSunsetCelebration, MilestoneForestJourney, MilestoneRoseCelebration, MilestoneGoldGratitude, MilestoneMidnightJourney, MilestoneCrimsonCelebration, MilestoneLavenderJourney, MilestoneArcticJourney, MilestoneEspressoGratitude } from "@templates/milestone/MilestoneShowcase";
-import { ProductLaunchDarkHeroReveal, ProductLaunchBoldHeroReveal, ProductLaunchDarkFeatureGrid, ProductLaunchBoldFeatureGrid, ProductLaunchDarkCountdown, ProductLaunchBoldCountdown } from "@templates/productlaunch/ProductLaunchShowcase";
-import { TutorialDarkNumberedSteps, TutorialCleanNumberedSteps, TutorialDarkCardSequence, TutorialCleanCardSequence, TutorialDarkSplitDemo, TutorialCleanSplitDemo } from "@templates/tutorial/TutorialShowcase";
-import { BeforeAfterDarkSplitScreen, BeforeAfterWarmSplitScreen, BeforeAfterDarkRevealWipe, BeforeAfterWarmRevealWipe, BeforeAfterDarkMetricsCompare, BeforeAfterWarmMetricsCompare } from "@templates/beforeafter/BeforeAfterShowcase";
-import { CoursePromoDarkOverview, CoursePromoCleanOverview, CoursePromoDarkCurriculum, CoursePromoCleanCurriculum, CoursePromoDarkInstructor, CoursePromoCleanInstructor } from "@templates/coursepromo/CoursePromoShowcase";
-import { CountdownHypeDarkTimer, CountdownHypeNeonTimer, CountdownHypeDarkTeaser, CountdownHypeNeonTeaser, CountdownHypeDarkUrgency, CountdownHypeNeonUrgency } from "@templates/countdownhype/CountdownHypeShowcase";
-import { AffiliateReviewDarkScorecard, AffiliateReviewBoldScorecard, AffiliateReviewDarkComparison, AffiliateReviewBoldComparison, AffiliateReviewDarkVerdict, AffiliateReviewBoldVerdict } from "@templates/affiliatereview/AffiliateReviewShowcase";
-import { PollQuizDarkQuestionCard, PollQuizNeonQuestionCard, PollQuizDarkResultsBar, PollQuizNeonResultsBar, PollQuizDarkReveal, PollQuizNeonReveal } from "@templates/pollquiz/PollQuizShowcase";
-import { NewsletterPromoDarkSubscribeCta, NewsletterPromoCleanSubscribeCta, NewsletterPromoDarkIssuePreview, NewsletterPromoCleanIssuePreview, NewsletterPromoDarkTestimonialBlend, NewsletterPromoCleanTestimonialBlend } from "@templates/newsletterpromo/NewsletterPromoShowcase";
-import { PodcastAudiogramDarkWaveform, PodcastAudiogramWarmWaveform, PodcastAudiogramDarkQuoteCard, PodcastAudiogramWarmQuoteCard, PodcastAudiogramDarkEpisodePromo, PodcastAudiogramWarmEpisodePromo } from "@templates/podcastaudiogram/PodcastAudiogramShowcase";
-import { BehindTheScenesDarkSceneCards, BehindTheScenesWarmSceneCards, BehindTheScenesDarkTimeline, BehindTheScenesWarmTimeline, BehindTheScenesDarkProcessFlow, BehindTheScenesWarmProcessFlow } from "@templates/behindthescenes/BehindTheScenesShowcase";
-import { RecipeStepWarmIngredientList, RecipeStepCleanIngredientList, RecipeStepWarmStepSequence, RecipeStepCleanStepSequence, RecipeStepWarmSummaryCard, RecipeStepCleanSummaryCard } from "@templates/recipestep/RecipeStepShowcase";
-import { ListingCleanShowcase, ListingMinimalShowcase, ListingCleanFeatureGrid, ListingMinimalFeatureGrid, ListingCleanComparison, ListingMinimalComparison } from "@templates/listing/ListingShowcase";
-import { FitnessRoutineBoldExerciseList, FitnessRoutineNeonExerciseList, FitnessRoutineBoldTimerFocus, FitnessRoutineNeonTimerFocus, FitnessRoutineBoldCircuit, FitnessRoutineNeonCircuit } from "@templates/fitnessroutine/FitnessRoutineShowcase";
-import { MusicVisualizerDarkBars, MusicVisualizerNeonBars, MusicVisualizerDarkRadial, MusicVisualizerNeonRadial, MusicVisualizerDarkLyrics, MusicVisualizerNeonLyrics } from "@templates/musicvisualizer/MusicVisualizerShowcase";
-import { CollaborationDarkSplitScreen, CollaborationBoldSplitScreen, CollaborationDarkAnnouncement, CollaborationBoldAnnouncement, CollaborationDarkStatsMerge, CollaborationBoldStatsMerge } from "@templates/collaboration/CollaborationShowcase";
-import { SprintDashboardKanbanDark, SprintDashboardKanbanBold, SprintDashboardVelocityDark, SprintDashboardVelocityBold, SprintDashboardBurndownDark, SprintDashboardBurndownBold } from "@templates/sprintdashboard/SprintDashboardShowcase";
-import { FeatureRoadmapTimelineDark, FeatureRoadmapTimelineClean, FeatureRoadmapSwimlaneDark, FeatureRoadmapSwimlaneClean, FeatureRoadmapGridDark, FeatureRoadmapGridClean } from "@templates/featureroadmap/FeatureRoadmapShowcase";
-import { PlatformOverviewCommandCenterDark, PlatformOverviewCommandCenterNeon, PlatformOverviewModuleGridDark, PlatformOverviewModuleGridNeon, PlatformOverviewStackDark, PlatformOverviewStackNeon } from "@templates/platformoverview/PlatformOverviewShowcase";
-import { AgentDashboardControlPanelDark, AgentDashboardControlPanelNeon, AgentDashboardFlowDark, AgentDashboardFlowNeon, AgentDashboardMatrixDark, AgentDashboardMatrixNeon } from "@templates/agentdashboard/AgentDashboardShowcase";
-import { ClientPipelineFunnelDark, ClientPipelineFunnelWarm, ClientPipelinePipelineBoardDark, ClientPipelinePipelineBoardWarm, ClientPipelineMetricsDark, ClientPipelineMetricsWarm } from "@templates/clientpipeline/ClientPipelineShowcase";
-import { IntegrationStatusStatusWallDark, IntegrationStatusStatusWallClean, IntegrationStatusCategoryGroupsDark, IntegrationStatusCategoryGroupsClean, IntegrationStatusHealthMonitorDark, IntegrationStatusHealthMonitorClean } from "@templates/integrationstatus/IntegrationStatusShowcase";
-import { BugTrackerSeverityMatrixDark, BugTrackerSeverityMatrixBold, BugTrackerTriageBoardDark, BugTrackerTriageBoardBold, BugTrackerOverviewDark, BugTrackerOverviewBold } from "@templates/bugtracker/BugTrackerShowcase";
-import { ReleaseNotesChangelogDark, ReleaseNotesChangelogClean, ReleaseNotesHighlightsDark, ReleaseNotesHighlightsClean, ReleaseNotesVersionCompareDark, ReleaseNotesVersionCompareClean } from "@templates/releasenotes/ReleaseNotesShowcase";
-import { EffortTrackingTeamAllocationDark, EffortTrackingTeamAllocationWarm, EffortTrackingCapacityDark, EffortTrackingCapacityWarm, EffortTrackingBreakdownDark, EffortTrackingBreakdownWarm } from "@templates/efforttracking/EffortTrackingShowcase";
-import { PinCollectionCardGalleryWarm, PinCollectionCardGalleryClean, PinCollectionMapListWarm, PinCollectionMapListClean, PinCollectionCategoryGridWarm, PinCollectionCategoryGridClean } from "@templates/pincollection/PinCollectionShowcase";
-import { OfficeDirectoryWorldViewDark, OfficeDirectoryWorldViewClean, OfficeDirectoryCardListDark, OfficeDirectoryCardListClean, OfficeDirectoryRegionGroupsDark, OfficeDirectoryRegionGroupsClean } from "@templates/officedirectory/OfficeDirectoryShowcase";
-import { TravelItineraryDayByDayWarm, TravelItineraryDayByDayBold, TravelItineraryRouteOverviewWarm, TravelItineraryRouteOverviewBold, TravelItineraryHighlightsWarm, TravelItineraryHighlightsBold } from "@templates/travelitinerary/TravelItineraryShowcase";
-import { StoreLocatorFinderClean, StoreLocatorFinderMinimal, StoreLocatorMapPinsClean, StoreLocatorMapPinsMinimal, StoreLocatorDirectoryClean, StoreLocatorDirectoryMinimal } from "@templates/storelocator/StoreLocatorShowcase";
-import { NeighborhoodGuideExplorerWarm, NeighborhoodGuideExplorerNeon, NeighborhoodGuideHighlightsReelWarm, NeighborhoodGuideHighlightsReelNeon, NeighborhoodGuideOverviewWarm, NeighborhoodGuideOverviewNeon } from "@templates/neighborhoodguide/NeighborhoodGuideShowcase";
-import { EventVenueScheduleMapDark, EventVenueScheduleMapBold, EventVenueVenueCardsDark, EventVenueVenueCardsBold, EventVenueEventOverviewDark, EventVenueEventOverviewBold } from "@templates/eventvenue/EventVenueShowcase";
-import { SprintRecapShippedListDark, SprintRecapShippedListBold, SprintRecapHighlightCardsDark, SprintRecapHighlightCardsBold, SprintRecapTeamContributionsDark, SprintRecapTeamContributionsBold } from "@templates/sprintrecap/SprintRecapShowcase";
-import { DeploymentStatusEnvironmentCardsDark, DeploymentStatusEnvironmentCardsNeon, DeploymentStatusPipelineViewDark, DeploymentStatusPipelineViewNeon, DeploymentStatusHealthDashboardDark, DeploymentStatusHealthDashboardNeon } from "@templates/deploymentstatus/DeploymentStatusShowcase";
-import { VelocityChartBarChartDark, VelocityChartBarChartClean, VelocityChartTrendLineDark, VelocityChartTrendLineClean, VelocityChartSummaryDark, VelocityChartSummaryClean } from "@templates/velocitychart/VelocityChartShowcase";
-import { QBRDashboardExecutiveDark, QBRDashboardExecutiveClean, QBRDashboardDetailedDark, QBRDashboardDetailedClean, QBRDashboardComparisonDark, QBRDashboardComparisonClean } from "@templates/qbrdashboard/QBRDashboardShowcase";
-import { ProjectHealthHealthScorecardDark, ProjectHealthHealthScorecardWarm, ProjectHealthWorkstreamViewDark, ProjectHealthWorkstreamViewWarm, ProjectHealthExecutiveSummaryDark, ProjectHealthExecutiveSummaryWarm } from "@templates/projecthealth/ProjectHealthShowcase";
-import { FeatureFlagsExperimentBoardDark, FeatureFlagsExperimentBoardNeon, FeatureFlagsResultsViewDark, FeatureFlagsResultsViewNeon, FeatureFlagsRolloutTrackerDark, FeatureFlagsRolloutTrackerNeon } from "@templates/featureflags/FeatureFlagsShowcase";
-import { BugTriagePriorityColumnsDark, BugTriagePriorityColumnsBold, BugTriageTriageListDark, BugTriageTriageListBold, BugTriageSummaryDashboardDark, BugTriageSummaryDashboardBold } from "@templates/bugtriage/BugTriageShowcase";
-import { ComponentInventoryArchitectureGridDark, ComponentInventoryArchitectureGridClean, ComponentInventoryDependencyMapDark, ComponentInventoryDependencyMapClean, ComponentInventoryInventoryListDark, ComponentInventoryInventoryListClean } from "@templates/componentinventory/ComponentInventoryShowcase";
-import { ConceptPitchArcDark, ConceptPitchArcBold, ConceptPitchBoardDark, ConceptPitchBoardBold, ConceptPitchBriefDark, ConceptPitchBriefBold } from "@templates/conceptpitch/ConceptPitchShowcase";
-import { ThoughtLeadershipEditorialDark, ThoughtLeadershipEditorialClean, ThoughtLeadershipNarrativeDark, ThoughtLeadershipNarrativeClean, ThoughtLeadershipKeynoteDark, ThoughtLeadershipKeynoteClean } from "@templates/thoughtleadership/ThoughtLeadershipShowcase";
+import { ProductLaunchDarkHeroReveal, ProductLaunchBoldHeroReveal, ProductLaunchDarkFeatureGrid, ProductLaunchBoldFeatureGrid, ProductLaunchDarkCountdown, ProductLaunchBoldCountdown, ProductLaunchOceanHeroReveal, ProductLaunchSunsetHeroReveal, ProductLaunchForestFeatureGrid, ProductLaunchRoseFeatureGrid, ProductLaunchGoldCountdown, ProductLaunchMidnightCountdown, ProductLaunchCrimsonHeroReveal, ProductLaunchLavenderHeroReveal, ProductLaunchArcticFeatureGrid, ProductLaunchEspressoFeatureGrid } from "@templates/productlaunch/ProductLaunchShowcase";
+import { TutorialDarkNumberedSteps, TutorialCleanNumberedSteps, TutorialDarkCardSequence, TutorialCleanCardSequence, TutorialDarkSplitDemo, TutorialCleanSplitDemo, TutorialOceanNumberedSteps, TutorialSunsetNumberedSteps, TutorialForestCardSequence, TutorialRoseCardSequence, TutorialGoldSplitDemo, TutorialMidnightSplitDemo, TutorialCrimsonNumberedSteps, TutorialLavenderNumberedSteps, TutorialArcticCardSequence, TutorialEspressoCardSequence } from "@templates/tutorial/TutorialShowcase";
+import { BeforeAfterDarkSplitScreen, BeforeAfterWarmSplitScreen, BeforeAfterDarkRevealWipe, BeforeAfterWarmRevealWipe, BeforeAfterDarkMetricsCompare, BeforeAfterWarmMetricsCompare, BeforeAfterOceanSplitScreen, BeforeAfterSunsetSplitScreen, BeforeAfterForestRevealWipe, BeforeAfterRoseRevealWipe, BeforeAfterGoldMetricsCompare, BeforeAfterMidnightMetricsCompare, BeforeAfterCrimsonSplitScreen, BeforeAfterLavenderSplitScreen, BeforeAfterArcticRevealWipe, BeforeAfterEspressoRevealWipe } from "@templates/beforeafter/BeforeAfterShowcase";
+import { CoursePromoDarkOverview, CoursePromoCleanOverview, CoursePromoDarkCurriculum, CoursePromoCleanCurriculum, CoursePromoDarkInstructor, CoursePromoCleanInstructor, CoursePromoOceanOverview, CoursePromoSunsetOverview, CoursePromoForestCurriculum, CoursePromoRoseCurriculum, CoursePromoGoldInstructor, CoursePromoMidnightInstructor, CoursePromoCrimsonOverview, CoursePromoLavenderOverview, CoursePromoArcticCurriculum, CoursePromoEspressoCurriculum } from "@templates/coursepromo/CoursePromoShowcase";
+import { CountdownHypeDarkTimer, CountdownHypeNeonTimer, CountdownHypeDarkTeaser, CountdownHypeNeonTeaser, CountdownHypeDarkUrgency, CountdownHypeNeonUrgency, CountdownHypeOceanTimer, CountdownHypeSunsetTimer, CountdownHypeForestTeaser, CountdownHypeRoseTeaser, CountdownHypeGoldUrgency, CountdownHypeMidnightUrgency, CountdownHypeCrimsonTimer, CountdownHypeLavenderTimer, CountdownHypeArcticTeaser, CountdownHypeEspressoTeaser } from "@templates/countdownhype/CountdownHypeShowcase";
+import { AffiliateReviewDarkScorecard, AffiliateReviewBoldScorecard, AffiliateReviewDarkComparison, AffiliateReviewBoldComparison, AffiliateReviewDarkVerdict, AffiliateReviewBoldVerdict, AffiliateReviewOceanScorecard, AffiliateReviewSunsetScorecard, AffiliateReviewForestComparison, AffiliateReviewRoseComparison, AffiliateReviewGoldVerdict, AffiliateReviewMidnightVerdict, AffiliateReviewCrimsonScorecard, AffiliateReviewLavenderScorecard, AffiliateReviewArcticComparison, AffiliateReviewEspressoComparison } from "@templates/affiliatereview/AffiliateReviewShowcase";
+import { PollQuizDarkQuestionCard, PollQuizNeonQuestionCard, PollQuizDarkResultsBar, PollQuizNeonResultsBar, PollQuizDarkReveal, PollQuizNeonReveal, PollQuizOceanQuestionCard, PollQuizSunsetQuestionCard, PollQuizForestResultsBar, PollQuizRoseResultsBar, PollQuizGoldReveal, PollQuizMidnightReveal, PollQuizCrimsonQuestionCard, PollQuizLavenderQuestionCard, PollQuizArcticResultsBar, PollQuizEspressoResultsBar } from "@templates/pollquiz/PollQuizShowcase";
+import { NewsletterPromoDarkSubscribeCta, NewsletterPromoCleanSubscribeCta, NewsletterPromoDarkIssuePreview, NewsletterPromoCleanIssuePreview, NewsletterPromoDarkTestimonialBlend, NewsletterPromoCleanTestimonialBlend, NewsletterPromoOceanSubscribeCta, NewsletterPromoSunsetSubscribeCta, NewsletterPromoForestIssuePreview, NewsletterPromoRoseIssuePreview, NewsletterPromoGoldTestimonialBlend, NewsletterPromoMidnightTestimonialBlend, NewsletterPromoCrimsonSubscribeCta, NewsletterPromoLavenderSubscribeCta, NewsletterPromoArcticIssuePreview, NewsletterPromoEspressoIssuePreview } from "@templates/newsletterpromo/NewsletterPromoShowcase";
+import { PodcastAudiogramDarkWaveform, PodcastAudiogramWarmWaveform, PodcastAudiogramDarkQuoteCard, PodcastAudiogramWarmQuoteCard, PodcastAudiogramDarkEpisodePromo, PodcastAudiogramWarmEpisodePromo, PodcastAudiogramOceanWaveform, PodcastAudiogramSunsetWaveform, PodcastAudiogramForestQuoteCard, PodcastAudiogramRoseQuoteCard, PodcastAudiogramGoldEpisodePromo, PodcastAudiogramMidnightEpisodePromo, PodcastAudiogramCrimsonWaveform, PodcastAudiogramLavenderWaveform, PodcastAudiogramArcticQuoteCard, PodcastAudiogramEspressoQuoteCard } from "@templates/podcastaudiogram/PodcastAudiogramShowcase";
+import { BehindTheScenesDarkSceneCards, BehindTheScenesWarmSceneCards, BehindTheScenesDarkTimeline, BehindTheScenesWarmTimeline, BehindTheScenesDarkProcessFlow, BehindTheScenesWarmProcessFlow, BehindTheScenesOceanSceneCards, BehindTheScenesSunsetSceneCards, BehindTheScenesForestTimeline, BehindTheScenesRoseTimeline, BehindTheScenesGoldProcessFlow, BehindTheScenesMidnightProcessFlow, BehindTheScenesCrimsonSceneCards, BehindTheScenesLavenderSceneCards, BehindTheScenesArcticTimeline, BehindTheScenesEspressoTimeline } from "@templates/behindthescenes/BehindTheScenesShowcase";
+import { RecipeStepWarmIngredientList, RecipeStepCleanIngredientList, RecipeStepWarmStepSequence, RecipeStepCleanStepSequence, RecipeStepWarmSummaryCard, RecipeStepCleanSummaryCard, RecipeStepOceanIngredientList, RecipeStepSunsetIngredientList, RecipeStepForestStepSequence, RecipeStepRoseStepSequence, RecipeStepGoldSummaryCard, RecipeStepMidnightSummaryCard, RecipeStepCrimsonIngredientList, RecipeStepLavenderIngredientList, RecipeStepArcticStepSequence, RecipeStepEspressoStepSequence } from "@templates/recipestep/RecipeStepShowcase";
+import { ListingCleanShowcase, ListingMinimalShowcase, ListingCleanFeatureGrid, ListingMinimalFeatureGrid, ListingCleanComparison, ListingMinimalComparison, ListingOceanShowcase, ListingSunsetShowcase, ListingForestFeatureGrid, ListingRoseFeatureGrid, ListingGoldComparison, ListingMidnightComparison, ListingCrimsonShowcase, ListingLavenderShowcase, ListingArcticFeatureGrid, ListingEspressoFeatureGrid } from "@templates/listing/ListingShowcase";
+import { FitnessRoutineBoldExerciseList, FitnessRoutineNeonExerciseList, FitnessRoutineBoldTimerFocus, FitnessRoutineNeonTimerFocus, FitnessRoutineBoldCircuit, FitnessRoutineNeonCircuit, FitnessRoutineOceanExerciseList, FitnessRoutineSunsetExerciseList, FitnessRoutineForestTimerFocus, FitnessRoutineRoseTimerFocus, FitnessRoutineGoldCircuit, FitnessRoutineMidnightCircuit, FitnessRoutineCrimsonExerciseList, FitnessRoutineLavenderExerciseList, FitnessRoutineArcticTimerFocus, FitnessRoutineEspressoTimerFocus } from "@templates/fitnessroutine/FitnessRoutineShowcase";
+import { MusicVisualizerDarkBars, MusicVisualizerNeonBars, MusicVisualizerDarkRadial, MusicVisualizerNeonRadial, MusicVisualizerDarkLyrics, MusicVisualizerNeonLyrics, MusicVisualizerOceanBars, MusicVisualizerSunsetBars, MusicVisualizerForestRadial, MusicVisualizerRoseRadial, MusicVisualizerGoldLyrics, MusicVisualizerMidnightLyrics, MusicVisualizerCrimsonBars, MusicVisualizerLavenderBars, MusicVisualizerArcticRadial, MusicVisualizerEspressoRadial } from "@templates/musicvisualizer/MusicVisualizerShowcase";
+import { CollaborationDarkSplitScreen, CollaborationBoldSplitScreen, CollaborationDarkAnnouncement, CollaborationBoldAnnouncement, CollaborationDarkStatsMerge, CollaborationBoldStatsMerge, CollaborationOceanSplitScreen, CollaborationSunsetSplitScreen, CollaborationForestAnnouncement, CollaborationRoseAnnouncement, CollaborationGoldStatsMerge, CollaborationMidnightStatsMerge, CollaborationCrimsonSplitScreen, CollaborationLavenderSplitScreen, CollaborationArcticAnnouncement, CollaborationEspressoAnnouncement } from "@templates/collaboration/CollaborationShowcase";
+import { SprintDashboardKanbanDark, SprintDashboardKanbanBold, SprintDashboardVelocityDark, SprintDashboardVelocityBold, SprintDashboardBurndownDark, SprintDashboardBurndownBold, SprintDashboardOceanKanban, SprintDashboardSunsetKanban, SprintDashboardForestVelocity, SprintDashboardRoseVelocity, SprintDashboardGoldBurndown, SprintDashboardMidnightBurndown, SprintDashboardCrimsonKanban, SprintDashboardLavenderKanban, SprintDashboardArcticVelocity, SprintDashboardEspressoVelocity } from "@templates/sprintdashboard/SprintDashboardShowcase";
+import { FeatureRoadmapTimelineDark, FeatureRoadmapTimelineClean, FeatureRoadmapSwimlaneDark, FeatureRoadmapSwimlaneClean, FeatureRoadmapGridDark, FeatureRoadmapGridClean, FeatureRoadmapOceanTimeline, FeatureRoadmapSunsetTimeline, FeatureRoadmapForestSwimlane, FeatureRoadmapRoseSwimlane, FeatureRoadmapGoldGrid, FeatureRoadmapMidnightGrid, FeatureRoadmapCrimsonTimeline, FeatureRoadmapLavenderTimeline, FeatureRoadmapArcticSwimlane, FeatureRoadmapEspressoSwimlane } from "@templates/featureroadmap/FeatureRoadmapShowcase";
+import { PlatformOverviewCommandCenterDark, PlatformOverviewCommandCenterNeon, PlatformOverviewModuleGridDark, PlatformOverviewModuleGridNeon, PlatformOverviewStackDark, PlatformOverviewStackNeon, PlatformOverviewOceanCommandCenter, PlatformOverviewSunsetCommandCenter, PlatformOverviewForestModuleGrid, PlatformOverviewRoseModuleGrid, PlatformOverviewGoldStack, PlatformOverviewMidnightStack, PlatformOverviewCrimsonCommandCenter, PlatformOverviewLavenderCommandCenter, PlatformOverviewArcticModuleGrid, PlatformOverviewEspressoModuleGrid } from "@templates/platformoverview/PlatformOverviewShowcase";
+import { AgentDashboardControlPanelDark, AgentDashboardControlPanelNeon, AgentDashboardFlowDark, AgentDashboardFlowNeon, AgentDashboardMatrixDark, AgentDashboardMatrixNeon, AgentDashboardOceanControlPanel, AgentDashboardSunsetControlPanel, AgentDashboardForestFlow, AgentDashboardRoseFlow, AgentDashboardGoldMatrix, AgentDashboardMidnightMatrix, AgentDashboardCrimsonControlPanel, AgentDashboardLavenderControlPanel, AgentDashboardArcticFlow, AgentDashboardEspressoFlow } from "@templates/agentdashboard/AgentDashboardShowcase";
+import { ClientPipelineFunnelDark, ClientPipelineFunnelWarm, ClientPipelinePipelineBoardDark, ClientPipelinePipelineBoardWarm, ClientPipelineMetricsDark, ClientPipelineMetricsWarm, ClientPipelineOceanFunnel, ClientPipelineSunsetFunnel, ClientPipelineForestPipelineBoard, ClientPipelineRosePipelineBoard, ClientPipelineGoldMetrics, ClientPipelineMidnightMetrics, ClientPipelineCrimsonFunnel, ClientPipelineLavenderFunnel, ClientPipelineArcticPipelineBoard, ClientPipelineEspressoPipelineBoard } from "@templates/clientpipeline/ClientPipelineShowcase";
+import { IntegrationStatusStatusWallDark, IntegrationStatusStatusWallClean, IntegrationStatusCategoryGroupsDark, IntegrationStatusCategoryGroupsClean, IntegrationStatusHealthMonitorDark, IntegrationStatusHealthMonitorClean, IntegrationStatusOceanStatusWall, IntegrationStatusSunsetStatusWall, IntegrationStatusForestCategoryGroups, IntegrationStatusRoseCategoryGroups, IntegrationStatusGoldHealthMonitor, IntegrationStatusMidnightHealthMonitor, IntegrationStatusCrimsonStatusWall, IntegrationStatusLavenderStatusWall, IntegrationStatusArcticCategoryGroups, IntegrationStatusEspressoCategoryGroups } from "@templates/integrationstatus/IntegrationStatusShowcase";
+import { BugTrackerSeverityMatrixDark, BugTrackerSeverityMatrixBold, BugTrackerTriageBoardDark, BugTrackerTriageBoardBold, BugTrackerOverviewDark, BugTrackerOverviewBold, BugTrackerOceanSeverityMatrix, BugTrackerSunsetSeverityMatrix, BugTrackerForestTriageBoard, BugTrackerRoseTriageBoard, BugTrackerGoldOverview, BugTrackerMidnightOverview, BugTrackerCrimsonSeverityMatrix, BugTrackerLavenderSeverityMatrix, BugTrackerArcticTriageBoard, BugTrackerEspressoTriageBoard } from "@templates/bugtracker/BugTrackerShowcase";
+import { ReleaseNotesChangelogDark, ReleaseNotesChangelogClean, ReleaseNotesHighlightsDark, ReleaseNotesHighlightsClean, ReleaseNotesVersionCompareDark, ReleaseNotesVersionCompareClean, ReleaseNotesOceanChangelog, ReleaseNotesSunsetChangelog, ReleaseNotesForestHighlights, ReleaseNotesRoseHighlights, ReleaseNotesGoldVersionCompare, ReleaseNotesMidnightVersionCompare, ReleaseNotesCrimsonChangelog, ReleaseNotesLavenderChangelog, ReleaseNotesArcticHighlights, ReleaseNotesEspressoHighlights } from "@templates/releasenotes/ReleaseNotesShowcase";
+import { EffortTrackingTeamAllocationDark, EffortTrackingTeamAllocationWarm, EffortTrackingCapacityDark, EffortTrackingCapacityWarm, EffortTrackingBreakdownDark, EffortTrackingBreakdownWarm, EffortTrackingOceanTeamAllocation, EffortTrackingSunsetTeamAllocation, EffortTrackingForestCapacity, EffortTrackingRoseCapacity, EffortTrackingGoldBreakdown, EffortTrackingMidnightBreakdown, EffortTrackingCrimsonTeamAllocation, EffortTrackingLavenderTeamAllocation, EffortTrackingArcticCapacity, EffortTrackingEspressoCapacity } from "@templates/efforttracking/EffortTrackingShowcase";
+import { PinCollectionCardGalleryWarm, PinCollectionCardGalleryClean, PinCollectionMapListWarm, PinCollectionMapListClean, PinCollectionCategoryGridWarm, PinCollectionCategoryGridClean, PinCollectionOceanCardGallery, PinCollectionSunsetMapList, PinCollectionForestCardGallery, PinCollectionRoseCategoryGrid, PinCollectionGoldMapList, PinCollectionMidnightCardGallery, PinCollectionCrimsonCategoryGrid, PinCollectionLavenderMapList, PinCollectionArcticCardGallery, PinCollectionEspressoCategoryGrid } from "@templates/pincollection/PinCollectionShowcase";
+import { OfficeDirectoryWorldViewDark, OfficeDirectoryWorldViewClean, OfficeDirectoryCardListDark, OfficeDirectoryCardListClean, OfficeDirectoryRegionGroupsDark, OfficeDirectoryRegionGroupsClean, OfficeDirectoryOceanWorldView, OfficeDirectorySunsetWorldView, OfficeDirectoryForestCardList, OfficeDirectoryRoseCardList, OfficeDirectoryGoldRegionGroups, OfficeDirectoryMidnightRegionGroups, OfficeDirectoryCrimsonWorldView, OfficeDirectoryLavenderWorldView, OfficeDirectoryArcticCardList, OfficeDirectoryEspressoCardList } from "@templates/officedirectory/OfficeDirectoryShowcase";
+import { TravelItineraryDayByDayWarm, TravelItineraryDayByDayBold, TravelItineraryRouteOverviewWarm, TravelItineraryRouteOverviewBold, TravelItineraryHighlightsWarm, TravelItineraryHighlightsBold, TravelItineraryOceanDayByDay, TravelItinerarySunsetDayByDay, TravelItineraryForestRouteOverview, TravelItineraryRoseRouteOverview, TravelItineraryGoldHighlights, TravelItineraryMidnightHighlights, TravelItineraryCrimsonDayByDay, TravelItineraryLavenderDayByDay, TravelItineraryArcticRouteOverview, TravelItineraryEspressoRouteOverview } from "@templates/travelitinerary/TravelItineraryShowcase";
+import { StoreLocatorFinderClean, StoreLocatorFinderMinimal, StoreLocatorMapPinsClean, StoreLocatorMapPinsMinimal, StoreLocatorDirectoryClean, StoreLocatorDirectoryMinimal, StoreLocatorOceanFinder, StoreLocatorSunsetMapPins, StoreLocatorForestDirectory, StoreLocatorRoseFinder, StoreLocatorGoldMapPins, StoreLocatorMidnightDirectory, StoreLocatorCrimsonFinder, StoreLocatorLavenderMapPins, StoreLocatorArcticDirectory, StoreLocatorEspressoFinder } from "@templates/storelocator/StoreLocatorShowcase";
+import { NeighborhoodGuideExplorerWarm, NeighborhoodGuideExplorerNeon, NeighborhoodGuideHighlightsReelWarm, NeighborhoodGuideHighlightsReelNeon, NeighborhoodGuideOverviewWarm, NeighborhoodGuideOverviewNeon, NeighborhoodGuideOceanExplorer, NeighborhoodGuideSunsetExplorer, NeighborhoodGuideForestHighlightsReel, NeighborhoodGuideRoseHighlightsReel, NeighborhoodGuideGoldOverview, NeighborhoodGuideMidnightOverview, NeighborhoodGuideCrimsonExplorer, NeighborhoodGuideLavenderExplorer, NeighborhoodGuideArcticHighlightsReel, NeighborhoodGuideEspressoHighlightsReel } from "@templates/neighborhoodguide/NeighborhoodGuideShowcase";
+import { EventVenueScheduleMapDark, EventVenueScheduleMapBold, EventVenueVenueCardsDark, EventVenueVenueCardsBold, EventVenueEventOverviewDark, EventVenueEventOverviewBold, EventVenueOceanScheduleMap, EventVenueSunsetScheduleMap, EventVenueForestVenueCards, EventVenueRoseVenueCards, EventVenueGoldEventOverview, EventVenueMidnightEventOverview, EventVenueCrimsonScheduleMap, EventVenueLavenderScheduleMap, EventVenueArcticVenueCards, EventVenueEspressoVenueCards } from "@templates/eventvenue/EventVenueShowcase";
+import { SprintRecapShippedListDark, SprintRecapShippedListBold, SprintRecapHighlightCardsDark, SprintRecapHighlightCardsBold, SprintRecapTeamContributionsDark, SprintRecapTeamContributionsBold, SprintRecapOceanShippedList, SprintRecapSunsetShippedList, SprintRecapForestHighlightCards, SprintRecapRoseHighlightCards, SprintRecapGoldTeamContributions, SprintRecapMidnightTeamContributions, SprintRecapCrimsonShippedList, SprintRecapLavenderShippedList, SprintRecapArcticHighlightCards, SprintRecapEspressoHighlightCards } from "@templates/sprintrecap/SprintRecapShowcase";
+import { DeploymentStatusEnvironmentCardsDark, DeploymentStatusEnvironmentCardsNeon, DeploymentStatusPipelineViewDark, DeploymentStatusPipelineViewNeon, DeploymentStatusHealthDashboardDark, DeploymentStatusHealthDashboardNeon, DeploymentStatusOceanEnvironmentCards, DeploymentStatusSunsetEnvironmentCards, DeploymentStatusForestPipelineView, DeploymentStatusRosePipelineView, DeploymentStatusGoldHealthDashboard, DeploymentStatusMidnightHealthDashboard, DeploymentStatusCrimsonEnvironmentCards, DeploymentStatusLavenderEnvironmentCards, DeploymentStatusArcticPipelineView, DeploymentStatusEspressoPipelineView } from "@templates/deploymentstatus/DeploymentStatusShowcase";
+import { VelocityChartBarChartDark, VelocityChartBarChartClean, VelocityChartTrendLineDark, VelocityChartTrendLineClean, VelocityChartSummaryDark, VelocityChartSummaryClean, VelocityChartOceanBarChart, VelocityChartSunsetBarChart, VelocityChartForestTrendLine, VelocityChartRoseTrendLine, VelocityChartGoldSummary, VelocityChartMidnightSummary, VelocityChartCrimsonBarChart, VelocityChartLavenderBarChart, VelocityChartArcticTrendLine, VelocityChartEspressoTrendLine } from "@templates/velocitychart/VelocityChartShowcase";
+import { QBRDashboardExecutiveDark, QBRDashboardExecutiveClean, QBRDashboardDetailedDark, QBRDashboardDetailedClean, QBRDashboardComparisonDark, QBRDashboardComparisonClean, QBRDashboardOceanExecutive, QBRDashboardSunsetExecutive, QBRDashboardForestDetailed, QBRDashboardRoseDetailed, QBRDashboardGoldComparison, QBRDashboardMidnightComparison, QBRDashboardCrimsonExecutive, QBRDashboardLavenderExecutive, QBRDashboardArcticDetailed, QBRDashboardEspressoDetailed } from "@templates/qbrdashboard/QBRDashboardShowcase";
+import { ProjectHealthHealthScorecardDark, ProjectHealthHealthScorecardWarm, ProjectHealthWorkstreamViewDark, ProjectHealthWorkstreamViewWarm, ProjectHealthExecutiveSummaryDark, ProjectHealthExecutiveSummaryWarm, ProjectHealthOceanHealthScorecard, ProjectHealthSunsetHealthScorecard, ProjectHealthForestWorkstreamView, ProjectHealthRoseWorkstreamView, ProjectHealthGoldExecutiveSummary, ProjectHealthMidnightExecutiveSummary, ProjectHealthCrimsonHealthScorecard, ProjectHealthLavenderHealthScorecard, ProjectHealthArcticWorkstreamView, ProjectHealthEspressoWorkstreamView } from "@templates/projecthealth/ProjectHealthShowcase";
+import { FeatureFlagsExperimentBoardDark, FeatureFlagsExperimentBoardNeon, FeatureFlagsResultsViewDark, FeatureFlagsResultsViewNeon, FeatureFlagsRolloutTrackerDark, FeatureFlagsRolloutTrackerNeon, FeatureFlagsOceanExperimentBoard, FeatureFlagsSunsetExperimentBoard, FeatureFlagsForestResultsView, FeatureFlagsRoseResultsView, FeatureFlagsGoldRolloutTracker, FeatureFlagsMidnightRolloutTracker, FeatureFlagsCrimsonExperimentBoard, FeatureFlagsLavenderExperimentBoard, FeatureFlagsArcticResultsView, FeatureFlagsEspressoResultsView } from "@templates/featureflags/FeatureFlagsShowcase";
+import { BugTriagePriorityColumnsDark, BugTriagePriorityColumnsBold, BugTriageTriageListDark, BugTriageTriageListBold, BugTriageSummaryDashboardDark, BugTriageSummaryDashboardBold, BugTriageOceanPriorityColumns, BugTriageSunsetPriorityColumns, BugTriageForestTriageList, BugTriageRoseTriageList, BugTriageGoldSummaryDashboard, BugTriageMidnightSummaryDashboard, BugTriageCrimsonPriorityColumns, BugTriageLavenderPriorityColumns, BugTriageArcticTriageList, BugTriageEspressoTriageList } from "@templates/bugtriage/BugTriageShowcase";
+import { ComponentInventoryArchitectureGridDark, ComponentInventoryArchitectureGridClean, ComponentInventoryDependencyMapDark, ComponentInventoryDependencyMapClean, ComponentInventoryInventoryListDark, ComponentInventoryInventoryListClean, ComponentInventoryOceanArchitectureGrid, ComponentInventorySunsetArchitectureGrid, ComponentInventoryForestDependencyMap, ComponentInventoryRoseDependencyMap, ComponentInventoryGoldInventoryList, ComponentInventoryMidnightInventoryList, ComponentInventoryCrimsonArchitectureGrid, ComponentInventoryLavenderArchitectureGrid, ComponentInventoryArcticDependencyMap, ComponentInventoryEspressoDependencyMap } from "@templates/componentinventory/ComponentInventoryShowcase";
+import { ConceptPitchArcDark, ConceptPitchArcBold, ConceptPitchBoardDark, ConceptPitchBoardBold, ConceptPitchBriefDark, ConceptPitchBriefBold, ConceptPitchOceanArc, ConceptPitchSunsetBoard, ConceptPitchForestBrief, ConceptPitchRoseArc, ConceptPitchGoldBoard, ConceptPitchMidnightBrief, ConceptPitchCrimsonArc, ConceptPitchLavenderBoard, ConceptPitchArcticBrief, ConceptPitchEspressoArc } from "@templates/conceptpitch/ConceptPitchShowcase";
+import { ThoughtLeadershipEditorialDark, ThoughtLeadershipEditorialClean, ThoughtLeadershipNarrativeDark, ThoughtLeadershipNarrativeClean, ThoughtLeadershipKeynoteDark, ThoughtLeadershipKeynoteClean, ThoughtLeadershipOceanEditorial, ThoughtLeadershipSunsetNarrative, ThoughtLeadershipForestKeynote, ThoughtLeadershipRoseEditorial, ThoughtLeadershipGoldNarrative, ThoughtLeadershipMidnightKeynote, ThoughtLeadershipCrimsonEditorial, ThoughtLeadershipLavenderNarrative, ThoughtLeadershipArcticKeynote, ThoughtLeadershipEspressoEditorial } from "@templates/thoughtleadership/ThoughtLeadershipShowcase";
 import { VideoFlowPipelineTutorial } from "@templates/youtubetuorial/tutorials/VideoFlowPipeline";
 import { AIDemoToEnterpriseTutorial } from "@templates/youtubetuorial/tutorials/AIDemoToEnterprise";
 import {
@@ -174,6 +174,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("Event-WarmHero",       EventWarmHero,       "event"),
   c("Event-MinimalSpeakers",EventMinimalSpeakers,"event"),
   c("Event-NeonCountdown",  EventNeonCountdown,  "event"),
+  c("Event-OceanHero", EventOceanHero, "event"),
+  c("Event-SunsetSpeakers", EventSunsetSpeakers, "event"),
+  c("Event-ForestCountdown", EventForestCountdown, "event"),
+  c("Event-RoseHero", EventRoseHero, "event"),
+  c("Event-GoldSpeakers", EventGoldSpeakers, "event"),
+  c("Event-MidnightCountdown", EventMidnightCountdown, "event"),
+  c("Event-CrimsonHero", EventCrimsonHero, "event"),
+  c("Event-LavenderSpeakers", EventLavenderSpeakers, "event"),
+  c("Event-ArcticCountdown", EventArcticCountdown, "event"),
+  c("Event-EspressoHero", EventEspressoHero, "event"),
 
   // Proposal
   c("Proposal-DarkExecutive",   ProposalDarkExecutive,   "proposal"),
@@ -308,6 +318,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("Pricing-WarmTiers",      PricingWarmTiers,      "pricing"),
   c("Pricing-MinimalComparison",PricingMinimalComparison,"pricing"),
   c("Pricing-NeonSpotlight",  PricingNeonSpotlight,  "pricing"),
+  c("Pricing-OceanTiers", PricingOceanTiers, "pricing"),
+  c("Pricing-SunsetComparison", PricingSunsetComparison, "pricing"),
+  c("Pricing-ForestTiers", PricingForestTiers, "pricing"),
+  c("Pricing-RoseComparison", PricingRoseComparison, "pricing"),
+  c("Pricing-GoldTiers", PricingGoldTiers, "pricing"),
+  c("Pricing-MidnightComparison", PricingMidnightComparison, "pricing"),
+  c("Pricing-CrimsonTiers", PricingCrimsonTiers, "pricing"),
+  c("Pricing-LavenderComparison", PricingLavenderComparison, "pricing"),
+  c("Pricing-ArcticTiers", PricingArcticTiers, "pricing"),
+  c("Pricing-EspressoComparison", PricingEspressoComparison, "pricing"),
 
   // FAQ
   c("FAQ-DarkAccordion", FAQDarkAccordion, "faq"),
@@ -316,6 +336,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("FAQ-WarmAccordion", FAQWarmAccordion, "faq"),
   c("FAQ-MinimalCards",  FAQMinimalCards,  "faq"),
   c("FAQ-NeonInterview", FAQNeonInterview, "faq"),
+  c("FAQOceanAccordion", FAQOceanAccordion, "faq"),
+  c("FAQSunsetCards", FAQSunsetCards, "faq"),
+  c("FAQForestAccordion", FAQForestAccordion, "faq"),
+  c("FAQRoseCards", FAQRoseCards, "faq"),
+  c("FAQGoldAccordion", FAQGoldAccordion, "faq"),
+  c("FAQMidnightCards", FAQMidnightCards, "faq"),
+  c("FAQCrimsonAccordion", FAQCrimsonAccordion, "faq"),
+  c("FAQLavenderCards", FAQLavenderCards, "faq"),
+  c("FAQArcticAccordion", FAQArcticAccordion, "faq"),
+  c("FAQEspressoCards", FAQEspressoCards, "faq"),
 
   // Milestone
   c("Milestone-DarkCelebration",  MilestoneDarkCelebration,  "milestone"),
@@ -340,6 +370,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("ProductLaunch-BoldHeroReveal",  ProductLaunchBoldHeroReveal,  "productlaunch"),
   c("ProductLaunch-DarkFeatureGrid", ProductLaunchDarkFeatureGrid, "productlaunch"),
   c("ProductLaunch-BoldFeatureGrid", ProductLaunchBoldFeatureGrid, "productlaunch"),
+  c("ProductLaunchOceanHero-Reveal", ProductLaunchOceanHeroReveal, "productlaunch"),
+  c("ProductLaunchSunsetHero-Reveal", ProductLaunchSunsetHeroReveal, "productlaunch"),
+  c("ProductLaunchForestFeature-Grid", ProductLaunchForestFeatureGrid, "productlaunch"),
+  c("ProductLaunchRoseFeature-Grid", ProductLaunchRoseFeatureGrid, "productlaunch"),
+  c("ProductLaunchGold-Countdown", ProductLaunchGoldCountdown, "productlaunch"),
+  c("ProductLaunchMidnight-Countdown", ProductLaunchMidnightCountdown, "productlaunch"),
+  c("ProductLaunchCrimsonHero-Reveal", ProductLaunchCrimsonHeroReveal, "productlaunch"),
+  c("ProductLaunchLavenderHero-Reveal", ProductLaunchLavenderHeroReveal, "productlaunch"),
+  c("ProductLaunchArcticFeature-Grid", ProductLaunchArcticFeatureGrid, "productlaunch"),
+  c("ProductLaunchEspressoFeature-Grid", ProductLaunchEspressoFeatureGrid, "productlaunch"),
   c("ProductLaunch-DarkCountdown",   ProductLaunchDarkCountdown,   "productlaunch"),
   c("ProductLaunch-BoldCountdown",   ProductLaunchBoldCountdown,   "productlaunch"),
 
@@ -348,6 +388,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("Tutorial-CleanNumberedSteps",TutorialCleanNumberedSteps,"tutorial"),
   c("Tutorial-DarkCardSequence",  TutorialDarkCardSequence,  "tutorial"),
   c("Tutorial-CleanCardSequence", TutorialCleanCardSequence, "tutorial"),
+  c("TutorialOceanNumbered-Steps", TutorialOceanNumberedSteps, "tutorial"),
+  c("TutorialSunsetNumbered-Steps", TutorialSunsetNumberedSteps, "tutorial"),
+  c("TutorialForestCard-Sequence", TutorialForestCardSequence, "tutorial"),
+  c("TutorialRoseCard-Sequence", TutorialRoseCardSequence, "tutorial"),
+  c("TutorialGoldSplit-Demo", TutorialGoldSplitDemo, "tutorial"),
+  c("TutorialMidnightSplit-Demo", TutorialMidnightSplitDemo, "tutorial"),
+  c("TutorialCrimsonNumbered-Steps", TutorialCrimsonNumberedSteps, "tutorial"),
+  c("TutorialLavenderNumbered-Steps", TutorialLavenderNumberedSteps, "tutorial"),
+  c("TutorialArcticCard-Sequence", TutorialArcticCardSequence, "tutorial"),
+  c("TutorialEspressoCard-Sequence", TutorialEspressoCardSequence, "tutorial"),
   c("Tutorial-DarkSplitDemo",     TutorialDarkSplitDemo,     "tutorial"),
   c("Tutorial-CleanSplitDemo",    TutorialCleanSplitDemo,    "tutorial"),
 
@@ -358,6 +408,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("BeforeAfter-WarmRevealWipe",   BeforeAfterWarmRevealWipe,   "beforeafter"),
   c("BeforeAfter-DarkMetricsCompare",BeforeAfterDarkMetricsCompare,"beforeafter"),
   c("BeforeAfter-WarmMetricsCompare",BeforeAfterWarmMetricsCompare,"beforeafter"),
+  c("BeforeAfter-OceanSplitScreen", BeforeAfterOceanSplitScreen, "beforeafter"),
+  c("BeforeAfter-SunsetSplitScreen", BeforeAfterSunsetSplitScreen, "beforeafter"),
+  c("BeforeAfter-ForestRevealWipe", BeforeAfterForestRevealWipe, "beforeafter"),
+  c("BeforeAfter-RoseRevealWipe", BeforeAfterRoseRevealWipe, "beforeafter"),
+  c("BeforeAfter-GoldMetricsCompare", BeforeAfterGoldMetricsCompare, "beforeafter"),
+  c("BeforeAfter-MidnightMetricsCompare", BeforeAfterMidnightMetricsCompare, "beforeafter"),
+  c("BeforeAfter-CrimsonSplitScreen", BeforeAfterCrimsonSplitScreen, "beforeafter"),
+  c("BeforeAfter-LavenderSplitScreen", BeforeAfterLavenderSplitScreen, "beforeafter"),
+  c("BeforeAfter-ArcticRevealWipe", BeforeAfterArcticRevealWipe, "beforeafter"),
+  c("BeforeAfter-EspressoRevealWipe", BeforeAfterEspressoRevealWipe, "beforeafter"),
 
   // Course Promo
   c("CoursePromo-DarkOverview",     CoursePromoDarkOverview,     "coursepromo"),
@@ -366,6 +426,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("CoursePromo-CleanCurriculum",  CoursePromoCleanCurriculum,  "coursepromo"),
   c("CoursePromo-DarkInstructor",   CoursePromoDarkInstructor,   "coursepromo"),
   c("CoursePromo-CleanInstructor",  CoursePromoCleanInstructor,  "coursepromo"),
+  c("CoursePromo-OceanOverview", CoursePromoOceanOverview, "coursepromo"),
+  c("CoursePromo-SunsetOverview", CoursePromoSunsetOverview, "coursepromo"),
+  c("CoursePromo-ForestCurriculum", CoursePromoForestCurriculum, "coursepromo"),
+  c("CoursePromo-RoseCurriculum", CoursePromoRoseCurriculum, "coursepromo"),
+  c("CoursePromo-GoldInstructor", CoursePromoGoldInstructor, "coursepromo"),
+  c("CoursePromo-MidnightInstructor", CoursePromoMidnightInstructor, "coursepromo"),
+  c("CoursePromo-CrimsonOverview", CoursePromoCrimsonOverview, "coursepromo"),
+  c("CoursePromo-LavenderOverview", CoursePromoLavenderOverview, "coursepromo"),
+  c("CoursePromo-ArcticCurriculum", CoursePromoArcticCurriculum, "coursepromo"),
+  c("CoursePromo-EspressoCurriculum", CoursePromoEspressoCurriculum, "coursepromo"),
 
   // Countdown Hype
   c("CountdownHype-DarkTimer",   CountdownHypeDarkTimer,   "countdownhype"),
@@ -374,18 +444,48 @@ export const COMPOSITIONS: CompSpec[] = [
   c("CountdownHype-NeonTeaser",  CountdownHypeNeonTeaser,  "countdownhype"),
   c("CountdownHype-DarkUrgency", CountdownHypeDarkUrgency, "countdownhype"),
   c("CountdownHype-NeonUrgency", CountdownHypeNeonUrgency, "countdownhype"),
+  c("CountdownHypeOcean-Timer", CountdownHypeOceanTimer, "countdownhype"),
+  c("CountdownHypeSunset-Timer", CountdownHypeSunsetTimer, "countdownhype"),
+  c("CountdownHypeForest-Teaser", CountdownHypeForestTeaser, "countdownhype"),
+  c("CountdownHypeRose-Teaser", CountdownHypeRoseTeaser, "countdownhype"),
+  c("CountdownHypeGold-Urgency", CountdownHypeGoldUrgency, "countdownhype"),
+  c("CountdownHypeMidnight-Urgency", CountdownHypeMidnightUrgency, "countdownhype"),
+  c("CountdownHypeCrimson-Timer", CountdownHypeCrimsonTimer, "countdownhype"),
+  c("CountdownHypeLavender-Timer", CountdownHypeLavenderTimer, "countdownhype"),
+  c("CountdownHypeArctic-Teaser", CountdownHypeArcticTeaser, "countdownhype"),
+  c("CountdownHypeEspresso-Teaser", CountdownHypeEspressoTeaser, "countdownhype"),
 
   // Affiliate Review
   c("AffiliateReview-DarkScorecard",  AffiliateReviewDarkScorecard,  "affiliatereview"),
   c("AffiliateReview-BoldScorecard",  AffiliateReviewBoldScorecard,  "affiliatereview"),
   c("AffiliateReview-DarkComparison", AffiliateReviewDarkComparison, "affiliatereview"),
   c("AffiliateReview-BoldComparison", AffiliateReviewBoldComparison, "affiliatereview"),
+  c("AffiliateReviewOcean-Scorecard", AffiliateReviewOceanScorecard, "affiliatereview"),
+  c("AffiliateReviewSunset-Scorecard", AffiliateReviewSunsetScorecard, "affiliatereview"),
+  c("AffiliateReviewForest-Comparison", AffiliateReviewForestComparison, "affiliatereview"),
+  c("AffiliateReviewRose-Comparison", AffiliateReviewRoseComparison, "affiliatereview"),
+  c("AffiliateReviewGold-Verdict", AffiliateReviewGoldVerdict, "affiliatereview"),
+  c("AffiliateReviewMidnight-Verdict", AffiliateReviewMidnightVerdict, "affiliatereview"),
+  c("AffiliateReviewCrimson-Scorecard", AffiliateReviewCrimsonScorecard, "affiliatereview"),
+  c("AffiliateReviewLavender-Scorecard", AffiliateReviewLavenderScorecard, "affiliatereview"),
+  c("AffiliateReviewArctic-Comparison", AffiliateReviewArcticComparison, "affiliatereview"),
+  c("AffiliateReviewEspresso-Comparison", AffiliateReviewEspressoComparison, "affiliatereview"),
   c("AffiliateReview-DarkVerdict",    AffiliateReviewDarkVerdict,    "affiliatereview"),
   c("AffiliateReview-BoldVerdict",    AffiliateReviewBoldVerdict,    "affiliatereview"),
 
   // Poll Quiz
   c("PollQuiz-DarkQuestionCard", PollQuizDarkQuestionCard, "pollquiz"),
   c("PollQuiz-NeonQuestionCard", PollQuizNeonQuestionCard, "pollquiz"),
+  c("PollQuizOceanQuestion-Card", PollQuizOceanQuestionCard, "pollquiz"),
+  c("PollQuizSunsetQuestion-Card", PollQuizSunsetQuestionCard, "pollquiz"),
+  c("PollQuizForestResults-Bar", PollQuizForestResultsBar, "pollquiz"),
+  c("PollQuizRoseResults-Bar", PollQuizRoseResultsBar, "pollquiz"),
+  c("PollQuizGold-Reveal", PollQuizGoldReveal, "pollquiz"),
+  c("PollQuizMidnight-Reveal", PollQuizMidnightReveal, "pollquiz"),
+  c("PollQuizCrimsonQuestion-Card", PollQuizCrimsonQuestionCard, "pollquiz"),
+  c("PollQuizLavenderQuestion-Card", PollQuizLavenderQuestionCard, "pollquiz"),
+  c("PollQuizArcticResults-Bar", PollQuizArcticResultsBar, "pollquiz"),
+  c("PollQuizEspressoResults-Bar", PollQuizEspressoResultsBar, "pollquiz"),
   c("PollQuiz-DarkResultsBar",   PollQuizDarkResultsBar,   "pollquiz"),
   c("PollQuiz-NeonResultsBar",   PollQuizNeonResultsBar,   "pollquiz"),
   c("PollQuiz-DarkReveal",       PollQuizDarkReveal,       "pollquiz"),
@@ -397,6 +497,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("NewsletterPromo-DarkIssuePreview",     NewsletterPromoDarkIssuePreview,     "newsletterpromo"),
   c("NewsletterPromo-CleanIssuePreview",    NewsletterPromoCleanIssuePreview,    "newsletterpromo"),
   c("NewsletterPromo-DarkTestimonialBlend", NewsletterPromoDarkTestimonialBlend, "newsletterpromo"),
+  c("NewsletterPromoOceanSubscribe-Cta", NewsletterPromoOceanSubscribeCta, "newsletterpromo"),
+  c("NewsletterPromoSunsetSubscribe-Cta", NewsletterPromoSunsetSubscribeCta, "newsletterpromo"),
+  c("NewsletterPromoForestIssue-Preview", NewsletterPromoForestIssuePreview, "newsletterpromo"),
+  c("NewsletterPromoRoseIssue-Preview", NewsletterPromoRoseIssuePreview, "newsletterpromo"),
+  c("NewsletterPromoGoldTestimonial-Blend", NewsletterPromoGoldTestimonialBlend, "newsletterpromo"),
+  c("NewsletterPromoMidnightTestimonial-Blend", NewsletterPromoMidnightTestimonialBlend, "newsletterpromo"),
+  c("NewsletterPromoCrimsonSubscribe-Cta", NewsletterPromoCrimsonSubscribeCta, "newsletterpromo"),
+  c("NewsletterPromoLavenderSubscribe-Cta", NewsletterPromoLavenderSubscribeCta, "newsletterpromo"),
+  c("NewsletterPromoArcticIssue-Preview", NewsletterPromoArcticIssuePreview, "newsletterpromo"),
+  c("NewsletterPromoEspressoIssue-Preview", NewsletterPromoEspressoIssuePreview, "newsletterpromo"),
   c("NewsletterPromo-CleanTestimonialBlend",NewsletterPromoCleanTestimonialBlend,"newsletterpromo"),
 
   // Podcast Audiogram
@@ -406,6 +516,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("PodcastAudiogram-WarmQuoteCard",   PodcastAudiogramWarmQuoteCard,   "podcastaudiogram"),
   c("PodcastAudiogram-DarkEpisodePromo",PodcastAudiogramDarkEpisodePromo,"podcastaudiogram"),
   c("PodcastAudiogram-WarmEpisodePromo",PodcastAudiogramWarmEpisodePromo,"podcastaudiogram"),
+  c("PodcastAudiogram-OceanWaveform", PodcastAudiogramOceanWaveform, "podcastaudiogram"),
+  c("PodcastAudiogram-SunsetWaveform", PodcastAudiogramSunsetWaveform, "podcastaudiogram"),
+  c("PodcastAudiogram-ForestQuoteCard", PodcastAudiogramForestQuoteCard, "podcastaudiogram"),
+  c("PodcastAudiogram-RoseQuoteCard", PodcastAudiogramRoseQuoteCard, "podcastaudiogram"),
+  c("PodcastAudiogram-GoldEpisodePromo", PodcastAudiogramGoldEpisodePromo, "podcastaudiogram"),
+  c("PodcastAudiogram-MidnightEpisodePromo", PodcastAudiogramMidnightEpisodePromo, "podcastaudiogram"),
+  c("PodcastAudiogram-CrimsonWaveform", PodcastAudiogramCrimsonWaveform, "podcastaudiogram"),
+  c("PodcastAudiogram-LavenderWaveform", PodcastAudiogramLavenderWaveform, "podcastaudiogram"),
+  c("PodcastAudiogram-ArcticQuoteCard", PodcastAudiogramArcticQuoteCard, "podcastaudiogram"),
+  c("PodcastAudiogram-EspressoQuoteCard", PodcastAudiogramEspressoQuoteCard, "podcastaudiogram"),
 
   // Behind the Scenes
   c("BehindTheScenes-DarkSceneCards",  BehindTheScenesDarkSceneCards,  "behindthescenes"),
@@ -414,9 +534,29 @@ export const COMPOSITIONS: CompSpec[] = [
   c("BehindTheScenes-WarmTimeline",    BehindTheScenesWarmTimeline,    "behindthescenes"),
   c("BehindTheScenes-DarkProcessFlow", BehindTheScenesDarkProcessFlow, "behindthescenes"),
   c("BehindTheScenes-WarmProcessFlow", BehindTheScenesWarmProcessFlow, "behindthescenes"),
+  c("BehindTheScenesOceanScene-Cards", BehindTheScenesOceanSceneCards, "behindthescenes"),
+  c("BehindTheScenesSunsetScene-Cards", BehindTheScenesSunsetSceneCards, "behindthescenes"),
+  c("BehindTheScenesForest-Timeline", BehindTheScenesForestTimeline, "behindthescenes"),
+  c("BehindTheScenesRose-Timeline", BehindTheScenesRoseTimeline, "behindthescenes"),
+  c("BehindTheScenesGoldProcess-Flow", BehindTheScenesGoldProcessFlow, "behindthescenes"),
+  c("BehindTheScenesMidnightProcess-Flow", BehindTheScenesMidnightProcessFlow, "behindthescenes"),
+  c("BehindTheScenesCrimsonScene-Cards", BehindTheScenesCrimsonSceneCards, "behindthescenes"),
+  c("BehindTheScenesLavenderScene-Cards", BehindTheScenesLavenderSceneCards, "behindthescenes"),
+  c("BehindTheScenesArctic-Timeline", BehindTheScenesArcticTimeline, "behindthescenes"),
+  c("BehindTheScenesEspresso-Timeline", BehindTheScenesEspressoTimeline, "behindthescenes"),
 
   // Recipe Step
   c("RecipeStep-WarmIngredientList", RecipeStepWarmIngredientList, "recipestep"),
+  c("RecipeStepOceanIngredient-List", RecipeStepOceanIngredientList, "recipestep"),
+  c("RecipeStepSunsetIngredient-List", RecipeStepSunsetIngredientList, "recipestep"),
+  c("RecipeStepForestStep-Sequence", RecipeStepForestStepSequence, "recipestep"),
+  c("RecipeStepRoseStep-Sequence", RecipeStepRoseStepSequence, "recipestep"),
+  c("RecipeStepGoldSummary-Card", RecipeStepGoldSummaryCard, "recipestep"),
+  c("RecipeStepMidnightSummary-Card", RecipeStepMidnightSummaryCard, "recipestep"),
+  c("RecipeStepCrimsonIngredient-List", RecipeStepCrimsonIngredientList, "recipestep"),
+  c("RecipeStepLavenderIngredient-List", RecipeStepLavenderIngredientList, "recipestep"),
+  c("RecipeStepArcticStep-Sequence", RecipeStepArcticStepSequence, "recipestep"),
+  c("RecipeStepEspressoStep-Sequence", RecipeStepEspressoStepSequence, "recipestep"),
   c("RecipeStep-CleanIngredientList",RecipeStepCleanIngredientList,"recipestep"),
   c("RecipeStep-WarmStepSequence",   RecipeStepWarmStepSequence,   "recipestep"),
   c("RecipeStep-CleanStepSequence",  RecipeStepCleanStepSequence,  "recipestep"),
@@ -429,11 +569,31 @@ export const COMPOSITIONS: CompSpec[] = [
   c("Listing-CleanFeatureGrid",ListingCleanFeatureGrid,"listing"),
   c("Listing-MinimalFeatureGrid",ListingMinimalFeatureGrid,"listing"),
   c("Listing-CleanComparison", ListingCleanComparison, "listing"),
+  c("ListingOcean-Showcase", ListingOceanShowcase, "listing"),
+  c("ListingSunset-Showcase", ListingSunsetShowcase, "listing"),
+  c("ListingForestFeature-Grid", ListingForestFeatureGrid, "listing"),
+  c("ListingRoseFeature-Grid", ListingRoseFeatureGrid, "listing"),
+  c("ListingGold-Comparison", ListingGoldComparison, "listing"),
+  c("ListingMidnight-Comparison", ListingMidnightComparison, "listing"),
+  c("ListingCrimson-Showcase", ListingCrimsonShowcase, "listing"),
+  c("ListingLavender-Showcase", ListingLavenderShowcase, "listing"),
+  c("ListingArcticFeature-Grid", ListingArcticFeatureGrid, "listing"),
+  c("ListingEspressoFeature-Grid", ListingEspressoFeatureGrid, "listing"),
   c("Listing-MinimalComparison",ListingMinimalComparison,"listing"),
 
   // Fitness Routine
   c("FitnessRoutine-BoldExerciseList", FitnessRoutineBoldExerciseList, "fitnessroutine"),
   c("FitnessRoutine-NeonExerciseList", FitnessRoutineNeonExerciseList, "fitnessroutine"),
+  c("FitnessRoutineOceanExercise-List", FitnessRoutineOceanExerciseList, "fitnessroutine"),
+  c("FitnessRoutineSunsetExercise-List", FitnessRoutineSunsetExerciseList, "fitnessroutine"),
+  c("FitnessRoutineForestTimer-Focus", FitnessRoutineForestTimerFocus, "fitnessroutine"),
+  c("FitnessRoutineRoseTimer-Focus", FitnessRoutineRoseTimerFocus, "fitnessroutine"),
+  c("FitnessRoutineGold-Circuit", FitnessRoutineGoldCircuit, "fitnessroutine"),
+  c("FitnessRoutineMidnight-Circuit", FitnessRoutineMidnightCircuit, "fitnessroutine"),
+  c("FitnessRoutineCrimsonExercise-List", FitnessRoutineCrimsonExerciseList, "fitnessroutine"),
+  c("FitnessRoutineLavenderExercise-List", FitnessRoutineLavenderExerciseList, "fitnessroutine"),
+  c("FitnessRoutineArcticTimer-Focus", FitnessRoutineArcticTimerFocus, "fitnessroutine"),
+  c("FitnessRoutineEspressoTimer-Focus", FitnessRoutineEspressoTimerFocus, "fitnessroutine"),
   c("FitnessRoutine-BoldTimerFocus",   FitnessRoutineBoldTimerFocus,   "fitnessroutine"),
   c("FitnessRoutine-NeonTimerFocus",   FitnessRoutineNeonTimerFocus,   "fitnessroutine"),
   c("FitnessRoutine-BoldCircuit",      FitnessRoutineBoldCircuit,      "fitnessroutine"),
@@ -446,12 +606,32 @@ export const COMPOSITIONS: CompSpec[] = [
   c("MusicVisualizer-NeonRadial", MusicVisualizerNeonRadial, "musicvisualizer"),
   c("MusicVisualizer-DarkLyrics", MusicVisualizerDarkLyrics, "musicvisualizer"),
   c("MusicVisualizer-NeonLyrics", MusicVisualizerNeonLyrics, "musicvisualizer"),
+  c("MusicVisualizerOcean-Bars", MusicVisualizerOceanBars, "musicvisualizer"),
+  c("MusicVisualizerSunset-Bars", MusicVisualizerSunsetBars, "musicvisualizer"),
+  c("MusicVisualizerForest-Radial", MusicVisualizerForestRadial, "musicvisualizer"),
+  c("MusicVisualizerRose-Radial", MusicVisualizerRoseRadial, "musicvisualizer"),
+  c("MusicVisualizerGold-Lyrics", MusicVisualizerGoldLyrics, "musicvisualizer"),
+  c("MusicVisualizerMidnight-Lyrics", MusicVisualizerMidnightLyrics, "musicvisualizer"),
+  c("MusicVisualizerCrimson-Bars", MusicVisualizerCrimsonBars, "musicvisualizer"),
+  c("MusicVisualizerLavender-Bars", MusicVisualizerLavenderBars, "musicvisualizer"),
+  c("MusicVisualizerArctic-Radial", MusicVisualizerArcticRadial, "musicvisualizer"),
+  c("MusicVisualizerEspresso-Radial", MusicVisualizerEspressoRadial, "musicvisualizer"),
 
   // Collaboration
   c("Collaboration-DarkSplitScreen",  CollaborationDarkSplitScreen,  "collaboration"),
   c("Collaboration-BoldSplitScreen",  CollaborationBoldSplitScreen,  "collaboration"),
   c("Collaboration-DarkAnnouncement", CollaborationDarkAnnouncement, "collaboration"),
   c("Collaboration-BoldAnnouncement", CollaborationBoldAnnouncement, "collaboration"),
+  c("CollaborationOceanSplit-Screen", CollaborationOceanSplitScreen, "collaboration"),
+  c("CollaborationSunsetSplit-Screen", CollaborationSunsetSplitScreen, "collaboration"),
+  c("CollaborationForest-Announcement", CollaborationForestAnnouncement, "collaboration"),
+  c("CollaborationRose-Announcement", CollaborationRoseAnnouncement, "collaboration"),
+  c("CollaborationGoldStats-Merge", CollaborationGoldStatsMerge, "collaboration"),
+  c("CollaborationMidnightStats-Merge", CollaborationMidnightStatsMerge, "collaboration"),
+  c("CollaborationCrimsonSplit-Screen", CollaborationCrimsonSplitScreen, "collaboration"),
+  c("CollaborationLavenderSplit-Screen", CollaborationLavenderSplitScreen, "collaboration"),
+  c("CollaborationArctic-Announcement", CollaborationArcticAnnouncement, "collaboration"),
+  c("CollaborationEspresso-Announcement", CollaborationEspressoAnnouncement, "collaboration"),
   c("Collaboration-DarkStatsMerge",   CollaborationDarkStatsMerge,   "collaboration"),
   c("Collaboration-BoldStatsMerge",   CollaborationBoldStatsMerge,   "collaboration"),
 
@@ -462,18 +642,48 @@ export const COMPOSITIONS: CompSpec[] = [
   c("SprintDashboard-VelocityBold",  SprintDashboardVelocityBold,  "sprintdashboard"),
   c("SprintDashboard-BurndownDark",  SprintDashboardBurndownDark,  "sprintdashboard"),
   c("SprintDashboard-BurndownBold",  SprintDashboardBurndownBold,  "sprintdashboard"),
+  c("SprintDashboard-OceanKanban", SprintDashboardOceanKanban, "sprintdashboard"),
+  c("SprintDashboard-SunsetKanban", SprintDashboardSunsetKanban, "sprintdashboard"),
+  c("SprintDashboard-ForestVelocity", SprintDashboardForestVelocity, "sprintdashboard"),
+  c("SprintDashboard-RoseVelocity", SprintDashboardRoseVelocity, "sprintdashboard"),
+  c("SprintDashboard-GoldBurndown", SprintDashboardGoldBurndown, "sprintdashboard"),
+  c("SprintDashboard-MidnightBurndown", SprintDashboardMidnightBurndown, "sprintdashboard"),
+  c("SprintDashboard-CrimsonKanban", SprintDashboardCrimsonKanban, "sprintdashboard"),
+  c("SprintDashboard-LavenderKanban", SprintDashboardLavenderKanban, "sprintdashboard"),
+  c("SprintDashboard-ArcticVelocity", SprintDashboardArcticVelocity, "sprintdashboard"),
+  c("SprintDashboard-EspressoVelocity", SprintDashboardEspressoVelocity, "sprintdashboard"),
 
   // Feature Roadmap
   c("FeatureRoadmap-TimelineDark",  FeatureRoadmapTimelineDark,  "featureroadmap"),
   c("FeatureRoadmap-TimelineClean", FeatureRoadmapTimelineClean, "featureroadmap"),
   c("FeatureRoadmap-SwimlaneDark",  FeatureRoadmapSwimlaneDark,  "featureroadmap"),
   c("FeatureRoadmap-SwimlaneClean", FeatureRoadmapSwimlaneClean, "featureroadmap"),
+  c("FeatureRoadmapOcean-Timeline", FeatureRoadmapOceanTimeline, "featureroadmap"),
+  c("FeatureRoadmapSunset-Timeline", FeatureRoadmapSunsetTimeline, "featureroadmap"),
+  c("FeatureRoadmapForest-Swimlane", FeatureRoadmapForestSwimlane, "featureroadmap"),
+  c("FeatureRoadmapRose-Swimlane", FeatureRoadmapRoseSwimlane, "featureroadmap"),
+  c("FeatureRoadmapGold-Grid", FeatureRoadmapGoldGrid, "featureroadmap"),
+  c("FeatureRoadmapMidnight-Grid", FeatureRoadmapMidnightGrid, "featureroadmap"),
+  c("FeatureRoadmapCrimson-Timeline", FeatureRoadmapCrimsonTimeline, "featureroadmap"),
+  c("FeatureRoadmapLavender-Timeline", FeatureRoadmapLavenderTimeline, "featureroadmap"),
+  c("FeatureRoadmapArctic-Swimlane", FeatureRoadmapArcticSwimlane, "featureroadmap"),
+  c("FeatureRoadmapEspresso-Swimlane", FeatureRoadmapEspressoSwimlane, "featureroadmap"),
   c("FeatureRoadmap-GridDark",      FeatureRoadmapGridDark,      "featureroadmap"),
   c("FeatureRoadmap-GridClean",     FeatureRoadmapGridClean,     "featureroadmap"),
 
   // Platform Overview
   c("PlatformOverview-CommandCenterDark", PlatformOverviewCommandCenterDark, "platformoverview"),
   c("PlatformOverview-CommandCenterNeon", PlatformOverviewCommandCenterNeon, "platformoverview"),
+  c("PlatformOverviewOceanCommand-Center", PlatformOverviewOceanCommandCenter, "platformoverview"),
+  c("PlatformOverviewSunsetCommand-Center", PlatformOverviewSunsetCommandCenter, "platformoverview"),
+  c("PlatformOverviewForestModule-Grid", PlatformOverviewForestModuleGrid, "platformoverview"),
+  c("PlatformOverviewRoseModule-Grid", PlatformOverviewRoseModuleGrid, "platformoverview"),
+  c("PlatformOverviewGold-Stack", PlatformOverviewGoldStack, "platformoverview"),
+  c("PlatformOverviewMidnight-Stack", PlatformOverviewMidnightStack, "platformoverview"),
+  c("PlatformOverviewCrimsonCommand-Center", PlatformOverviewCrimsonCommandCenter, "platformoverview"),
+  c("PlatformOverviewLavenderCommand-Center", PlatformOverviewLavenderCommandCenter, "platformoverview"),
+  c("PlatformOverviewArcticModule-Grid", PlatformOverviewArcticModuleGrid, "platformoverview"),
+  c("PlatformOverviewEspressoModule-Grid", PlatformOverviewEspressoModuleGrid, "platformoverview"),
   c("PlatformOverview-ModuleGridDark",    PlatformOverviewModuleGridDark,    "platformoverview"),
   c("PlatformOverview-ModuleGridNeon",    PlatformOverviewModuleGridNeon,    "platformoverview"),
   c("PlatformOverview-StackDark",         PlatformOverviewStackDark,         "platformoverview"),
@@ -482,6 +692,16 @@ export const COMPOSITIONS: CompSpec[] = [
   // Agent Dashboard
   c("AgentDashboard-ControlPanelDark", AgentDashboardControlPanelDark, "agentdashboard"),
   c("AgentDashboard-ControlPanelNeon", AgentDashboardControlPanelNeon, "agentdashboard"),
+  c("AgentDashboardOceanControl-Panel", AgentDashboardOceanControlPanel, "agentdashboard"),
+  c("AgentDashboardSunsetControl-Panel", AgentDashboardSunsetControlPanel, "agentdashboard"),
+  c("AgentDashboardForest-Flow", AgentDashboardForestFlow, "agentdashboard"),
+  c("AgentDashboardRose-Flow", AgentDashboardRoseFlow, "agentdashboard"),
+  c("AgentDashboardGold-Matrix", AgentDashboardGoldMatrix, "agentdashboard"),
+  c("AgentDashboardMidnight-Matrix", AgentDashboardMidnightMatrix, "agentdashboard"),
+  c("AgentDashboardCrimsonControl-Panel", AgentDashboardCrimsonControlPanel, "agentdashboard"),
+  c("AgentDashboardLavenderControl-Panel", AgentDashboardLavenderControlPanel, "agentdashboard"),
+  c("AgentDashboardArctic-Flow", AgentDashboardArcticFlow, "agentdashboard"),
+  c("AgentDashboardEspresso-Flow", AgentDashboardEspressoFlow, "agentdashboard"),
   c("AgentDashboard-FlowDark",         AgentDashboardFlowDark,         "agentdashboard"),
   c("AgentDashboard-FlowNeon",         AgentDashboardFlowNeon,         "agentdashboard"),
   c("AgentDashboard-MatrixDark",       AgentDashboardMatrixDark,       "agentdashboard"),
@@ -494,6 +714,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("ClientPipeline-PipelineBoardWarm",  ClientPipelinePipelineBoardWarm,  "clientpipeline"),
   c("ClientPipeline-MetricsDark",        ClientPipelineMetricsDark,        "clientpipeline"),
   c("ClientPipeline-MetricsWarm",        ClientPipelineMetricsWarm,        "clientpipeline"),
+  c("ClientPipeline-OceanFunnel", ClientPipelineOceanFunnel, "clientpipeline"),
+  c("ClientPipeline-SunsetFunnel", ClientPipelineSunsetFunnel, "clientpipeline"),
+  c("ClientPipeline-ForestPipelineBoard", ClientPipelineForestPipelineBoard, "clientpipeline"),
+  c("ClientPipeline-RosePipelineBoard", ClientPipelineRosePipelineBoard, "clientpipeline"),
+  c("ClientPipeline-GoldMetrics", ClientPipelineGoldMetrics, "clientpipeline"),
+  c("ClientPipeline-MidnightMetrics", ClientPipelineMidnightMetrics, "clientpipeline"),
+  c("ClientPipeline-CrimsonFunnel", ClientPipelineCrimsonFunnel, "clientpipeline"),
+  c("ClientPipeline-LavenderFunnel", ClientPipelineLavenderFunnel, "clientpipeline"),
+  c("ClientPipeline-ArcticPipelineBoard", ClientPipelineArcticPipelineBoard, "clientpipeline"),
+  c("ClientPipeline-EspressoPipelineBoard", ClientPipelineEspressoPipelineBoard, "clientpipeline"),
 
   // Integration Status
   c("IntegrationStatus-StatusWallDark",       IntegrationStatusStatusWallDark,       "integrationstatus"),
@@ -502,10 +732,30 @@ export const COMPOSITIONS: CompSpec[] = [
   c("IntegrationStatus-CategoryGroupsClean",  IntegrationStatusCategoryGroupsClean,  "integrationstatus"),
   c("IntegrationStatus-HealthMonitorDark",    IntegrationStatusHealthMonitorDark,    "integrationstatus"),
   c("IntegrationStatus-HealthMonitorClean",   IntegrationStatusHealthMonitorClean,   "integrationstatus"),
+  c("IntegrationStatus-OceanStatusWall", IntegrationStatusOceanStatusWall, "integrationstatus"),
+  c("IntegrationStatus-SunsetStatusWall", IntegrationStatusSunsetStatusWall, "integrationstatus"),
+  c("IntegrationStatus-ForestCategoryGroups", IntegrationStatusForestCategoryGroups, "integrationstatus"),
+  c("IntegrationStatus-RoseCategoryGroups", IntegrationStatusRoseCategoryGroups, "integrationstatus"),
+  c("IntegrationStatus-GoldHealthMonitor", IntegrationStatusGoldHealthMonitor, "integrationstatus"),
+  c("IntegrationStatus-MidnightHealthMonitor", IntegrationStatusMidnightHealthMonitor, "integrationstatus"),
+  c("IntegrationStatus-CrimsonStatusWall", IntegrationStatusCrimsonStatusWall, "integrationstatus"),
+  c("IntegrationStatus-LavenderStatusWall", IntegrationStatusLavenderStatusWall, "integrationstatus"),
+  c("IntegrationStatus-ArcticCategoryGroups", IntegrationStatusArcticCategoryGroups, "integrationstatus"),
+  c("IntegrationStatus-EspressoCategoryGroups", IntegrationStatusEspressoCategoryGroups, "integrationstatus"),
 
   // Bug Tracker
   c("BugTracker-SeverityMatrixDark", BugTrackerSeverityMatrixDark, "bugtracker"),
   c("BugTracker-SeverityMatrixBold", BugTrackerSeverityMatrixBold, "bugtracker"),
+  c("BugTrackerOceanSeverity-Matrix", BugTrackerOceanSeverityMatrix, "bugtracker"),
+  c("BugTrackerSunsetSeverity-Matrix", BugTrackerSunsetSeverityMatrix, "bugtracker"),
+  c("BugTrackerForestTriage-Board", BugTrackerForestTriageBoard, "bugtracker"),
+  c("BugTrackerRoseTriage-Board", BugTrackerRoseTriageBoard, "bugtracker"),
+  c("BugTrackerGold-Overview", BugTrackerGoldOverview, "bugtracker"),
+  c("BugTrackerMidnight-Overview", BugTrackerMidnightOverview, "bugtracker"),
+  c("BugTrackerCrimsonSeverity-Matrix", BugTrackerCrimsonSeverityMatrix, "bugtracker"),
+  c("BugTrackerLavenderSeverity-Matrix", BugTrackerLavenderSeverityMatrix, "bugtracker"),
+  c("BugTrackerArcticTriage-Board", BugTrackerArcticTriageBoard, "bugtracker"),
+  c("BugTrackerEspressoTriage-Board", BugTrackerEspressoTriageBoard, "bugtracker"),
   c("BugTracker-TriageBoardDark",    BugTrackerTriageBoardDark,    "bugtracker"),
   c("BugTracker-TriageBoardBold",    BugTrackerTriageBoardBold,    "bugtracker"),
   c("BugTracker-OverviewDark",       BugTrackerOverviewDark,       "bugtracker"),
@@ -517,11 +767,31 @@ export const COMPOSITIONS: CompSpec[] = [
   c("ReleaseNotes-HighlightsDark",     ReleaseNotesHighlightsDark,     "releasenotes"),
   c("ReleaseNotes-HighlightsClean",    ReleaseNotesHighlightsClean,    "releasenotes"),
   c("ReleaseNotes-VersionCompareDark", ReleaseNotesVersionCompareDark, "releasenotes"),
+  c("ReleaseNotesOcean-Changelog", ReleaseNotesOceanChangelog, "releasenotes"),
+  c("ReleaseNotesSunset-Changelog", ReleaseNotesSunsetChangelog, "releasenotes"),
+  c("ReleaseNotesForest-Highlights", ReleaseNotesForestHighlights, "releasenotes"),
+  c("ReleaseNotesRose-Highlights", ReleaseNotesRoseHighlights, "releasenotes"),
+  c("ReleaseNotesGoldVersion-Compare", ReleaseNotesGoldVersionCompare, "releasenotes"),
+  c("ReleaseNotesMidnightVersion-Compare", ReleaseNotesMidnightVersionCompare, "releasenotes"),
+  c("ReleaseNotesCrimson-Changelog", ReleaseNotesCrimsonChangelog, "releasenotes"),
+  c("ReleaseNotesLavender-Changelog", ReleaseNotesLavenderChangelog, "releasenotes"),
+  c("ReleaseNotesArctic-Highlights", ReleaseNotesArcticHighlights, "releasenotes"),
+  c("ReleaseNotesEspresso-Highlights", ReleaseNotesEspressoHighlights, "releasenotes"),
   c("ReleaseNotes-VersionCompareClean",ReleaseNotesVersionCompareClean,"releasenotes"),
 
   // Effort Tracking
   c("EffortTracking-TeamAllocationDark", EffortTrackingTeamAllocationDark, "efforttracking"),
   c("EffortTracking-TeamAllocationWarm", EffortTrackingTeamAllocationWarm, "efforttracking"),
+  c("EffortTrackingOceanTeam-Allocation", EffortTrackingOceanTeamAllocation, "efforttracking"),
+  c("EffortTrackingSunsetTeam-Allocation", EffortTrackingSunsetTeamAllocation, "efforttracking"),
+  c("EffortTrackingForest-Capacity", EffortTrackingForestCapacity, "efforttracking"),
+  c("EffortTrackingRose-Capacity", EffortTrackingRoseCapacity, "efforttracking"),
+  c("EffortTrackingGold-Breakdown", EffortTrackingGoldBreakdown, "efforttracking"),
+  c("EffortTrackingMidnight-Breakdown", EffortTrackingMidnightBreakdown, "efforttracking"),
+  c("EffortTrackingCrimsonTeam-Allocation", EffortTrackingCrimsonTeamAllocation, "efforttracking"),
+  c("EffortTrackingLavenderTeam-Allocation", EffortTrackingLavenderTeamAllocation, "efforttracking"),
+  c("EffortTrackingArctic-Capacity", EffortTrackingArcticCapacity, "efforttracking"),
+  c("EffortTrackingEspresso-Capacity", EffortTrackingEspressoCapacity, "efforttracking"),
   c("EffortTracking-CapacityDark",       EffortTrackingCapacityDark,       "efforttracking"),
   c("EffortTracking-CapacityWarm",       EffortTrackingCapacityWarm,       "efforttracking"),
   c("EffortTracking-BreakdownDark",      EffortTrackingBreakdownDark,      "efforttracking"),
@@ -533,6 +803,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("PinCollection-MapListWarm",      PinCollectionMapListWarm,      "pincollection"),
   c("PinCollection-MapListClean",     PinCollectionMapListClean,     "pincollection"),
   c("PinCollection-CategoryGridWarm", PinCollectionCategoryGridWarm, "pincollection"),
+  c("PinCollectionOceanCard-Gallery", PinCollectionOceanCardGallery, "pincollection"),
+  c("PinCollectionSunsetMap-List", PinCollectionSunsetMapList, "pincollection"),
+  c("PinCollectionForestCard-Gallery", PinCollectionForestCardGallery, "pincollection"),
+  c("PinCollectionRoseCategory-Grid", PinCollectionRoseCategoryGrid, "pincollection"),
+  c("PinCollectionGoldMap-List", PinCollectionGoldMapList, "pincollection"),
+  c("PinCollectionMidnightCard-Gallery", PinCollectionMidnightCardGallery, "pincollection"),
+  c("PinCollectionCrimsonCategory-Grid", PinCollectionCrimsonCategoryGrid, "pincollection"),
+  c("PinCollectionLavenderMap-List", PinCollectionLavenderMapList, "pincollection"),
+  c("PinCollectionArcticCard-Gallery", PinCollectionArcticCardGallery, "pincollection"),
+  c("PinCollectionEspressoCategory-Grid", PinCollectionEspressoCategoryGrid, "pincollection"),
   c("PinCollection-CategoryGridClean",PinCollectionCategoryGridClean,"pincollection"),
 
   // Office Directory
@@ -542,12 +822,32 @@ export const COMPOSITIONS: CompSpec[] = [
   c("OfficeDirectory-CardListClean",   OfficeDirectoryCardListClean,   "officedirectory"),
   c("OfficeDirectory-RegionGroupsDark",OfficeDirectoryRegionGroupsDark,"officedirectory"),
   c("OfficeDirectory-RegionGroupsClean",OfficeDirectoryRegionGroupsClean,"officedirectory"),
+  c("OfficeDirectory-OceanWorldView", OfficeDirectoryOceanWorldView, "officedirectory"),
+  c("OfficeDirectory-SunsetWorldView", OfficeDirectorySunsetWorldView, "officedirectory"),
+  c("OfficeDirectory-ForestCardList", OfficeDirectoryForestCardList, "officedirectory"),
+  c("OfficeDirectory-RoseCardList", OfficeDirectoryRoseCardList, "officedirectory"),
+  c("OfficeDirectory-GoldRegionGroups", OfficeDirectoryGoldRegionGroups, "officedirectory"),
+  c("OfficeDirectory-MidnightRegionGroups", OfficeDirectoryMidnightRegionGroups, "officedirectory"),
+  c("OfficeDirectory-CrimsonWorldView", OfficeDirectoryCrimsonWorldView, "officedirectory"),
+  c("OfficeDirectory-LavenderWorldView", OfficeDirectoryLavenderWorldView, "officedirectory"),
+  c("OfficeDirectory-ArcticCardList", OfficeDirectoryArcticCardList, "officedirectory"),
+  c("OfficeDirectory-EspressoCardList", OfficeDirectoryEspressoCardList, "officedirectory"),
 
   // Travel Itinerary
   c("TravelItinerary-DayByDayWarm",      TravelItineraryDayByDayWarm,      "travelitinerary"),
   c("TravelItinerary-DayByDayBold",      TravelItineraryDayByDayBold,      "travelitinerary"),
   c("TravelItinerary-RouteOverviewWarm", TravelItineraryRouteOverviewWarm, "travelitinerary"),
   c("TravelItinerary-RouteOverviewBold", TravelItineraryRouteOverviewBold, "travelitinerary"),
+  c("TravelItineraryOceanDayBy-Day", TravelItineraryOceanDayByDay, "travelitinerary"),
+  c("TravelItinerarySunsetDayBy-Day", TravelItinerarySunsetDayByDay, "travelitinerary"),
+  c("TravelItineraryForestRoute-Overview", TravelItineraryForestRouteOverview, "travelitinerary"),
+  c("TravelItineraryRoseRoute-Overview", TravelItineraryRoseRouteOverview, "travelitinerary"),
+  c("TravelItineraryGold-Highlights", TravelItineraryGoldHighlights, "travelitinerary"),
+  c("TravelItineraryMidnight-Highlights", TravelItineraryMidnightHighlights, "travelitinerary"),
+  c("TravelItineraryCrimsonDayBy-Day", TravelItineraryCrimsonDayByDay, "travelitinerary"),
+  c("TravelItineraryLavenderDayBy-Day", TravelItineraryLavenderDayByDay, "travelitinerary"),
+  c("TravelItineraryArcticRoute-Overview", TravelItineraryArcticRouteOverview, "travelitinerary"),
+  c("TravelItineraryEspressoRoute-Overview", TravelItineraryEspressoRouteOverview, "travelitinerary"),
   c("TravelItinerary-HighlightsWarm",    TravelItineraryHighlightsWarm,    "travelitinerary"),
   c("TravelItinerary-HighlightsBold",    TravelItineraryHighlightsBold,    "travelitinerary"),
 
@@ -557,6 +857,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("StoreLocator-MapPinsClean",   StoreLocatorMapPinsClean,   "storelocator"),
   c("StoreLocator-MapPinsMinimal", StoreLocatorMapPinsMinimal, "storelocator"),
   c("StoreLocator-DirectoryClean", StoreLocatorDirectoryClean, "storelocator"),
+  c("StoreLocatorOcean-Finder", StoreLocatorOceanFinder, "storelocator"),
+  c("StoreLocatorSunsetMap-Pins", StoreLocatorSunsetMapPins, "storelocator"),
+  c("StoreLocatorForest-Directory", StoreLocatorForestDirectory, "storelocator"),
+  c("StoreLocatorRose-Finder", StoreLocatorRoseFinder, "storelocator"),
+  c("StoreLocatorGoldMap-Pins", StoreLocatorGoldMapPins, "storelocator"),
+  c("StoreLocatorMidnight-Directory", StoreLocatorMidnightDirectory, "storelocator"),
+  c("StoreLocatorCrimson-Finder", StoreLocatorCrimsonFinder, "storelocator"),
+  c("StoreLocatorLavenderMap-Pins", StoreLocatorLavenderMapPins, "storelocator"),
+  c("StoreLocatorArctic-Directory", StoreLocatorArcticDirectory, "storelocator"),
+  c("StoreLocatorEspresso-Finder", StoreLocatorEspressoFinder, "storelocator"),
   c("StoreLocator-DirectoryMinimal",StoreLocatorDirectoryMinimal,"storelocator"),
 
   // Neighborhood Guide
@@ -566,6 +876,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("NeighborhoodGuide-HighlightsReelNeon",NeighborhoodGuideHighlightsReelNeon,"neighborhoodguide"),
   c("NeighborhoodGuide-OverviewWarm",      NeighborhoodGuideOverviewWarm,      "neighborhoodguide"),
   c("NeighborhoodGuide-OverviewNeon",      NeighborhoodGuideOverviewNeon,      "neighborhoodguide"),
+  c("NeighborhoodGuide-OceanExplorer", NeighborhoodGuideOceanExplorer, "neighborhoodguide"),
+  c("NeighborhoodGuide-SunsetExplorer", NeighborhoodGuideSunsetExplorer, "neighborhoodguide"),
+  c("NeighborhoodGuide-ForestHighlightsReel", NeighborhoodGuideForestHighlightsReel, "neighborhoodguide"),
+  c("NeighborhoodGuide-RoseHighlightsReel", NeighborhoodGuideRoseHighlightsReel, "neighborhoodguide"),
+  c("NeighborhoodGuide-GoldOverview", NeighborhoodGuideGoldOverview, "neighborhoodguide"),
+  c("NeighborhoodGuide-MidnightOverview", NeighborhoodGuideMidnightOverview, "neighborhoodguide"),
+  c("NeighborhoodGuide-CrimsonExplorer", NeighborhoodGuideCrimsonExplorer, "neighborhoodguide"),
+  c("NeighborhoodGuide-LavenderExplorer", NeighborhoodGuideLavenderExplorer, "neighborhoodguide"),
+  c("NeighborhoodGuide-ArcticHighlightsReel", NeighborhoodGuideArcticHighlightsReel, "neighborhoodguide"),
+  c("NeighborhoodGuide-EspressoHighlightsReel", NeighborhoodGuideEspressoHighlightsReel, "neighborhoodguide"),
 
   // Event Venue
   c("EventVenue-ScheduleMapDark",   EventVenueScheduleMapDark,   "eventvenue"),
@@ -574,6 +894,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("EventVenue-VenueCardsBold",    EventVenueVenueCardsBold,    "eventvenue"),
   c("EventVenue-EventOverviewDark", EventVenueEventOverviewDark, "eventvenue"),
   c("EventVenue-EventOverviewBold", EventVenueEventOverviewBold, "eventvenue"),
+  c("EventVenueOceanSchedule-Map", EventVenueOceanScheduleMap, "eventvenue"),
+  c("EventVenueSunsetSchedule-Map", EventVenueSunsetScheduleMap, "eventvenue"),
+  c("EventVenueForestVenue-Cards", EventVenueForestVenueCards, "eventvenue"),
+  c("EventVenueRoseVenue-Cards", EventVenueRoseVenueCards, "eventvenue"),
+  c("EventVenueGoldEvent-Overview", EventVenueGoldEventOverview, "eventvenue"),
+  c("EventVenueMidnightEvent-Overview", EventVenueMidnightEventOverview, "eventvenue"),
+  c("EventVenueCrimsonSchedule-Map", EventVenueCrimsonScheduleMap, "eventvenue"),
+  c("EventVenueLavenderSchedule-Map", EventVenueLavenderScheduleMap, "eventvenue"),
+  c("EventVenueArcticVenue-Cards", EventVenueArcticVenueCards, "eventvenue"),
+  c("EventVenueEspressoVenue-Cards", EventVenueEspressoVenueCards, "eventvenue"),
 
   // Sprint Recap
   c("SprintRecap-ShippedListDark",       SprintRecapShippedListDark,       "sprintrecap"),
@@ -582,10 +912,30 @@ export const COMPOSITIONS: CompSpec[] = [
   c("SprintRecap-HighlightCardsBold",    SprintRecapHighlightCardsBold,    "sprintrecap"),
   c("SprintRecap-TeamContributionsDark", SprintRecapTeamContributionsDark, "sprintrecap"),
   c("SprintRecap-TeamContributionsBold", SprintRecapTeamContributionsBold, "sprintrecap"),
+  c("SprintRecapOceanShipped-List", SprintRecapOceanShippedList, "sprintrecap"),
+  c("SprintRecapSunsetShipped-List", SprintRecapSunsetShippedList, "sprintrecap"),
+  c("SprintRecapForestHighlight-Cards", SprintRecapForestHighlightCards, "sprintrecap"),
+  c("SprintRecapRoseHighlight-Cards", SprintRecapRoseHighlightCards, "sprintrecap"),
+  c("SprintRecapGoldTeam-Contributions", SprintRecapGoldTeamContributions, "sprintrecap"),
+  c("SprintRecapMidnightTeam-Contributions", SprintRecapMidnightTeamContributions, "sprintrecap"),
+  c("SprintRecapCrimsonShipped-List", SprintRecapCrimsonShippedList, "sprintrecap"),
+  c("SprintRecapLavenderShipped-List", SprintRecapLavenderShippedList, "sprintrecap"),
+  c("SprintRecapArcticHighlight-Cards", SprintRecapArcticHighlightCards, "sprintrecap"),
+  c("SprintRecapEspressoHighlight-Cards", SprintRecapEspressoHighlightCards, "sprintrecap"),
 
   // Deployment Status
   c("DeploymentStatus-EnvironmentCardsDark", DeploymentStatusEnvironmentCardsDark, "deploymentstatus"),
   c("DeploymentStatus-EnvironmentCardsNeon", DeploymentStatusEnvironmentCardsNeon, "deploymentstatus"),
+  c("DeploymentStatusOceanEnvironment-Cards", DeploymentStatusOceanEnvironmentCards, "deploymentstatus"),
+  c("DeploymentStatusSunsetEnvironment-Cards", DeploymentStatusSunsetEnvironmentCards, "deploymentstatus"),
+  c("DeploymentStatusForestPipeline-View", DeploymentStatusForestPipelineView, "deploymentstatus"),
+  c("DeploymentStatusRosePipeline-View", DeploymentStatusRosePipelineView, "deploymentstatus"),
+  c("DeploymentStatusGoldHealth-Dashboard", DeploymentStatusGoldHealthDashboard, "deploymentstatus"),
+  c("DeploymentStatusMidnightHealth-Dashboard", DeploymentStatusMidnightHealthDashboard, "deploymentstatus"),
+  c("DeploymentStatusCrimsonEnvironment-Cards", DeploymentStatusCrimsonEnvironmentCards, "deploymentstatus"),
+  c("DeploymentStatusLavenderEnvironment-Cards", DeploymentStatusLavenderEnvironmentCards, "deploymentstatus"),
+  c("DeploymentStatusArcticPipeline-View", DeploymentStatusArcticPipelineView, "deploymentstatus"),
+  c("DeploymentStatusEspressoPipeline-View", DeploymentStatusEspressoPipelineView, "deploymentstatus"),
   c("DeploymentStatus-PipelineViewDark",     DeploymentStatusPipelineViewDark,     "deploymentstatus"),
   c("DeploymentStatus-PipelineViewNeon",     DeploymentStatusPipelineViewNeon,     "deploymentstatus"),
   c("DeploymentStatus-HealthDashboardDark",  DeploymentStatusHealthDashboardDark,  "deploymentstatus"),
@@ -595,6 +945,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("VelocityChart-BarChartDark",  VelocityChartBarChartDark,  "velocitychart"),
   c("VelocityChart-BarChartClean", VelocityChartBarChartClean, "velocitychart"),
   c("VelocityChart-TrendLineDark", VelocityChartTrendLineDark, "velocitychart"),
+  c("VelocityChartOceanBar-Chart", VelocityChartOceanBarChart, "velocitychart"),
+  c("VelocityChartSunsetBar-Chart", VelocityChartSunsetBarChart, "velocitychart"),
+  c("VelocityChartForestTrend-Line", VelocityChartForestTrendLine, "velocitychart"),
+  c("VelocityChartRoseTrend-Line", VelocityChartRoseTrendLine, "velocitychart"),
+  c("VelocityChartGold-Summary", VelocityChartGoldSummary, "velocitychart"),
+  c("VelocityChartMidnight-Summary", VelocityChartMidnightSummary, "velocitychart"),
+  c("VelocityChartCrimsonBar-Chart", VelocityChartCrimsonBarChart, "velocitychart"),
+  c("VelocityChartLavenderBar-Chart", VelocityChartLavenderBarChart, "velocitychart"),
+  c("VelocityChartArcticTrend-Line", VelocityChartArcticTrendLine, "velocitychart"),
+  c("VelocityChartEspressoTrend-Line", VelocityChartEspressoTrendLine, "velocitychart"),
   c("VelocityChart-TrendLineClean",VelocityChartTrendLineClean,"velocitychart"),
   c("VelocityChart-SummaryDark",   VelocityChartSummaryDark,   "velocitychart"),
   c("VelocityChart-SummaryClean",  VelocityChartSummaryClean,  "velocitychart"),
@@ -606,10 +966,30 @@ export const COMPOSITIONS: CompSpec[] = [
   c("QBRDashboard-DetailedClean",   QBRDashboardDetailedClean,   "qbrdashboard"),
   c("QBRDashboard-ComparisonDark",  QBRDashboardComparisonDark,  "qbrdashboard"),
   c("QBRDashboard-ComparisonClean", QBRDashboardComparisonClean, "qbrdashboard"),
+  c("QBRDashboardOceanExecutive", QBRDashboardOceanExecutive, "qbrdashboard"),
+  c("QBRDashboardSunsetExecutive", QBRDashboardSunsetExecutive, "qbrdashboard"),
+  c("QBRDashboardForestDetailed", QBRDashboardForestDetailed, "qbrdashboard"),
+  c("QBRDashboardRoseDetailed", QBRDashboardRoseDetailed, "qbrdashboard"),
+  c("QBRDashboardGoldComparison", QBRDashboardGoldComparison, "qbrdashboard"),
+  c("QBRDashboardMidnightComparison", QBRDashboardMidnightComparison, "qbrdashboard"),
+  c("QBRDashboardCrimsonExecutive", QBRDashboardCrimsonExecutive, "qbrdashboard"),
+  c("QBRDashboardLavenderExecutive", QBRDashboardLavenderExecutive, "qbrdashboard"),
+  c("QBRDashboardArcticDetailed", QBRDashboardArcticDetailed, "qbrdashboard"),
+  c("QBRDashboardEspressoDetailed", QBRDashboardEspressoDetailed, "qbrdashboard"),
 
   // Project Health
   c("ProjectHealth-HealthScorecardDark", ProjectHealthHealthScorecardDark, "projecthealth"),
   c("ProjectHealth-HealthScorecardWarm", ProjectHealthHealthScorecardWarm, "projecthealth"),
+  c("ProjectHealthOceanHealth-Scorecard", ProjectHealthOceanHealthScorecard, "projecthealth"),
+  c("ProjectHealthSunsetHealth-Scorecard", ProjectHealthSunsetHealthScorecard, "projecthealth"),
+  c("ProjectHealthForestWorkstream-View", ProjectHealthForestWorkstreamView, "projecthealth"),
+  c("ProjectHealthRoseWorkstream-View", ProjectHealthRoseWorkstreamView, "projecthealth"),
+  c("ProjectHealthGoldExecutive-Summary", ProjectHealthGoldExecutiveSummary, "projecthealth"),
+  c("ProjectHealthMidnightExecutive-Summary", ProjectHealthMidnightExecutiveSummary, "projecthealth"),
+  c("ProjectHealthCrimsonHealth-Scorecard", ProjectHealthCrimsonHealthScorecard, "projecthealth"),
+  c("ProjectHealthLavenderHealth-Scorecard", ProjectHealthLavenderHealthScorecard, "projecthealth"),
+  c("ProjectHealthArcticWorkstream-View", ProjectHealthArcticWorkstreamView, "projecthealth"),
+  c("ProjectHealthEspressoWorkstream-View", ProjectHealthEspressoWorkstreamView, "projecthealth"),
   c("ProjectHealth-WorkstreamViewDark",  ProjectHealthWorkstreamViewDark,  "projecthealth"),
   c("ProjectHealth-WorkstreamViewWarm",  ProjectHealthWorkstreamViewWarm,  "projecthealth"),
   c("ProjectHealth-ExecutiveSummaryDark",ProjectHealthExecutiveSummaryDark,"projecthealth"),
@@ -622,6 +1002,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("FeatureFlags-ResultsViewNeon",      FeatureFlagsResultsViewNeon,      "featureflags"),
   c("FeatureFlags-RolloutTrackerDark",   FeatureFlagsRolloutTrackerDark,   "featureflags"),
   c("FeatureFlags-RolloutTrackerNeon",   FeatureFlagsRolloutTrackerNeon,   "featureflags"),
+  c("FeatureFlags-OceanExperimentBoard", FeatureFlagsOceanExperimentBoard, "featureflags"),
+  c("FeatureFlags-SunsetExperimentBoard", FeatureFlagsSunsetExperimentBoard, "featureflags"),
+  c("FeatureFlags-ForestResultsView", FeatureFlagsForestResultsView, "featureflags"),
+  c("FeatureFlags-RoseResultsView", FeatureFlagsRoseResultsView, "featureflags"),
+  c("FeatureFlags-GoldRolloutTracker", FeatureFlagsGoldRolloutTracker, "featureflags"),
+  c("FeatureFlags-MidnightRolloutTracker", FeatureFlagsMidnightRolloutTracker, "featureflags"),
+  c("FeatureFlags-CrimsonExperimentBoard", FeatureFlagsCrimsonExperimentBoard, "featureflags"),
+  c("FeatureFlags-LavenderExperimentBoard", FeatureFlagsLavenderExperimentBoard, "featureflags"),
+  c("FeatureFlags-ArcticResultsView", FeatureFlagsArcticResultsView, "featureflags"),
+  c("FeatureFlags-EspressoResultsView", FeatureFlagsEspressoResultsView, "featureflags"),
 
   // Bug Triage
   c("BugTriage-PriorityColumnsDark",    BugTriagePriorityColumnsDark,    "bugtriage"),
@@ -630,10 +1020,30 @@ export const COMPOSITIONS: CompSpec[] = [
   c("BugTriage-TriageListBold",         BugTriageTriageListBold,         "bugtriage"),
   c("BugTriage-SummaryDashboardDark",   BugTriageSummaryDashboardDark,   "bugtriage"),
   c("BugTriage-SummaryDashboardBold",   BugTriageSummaryDashboardBold,   "bugtriage"),
+  c("BugTriage-OceanPriorityColumns", BugTriageOceanPriorityColumns, "bugtriage"),
+  c("BugTriage-SunsetPriorityColumns", BugTriageSunsetPriorityColumns, "bugtriage"),
+  c("BugTriage-ForestTriageList", BugTriageForestTriageList, "bugtriage"),
+  c("BugTriage-RoseTriageList", BugTriageRoseTriageList, "bugtriage"),
+  c("BugTriage-GoldSummaryDashboard", BugTriageGoldSummaryDashboard, "bugtriage"),
+  c("BugTriage-MidnightSummaryDashboard", BugTriageMidnightSummaryDashboard, "bugtriage"),
+  c("BugTriage-CrimsonPriorityColumns", BugTriageCrimsonPriorityColumns, "bugtriage"),
+  c("BugTriage-LavenderPriorityColumns", BugTriageLavenderPriorityColumns, "bugtriage"),
+  c("BugTriage-ArcticTriageList", BugTriageArcticTriageList, "bugtriage"),
+  c("BugTriage-EspressoTriageList", BugTriageEspressoTriageList, "bugtriage"),
 
   // Component Inventory
   c("ComponentInventory-ArchitectureGridDark",  ComponentInventoryArchitectureGridDark,  "componentinventory"),
   c("ComponentInventory-ArchitectureGridClean", ComponentInventoryArchitectureGridClean, "componentinventory"),
+  c("ComponentInventoryOceanArchitecture-Grid", ComponentInventoryOceanArchitectureGrid, "componentinventory"),
+  c("ComponentInventorySunsetArchitecture-Grid", ComponentInventorySunsetArchitectureGrid, "componentinventory"),
+  c("ComponentInventoryForestDependency-Map", ComponentInventoryForestDependencyMap, "componentinventory"),
+  c("ComponentInventoryRoseDependency-Map", ComponentInventoryRoseDependencyMap, "componentinventory"),
+  c("ComponentInventoryGoldInventory-List", ComponentInventoryGoldInventoryList, "componentinventory"),
+  c("ComponentInventoryMidnightInventory-List", ComponentInventoryMidnightInventoryList, "componentinventory"),
+  c("ComponentInventoryCrimsonArchitecture-Grid", ComponentInventoryCrimsonArchitectureGrid, "componentinventory"),
+  c("ComponentInventoryLavenderArchitecture-Grid", ComponentInventoryLavenderArchitectureGrid, "componentinventory"),
+  c("ComponentInventoryArcticDependency-Map", ComponentInventoryArcticDependencyMap, "componentinventory"),
+  c("ComponentInventoryEspressoDependency-Map", ComponentInventoryEspressoDependencyMap, "componentinventory"),
   c("ComponentInventory-DependencyMapDark",     ComponentInventoryDependencyMapDark,     "componentinventory"),
   c("ComponentInventory-DependencyMapClean",    ComponentInventoryDependencyMapClean,    "componentinventory"),
   c("ComponentInventory-InventoryListDark",     ComponentInventoryInventoryListDark,     "componentinventory"),
@@ -646,12 +1056,32 @@ export const COMPOSITIONS: CompSpec[] = [
   c("ConceptPitch-BoardBold", ConceptPitchBoardBold, "conceptpitch"),
   c("ConceptPitch-BriefDark", ConceptPitchBriefDark, "conceptpitch"),
   c("ConceptPitch-BriefBold", ConceptPitchBriefBold, "conceptpitch"),
+  c("ConceptPitchOcean-Arc", ConceptPitchOceanArc, "conceptpitch"),
+  c("ConceptPitchSunset-Board", ConceptPitchSunsetBoard, "conceptpitch"),
+  c("ConceptPitchForest-Brief", ConceptPitchForestBrief, "conceptpitch"),
+  c("ConceptPitchRose-Arc", ConceptPitchRoseArc, "conceptpitch"),
+  c("ConceptPitchGold-Board", ConceptPitchGoldBoard, "conceptpitch"),
+  c("ConceptPitchMidnight-Brief", ConceptPitchMidnightBrief, "conceptpitch"),
+  c("ConceptPitchCrimson-Arc", ConceptPitchCrimsonArc, "conceptpitch"),
+  c("ConceptPitchLavender-Board", ConceptPitchLavenderBoard, "conceptpitch"),
+  c("ConceptPitchArctic-Brief", ConceptPitchArcticBrief, "conceptpitch"),
+  c("ConceptPitchEspresso-Arc", ConceptPitchEspressoArc, "conceptpitch"),
 
   // Thought Leadership
   c("ThoughtLeadership-EditorialDark",  ThoughtLeadershipEditorialDark,  "thoughtleadership"),
   c("ThoughtLeadership-EditorialClean", ThoughtLeadershipEditorialClean, "thoughtleadership"),
   c("ThoughtLeadership-NarrativeDark",  ThoughtLeadershipNarrativeDark,  "thoughtleadership"),
   c("ThoughtLeadership-NarrativeClean", ThoughtLeadershipNarrativeClean, "thoughtleadership"),
+  c("ThoughtLeadershipOcean-Editorial", ThoughtLeadershipOceanEditorial, "thoughtleadership"),
+  c("ThoughtLeadershipSunset-Narrative", ThoughtLeadershipSunsetNarrative, "thoughtleadership"),
+  c("ThoughtLeadershipForest-Keynote", ThoughtLeadershipForestKeynote, "thoughtleadership"),
+  c("ThoughtLeadershipRose-Editorial", ThoughtLeadershipRoseEditorial, "thoughtleadership"),
+  c("ThoughtLeadershipGold-Narrative", ThoughtLeadershipGoldNarrative, "thoughtleadership"),
+  c("ThoughtLeadershipMidnight-Keynote", ThoughtLeadershipMidnightKeynote, "thoughtleadership"),
+  c("ThoughtLeadershipCrimson-Editorial", ThoughtLeadershipCrimsonEditorial, "thoughtleadership"),
+  c("ThoughtLeadershipLavender-Narrative", ThoughtLeadershipLavenderNarrative, "thoughtleadership"),
+  c("ThoughtLeadershipArctic-Keynote", ThoughtLeadershipArcticKeynote, "thoughtleadership"),
+  c("ThoughtLeadershipEspresso-Editorial", ThoughtLeadershipEspressoEditorial, "thoughtleadership"),
   c("ThoughtLeadership-KeynoteDark",    ThoughtLeadershipKeynoteDark,    "thoughtleadership"),
   c("ThoughtLeadership-KeynoteClean",   ThoughtLeadershipKeynoteClean,   "thoughtleadership"),
 

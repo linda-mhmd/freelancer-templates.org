@@ -24,3 +24,15 @@ export const BugTrackerTriageBoardDark: React.FC<{ brandKit?: BrandKit }> = ({ b
 export const BugTrackerTriageBoardBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "bold" }} brandKit={brandKit} />;
 export const BugTrackerOverviewDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "overview", theme: "dark" }} brandKit={brandKit} />;
 export const BugTrackerOverviewBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "overview", theme: "bold" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const BugTrackerOceanSeverityMatrix: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "severity-matrix", theme: "ocean" }} brandKit={brandKit} />;
+export const BugTrackerSunsetSeverityMatrix: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "severity-matrix", theme: "sunset" }} brandKit={brandKit} />;
+export const BugTrackerForestTriageBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "forest" }} brandKit={brandKit} />;
+export const BugTrackerRoseTriageBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "rose" }} brandKit={brandKit} />;
+export const BugTrackerGoldOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "overview", theme: "gold" }} brandKit={brandKit} />;
+export const BugTrackerMidnightOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "overview", theme: "midnight" }} brandKit={brandKit} />;
+export const BugTrackerCrimsonSeverityMatrix: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "severity-matrix", theme: "crimson" }} brandKit={brandKit} />;
+export const BugTrackerLavenderSeverityMatrix: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "severity-matrix", theme: "lavender" }} brandKit={brandKit} />;
+export const BugTrackerArcticTriageBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "arctic" }} brandKit={brandKit} />;
+export const BugTrackerEspressoTriageBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "espresso" }} brandKit={brandKit} />;

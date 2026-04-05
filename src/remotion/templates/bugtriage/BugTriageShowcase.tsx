@@ -23,3 +23,15 @@ export const BugTriageTriageListDark: React.FC<{ brandKit?: BrandKit }> = ({ bra
 export const BugTriageTriageListBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "triage-list", theme: "bold" }} brandKit={brandKit} />;
 export const BugTriageSummaryDashboardDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "summary-dashboard", theme: "dark" }} brandKit={brandKit} />;
 export const BugTriageSummaryDashboardBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "summary-dashboard", theme: "bold" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const BugTriageOceanPriorityColumns: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "priority-columns", theme: "ocean" }} brandKit={brandKit} />;
+export const BugTriageSunsetPriorityColumns: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "priority-columns", theme: "sunset" }} brandKit={brandKit} />;
+export const BugTriageForestTriageList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "triage-list", theme: "forest" }} brandKit={brandKit} />;
+export const BugTriageRoseTriageList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "triage-list", theme: "rose" }} brandKit={brandKit} />;
+export const BugTriageGoldSummaryDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "summary-dashboard", theme: "gold" }} brandKit={brandKit} />;
+export const BugTriageMidnightSummaryDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "summary-dashboard", theme: "midnight" }} brandKit={brandKit} />;
+export const BugTriageCrimsonPriorityColumns: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "priority-columns", theme: "crimson" }} brandKit={brandKit} />;
+export const BugTriageLavenderPriorityColumns: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "priority-columns", theme: "lavender" }} brandKit={brandKit} />;
+export const BugTriageArcticTriageList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "triage-list", theme: "arctic" }} brandKit={brandKit} />;
+export const BugTriageEspressoTriageList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTriage spec={{ ...BASE_SPEC, layout: "triage-list", theme: "espresso" }} brandKit={brandKit} />;

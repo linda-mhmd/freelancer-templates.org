@@ -20,3 +20,15 @@ export const FeatureFlagsResultsViewDark: React.FC<{ brandKit?: BrandKit }> = ({
 export const FeatureFlagsResultsViewNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "neon" }} brandKit={brandKit} />;
 export const FeatureFlagsRolloutTrackerDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "rollout-tracker", theme: "dark" }} brandKit={brandKit} />;
 export const FeatureFlagsRolloutTrackerNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "rollout-tracker", theme: "neon" }} brandKit={brandKit} />;
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const FeatureFlagsOceanExperimentBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "experiment-board", theme: "ocean" }} brandKit={brandKit} />;
+export const FeatureFlagsSunsetExperimentBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "experiment-board", theme: "sunset" }} brandKit={brandKit} />;
+export const FeatureFlagsForestResultsView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "forest" }} brandKit={brandKit} />;
+export const FeatureFlagsRoseResultsView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "rose" }} brandKit={brandKit} />;
+export const FeatureFlagsGoldRolloutTracker: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "rollout-tracker", theme: "gold" }} brandKit={brandKit} />;
+export const FeatureFlagsMidnightRolloutTracker: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "rollout-tracker", theme: "midnight" }} brandKit={brandKit} />;
+export const FeatureFlagsCrimsonExperimentBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "experiment-board", theme: "crimson" }} brandKit={brandKit} />;
+export const FeatureFlagsLavenderExperimentBoard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "experiment-board", theme: "lavender" }} brandKit={brandKit} />;
+export const FeatureFlagsArcticResultsView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "arctic" }} brandKit={brandKit} />;
+export const FeatureFlagsEspressoResultsView: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "espresso" }} brandKit={brandKit} />;

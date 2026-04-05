@@ -51,3 +51,35 @@ export const RecipeStepWarmSummaryCard: React.FC<{ brandKit?: BrandKit }> = ({ b
 export const RecipeStepCleanSummaryCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="summary-card" />
 );
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const RecipeStepOceanIngredientList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="ingredient-list" bgPattern="grid" />
+);
+export const RecipeStepSunsetIngredientList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="ingredient-list" bgPattern="none" />
+);
+export const RecipeStepForestStepSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="step-sequence" bgPattern="hex" />
+);
+export const RecipeStepRoseStepSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="step-sequence" bgPattern="dots" />
+);
+export const RecipeStepGoldSummaryCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="summary-card" bgPattern="none" />
+);
+export const RecipeStepMidnightSummaryCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="summary-card" bgPattern="grid" />
+);
+export const RecipeStepCrimsonIngredientList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="ingredient-list" bgPattern="none" />
+);
+export const RecipeStepLavenderIngredientList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="ingredient-list" bgPattern="hex" />
+);
+export const RecipeStepArcticStepSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="step-sequence" bgPattern="dots" />
+);
+export const RecipeStepEspressoStepSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="step-sequence" bgPattern="none" />
+);

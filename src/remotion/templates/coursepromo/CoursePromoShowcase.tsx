@@ -21,7 +21,8 @@ import {
   THEME_CLEAN,
   BrandKit,
   applyBrandKit,
-} from "../_shared/themes";
+  THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT, THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO
+} from "../_shared/themes"
 
 // ── Sample Data: Web Development Course ─────────────────────────
 const SAMPLE_SPEC_WEBDEV: CoursePromoSpec = {
@@ -84,4 +85,36 @@ export const CoursePromoDarkInstructor: React.FC<{ brandKit?: BrandKit }> = ({ b
 // ── Composition: Clean + Instructor ─────────────────────────────
 export const CoursePromoCleanInstructor: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="instructor" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+export const CoursePromoOceanOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_WEBDEV} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="overview" bgPattern="grid" />
+);
+export const CoursePromoSunsetOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_WEBDEV} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="overview" bgPattern="none" />
+);
+export const CoursePromoForestCurriculum: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="curriculum" bgPattern="hex" />
+);
+export const CoursePromoRoseCurriculum: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="curriculum" bgPattern="dots" />
+);
+export const CoursePromoGoldInstructor: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="instructor" bgPattern="none" />
+);
+export const CoursePromoMidnightInstructor: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="instructor" bgPattern="grid" />
+);
+export const CoursePromoCrimsonOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_WEBDEV} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="overview" bgPattern="none" />
+);
+export const CoursePromoLavenderOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_WEBDEV} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="overview" bgPattern="hex" />
+);
+export const CoursePromoArcticCurriculum: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="curriculum" bgPattern="dots" />
+);
+export const CoursePromoEspressoCurriculum: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="curriculum" bgPattern="none" />
 );
