@@ -7,7 +7,7 @@
      ============================================================ -->
 <section class="uc-header">
   <div class="container">
-    <a href="/use-cases/" class="uc-back">
+    <a href="{{ "use-cases/" | relURL }}" class="uc-back">
       <i data-lucide="arrow-left"></i>
       All Use Cases
     </a>
@@ -24,13 +24,42 @@
      CONTENT
      ============================================================ -->
 <div class="uc-content">
-  <div class="container">
-    <div class="uc-prose">
+  <div class="uc-layout container">
+    <!-- Left: prose content -->
+    <div class="uc-prose" id="ucProse">
       {{ .Content }}
     </div>
+    <!-- Right: template showcase panel (populated by JS from .uc-templates in prose) -->
+    <aside class="uc-sidebar" id="ucSidebar" hidden></aside>
   </div>
 </div>
 
 {{ partial "site-footer.html" . }}
+
+<script>
+(function () {
+  // Fix absolute paths in markdown content that break on GitHub Pages subpath deployments.
+  // Hugo's relURL only works in templates, not markdown HTML, so we patch at runtime.
+  var base = (function () {
+    var p = window.location.pathname.replace(/\/use-cases\/[^/]+\/?$/, '').replace(/\/$/, '');
+    return window.location.origin + p;
+  }());
+
+  document.querySelectorAll('#ucProse img[src^="/"], #ucProse source[src^="/"]').forEach(function (el) {
+    el.setAttribute('src', base + el.getAttribute('src'));
+  });
+  document.querySelectorAll('#ucProse a[href^="/"]').forEach(function (el) {
+    el.setAttribute('href', base + el.getAttribute('href'));
+  });
+
+  // Move .uc-templates blocks into the sidebar so they use full available width.
+  var sidebar = document.getElementById('ucSidebar');
+  var templates = document.querySelectorAll('#ucProse .uc-templates');
+  if (sidebar && templates.length) {
+    templates.forEach(function (t) { sidebar.appendChild(t); });
+    sidebar.hidden = false;
+  }
+}());
+</script>
 
 {{ end }}

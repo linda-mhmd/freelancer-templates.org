@@ -2261,8 +2261,29 @@ html.dark .footer__soc:hover { color: #001029; }
 /* Content area */
 .uc-content { padding: 72px 0 96px; }
 
+/* Two-column layout: prose left, template sidebar right */
+.uc-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 680px) 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.uc-sidebar {
+  position: sticky;
+  top: 80px;
+}
+.uc-sidebar .uc-templates { margin: 0; }
+.uc-sidebar .uc-template-grid {
+  grid-template-columns: 1fr;
+}
+@media (max-width: 900px) {
+  .uc-layout { grid-template-columns: 1fr; gap: 0; }
+  .uc-sidebar { position: static; }
+  .uc-sidebar .uc-template-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}
+
 /* Prose */
-.uc-prose { max-width: 740px; }
+.uc-prose { max-width: 680px; }
 .uc-prose h2 {
   font-size: 20px;
   font-weight: 800;
