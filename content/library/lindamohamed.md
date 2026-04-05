@@ -3,8 +3,8 @@ title: "Linda Mohamed Deck"
 description: "Personal presentation deck - AI systems, cloud, collaboration, and consulting slides"
 slug: "lindamohamed"
 icon: "user"
-camel: ""
-primaryVariant: ""
+camel: "LindaMohamed"
+primaryVariant: "Cover"
 primaryId: "LindaMohamed-Cover"
 variantCount: 24
 variants:

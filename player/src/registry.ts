@@ -73,11 +73,90 @@ import { ComponentInventoryArchitectureGridDark, ComponentInventoryArchitectureG
 import { ConceptPitchArcDark, ConceptPitchArcBold, ConceptPitchBoardDark, ConceptPitchBoardBold, ConceptPitchBriefDark, ConceptPitchBriefBold } from "@templates/conceptpitch/ConceptPitchShowcase";
 import { ThoughtLeadershipEditorialDark, ThoughtLeadershipEditorialClean, ThoughtLeadershipNarrativeDark, ThoughtLeadershipNarrativeClean, ThoughtLeadershipKeynoteDark, ThoughtLeadershipKeynoteClean } from "@templates/thoughtleadership/ThoughtLeadershipShowcase";
 import { VideoFlowPipelineTutorial } from "@templates/youtubetuorial/tutorials/VideoFlowPipeline";
+import { AIDemoToEnterpriseTutorial } from "@templates/youtubetuorial/tutorials/AIDemoToEnterprise";
+import {
+  Folie1CoverV2, Folie2AboutMeV2, Folie3WhatIOfferV2, Folie4CostsPackagesV2,
+  Folie5WorkshopsV2, Folie6WorkshopModulesV2, Folie7FirstWorkshopV2,
+  Folie8NextStepsV2, Folie9NextStepsCustomerV2, Folie10ResultsV2,
+  Folie11StaircaseV2, Folie12StaircaseDetailedV2, Folie13FlexibleDeepDiveV2,
+  Folie14VideoFocusedV2, Folie15MoreInfoV2, Folie16PipelineV2,
+  Folie17PipelineDetailedV2, Folie18AISystemsV2, Folie19CloudV2,
+  Folie20CollaborationV2, Folie21CloudFundingsV2, Folie22ThankYouV2,
+  LindaMohamedDeckV2,
+} from "@templates/lindamohamed/LindaMohamedV2";
+import { LindaMohamedDeck } from "@templates/lindamohamed/LindaMohamed";
+
+// ── Sims4 AI/Tech Explainer Series ───────────────────────────────
+import { ActionQueueBottleneck } from "@sims4/compositions/ActionQueueBottleneck";
+import { AgentSkillsMemory } from "@sims4/compositions/AgentSkillsMemory";
+import { AnatomyDiagram } from "@sims4/compositions/AnatomyDiagram";
+import { AnatomyDiagramV2 } from "@sims4/compositions/AnatomyDiagramV2";
+import { AnatomyDiagramV3 } from "@sims4/compositions/AnatomyDiagramV3";
+import { AnatomyDiagramV4 } from "@sims4/compositions/AnatomyDiagramV4";
+import { CASPanel } from "@sims4/compositions/CASPanel";
+import { CASStorySequence } from "@sims4/compositions/CASStorySequence";
+import { CodeShowcase } from "@sims4/compositions/CodeShowcase";
+import { CognitiveReasoningOptions } from "@sims4/compositions/CognitiveReasoningOptions";
+import { CrewArchitectureDiagram } from "@sims4/compositions/CrewArchitectureDiagram";
+import { CrewRealWorldExample } from "@sims4/compositions/CrewRealWorldExample";
+import { DelegationFlowDiagram } from "@sims4/compositions/DelegationFlowDiagram";
+import { EventSummary } from "@sims4/compositions/EventSummary";
+import { ImageBackgroundOverlay } from "@sims4/compositions/ImageBackgroundOverlay";
+import { InterAgentCommunication } from "@sims4/compositions/InterAgentCommunication";
+import { LoadingScreenDivider } from "@sims4/compositions/LoadingScreenDivider";
+import { OrchestrationStrategy } from "@sims4/compositions/OrchestrationStrategy";
+import { RAGCycleDiagram } from "@sims4/compositions/RAGCycleDiagram";
+import { RequirementsPopup } from "@sims4/compositions/RequirementsPopup";
+import { Sims4MainMenu } from "@sims4/compositions/Sims4MainMenu";
+import { SimsTheme1TitleAndStartGame } from "@sims4/compositions/SimsTheme1TitleAndStartGame";
+import { SimsTheme1TopicShowcase } from "@sims4/compositions/SimsTheme1TopicShowcase";
+import { SkillsPanelShowcase } from "@sims4/compositions/SkillsPanelShowcase";
+import { SourceMaterial } from "@sims4/compositions/SourceMaterial";
+import { StageIntroduction } from "@sims4/compositions/StageIntroduction";
+import { TitleScreenCinematic } from "@sims4/compositions/TitleScreenCinematic";
+import { ToolsInventoryGrid } from "@sims4/compositions/ToolsInventoryGrid";
+
+// ── Community GameDay Europe Stream Templates ─────────────────────
+import { Countdown } from "@gameday/compositions/00-preshow/Countdown";
+import { InfoLoop } from "@gameday/compositions/00-preshow/InfoLoop";
+import { MainEvent } from "@gameday/compositions/01-main-event/MainEvent";
+import { Gameplay } from "@gameday/compositions/02-gameplay/Gameplay";
+import { ClosingPreRendered } from "@gameday/compositions/03-closing/ClosingPreRendered";
+import { ClosingWinnersTemplate } from "@gameday/compositions/03-closing/ClosingWinnersTemplate";
+import { MarketingVideo } from "@gameday/compositions/marketing/MarketingVideo";
+import { CloseRace } from "@gameday/compositions/inserts/commentary/CloseRace";
+import { CollectiveMilestone } from "@gameday/compositions/inserts/commentary/CollectiveMilestone";
+import { ComebackAlert } from "@gameday/compositions/inserts/commentary/ComebackAlert";
+import { FirstCompletion } from "@gameday/compositions/inserts/commentary/FirstCompletion";
+import { TeamSpotlight } from "@gameday/compositions/inserts/commentary/TeamSpotlight";
+import { TopTeams } from "@gameday/compositions/inserts/commentary/TopTeams";
+import { BreakAnnouncement } from "@gameday/compositions/inserts/event-flow/BreakAnnouncement";
+import { FinalCountdown } from "@gameday/compositions/inserts/event-flow/FinalCountdown";
+import { GameExtended } from "@gameday/compositions/inserts/event-flow/GameExtended";
+import { HalfTime } from "@gameday/compositions/inserts/event-flow/HalfTime";
+import { LeaderboardHidden } from "@gameday/compositions/inserts/event-flow/LeaderboardHidden";
+import { QuestsLive } from "@gameday/compositions/inserts/event-flow/QuestsLive";
+import { ScoresCalculating } from "@gameday/compositions/inserts/event-flow/ScoresCalculating";
+import { WelcomeBack } from "@gameday/compositions/inserts/event-flow/WelcomeBack";
+import { GamemastersUpdate } from "@gameday/compositions/inserts/ops/GamemastersUpdate";
+import { Leaderboard } from "@gameday/compositions/inserts/ops/Leaderboard";
+import { ScoreCorrection } from "@gameday/compositions/inserts/ops/ScoreCorrection";
+import { StreamInterruption } from "@gameday/compositions/inserts/ops/StreamInterruption";
+import { TechnicalIssue } from "@gameday/compositions/inserts/ops/TechnicalIssue";
+import { ImportantReminder } from "@gameday/compositions/inserts/people/ImportantReminder";
+import { LocationShoutout } from "@gameday/compositions/inserts/people/LocationShoutout";
+import { StreamHostUpdate } from "@gameday/compositions/inserts/people/StreamHostUpdate";
+import { NewQuestAvailable } from "@gameday/compositions/inserts/quest/NewQuestAvailable";
+import { QuestBroken } from "@gameday/compositions/inserts/quest/QuestBroken";
+import { QuestFixed } from "@gameday/compositions/inserts/quest/QuestFixed";
+import { QuestHint } from "@gameday/compositions/inserts/quest/QuestHint";
+import { QuestUpdate } from "@gameday/compositions/inserts/quest/QuestUpdate";
+import { SurveyReminder } from "@gameday/compositions/inserts/quest/SurveyReminder";
 
 // ── Registry ─────────────────────────────────────────────────────
 
 function c(id: string, component: FC, cat: string, dur = 300): CompSpec {
-  return { id, component, category: cat, durationInFrames: dur, ...STD };
+  return { ...STD, id, component, category: cat, durationInFrames: dur };
 }
 
 export const COMPOSITIONS: CompSpec[] = [
@@ -506,7 +585,102 @@ export const COMPOSITIONS: CompSpec[] = [
   c("ThoughtLeadership-KeynoteClean",   ThoughtLeadershipKeynoteClean,   "thoughtleadership"),
 
   // YouTube Tutorial
-  c("YouTubeTutorial-VideoFlowPipeline", VideoFlowPipelineTutorial, "youtubetuorial"),
+  c("YouTubeTutorial-VideoFlowPipeline",    VideoFlowPipelineTutorial,    "youtubetuorial"),
+  c("YouTubeTutorial-AIDemoToEnterprise",   AIDemoToEnterpriseTutorial,   "youtubetuorial", 1138),
+
+  // Linda Mohamed Deck (individual slides 150 frames = 5s each)
+  c("LindaMohamed-Cover",            Folie1CoverV2,            "lindamohamed", 150),
+  c("LindaMohamed-AboutMe",          Folie2AboutMeV2,          "lindamohamed", 150),
+  c("LindaMohamed-WhatIOffer",       Folie3WhatIOfferV2,       "lindamohamed", 150),
+  c("LindaMohamed-CostsPackages",    Folie4CostsPackagesV2,    "lindamohamed", 150),
+  c("LindaMohamed-Workshops",        Folie5WorkshopsV2,        "lindamohamed", 150),
+  c("LindaMohamed-WorkshopModules",  Folie6WorkshopModulesV2,  "lindamohamed", 150),
+  c("LindaMohamed-FirstWorkshop",    Folie7FirstWorkshopV2,    "lindamohamed", 150),
+  c("LindaMohamed-NextSteps",        Folie8NextStepsV2,        "lindamohamed", 150),
+  c("LindaMohamed-NextStepsCustomer",Folie9NextStepsCustomerV2,"lindamohamed", 150),
+  c("LindaMohamed-Results",          Folie10ResultsV2,         "lindamohamed", 150),
+  c("LindaMohamed-Staircase",        Folie11StaircaseV2,       "lindamohamed", 150),
+  c("LindaMohamed-StaircaseDetailed",Folie12StaircaseDetailedV2,"lindamohamed",150),
+  c("LindaMohamed-FlexibleDeepDive", Folie13FlexibleDeepDiveV2,"lindamohamed", 150),
+  c("LindaMohamed-VideoFocused",     Folie14VideoFocusedV2,    "lindamohamed", 150),
+  c("LindaMohamed-MoreInfo",         Folie15MoreInfoV2,        "lindamohamed", 150),
+  c("LindaMohamed-Pipeline",         Folie16PipelineV2,        "lindamohamed", 150),
+  c("LindaMohamed-PipelineDetailed", Folie17PipelineDetailedV2,"lindamohamed", 150),
+  c("LindaMohamed-AISystems",        Folie18AISystemsV2,       "lindamohamed", 150),
+  c("LindaMohamed-Cloud",            Folie19CloudV2,           "lindamohamed", 150),
+  c("LindaMohamed-Collaboration",    Folie20CollaborationV2,   "lindamohamed", 150),
+  c("LindaMohamed-CloudFundings",    Folie21CloudFundingsV2,   "lindamohamed", 150),
+  c("LindaMohamed-ThankYou",         Folie22ThankYouV2,        "lindamohamed", 150),
+  c("LindaMohamed-Deck",             LindaMohamedDeck,         "lindamohamed", 3300),
+  c("LindaMohamed-DeckV2",           LindaMohamedDeckV2,       "lindamohamed", 3300),
+
+  // Sims4 AI/Tech Explainer Series
+  c("SimsTheme1-TitleScreenCinematic",    TitleScreenCinematic,    "simstheme1"),
+  c("SimsTheme1-CASPanel",               CASPanel,                "simstheme1"),
+  c("SimsTheme1-Sims4MainMenu",          Sims4MainMenu,           "simstheme1"),
+  c("SimsTheme1-CASStorySequence",       CASStorySequence,        "simstheme1", 1800),
+  c("SimsTheme1-StageIntroduction",      StageIntroduction,       "simstheme1"),
+  c("SimsTheme1-TitleAndStartGame",      SimsTheme1TitleAndStartGame, "simstheme1"),
+  c("SimsTheme1-TopicShowcase",          SimsTheme1TopicShowcase, "simstheme1"),
+  c("SimsTheme1-ImageBackgroundOverlay", ImageBackgroundOverlay,  "simstheme1"),
+  c("SimsTheme1-LoadingScreenDivider",   LoadingScreenDivider,    "simstheme1"),
+  c("SimsTheme1-RequirementsPopup",      RequirementsPopup,       "simstheme1"),
+  c("SimsTheme1-SkillsPanelShowcase",    SkillsPanelShowcase,     "simstheme1"),
+  c("SimsTheme1-ActionQueueBottleneck",  ActionQueueBottleneck,   "simstheme1"),
+  c("SimsTheme1-AnatomyDiagram",         AnatomyDiagram,          "simstheme1"),
+  c("SimsTheme1-AnatomyDiagramV2",       AnatomyDiagramV2,        "simstheme1"),
+  c("SimsTheme1-AnatomyDiagramV3",       AnatomyDiagramV3,        "simstheme1"),
+  c("SimsTheme1-AnatomyDiagramV4",       AnatomyDiagramV4,        "simstheme1"),
+  c("SimsTheme1-CognitiveReasoningOptions", CognitiveReasoningOptions, "simstheme1"),
+  c("SimsTheme1-ToolsInventoryGrid",     ToolsInventoryGrid,      "simstheme1"),
+  c("SimsTheme1-AgentSkillsMemory",      AgentSkillsMemory,       "simstheme1"),
+  c("SimsTheme1-OrchestrationStrategy",  OrchestrationStrategy,   "simstheme1"),
+  c("SimsTheme1-RAGCycleDiagram",        RAGCycleDiagram,         "simstheme1"),
+  c("SimsTheme1-CodeShowcase",           CodeShowcase,            "simstheme1"),
+  c("SimsTheme1-EventSummary",           EventSummary,            "simstheme1"),
+  c("SimsTheme1-SourceMaterial",         SourceMaterial,          "simstheme1"),
+  c("SimsTheme1-CrewArchitectureDiagram",CrewArchitectureDiagram, "simstheme1"),
+  c("SimsTheme1-DelegationFlowDiagram",  DelegationFlowDiagram,   "simstheme1"),
+  c("SimsTheme1-InterAgentCommunication",InterAgentCommunication, "simstheme1"),
+  c("SimsTheme1-CrewRealWorldExample",   CrewRealWorldExample,    "simstheme1"),
+
+  // Community GameDay Europe - Main sequences
+  c("GameDay-Countdown",            Countdown,            "gameday", 18000),
+  c("GameDay-InfoLoop",             InfoLoop,             "gameday", 54000),
+  c("GameDay-MainEvent",            MainEvent,            "gameday", 54000),
+  c("GameDay-Gameplay",             Gameplay,             "gameday", 216000),
+  c("GameDay-ClosingPreRendered",   ClosingPreRendered,   "gameday", 4200),
+  c("GameDay-ClosingWinnersTemplate",ClosingWinnersTemplate,"gameday",9000),
+  c("GameDay-MarketingVideo",       MarketingVideo,       "gameday", 640),
+  // Community GameDay Europe - Inserts
+  c("GameDay-QuestsLive",           QuestsLive,           "gameday", 900),
+  c("GameDay-HalfTime",             HalfTime,             "gameday", 900),
+  c("GameDay-FinalCountdown",       FinalCountdown,       "gameday", 900),
+  c("GameDay-GameExtended",         GameExtended,         "gameday", 900),
+  c("GameDay-LeaderboardHidden",    LeaderboardHidden,    "gameday", 900),
+  c("GameDay-ScoresCalculating",    ScoresCalculating,    "gameday", 900),
+  c("GameDay-BreakAnnouncement",    BreakAnnouncement,    "gameday", 900),
+  c("GameDay-WelcomeBack",          WelcomeBack,          "gameday", 900),
+  c("GameDay-FirstCompletion",      FirstCompletion,      "gameday", 900),
+  c("GameDay-CloseRace",            CloseRace,            "gameday", 900),
+  c("GameDay-ComebackAlert",        ComebackAlert,        "gameday", 900),
+  c("GameDay-TopTeams",             TopTeams,             "gameday", 900),
+  c("GameDay-CollectiveMilestone",  CollectiveMilestone,  "gameday", 900),
+  c("GameDay-TeamSpotlight",        TeamSpotlight,        "gameday", 900),
+  c("GameDay-QuestFixed",           QuestFixed,           "gameday", 900),
+  c("GameDay-QuestBroken",          QuestBroken,          "gameday", 900),
+  c("GameDay-QuestUpdate",          QuestUpdate,          "gameday", 900),
+  c("GameDay-QuestHint",            QuestHint,            "gameday", 900),
+  c("GameDay-NewQuestAvailable",    NewQuestAvailable,    "gameday", 900),
+  c("GameDay-SurveyReminder",       SurveyReminder,       "gameday", 900),
+  c("GameDay-StreamInterruption",   StreamInterruption,   "gameday", 900),
+  c("GameDay-TechnicalIssue",       TechnicalIssue,       "gameday", 900),
+  c("GameDay-Leaderboard",          Leaderboard,          "gameday", 900),
+  c("GameDay-ScoreCorrection",      ScoreCorrection,      "gameday", 900),
+  c("GameDay-GamemastersUpdate",    GamemastersUpdate,    "gameday", 900),
+  c("GameDay-StreamHostUpdate",     StreamHostUpdate,     "gameday", 900),
+  c("GameDay-LocationShoutout",     LocationShoutout,     "gameday", 900),
+  c("GameDay-ImportantReminder",    ImportantReminder,    "gameday", 900),
 ];
 
 // ── Derived counts (auto-computed from registry) ─────────────────

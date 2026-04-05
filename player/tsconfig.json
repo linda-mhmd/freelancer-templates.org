@@ -14,7 +14,12 @@
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@templates/*": ["../src/remotion/templates/*"],
+      "@sims4/*": ["../src/remotion/Sims4/*"],
+      "@gameday/*": ["../src/remotion/GameDay/src/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "../src/remotion/templates", "../src/remotion/Sims4", "../src/remotion/GameDay/src"]
 }

@@ -5,18 +5,25 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   base: "./",
+  publicDir: path.resolve(__dirname, "../src/remotion/public"),
   build: {
     outDir: path.resolve(__dirname, "../static/player"),
     emptyOutDir: true,
   },
   resolve: {
     alias: {
-      // Deduplicate React - player and compositions must use the same instance
+      // Deduplicate packages - all source outside player/ must use player's node_modules
       react: path.resolve(__dirname, "node_modules/react"),
       "react-dom": path.resolve(__dirname, "node_modules/react-dom"),
       remotion: path.resolve(__dirname, "node_modules/remotion"),
+      "lucide-react": path.resolve(__dirname, "node_modules/lucide-react"),
+      "@remotion/transitions": path.resolve(__dirname, "node_modules/@remotion/transitions"),
       // Templates live at the repo root, not inside player/
       "@templates": path.resolve(__dirname, "../src/remotion/templates"),
+      // Sims4 AI/tech explainer compositions
+      "@sims4": path.resolve(__dirname, "../src/remotion/Sims4"),
+      // Community GameDay stream templates
+      "@gameday": path.resolve(__dirname, "../src/remotion/GameDay/src"),
     },
   },
 });
