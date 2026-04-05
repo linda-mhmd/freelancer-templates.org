@@ -254,7 +254,13 @@
 {{ partial "site-footer.html" . }}
 
 <script>
-var PLAYER_BASE = {{ "player/" | absURL | jsonify }};
+// Derive player URL from the current page location at runtime.
+// This handles both custom domain (freelancer-templates.org) and
+// GitHub Pages fallback (mzzavaa.github.io/freelancer-templates.org/).
+var PLAYER_BASE = (function () {
+  var p = window.location.pathname.replace(/\/customize\/?$/, '').replace(/\/$/, '');
+  return window.location.origin + p + '/player/';
+}());
 (function () {
   'use strict';
 
