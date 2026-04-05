@@ -56,7 +56,6 @@
             <input type="url" id="czUrl" class="cz-url-input" placeholder="https://yourwebsite.com" autocomplete="url" inputmode="url">
             <button type="button" class="btn btn--primary" id="czUrlBtn" disabled>Extract</button>
           </div>
-          <p class="cz-url-notice" id="czUrlNotice" hidden>URL color extraction is coming soon. Upload your logo above for instant results.</p>
         </div>
 
       </div>
@@ -491,12 +490,66 @@ var PLAYER_BASE = (function () {
     });
   });
 
-  // ---- URL notice ----
+  // ---- URL extraction ----
   var urlInput = el('czUrl');
-  var urlNotice = el('czUrlNotice');
-  if (urlInput && urlNotice) {
+  var urlBtn   = el('czUrlBtn');
+
+  function extractFromUrl(rawUrl) {
+    if (!rawUrl) return;
+    if (!/^https?:\/\//i.test(rawUrl)) rawUrl = 'https://' + rawUrl;
+    urlBtn.disabled = true;
+    urlBtn.textContent = 'Loading...';
+
+    var hostname = '';
+    try { hostname = new URL(rawUrl).hostname; } catch (e) { hostname = rawUrl; }
+
+    // Use Google's favicon service - returns images with CORS headers
+    var faviconUrl = 'https://www.google.com/s2/favicons?domain_url=' +
+                     encodeURIComponent(rawUrl) + '&sz=128';
+
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function () {
+      var colors = extractColors(img);
+      var assigned = autoAssign(colors.length ? colors : []);
+      renderSwatches(colors.length ? colors : Object.values(assigned).slice(0, 3));
+      var count = el('czColorCount');
+      if (count) count.textContent = 'Extracted ' + colors.length + ' dominant color' +
+        (colors.length !== 1 ? 's' : '') + ' from ' + hostname;
+      updateAllRoles(assigned);
+      var step2 = el('czStep2');
+      step2.hidden = false;
+      var sub = el('czPreviewSub');
+      if (sub) sub.textContent = 'All {{ len .Site.Data.templates }} template types with colors from ' + hostname + '.';
+      activateLivePreviews();
+      step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      urlBtn.disabled = false;
+      urlBtn.textContent = 'Extract';
+    };
+    img.onerror = function () {
+      // Favicon failed - still show step 2 so user can pick colors manually
+      var step2 = el('czStep2');
+      step2.hidden = false;
+      var count = el('czColorCount');
+      if (count) count.textContent = 'Could not load logo from ' + hostname + '. Adjust colors manually below.';
+      step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      urlBtn.disabled = false;
+      urlBtn.textContent = 'Extract';
+    };
+    img.src = faviconUrl;
+  }
+
+  if (urlInput) {
     urlInput.addEventListener('input', function () {
-      if (urlInput.value.trim()) urlNotice.hidden = false;
+      urlBtn.disabled = !urlInput.value.trim();
+    });
+    urlInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !urlBtn.disabled) extractFromUrl(urlInput.value.trim());
+    });
+  }
+  if (urlBtn) {
+    urlBtn.addEventListener('click', function () {
+      extractFromUrl(urlInput && urlInput.value.trim());
     });
   }
 
@@ -539,10 +592,11 @@ var PLAYER_BASE = (function () {
   function buildIframeSrc(comp) {
     return PLAYER_BASE + '?comp=' + encodeURIComponent(comp) +
       '&embed=1' +
-      '&brandPrimary=' + hexNoHash(brandColors.primary) +
-      '&brandAccent='  + hexNoHash(brandColors.accent) +
-      '&brandBg='      + hexNoHash(brandColors.bg) +
-      '&brandText='    + hexNoHash(brandColors.text);
+      '&brandPrimary='   + hexNoHash(brandColors.primary) +
+      '&brandSecondary=' + hexNoHash(brandColors.secondary) +
+      '&brandAccent='    + hexNoHash(brandColors.accent) +
+      '&brandBg='        + hexNoHash(brandColors.bg) +
+      '&brandText='      + hexNoHash(brandColors.text);
   }
 
   function buildFeaturedGrid() {

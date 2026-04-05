@@ -22,16 +22,18 @@ function isEmbed(): boolean {
  */
 function getBrandKitFromUrl(): BrandKit | undefined {
   const params = new URLSearchParams(window.location.search);
-  const primary = params.get("brandPrimary");
-  const accent  = params.get("brandAccent");
-  const bg      = params.get("brandBg");
-  const text    = params.get("brandText");
-  if (!primary && !accent && !bg && !text) return undefined;
+  const primary   = params.get("brandPrimary");
+  const secondary = params.get("brandSecondary");
+  const accent    = params.get("brandAccent");
+  const bg        = params.get("brandBg");
+  const text      = params.get("brandText");
+  if (!primary && !secondary && !accent && !bg && !text) return undefined;
   return {
-    ...(primary ? { primaryColor: `#${primary}` } : {}),
-    ...(accent  ? { accentColor:  `#${accent}`  } : {}),
-    ...(bg      ? { bgColor:      `#${bg}`      } : {}),
-    ...(text    ? { textColor:    `#${text}`    } : {}),
+    ...(primary   ? { primaryColor:   `#${primary}`   } : {}),
+    ...(secondary ? { secondaryColor: `#${secondary}` } : {}),
+    ...(accent    ? { accentColor:    `#${accent}`    } : {}),
+    ...(bg        ? { bgColor:        `#${bg}`        } : {}),
+    ...(text      ? { textColor:      `#${text}`      } : {}),
   };
 }
 

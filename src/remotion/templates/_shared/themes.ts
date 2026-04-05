@@ -417,43 +417,69 @@ export const THEMES: Record<string, Theme> = {
 // All fields are JSON-serializable. Templates render correctly without a BrandKit.
 export interface BrandKit {
   logoUrl?: string;
-  primaryColor?: string;   // main brand color - overrides theme.accent
-  accentColor?: string;    // secondary accent  - overrides theme.accentSecondary
-  bgColor?: string;        // background color  - overrides theme.bg
-  textColor?: string;      // body text color   - overrides theme.textPrimary
-  secondaryColor?: string; // reserved for future use
+  primaryColor?: string;   // main brand color -> theme.accent + gradient start
+  secondaryColor?: string; // 2nd brand color  -> theme.accentSecondary + gradient end
+  accentColor?: string;    // 3rd brand color  -> fallback accentSecondary
+  bgColor?: string;        // background color -> bg + derived bgSecondary/bgGlass
+  textColor?: string;      // body text color  -> textPrimary + derived secondary/muted
   fontFamily?: string;
 }
 
+// ── Private color helpers for BrandKit derivation ───────────────
+function _hexToRgb(hex: string): [number, number, number] {
+  const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  if (!m) return [0, 0, 0];
+  return [parseInt(m[1], 16), parseInt(m[2], 16), parseInt(m[3], 16)];
+}
+function _luma(r: number, g: number, b: number): number {
+  const lin = [r, g, b].map(c => { const v = c / 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); });
+  return 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2];
+}
+function _h(v: number): string { return Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0'); }
+
 /**
- * Apply BrandKit overrides to a theme. Returns a new theme with brand colors applied.
- * When brandKit is undefined, returns the original theme unchanged.
+ * Apply BrandKit overrides to a theme. All derived fields (bgSecondary, bgGlass,
+ * textSecondary, textMuted, cardShadow) are computed so the full theme stays coherent.
  *
- * Mapping:
- *   primaryColor -> accent + accentGradient + cardBorder
- *   accentColor  -> accentSecondary
- *   bgColor      -> bg
- *   textColor    -> textPrimary
+ *   primaryColor   -> accent + accentGradient start + cardBorder
+ *   secondaryColor -> accentSecondary + accentGradient end
+ *   accentColor    -> fallback accentSecondary if secondaryColor absent
+ *   bgColor        -> bg + bgSecondary (shifted) + bgGlass (55% alpha) + cardShadow
+ *   textColor      -> textPrimary + textSecondary (70%) + textMuted (45%)
  */
 export function applyBrandKit(theme: Theme, brandKit?: BrandKit): Theme {
   if (!brandKit) return theme;
   const result = { ...theme };
+
   if (brandKit.primaryColor) {
-    const sec = brandKit.accentColor ?? theme.accentSecondary;
+    const sec = brandKit.secondaryColor ?? brandKit.accentColor ?? theme.accentSecondary;
     result.accent = brandKit.primaryColor;
     result.accentSecondary = sec;
     result.accentGradient = `linear-gradient(135deg, ${brandKit.primaryColor}, ${sec})`;
     result.cardBorder = `${brandKit.primaryColor}40`;
   }
-  if (brandKit.accentColor) {
+  if (brandKit.secondaryColor) {
+    result.accentSecondary = brandKit.secondaryColor;
+  } else if (brandKit.accentColor) {
     result.accentSecondary = brandKit.accentColor;
   }
+
   if (brandKit.bgColor) {
+    const [r, g, b] = _hexToRgb(brandKit.bgColor);
+    const isLight = _luma(r, g, b) > 0.18;
+    const sh = isLight ? -14 : 22;
     result.bg = brandKit.bgColor;
+    result.bgSecondary = `#${_h(r + sh)}${_h(g + sh)}${_h(b + sh)}`;
+    result.bgGlass = `rgba(${r}, ${g}, ${b}, 0.55)`;
+    result.cardShadow = isLight ? '0 4px 24px rgba(0,0,0,0.10)' : '0 4px 24px rgba(0,0,0,0.45)';
   }
+
   if (brandKit.textColor) {
     result.textPrimary = brandKit.textColor;
+    result.textSecondary = `${brandKit.textColor}b3`;
+    result.textMuted = `${brandKit.textColor}73`;
   }
+
   if (brandKit.fontFamily) {
     result.fontFamily = brandKit.fontFamily;
   }
