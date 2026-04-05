@@ -216,7 +216,8 @@
     <div class="section-hd section-hd--c">
       <div class="eyebrow">Video Template Library</div>
       <h2 class="section-title">Programmatic video templates built with Remotion</h2>
-      <p class="section-sub">405 compositions across 61 template types, 7 style themes each. Hover to preview.</p>
+      {{- $idxTotal := 0 }}{{ range .Site.Data.templates }}{{ $idxTotal = add $idxTotal .variantCount }}{{ end -}}
+      <p class="section-sub">{{ $idxTotal }} compositions across {{ len .Site.Data.templates }} template types, 7 style themes each. Hover to preview.</p>
     </div>
 
     <div class="rmt-grid">
@@ -308,7 +309,7 @@
         <div class="lib-row__inner">
           <div class="lib-row__head">
             <span class="lib-row__badge lib-badge--amber">Freelancer Series</span>
-            <span class="lib-count">54 templates</span>
+            <span class="lib-count">{{ len .Site.Data.templates }} templates</span>
           </div>
           <p class="lib-row__desc">Client-facing videos, testimonials, and project presentations</p>
           <div class="lib-chips">
@@ -410,7 +411,7 @@
       <div class="how-card">
         <div class="how-num">1</div>
         <h3 class="how-card__title">Clone from GitHub</h3>
-        <p class="how-card__desc">Fork or clone the repository. Browse the 54 template directories and pick what you need - document templates, Remotion compositions, or both.</p>
+        <p class="how-card__desc">Fork or clone the repository. Browse the {{ len .Site.Data.templates }} template directories and pick what you need - document templates, Remotion compositions, or both.</p>
         <div class="how-code">git clone github.com/mzzavaa/<br/>freelancer-templates.org</div>
       </div>
 
@@ -529,7 +530,7 @@
       <div class="oss-box__left">
         <div class="oss-icon"><i data-lucide="github"></i></div>
         <div>
-          <div class="oss-title">All 54 template directories on GitHub</div>
+          <div class="oss-title">All {{ len .Site.Data.templates }} template directories on GitHub</div>
           <div class="oss-desc">Browse, fork, and contribute. The full library - Remotion compositions, contracts, proposals, invoices, email scripts, and Notion templates - is open and free to clone.</div>
         </div>
       </div>

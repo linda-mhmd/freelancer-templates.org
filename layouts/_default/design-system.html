@@ -6,7 +6,8 @@
   <div class="container">
     <div class="eyebrow">Design System</div>
     <h1 class="ds-hero__title">7 themes. One token layer. Every combination works.</h1>
-    <p class="ds-hero__sub">Pass any <code>THEME_*</code> constant to any template and it renders correctly. Override individual colors with a <code>BrandKit</code> without touching theme files. All 330+ compositions share the same system.</p>
+    {{- $dsTotal := 0 }}{{ range .Site.Data.templates }}{{ $dsTotal = add $dsTotal .variantCount }}{{ end -}}
+    <p class="ds-hero__sub">Pass any <code>THEME_*</code> constant to any template and it renders correctly. Override individual colors with a <code>BrandKit</code> without touching theme files. All {{ $dsTotal }} compositions share the same system.</p>
     <div class="ds-hero__actions">
       <a href="{{ "player/" | relURL }}" class="btn btn--primary">Browse all compositions</a>
       <a href="{{ "customize/" | relURL }}" class="btn btn--outline">Apply your brand colors</a>
@@ -138,7 +139,7 @@
           <div class="ds-swatch" style="background:#43A047;" title="accentSecondary: #43A047"></div>
           <div class="ds-swatch" style="background:rgba(46,125,50,0.2);" title="cardBorder"></div>
         </div>
-        <a href="{{ "player/" | relURL }}?comp=LindaMohamed-Folie1Cover" class="ds-theme-card__link">Preview in player</a>
+        <a href="{{ "player/" | relURL }}?comp=Proposal-CleanCreative&brandPrimary=2E7D32&brandBg=ffffff&brandText=1a1a1a&brandAccent=43A047" class="ds-theme-card__link">Preview in player</a>
       </div>
 
     </div>
@@ -324,7 +325,8 @@
 <section class="ds-section">
   <div class="container">
     <div class="ds-cta-box">
-      <h2 class="ds-cta-box__title">Browse all 330+ compositions</h2>
+      {{- $dsCta := 0 }}{{ range .Site.Data.templates }}{{ $dsCta = add $dsCta .variantCount }}{{ end -}}
+      <h2 class="ds-cta-box__title">Browse all {{ $dsCta }} compositions</h2>
       <p class="ds-cta-box__sub">Use the interactive player to switch between themes, apply your brand colors, and generate the CLI command for any composition.</p>
       <div class="ds-cta-box__actions">
         <a href="{{ "player/" | relURL }}" class="btn btn--primary">Open player</a>

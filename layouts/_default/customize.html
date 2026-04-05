@@ -6,7 +6,7 @@
   <div class="container">
     <div class="eyebrow">Brand Customization</div>
     <h1 class="cz-hero__title">Make every template yours</h1>
-    <p class="cz-hero__sub">Upload your logo or paste your website URL. We extract your brand colors and apply them across all 54 template types so you can see exactly how your brand will look before you open a single file.</p>
+    <p class="cz-hero__sub">Upload your logo or paste your website URL. We extract your brand colors and apply them across all {{ len .Site.Data.templates }} template types so you can see exactly how your brand will look before you open a single file.</p>
   </div>
 </section>
 
@@ -142,7 +142,7 @@
         <span class="cz-step__num">3</span>
         <div>
           <h2 class="cz-step__title">Template preview</h2>
-          <p class="cz-step__sub" id="czPreviewSub">Upload your logo to see all 56 template types with live previews in your brand colors.</p>
+          <p class="cz-step__sub" id="czPreviewSub">Upload your logo to see all {{ len .Site.Data.templates }} template types with live previews in your brand colors.</p>
         </div>
       </div>
 
@@ -399,7 +399,7 @@
       step2.hidden = false;
 
       var sub = el('czPreviewSub');
-      if (sub) sub.textContent = 'All 56 template types - live previews load as you scroll. Click View to open any template.';
+      if (sub) sub.textContent = 'All {{ len .Site.Data.templates }} template types - live previews load as you scroll. Click View to open any template.';
 
       var assigned = autoAssign(colors.length ? colors : []);
       renderSwatches(colors.length ? colors : Object.values(assigned).slice(0, 3));

@@ -54,7 +54,7 @@ function formatCompName(id: string): string {
 
 // ── Main App ──────────────────────────────────────────────────────
 
-const THEME_FILTERS = ["all", "dark", "clean", "bold", "warm", "minimal", "neon", "lindamohamed"] as const;
+const THEME_FILTERS = ["all", "dark", "clean", "bold", "warm", "minimal", "neon"] as const;
 type ThemeFilter = (typeof THEME_FILTERS)[number];
 
 export const App: React.FC = () => {
@@ -149,7 +149,7 @@ export const App: React.FC = () => {
                 onClick={() => setThemeFilter(t)}
                 title={t === "all" ? "Show all themes" : `Show ${t} theme only`}
               >
-                {t === "lindamohamed" ? "LM" : t === "all" ? "All" : t.charAt(0).toUpperCase() + t.slice(1)}
+                {t === "all" ? "All" : t.charAt(0).toUpperCase() + t.slice(1)}
               </button>
             ))}
           </div>
