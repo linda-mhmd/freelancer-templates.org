@@ -48,10 +48,51 @@ jobs:
         run: npm ci
 
       - name: Install Chrome for Remotion
-        run: npx remotion browser ensure
+        run: npx remotion browser ensure --log=error
 
       - name: Generate thumbnails for changed templates
-        run: bash scripts/generate-thumbnails.sh --changed
+        run: |
+          IDS=$(python3 - <<'PYEOF'
+          import json, subprocess
+          changed = subprocess.run(
+            ['git', 'diff', '--name-only', 'HEAD~1', 'HEAD'],
+            capture_output=True, text=True
+          ).stdout.splitlines()
+          slugs = set()
+          for f in changed:
+            if f.startswith('src/remotion/templates/'):
+              slugs.add(f.removeprefix('src/remotion/templates/').split('/')[0])
+            if f.startswith('src/remotion/GameDay/'):
+              slugs.add('communitygameday')
+          if not slugs:
+            raise SystemExit(0)
+          with open('data/templates.json') as f:
+            data = json.load(f)
+          for t in data:
+            if t['slug'] in slugs:
+              for v in t.get('variants', []):
+                print(v['id'])
+          PYEOF
+          ) || true
+
+          if [[ -z "$IDS" ]]; then
+            echo "No template changes — skipping thumbnail generation."
+            exit 0
+          fi
+
+          mkdir -p static/previews/showcase static/previews/hero
+          while IFS= read -r id; do
+            [[ -z "$id" ]] && continue
+            echo "  rendering: $id"
+            npx remotion still src/remotion/index.ts "$id" \
+              "static/previews/showcase/${id}.png" \
+              --frame=60 --overwrite --log=error \
+              || echo "  WARN: still failed for $id"
+            npx remotion render src/remotion/index.ts "$id" \
+              "static/previews/hero/${id}.mp4" \
+              --frames=0-59 --codec=h264 --overwrite --log=error \
+              || echo "  WARN: render failed for $id"
+          done <<< "$IDS"
 
       - name: Install player dependencies
         run: cd player && npm ci

@@ -33,17 +33,69 @@ jobs:
         run: npm ci
 
       - name: Install Chrome for Remotion
-        run: npx remotion browser ensure
+        run: npx remotion browser ensure --log=error
 
-      - name: Generate thumbnails (changed templates)
-        if: inputs.mode == 'changed'
-        run: bash scripts/generate-thumbnails.sh --changed
+      - name: Resolve composition IDs
+        id: ids
+        run: |
+          if [[ "${{ inputs.mode }}" == "all" ]]; then
+            IDS=$(python3 -c "
+          import json
+          with open('data/templates.json') as f:
+            data = json.load(f)
+          for t in data:
+            for v in t.get('variants', []):
+              print(v['id'])
+          ")
+          else
+            IDS=$(python3 - <<'PYEOF'
+          import json, subprocess
+          changed = subprocess.run(
+            ['git', 'diff', '--name-only', 'HEAD~1', 'HEAD'],
+            capture_output=True, text=True
+          ).stdout.splitlines()
+          slugs = set()
+          for f in changed:
+            if f.startswith('src/remotion/templates/'):
+              slugs.add(f.removeprefix('src/remotion/templates/').split('/')[0])
+            if f.startswith('src/remotion/GameDay/'):
+              slugs.add('communitygameday')
+          if not slugs:
+            raise SystemExit(0)
+          with open('data/templates.json') as f:
+            data = json.load(f)
+          for t in data:
+            if t['slug'] in slugs:
+              for v in t.get('variants', []):
+                print(v['id'])
+          PYEOF
+            ) || true
+          fi
+          echo "ids<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$IDS"    >> "$GITHUB_OUTPUT"
+          echo "EOF"     >> "$GITHUB_OUTPUT"
 
-      - name: Generate thumbnails (all)
-        if: inputs.mode == 'all'
-        run: bash scripts/generate-thumbnails.sh
+      - name: Render thumbnails
+        if: steps.ids.outputs.ids != ''
+        env:
+          COMP_IDS: ${{ steps.ids.outputs.ids }}
+        run: |
+          mkdir -p static/previews/showcase static/previews/hero
+          while IFS= read -r id; do
+            [[ -z "$id" ]] && continue
+            echo "  rendering: $id"
+            npx remotion still src/remotion/index.ts "$id" \
+              "static/previews/showcase/${id}.png" \
+              --frame=60 --overwrite --log=error \
+              || echo "  WARN: still failed for $id"
+            npx remotion render src/remotion/index.ts "$id" \
+              "static/previews/hero/${id}.mp4" \
+              --frames=0-59 --codec=h264 --overwrite --log=error \
+              || echo "  WARN: render failed for $id"
+          done <<< "$COMP_IDS"
 
       - name: Upload previews artifact
+        if: steps.ids.outputs.ids != ''
         uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
         with:
           name: template-previews
