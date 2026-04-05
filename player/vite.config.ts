@@ -18,6 +18,8 @@ export default defineConfig({
       remotion: path.resolve(__dirname, "node_modules/remotion"),
       "lucide-react": path.resolve(__dirname, "node_modules/lucide-react"),
       "@remotion/transitions": path.resolve(__dirname, "node_modules/@remotion/transitions"),
+      "@remotion/paths": path.resolve(__dirname, "node_modules/@remotion/paths"),
+      "@remotion/shapes": path.resolve(__dirname, "node_modules/@remotion/shapes"),
       // Templates live at the repo root, not inside player/
       "@templates": path.resolve(__dirname, "../src/remotion/templates"),
       // Sims4 AI/tech explainer compositions

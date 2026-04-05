@@ -143,11 +143,12 @@ export function getOrganizerUserGroup(p: Organizer): UserGroupName | undefined {
 }
 
 // ── Community Organizers ──
+// Note: Face images use placeholder avatars. Only Linda Mohamed's photo is retained.
 export const ORGANIZERS: Organizer[] = [
   {
     name: "Jerome", streamRole: "co-organizer",
     programs: [{ program: "ug-leader", userGroup: "AWS User Group Belgium" }],
-    location: "Brussels, Belgium", flag: "🇧🇪", face: "assets/faces/jerome.jpg", type: "community",
+    location: "Brussels, Belgium", flag: "🇧🇪", face: "avatar/placeholder.svg", type: "community",
     bio: ["AWS User Group Leader and co-founder of this initiative. Jerome co-architected the event structure, competition framework, and built the network of 53 User Groups across 23 countries."],
   },
   {
@@ -156,13 +157,13 @@ export const ORGANIZERS: Organizer[] = [
       { program: "ug-leader", userGroup: "AWS Swiss UG - Geneva" },
       { program: "aws-community-builder" },
     ],
-    location: "Geneva, Switzerland", flag: "🇨🇭", face: "assets/faces/anda.jpg", type: "community",
+    location: "Geneva, Switzerland", flag: "🇨🇭", face: "avatar/placeholder.svg", type: "community",
     bio: ["AWS User Group Leader and initiator of this GameDay. Anda had the original vision for a pan-European AWS community event and brought together volunteer organizers from 53 User Groups across the continent."],
   },
   {
     name: "Marcel", streamRole: undefined,
     programs: [{ program: "ug-leader", userGroup: "AWS UG Münsterland" }],
-    location: "Münster, Germany", flag: "🇩🇪", face: "assets/faces/marcel.jpg", type: "community",
+    location: "Münster, Germany", flag: "🇩🇪", face: "avatar/placeholder.svg", type: "community",
   },
   {
     name: "Linda", fullName: "Linda Mohamed", streamRole: "host",
@@ -183,33 +184,34 @@ export const ORGANIZERS: Organizer[] = [
   {
     name: "Manuel", streamRole: undefined,
     programs: [{ program: "ug-leader", userGroup: "Frankfurt AWS User Group" }],
-    location: "Frankfurt, Germany", flag: "🇩🇪", face: "assets/faces/manuel.jpg", type: "community",
+    location: "Frankfurt, Germany", flag: "🇩🇪", face: "avatar/placeholder.svg", type: "community",
   },
   {
     name: "Andreas", streamRole: undefined,
     programs: [{ program: "ug-leader", userGroup: "AWS User Group Bonn" }],
-    location: "Bonn, Germany", flag: "🇩🇪", face: "assets/faces/andreas.jpg", type: "community",
+    location: "Bonn, Germany", flag: "🇩🇪", face: "avatar/placeholder.svg", type: "community",
   },
   {
     name: "Lucian", streamRole: undefined,
     programs: [{ program: "ug-leader", userGroup: "AWS UG Timisoara" }],
-    location: "Timisoara, Romania", flag: "🇷🇴", face: "assets/faces/lucian.jpg", type: "community",
+    location: "Timisoara, Romania", flag: "🇷🇴", face: "avatar/placeholder.svg", type: "community",
   },
   {
     name: "Mihaly", streamRole: "support-presenter",
     programs: [{ program: "ug-leader", userGroup: "AWS User Group Budapest" }],
-    location: "Budapest, Hungary", flag: "🇭🇺", face: "assets/faces/mihaly.jpg", type: "community",
+    location: "Budapest, Hungary", flag: "🇭🇺", face: "avatar/placeholder.svg", type: "community",
   },
 ];
 
 // ── AWS Supporters (Gamemasters & Community Team) ──
+// Note: Face images use placeholder avatars.
 export const AWS_SUPPORTERS: Organizer[] = [
-  { name: "Arnaud", streamRole: "gamemaster", jobTitle: "Sr. Developer Advocate, AWS",        flag: "🇫🇷", face: "assets/faces/arnaud.jpg", type: "aws",
+  { name: "Arnaud", streamRole: "gamemaster", jobTitle: "Sr. Developer Advocate, AWS",        flag: "🇫🇷", face: "avatar/placeholder.svg", type: "aws",
     bio: ["Sr. Developer Advocate at AWS. Arnaud will deliver the official GameDay instructions and guide all teams through the competition format, rules, and scoring system."] },
-  { name: "Loïc",   streamRole: "gamemaster", jobTitle: "Sr. Technical Account Manager, AWS", flag: "🇫🇷", face: "assets/faces/loic.jpg",   type: "aws",
+  { name: "Loïc",   streamRole: "gamemaster", jobTitle: "Sr. Technical Account Manager, AWS", flag: "🇫🇷", face: "avatar/placeholder.svg",   type: "aws",
     bio: ["Sr. Technical Account Manager at AWS. Loïc co-delivers the GameDay instructions and is available as a gamemaster throughout the competition to help with any technical questions."] },
-  { name: "Uliana", jobTitle: "Community Manager, AWS",             flag: "🌍", face: "assets/faces/uliana.jpg", type: "aws" },
-  { name: "Natalia", jobTitle: "DevEx Community Manager, AWS",      flag: "🌍", face: "assets/faces/natalia.jpg", type: "aws" },
+  { name: "Uliana", jobTitle: "Community Manager, AWS",             flag: "🌍", face: "avatar/placeholder.svg", type: "aws" },
+  { name: "Natalia", jobTitle: "DevEx Community Manager, AWS",      flag: "🌍", face: "avatar/placeholder.svg", type: "aws" },
 ];
 
 export const EVENT_REGION = "Europe";
