@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StatusBadge, CountUp,
   CardGridShell, PipelineShell,
   TYPE,
@@ -25,10 +25,10 @@ export interface AgentDashboardSpec {
   layout?: "control-panel" | "flow" | "matrix";
 }
 
-export const AgentDashboard: React.FC<{ spec: AgentDashboardSpec }> = ({ spec }) => {
+export const AgentDashboard: React.FC<{ spec: AgentDashboardSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "control-panel";
 
   if (layout === "flow") {

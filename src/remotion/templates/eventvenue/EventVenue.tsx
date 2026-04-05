@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, GradientBadge, StatusBadge,
   TimelineShell, CardGridShell, HeroStatShell,
   TYPE,
@@ -27,10 +27,10 @@ export interface EventVenueSpec {
   layout?: "schedule-map" | "venue-cards" | "event-overview";
 }
 
-export const EventVenue: React.FC<{ spec: EventVenueSpec }> = ({ spec }) => {
+export const EventVenue: React.FC<{ spec: EventVenueSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "schedule-map";
 
   if (layout === "venue-cards") {

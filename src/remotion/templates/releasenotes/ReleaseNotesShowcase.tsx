@@ -1,5 +1,6 @@
 import React from "react";
 import { ReleaseNotes, ReleaseNotesSpec } from "./ReleaseNotes";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: ReleaseNotesSpec = {
   product_name: "Sisy",
@@ -17,9 +18,9 @@ const BASE_SPEC: ReleaseNotesSpec = {
   highlights: "SSO support and composable dashboard widgets",
 };
 
-export const ReleaseNotesChangelogDark: React.FC = () => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "changelog", theme: "dark" }} />;
-export const ReleaseNotesChangelogClean: React.FC = () => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "changelog", theme: "clean" }} />;
-export const ReleaseNotesHighlightsDark: React.FC = () => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "dark" }} />;
-export const ReleaseNotesHighlightsClean: React.FC = () => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "clean" }} />;
-export const ReleaseNotesVersionCompareDark: React.FC = () => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "version-compare", theme: "dark" }} />;
-export const ReleaseNotesVersionCompareClean: React.FC = () => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "version-compare", theme: "clean" }} />;
+export const ReleaseNotesChangelogDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "changelog", theme: "dark" }} brandKit={brandKit} />;
+export const ReleaseNotesChangelogClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "changelog", theme: "clean" }} brandKit={brandKit} />;
+export const ReleaseNotesHighlightsDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "dark" }} brandKit={brandKit} />;
+export const ReleaseNotesHighlightsClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "highlights", theme: "clean" }} brandKit={brandKit} />;
+export const ReleaseNotesVersionCompareDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "version-compare", theme: "dark" }} brandKit={brandKit} />;
+export const ReleaseNotesVersionCompareClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ReleaseNotes spec={{ ...BASE_SPEC, layout: "version-compare", theme: "clean" }} brandKit={brandKit} />;

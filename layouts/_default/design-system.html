@@ -1,0 +1,338 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<!-- ── Hero ──────────────────────────��───────────────────────── -->
+<section class="ds-hero">
+  <div class="container">
+    <div class="eyebrow">Design System</div>
+    <h1 class="ds-hero__title">7 themes. One token layer. Every combination works.</h1>
+    <p class="ds-hero__sub">Pass any <code>THEME_*</code> constant to any template and it renders correctly. Override individual colors with a <code>BrandKit</code> without touching theme files. All 330+ compositions share the same system.</p>
+    <div class="ds-hero__actions">
+      <a href="{{ "player/" | relURL }}" class="btn btn--primary">Browse all compositions</a>
+      <a href="{{ "customize/" | relURL }}" class="btn btn--outline">Apply your brand colors</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Themes ─────────────────────────────────────────────────── -->
+<section class="ds-section">
+  <div class="container">
+    <h2 class="ds-section__hd">Built-in themes</h2>
+    <p class="ds-section__sub">Each theme is a complete visual identity - backgrounds, text hierarchy, accent gradient, card styles, and font weights. Import from <code>_shared/themes.ts</code>.</p>
+
+    <div class="ds-theme-grid">
+
+      <!-- Dark -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#0a0a0f;">
+          <div class="ds-theme-card__name" style="color:#ffffff;">Dark</div>
+          <div class="ds-theme-card__const" style="color:#64748b;">THEME_DARK</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#6366f1,#ec4899);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#0a0a0f;" title="bg: #0a0a0f"></div>
+          <div class="ds-swatch" style="background:#ffffff;" title="text: #ffffff"></div>
+          <div class="ds-swatch" style="background:#6366f1;" title="accent: #6366f1"></div>
+          <div class="ds-swatch" style="background:#a855f7;" title="accentSecondary: #a855f7"></div>
+          <div class="ds-swatch" style="background:rgba(255,255,255,0.04);border:1px solid rgba(99,102,241,0.25);" title="bgGlass / cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=Testimonial-DarkCentered" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Clean -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#f8fafc;">
+          <div class="ds-theme-card__name" style="color:#0f172a;">Clean</div>
+          <div class="ds-theme-card__const" style="color:#94a3b8;">THEME_CLEAN</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#2563eb,#7c3aed);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#f8fafc;" title="bg: #f8fafc"></div>
+          <div class="ds-swatch" style="background:#0f172a;" title="text: #0f172a"></div>
+          <div class="ds-swatch" style="background:#2563eb;" title="accent: #2563eb"></div>
+          <div class="ds-swatch" style="background:#3b82f6;" title="accentSecondary: #3b82f6"></div>
+          <div class="ds-swatch" style="background:#ffffff;border:1px solid rgba(37,99,235,0.15);" title="bgSecondary / cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=Testimonial-CleanSplit" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Bold -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#0f0f1a;">
+          <div class="ds-theme-card__name" style="color:#ffffff;font-weight:900;">Bold</div>
+          <div class="ds-theme-card__const" style="color:#7c3aed;">THEME_BOLD</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#0f0f1a;" title="bg: #0f0f1a"></div>
+          <div class="ds-swatch" style="background:#ffffff;" title="text: #ffffff"></div>
+          <div class="ds-swatch" style="background:#8b5cf6;" title="accent: #8b5cf6"></div>
+          <div class="ds-swatch" style="background:#ec4899;" title="accentSecondary: #ec4899"></div>
+          <div class="ds-swatch" style="background:rgba(139,92,246,0.3);" title="cardBorder: rgba(139,92,246,0.3)"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=Testimonial-BoldEditorial" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Warm -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:linear-gradient(180deg,#1a1520 0%,#1e1215 100%);">
+          <div class="ds-theme-card__name" style="color:#fef3c7;">Warm</div>
+          <div class="ds-theme-card__const" style="color:#9a7b4f;">THEME_WARM</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#f97316,#ef4444);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#1a1520;" title="bg: #1a1520 (gradient)"></div>
+          <div class="ds-swatch" style="background:#fef3c7;" title="text: #fef3c7"></div>
+          <div class="ds-swatch" style="background:#f97316;" title="accent: #f97316"></div>
+          <div class="ds-swatch" style="background:#ef4444;" title="accentSecondary: #ef4444"></div>
+          <div class="ds-swatch" style="background:rgba(249,115,22,0.25);" title="cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=Testimonial-WarmCentered" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Minimal -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#fafafa;border:1px solid #e2e8f0;">
+          <div class="ds-theme-card__name" style="color:#1e293b;font-weight:600;">Minimal</div>
+          <div class="ds-theme-card__const" style="color:#94a3b8;">THEME_MINIMAL</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#334155,#64748b);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#fafafa;border:1px solid #e2e8f0;" title="bg: #fafafa"></div>
+          <div class="ds-swatch" style="background:#1e293b;" title="text: #1e293b"></div>
+          <div class="ds-swatch" style="background:#334155;" title="accent: #334155"></div>
+          <div class="ds-swatch" style="background:#64748b;" title="accentSecondary: #64748b"></div>
+          <div class="ds-swatch" style="background:rgba(51,65,85,0.1);border:1px solid rgba(51,65,85,0.1);" title="cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=Testimonial-MinimalEditorial" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Neon -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#050510;">
+          <div class="ds-theme-card__name" style="color:#e0ffe0;">Neon</div>
+          <div class="ds-theme-card__const" style="color:#0a6640;">THEME_NEON</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#00ff88,#00ccff);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#050510;" title="bg: #050510"></div>
+          <div class="ds-swatch" style="background:#e0ffe0;" title="text: #e0ffe0"></div>
+          <div class="ds-swatch" style="background:#00ff88;" title="accent: #00ff88"></div>
+          <div class="ds-swatch" style="background:#00ccff;" title="accentSecondary: #00ccff"></div>
+          <div class="ds-swatch" style="background:rgba(0,255,136,0.2);" title="cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=Testimonial-NeonSplit" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Linda Mohamed -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#ffffff;border:1px solid #e8ede8;">
+          <div class="ds-theme-card__name" style="color:#1a1a1a;">Linda Mohamed</div>
+          <div class="ds-theme-card__const" style="color:#8a8a8a;">THEME_LINDAMOHAMED</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#2E7D32,#66BB6A);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#ffffff;border:1px solid #e8ede8;" title="bg: #ffffff"></div>
+          <div class="ds-swatch" style="background:#1a1a1a;" title="text: #1a1a1a"></div>
+          <div class="ds-swatch" style="background:#2E7D32;" title="accent: #2E7D32"></div>
+          <div class="ds-swatch" style="background:#43A047;" title="accentSecondary: #43A047"></div>
+          <div class="ds-swatch" style="background:rgba(46,125,50,0.2);" title="cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=LindaMohamed-Folie1Cover" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Theme Interface ─────────────────────────────────────────── -->
+<section class="ds-section ds-section--alt">
+  <div class="container">
+    <div class="ds-two-col">
+      <div>
+        <h2 class="ds-section__hd">Theme interface</h2>
+        <p class="ds-section__sub">Every theme implements the same <code>Theme</code> interface. All 15 tokens are used by every template - nothing is template-specific.</p>
+        <div class="ds-token-list">
+          <div class="ds-token-group">
+            <div class="ds-token-group__label">Backgrounds</div>
+            <code>bg</code> <code>bgSecondary</code> <code>bgGlass</code>
+          </div>
+          <div class="ds-token-group">
+            <div class="ds-token-group__label">Text</div>
+            <code>textPrimary</code> <code>textSecondary</code> <code>textMuted</code>
+          </div>
+          <div class="ds-token-group">
+            <div class="ds-token-group__label">Accents</div>
+            <code>accent</code> <code>accentSecondary</code> <code>accentGradient</code>
+          </div>
+          <div class="ds-token-group">
+            <div class="ds-token-group__label">Cards</div>
+            <code>cardBorder</code> <code>cardShadow</code>
+          </div>
+          <div class="ds-token-group">
+            <div class="ds-token-group__label">Typography</div>
+            <code>fontFamily</code> <code>headingWeight</code> <code>bodyWeight</code>
+          </div>
+        </div>
+      </div>
+      <div class="ds-code-card">
+        <div class="ds-code-card__hd">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="ds-code-card__label">src/remotion/templates/_shared/themes.ts</span>
+        </div>
+        <pre class="ds-code-card__body"><span class="cc">// Use any template with any theme</span>
+<span class="ck">import</span> { THEME_DARK, THEME_NEON } <span class="ck">from</span> <span class="cp">"../_shared/themes"</span>;
+
+<span class="cc">// Pass as an explicit prop</span>
+&lt;<span class="ca">Testimonial</span>
+  spec={mySpec}
+  theme={THEME_NEON}
+  layout=<span class="cp">"centered"</span>
+/&gt;
+
+<span class="cc">// Or use the THEMES registry by string</span>
+<span class="ck">const</span> theme = THEMES[<span class="cp">"dark"</span>] ?? THEMES.dark;
+
+<span class="cc">// Or create your own theme</span>
+<span class="ck">export const</span> <span class="ca">THEME_MYBRAND</span>: Theme = {
+  name: <span class="cp">"mybrand"</span>,
+  bg: <span class="cp">"#0d0d0d"</span>,
+  accent: <span class="cp">"#ff6b35"</span>,
+  <span class="cc">// ... all 15 tokens</span>
+};</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BrandKit API ────────────────────────────────────────────── -->
+<section class="ds-section">
+  <div class="container">
+    <h2 class="ds-section__hd">BrandKit - runtime color overrides</h2>
+    <p class="ds-section__sub">Don't want to create a full custom theme? Pass a <code>BrandKit</code> to override specific colors on top of any existing theme. <code>applyBrandKit(theme, brandKit)</code> returns a new theme with your overrides applied - the base theme is unchanged.</p>
+
+    <div class="ds-two-col">
+      <div>
+        <div class="ds-brandkit-fields">
+          <div class="ds-field">
+            <code class="ds-field__name">primaryColor</code>
+            <span class="ds-field__maps">overrides <code>accent</code>, rebuilds <code>accentGradient</code> and <code>cardBorder</code></span>
+          </div>
+          <div class="ds-field">
+            <code class="ds-field__name">accentColor</code>
+            <span class="ds-field__maps">overrides <code>accentSecondary</code></span>
+          </div>
+          <div class="ds-field">
+            <code class="ds-field__name">bgColor</code>
+            <span class="ds-field__maps">overrides <code>bg</code></span>
+          </div>
+          <div class="ds-field">
+            <code class="ds-field__name">textColor</code>
+            <span class="ds-field__maps">overrides <code>textPrimary</code></span>
+          </div>
+          <div class="ds-field">
+            <code class="ds-field__name">fontFamily</code>
+            <span class="ds-field__maps">overrides <code>fontFamily</code></span>
+          </div>
+          <div class="ds-field">
+            <code class="ds-field__name">logoUrl</code>
+            <span class="ds-field__maps">passed through to compositions that render a logo</span>
+          </div>
+        </div>
+        <a href="{{ "customize/" | relURL }}" class="btn btn--primary ds-cta-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="17" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M13.5 9v5l-3 3M6 14.5l7.5-5.5"/></svg>
+          Try brand customization
+        </a>
+      </div>
+      <div class="ds-code-card">
+        <div class="ds-code-card__hd">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="ds-code-card__label">BrandKit usage</span>
+        </div>
+        <pre class="ds-code-card__body"><span class="ck">import</span> { applyBrandKit, THEME_DARK } <span class="ck">from</span> <span class="cp">"../_shared/themes"</span>;
+
+<span class="cc">// Override only what you need</span>
+<span class="ck">const</span> brandKit = {
+  primaryColor: <span class="cp">"#ff6b35"</span>,
+  bgColor:      <span class="cp">"#0d0d0d"</span>,
+};
+
+<span class="cc">// Returns a new theme - original unchanged</span>
+<span class="ck">const</span> themed = applyBrandKit(THEME_DARK, brandKit);
+
+<span class="cc">// Pass to any template</span>
+&lt;<span class="ca">Testimonial</span> spec={spec} theme={themed} /&gt;
+
+<span class="cc">// Or pass brandKit directly (all showcase components accept it)</span>
+&lt;<span class="ca">TestimonialDarkCentered</span> brandKit={brandKit} /&gt;</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Typography scale ───────────────────────────────────────── -->
+<section class="ds-section ds-section--alt">
+  <div class="container">
+    <h2 class="ds-section__hd">Typography scale</h2>
+    <p class="ds-section__sub">All font sizes come from <code>TYPE</code> in <code>_shared/layouts.ts</code>. Edit once, updates every composition. Minimum <code>TYPE.caption</code> (24px) enforces broadcast legibility at 1280x720.</p>
+
+    <div class="ds-type-table">
+      <div class="ds-type-row ds-type-row--head">
+        <span>Token</span><span>Size</span><span>Use</span><span>Example</span>
+      </div>
+      <div class="ds-type-row">
+        <code>TYPE.hero</code>
+        <span class="ds-type-size">72px</span>
+        <span class="ds-type-use">Hero headlines, stat numbers</span>
+        <span class="ds-type-ex" style="font-size:36px;font-weight:800;line-height:1;">Aa</span>
+      </div>
+      <div class="ds-type-row">
+        <code>TYPE.title</code>
+        <span class="ds-type-size">52px</span>
+        <span class="ds-type-use">Section titles, card headers</span>
+        <span class="ds-type-ex" style="font-size:26px;font-weight:700;line-height:1;">Aa</span>
+      </div>
+      <div class="ds-type-row">
+        <code>TYPE.subtitle</code>
+        <span class="ds-type-size">38px</span>
+        <span class="ds-type-use">Sub-headings, labels</span>
+        <span class="ds-type-ex" style="font-size:19px;font-weight:700;line-height:1;">Aa</span>
+      </div>
+      <div class="ds-type-row">
+        <code>TYPE.body</code>
+        <span class="ds-type-size">32px</span>
+        <span class="ds-type-use">Body text, descriptions</span>
+        <span class="ds-type-ex" style="font-size:16px;font-weight:400;line-height:1;">Aa</span>
+      </div>
+      <div class="ds-type-row">
+        <code>TYPE.small</code>
+        <span class="ds-type-size">28px</span>
+        <span class="ds-type-use">Secondary text, meta</span>
+        <span class="ds-type-ex" style="font-size:14px;font-weight:400;line-height:1;">Aa</span>
+      </div>
+      <div class="ds-type-row">
+        <code>TYPE.caption</code>
+        <span class="ds-type-size">24px</span>
+        <span class="ds-type-use">Captions, badges - minimum size</span>
+        <span class="ds-type-ex" style="font-size:12px;font-weight:600;line-height:1;">Aa</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────────────────────── -->
+<section class="ds-section">
+  <div class="container">
+    <div class="ds-cta-box">
+      <h2 class="ds-cta-box__title">Browse all 330+ compositions</h2>
+      <p class="ds-cta-box__sub">Use the interactive player to switch between themes, apply your brand colors, and generate the CLI command for any composition.</p>
+      <div class="ds-cta-box__actions">
+        <a href="{{ "player/" | relURL }}" class="btn btn--primary">Open player</a>
+        <a href="{{ "library/" | relURL }}" class="btn btn--outline">Browse library</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "site-footer.html" . }}
+{{ end }}

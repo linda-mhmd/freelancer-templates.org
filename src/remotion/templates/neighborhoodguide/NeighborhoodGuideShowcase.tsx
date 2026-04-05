@@ -1,5 +1,6 @@
 import React from "react";
 import { NeighborhoodGuide, NeighborhoodGuideSpec } from "./NeighborhoodGuide";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: NeighborhoodGuideSpec = {
   neighborhood_name: "Neubau",
@@ -25,9 +26,9 @@ const BASE_SPEC: NeighborhoodGuideSpec = {
   highlights: ["Café Harvest brunch", "Tian Bistro tasting menu", "Volksgarten roses"],
 };
 
-export const NeighborhoodGuideExplorerWarm: React.FC = () => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "explorer", theme: "warm" }} />;
-export const NeighborhoodGuideExplorerNeon: React.FC = () => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "explorer", theme: "neon" }} />;
-export const NeighborhoodGuideHighlightsReelWarm: React.FC = () => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "highlights-reel", theme: "warm" }} />;
-export const NeighborhoodGuideHighlightsReelNeon: React.FC = () => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "highlights-reel", theme: "neon" }} />;
-export const NeighborhoodGuideOverviewWarm: React.FC = () => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "overview", theme: "warm" }} />;
-export const NeighborhoodGuideOverviewNeon: React.FC = () => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "overview", theme: "neon" }} />;
+export const NeighborhoodGuideExplorerWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "explorer", theme: "warm" }} brandKit={brandKit} />;
+export const NeighborhoodGuideExplorerNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "explorer", theme: "neon" }} brandKit={brandKit} />;
+export const NeighborhoodGuideHighlightsReelWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "highlights-reel", theme: "warm" }} brandKit={brandKit} />;
+export const NeighborhoodGuideHighlightsReelNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "highlights-reel", theme: "neon" }} brandKit={brandKit} />;
+export const NeighborhoodGuideOverviewWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "overview", theme: "warm" }} brandKit={brandKit} />;
+export const NeighborhoodGuideOverviewNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <NeighborhoodGuide spec={{ ...BASE_SPEC, layout: "overview", theme: "neon" }} brandKit={brandKit} />;

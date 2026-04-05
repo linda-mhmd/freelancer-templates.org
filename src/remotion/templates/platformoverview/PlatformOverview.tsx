@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StatusBadge, CountUp,
   StatusBoardShell, CardGridShell, ListDetailShell,
   TYPE,
@@ -25,10 +25,10 @@ export interface PlatformOverviewSpec {
   layout?: "command-center" | "module-grid" | "stack";
 }
 
-export const PlatformOverview: React.FC<{ spec: PlatformOverviewSpec }> = ({ spec }) => {
+export const PlatformOverview: React.FC<{ spec: PlatformOverviewSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "command-center";
 
   if (layout === "module-grid") {

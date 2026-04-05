@@ -1,5 +1,6 @@
 import React from "react";
 import { ClientPipeline, ClientPipelineSpec } from "./ClientPipeline";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: ClientPipelineSpec = {
   dashboard_title: "Freelance Automation - Client Pipeline",
@@ -19,9 +20,9 @@ const BASE_SPEC: ClientPipelineSpec = {
   time_period: "Q1 2026",
 };
 
-export const ClientPipelineFunnelDark: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "funnel", theme: "dark" }} />;
-export const ClientPipelineFunnelWarm: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "funnel", theme: "warm" }} />;
-export const ClientPipelinePipelineBoardDark: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "pipeline-board", theme: "dark" }} />;
-export const ClientPipelinePipelineBoardWarm: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "pipeline-board", theme: "warm" }} />;
-export const ClientPipelineMetricsDark: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "metrics", theme: "dark" }} />;
-export const ClientPipelineMetricsWarm: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "metrics", theme: "warm" }} />;
+export const ClientPipelineFunnelDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ClientPipeline spec={{ ...BASE_SPEC, layout: "funnel", theme: "dark" }} brandKit={brandKit} />;
+export const ClientPipelineFunnelWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ClientPipeline spec={{ ...BASE_SPEC, layout: "funnel", theme: "warm" }} brandKit={brandKit} />;
+export const ClientPipelinePipelineBoardDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ClientPipeline spec={{ ...BASE_SPEC, layout: "pipeline-board", theme: "dark" }} brandKit={brandKit} />;
+export const ClientPipelinePipelineBoardWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ClientPipeline spec={{ ...BASE_SPEC, layout: "pipeline-board", theme: "warm" }} brandKit={brandKit} />;
+export const ClientPipelineMetricsDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ClientPipeline spec={{ ...BASE_SPEC, layout: "metrics", theme: "dark" }} brandKit={brandKit} />;
+export const ClientPipelineMetricsWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ClientPipeline spec={{ ...BASE_SPEC, layout: "metrics", theme: "warm" }} brandKit={brandKit} />;

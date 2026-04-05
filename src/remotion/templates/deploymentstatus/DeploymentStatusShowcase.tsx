@@ -1,5 +1,6 @@
 import React from "react";
 import { DeploymentStatus, DeploymentStatusSpec } from "./DeploymentStatus";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: DeploymentStatusSpec = {
   project_name: "Freelance Automation",
@@ -12,9 +13,9 @@ const BASE_SPEC: DeploymentStatusSpec = {
   uptime_percent: 99,
 };
 
-export const DeploymentStatusEnvironmentCardsDark: React.FC = () => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "environment-cards", theme: "dark" }} />;
-export const DeploymentStatusEnvironmentCardsNeon: React.FC = () => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "environment-cards", theme: "neon" }} />;
-export const DeploymentStatusPipelineViewDark: React.FC = () => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "dark" }} />;
-export const DeploymentStatusPipelineViewNeon: React.FC = () => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "neon" }} />;
-export const DeploymentStatusHealthDashboardDark: React.FC = () => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "health-dashboard", theme: "dark" }} />;
-export const DeploymentStatusHealthDashboardNeon: React.FC = () => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "health-dashboard", theme: "neon" }} />;
+export const DeploymentStatusEnvironmentCardsDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "environment-cards", theme: "dark" }} brandKit={brandKit} />;
+export const DeploymentStatusEnvironmentCardsNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "environment-cards", theme: "neon" }} brandKit={brandKit} />;
+export const DeploymentStatusPipelineViewDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "dark" }} brandKit={brandKit} />;
+export const DeploymentStatusPipelineViewNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "pipeline-view", theme: "neon" }} brandKit={brandKit} />;
+export const DeploymentStatusHealthDashboardDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "health-dashboard", theme: "dark" }} brandKit={brandKit} />;
+export const DeploymentStatusHealthDashboardNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <DeploymentStatus spec={{ ...BASE_SPEC, layout: "health-dashboard", theme: "neon" }} brandKit={brandKit} />;

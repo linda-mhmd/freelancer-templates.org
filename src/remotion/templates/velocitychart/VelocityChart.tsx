@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, ProgressBar,
   SplitPanelShell, ComparisonShell, HeroStatShell,
   TYPE,
@@ -26,10 +26,10 @@ export interface VelocityChartSpec {
   layout?: "bar-chart" | "trend-line" | "summary";
 }
 
-export const VelocityChart: React.FC<{ spec: VelocityChartSpec }> = ({ spec }) => {
+export const VelocityChart: React.FC<{ spec: VelocityChartSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "bar-chart";
 
   if (layout === "trend-line") {

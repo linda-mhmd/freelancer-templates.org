@@ -1,5 +1,6 @@
 import React from "react";
 import { TravelItinerary, TravelItinerarySpec } from "./TravelItinerary";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: TravelItinerarySpec = {
   trip_title: "5 Days in Japan",
@@ -16,9 +17,9 @@ const BASE_SPEC: TravelItinerarySpec = {
   summary: "A whirlwind tour through Japan's cultural heartland",
 };
 
-export const TravelItineraryDayByDayWarm: React.FC = () => <TravelItinerary spec={{ ...BASE_SPEC, layout: "day-by-day", theme: "warm" }} />;
-export const TravelItineraryDayByDayBold: React.FC = () => <TravelItinerary spec={{ ...BASE_SPEC, layout: "day-by-day", theme: "bold" }} />;
-export const TravelItineraryRouteOverviewWarm: React.FC = () => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "warm" }} />;
-export const TravelItineraryRouteOverviewBold: React.FC = () => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "bold" }} />;
-export const TravelItineraryHighlightsWarm: React.FC = () => <TravelItinerary spec={{ ...BASE_SPEC, layout: "highlights", theme: "warm" }} />;
-export const TravelItineraryHighlightsBold: React.FC = () => <TravelItinerary spec={{ ...BASE_SPEC, layout: "highlights", theme: "bold" }} />;
+export const TravelItineraryDayByDayWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "day-by-day", theme: "warm" }} brandKit={brandKit} />;
+export const TravelItineraryDayByDayBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "day-by-day", theme: "bold" }} brandKit={brandKit} />;
+export const TravelItineraryRouteOverviewWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "warm" }} brandKit={brandKit} />;
+export const TravelItineraryRouteOverviewBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "route-overview", theme: "bold" }} brandKit={brandKit} />;
+export const TravelItineraryHighlightsWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "highlights", theme: "warm" }} brandKit={brandKit} />;
+export const TravelItineraryHighlightsBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <TravelItinerary spec={{ ...BASE_SPEC, layout: "highlights", theme: "bold" }} brandKit={brandKit} />;

@@ -13,7 +13,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StatusBadge, ProgressBar,
   HeroStatShell, CardGridShell, TimelineShell,
   TYPE,
@@ -38,10 +38,10 @@ export interface SprintDashboardSpec {
 
 // ── Component ───────────────────────────────────────────────────
 
-export const SprintDashboard: React.FC<{ spec: SprintDashboardSpec }> = ({ spec }) => {
+export const SprintDashboard: React.FC<{ spec: SprintDashboardSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "kanban";
 
   if (layout === "velocity") {

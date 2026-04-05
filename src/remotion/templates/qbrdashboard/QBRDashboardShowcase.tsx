@@ -1,5 +1,6 @@
 import React from "react";
 import { QBRDashboard, QBRDashboardSpec } from "./QBRDashboard";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: QBRDashboardSpec = {
   business_name: "Freelance Automation",
@@ -20,9 +21,9 @@ const BASE_SPEC: QBRDashboardSpec = {
   total_projects: 18,
 };
 
-export const QBRDashboardExecutiveDark: React.FC = () => <QBRDashboard spec={{ ...BASE_SPEC, layout: "executive", theme: "dark" }} />;
-export const QBRDashboardExecutiveClean: React.FC = () => <QBRDashboard spec={{ ...BASE_SPEC, layout: "executive", theme: "clean" }} />;
-export const QBRDashboardDetailedDark: React.FC = () => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "dark" }} />;
-export const QBRDashboardDetailedClean: React.FC = () => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "clean" }} />;
-export const QBRDashboardComparisonDark: React.FC = () => <QBRDashboard spec={{ ...BASE_SPEC, layout: "comparison", theme: "dark" }} />;
-export const QBRDashboardComparisonClean: React.FC = () => <QBRDashboard spec={{ ...BASE_SPEC, layout: "comparison", theme: "clean" }} />;
+export const QBRDashboardExecutiveDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "executive", theme: "dark" }} brandKit={brandKit} />;
+export const QBRDashboardExecutiveClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "executive", theme: "clean" }} brandKit={brandKit} />;
+export const QBRDashboardDetailedDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "dark" }} brandKit={brandKit} />;
+export const QBRDashboardDetailedClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "detailed", theme: "clean" }} brandKit={brandKit} />;
+export const QBRDashboardComparisonDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "comparison", theme: "dark" }} brandKit={brandKit} />;
+export const QBRDashboardComparisonClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <QBRDashboard spec={{ ...BASE_SPEC, layout: "comparison", theme: "clean" }} brandKit={brandKit} />;

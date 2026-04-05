@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, ProgressBar, StatusBadge,
   HeroStatShell, ContributorShell, StatusBoardShell,
   TYPE,
@@ -32,10 +32,10 @@ export interface ProjectHealthSpec {
   layout?: "health-scorecard" | "workstream-view" | "executive-summary";
 }
 
-export const ProjectHealth: React.FC<{ spec: ProjectHealthSpec }> = ({ spec }) => {
+export const ProjectHealth: React.FC<{ spec: ProjectHealthSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "health-scorecard";
 
   if (layout === "workstream-view") {

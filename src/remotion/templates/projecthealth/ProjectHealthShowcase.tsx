@@ -1,5 +1,6 @@
 import React from "react";
 import { ProjectHealth, ProjectHealthSpec } from "./ProjectHealth";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: ProjectHealthSpec = {
   project_name: "Freelance Automation",
@@ -22,9 +23,9 @@ const BASE_SPEC: ProjectHealthSpec = {
   ],
 };
 
-export const ProjectHealthHealthScorecardDark: React.FC = () => <ProjectHealth spec={{ ...BASE_SPEC, layout: "health-scorecard", theme: "dark" }} />;
-export const ProjectHealthHealthScorecardWarm: React.FC = () => <ProjectHealth spec={{ ...BASE_SPEC, layout: "health-scorecard", theme: "warm" }} />;
-export const ProjectHealthWorkstreamViewDark: React.FC = () => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "dark" }} />;
-export const ProjectHealthWorkstreamViewWarm: React.FC = () => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "warm" }} />;
-export const ProjectHealthExecutiveSummaryDark: React.FC = () => <ProjectHealth spec={{ ...BASE_SPEC, layout: "executive-summary", theme: "dark" }} />;
-export const ProjectHealthExecutiveSummaryWarm: React.FC = () => <ProjectHealth spec={{ ...BASE_SPEC, layout: "executive-summary", theme: "warm" }} />;
+export const ProjectHealthHealthScorecardDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "health-scorecard", theme: "dark" }} brandKit={brandKit} />;
+export const ProjectHealthHealthScorecardWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "health-scorecard", theme: "warm" }} brandKit={brandKit} />;
+export const ProjectHealthWorkstreamViewDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "dark" }} brandKit={brandKit} />;
+export const ProjectHealthWorkstreamViewWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "workstream-view", theme: "warm" }} brandKit={brandKit} />;
+export const ProjectHealthExecutiveSummaryDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "executive-summary", theme: "dark" }} brandKit={brandKit} />;
+export const ProjectHealthExecutiveSummaryWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectHealth spec={{ ...BASE_SPEC, layout: "executive-summary", theme: "warm" }} brandKit={brandKit} />;

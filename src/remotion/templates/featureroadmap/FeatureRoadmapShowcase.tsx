@@ -1,5 +1,6 @@
 import React from "react";
 import { FeatureRoadmap, FeatureRoadmapSpec } from "./FeatureRoadmap";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: FeatureRoadmapSpec = {
   product_name: "Sisy",
@@ -15,9 +16,9 @@ const BASE_SPEC: FeatureRoadmapSpec = {
   ],
 };
 
-export const FeatureRoadmapTimelineDark: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "dark" }} />;
-export const FeatureRoadmapTimelineClean: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "clean" }} />;
-export const FeatureRoadmapSwimlaneDark: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "dark" }} />;
-export const FeatureRoadmapSwimlaneClean: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "clean" }} />;
-export const FeatureRoadmapGridDark: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "dark" }} />;
-export const FeatureRoadmapGridClean: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "clean" }} />;
+export const FeatureRoadmapTimelineDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "dark" }} brandKit={brandKit} />;
+export const FeatureRoadmapTimelineClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "clean" }} brandKit={brandKit} />;
+export const FeatureRoadmapSwimlaneDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "dark" }} brandKit={brandKit} />;
+export const FeatureRoadmapSwimlaneClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "clean" }} brandKit={brandKit} />;
+export const FeatureRoadmapGridDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "dark" }} brandKit={brandKit} />;
+export const FeatureRoadmapGridClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "clean" }} brandKit={brandKit} />;

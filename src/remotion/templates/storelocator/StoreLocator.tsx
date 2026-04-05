@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, GradientBadge,
   CardGridShell, StatusBoardShell, CategoryGroupShell,
   TYPE,
@@ -26,10 +26,10 @@ export interface StoreLocatorSpec {
   layout?: "finder" | "map-pins" | "directory";
 }
 
-export const StoreLocator: React.FC<{ spec: StoreLocatorSpec }> = ({ spec }) => {
+export const StoreLocator: React.FC<{ spec: StoreLocatorSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "clean"] ?? THEMES.clean;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "clean"] ?? THEMES.clean, brandKit);
   const layout = spec.layout ?? "finder";
 
   if (layout === "map-pins") {

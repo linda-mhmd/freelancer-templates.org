@@ -1,5 +1,6 @@
 import React from "react";
 import { IntegrationStatus, IntegrationStatusSpec } from "./IntegrationStatus";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: IntegrationStatusSpec = {
   board_title: "Freelance Automation - Integrations",
@@ -14,9 +15,9 @@ const BASE_SPEC: IntegrationStatusSpec = {
   summary: { total: 6, connected: 4, degraded: 1, disconnected: 1 },
 };
 
-export const IntegrationStatusStatusWallDark: React.FC = () => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "status-wall", theme: "dark" }} />;
-export const IntegrationStatusStatusWallClean: React.FC = () => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "status-wall", theme: "clean" }} />;
-export const IntegrationStatusCategoryGroupsDark: React.FC = () => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "dark" }} />;
-export const IntegrationStatusCategoryGroupsClean: React.FC = () => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "clean" }} />;
-export const IntegrationStatusHealthMonitorDark: React.FC = () => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "health-monitor", theme: "dark" }} />;
-export const IntegrationStatusHealthMonitorClean: React.FC = () => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "health-monitor", theme: "clean" }} />;
+export const IntegrationStatusStatusWallDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "status-wall", theme: "dark" }} brandKit={brandKit} />;
+export const IntegrationStatusStatusWallClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "status-wall", theme: "clean" }} brandKit={brandKit} />;
+export const IntegrationStatusCategoryGroupsDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "dark" }} brandKit={brandKit} />;
+export const IntegrationStatusCategoryGroupsClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "category-groups", theme: "clean" }} brandKit={brandKit} />;
+export const IntegrationStatusHealthMonitorDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "health-monitor", theme: "dark" }} brandKit={brandKit} />;
+export const IntegrationStatusHealthMonitorClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <IntegrationStatus spec={{ ...BASE_SPEC, layout: "health-monitor", theme: "clean" }} brandKit={brandKit} />;

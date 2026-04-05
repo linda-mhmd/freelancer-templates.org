@@ -1,5 +1,6 @@
 import React from "react";
 import { PinCollection, PinCollectionSpec } from "./PinCollection";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: PinCollectionSpec = {
   collection_title: "Best Brunch Spots in Vienna",
@@ -16,9 +17,9 @@ const BASE_SPEC: PinCollectionSpec = {
   region: "Vienna, Austria",
 };
 
-export const PinCollectionCardGalleryWarm: React.FC = () => <PinCollection spec={{ ...BASE_SPEC, layout: "card-gallery", theme: "warm" }} />;
-export const PinCollectionCardGalleryClean: React.FC = () => <PinCollection spec={{ ...BASE_SPEC, layout: "card-gallery", theme: "clean" }} />;
-export const PinCollectionMapListWarm: React.FC = () => <PinCollection spec={{ ...BASE_SPEC, layout: "map-list", theme: "warm" }} />;
-export const PinCollectionMapListClean: React.FC = () => <PinCollection spec={{ ...BASE_SPEC, layout: "map-list", theme: "clean" }} />;
-export const PinCollectionCategoryGridWarm: React.FC = () => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "warm" }} />;
-export const PinCollectionCategoryGridClean: React.FC = () => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "clean" }} />;
+export const PinCollectionCardGalleryWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "card-gallery", theme: "warm" }} brandKit={brandKit} />;
+export const PinCollectionCardGalleryClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "card-gallery", theme: "clean" }} brandKit={brandKit} />;
+export const PinCollectionMapListWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "map-list", theme: "warm" }} brandKit={brandKit} />;
+export const PinCollectionMapListClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "map-list", theme: "clean" }} brandKit={brandKit} />;
+export const PinCollectionCategoryGridWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "warm" }} brandKit={brandKit} />;
+export const PinCollectionCategoryGridClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PinCollection spec={{ ...BASE_SPEC, layout: "category-grid", theme: "clean" }} brandKit={brandKit} />;

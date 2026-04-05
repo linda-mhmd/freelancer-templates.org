@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, GradientBadge,
   TimelineShell, HeroStatShell,
   TYPE,
@@ -27,10 +27,10 @@ export interface TravelItinerarySpec {
   layout?: "day-by-day" | "route-overview" | "highlights";
 }
 
-export const TravelItinerary: React.FC<{ spec: TravelItinerarySpec }> = ({ spec }) => {
+export const TravelItinerary: React.FC<{ spec: TravelItinerarySpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "warm"] ?? THEMES.warm;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "warm"] ?? THEMES.warm, brandKit);
   const layout = spec.layout ?? "day-by-day";
 
   if (layout === "route-overview") {

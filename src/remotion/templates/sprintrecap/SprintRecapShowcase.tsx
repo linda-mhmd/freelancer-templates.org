@@ -1,5 +1,6 @@
 import React from "react";
 import { SprintRecap, SprintRecapSpec } from "./SprintRecap";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: SprintRecapSpec = {
   sprint_name: "Sisy Sprint 14 Recap",
@@ -17,9 +18,9 @@ const BASE_SPEC: SprintRecapSpec = {
   next_sprint_preview: "Mobile responsive dashboard and notification system",
 };
 
-export const SprintRecapShippedListDark: React.FC = () => <SprintRecap spec={{ ...BASE_SPEC, layout: "shipped-list", theme: "dark" }} />;
-export const SprintRecapShippedListBold: React.FC = () => <SprintRecap spec={{ ...BASE_SPEC, layout: "shipped-list", theme: "bold" }} />;
-export const SprintRecapHighlightCardsDark: React.FC = () => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "dark" }} />;
-export const SprintRecapHighlightCardsBold: React.FC = () => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "bold" }} />;
-export const SprintRecapTeamContributionsDark: React.FC = () => <SprintRecap spec={{ ...BASE_SPEC, layout: "team-contributions", theme: "dark" }} />;
-export const SprintRecapTeamContributionsBold: React.FC = () => <SprintRecap spec={{ ...BASE_SPEC, layout: "team-contributions", theme: "bold" }} />;
+export const SprintRecapShippedListDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "shipped-list", theme: "dark" }} brandKit={brandKit} />;
+export const SprintRecapShippedListBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "shipped-list", theme: "bold" }} brandKit={brandKit} />;
+export const SprintRecapHighlightCardsDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "dark" }} brandKit={brandKit} />;
+export const SprintRecapHighlightCardsBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "highlight-cards", theme: "bold" }} brandKit={brandKit} />;
+export const SprintRecapTeamContributionsDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "team-contributions", theme: "dark" }} brandKit={brandKit} />;
+export const SprintRecapTeamContributionsBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <SprintRecap spec={{ ...BASE_SPEC, layout: "team-contributions", theme: "bold" }} brandKit={brandKit} />;

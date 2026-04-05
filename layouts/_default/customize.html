@@ -142,7 +142,7 @@
         <span class="cz-step__num">3</span>
         <div>
           <h2 class="cz-step__title">Template preview</h2>
-          <p class="cz-step__sub" id="czPreviewSub">Upload your logo to see all templates in your brand colors.</p>
+          <p class="cz-step__sub" id="czPreviewSub">Upload your logo to see all 56 template types with live previews in your brand colors.</p>
         </div>
       </div>
 
@@ -156,19 +156,15 @@
 
       <div class="cz-tpl-grid" id="czPreviewWrapper">
         {{ range .Site.Data.templates }}
-        <div class="cz-tpl-card" data-slug="{{ .slug }}">
-          <div class="cz-tpl-card__bar"></div>
+        <div class="cz-tpl-card" data-slug="{{ .slug }}" data-comp="{{ .primaryId }}">
+          <div class="cz-tpl-card__preview">
+            <img class="cz-tpl-card__img"
+                 src="{{ (printf "previews/showcase/%s.png" .primaryId) | relURL }}"
+                 alt="{{ .name }}" loading="lazy">
+          </div>
           <div class="cz-tpl-card__body">
-            <div class="cz-tpl-card__icon-wrap">
-              <i data-lucide="{{ .icon }}"></i>
-            </div>
             <h3 class="cz-tpl-card__name">{{ .name }}</h3>
             <p class="cz-tpl-card__desc">{{ .description }}</p>
-            <div class="cz-tpl-card__dots" aria-hidden="true">
-              <span class="cz-dot cz-dot--primary"></span>
-              <span class="cz-dot cz-dot--accent"></span>
-              <span class="cz-dot cz-dot--secondary"></span>
-            </div>
           </div>
           <div class="cz-tpl-card__foot">
             <span class="cz-tpl-card__count">{{ .variantCount }} variants</span>
@@ -403,11 +399,12 @@
       step2.hidden = false;
 
       var sub = el('czPreviewSub');
-      if (sub) sub.textContent = 'All 54 template types shown in your brand colors. Click View to open any template.';
+      if (sub) sub.textContent = 'All 56 template types - live previews load as you scroll. Click View to open any template.';
 
       var assigned = autoAssign(colors.length ? colors : []);
       renderSwatches(colors.length ? colors : Object.values(assigned).slice(0, 3));
       updateAllRoles(assigned);
+      activateLivePreviews();
 
       step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     };
@@ -554,11 +551,57 @@
     }, 300);
   }
 
-  // Wrap updateRole so iframes refresh on every color change.
+  // ---- Template grid: lazy iframe injection via IntersectionObserver ----
+
+  var cardObserver = null;
+  var livePreviewing = false;
+  var tplIframeTimer = null;
+
+  function injectCardIframe(card) {
+    var comp = card.dataset.comp;
+    if (!comp) return;
+    if (card.querySelector('.cz-tpl-card__iframe')) return; // already injected
+    var preview = card.querySelector('.cz-tpl-card__preview');
+    if (!preview) return;
+    var iframe = document.createElement('iframe');
+    iframe.className = 'cz-tpl-card__iframe';
+    iframe.title = (card.querySelector('.cz-tpl-card__name') || {}).textContent + ' live preview';
+    iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+    iframe.addEventListener('load', function () { iframe.classList.add('is-loaded'); });
+    iframe.src = buildIframeSrc(comp);
+    preview.appendChild(iframe);
+  }
+
+  function activateLivePreviews() {
+    if (livePreviewing) return;
+    livePreviewing = true;
+    cardObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) injectCardIframe(entry.target);
+      });
+    }, { rootMargin: '300px 0px' });
+    document.querySelectorAll('.cz-tpl-card[data-comp]').forEach(function (c) {
+      cardObserver.observe(c);
+    });
+  }
+
+  function updateTemplateIframes() {
+    clearTimeout(tplIframeTimer);
+    tplIframeTimer = setTimeout(function () {
+      document.querySelectorAll('.cz-tpl-card__iframe').forEach(function (iframe) {
+        var card = iframe.closest('.cz-tpl-card');
+        var comp = card && card.dataset.comp;
+        if (comp) iframe.src = buildIframeSrc(comp);
+      });
+    }, 400);
+  }
+
+  // Wrap updateRole so all iframes refresh on every color change.
   var _origUpdateRole = updateRole;
   updateRole = function (role, hex) {
     _origUpdateRole(role, hex);
     updateFeaturedIframes();
+    if (livePreviewing) updateTemplateIframes();
   };
 
   // ---- Init ----

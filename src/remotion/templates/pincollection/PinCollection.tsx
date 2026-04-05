@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StarRating, GradientBadge,
   ListDetailShell, SplitPanelShell, CategoryGroupShell,
   TYPE,
@@ -27,10 +27,10 @@ export interface PinCollectionSpec {
   layout?: "card-gallery" | "map-list" | "category-grid";
 }
 
-export const PinCollection: React.FC<{ spec: PinCollectionSpec }> = ({ spec }) => {
+export const PinCollection: React.FC<{ spec: PinCollectionSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "warm"] ?? THEMES.warm;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "warm"] ?? THEMES.warm, brandKit);
   const layout = spec.layout ?? "card-gallery";
 
   if (layout === "map-list") {

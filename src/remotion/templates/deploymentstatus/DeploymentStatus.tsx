@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StatusBadge, GradientBadge,
   ListDetailShell, PipelineShell, StatusBoardShell,
   TYPE,
@@ -25,10 +25,10 @@ export interface DeploymentStatusSpec {
   layout?: "environment-cards" | "pipeline-view" | "health-dashboard";
 }
 
-export const DeploymentStatus: React.FC<{ spec: DeploymentStatusSpec }> = ({ spec }) => {
+export const DeploymentStatus: React.FC<{ spec: DeploymentStatusSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "environment-cards";
 
   if (layout === "pipeline-view") {

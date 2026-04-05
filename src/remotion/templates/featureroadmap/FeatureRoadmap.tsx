@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StatusBadge, ProgressBar,
   TimelineShell, CategoryGroupShell, CardGridShell,
   TYPE,
@@ -25,10 +25,10 @@ export interface FeatureRoadmapSpec {
   layout?: "timeline" | "swimlane" | "grid";
 }
 
-export const FeatureRoadmap: React.FC<{ spec: FeatureRoadmapSpec }> = ({ spec }) => {
+export const FeatureRoadmap: React.FC<{ spec: FeatureRoadmapSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "timeline";
 
   if (layout === "swimlane") {

@@ -1,5 +1,6 @@
 import React from "react";
 import { BugTracker, BugTrackerSpec } from "./BugTracker";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: BugTrackerSpec = {
   project_name: "Sisy",
@@ -17,9 +18,9 @@ const BASE_SPEC: BugTrackerSpec = {
   resolution_rate: 73,
 };
 
-export const BugTrackerSeverityMatrixDark: React.FC = () => <BugTracker spec={{ ...BASE_SPEC, layout: "severity-matrix", theme: "dark" }} />;
-export const BugTrackerSeverityMatrixBold: React.FC = () => <BugTracker spec={{ ...BASE_SPEC, layout: "severity-matrix", theme: "bold" }} />;
-export const BugTrackerTriageBoardDark: React.FC = () => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "dark" }} />;
-export const BugTrackerTriageBoardBold: React.FC = () => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "bold" }} />;
-export const BugTrackerOverviewDark: React.FC = () => <BugTracker spec={{ ...BASE_SPEC, layout: "overview", theme: "dark" }} />;
-export const BugTrackerOverviewBold: React.FC = () => <BugTracker spec={{ ...BASE_SPEC, layout: "overview", theme: "bold" }} />;
+export const BugTrackerSeverityMatrixDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "severity-matrix", theme: "dark" }} brandKit={brandKit} />;
+export const BugTrackerSeverityMatrixBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "severity-matrix", theme: "bold" }} brandKit={brandKit} />;
+export const BugTrackerTriageBoardDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "dark" }} brandKit={brandKit} />;
+export const BugTrackerTriageBoardBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "triage-board", theme: "bold" }} brandKit={brandKit} />;
+export const BugTrackerOverviewDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "overview", theme: "dark" }} brandKit={brandKit} />;
+export const BugTrackerOverviewBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <BugTracker spec={{ ...BASE_SPEC, layout: "overview", theme: "bold" }} brandKit={brandKit} />;

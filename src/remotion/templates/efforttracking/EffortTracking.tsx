@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, ProgressBar,
   HeroStatShell, SplitPanelShell, ContributorShell,
   TYPE,
@@ -28,10 +28,10 @@ export interface EffortTrackingSpec {
   layout?: "team-allocation" | "capacity" | "breakdown";
 }
 
-export const EffortTracking: React.FC<{ spec: EffortTrackingSpec }> = ({ spec }) => {
+export const EffortTracking: React.FC<{ spec: EffortTrackingSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "team-allocation";
 
   if (layout === "capacity") {

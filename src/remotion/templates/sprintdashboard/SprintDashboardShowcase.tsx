@@ -4,6 +4,7 @@
 
 import React from "react";
 import { SprintDashboard, SprintDashboardSpec } from "./SprintDashboard";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: SprintDashboardSpec = {
   sprint_name: "Sprint 14 - Auth & Dashboard",
@@ -30,20 +31,20 @@ const BASE_SPEC: SprintDashboardSpec = {
 };
 
 export const SprintDashboardKanbanDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "dark" }} />
+  <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "dark" }} brandKit={brandKit} />
 );
 export const SprintDashboardKanbanBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "bold" }} />
+  <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "bold" }} brandKit={brandKit} />
 );
 export const SprintDashboardVelocityDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "dark" }} />
+  <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "dark" }} brandKit={brandKit} />
 );
 export const SprintDashboardVelocityBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "bold" }} />
+  <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "bold" }} brandKit={brandKit} />
 );
 export const SprintDashboardBurndownDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "dark" }} />
+  <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "dark" }} brandKit={brandKit} />
 );
 export const SprintDashboardBurndownBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "bold" }} />
+  <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "bold" }} brandKit={brandKit} />
 );

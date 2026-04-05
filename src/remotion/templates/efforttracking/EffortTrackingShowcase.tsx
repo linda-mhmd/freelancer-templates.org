@@ -1,5 +1,6 @@
 import React from "react";
 import { EffortTracking, EffortTrackingSpec } from "./EffortTracking";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: EffortTrackingSpec = {
   project_name: "Sisy",
@@ -15,9 +16,9 @@ const BASE_SPEC: EffortTrackingSpec = {
   capacity_utilization: 88,
 };
 
-export const EffortTrackingTeamAllocationDark: React.FC = () => <EffortTracking spec={{ ...BASE_SPEC, layout: "team-allocation", theme: "dark" }} />;
-export const EffortTrackingTeamAllocationWarm: React.FC = () => <EffortTracking spec={{ ...BASE_SPEC, layout: "team-allocation", theme: "warm" }} />;
-export const EffortTrackingCapacityDark: React.FC = () => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "dark" }} />;
-export const EffortTrackingCapacityWarm: React.FC = () => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "warm" }} />;
-export const EffortTrackingBreakdownDark: React.FC = () => <EffortTracking spec={{ ...BASE_SPEC, layout: "breakdown", theme: "dark" }} />;
-export const EffortTrackingBreakdownWarm: React.FC = () => <EffortTracking spec={{ ...BASE_SPEC, layout: "breakdown", theme: "warm" }} />;
+export const EffortTrackingTeamAllocationDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "team-allocation", theme: "dark" }} brandKit={brandKit} />;
+export const EffortTrackingTeamAllocationWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "team-allocation", theme: "warm" }} brandKit={brandKit} />;
+export const EffortTrackingCapacityDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "dark" }} brandKit={brandKit} />;
+export const EffortTrackingCapacityWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "capacity", theme: "warm" }} brandKit={brandKit} />;
+export const EffortTrackingBreakdownDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "breakdown", theme: "dark" }} brandKit={brandKit} />;
+export const EffortTrackingBreakdownWarm: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <EffortTracking spec={{ ...BASE_SPEC, layout: "breakdown", theme: "warm" }} brandKit={brandKit} />;

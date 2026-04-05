@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StatusBadge, CountUp,
   CardGridShell, CategoryGroupShell, StatusBoardShell,
   TYPE,
@@ -24,10 +24,10 @@ export interface IntegrationStatusSpec {
   layout?: "status-wall" | "category-groups" | "health-monitor";
 }
 
-export const IntegrationStatus: React.FC<{ spec: IntegrationStatusSpec }> = ({ spec }) => {
+export const IntegrationStatus: React.FC<{ spec: IntegrationStatusSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "status-wall";
 
   if (layout === "category-groups") {

@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StarRating, GradientBadge,
   CategoryGroupShell, ListDetailShell, HeroStatShell,
   TYPE,
@@ -27,10 +27,10 @@ export interface NeighborhoodGuideSpec {
   layout?: "explorer" | "highlights-reel" | "overview";
 }
 
-export const NeighborhoodGuide: React.FC<{ spec: NeighborhoodGuideSpec }> = ({ spec }) => {
+export const NeighborhoodGuide: React.FC<{ spec: NeighborhoodGuideSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "warm"] ?? THEMES.warm;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "warm"] ?? THEMES.warm, brandKit);
   const layout = spec.layout ?? "explorer";
 
   if (layout === "highlights-reel") {

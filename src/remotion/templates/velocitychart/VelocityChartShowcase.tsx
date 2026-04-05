@@ -1,5 +1,6 @@
 import React from "react";
 import { VelocityChart, VelocityChartSpec } from "./VelocityChart";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: VelocityChartSpec = {
   team_name: "Sisy Core Team",
@@ -16,9 +17,9 @@ const BASE_SPEC: VelocityChartSpec = {
   team_capacity: 42,
 };
 
-export const VelocityChartBarChartDark: React.FC = () => <VelocityChart spec={{ ...BASE_SPEC, layout: "bar-chart", theme: "dark" }} />;
-export const VelocityChartBarChartClean: React.FC = () => <VelocityChart spec={{ ...BASE_SPEC, layout: "bar-chart", theme: "clean" }} />;
-export const VelocityChartTrendLineDark: React.FC = () => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "dark" }} />;
-export const VelocityChartTrendLineClean: React.FC = () => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "clean" }} />;
-export const VelocityChartSummaryDark: React.FC = () => <VelocityChart spec={{ ...BASE_SPEC, layout: "summary", theme: "dark" }} />;
-export const VelocityChartSummaryClean: React.FC = () => <VelocityChart spec={{ ...BASE_SPEC, layout: "summary", theme: "clean" }} />;
+export const VelocityChartBarChartDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "bar-chart", theme: "dark" }} brandKit={brandKit} />;
+export const VelocityChartBarChartClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "bar-chart", theme: "clean" }} brandKit={brandKit} />;
+export const VelocityChartTrendLineDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "dark" }} brandKit={brandKit} />;
+export const VelocityChartTrendLineClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "trend-line", theme: "clean" }} brandKit={brandKit} />;
+export const VelocityChartSummaryDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "summary", theme: "dark" }} brandKit={brandKit} />;
+export const VelocityChartSummaryClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <VelocityChart spec={{ ...BASE_SPEC, layout: "summary", theme: "clean" }} brandKit={brandKit} />;

@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, GradientBadge,
   TimelineShell, HeroStatShell, SplitPanelShell,
   TYPE,
@@ -27,10 +27,10 @@ export interface ReleaseNotesSpec {
   layout?: "changelog" | "highlights" | "version-compare";
 }
 
-export const ReleaseNotes: React.FC<{ spec: ReleaseNotesSpec }> = ({ spec }) => {
+export const ReleaseNotes: React.FC<{ spec: ReleaseNotesSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "changelog";
 
   if (layout === "highlights") {

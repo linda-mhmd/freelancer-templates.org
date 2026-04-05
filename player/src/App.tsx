@@ -54,6 +54,9 @@ function formatCompName(id: string): string {
 
 // ── Main App ──────────────────────────────────────────────────────
 
+const THEME_FILTERS = ["all", "dark", "clean", "bold", "warm", "minimal", "neon", "lindamohamed"] as const;
+type ThemeFilter = (typeof THEME_FILTERS)[number];
+
 export const App: React.FC = () => {
   const embed = isEmbed();
   const initialId = getCompFromUrl();
@@ -62,6 +65,7 @@ export const App: React.FC = () => {
 
   const [active, setActive] = useState<CompSpec>(initialComp);
   const [search, setSearch] = useState("");
+  const [themeFilter, setThemeFilter] = useState<ThemeFilter>("all");
   const playerRef = useRef<PlayerRef>(null);
 
   const select = useCallback((comp: CompSpec) => {
@@ -70,24 +74,32 @@ export const App: React.FC = () => {
     playerRef.current?.seekTo(0);
   }, []);
 
-  // Keyboard navigation
+  // Keyboard navigation + theme shortcuts (1-8)
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement) return;
       if (e.key === "ArrowRight" || e.key === "ArrowDown") {
         const idx = COMPOSITIONS.indexOf(active);
         if (idx < COMPOSITIONS.length - 1) select(COMPOSITIONS[idx + 1]);
       } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
         const idx = COMPOSITIONS.indexOf(active);
         if (idx > 0) select(COMPOSITIONS[idx - 1]);
+      } else {
+        const num = parseInt(e.key, 10);
+        if (num >= 1 && num <= THEME_FILTERS.length) {
+          setThemeFilter(THEME_FILTERS[num - 1]);
+        }
       }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [active, select]);
 
-  const filtered = search.trim()
-    ? COMPOSITIONS.filter((c) => c.id.toLowerCase().includes(search.toLowerCase()))
-    : COMPOSITIONS;
+  const filtered = COMPOSITIONS.filter((c) => {
+    const matchesSearch = !search.trim() || c.id.toLowerCase().includes(search.toLowerCase());
+    const matchesTheme = themeFilter === "all" || c.id.toLowerCase().includes(`-${themeFilter}`);
+    return matchesSearch && matchesTheme;
+  });
 
   // Embed mode - player only
   if (embed) {
@@ -126,6 +138,21 @@ export const App: React.FC = () => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
+          <div style={styles.themeFilters}>
+            {THEME_FILTERS.map((t) => (
+              <button
+                key={t}
+                style={{
+                  ...styles.themeBtn,
+                  ...(themeFilter === t ? styles.themeBtnActive : {}),
+                }}
+                onClick={() => setThemeFilter(t)}
+                title={t === "all" ? "Show all themes" : `Show ${t} theme only`}
+              >
+                {t === "lindamohamed" ? "LM" : t === "all" ? "All" : t.charAt(0).toUpperCase() + t.slice(1)}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Composition list grouped by category */}
@@ -275,6 +302,29 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 12,
     color: "#e2e8f0",
     outline: "none",
+  },
+  themeFilters: {
+    display: "flex",
+    flexWrap: "wrap" as const,
+    gap: 4,
+    marginTop: 8,
+  },
+  themeBtn: {
+    padding: "3px 7px",
+    fontSize: 10,
+    fontWeight: 600,
+    letterSpacing: 0.3,
+    border: "1px solid #1e293b",
+    borderRadius: 4,
+    background: "transparent",
+    color: "#475569",
+    cursor: "pointer",
+    transition: "all .1s",
+  },
+  themeBtnActive: {
+    background: "#1e293b",
+    color: "#e2e8f0",
+    borderColor: "#4a90d9",
   },
   compList: {
     flex: 1,

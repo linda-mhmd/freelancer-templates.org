@@ -1,5 +1,6 @@
 import React from "react";
 import { StoreLocator, StoreLocatorSpec } from "./StoreLocator";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: StoreLocatorSpec = {
   brand_name: "PinBoard Maps",
@@ -15,9 +16,9 @@ const BASE_SPEC: StoreLocatorSpec = {
   regions_served: 3,
 };
 
-export const StoreLocatorFinderClean: React.FC = () => <StoreLocator spec={{ ...BASE_SPEC, layout: "finder", theme: "clean" }} />;
-export const StoreLocatorFinderMinimal: React.FC = () => <StoreLocator spec={{ ...BASE_SPEC, layout: "finder", theme: "minimal" }} />;
-export const StoreLocatorMapPinsClean: React.FC = () => <StoreLocator spec={{ ...BASE_SPEC, layout: "map-pins", theme: "clean" }} />;
-export const StoreLocatorMapPinsMinimal: React.FC = () => <StoreLocator spec={{ ...BASE_SPEC, layout: "map-pins", theme: "minimal" }} />;
-export const StoreLocatorDirectoryClean: React.FC = () => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "clean" }} />;
-export const StoreLocatorDirectoryMinimal: React.FC = () => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "minimal" }} />;
+export const StoreLocatorFinderClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "finder", theme: "clean" }} brandKit={brandKit} />;
+export const StoreLocatorFinderMinimal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "finder", theme: "minimal" }} brandKit={brandKit} />;
+export const StoreLocatorMapPinsClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "map-pins", theme: "clean" }} brandKit={brandKit} />;
+export const StoreLocatorMapPinsMinimal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "map-pins", theme: "minimal" }} brandKit={brandKit} />;
+export const StoreLocatorDirectoryClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "clean" }} brandKit={brandKit} />;
+export const StoreLocatorDirectoryMinimal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <StoreLocator spec={{ ...BASE_SPEC, layout: "directory", theme: "minimal" }} brandKit={brandKit} />;

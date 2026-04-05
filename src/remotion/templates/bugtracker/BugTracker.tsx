@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, StatusBadge, ProgressBar,
   StatusBoardShell, ContributorShell, HeroStatShell,
   TYPE,
@@ -27,10 +27,10 @@ export interface BugTrackerSpec {
   layout?: "severity-matrix" | "triage-board" | "overview";
 }
 
-export const BugTracker: React.FC<{ spec: BugTrackerSpec }> = ({ spec }) => {
+export const BugTracker: React.FC<{ spec: BugTrackerSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "severity-matrix";
 
   if (layout === "triage-board") {

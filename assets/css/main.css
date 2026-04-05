@@ -3016,13 +3016,33 @@ html.dark .footer__soc:hover { color: #001029; }
   border-color: var(--brand-primary, var(--accent));
   transform: translateY(-2px);
 }
-.cz-tpl-card__bar {
-  height: 4px;
-  background: linear-gradient(90deg,
-    var(--brand-primary, var(--accent)),
-    var(--brand-accent, var(--accent-hover))
-  );
+.cz-tpl-card__preview {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #050a12;
   flex-shrink: 0;
+  border-bottom: 1px solid #111d2e;
+}
+.cz-tpl-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cz-tpl-card__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.cz-tpl-card__iframe.is-loaded {
+  opacity: 1;
 }
 .cz-tpl-card__body {
   padding: 18px 16px 14px;
@@ -3228,4 +3248,158 @@ html.dark .footer__soc:hover { color: #001029; }
   .cz-tpl-grid { grid-template-columns: 1fr; }
   .cz-hero { padding: 48px 0 40px; }
   .cz-step { padding-top: 44px; }
+}
+
+/* ── Design System page ─────────────────────────────────────── */
+.ds-hero { padding: 80px 0 64px; text-align: center; }
+.ds-hero__title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: #f1f5f9; margin: 0 0 16px; line-height: 1.15; }
+.ds-hero__sub { font-size: 16px; color: #64748b; max-width: 640px; margin: 0 auto 32px; line-height: 1.7; }
+.ds-hero__actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.ds-section { padding: 64px 0; }
+.ds-section--alt { background: #060e1c; }
+.ds-section__hd { font-size: 22px; font-weight: 800; color: #f1f5f9; margin: 0 0 8px; }
+.ds-section__sub { font-size: 14px; color: #64748b; max-width: 600px; margin: 0 0 36px; line-height: 1.7; }
+
+/* Theme grid */
+.ds-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.ds-theme-card {
+  border-radius: var(--r-md);
+  border: 1px solid #1e293b;
+  overflow: hidden;
+  background: #0d1b2e;
+  display: flex;
+  flex-direction: column;
+}
+.ds-theme-card__preview {
+  padding: 20px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 90px;
+  position: relative;
+}
+.ds-theme-card__gradient {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+}
+.ds-theme-card__name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.ds-theme-card__const {
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.ds-theme-card__swatches {
+  display: flex;
+  gap: 6px;
+  padding: 12px 16px;
+  border-top: 1px solid #111d2e;
+}
+.ds-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: help;
+}
+.ds-theme-card__link {
+  display: block;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4a90d9;
+  text-decoration: none;
+  border-top: 1px solid #111d2e;
+  transition: background .15s;
+}
+.ds-theme-card__link:hover { background: #111d2e; }
+
+/* Theme interface section */
+.ds-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.ds-token-list { display: flex; flex-direction: column; gap: 16px; }
+.ds-token-group { display: flex; flex-direction: column; gap: 6px; }
+.ds-token-group__label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #475569; }
+.ds-token-group code { display: inline-block; font-size: 12px; color: #94a3b8; background: #0d1b2e; border-radius: 4px; padding: 2px 6px; margin: 1px 3px 1px 0; }
+
+/* Code card */
+.ds-code-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.ds-code-card__hd {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-bottom: 1px solid #1e293b;
+  font-size: 11px;
+}
+.ds-code-card__label { color: #475569; margin-left: 4px; }
+.ds-code-card__body {
+  padding: 16px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.75;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: #e2e8f0;
+  overflow-x: auto;
+}
+
+/* BrandKit fields */
+.ds-brandkit-fields { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+.ds-field { display: flex; flex-direction: column; gap: 3px; }
+.ds-field__name { font-size: 13px; color: #93c5fd; font-family: 'JetBrains Mono', monospace; }
+.ds-field__maps { font-size: 12px; color: #475569; }
+.ds-field__maps code { font-size: 11px; color: #94a3b8; background: #0d1b2e; border-radius: 3px; padding: 1px 5px; }
+.ds-cta-btn { display: inline-flex; align-items: center; gap: 8px; }
+
+/* Typography table */
+.ds-type-table { display: flex; flex-direction: column; gap: 0; border: 1px solid #1e293b; border-radius: var(--r-md); overflow: hidden; }
+.ds-type-row { display: grid; grid-template-columns: 160px 80px 1fr 60px; align-items: center; gap: 16px; padding: 14px 20px; border-bottom: 1px solid #111d2e; }
+.ds-type-row:last-child { border-bottom: none; }
+.ds-type-row--head { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #475569; background: #060e1c; padding: 10px 20px; }
+.ds-type-row code { font-size: 12px; color: #93c5fd; }
+.ds-type-size { font-size: 13px; font-weight: 700; color: #f1f5f9; font-variant-numeric: tabular-nums; }
+.ds-type-use { font-size: 12px; color: #64748b; }
+.ds-type-ex { color: #f1f5f9; font-family: 'Inter', sans-serif; }
+
+/* CTA box */
+.ds-cta-box {
+  background: #060e1c;
+  border: 1px solid #1e293b;
+  border-radius: var(--r-lg);
+  padding: 48px;
+  text-align: center;
+}
+.ds-cta-box__title { font-size: 26px; font-weight: 800; color: #f1f5f9; margin: 0 0 12px; }
+.ds-cta-box__sub { font-size: 14px; color: #64748b; max-width: 520px; margin: 0 auto 28px; line-height: 1.7; }
+.ds-cta-box__actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 768px) {
+  .ds-theme-grid { grid-template-columns: repeat(2, 1fr); }
+  .ds-two-col { grid-template-columns: 1fr; }
+  .ds-type-row { grid-template-columns: 130px 70px 1fr; }
+  .ds-type-row .ds-type-ex { display: none; }
+  .ds-cta-box { padding: 32px 20px; }
+}
+@media (max-width: 480px) {
+  .ds-theme-grid { grid-template-columns: 1fr; }
+  .ds-type-row { grid-template-columns: 120px 60px; }
+  .ds-type-use { display: none; }
 }

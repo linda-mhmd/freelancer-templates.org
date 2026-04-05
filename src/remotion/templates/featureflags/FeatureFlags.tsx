@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, ProgressBar, StatusBadge, GradientBadge,
   CardGridShell, ListDetailShell,
   TYPE,
@@ -25,10 +25,10 @@ export interface FeatureFlagsSpec {
   layout?: "experiment-board" | "results-view" | "rollout-tracker";
 }
 
-export const FeatureFlags: React.FC<{ spec: FeatureFlagsSpec }> = ({ spec }) => {
+export const FeatureFlags: React.FC<{ spec: FeatureFlagsSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "experiment-board";
 
   if (layout === "results-view") {

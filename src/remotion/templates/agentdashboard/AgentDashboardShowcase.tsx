@@ -1,5 +1,6 @@
 import React from "react";
 import { AgentDashboard, AgentDashboardSpec } from "./AgentDashboard";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: AgentDashboardSpec = {
   dashboard_title: "Freelance Automation - Agent Control",
@@ -16,9 +17,9 @@ const BASE_SPEC: AgentDashboardSpec = {
   ],
 };
 
-export const AgentDashboardControlPanelDark: React.FC = () => <AgentDashboard spec={{ ...BASE_SPEC, layout: "control-panel", theme: "dark" }} />;
-export const AgentDashboardControlPanelNeon: React.FC = () => <AgentDashboard spec={{ ...BASE_SPEC, layout: "control-panel", theme: "neon" }} />;
-export const AgentDashboardFlowDark: React.FC = () => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "dark" }} />;
-export const AgentDashboardFlowNeon: React.FC = () => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "neon" }} />;
-export const AgentDashboardMatrixDark: React.FC = () => <AgentDashboard spec={{ ...BASE_SPEC, layout: "matrix", theme: "dark" }} />;
-export const AgentDashboardMatrixNeon: React.FC = () => <AgentDashboard spec={{ ...BASE_SPEC, layout: "matrix", theme: "neon" }} />;
+export const AgentDashboardControlPanelDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "control-panel", theme: "dark" }} brandKit={brandKit} />;
+export const AgentDashboardControlPanelNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "control-panel", theme: "neon" }} brandKit={brandKit} />;
+export const AgentDashboardFlowDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "dark" }} brandKit={brandKit} />;
+export const AgentDashboardFlowNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "flow", theme: "neon" }} brandKit={brandKit} />;
+export const AgentDashboardMatrixDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "matrix", theme: "dark" }} brandKit={brandKit} />;
+export const AgentDashboardMatrixNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <AgentDashboard spec={{ ...BASE_SPEC, layout: "matrix", theme: "neon" }} brandKit={brandKit} />;

@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, ProgressBar, CountUp,
   PipelineShell, HeroStatShell,
   TYPE,
@@ -27,10 +27,10 @@ export interface ClientPipelineSpec {
   layout?: "funnel" | "pipeline-board" | "metrics";
 }
 
-export const ClientPipeline: React.FC<{ spec: ClientPipelineSpec }> = ({ spec }) => {
+export const ClientPipeline: React.FC<{ spec: ClientPipelineSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "funnel";
 
   if (layout === "metrics") {

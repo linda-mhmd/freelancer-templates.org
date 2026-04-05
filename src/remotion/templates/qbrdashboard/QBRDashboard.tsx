@@ -10,7 +10,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
 import {
-  THEMES, Theme,
+  THEMES, Theme, BrandKit, applyBrandKit,
   GlassCard, GradientBadge,
   HeroStatShell, ListDetailShell, ComparisonShell,
   TYPE,
@@ -29,10 +29,10 @@ export interface QBRDashboardSpec {
   layout?: "executive" | "detailed" | "comparison";
 }
 
-export const QBRDashboard: React.FC<{ spec: QBRDashboardSpec }> = ({ spec }) => {
+export const QBRDashboard: React.FC<{ spec: QBRDashboardSpec; brandKit?: BrandKit }> = ({ spec, brandKit }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme: Theme = THEMES[spec.theme ?? "dark"] ?? THEMES.dark;
+  const theme: Theme = applyBrandKit(THEMES[spec.theme ?? "dark"] ?? THEMES.dark, brandKit);
   const layout = spec.layout ?? "executive";
 
   if (layout === "detailed") {

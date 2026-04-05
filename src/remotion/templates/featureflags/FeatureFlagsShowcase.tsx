@@ -1,5 +1,6 @@
 import React from "react";
 import { FeatureFlags, FeatureFlagsSpec } from "./FeatureFlags";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: FeatureFlagsSpec = {
   project_name: "Sisy",
@@ -13,9 +14,9 @@ const BASE_SPEC: FeatureFlagsSpec = {
   total_flags: 4,
 };
 
-export const FeatureFlagsExperimentBoardDark: React.FC = () => <FeatureFlags spec={{ ...BASE_SPEC, layout: "experiment-board", theme: "dark" }} />;
-export const FeatureFlagsExperimentBoardNeon: React.FC = () => <FeatureFlags spec={{ ...BASE_SPEC, layout: "experiment-board", theme: "neon" }} />;
-export const FeatureFlagsResultsViewDark: React.FC = () => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "dark" }} />;
-export const FeatureFlagsResultsViewNeon: React.FC = () => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "neon" }} />;
-export const FeatureFlagsRolloutTrackerDark: React.FC = () => <FeatureFlags spec={{ ...BASE_SPEC, layout: "rollout-tracker", theme: "dark" }} />;
-export const FeatureFlagsRolloutTrackerNeon: React.FC = () => <FeatureFlags spec={{ ...BASE_SPEC, layout: "rollout-tracker", theme: "neon" }} />;
+export const FeatureFlagsExperimentBoardDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "experiment-board", theme: "dark" }} brandKit={brandKit} />;
+export const FeatureFlagsExperimentBoardNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "experiment-board", theme: "neon" }} brandKit={brandKit} />;
+export const FeatureFlagsResultsViewDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "dark" }} brandKit={brandKit} />;
+export const FeatureFlagsResultsViewNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "results-view", theme: "neon" }} brandKit={brandKit} />;
+export const FeatureFlagsRolloutTrackerDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "rollout-tracker", theme: "dark" }} brandKit={brandKit} />;
+export const FeatureFlagsRolloutTrackerNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <FeatureFlags spec={{ ...BASE_SPEC, layout: "rollout-tracker", theme: "neon" }} brandKit={brandKit} />;

@@ -1,5 +1,6 @@
 import React from "react";
 import { PlatformOverview, PlatformOverviewSpec } from "./PlatformOverview";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: PlatformOverviewSpec = {
   platform_name: "Freelance Automation",
@@ -19,9 +20,9 @@ const BASE_SPEC: PlatformOverviewSpec = {
   ],
 };
 
-export const PlatformOverviewCommandCenterDark: React.FC = () => <PlatformOverview spec={{ ...BASE_SPEC, layout: "command-center", theme: "dark" }} />;
-export const PlatformOverviewCommandCenterNeon: React.FC = () => <PlatformOverview spec={{ ...BASE_SPEC, layout: "command-center", theme: "neon" }} />;
-export const PlatformOverviewModuleGridDark: React.FC = () => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "dark" }} />;
-export const PlatformOverviewModuleGridNeon: React.FC = () => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "neon" }} />;
-export const PlatformOverviewStackDark: React.FC = () => <PlatformOverview spec={{ ...BASE_SPEC, layout: "stack", theme: "dark" }} />;
-export const PlatformOverviewStackNeon: React.FC = () => <PlatformOverview spec={{ ...BASE_SPEC, layout: "stack", theme: "neon" }} />;
+export const PlatformOverviewCommandCenterDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "command-center", theme: "dark" }} brandKit={brandKit} />;
+export const PlatformOverviewCommandCenterNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "command-center", theme: "neon" }} brandKit={brandKit} />;
+export const PlatformOverviewModuleGridDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "dark" }} brandKit={brandKit} />;
+export const PlatformOverviewModuleGridNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "module-grid", theme: "neon" }} brandKit={brandKit} />;
+export const PlatformOverviewStackDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "stack", theme: "dark" }} brandKit={brandKit} />;
+export const PlatformOverviewStackNeon: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <PlatformOverview spec={{ ...BASE_SPEC, layout: "stack", theme: "neon" }} brandKit={brandKit} />;

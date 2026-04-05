@@ -1,5 +1,6 @@
 import React from "react";
 import { ComponentInventory, ComponentInventorySpec } from "./ComponentInventory";
+import { BrandKit } from "../_shared/themes";
 
 const BASE_SPEC: ComponentInventorySpec = {
   system_name: "Sisy",
@@ -15,9 +16,9 @@ const BASE_SPEC: ComponentInventorySpec = {
   architecture_summary: "Microservices architecture with event-driven communication",
 };
 
-export const ComponentInventoryArchitectureGridDark: React.FC = () => <ComponentInventory spec={{ ...BASE_SPEC, layout: "architecture-grid", theme: "dark" }} />;
-export const ComponentInventoryArchitectureGridClean: React.FC = () => <ComponentInventory spec={{ ...BASE_SPEC, layout: "architecture-grid", theme: "clean" }} />;
-export const ComponentInventoryDependencyMapDark: React.FC = () => <ComponentInventory spec={{ ...BASE_SPEC, layout: "dependency-map", theme: "dark" }} />;
-export const ComponentInventoryDependencyMapClean: React.FC = () => <ComponentInventory spec={{ ...BASE_SPEC, layout: "dependency-map", theme: "clean" }} />;
-export const ComponentInventoryInventoryListDark: React.FC = () => <ComponentInventory spec={{ ...BASE_SPEC, layout: "inventory-list", theme: "dark" }} />;
-export const ComponentInventoryInventoryListClean: React.FC = () => <ComponentInventory spec={{ ...BASE_SPEC, layout: "inventory-list", theme: "clean" }} />;
+export const ComponentInventoryArchitectureGridDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ComponentInventory spec={{ ...BASE_SPEC, layout: "architecture-grid", theme: "dark" }} brandKit={brandKit} />;
+export const ComponentInventoryArchitectureGridClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ComponentInventory spec={{ ...BASE_SPEC, layout: "architecture-grid", theme: "clean" }} brandKit={brandKit} />;
+export const ComponentInventoryDependencyMapDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ComponentInventory spec={{ ...BASE_SPEC, layout: "dependency-map", theme: "dark" }} brandKit={brandKit} />;
+export const ComponentInventoryDependencyMapClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ComponentInventory spec={{ ...BASE_SPEC, layout: "dependency-map", theme: "clean" }} brandKit={brandKit} />;
+export const ComponentInventoryInventoryListDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ComponentInventory spec={{ ...BASE_SPEC, layout: "inventory-list", theme: "dark" }} brandKit={brandKit} />;
+export const ComponentInventoryInventoryListClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ComponentInventory spec={{ ...BASE_SPEC, layout: "inventory-list", theme: "clean" }} brandKit={brandKit} />;
