@@ -70,6 +70,9 @@ import { ProjectHealthHealthScorecardDark, ProjectHealthHealthScorecardWarm, Pro
 import { FeatureFlagsExperimentBoardDark, FeatureFlagsExperimentBoardNeon, FeatureFlagsResultsViewDark, FeatureFlagsResultsViewNeon, FeatureFlagsRolloutTrackerDark, FeatureFlagsRolloutTrackerNeon } from "@templates/featureflags/FeatureFlagsShowcase";
 import { BugTriagePriorityColumnsDark, BugTriagePriorityColumnsBold, BugTriageTriageListDark, BugTriageTriageListBold, BugTriageSummaryDashboardDark, BugTriageSummaryDashboardBold } from "@templates/bugtriage/BugTriageShowcase";
 import { ComponentInventoryArchitectureGridDark, ComponentInventoryArchitectureGridClean, ComponentInventoryDependencyMapDark, ComponentInventoryDependencyMapClean, ComponentInventoryInventoryListDark, ComponentInventoryInventoryListClean } from "@templates/componentinventory/ComponentInventoryShowcase";
+import { ConceptPitchArcDark, ConceptPitchArcBold, ConceptPitchBoardDark, ConceptPitchBoardBold, ConceptPitchBriefDark, ConceptPitchBriefBold } from "@templates/conceptpitch/ConceptPitchShowcase";
+import { ThoughtLeadershipEditorialDark, ThoughtLeadershipEditorialClean, ThoughtLeadershipNarrativeDark, ThoughtLeadershipNarrativeClean, ThoughtLeadershipKeynoteDark, ThoughtLeadershipKeynoteClean } from "@templates/thoughtleadership/ThoughtLeadershipShowcase";
+import { VideoFlowPipelineTutorial } from "@templates/youtubetuorial/tutorials/VideoFlowPipeline";
 
 // ── Registry ─────────────────────────────────────────────────────
 
@@ -485,6 +488,25 @@ export const COMPOSITIONS: CompSpec[] = [
   c("ComponentInventory-DependencyMapClean",    ComponentInventoryDependencyMapClean,    "componentinventory"),
   c("ComponentInventory-InventoryListDark",     ComponentInventoryInventoryListDark,     "componentinventory"),
   c("ComponentInventory-InventoryListClean",    ComponentInventoryInventoryListClean,    "componentinventory"),
+
+  // Concept Pitch
+  c("ConceptPitch-ArcDark",   ConceptPitchArcDark,   "conceptpitch"),
+  c("ConceptPitch-ArcBold",   ConceptPitchArcBold,   "conceptpitch"),
+  c("ConceptPitch-BoardDark", ConceptPitchBoardDark, "conceptpitch"),
+  c("ConceptPitch-BoardBold", ConceptPitchBoardBold, "conceptpitch"),
+  c("ConceptPitch-BriefDark", ConceptPitchBriefDark, "conceptpitch"),
+  c("ConceptPitch-BriefBold", ConceptPitchBriefBold, "conceptpitch"),
+
+  // Thought Leadership
+  c("ThoughtLeadership-EditorialDark",  ThoughtLeadershipEditorialDark,  "thoughtleadership"),
+  c("ThoughtLeadership-EditorialClean", ThoughtLeadershipEditorialClean, "thoughtleadership"),
+  c("ThoughtLeadership-NarrativeDark",  ThoughtLeadershipNarrativeDark,  "thoughtleadership"),
+  c("ThoughtLeadership-NarrativeClean", ThoughtLeadershipNarrativeClean, "thoughtleadership"),
+  c("ThoughtLeadership-KeynoteDark",    ThoughtLeadershipKeynoteDark,    "thoughtleadership"),
+  c("ThoughtLeadership-KeynoteClean",   ThoughtLeadershipKeynoteClean,   "thoughtleadership"),
+
+  // YouTube Tutorial
+  c("YouTubeTutorial-VideoFlowPipeline", VideoFlowPipelineTutorial, "youtubetuorial"),
 ];
 
 // ── Derived counts (auto-computed from registry) ─────────────────

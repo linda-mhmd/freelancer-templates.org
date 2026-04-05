@@ -397,37 +397,37 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "Faq-DarkAccordion",
+        "id": "FAQ-DarkAccordion",
         "name": "Dark Accordion",
         "style": "dark"
       },
       {
-        "id": "Faq-CleanCards",
+        "id": "FAQ-CleanCards",
         "name": "Clean Cards",
         "style": "clean"
       },
       {
-        "id": "Faq-BoldInterview",
+        "id": "FAQ-BoldInterview",
         "name": "Bold Interview",
         "style": "bold"
       },
       {
-        "id": "Faq-WarmAccordion",
+        "id": "FAQ-WarmAccordion",
         "name": "Warm Accordion",
         "style": "warm"
       },
       {
-        "id": "Faq-MinimalCards",
+        "id": "FAQ-MinimalCards",
         "name": "Minimal Cards",
         "style": "minimal"
       },
       {
-        "id": "Faq-NeonInterview",
+        "id": "FAQ-NeonInterview",
         "name": "Neon Interview",
         "style": "neon"
       }
     ],
-    "primaryId": "Faq-NeonInterview"
+    "primaryId": "FAQ-NeonInterview"
   },
   {
     "slug": "fitnessroutine",
@@ -1232,32 +1232,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "AgentDashboardControlPanelDark",
+        "id": "AgentDashboard-ControlPanelDark",
         "name": "Control Panel Dark",
         "style": "dark"
       },
       {
-        "id": "AgentDashboardControlPanelNeon",
+        "id": "AgentDashboard-ControlPanelNeon",
         "name": "Control Panel Neon",
         "style": "neon"
       },
       {
-        "id": "AgentDashboardFlowDark",
+        "id": "AgentDashboard-FlowDark",
         "name": "Flow Dark",
         "style": "dark"
       },
       {
-        "id": "AgentDashboardFlowNeon",
+        "id": "AgentDashboard-FlowNeon",
         "name": "Flow Neon",
         "style": "neon"
       },
       {
-        "id": "AgentDashboardMatrixDark",
+        "id": "AgentDashboard-MatrixDark",
         "name": "Matrix Dark",
         "style": "dark"
       },
       {
-        "id": "AgentDashboardMatrixNeon",
+        "id": "AgentDashboard-MatrixNeon",
         "name": "Matrix Neon",
         "style": "neon"
       }
@@ -1275,32 +1275,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "BugTrackerSeverityMatrixDark",
+        "id": "BugTracker-SeverityMatrixDark",
         "name": "Severity Matrix Dark",
         "style": "dark"
       },
       {
-        "id": "BugTrackerSeverityMatrixBold",
+        "id": "BugTracker-SeverityMatrixBold",
         "name": "Severity Matrix Bold",
         "style": "bold"
       },
       {
-        "id": "BugTrackerTriageBoardDark",
+        "id": "BugTracker-TriageBoardDark",
         "name": "Triage Board Dark",
         "style": "dark"
       },
       {
-        "id": "BugTrackerTriageBoardBold",
+        "id": "BugTracker-TriageBoardBold",
         "name": "Triage Board Bold",
         "style": "bold"
       },
       {
-        "id": "BugTrackerOverviewDark",
+        "id": "BugTracker-OverviewDark",
         "name": "Overview Dark",
         "style": "dark"
       },
       {
-        "id": "BugTrackerOverviewBold",
+        "id": "BugTracker-OverviewBold",
         "name": "Overview Bold",
         "style": "bold"
       }
@@ -1318,32 +1318,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "BugTriagePriorityColumnsDark",
+        "id": "BugTriage-PriorityColumnsDark",
         "name": "Priority Columns Dark",
         "style": "dark"
       },
       {
-        "id": "BugTriagePriorityColumnsBold",
+        "id": "BugTriage-PriorityColumnsBold",
         "name": "Priority Columns Bold",
         "style": "bold"
       },
       {
-        "id": "BugTriageTriageListDark",
+        "id": "BugTriage-TriageListDark",
         "name": "Triage List Dark",
         "style": "dark"
       },
       {
-        "id": "BugTriageTriageListBold",
+        "id": "BugTriage-TriageListBold",
         "name": "Triage List Bold",
         "style": "bold"
       },
       {
-        "id": "BugTriageSummaryDashboardDark",
+        "id": "BugTriage-SummaryDashboardDark",
         "name": "Summary Dashboard Dark",
         "style": "dark"
       },
       {
-        "id": "BugTriageSummaryDashboardBold",
+        "id": "BugTriage-SummaryDashboardBold",
         "name": "Summary Dashboard Bold",
         "style": "bold"
       }
@@ -1361,32 +1361,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "ClientPipelineFunnelDark",
+        "id": "ClientPipeline-FunnelDark",
         "name": "Funnel Dark",
         "style": "dark"
       },
       {
-        "id": "ClientPipelineFunnelWarm",
+        "id": "ClientPipeline-FunnelWarm",
         "name": "Funnel Warm",
         "style": "warm"
       },
       {
-        "id": "ClientPipelinePipelineBoardDark",
+        "id": "ClientPipeline-PipelineBoardDark",
         "name": "Pipeline Board Dark",
         "style": "dark"
       },
       {
-        "id": "ClientPipelinePipelineBoardWarm",
+        "id": "ClientPipeline-PipelineBoardWarm",
         "name": "Pipeline Board Warm",
         "style": "warm"
       },
       {
-        "id": "ClientPipelineMetricsDark",
+        "id": "ClientPipeline-MetricsDark",
         "name": "Metrics Dark",
         "style": "dark"
       },
       {
-        "id": "ClientPipelineMetricsWarm",
+        "id": "ClientPipeline-MetricsWarm",
         "name": "Metrics Warm",
         "style": "warm"
       }
@@ -1404,32 +1404,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "ComponentInventoryArchitectureGridDark",
+        "id": "ComponentInventory-ArchitectureGridDark",
         "name": "Architecture Grid Dark",
         "style": "dark"
       },
       {
-        "id": "ComponentInventoryArchitectureGridClean",
+        "id": "ComponentInventory-ArchitectureGridClean",
         "name": "Architecture Grid Clean",
         "style": "clean"
       },
       {
-        "id": "ComponentInventoryDependencyMapDark",
+        "id": "ComponentInventory-DependencyMapDark",
         "name": "Dependency Map Dark",
         "style": "dark"
       },
       {
-        "id": "ComponentInventoryDependencyMapClean",
+        "id": "ComponentInventory-DependencyMapClean",
         "name": "Dependency Map Clean",
         "style": "clean"
       },
       {
-        "id": "ComponentInventoryInventoryListDark",
+        "id": "ComponentInventory-InventoryListDark",
         "name": "Inventory List Dark",
         "style": "dark"
       },
       {
-        "id": "ComponentInventoryInventoryListClean",
+        "id": "ComponentInventory-InventoryListClean",
         "name": "Inventory List Clean",
         "style": "clean"
       }
@@ -1447,32 +1447,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "ConceptPitchArcDark",
+        "id": "ConceptPitch-ArcDark",
         "name": "Arc Dark",
         "style": "dark"
       },
       {
-        "id": "ConceptPitchArcBold",
+        "id": "ConceptPitch-ArcBold",
         "name": "Arc Bold",
         "style": "bold"
       },
       {
-        "id": "ConceptPitchBoardDark",
+        "id": "ConceptPitch-BoardDark",
         "name": "Board Dark",
         "style": "dark"
       },
       {
-        "id": "ConceptPitchBoardBold",
+        "id": "ConceptPitch-BoardBold",
         "name": "Board Bold",
         "style": "bold"
       },
       {
-        "id": "ConceptPitchBriefDark",
+        "id": "ConceptPitch-BriefDark",
         "name": "Brief Dark",
         "style": "dark"
       },
       {
-        "id": "ConceptPitchBriefBold",
+        "id": "ConceptPitch-BriefBold",
         "name": "Brief Bold",
         "style": "bold"
       }
@@ -1490,32 +1490,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "DeploymentStatusEnvironmentCardsDark",
+        "id": "DeploymentStatus-EnvironmentCardsDark",
         "name": "Environment Cards Dark",
         "style": "dark"
       },
       {
-        "id": "DeploymentStatusEnvironmentCardsNeon",
+        "id": "DeploymentStatus-EnvironmentCardsNeon",
         "name": "Environment Cards Neon",
         "style": "neon"
       },
       {
-        "id": "DeploymentStatusPipelineViewDark",
+        "id": "DeploymentStatus-PipelineViewDark",
         "name": "Pipeline View Dark",
         "style": "dark"
       },
       {
-        "id": "DeploymentStatusPipelineViewNeon",
+        "id": "DeploymentStatus-PipelineViewNeon",
         "name": "Pipeline View Neon",
         "style": "neon"
       },
       {
-        "id": "DeploymentStatusHealthDashboardDark",
+        "id": "DeploymentStatus-HealthDashboardDark",
         "name": "Health Dashboard Dark",
         "style": "dark"
       },
       {
-        "id": "DeploymentStatusHealthDashboardNeon",
+        "id": "DeploymentStatus-HealthDashboardNeon",
         "name": "Health Dashboard Neon",
         "style": "neon"
       }
@@ -1533,32 +1533,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "EffortTrackingTeamAllocationDark",
+        "id": "EffortTracking-TeamAllocationDark",
         "name": "Team Allocation Dark",
         "style": "dark"
       },
       {
-        "id": "EffortTrackingTeamAllocationWarm",
+        "id": "EffortTracking-TeamAllocationWarm",
         "name": "Team Allocation Warm",
         "style": "warm"
       },
       {
-        "id": "EffortTrackingCapacityDark",
+        "id": "EffortTracking-CapacityDark",
         "name": "Capacity Dark",
         "style": "dark"
       },
       {
-        "id": "EffortTrackingCapacityWarm",
+        "id": "EffortTracking-CapacityWarm",
         "name": "Capacity Warm",
         "style": "warm"
       },
       {
-        "id": "EffortTrackingBreakdownDark",
+        "id": "EffortTracking-BreakdownDark",
         "name": "Breakdown Dark",
         "style": "dark"
       },
       {
-        "id": "EffortTrackingBreakdownWarm",
+        "id": "EffortTracking-BreakdownWarm",
         "name": "Breakdown Warm",
         "style": "warm"
       }
@@ -1576,32 +1576,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "EventVenueScheduleMapDark",
+        "id": "EventVenue-ScheduleMapDark",
         "name": "Schedule Map Dark",
         "style": "dark"
       },
       {
-        "id": "EventVenueScheduleMapBold",
+        "id": "EventVenue-ScheduleMapBold",
         "name": "Schedule Map Bold",
         "style": "bold"
       },
       {
-        "id": "EventVenueVenueCardsDark",
+        "id": "EventVenue-VenueCardsDark",
         "name": "Venue Cards Dark",
         "style": "dark"
       },
       {
-        "id": "EventVenueVenueCardsBold",
+        "id": "EventVenue-VenueCardsBold",
         "name": "Venue Cards Bold",
         "style": "bold"
       },
       {
-        "id": "EventVenueEventOverviewDark",
+        "id": "EventVenue-EventOverviewDark",
         "name": "Event Overview Dark",
         "style": "dark"
       },
       {
-        "id": "EventVenueEventOverviewBold",
+        "id": "EventVenue-EventOverviewBold",
         "name": "Event Overview Bold",
         "style": "bold"
       }
@@ -1619,32 +1619,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "FeatureFlagsExperimentBoardDark",
+        "id": "FeatureFlags-ExperimentBoardDark",
         "name": "Experiment Board Dark",
         "style": "dark"
       },
       {
-        "id": "FeatureFlagsExperimentBoardNeon",
+        "id": "FeatureFlags-ExperimentBoardNeon",
         "name": "Experiment Board Neon",
         "style": "neon"
       },
       {
-        "id": "FeatureFlagsResultsViewDark",
+        "id": "FeatureFlags-ResultsViewDark",
         "name": "Results View Dark",
         "style": "dark"
       },
       {
-        "id": "FeatureFlagsResultsViewNeon",
+        "id": "FeatureFlags-ResultsViewNeon",
         "name": "Results View Neon",
         "style": "neon"
       },
       {
-        "id": "FeatureFlagsRolloutTrackerDark",
+        "id": "FeatureFlags-RolloutTrackerDark",
         "name": "Rollout Tracker Dark",
         "style": "dark"
       },
       {
-        "id": "FeatureFlagsRolloutTrackerNeon",
+        "id": "FeatureFlags-RolloutTrackerNeon",
         "name": "Rollout Tracker Neon",
         "style": "neon"
       }
@@ -1662,32 +1662,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "FeatureRoadmapTimelineDark",
+        "id": "FeatureRoadmap-TimelineDark",
         "name": "Timeline Dark",
         "style": "dark"
       },
       {
-        "id": "FeatureRoadmapTimelineClean",
+        "id": "FeatureRoadmap-TimelineClean",
         "name": "Timeline Clean",
         "style": "clean"
       },
       {
-        "id": "FeatureRoadmapSwimlaneDark",
+        "id": "FeatureRoadmap-SwimlaneDark",
         "name": "Swimlane Dark",
         "style": "dark"
       },
       {
-        "id": "FeatureRoadmapSwimlaneClean",
+        "id": "FeatureRoadmap-SwimlaneClean",
         "name": "Swimlane Clean",
         "style": "clean"
       },
       {
-        "id": "FeatureRoadmapGridDark",
+        "id": "FeatureRoadmap-GridDark",
         "name": "Grid Dark",
         "style": "dark"
       },
       {
-        "id": "FeatureRoadmapGridClean",
+        "id": "FeatureRoadmap-GridClean",
         "name": "Grid Clean",
         "style": "clean"
       }
@@ -1705,32 +1705,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "IntegrationStatusStatusWallDark",
+        "id": "IntegrationStatus-StatusWallDark",
         "name": "Status Wall Dark",
         "style": "dark"
       },
       {
-        "id": "IntegrationStatusStatusWallClean",
+        "id": "IntegrationStatus-StatusWallClean",
         "name": "Status Wall Clean",
         "style": "clean"
       },
       {
-        "id": "IntegrationStatusCategoryGroupsDark",
+        "id": "IntegrationStatus-CategoryGroupsDark",
         "name": "Category Groups Dark",
         "style": "dark"
       },
       {
-        "id": "IntegrationStatusCategoryGroupsClean",
+        "id": "IntegrationStatus-CategoryGroupsClean",
         "name": "Category Groups Clean",
         "style": "clean"
       },
       {
-        "id": "IntegrationStatusHealthMonitorDark",
+        "id": "IntegrationStatus-HealthMonitorDark",
         "name": "Health Monitor Dark",
         "style": "dark"
       },
       {
-        "id": "IntegrationStatusHealthMonitorClean",
+        "id": "IntegrationStatus-HealthMonitorClean",
         "name": "Health Monitor Clean",
         "style": "clean"
       }
@@ -1748,32 +1748,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "NeighborhoodGuideExplorerWarm",
+        "id": "NeighborhoodGuide-ExplorerWarm",
         "name": "Explorer Warm",
         "style": "warm"
       },
       {
-        "id": "NeighborhoodGuideExplorerNeon",
+        "id": "NeighborhoodGuide-ExplorerNeon",
         "name": "Explorer Neon",
         "style": "neon"
       },
       {
-        "id": "NeighborhoodGuideHighlightsReelWarm",
+        "id": "NeighborhoodGuide-HighlightsReelWarm",
         "name": "Highlights Reel Warm",
         "style": "warm"
       },
       {
-        "id": "NeighborhoodGuideHighlightsReelNeon",
+        "id": "NeighborhoodGuide-HighlightsReelNeon",
         "name": "Highlights Reel Neon",
         "style": "neon"
       },
       {
-        "id": "NeighborhoodGuideOverviewWarm",
+        "id": "NeighborhoodGuide-OverviewWarm",
         "name": "Overview Warm",
         "style": "warm"
       },
       {
-        "id": "NeighborhoodGuideOverviewNeon",
+        "id": "NeighborhoodGuide-OverviewNeon",
         "name": "Overview Neon",
         "style": "neon"
       }
@@ -1791,32 +1791,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "OfficeDirectoryWorldViewDark",
+        "id": "OfficeDirectory-WorldViewDark",
         "name": "World View Dark",
         "style": "dark"
       },
       {
-        "id": "OfficeDirectoryWorldViewClean",
+        "id": "OfficeDirectory-WorldViewClean",
         "name": "World View Clean",
         "style": "clean"
       },
       {
-        "id": "OfficeDirectoryCardListDark",
+        "id": "OfficeDirectory-CardListDark",
         "name": "Card List Dark",
         "style": "dark"
       },
       {
-        "id": "OfficeDirectoryCardListClean",
+        "id": "OfficeDirectory-CardListClean",
         "name": "Card List Clean",
         "style": "clean"
       },
       {
-        "id": "OfficeDirectoryRegionGroupsDark",
+        "id": "OfficeDirectory-RegionGroupsDark",
         "name": "Region Groups Dark",
         "style": "dark"
       },
       {
-        "id": "OfficeDirectoryRegionGroupsClean",
+        "id": "OfficeDirectory-RegionGroupsClean",
         "name": "Region Groups Clean",
         "style": "clean"
       }
@@ -1834,32 +1834,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "PinCollectionCardGalleryWarm",
+        "id": "PinCollection-CardGalleryWarm",
         "name": "Card Gallery Warm",
         "style": "warm"
       },
       {
-        "id": "PinCollectionCardGalleryClean",
+        "id": "PinCollection-CardGalleryClean",
         "name": "Card Gallery Clean",
         "style": "clean"
       },
       {
-        "id": "PinCollectionMapListWarm",
+        "id": "PinCollection-MapListWarm",
         "name": "Map List Warm",
         "style": "warm"
       },
       {
-        "id": "PinCollectionMapListClean",
+        "id": "PinCollection-MapListClean",
         "name": "Map List Clean",
         "style": "clean"
       },
       {
-        "id": "PinCollectionCategoryGridWarm",
+        "id": "PinCollection-CategoryGridWarm",
         "name": "Category Grid Warm",
         "style": "warm"
       },
       {
-        "id": "PinCollectionCategoryGridClean",
+        "id": "PinCollection-CategoryGridClean",
         "name": "Category Grid Clean",
         "style": "clean"
       }
@@ -1877,32 +1877,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "PlatformOverviewCommandCenterDark",
+        "id": "PlatformOverview-CommandCenterDark",
         "name": "Command Center Dark",
         "style": "dark"
       },
       {
-        "id": "PlatformOverviewCommandCenterNeon",
+        "id": "PlatformOverview-CommandCenterNeon",
         "name": "Command Center Neon",
         "style": "neon"
       },
       {
-        "id": "PlatformOverviewModuleGridDark",
+        "id": "PlatformOverview-ModuleGridDark",
         "name": "Module Grid Dark",
         "style": "dark"
       },
       {
-        "id": "PlatformOverviewModuleGridNeon",
+        "id": "PlatformOverview-ModuleGridNeon",
         "name": "Module Grid Neon",
         "style": "neon"
       },
       {
-        "id": "PlatformOverviewStackDark",
+        "id": "PlatformOverview-StackDark",
         "name": "Stack Dark",
         "style": "dark"
       },
       {
-        "id": "PlatformOverviewStackNeon",
+        "id": "PlatformOverview-StackNeon",
         "name": "Stack Neon",
         "style": "neon"
       }
@@ -1920,32 +1920,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "ProjectHealthHealthScorecardDark",
+        "id": "ProjectHealth-HealthScorecardDark",
         "name": "Health Scorecard Dark",
         "style": "dark"
       },
       {
-        "id": "ProjectHealthHealthScorecardWarm",
+        "id": "ProjectHealth-HealthScorecardWarm",
         "name": "Health Scorecard Warm",
         "style": "warm"
       },
       {
-        "id": "ProjectHealthWorkstreamViewDark",
+        "id": "ProjectHealth-WorkstreamViewDark",
         "name": "Workstream View Dark",
         "style": "dark"
       },
       {
-        "id": "ProjectHealthWorkstreamViewWarm",
+        "id": "ProjectHealth-WorkstreamViewWarm",
         "name": "Workstream View Warm",
         "style": "warm"
       },
       {
-        "id": "ProjectHealthExecutiveSummaryDark",
+        "id": "ProjectHealth-ExecutiveSummaryDark",
         "name": "Executive Summary Dark",
         "style": "dark"
       },
       {
-        "id": "ProjectHealthExecutiveSummaryWarm",
+        "id": "ProjectHealth-ExecutiveSummaryWarm",
         "name": "Executive Summary Warm",
         "style": "warm"
       }
@@ -1963,32 +1963,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "QBRDashboardExecutiveDark",
+        "id": "QBRDashboard-ExecutiveDark",
         "name": "Executive Dark",
         "style": "dark"
       },
       {
-        "id": "QBRDashboardExecutiveClean",
+        "id": "QBRDashboard-ExecutiveClean",
         "name": "Executive Clean",
         "style": "clean"
       },
       {
-        "id": "QBRDashboardDetailedDark",
+        "id": "QBRDashboard-DetailedDark",
         "name": "Detailed Dark",
         "style": "dark"
       },
       {
-        "id": "QBRDashboardDetailedClean",
+        "id": "QBRDashboard-DetailedClean",
         "name": "Detailed Clean",
         "style": "clean"
       },
       {
-        "id": "QBRDashboardComparisonDark",
+        "id": "QBRDashboard-ComparisonDark",
         "name": "Comparison Dark",
         "style": "dark"
       },
       {
-        "id": "QBRDashboardComparisonClean",
+        "id": "QBRDashboard-ComparisonClean",
         "name": "Comparison Clean",
         "style": "clean"
       }
@@ -2006,32 +2006,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "ReleaseNotesChangelogDark",
+        "id": "ReleaseNotes-ChangelogDark",
         "name": "Changelog Dark",
         "style": "dark"
       },
       {
-        "id": "ReleaseNotesChangelogClean",
+        "id": "ReleaseNotes-ChangelogClean",
         "name": "Changelog Clean",
         "style": "clean"
       },
       {
-        "id": "ReleaseNotesHighlightsDark",
+        "id": "ReleaseNotes-HighlightsDark",
         "name": "Highlights Dark",
         "style": "dark"
       },
       {
-        "id": "ReleaseNotesHighlightsClean",
+        "id": "ReleaseNotes-HighlightsClean",
         "name": "Highlights Clean",
         "style": "clean"
       },
       {
-        "id": "ReleaseNotesVersionCompareDark",
+        "id": "ReleaseNotes-VersionCompareDark",
         "name": "Version Compare Dark",
         "style": "dark"
       },
       {
-        "id": "ReleaseNotesVersionCompareClean",
+        "id": "ReleaseNotes-VersionCompareClean",
         "name": "Version Compare Clean",
         "style": "clean"
       }
@@ -2049,32 +2049,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "SprintDashboardKanbanDark",
+        "id": "SprintDashboard-KanbanDark",
         "name": "Kanban Dark",
         "style": "dark"
       },
       {
-        "id": "SprintDashboardKanbanBold",
+        "id": "SprintDashboard-KanbanBold",
         "name": "Kanban Bold",
         "style": "bold"
       },
       {
-        "id": "SprintDashboardVelocityDark",
+        "id": "SprintDashboard-VelocityDark",
         "name": "Velocity Dark",
         "style": "dark"
       },
       {
-        "id": "SprintDashboardVelocityBold",
+        "id": "SprintDashboard-VelocityBold",
         "name": "Velocity Bold",
         "style": "bold"
       },
       {
-        "id": "SprintDashboardBurndownDark",
+        "id": "SprintDashboard-BurndownDark",
         "name": "Burndown Dark",
         "style": "dark"
       },
       {
-        "id": "SprintDashboardBurndownBold",
+        "id": "SprintDashboard-BurndownBold",
         "name": "Burndown Bold",
         "style": "bold"
       }
@@ -2092,32 +2092,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "SprintRecapShippedListDark",
+        "id": "SprintRecap-ShippedListDark",
         "name": "Shipped List Dark",
         "style": "dark"
       },
       {
-        "id": "SprintRecapShippedListBold",
+        "id": "SprintRecap-ShippedListBold",
         "name": "Shipped List Bold",
         "style": "bold"
       },
       {
-        "id": "SprintRecapHighlightCardsDark",
+        "id": "SprintRecap-HighlightCardsDark",
         "name": "Highlight Cards Dark",
         "style": "dark"
       },
       {
-        "id": "SprintRecapHighlightCardsBold",
+        "id": "SprintRecap-HighlightCardsBold",
         "name": "Highlight Cards Bold",
         "style": "bold"
       },
       {
-        "id": "SprintRecapTeamContributionsDark",
+        "id": "SprintRecap-TeamContributionsDark",
         "name": "Team Contributions Dark",
         "style": "dark"
       },
       {
-        "id": "SprintRecapTeamContributionsBold",
+        "id": "SprintRecap-TeamContributionsBold",
         "name": "Team Contributions Bold",
         "style": "bold"
       }
@@ -2135,32 +2135,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "StoreLocatorFinderClean",
+        "id": "StoreLocator-FinderClean",
         "name": "Finder Clean",
         "style": "clean"
       },
       {
-        "id": "StoreLocatorFinderMinimal",
+        "id": "StoreLocator-FinderMinimal",
         "name": "Finder Minimal",
         "style": "minimal"
       },
       {
-        "id": "StoreLocatorMapPinsClean",
+        "id": "StoreLocator-MapPinsClean",
         "name": "Map Pins Clean",
         "style": "clean"
       },
       {
-        "id": "StoreLocatorMapPinsMinimal",
+        "id": "StoreLocator-MapPinsMinimal",
         "name": "Map Pins Minimal",
         "style": "minimal"
       },
       {
-        "id": "StoreLocatorDirectoryClean",
+        "id": "StoreLocator-DirectoryClean",
         "name": "Directory Clean",
         "style": "clean"
       },
       {
-        "id": "StoreLocatorDirectoryMinimal",
+        "id": "StoreLocator-DirectoryMinimal",
         "name": "Directory Minimal",
         "style": "minimal"
       }
@@ -2178,32 +2178,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "ThoughtLeadershipEditorialDark",
+        "id": "ThoughtLeadership-EditorialDark",
         "name": "Editorial Dark",
         "style": "dark"
       },
       {
-        "id": "ThoughtLeadershipEditorialClean",
+        "id": "ThoughtLeadership-EditorialClean",
         "name": "Editorial Clean",
         "style": "clean"
       },
       {
-        "id": "ThoughtLeadershipNarrativeDark",
+        "id": "ThoughtLeadership-NarrativeDark",
         "name": "Narrative Dark",
         "style": "dark"
       },
       {
-        "id": "ThoughtLeadershipNarrativeClean",
+        "id": "ThoughtLeadership-NarrativeClean",
         "name": "Narrative Clean",
         "style": "clean"
       },
       {
-        "id": "ThoughtLeadershipKeynoteDark",
+        "id": "ThoughtLeadership-KeynoteDark",
         "name": "Keynote Dark",
         "style": "dark"
       },
       {
-        "id": "ThoughtLeadershipKeynoteClean",
+        "id": "ThoughtLeadership-KeynoteClean",
         "name": "Keynote Clean",
         "style": "clean"
       }
@@ -2221,32 +2221,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "TravelItineraryDayByDayWarm",
+        "id": "TravelItinerary-DayByDayWarm",
         "name": "Day By Day Warm",
         "style": "warm"
       },
       {
-        "id": "TravelItineraryDayByDayBold",
+        "id": "TravelItinerary-DayByDayBold",
         "name": "Day By Day Bold",
         "style": "bold"
       },
       {
-        "id": "TravelItineraryRouteOverviewWarm",
+        "id": "TravelItinerary-RouteOverviewWarm",
         "name": "Route Overview Warm",
         "style": "warm"
       },
       {
-        "id": "TravelItineraryRouteOverviewBold",
+        "id": "TravelItinerary-RouteOverviewBold",
         "name": "Route Overview Bold",
         "style": "bold"
       },
       {
-        "id": "TravelItineraryHighlightsWarm",
+        "id": "TravelItinerary-HighlightsWarm",
         "name": "Highlights Warm",
         "style": "warm"
       },
       {
-        "id": "TravelItineraryHighlightsBold",
+        "id": "TravelItinerary-HighlightsBold",
         "name": "Highlights Bold",
         "style": "bold"
       }
@@ -2264,32 +2264,32 @@
     "variantCount": 6,
     "variants": [
       {
-        "id": "VelocityChartBarChartDark",
+        "id": "VelocityChart-BarChartDark",
         "name": "Bar Chart Dark",
         "style": "dark"
       },
       {
-        "id": "VelocityChartBarChartClean",
+        "id": "VelocityChart-BarChartClean",
         "name": "Bar Chart Clean",
         "style": "clean"
       },
       {
-        "id": "VelocityChartTrendLineDark",
+        "id": "VelocityChart-TrendLineDark",
         "name": "Trend Line Dark",
         "style": "dark"
       },
       {
-        "id": "VelocityChartTrendLineClean",
+        "id": "VelocityChart-TrendLineClean",
         "name": "Trend Line Clean",
         "style": "clean"
       },
       {
-        "id": "VelocityChartSummaryDark",
+        "id": "VelocityChart-SummaryDark",
         "name": "Summary Dark",
         "style": "dark"
       },
       {
-        "id": "VelocityChartSummaryClean",
+        "id": "VelocityChart-SummaryClean",
         "name": "Summary Clean",
         "style": "clean"
       }
