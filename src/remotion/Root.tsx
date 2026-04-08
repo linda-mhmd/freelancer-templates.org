@@ -10,11 +10,13 @@
 
 import React from "react";
 import { Composition, Folder } from "remotion";
+
 // ── Linda Mohamed (personal deck) ────────────────────────────────
 import { Folie1Cover, Folie2AboutMe, Folie3WhatIOffer, Folie4CostsPackages } from "./templates/lindamohamed/LindaMohamed";
 import { Folie1CoverV2, Folie2AboutMeV2, Folie3WhatIOfferV2, Folie4CostsPackagesV2, Folie5WorkshopsV2 } from "./templates/lindamohamed/LindaMohamedV2";
 // ── YouTube Tutorial ─────────────────────────────────────────────
 import { VideoFlowPipelineTutorial } from "./templates/youtubetuorial/tutorials/VideoFlowPipeline";
+
 // ── Community GameDay Europe ──────────────────────────────────────
 import { Countdown } from "./GameDay/src/compositions/00-preshow/Countdown";
 import { InfoLoop } from "./GameDay/src/compositions/00-preshow/InfoLoop";
@@ -147,23 +149,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="AffiliateReview-EspressoComparison" component={AffiliateReviewEspressoComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-AgentDashboardControlPanelDark" component={AgentDashboardControlPanelDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardControlPanelNeon" component={AgentDashboardControlPanelNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardFlowDark" component={AgentDashboardFlowDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardFlowNeon" component={AgentDashboardFlowNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardMatrixDark" component={AgentDashboardMatrixDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardMatrixNeon" component={AgentDashboardMatrixNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardOceanControlPanel" component={AgentDashboardOceanControlPanel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardSunsetControlPanel" component={AgentDashboardSunsetControlPanel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardForestFlow" component={AgentDashboardForestFlow} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardRoseFlow" component={AgentDashboardRoseFlow} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardGoldMatrix" component={AgentDashboardGoldMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardMidnightMatrix" component={AgentDashboardMidnightMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardCrimsonControlPanel" component={AgentDashboardCrimsonControlPanel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardLavenderControlPanel" component={AgentDashboardLavenderControlPanel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardArcticFlow" component={AgentDashboardArcticFlow} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-AgentDashboardEspressoFlow" component={AgentDashboardEspressoFlow} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Agent-Dashboard">
+      <Composition id="AgentDashboard-ControlPanelDark" component={AgentDashboardControlPanelDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-ControlPanelNeon" component={AgentDashboardControlPanelNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-FlowDark" component={AgentDashboardFlowDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-FlowNeon" component={AgentDashboardFlowNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-MatrixDark" component={AgentDashboardMatrixDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-MatrixNeon" component={AgentDashboardMatrixNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-OceanControlPanel" component={AgentDashboardOceanControlPanel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-SunsetControlPanel" component={AgentDashboardSunsetControlPanel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-ForestFlow" component={AgentDashboardForestFlow} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-RoseFlow" component={AgentDashboardRoseFlow} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-GoldMatrix" component={AgentDashboardGoldMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-MidnightMatrix" component={AgentDashboardMidnightMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-CrimsonControlPanel" component={AgentDashboardCrimsonControlPanel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-LavenderControlPanel" component={AgentDashboardLavenderControlPanel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-ArcticFlow" component={AgentDashboardArcticFlow} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="AgentDashboard-EspressoFlow" component={AgentDashboardEspressoFlow} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Before-After">
@@ -204,80 +206,80 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="BehindTheScenes-EspressoTimeline" component={BehindTheScenesEspressoTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-BugTrackerSeverityMatrixDark" component={BugTrackerSeverityMatrixDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerSeverityMatrixBold" component={BugTrackerSeverityMatrixBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerTriageBoardDark" component={BugTrackerTriageBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerTriageBoardBold" component={BugTrackerTriageBoardBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerOverviewDark" component={BugTrackerOverviewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerOverviewBold" component={BugTrackerOverviewBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerOceanSeverityMatrix" component={BugTrackerOceanSeverityMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerSunsetSeverityMatrix" component={BugTrackerSunsetSeverityMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerForestTriageBoard" component={BugTrackerForestTriageBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerRoseTriageBoard" component={BugTrackerRoseTriageBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerGoldOverview" component={BugTrackerGoldOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerMidnightOverview" component={BugTrackerMidnightOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerCrimsonSeverityMatrix" component={BugTrackerCrimsonSeverityMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerLavenderSeverityMatrix" component={BugTrackerLavenderSeverityMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerArcticTriageBoard" component={BugTrackerArcticTriageBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTrackerEspressoTriageBoard" component={BugTrackerEspressoTriageBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Bug-Tracker">
+      <Composition id="BugTracker-SeverityMatrixDark" component={BugTrackerSeverityMatrixDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-SeverityMatrixBold" component={BugTrackerSeverityMatrixBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-TriageBoardDark" component={BugTrackerTriageBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-TriageBoardBold" component={BugTrackerTriageBoardBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-OverviewDark" component={BugTrackerOverviewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-OverviewBold" component={BugTrackerOverviewBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-OceanSeverityMatrix" component={BugTrackerOceanSeverityMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-SunsetSeverityMatrix" component={BugTrackerSunsetSeverityMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-ForestTriageBoard" component={BugTrackerForestTriageBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-RoseTriageBoard" component={BugTrackerRoseTriageBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-GoldOverview" component={BugTrackerGoldOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-MidnightOverview" component={BugTrackerMidnightOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-CrimsonSeverityMatrix" component={BugTrackerCrimsonSeverityMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-LavenderSeverityMatrix" component={BugTrackerLavenderSeverityMatrix} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-ArcticTriageBoard" component={BugTrackerArcticTriageBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTracker-EspressoTriageBoard" component={BugTrackerEspressoTriageBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-BugTriagePriorityColumnsDark" component={BugTriagePriorityColumnsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriagePriorityColumnsBold" component={BugTriagePriorityColumnsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageTriageListDark" component={BugTriageTriageListDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageTriageListBold" component={BugTriageTriageListBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageSummaryDashboardDark" component={BugTriageSummaryDashboardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageSummaryDashboardBold" component={BugTriageSummaryDashboardBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageOceanPriorityColumns" component={BugTriageOceanPriorityColumns} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageSunsetPriorityColumns" component={BugTriageSunsetPriorityColumns} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageForestTriageList" component={BugTriageForestTriageList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageRoseTriageList" component={BugTriageRoseTriageList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageGoldSummaryDashboard" component={BugTriageGoldSummaryDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageMidnightSummaryDashboard" component={BugTriageMidnightSummaryDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageCrimsonPriorityColumns" component={BugTriageCrimsonPriorityColumns} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageLavenderPriorityColumns" component={BugTriageLavenderPriorityColumns} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageArcticTriageList" component={BugTriageArcticTriageList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-BugTriageEspressoTriageList" component={BugTriageEspressoTriageList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Bug-Triage">
+      <Composition id="BugTriage-PriorityColumnsDark" component={BugTriagePriorityColumnsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-PriorityColumnsBold" component={BugTriagePriorityColumnsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-TriageListDark" component={BugTriageTriageListDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-TriageListBold" component={BugTriageTriageListBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-SummaryDashboardDark" component={BugTriageSummaryDashboardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-SummaryDashboardBold" component={BugTriageSummaryDashboardBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-OceanPriorityColumns" component={BugTriageOceanPriorityColumns} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-SunsetPriorityColumns" component={BugTriageSunsetPriorityColumns} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-ForestTriageList" component={BugTriageForestTriageList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-RoseTriageList" component={BugTriageRoseTriageList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-GoldSummaryDashboard" component={BugTriageGoldSummaryDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-MidnightSummaryDashboard" component={BugTriageMidnightSummaryDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-CrimsonPriorityColumns" component={BugTriageCrimsonPriorityColumns} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-LavenderPriorityColumns" component={BugTriageLavenderPriorityColumns} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-ArcticTriageList" component={BugTriageArcticTriageList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="BugTriage-EspressoTriageList" component={BugTriageEspressoTriageList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-CaseStudyDarkNarrative" component={CaseStudyDarkNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyCleanComparison" component={CaseStudyCleanComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyBoldSpotlight" component={CaseStudyBoldSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyWarmNarrative" component={CaseStudyWarmNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyMinimalComparison" component={CaseStudyMinimalComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyNeonSpotlight" component={CaseStudyNeonSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyOceanNarrative" component={CaseStudyOceanNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudySunsetSpotlight" component={CaseStudySunsetSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyForestNarrative" component={CaseStudyForestNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyRoseSpotlight" component={CaseStudyRoseSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyGoldNarrative" component={CaseStudyGoldNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyMidnightNarrative" component={CaseStudyMidnightNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyCrimsonSpotlight" component={CaseStudyCrimsonSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyLavenderComparison" component={CaseStudyLavenderComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyArcticComparison" component={CaseStudyArcticComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-CaseStudyEspressoNarrative" component={CaseStudyEspressoNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Case-Study">
+      <Composition id="CaseStudy-DarkNarrative" component={CaseStudyDarkNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-CleanComparison" component={CaseStudyCleanComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-BoldSpotlight" component={CaseStudyBoldSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-WarmNarrative" component={CaseStudyWarmNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-MinimalComparison" component={CaseStudyMinimalComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-NeonSpotlight" component={CaseStudyNeonSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-OceanNarrative" component={CaseStudyOceanNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-SunsetSpotlight" component={CaseStudySunsetSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-ForestNarrative" component={CaseStudyForestNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-RoseSpotlight" component={CaseStudyRoseSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-GoldNarrative" component={CaseStudyGoldNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-MidnightNarrative" component={CaseStudyMidnightNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-CrimsonSpotlight" component={CaseStudyCrimsonSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-LavenderComparison" component={CaseStudyLavenderComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-ArcticComparison" component={CaseStudyArcticComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="CaseStudy-EspressoNarrative" component={CaseStudyEspressoNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-ClientPipelineFunnelDark" component={ClientPipelineFunnelDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineFunnelWarm" component={ClientPipelineFunnelWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelinePipelineBoardDark" component={ClientPipelinePipelineBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelinePipelineBoardWarm" component={ClientPipelinePipelineBoardWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineMetricsDark" component={ClientPipelineMetricsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineMetricsWarm" component={ClientPipelineMetricsWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineOceanFunnel" component={ClientPipelineOceanFunnel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineSunsetFunnel" component={ClientPipelineSunsetFunnel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineForestPipelineBoard" component={ClientPipelineForestPipelineBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineRosePipelineBoard" component={ClientPipelineRosePipelineBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineGoldMetrics" component={ClientPipelineGoldMetrics} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineMidnightMetrics" component={ClientPipelineMidnightMetrics} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineCrimsonFunnel" component={ClientPipelineCrimsonFunnel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineLavenderFunnel" component={ClientPipelineLavenderFunnel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineArcticPipelineBoard" component={ClientPipelineArcticPipelineBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ClientPipelineEspressoPipelineBoard" component={ClientPipelineEspressoPipelineBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Client-Pipeline">
+      <Composition id="ClientPipeline-FunnelDark" component={ClientPipelineFunnelDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-FunnelWarm" component={ClientPipelineFunnelWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-PipelineBoardDark" component={ClientPipelinePipelineBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-PipelineBoardWarm" component={ClientPipelinePipelineBoardWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-MetricsDark" component={ClientPipelineMetricsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-MetricsWarm" component={ClientPipelineMetricsWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-OceanFunnel" component={ClientPipelineOceanFunnel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-SunsetFunnel" component={ClientPipelineSunsetFunnel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-ForestPipelineBoard" component={ClientPipelineForestPipelineBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-RosePipelineBoard" component={ClientPipelineRosePipelineBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-GoldMetrics" component={ClientPipelineGoldMetrics} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-MidnightMetrics" component={ClientPipelineMidnightMetrics} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-CrimsonFunnel" component={ClientPipelineCrimsonFunnel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-LavenderFunnel" component={ClientPipelineLavenderFunnel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-ArcticPipelineBoard" component={ClientPipelineArcticPipelineBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientPipeline-EspressoPipelineBoard" component={ClientPipelineEspressoPipelineBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Collaboration">
@@ -299,23 +301,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Collaboration-EspressoAnnouncement" component={CollaborationEspressoAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-ComponentInventoryArchitectureGridDark" component={ComponentInventoryArchitectureGridDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryArchitectureGridClean" component={ComponentInventoryArchitectureGridClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryDependencyMapDark" component={ComponentInventoryDependencyMapDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryDependencyMapClean" component={ComponentInventoryDependencyMapClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryInventoryListDark" component={ComponentInventoryInventoryListDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryInventoryListClean" component={ComponentInventoryInventoryListClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryOceanArchitectureGrid" component={ComponentInventoryOceanArchitectureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventorySunsetArchitectureGrid" component={ComponentInventorySunsetArchitectureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryForestDependencyMap" component={ComponentInventoryForestDependencyMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryRoseDependencyMap" component={ComponentInventoryRoseDependencyMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryGoldInventoryList" component={ComponentInventoryGoldInventoryList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryMidnightInventoryList" component={ComponentInventoryMidnightInventoryList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryCrimsonArchitectureGrid" component={ComponentInventoryCrimsonArchitectureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryLavenderArchitectureGrid" component={ComponentInventoryLavenderArchitectureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryArcticDependencyMap" component={ComponentInventoryArcticDependencyMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ComponentInventoryEspressoDependencyMap" component={ComponentInventoryEspressoDependencyMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Component-Inventory">
+      <Composition id="ComponentInventory-ArchitectureGridDark" component={ComponentInventoryArchitectureGridDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-ArchitectureGridClean" component={ComponentInventoryArchitectureGridClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-DependencyMapDark" component={ComponentInventoryDependencyMapDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-DependencyMapClean" component={ComponentInventoryDependencyMapClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-InventoryListDark" component={ComponentInventoryInventoryListDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-InventoryListClean" component={ComponentInventoryInventoryListClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-OceanArchitectureGrid" component={ComponentInventoryOceanArchitectureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-SunsetArchitectureGrid" component={ComponentInventorySunsetArchitectureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-ForestDependencyMap" component={ComponentInventoryForestDependencyMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-RoseDependencyMap" component={ComponentInventoryRoseDependencyMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-GoldInventoryList" component={ComponentInventoryGoldInventoryList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-MidnightInventoryList" component={ComponentInventoryMidnightInventoryList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-CrimsonArchitectureGrid" component={ComponentInventoryCrimsonArchitectureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-LavenderArchitectureGrid" component={ComponentInventoryLavenderArchitectureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-ArcticDependencyMap" component={ComponentInventoryArcticDependencyMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ComponentInventory-EspressoDependencyMap" component={ComponentInventoryEspressoDependencyMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Concept-Pitch">
@@ -375,42 +377,42 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="CoursePromo-EspressoCurriculum" component={CoursePromoEspressoCurriculum} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-DeploymentStatusEnvironmentCardsDark" component={DeploymentStatusEnvironmentCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusEnvironmentCardsNeon" component={DeploymentStatusEnvironmentCardsNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusPipelineViewDark" component={DeploymentStatusPipelineViewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusPipelineViewNeon" component={DeploymentStatusPipelineViewNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusHealthDashboardDark" component={DeploymentStatusHealthDashboardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusHealthDashboardNeon" component={DeploymentStatusHealthDashboardNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusOceanEnvironmentCards" component={DeploymentStatusOceanEnvironmentCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusSunsetEnvironmentCards" component={DeploymentStatusSunsetEnvironmentCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusForestPipelineView" component={DeploymentStatusForestPipelineView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusRosePipelineView" component={DeploymentStatusRosePipelineView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusGoldHealthDashboard" component={DeploymentStatusGoldHealthDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusMidnightHealthDashboard" component={DeploymentStatusMidnightHealthDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusCrimsonEnvironmentCards" component={DeploymentStatusCrimsonEnvironmentCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusLavenderEnvironmentCards" component={DeploymentStatusLavenderEnvironmentCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusArcticPipelineView" component={DeploymentStatusArcticPipelineView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-DeploymentStatusEspressoPipelineView" component={DeploymentStatusEspressoPipelineView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Deployment-Status">
+      <Composition id="DeploymentStatus-EnvironmentCardsDark" component={DeploymentStatusEnvironmentCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-EnvironmentCardsNeon" component={DeploymentStatusEnvironmentCardsNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-PipelineViewDark" component={DeploymentStatusPipelineViewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-PipelineViewNeon" component={DeploymentStatusPipelineViewNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-HealthDashboardDark" component={DeploymentStatusHealthDashboardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-HealthDashboardNeon" component={DeploymentStatusHealthDashboardNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-OceanEnvironmentCards" component={DeploymentStatusOceanEnvironmentCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-SunsetEnvironmentCards" component={DeploymentStatusSunsetEnvironmentCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-ForestPipelineView" component={DeploymentStatusForestPipelineView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-RosePipelineView" component={DeploymentStatusRosePipelineView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-GoldHealthDashboard" component={DeploymentStatusGoldHealthDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-MidnightHealthDashboard" component={DeploymentStatusMidnightHealthDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-CrimsonEnvironmentCards" component={DeploymentStatusCrimsonEnvironmentCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-LavenderEnvironmentCards" component={DeploymentStatusLavenderEnvironmentCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-ArcticPipelineView" component={DeploymentStatusArcticPipelineView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="DeploymentStatus-EspressoPipelineView" component={DeploymentStatusEspressoPipelineView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-EffortTrackingTeamAllocationDark" component={EffortTrackingTeamAllocationDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingTeamAllocationWarm" component={EffortTrackingTeamAllocationWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingCapacityDark" component={EffortTrackingCapacityDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingCapacityWarm" component={EffortTrackingCapacityWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingBreakdownDark" component={EffortTrackingBreakdownDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingBreakdownWarm" component={EffortTrackingBreakdownWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingOceanTeamAllocation" component={EffortTrackingOceanTeamAllocation} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingSunsetTeamAllocation" component={EffortTrackingSunsetTeamAllocation} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingForestCapacity" component={EffortTrackingForestCapacity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingRoseCapacity" component={EffortTrackingRoseCapacity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingGoldBreakdown" component={EffortTrackingGoldBreakdown} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingMidnightBreakdown" component={EffortTrackingMidnightBreakdown} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingCrimsonTeamAllocation" component={EffortTrackingCrimsonTeamAllocation} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingLavenderTeamAllocation" component={EffortTrackingLavenderTeamAllocation} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingArcticCapacity" component={EffortTrackingArcticCapacity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EffortTrackingEspressoCapacity" component={EffortTrackingEspressoCapacity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Effort-Tracking">
+      <Composition id="EffortTracking-TeamAllocationDark" component={EffortTrackingTeamAllocationDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-TeamAllocationWarm" component={EffortTrackingTeamAllocationWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-CapacityDark" component={EffortTrackingCapacityDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-CapacityWarm" component={EffortTrackingCapacityWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-BreakdownDark" component={EffortTrackingBreakdownDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-BreakdownWarm" component={EffortTrackingBreakdownWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-OceanTeamAllocation" component={EffortTrackingOceanTeamAllocation} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-SunsetTeamAllocation" component={EffortTrackingSunsetTeamAllocation} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-ForestCapacity" component={EffortTrackingForestCapacity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-RoseCapacity" component={EffortTrackingRoseCapacity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-GoldBreakdown" component={EffortTrackingGoldBreakdown} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-MidnightBreakdown" component={EffortTrackingMidnightBreakdown} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-CrimsonTeamAllocation" component={EffortTrackingCrimsonTeamAllocation} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-LavenderTeamAllocation" component={EffortTrackingLavenderTeamAllocation} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-ArcticCapacity" component={EffortTrackingArcticCapacity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EffortTracking-EspressoCapacity" component={EffortTrackingEspressoCapacity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Event">
@@ -432,23 +434,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Event-EspressoHero" component={EventEspressoHero} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-EventVenueScheduleMapDark" component={EventVenueScheduleMapDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueScheduleMapBold" component={EventVenueScheduleMapBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueVenueCardsDark" component={EventVenueVenueCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueVenueCardsBold" component={EventVenueVenueCardsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueEventOverviewDark" component={EventVenueEventOverviewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueEventOverviewBold" component={EventVenueEventOverviewBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueOceanScheduleMap" component={EventVenueOceanScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueSunsetScheduleMap" component={EventVenueSunsetScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueForestVenueCards" component={EventVenueForestVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueRoseVenueCards" component={EventVenueRoseVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueGoldEventOverview" component={EventVenueGoldEventOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueMidnightEventOverview" component={EventVenueMidnightEventOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueCrimsonScheduleMap" component={EventVenueCrimsonScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueLavenderScheduleMap" component={EventVenueLavenderScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueArcticVenueCards" component={EventVenueArcticVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-EventVenueEspressoVenueCards" component={EventVenueEspressoVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Event-Venue">
+      <Composition id="Event-Venue-ScheduleMapDark" component={EventVenueScheduleMapDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-ScheduleMapBold" component={EventVenueScheduleMapBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-VenueCardsDark" component={EventVenueVenueCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-VenueCardsBold" component={EventVenueVenueCardsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-EventOverviewDark" component={EventVenueEventOverviewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-EventOverviewBold" component={EventVenueEventOverviewBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-OceanScheduleMap" component={EventVenueOceanScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-SunsetScheduleMap" component={EventVenueSunsetScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-ForestVenueCards" component={EventVenueForestVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-RoseVenueCards" component={EventVenueRoseVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-GoldEventOverview" component={EventVenueGoldEventOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-MidnightEventOverview" component={EventVenueMidnightEventOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-CrimsonScheduleMap" component={EventVenueCrimsonScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-LavenderScheduleMap" component={EventVenueLavenderScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-ArcticVenueCards" component={EventVenueArcticVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Event-Venue-EspressoVenueCards" component={EventVenueEspressoVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Explainer">
@@ -470,61 +472,61 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Explainer-EspressoProcess" component={ExplainerEspressoProcess} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-FAQDarkAccordion" component={FAQDarkAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQCleanCards" component={FAQCleanCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQBoldInterview" component={FAQBoldInterview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQWarmAccordion" component={FAQWarmAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQMinimalCards" component={FAQMinimalCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQNeonInterview" component={FAQNeonInterview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQOceanAccordion" component={FAQOceanAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQSunsetCards" component={FAQSunsetCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQForestAccordion" component={FAQForestAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQRoseCards" component={FAQRoseCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQGoldAccordion" component={FAQGoldAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQMidnightCards" component={FAQMidnightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQCrimsonAccordion" component={FAQCrimsonAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQLavenderCards" component={FAQLavenderCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQArcticAccordion" component={FAQArcticAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FAQEspressoCards" component={FAQEspressoCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Faq">
+      <Composition id="FAQ-DarkAccordion" component={FAQDarkAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-CleanCards" component={FAQCleanCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-BoldInterview" component={FAQBoldInterview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-WarmAccordion" component={FAQWarmAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-MinimalCards" component={FAQMinimalCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-NeonInterview" component={FAQNeonInterview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-OceanAccordion" component={FAQOceanAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-SunsetCards" component={FAQSunsetCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-ForestAccordion" component={FAQForestAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-RoseCards" component={FAQRoseCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-GoldAccordion" component={FAQGoldAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-MidnightCards" component={FAQMidnightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-CrimsonAccordion" component={FAQCrimsonAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-LavenderCards" component={FAQLavenderCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-ArcticAccordion" component={FAQArcticAccordion} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FAQ-EspressoCards" component={FAQEspressoCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-FeatureFlagsExperimentBoardDark" component={FeatureFlagsExperimentBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsExperimentBoardNeon" component={FeatureFlagsExperimentBoardNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsResultsViewDark" component={FeatureFlagsResultsViewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsResultsViewNeon" component={FeatureFlagsResultsViewNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsRolloutTrackerDark" component={FeatureFlagsRolloutTrackerDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsRolloutTrackerNeon" component={FeatureFlagsRolloutTrackerNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsOceanExperimentBoard" component={FeatureFlagsOceanExperimentBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsSunsetExperimentBoard" component={FeatureFlagsSunsetExperimentBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsForestResultsView" component={FeatureFlagsForestResultsView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsRoseResultsView" component={FeatureFlagsRoseResultsView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsGoldRolloutTracker" component={FeatureFlagsGoldRolloutTracker} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsMidnightRolloutTracker" component={FeatureFlagsMidnightRolloutTracker} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsCrimsonExperimentBoard" component={FeatureFlagsCrimsonExperimentBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsLavenderExperimentBoard" component={FeatureFlagsLavenderExperimentBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsArcticResultsView" component={FeatureFlagsArcticResultsView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureFlagsEspressoResultsView" component={FeatureFlagsEspressoResultsView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Feature-Flags">
+      <Composition id="FeatureFlags-ExperimentBoardDark" component={FeatureFlagsExperimentBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-ExperimentBoardNeon" component={FeatureFlagsExperimentBoardNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-ResultsViewDark" component={FeatureFlagsResultsViewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-ResultsViewNeon" component={FeatureFlagsResultsViewNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-RolloutTrackerDark" component={FeatureFlagsRolloutTrackerDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-RolloutTrackerNeon" component={FeatureFlagsRolloutTrackerNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-OceanExperimentBoard" component={FeatureFlagsOceanExperimentBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-SunsetExperimentBoard" component={FeatureFlagsSunsetExperimentBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-ForestResultsView" component={FeatureFlagsForestResultsView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-RoseResultsView" component={FeatureFlagsRoseResultsView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-GoldRolloutTracker" component={FeatureFlagsGoldRolloutTracker} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-MidnightRolloutTracker" component={FeatureFlagsMidnightRolloutTracker} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-CrimsonExperimentBoard" component={FeatureFlagsCrimsonExperimentBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-LavenderExperimentBoard" component={FeatureFlagsLavenderExperimentBoard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-ArcticResultsView" component={FeatureFlagsArcticResultsView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureFlags-EspressoResultsView" component={FeatureFlagsEspressoResultsView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-FeatureRoadmapTimelineDark" component={FeatureRoadmapTimelineDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapTimelineClean" component={FeatureRoadmapTimelineClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapSwimlaneDark" component={FeatureRoadmapSwimlaneDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapSwimlaneClean" component={FeatureRoadmapSwimlaneClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapGridDark" component={FeatureRoadmapGridDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapGridClean" component={FeatureRoadmapGridClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapOceanTimeline" component={FeatureRoadmapOceanTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapSunsetTimeline" component={FeatureRoadmapSunsetTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapForestSwimlane" component={FeatureRoadmapForestSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapRoseSwimlane" component={FeatureRoadmapRoseSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapGoldGrid" component={FeatureRoadmapGoldGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapMidnightGrid" component={FeatureRoadmapMidnightGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapCrimsonTimeline" component={FeatureRoadmapCrimsonTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapLavenderTimeline" component={FeatureRoadmapLavenderTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapArcticSwimlane" component={FeatureRoadmapArcticSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-FeatureRoadmapEspressoSwimlane" component={FeatureRoadmapEspressoSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Feature-Roadmap">
+      <Composition id="FeatureRoadmap-TimelineDark" component={FeatureRoadmapTimelineDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-TimelineClean" component={FeatureRoadmapTimelineClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-SwimlaneDark" component={FeatureRoadmapSwimlaneDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-SwimlaneClean" component={FeatureRoadmapSwimlaneClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-GridDark" component={FeatureRoadmapGridDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-GridClean" component={FeatureRoadmapGridClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-OceanTimeline" component={FeatureRoadmapOceanTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-SunsetTimeline" component={FeatureRoadmapSunsetTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-ForestSwimlane" component={FeatureRoadmapForestSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-RoseSwimlane" component={FeatureRoadmapRoseSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-GoldGrid" component={FeatureRoadmapGoldGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-MidnightGrid" component={FeatureRoadmapMidnightGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-CrimsonTimeline" component={FeatureRoadmapCrimsonTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-LavenderTimeline" component={FeatureRoadmapLavenderTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-ArcticSwimlane" component={FeatureRoadmapArcticSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="FeatureRoadmap-EspressoSwimlane" component={FeatureRoadmapEspressoSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Fitness-Routine">
@@ -546,23 +548,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="FitnessRoutine-EspressoTimerFocus" component={FitnessRoutineEspressoTimerFocus} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-IntegrationStatusStatusWallDark" component={IntegrationStatusStatusWallDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusStatusWallClean" component={IntegrationStatusStatusWallClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusCategoryGroupsDark" component={IntegrationStatusCategoryGroupsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusCategoryGroupsClean" component={IntegrationStatusCategoryGroupsClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusHealthMonitorDark" component={IntegrationStatusHealthMonitorDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusHealthMonitorClean" component={IntegrationStatusHealthMonitorClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusOceanStatusWall" component={IntegrationStatusOceanStatusWall} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusSunsetStatusWall" component={IntegrationStatusSunsetStatusWall} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusForestCategoryGroups" component={IntegrationStatusForestCategoryGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusRoseCategoryGroups" component={IntegrationStatusRoseCategoryGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusGoldHealthMonitor" component={IntegrationStatusGoldHealthMonitor} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusMidnightHealthMonitor" component={IntegrationStatusMidnightHealthMonitor} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusCrimsonStatusWall" component={IntegrationStatusCrimsonStatusWall} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusLavenderStatusWall" component={IntegrationStatusLavenderStatusWall} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusArcticCategoryGroups" component={IntegrationStatusArcticCategoryGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-IntegrationStatusEspressoCategoryGroups" component={IntegrationStatusEspressoCategoryGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Integration-Status">
+      <Composition id="IntegrationStatus-StatusWallDark" component={IntegrationStatusStatusWallDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-StatusWallClean" component={IntegrationStatusStatusWallClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-CategoryGroupsDark" component={IntegrationStatusCategoryGroupsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-CategoryGroupsClean" component={IntegrationStatusCategoryGroupsClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-HealthMonitorDark" component={IntegrationStatusHealthMonitorDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-HealthMonitorClean" component={IntegrationStatusHealthMonitorClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-OceanStatusWall" component={IntegrationStatusOceanStatusWall} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-SunsetStatusWall" component={IntegrationStatusSunsetStatusWall} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-ForestCategoryGroups" component={IntegrationStatusForestCategoryGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-RoseCategoryGroups" component={IntegrationStatusRoseCategoryGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-GoldHealthMonitor" component={IntegrationStatusGoldHealthMonitor} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-MidnightHealthMonitor" component={IntegrationStatusMidnightHealthMonitor} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-CrimsonStatusWall" component={IntegrationStatusCrimsonStatusWall} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-LavenderStatusWall" component={IntegrationStatusLavenderStatusWall} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-ArcticCategoryGroups" component={IntegrationStatusArcticCategoryGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="IntegrationStatus-EspressoCategoryGroups" component={IntegrationStatusEspressoCategoryGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Invoice">
@@ -641,23 +643,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="MusicVisualizer-EspressoRadial" component={MusicVisualizerEspressoRadial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-NeighborhoodGuideExplorerWarm" component={NeighborhoodGuideExplorerWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideExplorerNeon" component={NeighborhoodGuideExplorerNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideHighlightsReelWarm" component={NeighborhoodGuideHighlightsReelWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideHighlightsReelNeon" component={NeighborhoodGuideHighlightsReelNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideOverviewWarm" component={NeighborhoodGuideOverviewWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideOverviewNeon" component={NeighborhoodGuideOverviewNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideOceanExplorer" component={NeighborhoodGuideOceanExplorer} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideSunsetExplorer" component={NeighborhoodGuideSunsetExplorer} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideForestHighlightsReel" component={NeighborhoodGuideForestHighlightsReel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideRoseHighlightsReel" component={NeighborhoodGuideRoseHighlightsReel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideGoldOverview" component={NeighborhoodGuideGoldOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideMidnightOverview" component={NeighborhoodGuideMidnightOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideCrimsonExplorer" component={NeighborhoodGuideCrimsonExplorer} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideLavenderExplorer" component={NeighborhoodGuideLavenderExplorer} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideArcticHighlightsReel" component={NeighborhoodGuideArcticHighlightsReel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-NeighborhoodGuideEspressoHighlightsReel" component={NeighborhoodGuideEspressoHighlightsReel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Neighborhood-Guide">
+      <Composition id="NeighborhoodGuide-ExplorerWarm" component={NeighborhoodGuideExplorerWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-ExplorerNeon" component={NeighborhoodGuideExplorerNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-HighlightsReelWarm" component={NeighborhoodGuideHighlightsReelWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-HighlightsReelNeon" component={NeighborhoodGuideHighlightsReelNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-OverviewWarm" component={NeighborhoodGuideOverviewWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-OverviewNeon" component={NeighborhoodGuideOverviewNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-OceanExplorer" component={NeighborhoodGuideOceanExplorer} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-SunsetExplorer" component={NeighborhoodGuideSunsetExplorer} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-ForestHighlightsReel" component={NeighborhoodGuideForestHighlightsReel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-RoseHighlightsReel" component={NeighborhoodGuideRoseHighlightsReel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-GoldOverview" component={NeighborhoodGuideGoldOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-MidnightOverview" component={NeighborhoodGuideMidnightOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-CrimsonExplorer" component={NeighborhoodGuideCrimsonExplorer} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-LavenderExplorer" component={NeighborhoodGuideLavenderExplorer} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-ArcticHighlightsReel" component={NeighborhoodGuideArcticHighlightsReel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="NeighborhoodGuide-EspressoHighlightsReel" component={NeighborhoodGuideEspressoHighlightsReel} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Newsletter-Promo">
@@ -679,23 +681,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="NewsletterPromo-EspressoIssuePreview" component={NewsletterPromoEspressoIssuePreview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-OfficeDirectoryWorldViewDark" component={OfficeDirectoryWorldViewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryWorldViewClean" component={OfficeDirectoryWorldViewClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryCardListDark" component={OfficeDirectoryCardListDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryCardListClean" component={OfficeDirectoryCardListClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryRegionGroupsDark" component={OfficeDirectoryRegionGroupsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryRegionGroupsClean" component={OfficeDirectoryRegionGroupsClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryOceanWorldView" component={OfficeDirectoryOceanWorldView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectorySunsetWorldView" component={OfficeDirectorySunsetWorldView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryForestCardList" component={OfficeDirectoryForestCardList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryRoseCardList" component={OfficeDirectoryRoseCardList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryGoldRegionGroups" component={OfficeDirectoryGoldRegionGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryMidnightRegionGroups" component={OfficeDirectoryMidnightRegionGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryCrimsonWorldView" component={OfficeDirectoryCrimsonWorldView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryLavenderWorldView" component={OfficeDirectoryLavenderWorldView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryArcticCardList" component={OfficeDirectoryArcticCardList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-OfficeDirectoryEspressoCardList" component={OfficeDirectoryEspressoCardList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Office-Directory">
+      <Composition id="OfficeDirectory-WorldViewDark" component={OfficeDirectoryWorldViewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-WorldViewClean" component={OfficeDirectoryWorldViewClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-CardListDark" component={OfficeDirectoryCardListDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-CardListClean" component={OfficeDirectoryCardListClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-RegionGroupsDark" component={OfficeDirectoryRegionGroupsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-RegionGroupsClean" component={OfficeDirectoryRegionGroupsClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-OceanWorldView" component={OfficeDirectoryOceanWorldView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-SunsetWorldView" component={OfficeDirectorySunsetWorldView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-ForestCardList" component={OfficeDirectoryForestCardList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-RoseCardList" component={OfficeDirectoryRoseCardList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-GoldRegionGroups" component={OfficeDirectoryGoldRegionGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-MidnightRegionGroups" component={OfficeDirectoryMidnightRegionGroups} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-CrimsonWorldView" component={OfficeDirectoryCrimsonWorldView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-LavenderWorldView" component={OfficeDirectoryLavenderWorldView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-ArcticCardList" component={OfficeDirectoryArcticCardList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="OfficeDirectory-EspressoCardList" component={OfficeDirectoryEspressoCardList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Onboarding">
@@ -717,42 +719,42 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Onboarding-EspressoFriendly" component={OnboardingEspressoFriendly} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-PinCollectionCardGalleryWarm" component={PinCollectionCardGalleryWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionCardGalleryClean" component={PinCollectionCardGalleryClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionMapListWarm" component={PinCollectionMapListWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionMapListClean" component={PinCollectionMapListClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionCategoryGridWarm" component={PinCollectionCategoryGridWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionCategoryGridClean" component={PinCollectionCategoryGridClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionOceanCardGallery" component={PinCollectionOceanCardGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionSunsetMapList" component={PinCollectionSunsetMapList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionForestCardGallery" component={PinCollectionForestCardGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionRoseCategoryGrid" component={PinCollectionRoseCategoryGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionGoldMapList" component={PinCollectionGoldMapList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionMidnightCardGallery" component={PinCollectionMidnightCardGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionCrimsonCategoryGrid" component={PinCollectionCrimsonCategoryGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionLavenderMapList" component={PinCollectionLavenderMapList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionArcticCardGallery" component={PinCollectionArcticCardGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PinCollectionEspressoCategoryGrid" component={PinCollectionEspressoCategoryGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Pin-Collection">
+      <Composition id="PinCollection-CardGalleryWarm" component={PinCollectionCardGalleryWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-CardGalleryClean" component={PinCollectionCardGalleryClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-MapListWarm" component={PinCollectionMapListWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-MapListClean" component={PinCollectionMapListClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-CategoryGridWarm" component={PinCollectionCategoryGridWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-CategoryGridClean" component={PinCollectionCategoryGridClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-OceanCardGallery" component={PinCollectionOceanCardGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-SunsetMapList" component={PinCollectionSunsetMapList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-ForestCardGallery" component={PinCollectionForestCardGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-RoseCategoryGrid" component={PinCollectionRoseCategoryGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-GoldMapList" component={PinCollectionGoldMapList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-MidnightCardGallery" component={PinCollectionMidnightCardGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-CrimsonCategoryGrid" component={PinCollectionCrimsonCategoryGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-LavenderMapList" component={PinCollectionLavenderMapList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-ArcticCardGallery" component={PinCollectionArcticCardGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PinCollection-EspressoCategoryGrid" component={PinCollectionEspressoCategoryGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-PlatformOverviewCommandCenterDark" component={PlatformOverviewCommandCenterDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewCommandCenterNeon" component={PlatformOverviewCommandCenterNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewModuleGridDark" component={PlatformOverviewModuleGridDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewModuleGridNeon" component={PlatformOverviewModuleGridNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewStackDark" component={PlatformOverviewStackDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewStackNeon" component={PlatformOverviewStackNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewOceanCommandCenter" component={PlatformOverviewOceanCommandCenter} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewSunsetCommandCenter" component={PlatformOverviewSunsetCommandCenter} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewForestModuleGrid" component={PlatformOverviewForestModuleGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewRoseModuleGrid" component={PlatformOverviewRoseModuleGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewGoldStack" component={PlatformOverviewGoldStack} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewMidnightStack" component={PlatformOverviewMidnightStack} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewCrimsonCommandCenter" component={PlatformOverviewCrimsonCommandCenter} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewLavenderCommandCenter" component={PlatformOverviewLavenderCommandCenter} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewArcticModuleGrid" component={PlatformOverviewArcticModuleGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PlatformOverviewEspressoModuleGrid" component={PlatformOverviewEspressoModuleGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Platform-Overview">
+      <Composition id="PlatformOverview-CommandCenterDark" component={PlatformOverviewCommandCenterDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-CommandCenterNeon" component={PlatformOverviewCommandCenterNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-ModuleGridDark" component={PlatformOverviewModuleGridDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-ModuleGridNeon" component={PlatformOverviewModuleGridNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-StackDark" component={PlatformOverviewStackDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-StackNeon" component={PlatformOverviewStackNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-OceanCommandCenter" component={PlatformOverviewOceanCommandCenter} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-SunsetCommandCenter" component={PlatformOverviewSunsetCommandCenter} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-ForestModuleGrid" component={PlatformOverviewForestModuleGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-RoseModuleGrid" component={PlatformOverviewRoseModuleGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-GoldStack" component={PlatformOverviewGoldStack} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-MidnightStack" component={PlatformOverviewMidnightStack} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-CrimsonCommandCenter" component={PlatformOverviewCrimsonCommandCenter} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-LavenderCommandCenter" component={PlatformOverviewLavenderCommandCenter} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-ArcticModuleGrid" component={PlatformOverviewArcticModuleGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="PlatformOverview-EspressoModuleGrid" component={PlatformOverviewEspressoModuleGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Podcast-Audiogram">
@@ -812,23 +814,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Portfolio-EspressoGallery" component={PortfolioEspressoGallery} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-PricingDarkTiers" component={PricingDarkTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingCleanComparison" component={PricingCleanComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingBoldSpotlight" component={PricingBoldSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingWarmTiers" component={PricingWarmTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingMinimalComparison" component={PricingMinimalComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingNeonSpotlight" component={PricingNeonSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingOceanTiers" component={PricingOceanTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingSunsetComparison" component={PricingSunsetComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingForestTiers" component={PricingForestTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingRoseComparison" component={PricingRoseComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingGoldTiers" component={PricingGoldTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingMidnightComparison" component={PricingMidnightComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingCrimsonTiers" component={PricingCrimsonTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingLavenderComparison" component={PricingLavenderComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingArcticTiers" component={PricingArcticTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-PricingEspressoComparison" component={PricingEspressoComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Pricing">
+      <Composition id="Pricing-DarkTiers" component={PricingDarkTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-CleanComparison" component={PricingCleanComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-BoldSpotlight" component={PricingBoldSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-WarmTiers" component={PricingWarmTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-MinimalComparison" component={PricingMinimalComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-NeonSpotlight" component={PricingNeonSpotlight} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-OceanTiers" component={PricingOceanTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-SunsetComparison" component={PricingSunsetComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-ForestTiers" component={PricingForestTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-RoseComparison" component={PricingRoseComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-GoldTiers" component={PricingGoldTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-MidnightComparison" component={PricingMidnightComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-CrimsonTiers" component={PricingCrimsonTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-LavenderComparison" component={PricingLavenderComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-ArcticTiers" component={PricingArcticTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Pricing-EspressoComparison" component={PricingEspressoComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Product-Launch">
@@ -850,23 +852,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="ProductLaunch-EspressoFeatureGrid" component={ProductLaunchEspressoFeatureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-ProjectHealthHealthScorecardDark" component={ProjectHealthHealthScorecardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthHealthScorecardWarm" component={ProjectHealthHealthScorecardWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthWorkstreamViewDark" component={ProjectHealthWorkstreamViewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthWorkstreamViewWarm" component={ProjectHealthWorkstreamViewWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthExecutiveSummaryDark" component={ProjectHealthExecutiveSummaryDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthExecutiveSummaryWarm" component={ProjectHealthExecutiveSummaryWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthOceanHealthScorecard" component={ProjectHealthOceanHealthScorecard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthSunsetHealthScorecard" component={ProjectHealthSunsetHealthScorecard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthForestWorkstreamView" component={ProjectHealthForestWorkstreamView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthRoseWorkstreamView" component={ProjectHealthRoseWorkstreamView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthGoldExecutiveSummary" component={ProjectHealthGoldExecutiveSummary} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthMidnightExecutiveSummary" component={ProjectHealthMidnightExecutiveSummary} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthCrimsonHealthScorecard" component={ProjectHealthCrimsonHealthScorecard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthLavenderHealthScorecard" component={ProjectHealthLavenderHealthScorecard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthArcticWorkstreamView" component={ProjectHealthArcticWorkstreamView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ProjectHealthEspressoWorkstreamView" component={ProjectHealthEspressoWorkstreamView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Project-Health">
+      <Composition id="ProjectHealth-HealthScorecardDark" component={ProjectHealthHealthScorecardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-HealthScorecardWarm" component={ProjectHealthHealthScorecardWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-WorkstreamViewDark" component={ProjectHealthWorkstreamViewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-WorkstreamViewWarm" component={ProjectHealthWorkstreamViewWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-ExecutiveSummaryDark" component={ProjectHealthExecutiveSummaryDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-ExecutiveSummaryWarm" component={ProjectHealthExecutiveSummaryWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-OceanHealthScorecard" component={ProjectHealthOceanHealthScorecard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-SunsetHealthScorecard" component={ProjectHealthSunsetHealthScorecard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-ForestWorkstreamView" component={ProjectHealthForestWorkstreamView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-RoseWorkstreamView" component={ProjectHealthRoseWorkstreamView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-GoldExecutiveSummary" component={ProjectHealthGoldExecutiveSummary} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-MidnightExecutiveSummary" component={ProjectHealthMidnightExecutiveSummary} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-CrimsonHealthScorecard" component={ProjectHealthCrimsonHealthScorecard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-LavenderHealthScorecard" component={ProjectHealthLavenderHealthScorecard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-ArcticWorkstreamView" component={ProjectHealthArcticWorkstreamView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectHealth-EspressoWorkstreamView" component={ProjectHealthEspressoWorkstreamView} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Proposal">
@@ -888,23 +890,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Proposal-EspressoExecutive" component={ProposalEspressoExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-QBRDashboardExecutiveDark" component={QBRDashboardExecutiveDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardExecutiveClean" component={QBRDashboardExecutiveClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardDetailedDark" component={QBRDashboardDetailedDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardDetailedClean" component={QBRDashboardDetailedClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardComparisonDark" component={QBRDashboardComparisonDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardComparisonClean" component={QBRDashboardComparisonClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardOceanExecutive" component={QBRDashboardOceanExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardSunsetExecutive" component={QBRDashboardSunsetExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardForestDetailed" component={QBRDashboardForestDetailed} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardRoseDetailed" component={QBRDashboardRoseDetailed} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardGoldComparison" component={QBRDashboardGoldComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardMidnightComparison" component={QBRDashboardMidnightComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardCrimsonExecutive" component={QBRDashboardCrimsonExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardLavenderExecutive" component={QBRDashboardLavenderExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardArcticDetailed" component={QBRDashboardArcticDetailed} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-QBRDashboardEspressoDetailed" component={QBRDashboardEspressoDetailed} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="QBR-Dashboard">
+      <Composition id="QBRDashboard-ExecutiveDark" component={QBRDashboardExecutiveDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-ExecutiveClean" component={QBRDashboardExecutiveClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-DetailedDark" component={QBRDashboardDetailedDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-DetailedClean" component={QBRDashboardDetailedClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-ComparisonDark" component={QBRDashboardComparisonDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-ComparisonClean" component={QBRDashboardComparisonClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-OceanExecutive" component={QBRDashboardOceanExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-SunsetExecutive" component={QBRDashboardSunsetExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-ForestDetailed" component={QBRDashboardForestDetailed} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-RoseDetailed" component={QBRDashboardRoseDetailed} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-GoldComparison" component={QBRDashboardGoldComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-MidnightComparison" component={QBRDashboardMidnightComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-CrimsonExecutive" component={QBRDashboardCrimsonExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-LavenderExecutive" component={QBRDashboardLavenderExecutive} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-ArcticDetailed" component={QBRDashboardArcticDetailed} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="QBRDashboard-EspressoDetailed" component={QBRDashboardEspressoDetailed} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Recap">
@@ -945,99 +947,99 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="RecipeStep-EspressoStepSequence" component={RecipeStepEspressoStepSequence} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-ReleaseNotesChangelogDark" component={ReleaseNotesChangelogDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesChangelogClean" component={ReleaseNotesChangelogClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesHighlightsDark" component={ReleaseNotesHighlightsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesHighlightsClean" component={ReleaseNotesHighlightsClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesVersionCompareDark" component={ReleaseNotesVersionCompareDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesVersionCompareClean" component={ReleaseNotesVersionCompareClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesOceanChangelog" component={ReleaseNotesOceanChangelog} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesSunsetChangelog" component={ReleaseNotesSunsetChangelog} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesForestHighlights" component={ReleaseNotesForestHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesRoseHighlights" component={ReleaseNotesRoseHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesGoldVersionCompare" component={ReleaseNotesGoldVersionCompare} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesMidnightVersionCompare" component={ReleaseNotesMidnightVersionCompare} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesCrimsonChangelog" component={ReleaseNotesCrimsonChangelog} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesLavenderChangelog" component={ReleaseNotesLavenderChangelog} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesArcticHighlights" component={ReleaseNotesArcticHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ReleaseNotesEspressoHighlights" component={ReleaseNotesEspressoHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Release-Notes">
+      <Composition id="ReleaseNotes-ChangelogDark" component={ReleaseNotesChangelogDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-ChangelogClean" component={ReleaseNotesChangelogClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-HighlightsDark" component={ReleaseNotesHighlightsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-HighlightsClean" component={ReleaseNotesHighlightsClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-VersionCompareDark" component={ReleaseNotesVersionCompareDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-VersionCompareClean" component={ReleaseNotesVersionCompareClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-OceanChangelog" component={ReleaseNotesOceanChangelog} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-SunsetChangelog" component={ReleaseNotesSunsetChangelog} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-ForestHighlights" component={ReleaseNotesForestHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-RoseHighlights" component={ReleaseNotesRoseHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-GoldVersionCompare" component={ReleaseNotesGoldVersionCompare} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-MidnightVersionCompare" component={ReleaseNotesMidnightVersionCompare} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-CrimsonChangelog" component={ReleaseNotesCrimsonChangelog} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-LavenderChangelog" component={ReleaseNotesLavenderChangelog} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-ArcticHighlights" component={ReleaseNotesArcticHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ReleaseNotes-EspressoHighlights" component={ReleaseNotesEspressoHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-SocialProofDarkMilestone" component={SocialProofDarkMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofCleanAchievement" component={SocialProofCleanAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofBoldAnnouncement" component={SocialProofBoldAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofWarmMilestone" component={SocialProofWarmMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofMinimalAchievement" component={SocialProofMinimalAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofNeonAnnouncement" component={SocialProofNeonAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofOceanAchievement" component={SocialProofOceanAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofSunsetAnnouncement" component={SocialProofSunsetAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofForestMilestone" component={SocialProofForestMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofRoseAnnouncement" component={SocialProofRoseAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofGoldAchievement" component={SocialProofGoldAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofMidnightAchievement" component={SocialProofMidnightAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofCrimsonAnnouncement" component={SocialProofCrimsonAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofLavenderMilestone" component={SocialProofLavenderMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofArcticAchievement" component={SocialProofArcticAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SocialProofEspressoMilestone" component={SocialProofEspressoMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Social-Proof">
+      <Composition id="SocialProof-DarkMilestone" component={SocialProofDarkMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-CleanAchievement" component={SocialProofCleanAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-BoldAnnouncement" component={SocialProofBoldAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-WarmMilestone" component={SocialProofWarmMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-MinimalAchievement" component={SocialProofMinimalAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-NeonAnnouncement" component={SocialProofNeonAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-OceanAchievement" component={SocialProofOceanAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-SunsetAnnouncement" component={SocialProofSunsetAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-ForestMilestone" component={SocialProofForestMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-RoseAnnouncement" component={SocialProofRoseAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-GoldAchievement" component={SocialProofGoldAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-MidnightAchievement" component={SocialProofMidnightAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-CrimsonAnnouncement" component={SocialProofCrimsonAnnouncement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-LavenderMilestone" component={SocialProofLavenderMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-ArcticAchievement" component={SocialProofArcticAchievement} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SocialProof-EspressoMilestone" component={SocialProofEspressoMilestone} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-SprintDashboardKanbanDark" component={SprintDashboardKanbanDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardKanbanBold" component={SprintDashboardKanbanBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardVelocityDark" component={SprintDashboardVelocityDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardVelocityBold" component={SprintDashboardVelocityBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardBurndownDark" component={SprintDashboardBurndownDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardBurndownBold" component={SprintDashboardBurndownBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardOceanKanban" component={SprintDashboardOceanKanban} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardSunsetKanban" component={SprintDashboardSunsetKanban} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardForestVelocity" component={SprintDashboardForestVelocity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardRoseVelocity" component={SprintDashboardRoseVelocity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardGoldBurndown" component={SprintDashboardGoldBurndown} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardMidnightBurndown" component={SprintDashboardMidnightBurndown} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardCrimsonKanban" component={SprintDashboardCrimsonKanban} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardLavenderKanban" component={SprintDashboardLavenderKanban} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardArcticVelocity" component={SprintDashboardArcticVelocity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintDashboardEspressoVelocity" component={SprintDashboardEspressoVelocity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Sprint-Dashboard">
+      <Composition id="SprintDashboard-KanbanDark" component={SprintDashboardKanbanDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-KanbanBold" component={SprintDashboardKanbanBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-VelocityDark" component={SprintDashboardVelocityDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-VelocityBold" component={SprintDashboardVelocityBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-BurndownDark" component={SprintDashboardBurndownDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-BurndownBold" component={SprintDashboardBurndownBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-OceanKanban" component={SprintDashboardOceanKanban} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-SunsetKanban" component={SprintDashboardSunsetKanban} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-ForestVelocity" component={SprintDashboardForestVelocity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-RoseVelocity" component={SprintDashboardRoseVelocity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-GoldBurndown" component={SprintDashboardGoldBurndown} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-MidnightBurndown" component={SprintDashboardMidnightBurndown} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-CrimsonKanban" component={SprintDashboardCrimsonKanban} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-LavenderKanban" component={SprintDashboardLavenderKanban} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-ArcticVelocity" component={SprintDashboardArcticVelocity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintDashboard-EspressoVelocity" component={SprintDashboardEspressoVelocity} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-SprintRecapShippedListDark" component={SprintRecapShippedListDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapShippedListBold" component={SprintRecapShippedListBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapHighlightCardsDark" component={SprintRecapHighlightCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapHighlightCardsBold" component={SprintRecapHighlightCardsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapTeamContributionsDark" component={SprintRecapTeamContributionsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapTeamContributionsBold" component={SprintRecapTeamContributionsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapOceanShippedList" component={SprintRecapOceanShippedList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapSunsetShippedList" component={SprintRecapSunsetShippedList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapForestHighlightCards" component={SprintRecapForestHighlightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapRoseHighlightCards" component={SprintRecapRoseHighlightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapGoldTeamContributions" component={SprintRecapGoldTeamContributions} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapMidnightTeamContributions" component={SprintRecapMidnightTeamContributions} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapCrimsonShippedList" component={SprintRecapCrimsonShippedList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapLavenderShippedList" component={SprintRecapLavenderShippedList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapArcticHighlightCards" component={SprintRecapArcticHighlightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-SprintRecapEspressoHighlightCards" component={SprintRecapEspressoHighlightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Sprint-Recap">
+      <Composition id="SprintRecap-ShippedListDark" component={SprintRecapShippedListDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-ShippedListBold" component={SprintRecapShippedListBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-HighlightCardsDark" component={SprintRecapHighlightCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-HighlightCardsBold" component={SprintRecapHighlightCardsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-TeamContributionsDark" component={SprintRecapTeamContributionsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-TeamContributionsBold" component={SprintRecapTeamContributionsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-OceanShippedList" component={SprintRecapOceanShippedList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-SunsetShippedList" component={SprintRecapSunsetShippedList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-ForestHighlightCards" component={SprintRecapForestHighlightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-RoseHighlightCards" component={SprintRecapRoseHighlightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-GoldTeamContributions" component={SprintRecapGoldTeamContributions} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-MidnightTeamContributions" component={SprintRecapMidnightTeamContributions} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-CrimsonShippedList" component={SprintRecapCrimsonShippedList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-LavenderShippedList" component={SprintRecapLavenderShippedList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-ArcticHighlightCards" component={SprintRecapArcticHighlightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="SprintRecap-EspressoHighlightCards" component={SprintRecapEspressoHighlightCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-StoreLocatorFinderClean" component={StoreLocatorFinderClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorFinderMinimal" component={StoreLocatorFinderMinimal} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorMapPinsClean" component={StoreLocatorMapPinsClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorMapPinsMinimal" component={StoreLocatorMapPinsMinimal} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorDirectoryClean" component={StoreLocatorDirectoryClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorDirectoryMinimal" component={StoreLocatorDirectoryMinimal} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorOceanFinder" component={StoreLocatorOceanFinder} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorSunsetMapPins" component={StoreLocatorSunsetMapPins} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorForestDirectory" component={StoreLocatorForestDirectory} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorRoseFinder" component={StoreLocatorRoseFinder} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorGoldMapPins" component={StoreLocatorGoldMapPins} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorMidnightDirectory" component={StoreLocatorMidnightDirectory} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorCrimsonFinder" component={StoreLocatorCrimsonFinder} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorLavenderMapPins" component={StoreLocatorLavenderMapPins} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorArcticDirectory" component={StoreLocatorArcticDirectory} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-StoreLocatorEspressoFinder" component={StoreLocatorEspressoFinder} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Store-Locator">
+      <Composition id="StoreLocator-FinderClean" component={StoreLocatorFinderClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-FinderMinimal" component={StoreLocatorFinderMinimal} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-MapPinsClean" component={StoreLocatorMapPinsClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-MapPinsMinimal" component={StoreLocatorMapPinsMinimal} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-DirectoryClean" component={StoreLocatorDirectoryClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-DirectoryMinimal" component={StoreLocatorDirectoryMinimal} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-OceanFinder" component={StoreLocatorOceanFinder} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-SunsetMapPins" component={StoreLocatorSunsetMapPins} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-ForestDirectory" component={StoreLocatorForestDirectory} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-RoseFinder" component={StoreLocatorRoseFinder} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-GoldMapPins" component={StoreLocatorGoldMapPins} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-MidnightDirectory" component={StoreLocatorMidnightDirectory} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-CrimsonFinder" component={StoreLocatorCrimsonFinder} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-LavenderMapPins" component={StoreLocatorLavenderMapPins} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-ArcticDirectory" component={StoreLocatorArcticDirectory} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="StoreLocator-EspressoFinder" component={StoreLocatorEspressoFinder} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Testimonial">
@@ -1059,42 +1061,42 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Testimonial-EspressoCentered" component={TestimonialEspressoCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-ThoughtLeadershipEditorialDark" component={ThoughtLeadershipEditorialDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipEditorialClean" component={ThoughtLeadershipEditorialClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipNarrativeDark" component={ThoughtLeadershipNarrativeDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipNarrativeClean" component={ThoughtLeadershipNarrativeClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipKeynoteDark" component={ThoughtLeadershipKeynoteDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipKeynoteClean" component={ThoughtLeadershipKeynoteClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipOceanEditorial" component={ThoughtLeadershipOceanEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipSunsetNarrative" component={ThoughtLeadershipSunsetNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipForestKeynote" component={ThoughtLeadershipForestKeynote} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipRoseEditorial" component={ThoughtLeadershipRoseEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipGoldNarrative" component={ThoughtLeadershipGoldNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipMidnightKeynote" component={ThoughtLeadershipMidnightKeynote} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipCrimsonEditorial" component={ThoughtLeadershipCrimsonEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipLavenderNarrative" component={ThoughtLeadershipLavenderNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipArcticKeynote" component={ThoughtLeadershipArcticKeynote} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-ThoughtLeadershipEspressoEditorial" component={ThoughtLeadershipEspressoEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Thought-Leadership">
+      <Composition id="ThoughtLeadership-EditorialDark" component={ThoughtLeadershipEditorialDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-EditorialClean" component={ThoughtLeadershipEditorialClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-NarrativeDark" component={ThoughtLeadershipNarrativeDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-NarrativeClean" component={ThoughtLeadershipNarrativeClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-KeynoteDark" component={ThoughtLeadershipKeynoteDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-KeynoteClean" component={ThoughtLeadershipKeynoteClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-OceanEditorial" component={ThoughtLeadershipOceanEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-SunsetNarrative" component={ThoughtLeadershipSunsetNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-ForestKeynote" component={ThoughtLeadershipForestKeynote} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-RoseEditorial" component={ThoughtLeadershipRoseEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-GoldNarrative" component={ThoughtLeadershipGoldNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-MidnightKeynote" component={ThoughtLeadershipMidnightKeynote} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-CrimsonEditorial" component={ThoughtLeadershipCrimsonEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-LavenderNarrative" component={ThoughtLeadershipLavenderNarrative} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-ArcticKeynote" component={ThoughtLeadershipArcticKeynote} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ThoughtLeadership-EspressoEditorial" component={ThoughtLeadershipEspressoEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-TravelItineraryDayByDayWarm" component={TravelItineraryDayByDayWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryDayByDayBold" component={TravelItineraryDayByDayBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryRouteOverviewWarm" component={TravelItineraryRouteOverviewWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryRouteOverviewBold" component={TravelItineraryRouteOverviewBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryHighlightsWarm" component={TravelItineraryHighlightsWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryHighlightsBold" component={TravelItineraryHighlightsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryOceanDayByDay" component={TravelItineraryOceanDayByDay} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItinerarySunsetDayByDay" component={TravelItinerarySunsetDayByDay} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryForestRouteOverview" component={TravelItineraryForestRouteOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryRoseRouteOverview" component={TravelItineraryRoseRouteOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryGoldHighlights" component={TravelItineraryGoldHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryMidnightHighlights" component={TravelItineraryMidnightHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryCrimsonDayByDay" component={TravelItineraryCrimsonDayByDay} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryLavenderDayByDay" component={TravelItineraryLavenderDayByDay} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryArcticRouteOverview" component={TravelItineraryArcticRouteOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-TravelItineraryEspressoRouteOverview" component={TravelItineraryEspressoRouteOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Travel-Itinerary">
+      <Composition id="TravelItinerary-DayByDayWarm" component={TravelItineraryDayByDayWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-DayByDayBold" component={TravelItineraryDayByDayBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-RouteOverviewWarm" component={TravelItineraryRouteOverviewWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-RouteOverviewBold" component={TravelItineraryRouteOverviewBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-HighlightsWarm" component={TravelItineraryHighlightsWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-HighlightsBold" component={TravelItineraryHighlightsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-OceanDayByDay" component={TravelItineraryOceanDayByDay} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-SunsetDayByDay" component={TravelItinerarySunsetDayByDay} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-ForestRouteOverview" component={TravelItineraryForestRouteOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-RoseRouteOverview" component={TravelItineraryRoseRouteOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-GoldHighlights" component={TravelItineraryGoldHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-MidnightHighlights" component={TravelItineraryMidnightHighlights} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-CrimsonDayByDay" component={TravelItineraryCrimsonDayByDay} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-LavenderDayByDay" component={TravelItineraryLavenderDayByDay} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-ArcticRouteOverview" component={TravelItineraryArcticRouteOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="TravelItinerary-EspressoRouteOverview" component={TravelItineraryEspressoRouteOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Tutorial">
@@ -1116,23 +1118,23 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Tutorial-EspressoCardSequence" component={TutorialEspressoCardSequence} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    <Folder name="">
-      <Composition id="-VelocityChartBarChartDark" component={VelocityChartBarChartDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartBarChartClean" component={VelocityChartBarChartClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartTrendLineDark" component={VelocityChartTrendLineDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartTrendLineClean" component={VelocityChartTrendLineClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartSummaryDark" component={VelocityChartSummaryDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartSummaryClean" component={VelocityChartSummaryClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartOceanBarChart" component={VelocityChartOceanBarChart} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartSunsetBarChart" component={VelocityChartSunsetBarChart} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartForestTrendLine" component={VelocityChartForestTrendLine} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartRoseTrendLine" component={VelocityChartRoseTrendLine} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartGoldSummary" component={VelocityChartGoldSummary} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartMidnightSummary" component={VelocityChartMidnightSummary} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartCrimsonBarChart" component={VelocityChartCrimsonBarChart} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartLavenderBarChart" component={VelocityChartLavenderBarChart} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartArcticTrendLine" component={VelocityChartArcticTrendLine} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="-VelocityChartEspressoTrendLine" component={VelocityChartEspressoTrendLine} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    <Folder name="Velocity-Chart">
+      <Composition id="VelocityChart-BarChartDark" component={VelocityChartBarChartDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-BarChartClean" component={VelocityChartBarChartClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-TrendLineDark" component={VelocityChartTrendLineDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-TrendLineClean" component={VelocityChartTrendLineClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-SummaryDark" component={VelocityChartSummaryDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-SummaryClean" component={VelocityChartSummaryClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-OceanBarChart" component={VelocityChartOceanBarChart} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-SunsetBarChart" component={VelocityChartSunsetBarChart} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-ForestTrendLine" component={VelocityChartForestTrendLine} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-RoseTrendLine" component={VelocityChartRoseTrendLine} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-GoldSummary" component={VelocityChartGoldSummary} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-MidnightSummary" component={VelocityChartMidnightSummary} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-CrimsonBarChart" component={VelocityChartCrimsonBarChart} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-LavenderBarChart" component={VelocityChartLavenderBarChart} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-ArcticTrendLine" component={VelocityChartArcticTrendLine} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="VelocityChart-EspressoTrendLine" component={VelocityChartEspressoTrendLine} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     {/* ══ Effect Templates (reactvideoeditor/remotion-templates) ══ */}
@@ -1435,12 +1437,10 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="LindaMohamedV2-Workshops"    component={Folie5WorkshopsV2}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    {/* ── YouTube Tutorial ───────────────────────────────────────── */}
     <Folder name="YouTube-Tutorial">
       <Composition id="YouTubeTutorial-VideoFlowPipeline" component={VideoFlowPipelineTutorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
-    {/* ── Community GameDay Europe ───────────────────────────────── */}
     <Folder name="GameDay">
       <Composition id="GameDay-MarketingVideo"        component={MarketingVideo}        durationInFrames={640}   fps={FPS} width={W} height={H} />
       <Composition id="GameDay-Countdown"             component={Countdown}             durationInFrames={18000} fps={FPS} width={W} height={H} defaultProps={{ loopIteration: 0 }} />

@@ -98,7 +98,7 @@ jobs:
 
           if not ids:
             raise SystemExit(0)
-          print(f"Rendering {len(ids)} missing previews", flush=True)
+          import sys; print(f"Rendering {len(ids)} missing previews", file=sys.stderr, flush=True)
           for i in ids:
             print(i)
           PYEOF
