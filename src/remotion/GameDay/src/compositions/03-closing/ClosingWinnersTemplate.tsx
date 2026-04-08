@@ -78,15 +78,15 @@ export interface TeamData {
 
 // ── Placeholder Podium Teams (update live during stream) ──
 // ugName must match a key in LOGO_MAP from CommunityGamedayEuropeV4
-// [PLACEHOLDER DATA] - MUST BE UPDATED WITH REAL WINNERS BEFORE RENDERING
+// ⚠️  PLACEHOLDER DATA  -  MUST BE UPDATED WITH REAL WINNERS BEFORE RENDERING
 // See TEMPLATE.md for instructions on how to update
 export const PODIUM_TEAMS: TeamData[] = [
-  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "[FLAG]", location: "CITY, COUNTRY", score: 18500 },
-  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "[FLAG]", location: "CITY, COUNTRY", score: 15200 },
-  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "[FLAG]", location: "CITY, COUNTRY", score: 12800 },
-  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "[FLAG]", location: "CITY, COUNTRY", score: 11500 },
-  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "[FLAG]", location: "CITY, COUNTRY", score: 10200 },
-  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "[FLAG]", location: "CITY, COUNTRY", score: 8900 },
+  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "🏳️", location: "CITY, COUNTRY", score: 18500 },
+  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "🏳️", location: "CITY, COUNTRY", score: 15200 },
+  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "🏳️", location: "CITY, COUNTRY", score: 12800 },
+  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "🏳️", location: "CITY, COUNTRY", score: 11500 },
+  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "🏳️", location: "CITY, COUNTRY", score: 10200 },
+  { teamName: "TEAM NAME", ugName: "REPLACE_WITH_UG_NAME", flag: "🏳️", location: "CITY, COUNTRY", score: 8900 },
 ];
 
 // ── Reveal Schedule ──

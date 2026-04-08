@@ -143,7 +143,6 @@ export function getOrganizerUserGroup(p: Organizer): UserGroupName | undefined {
 }
 
 // ── Community Organizers ──
-// Note: Face images use placeholder avatars. Only Linda Mohamed's photo is retained.
 export const ORGANIZERS: Organizer[] = [
   {
     name: "Jerome", streamRole: "co-organizer",
@@ -204,7 +203,6 @@ export const ORGANIZERS: Organizer[] = [
 ];
 
 // ── AWS Supporters (Gamemasters & Community Team) ──
-// Note: Face images use placeholder avatars.
 export const AWS_SUPPORTERS: Organizer[] = [
   { name: "Arnaud", streamRole: "gamemaster", jobTitle: "Sr. Developer Advocate, AWS",        flag: "🇫🇷", face: "avatar/placeholder.svg", type: "aws",
     bio: ["Sr. Developer Advocate at AWS. Arnaud will deliver the official GameDay instructions and guide all teams through the competition format, rules, and scoring system."] },
