@@ -142,13 +142,18 @@ document.querySelectorAll('.lib-mol-card').forEach(function(card) {
   });
 });
 
-// Video hover on lib-cards
-document.querySelectorAll('.lib-card').forEach(function(card) {
-  var vid = card.querySelector('video');
-  if (!vid) return;
-  card.addEventListener('mouseenter', function() { vid.play().catch(function(){}); });
-  card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
-});
+// Video play on lib-cards (hover on desktop, scroll-autoplay on mobile)
+if (window.__setupVideoCards) {
+  window.__setupVideoCards('.lib-card');
+} else {
+  // Fallback if main.js hasn't loaded yet
+  document.querySelectorAll('.lib-card').forEach(function(card) {
+    var vid = card.querySelector('video');
+    if (!vid) return;
+    card.addEventListener('mouseenter', function() { vid.play().catch(function(){}); });
+    card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
+  });
+}
 
 // Embed template data for style switching
 window.__TPLS__ = {{ .Site.Data.templates | jsonify }};

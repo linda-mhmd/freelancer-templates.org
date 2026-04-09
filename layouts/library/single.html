@@ -325,13 +325,17 @@
   });
 })();
 
-// Video hover on variant cards
-document.querySelectorAll('.tpl-var-card').forEach(function(card) {
-  var vid = card.querySelector('video');
-  if (!vid) return;
-  card.addEventListener('mouseenter', function() { vid.play().catch(function(){}); });
-  card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
-});
+// Video play on variant cards (hover on desktop, scroll-autoplay on mobile)
+if (window.__setupVideoCards) {
+  window.__setupVideoCards('.tpl-var-card');
+} else {
+  document.querySelectorAll('.tpl-var-card').forEach(function(card) {
+    var vid = card.querySelector('video');
+    if (!vid) return;
+    card.addEventListener('mouseenter', function() { vid.play().catch(function(){}); });
+    card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
+  });
+}
 
 // Per-composition detail panel (XSS-safe: all user data set via textContent or DOM API)
 (function() {

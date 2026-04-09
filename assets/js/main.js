@@ -131,19 +131,48 @@
   });
 })();
 
-// Video hover play - hero mock cards + featured rmt-cards
+// Video play - hover on desktop, scroll-autoplay on mobile
 (function () {
-  document.querySelectorAll('.mock-card, .rmt-card').forEach(function (card) {
-    var vid = card.querySelector('video');
-    if (!vid) return;
-    card.addEventListener('mouseenter', function () {
-      vid.play().catch(function () {});
-    });
-    card.addEventListener('mouseleave', function () {
-      vid.pause();
-      vid.currentTime = 0;
-    });
-  });
+  var isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+  function setupVideoCards(selector) {
+    var cards = document.querySelectorAll(selector);
+    if (!cards.length) return;
+
+    if (isTouch) {
+      // Mobile: autoplay when visible, pause when not
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          var vid = entry.target.querySelector('video');
+          if (!vid) return;
+          if (entry.isIntersecting) {
+            vid.play().catch(function () {});
+          } else {
+            vid.pause();
+          }
+        });
+      }, { threshold: 0.3 });
+      cards.forEach(function (card) { observer.observe(card); });
+    } else {
+      // Desktop: hover to play
+      cards.forEach(function (card) {
+        var vid = card.querySelector('video');
+        if (!vid) return;
+        card.addEventListener('mouseenter', function () {
+          vid.play().catch(function () {});
+        });
+        card.addEventListener('mouseleave', function () {
+          vid.pause();
+          vid.currentTime = 0;
+        });
+      });
+    }
+  }
+
+  setupVideoCards('.mock-card, .rmt-card');
+
+  // Expose for use by other inline scripts (library, single pages)
+  window.__setupVideoCards = setupVideoCards;
 })();
 
 // Lucide icons - init after DOM ready
