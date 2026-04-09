@@ -1,0 +1,129 @@
+{{/* Reusable brand color editor - drop into any layout.
+     Reads/writes URL params: brandPrimary, brandSecondary, brandAccent, brandBg, brandText.
+     Dispatches a CustomEvent "brandcolors:change" on document with { detail: { primary, secondary, accent, bg, text } }.
+     Any page JS can listen for this event to update iframes, previews, etc.
+*/}}
+<div class="be-editor" id="brandEditor">
+  <div class="be-hd">
+    <h3 class="be-hd__title">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="17" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M13.5 9v5l-3 3M6 14.5l7.5-5.5"/></svg>
+      Customize brand colors
+    </h3>
+    <p class="be-hd__sub">Adjust colors below to see this template in your brand. Changes are saved in the URL so you can share or bookmark.</p>
+  </div>
+
+  <div class="be-roles">
+    {{ $roles := slice "primary" "secondary" "accent" "bg" "text" }}
+    {{ $defaults := dict "primary" "#6366f1" "secondary" "#a855f7" "accent" "#ec4899" "bg" "#0a0a0f" "text" "#ffffff" }}
+    {{ $labels := dict "primary" "Primary" "secondary" "Secondary" "accent" "Accent" "bg" "Background" "text" "Text" }}
+    {{ range $roles }}
+    <div class="be-role" data-role="{{ . }}">
+      <span class="be-role__name">{{ index $labels . }}</span>
+      <div class="be-role__wrap">
+        <div class="be-role__swatch" id="be_swatch_{{ . }}" style="background:{{ index $defaults . }};"></div>
+        <input type="color" class="be-role__picker" id="be_pick_{{ . }}" data-role="{{ . }}" value="{{ index $defaults . }}">
+      </div>
+      <code class="be-role__hex" id="be_hex_{{ . }}">{{ index $defaults . }}</code>
+    </div>
+    {{ end }}
+  </div>
+
+  <div class="be-actions">
+    <button class="btn btn--outline btn--sm" id="beReset">Reset</button>
+    <button class="btn btn--outline btn--sm" id="beCopyLink">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      Copy link
+    </button>
+    <a href="{{ "customize/" | relURL }}" class="btn btn--outline btn--sm">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      Upload logo / CSS
+    </a>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var DEFAULTS = { primary: '#6366f1', secondary: '#a855f7', accent: '#ec4899', bg: '#0a0a0f', text: '#ffffff' };
+  var PARAM_MAP = { brandPrimary: 'primary', brandSecondary: 'secondary', brandAccent: 'accent', brandBg: 'bg', brandText: 'text' };
+  var brandColors = {};
+  Object.keys(DEFAULTS).forEach(function (k) { brandColors[k] = DEFAULTS[k]; });
+
+  function el(id) { return document.getElementById(id); }
+
+  // Load from URL params
+  var params = new URLSearchParams(window.location.search);
+  Object.keys(PARAM_MAP).forEach(function (param) {
+    var hex = params.get(param);
+    if (hex) {
+      hex = '#' + hex.replace(/[^0-9a-fA-F]/g, '').slice(0, 6);
+      if (hex.length === 7) brandColors[PARAM_MAP[param]] = hex;
+    }
+  });
+
+  function updateUI(role) {
+    var swatch = el('be_swatch_' + role);
+    if (swatch) swatch.style.background = brandColors[role];
+    var hexEl = el('be_hex_' + role);
+    if (hexEl) hexEl.textContent = brandColors[role];
+    var picker = el('be_pick_' + role);
+    if (picker) picker.value = brandColors[role];
+  }
+
+  function buildUrl() {
+    var url = new URL(window.location.href);
+    Object.keys(PARAM_MAP).forEach(function (param) {
+      url.searchParams.set(param, brandColors[PARAM_MAP[param]].replace('#', ''));
+    });
+    return url.toString();
+  }
+
+  function broadcastChange() {
+    var copy = {};
+    Object.keys(brandColors).forEach(function (k) { copy[k] = brandColors[k]; });
+    document.dispatchEvent(new CustomEvent('brandcolors:change', { detail: copy }));
+    window.history.replaceState({}, '', buildUrl());
+  }
+
+  // Init UI from current state
+  Object.keys(brandColors).forEach(updateUI);
+
+  // Pickers
+  document.querySelectorAll('.be-role__picker').forEach(function (picker) {
+    picker.addEventListener('input', function () {
+      brandColors[picker.dataset.role] = picker.value;
+      updateUI(picker.dataset.role);
+      broadcastChange();
+    });
+  });
+
+  // Reset
+  var resetBtn = el('beReset');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function () {
+      Object.keys(DEFAULTS).forEach(function (k) {
+        brandColors[k] = DEFAULTS[k];
+        updateUI(k);
+      });
+      broadcastChange();
+    });
+  }
+
+  // Copy link
+  var copyBtn = el('beCopyLink');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var url = buildUrl();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () {
+          copyBtn.textContent = 'Copied!';
+          setTimeout(function () { copyBtn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Copy link'; }, 2000);
+        });
+      }
+    });
+  }
+
+  // Fire initial event so page JS can pick up URL-loaded colors
+  setTimeout(function () { broadcastChange(); }, 0);
+}());
+</script>

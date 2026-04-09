@@ -63,6 +63,48 @@
   </div>
 </section>
 
+<!-- ── Brand Color Editor ─────────────────────────────────────── -->
+<section class="tpl-brand-section">
+  <div class="container">
+    {{ partial "brand-editor.html" . }}
+  </div>
+</section>
+
+<script>
+// Listen for brand color changes and update the player iframe
+(function () {
+  var PLAYER_BASE = (function () {
+    var p = window.location.pathname.replace(/\/library\/[^/]+\/?$/, '').replace(/\/$/, '');
+    return window.location.origin + p + '/player/';
+  }());
+
+  function hexNoHash(hex) { return hex.replace(/^#/, ''); }
+
+  function buildSrc(comp, colors) {
+    return PLAYER_BASE + '?comp=' + encodeURIComponent(comp) +
+      '&embed=1' +
+      '&brandPrimary='   + hexNoHash(colors.primary) +
+      '&brandSecondary=' + hexNoHash(colors.secondary) +
+      '&brandAccent='    + hexNoHash(colors.accent) +
+      '&brandBg='        + hexNoHash(colors.bg) +
+      '&brandText='      + hexNoHash(colors.text);
+  }
+
+  var debounce = null;
+  document.addEventListener('brandcolors:change', function (e) {
+    clearTimeout(debounce);
+    debounce = setTimeout(function () {
+      var iframe = document.getElementById('tplPlayerIframe');
+      if (!iframe) return;
+      var src = iframe.src || '';
+      var compMatch = src.match(/[?&]comp=([^&]+)/);
+      var comp = compMatch ? decodeURIComponent(compMatch[1]) : '{{ .Params.primaryId }}';
+      iframe.src = buildSrc(comp, e.detail);
+    }, 300);
+  });
+}());
+</script>
+
 <!-- ── All Variants ───────────────────────────────────────────── -->
 <section class="tpl-variants">
   <div class="container">

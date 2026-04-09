@@ -3012,6 +3012,66 @@ html.dark .footer__soc:hover { color: #001029; }
   color: #a5b4fc;
 }
 
+/* ── Reusable brand editor (partial) ── */
+.be-editor {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--r-lg, 12px);
+  padding: 28px;
+  margin-bottom: 32px;
+}
+.be-hd { margin-bottom: 20px; }
+.be-hd__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0 0 6px;
+}
+.be-hd__sub { font-size: 13px; color: #64748b; margin: 0; line-height: 1.6; }
+.be-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.be-role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 72px;
+}
+.be-role__name { font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+.be-role__wrap { position: relative; cursor: pointer; }
+.be-role__swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r, 8px);
+  border: 2px solid rgba(255,255,255,0.1);
+  transition: border-color 0.15s;
+}
+.be-role__swatch:hover { border-color: rgba(99,102,241,0.5); }
+.be-role__picker {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.be-role__hex { font-size: 11px; color: #64748b; }
+.be-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+@media (max-width: 480px) {
+  .be-editor { padding: 20px 16px; }
+  .be-roles { gap: 12px; }
+  .be-role { min-width: 56px; }
+  .be-role__swatch { width: 36px; height: 36px; }
+}
+
 /* Extracted palette */
 .cz-extracted {
   margin-bottom: 32px;
