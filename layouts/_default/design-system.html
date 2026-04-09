@@ -496,6 +496,34 @@
   </div>
 </section>
 
+<!-- ── All Templates ──────────────────────────────────────────── -->
+<section class="ds-section ds-section--alt">
+  <div class="container">
+    {{- $tplCount := 0 }}{{ $varCount := 0 }}{{ range .Site.Data.templates }}{{ $tplCount = add $tplCount 1 }}{{ $varCount = add $varCount .variantCount }}{{ end -}}
+    <h2 class="ds-section__hd">All {{ $tplCount }} template types</h2>
+    <p class="ds-section__sub">{{ $varCount }} compositions across {{ $tplCount }} templates. Every template supports every theme above. Click to see all variants.</p>
+
+    <div class="ds-tpl-grid">
+      {{ range .Site.Pages }}{{ if eq .Section "library" }}{{ if ne .File.ContentBaseName "_index" }}
+      <a href="{{ .RelPermalink }}" class="ds-tpl-card">
+        <div class="ds-tpl-card__media">
+          <img src="{{ (printf "previews/showcase/%s.png" .Params.primaryId) | relURL }}"
+               alt="{{ .Title }} preview" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ds-tpl-card__fallback" style="display:none;">
+            <i data-lucide="{{ .Params.icon }}"></i>
+          </div>
+        </div>
+        <div class="ds-tpl-card__body">
+          <span class="ds-tpl-card__name">{{ .Title }}</span>
+          <span class="ds-tpl-card__count">{{ .Params.variantCount }} variants</span>
+        </div>
+      </a>
+      {{ end }}{{ end }}{{ end }}
+    </div>
+  </div>
+</section>
+
 <!-- ── CTA ────────────────────────────────────────────────────── -->
 <section class="ds-section">
   <div class="container">

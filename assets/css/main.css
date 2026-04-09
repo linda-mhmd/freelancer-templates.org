@@ -3555,6 +3555,66 @@ html.dark .footer__soc:hover { color: #001029; }
 .ds-type-use { font-size: 12px; color: #64748b; }
 .ds-type-ex { color: #f1f5f9; font-family: 'Inter', sans-serif; }
 
+/* Template grid (auto-populated) */
+.ds-tpl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.ds-tpl-card {
+  display: block;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--r-md, 8px);
+  overflow: hidden;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.ds-tpl-card:hover {
+  border-color: rgba(99,102,241,0.4);
+  transform: translateY(-2px);
+}
+.ds-tpl-card__media {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: #0a0a14;
+}
+.ds-tpl-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ds-tpl-card__fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+}
+.ds-tpl-card__fallback i, .ds-tpl-card__fallback svg { width: 32px; height: 32px; }
+.ds-tpl-card__body {
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.ds-tpl-card__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e2e8f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ds-tpl-card__count {
+  font-size: 11px;
+  color: #64748b;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* CTA box */
 .ds-cta-box {
   background: #060e1c;
@@ -3573,9 +3633,11 @@ html.dark .footer__soc:hover { color: #001029; }
   .ds-type-row { grid-template-columns: 130px 70px 1fr; }
   .ds-type-row .ds-type-ex { display: none; }
   .ds-cta-box { padding: 32px 20px; }
+  .ds-tpl-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 }
 @media (max-width: 480px) {
   .ds-theme-grid { grid-template-columns: 1fr; }
   .ds-type-row { grid-template-columns: 120px 60px; }
+  .ds-tpl-grid { grid-template-columns: 1fr; }
   .ds-type-use { display: none; }
 }
