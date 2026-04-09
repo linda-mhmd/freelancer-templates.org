@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<section class="legal-page">
+  <div class="container">
+    <h1 class="legal-page__title">{{ .Title }}</h1>
+    <div class="legal-page__body">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+{{ partial "site-footer.html" . }}
+{{ end }}

@@ -3064,6 +3064,8 @@ html.dark .footer__soc:hover { color: #001029; }
 }
 .be-role__hex { font-size: 11px; color: #64748b; }
 .be-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.be-storage-note { font-size: 11px; color: #475569; margin: 12px 0 0; }
+.be-storage-note a { color: #64748b; text-decoration: underline; }
 
 @media (max-width: 480px) {
   .be-editor { padding: 20px 16px; }
@@ -3716,3 +3718,13 @@ html.dark .footer__soc:hover { color: #001029; }
   .ds-tpl-grid { grid-template-columns: 1fr; }
   .ds-type-use { display: none; }
 }
+
+/* ── Legal pages ── */
+.legal-page { padding: 80px 0 60px; }
+.legal-page__title { font-size: 28px; font-weight: 800; color: #f1f5f9; margin: 0 0 32px; }
+.legal-page__body { max-width: 680px; font-size: 14px; line-height: 1.8; color: #94a3b8; }
+.legal-page__body h2 { font-size: 20px; font-weight: 700; color: #e2e8f0; margin: 36px 0 12px; }
+.legal-page__body h3 { font-size: 16px; font-weight: 600; color: #cbd5e1; margin: 28px 0 10px; }
+.legal-page__body p { margin: 0 0 14px; }
+.legal-page__body a { color: #6366f1; text-decoration: underline; }
+.legal-page__body strong { color: #e2e8f0; }

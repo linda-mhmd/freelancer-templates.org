@@ -29,16 +29,24 @@
   </div>
 
   <div class="be-actions">
-    <button class="btn btn--outline btn--sm" id="beReset">Reset</button>
+    <button class="btn btn--primary btn--sm" id="beSave">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+      Save to browser
+    </button>
+    <button class="btn btn--outline btn--sm" id="beDownload">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download JSON
+    </button>
     <button class="btn btn--outline btn--sm" id="beCopyLink">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
       Copy link
     </button>
+    <button class="btn btn--outline btn--sm" id="beReset">Reset</button>
     <a href="{{ "customize/" | relURL }}" class="btn btn--outline btn--sm">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
       Upload logo / CSS
     </a>
   </div>
+  <p class="be-storage-note">Colors are stored locally in your browser. No data is sent to any server. <a href="{{ "privacy/" | relURL }}">Privacy policy</a></p>
 </div>
 
 <script>
@@ -123,7 +131,61 @@
     });
   }
 
-  // Fire initial event so page JS can pick up URL-loaded colors
+  // ---- LocalStorage save/load ----
+  var STORAGE_KEY = 'ft_brand_colors';
+
+  function loadFromStorage() {
+    try {
+      var stored = localStorage.getItem(STORAGE_KEY);
+      if (!stored) return false;
+      var parsed = JSON.parse(stored);
+      var found = false;
+      Object.keys(DEFAULTS).forEach(function (k) {
+        if (parsed[k] && /^#[0-9a-fA-F]{6}$/.test(parsed[k])) {
+          brandColors[k] = parsed[k];
+          found = true;
+        }
+      });
+      return found;
+    } catch (e) { return false; }
+  }
+
+  // URL params take priority over localStorage
+  var hasUrlParams = false;
+  Object.keys(PARAM_MAP).forEach(function (p) { if (params.get(p)) hasUrlParams = true; });
+  if (!hasUrlParams) loadFromStorage();
+
+  // Save button
+  var saveBtn = el('beSave');
+  if (saveBtn) {
+    saveBtn.addEventListener('click', function () {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(brandColors));
+        saveBtn.textContent = 'Saved!';
+        setTimeout(function () { saveBtn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg> Save to browser'; }, 2000);
+      } catch (e) {}
+    });
+  }
+
+  // Download JSON
+  var dlBtn = el('beDownload');
+  if (dlBtn) {
+    dlBtn.addEventListener('click', function () {
+      var data = JSON.stringify({ brandColors: brandColors, exported: new Date().toISOString() }, null, 2);
+      var blob = new Blob([data], { type: 'application/json' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'brand-colors.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  }
+
+  // Fire initial event so page JS can pick up URL-loaded or localStorage-loaded colors
+  Object.keys(brandColors).forEach(updateUI);
   setTimeout(function () { broadcastChange(); }, 0);
 }());
 </script>
