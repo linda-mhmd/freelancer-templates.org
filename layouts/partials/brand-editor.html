@@ -35,9 +35,10 @@
     <span class="be-group__label">Text</span>
     <div class="be-group__roles">
       {{ range (slice
-        (dict "role" "textHeading" "label" "Heading" "default" "#ffffff")
-        (dict "role" "textBody" "label" "Body" "default" "#e2e8f0")
-        (dict "role" "textMuted" "label" "Muted" "default" "#64748b")
+        (dict "role" "textHeading" "label" "Heading (h1/h2)" "default" "#ffffff")
+        (dict "role" "textSubheading" "label" "Subheading (h3)" "default" "#cbd5e1")
+        (dict "role" "textBody" "label" "Paragraph" "default" "#e2e8f0")
+        (dict "role" "textMuted" "label" "Muted / Caption" "default" "#64748b")
       ) }}
       <div class="be-role" data-role="{{ .role }}">
         <span class="be-role__name">{{ .label }}</span>
@@ -97,14 +98,14 @@
   'use strict';
   var DEFAULTS = {
     bgPrimary: '#0a0a0f', bgSecondary: '#111827',
-    textHeading: '#ffffff', textBody: '#e2e8f0', textMuted: '#64748b',
+    textHeading: '#ffffff', textSubheading: '#cbd5e1', textBody: '#e2e8f0', textMuted: '#64748b',
     accentPrimary: '#6366f1', accentSecondary: '#a855f7', border: '#1e293b'
   };
 
-  // Map URL params to roles (new 8-param format + backward compat with old 5-param)
+  // Map URL params to roles (new 9-param format + backward compat with old 5-param)
   var PARAM_MAP = {
     bgPrimary: 'bgPrimary', bgSecondary: 'bgSecondary',
-    textHeading: 'textHeading', textBody: 'textBody', textMuted: 'textMuted',
+    textHeading: 'textHeading', textSubheading: 'textSubheading', textBody: 'textBody', textMuted: 'textMuted',
     accentPrimary: 'accentPrimary', accentSecondary: 'accentSecondary', border: 'border',
     // Backward compat: old params map into new roles
     brandBg: 'bgPrimary', brandText: 'textHeading', brandPrimary: 'accentPrimary',
