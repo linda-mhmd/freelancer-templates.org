@@ -73,7 +73,7 @@
 {{ partial "site-footer.html" . }}
 
 <!-- New/Edit brand modal -->
-<div class="mb-modal-overlay" id="mbModal" hidden>
+<div class="mb-modal-overlay" id="mbModal">
   <div class="mb-modal">
     <div class="mb-modal__hd">
       <h3 class="mb-modal__title" id="mbModalTitle">New brand</h3>
@@ -361,12 +361,12 @@
     el('mbModalAccentPrimary').value = bc.accentPrimary || bc.primary || '#6366f1';
     el('mbModalAccentSecondary').value = bc.accentSecondary || bc.secondary || '#a855f7';
     el('mbModalBorder').value = bc.border || '#1e293b';
-    el('mbModal').hidden = false;
+    el('mbModal').classList.add('is-open');
     el('mbModalName').focus();
   }
 
   function closeModal() {
-    el('mbModal').hidden = true;
+    el('mbModal').classList.remove('is-open');
     editingId = null;
   }
 

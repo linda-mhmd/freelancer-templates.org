@@ -3813,7 +3813,10 @@ html.dark .footer__soc:hover { color: #001029; }
 /* Modal */
 .mb-modal-overlay {
   position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
-  display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 20px;
+  display: none; align-items: center; justify-content: center; z-index: 1000; padding: 20px;
+}
+.mb-modal-overlay.is-open {
+  display: flex;
 }
 .mb-modal {
   background: #0f172a; border: 1px solid #1e293b; border-radius: var(--r-lg, 12px);
