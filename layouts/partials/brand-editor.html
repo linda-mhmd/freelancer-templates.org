@@ -85,10 +85,6 @@
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
       Copy link
     </button>
-    <button class="btn btn--outline btn--sm" id="beSaveAsBrand">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
-      Save as brand
-    </button>
     <button class="btn btn--outline btn--sm" id="beReset">Reset</button>
     <a href="{{ "customize/" | relURL }}" class="btn btn--outline btn--sm">
       Upload logo / CSS
@@ -96,6 +92,10 @@
     <a href="{{ "my-brands/" | relURL }}" class="btn btn--outline btn--sm">
       My Brands
     </a>
+  </div>
+  <div class="be-save-row">
+    <input type="text" id="beBrandName" class="be-save-row__input" placeholder="Name this brand..." maxlength="40" autocomplete="off">
+    <button class="btn btn--primary btn--sm" id="beSaveAsBrand">Save as brand</button>
   </div>
   <p class="be-storage-note">Colors are stored locally in your browser. No data is sent to any server. <a href="{{ "privacy/" | relURL }}">Privacy policy</a></p>
 </div>
@@ -308,11 +308,11 @@
 
   // ---- Save as Brand ----
   var saveAsBrandBtn = el('beSaveAsBrand');
-  if (saveAsBrandBtn) {
+  var brandNameInput = el('beBrandName');
+  if (saveAsBrandBtn && brandNameInput) {
     saveAsBrandBtn.addEventListener('click', function () {
-      var name = prompt('Brand name:');
-      if (!name || !name.trim()) return;
-      name = name.trim();
+      var name = brandNameInput.value.trim();
+      if (!name) { brandNameInput.focus(); return; }
       try {
         var brands = JSON.parse(localStorage.getItem(BRANDS_KEY) || '[]');
         brands.push({
@@ -323,12 +323,12 @@
           source: getPageTitle()
         });
         localStorage.setItem(BRANDS_KEY, JSON.stringify(brands));
-        // Also track in history
         var history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
-        history.unshift({ action: 'Saved brand', brand: name, date: new Date().toISOString() });
+        history.unshift({ action: 'Saved brand', brand: name, colors: JSON.parse(JSON.stringify(brandColors)), date: new Date().toISOString() });
         localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 30)));
         saveAsBrandBtn.textContent = 'Saved!';
-        setTimeout(function () { saveAsBrandBtn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg> Save as brand'; }, 2000);
+        brandNameInput.value = '';
+        setTimeout(function () { saveAsBrandBtn.textContent = 'Save as brand'; }, 2000);
       } catch (e) {}
     });
   }

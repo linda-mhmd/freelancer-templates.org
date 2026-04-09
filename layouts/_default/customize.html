@@ -169,6 +169,14 @@
           </div>
         </div>
       </div>
+
+      <div class="cz-save-brand" id="czSaveBrand">
+        <div class="cz-save-brand__row">
+          <input type="text" id="czBrandName" class="cz-save-brand__input" placeholder="Name this brand, e.g. Acme Corp Dark" maxlength="40" autocomplete="off">
+          <button class="btn btn--primary btn--sm" id="czSaveBrandBtn">Save as brand</button>
+        </div>
+        <p class="cz-save-brand__hint">Saved brands appear in <a href="{{ "my-brands/" | relURL }}">My Brands</a> for quick access.</p>
+      </div>
     </section>
 
     <!-- Step 3: Template preview grid -->
@@ -1072,6 +1080,45 @@ var PLAYER_BASE = (function () {
     updateShareLink();
     window.history.replaceState({}, '', buildShareUrl());
   };
+
+  // ---- Save as brand (on customize page) ----
+  var czSaveBrandBtn = el('czSaveBrandBtn');
+  var czBrandNameInput = el('czBrandName');
+  if (czSaveBrandBtn && czBrandNameInput) {
+    czSaveBrandBtn.addEventListener('click', function () {
+      var name = czBrandNameInput.value.trim();
+      if (!name) { czBrandNameInput.focus(); return; }
+      try {
+        var colors = {
+          bgPrimary: brandColors.bg,
+          bgSecondary: '#111827',
+          textHeading: brandColors.text,
+          textSubheading: '#cbd5e1',
+          textBody: brandColors.text,
+          textMuted: '#64748b',
+          accentPrimary: brandColors.primary,
+          accentSecondary: brandColors.secondary,
+          border: '#1e293b'
+        };
+        var brands = JSON.parse(localStorage.getItem(BRANDS_KEY) || '[]');
+        brands.push({
+          id: 'b_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+          name: name,
+          colors: colors,
+          fonts: detectedFonts.slice(),
+          created: new Date().toISOString(),
+          source: 'Customize page'
+        });
+        localStorage.setItem(BRANDS_KEY, JSON.stringify(brands));
+        var history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+        history.unshift({ action: 'Saved brand', brand: name, colors: colors, date: new Date().toISOString() });
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 30)));
+        czSaveBrandBtn.textContent = 'Saved!';
+        czBrandNameInput.value = '';
+        setTimeout(function () { czSaveBrandBtn.textContent = 'Save as brand'; }, 2000);
+      } catch (e) {}
+    });
+  }
 
   // ---- Init ----
   (function init() {
