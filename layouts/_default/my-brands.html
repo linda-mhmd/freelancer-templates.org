@@ -42,7 +42,15 @@
       </div>
     </div>
 
+    <!-- Saved Designs -->
+    <div class="mb-designs" id="mbDesigns" style="display:none;">
+      <h2 class="mb-designs__title">Saved Designs</h2>
+      <p class="mb-designs__sub">Template + color combinations you saved while browsing.</p>
+      <div class="mb-designs__grid" id="mbDesignsGrid"></div>
+    </div>
+
     <!-- Brand cards grid -->
+    <h2 class="mb-section-title" id="mbBrandsTitle" style="display:none;">Saved Brands</h2>
     <div class="mb-grid" id="mbGrid"></div>
 
     <!-- Empty state -->
@@ -169,8 +177,11 @@
     var grid = el('mbGrid');
     var empty = el('mbEmpty');
 
+    renderDesigns();
+
     if (!brands.length) {
       grid.style.display = 'none';
+      el('mbBrandsTitle').style.display = 'none';
       empty.style.display = '';
       el('mbActiveBanner').style.display = 'none';
       renderHistory();
@@ -179,6 +190,7 @@
 
     empty.style.display = 'none';
     grid.style.display = '';
+    el('mbBrandsTitle').style.display = '';
     grid.textContent = '';
 
     var activeBrand = null;
@@ -270,6 +282,84 @@
     }
 
     renderHistory();
+  }
+
+  // ---- Saved Designs ----
+  var DESIGNS_KEY = 'ft_saved_designs';
+
+  function renderDesigns() {
+    var designs = [];
+    try { designs = JSON.parse(localStorage.getItem(DESIGNS_KEY) || '[]'); } catch (e) {}
+    var section = el('mbDesigns');
+    var grid = el('mbDesignsGrid');
+    if (!section || !grid) return;
+    if (!designs.length) { section.style.display = 'none'; return; }
+    section.style.display = '';
+    grid.textContent = '';
+
+    designs.forEach(function (design, idx) {
+      var card = document.createElement('div');
+      card.className = 'mb-design-card';
+
+      // Color swatches row
+      var swRow = document.createElement('div');
+      swRow.className = 'mb-design-card__swatches';
+      var swatchKeys = design.colors.bgPrimary
+        ? ['bgPrimary','accentPrimary','accentSecondary','textHeading','textBody']
+        : ['primary','secondary','accent','bg','text'];
+      swatchKeys.forEach(function (k) {
+        var color = design.colors[k];
+        if (!color) return;
+        var sw = document.createElement('div');
+        sw.className = 'mb-design-card__sw';
+        sw.style.background = color;
+        swRow.appendChild(sw);
+      });
+      card.appendChild(swRow);
+
+      var nameEl = document.createElement('div');
+      nameEl.className = 'mb-design-card__name';
+      nameEl.textContent = design.name;
+      card.appendChild(nameEl);
+
+      var templateEl = document.createElement('div');
+      templateEl.className = 'mb-design-card__template';
+      templateEl.textContent = design.template || '';
+      card.appendChild(templateEl);
+
+      var dateEl = document.createElement('div');
+      dateEl.className = 'mb-design-card__date';
+      dateEl.textContent = new Date(design.created).toLocaleDateString();
+      card.appendChild(dateEl);
+
+      var actions = document.createElement('div');
+      actions.className = 'mb-design-card__actions';
+
+      if (design.url) {
+        var openBtn = document.createElement('a');
+        openBtn.className = 'btn btn--primary btn--sm';
+        openBtn.href = design.url;
+        openBtn.textContent = 'Open';
+        actions.appendChild(openBtn);
+      }
+
+      var delBtn = document.createElement('button');
+      delBtn.className = 'btn btn--outline btn--sm mb-card__del';
+      delBtn.textContent = 'Delete';
+      (function (i) {
+        delBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          if (!confirm('Delete "' + design.name + '"?')) return;
+          designs.splice(i, 1);
+          localStorage.setItem(DESIGNS_KEY, JSON.stringify(designs));
+          renderDesigns();
+        });
+      })(idx);
+      actions.appendChild(delBtn);
+
+      card.appendChild(actions);
+      grid.appendChild(card);
+    });
   }
 
   function renderHistory() {
