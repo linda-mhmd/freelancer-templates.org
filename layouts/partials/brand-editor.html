@@ -1,7 +1,7 @@
 {{/* Reusable brand color editor - drop into any layout.
-     Reads/writes URL params: brandPrimary, brandSecondary, brandAccent, brandBg, brandText.
-     Dispatches a CustomEvent "brandcolors:change" on document with { detail: { primary, secondary, accent, bg, text } }.
-     Any page JS can listen for this event to update iframes, previews, etc.
+     8 color roles: bgPrimary, bgSecondary, textHeading, textBody, textMuted, accentPrimary, accentSecondary, border.
+     Reads/writes URL params. Dispatches "brandcolors:change" CustomEvent on document.
+     Backward compatible: old 5-param URLs (brandPrimary etc.) still load correctly.
 */}}
 <div class="be-editor" id="brandEditor">
   <div class="be-hd">
@@ -12,20 +12,63 @@
     <p class="be-hd__sub">Adjust colors below to see this template in your brand. Changes are saved in the URL so you can share or bookmark.</p>
   </div>
 
-  <div class="be-roles">
-    {{ $roles := slice "primary" "secondary" "accent" "bg" "text" }}
-    {{ $defaults := dict "primary" "#6366f1" "secondary" "#a855f7" "accent" "#ec4899" "bg" "#0a0a0f" "text" "#ffffff" }}
-    {{ $labels := dict "primary" "Primary" "secondary" "Secondary" "accent" "Accent" "bg" "Background" "text" "Text" }}
-    {{ range $roles }}
-    <div class="be-role" data-role="{{ . }}">
-      <span class="be-role__name">{{ index $labels . }}</span>
-      <div class="be-role__wrap">
-        <div class="be-role__swatch" id="be_swatch_{{ . }}" style="background:{{ index $defaults . }};"></div>
-        <input type="color" class="be-role__picker" id="be_pick_{{ . }}" data-role="{{ . }}" value="{{ index $defaults . }}">
+  <div class="be-group">
+    <span class="be-group__label">Backgrounds</span>
+    <div class="be-group__roles">
+      {{ range (slice
+        (dict "role" "bgPrimary" "label" "Page" "default" "#0a0a0f")
+        (dict "role" "bgSecondary" "label" "Card / Section" "default" "#111827")
+      ) }}
+      <div class="be-role" data-role="{{ .role }}">
+        <span class="be-role__name">{{ .label }}</span>
+        <div class="be-role__wrap">
+          <div class="be-role__swatch" id="be_swatch_{{ .role }}" style="background:{{ .default }};"></div>
+          <input type="color" class="be-role__picker" id="be_pick_{{ .role }}" data-role="{{ .role }}" value="{{ .default }}">
+        </div>
+        <code class="be-role__hex" id="be_hex_{{ .role }}">{{ .default }}</code>
       </div>
-      <code class="be-role__hex" id="be_hex_{{ . }}">{{ index $defaults . }}</code>
+      {{ end }}
     </div>
-    {{ end }}
+  </div>
+
+  <div class="be-group">
+    <span class="be-group__label">Text</span>
+    <div class="be-group__roles">
+      {{ range (slice
+        (dict "role" "textHeading" "label" "Heading" "default" "#ffffff")
+        (dict "role" "textBody" "label" "Body" "default" "#e2e8f0")
+        (dict "role" "textMuted" "label" "Muted" "default" "#64748b")
+      ) }}
+      <div class="be-role" data-role="{{ .role }}">
+        <span class="be-role__name">{{ .label }}</span>
+        <div class="be-role__wrap">
+          <div class="be-role__swatch" id="be_swatch_{{ .role }}" style="background:{{ .default }};"></div>
+          <input type="color" class="be-role__picker" id="be_pick_{{ .role }}" data-role="{{ .role }}" value="{{ .default }}">
+        </div>
+        <code class="be-role__hex" id="be_hex_{{ .role }}">{{ .default }}</code>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="be-group">
+    <span class="be-group__label">Accents & Borders</span>
+    <div class="be-group__roles">
+      {{ range (slice
+        (dict "role" "accentPrimary" "label" "Primary" "default" "#6366f1")
+        (dict "role" "accentSecondary" "label" "Secondary" "default" "#a855f7")
+        (dict "role" "border" "label" "Border" "default" "#1e293b")
+      ) }}
+      <div class="be-role" data-role="{{ .role }}">
+        <span class="be-role__name">{{ .label }}</span>
+        <div class="be-role__wrap">
+          <div class="be-role__swatch" id="be_swatch_{{ .role }}" style="background:{{ .default }};"></div>
+          <input type="color" class="be-role__picker" id="be_pick_{{ .role }}" data-role="{{ .role }}" value="{{ .default }}">
+        </div>
+        <code class="be-role__hex" id="be_hex_{{ .role }}">{{ .default }}</code>
+      </div>
+      {{ end }}
+    </div>
   </div>
 
   <div class="be-actions">
@@ -52,8 +95,22 @@
 <script>
 (function () {
   'use strict';
-  var DEFAULTS = { primary: '#6366f1', secondary: '#a855f7', accent: '#ec4899', bg: '#0a0a0f', text: '#ffffff' };
-  var PARAM_MAP = { brandPrimary: 'primary', brandSecondary: 'secondary', brandAccent: 'accent', brandBg: 'bg', brandText: 'text' };
+  var DEFAULTS = {
+    bgPrimary: '#0a0a0f', bgSecondary: '#111827',
+    textHeading: '#ffffff', textBody: '#e2e8f0', textMuted: '#64748b',
+    accentPrimary: '#6366f1', accentSecondary: '#a855f7', border: '#1e293b'
+  };
+
+  // Map URL params to roles (new 8-param format + backward compat with old 5-param)
+  var PARAM_MAP = {
+    bgPrimary: 'bgPrimary', bgSecondary: 'bgSecondary',
+    textHeading: 'textHeading', textBody: 'textBody', textMuted: 'textMuted',
+    accentPrimary: 'accentPrimary', accentSecondary: 'accentSecondary', border: 'border',
+    // Backward compat: old params map into new roles
+    brandBg: 'bgPrimary', brandText: 'textHeading', brandPrimary: 'accentPrimary',
+    brandSecondary: 'accentSecondary', brandAccent: 'accentSecondary'
+  };
+
   var brandColors = {};
   Object.keys(DEFAULTS).forEach(function (k) { brandColors[k] = DEFAULTS[k]; });
 
@@ -80,20 +137,33 @@
 
   function buildUrl() {
     var url = new URL(window.location.href);
-    Object.keys(PARAM_MAP).forEach(function (param) {
-      url.searchParams.set(param, brandColors[PARAM_MAP[param]].replace('#', ''));
+    // Write new format params
+    Object.keys(DEFAULTS).forEach(function (role) {
+      url.searchParams.set(role, brandColors[role].replace('#', ''));
     });
+    // Also write old format for backward compat with player iframes
+    url.searchParams.set('brandPrimary', brandColors.accentPrimary.replace('#', ''));
+    url.searchParams.set('brandSecondary', brandColors.accentSecondary.replace('#', ''));
+    url.searchParams.set('brandAccent', brandColors.accentSecondary.replace('#', ''));
+    url.searchParams.set('brandBg', brandColors.bgPrimary.replace('#', ''));
+    url.searchParams.set('brandText', brandColors.textHeading.replace('#', ''));
     return url.toString();
   }
 
   function broadcastChange() {
     var copy = {};
     Object.keys(brandColors).forEach(function (k) { copy[k] = brandColors[k]; });
+    // Include old-format keys for iframe/player compat
+    copy.primary = brandColors.accentPrimary;
+    copy.secondary = brandColors.accentSecondary;
+    copy.accent = brandColors.accentSecondary;
+    copy.bg = brandColors.bgPrimary;
+    copy.text = brandColors.textHeading;
     document.dispatchEvent(new CustomEvent('brandcolors:change', { detail: copy }));
     window.history.replaceState({}, '', buildUrl());
   }
 
-  // Init UI from current state
+  // Init UI
   Object.keys(brandColors).forEach(updateUI);
 
   // Pickers
@@ -146,16 +216,23 @@
           found = true;
         }
       });
+      // Backward compat: load old 5-key format
+      if (!found && parsed.primary) {
+        if (parsed.bg) brandColors.bgPrimary = parsed.bg;
+        if (parsed.text) brandColors.textHeading = parsed.text;
+        if (parsed.primary) brandColors.accentPrimary = parsed.primary;
+        if (parsed.secondary) brandColors.accentSecondary = parsed.secondary;
+        found = true;
+      }
       return found;
     } catch (e) { return false; }
   }
 
-  // URL params take priority over localStorage
   var hasUrlParams = false;
   Object.keys(PARAM_MAP).forEach(function (p) { if (params.get(p)) hasUrlParams = true; });
   if (!hasUrlParams) loadFromStorage();
 
-  // Save button
+  // Save
   var saveBtn = el('beSave');
   if (saveBtn) {
     saveBtn.addEventListener('click', function () {
@@ -184,7 +261,7 @@
     });
   }
 
-  // Fire initial event so page JS can pick up URL-loaded or localStorage-loaded colors
+  // Init
   Object.keys(brandColors).forEach(updateUI);
   setTimeout(function () { broadcastChange(); }, 0);
 }());

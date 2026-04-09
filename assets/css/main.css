@@ -3031,6 +3031,12 @@ html.dark .footer__soc:hover { color: #001029; }
   margin: 0 0 6px;
 }
 .be-hd__sub { font-size: 13px; color: #64748b; margin: 0; line-height: 1.6; }
+.be-group { margin-bottom: 20px; }
+.be-group__label {
+  display: block; font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; color: #475569; margin-bottom: 10px;
+}
+.be-group__roles { display: flex; flex-wrap: wrap; gap: 16px; }
 .be-roles {
   display: flex;
   flex-wrap: wrap;
