@@ -1,0 +1,95 @@
+/* Linda Mohamed Brand CSS - for testing the CSS upload feature */
+
+:root {
+  --primary: #2E7D32;
+  --primary-light: #43A047;
+  --primary-lighter: #66BB6A;
+  --accent: #43A047;
+  --bg: #ffffff;
+  --bg-secondary: #f5f7f5;
+  --text: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #8a8a8a;
+  --card-border: rgba(46, 125, 50, 0.2);
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+a {
+  color: #2E7D32;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #43A047;
+}
+
+.nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.12);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2E7D32, #66BB6A);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #2E7D32;
+  border: 1px solid rgba(46, 125, 50, 0.3);
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+
+.card {
+  background: #f5f7f5;
+  border: 1px solid rgba(46, 125, 50, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f5f7f5 100%);
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #8a8a8a;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer a {
+  color: #66BB6A;
+}
+
+.badge {
+  background: rgba(46, 125, 50, 0.1);
+  color: #2E7D32;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Code blocks */
+pre, code {
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+  background: #f5f7f5;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+}

@@ -14,6 +14,14 @@
     localStorage.setItem('theme', theme);
   }
 
+  // Default to dark mode (site is designed dark-first)
+  const savedTheme = localStorage.getItem('theme');
+  if (!savedTheme) {
+    applyTheme('dark');
+  } else {
+    applyTheme(savedTheme);
+  }
+
   if (toggle) {
     toggle.addEventListener('click', function () {
       const isDark = html.classList.contains('dark');
