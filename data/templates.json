@@ -7305,5 +7305,749 @@
       }
     ],
     "primaryId": "ServiceOverview-DarkOnePager"
+  },
+  {
+    "slug": "linkedincarousel",
+    "camel": "LinkedinCarousel",
+    "name": "LinkedIn Carousel Post",
+    "description": "Multi-slide carousel posts for LinkedIn with swipe-through layouts, headline cards, and CTA slides.",
+    "icon": "layout-grid",
+    "color": "blue",
+    "primaryVariant": "DarkSlide",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "LinkedinCarousel-DarkSlide",
+        "name": "Dark Slide",
+        "style": "dark"
+      },
+      {
+        "id": "LinkedinCarousel-DarkHeadline",
+        "name": "Dark Headline",
+        "style": "dark"
+      },
+      {
+        "id": "LinkedinCarousel-DarkCTA",
+        "name": "Dark CTA",
+        "style": "dark"
+      },
+      {
+        "id": "LinkedinCarousel-BoldSlide",
+        "name": "Bold Slide",
+        "style": "bold"
+      },
+      {
+        "id": "LinkedinCarousel-BoldHeadline",
+        "name": "Bold Headline",
+        "style": "bold"
+      },
+      {
+        "id": "LinkedinCarousel-BoldCTA",
+        "name": "Bold CTA",
+        "style": "bold"
+      },
+      {
+        "id": "LinkedinCarousel-OceanSlide",
+        "name": "Ocean Slide",
+        "style": "ocean"
+      },
+      {
+        "id": "LinkedinCarousel-SunsetSlide",
+        "name": "Sunset Slide",
+        "style": "sunset"
+      },
+      {
+        "id": "LinkedinCarousel-ForestSlide",
+        "name": "Forest Slide",
+        "style": "forest"
+      },
+      {
+        "id": "LinkedinCarousel-RoseSlide",
+        "name": "Rose Slide",
+        "style": "rose"
+      },
+      {
+        "id": "LinkedinCarousel-GoldSlide",
+        "name": "Gold Slide",
+        "style": "gold"
+      },
+      {
+        "id": "LinkedinCarousel-MidnightSlide",
+        "name": "Midnight Slide",
+        "style": "midnight"
+      },
+      {
+        "id": "LinkedinCarousel-CrimsonSlide",
+        "name": "Crimson Slide",
+        "style": "crimson"
+      },
+      {
+        "id": "LinkedinCarousel-LavenderSlide",
+        "name": "Lavender Slide",
+        "style": "lavender"
+      },
+      {
+        "id": "LinkedinCarousel-ArcticSlide",
+        "name": "Arctic Slide",
+        "style": "arctic"
+      },
+      {
+        "id": "LinkedinCarousel-EspressoSlide",
+        "name": "Espresso Slide",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "LinkedinCarousel-DarkSlide"
+  },
+  {
+    "slug": "emailsignature",
+    "camel": "EmailSignature",
+    "name": "Email Signature Banner",
+    "description": "Animated email signature banners with contact info, social links, and brand elements.",
+    "icon": "mail",
+    "color": "indigo",
+    "primaryVariant": "DarkClassic",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "EmailSignature-DarkClassic",
+        "name": "Dark Classic",
+        "style": "dark"
+      },
+      {
+        "id": "EmailSignature-DarkCompact",
+        "name": "Dark Compact",
+        "style": "dark"
+      },
+      {
+        "id": "EmailSignature-DarkMinimal",
+        "name": "Dark Minimal",
+        "style": "dark"
+      },
+      {
+        "id": "EmailSignature-BoldClassic",
+        "name": "Bold Classic",
+        "style": "bold"
+      },
+      {
+        "id": "EmailSignature-BoldCompact",
+        "name": "Bold Compact",
+        "style": "bold"
+      },
+      {
+        "id": "EmailSignature-BoldMinimal",
+        "name": "Bold Minimal",
+        "style": "bold"
+      },
+      {
+        "id": "EmailSignature-OceanClassic",
+        "name": "Ocean Classic",
+        "style": "ocean"
+      },
+      {
+        "id": "EmailSignature-SunsetClassic",
+        "name": "Sunset Classic",
+        "style": "sunset"
+      },
+      {
+        "id": "EmailSignature-ForestClassic",
+        "name": "Forest Classic",
+        "style": "forest"
+      },
+      {
+        "id": "EmailSignature-RoseClassic",
+        "name": "Rose Classic",
+        "style": "rose"
+      },
+      {
+        "id": "EmailSignature-GoldClassic",
+        "name": "Gold Classic",
+        "style": "gold"
+      },
+      {
+        "id": "EmailSignature-MidnightClassic",
+        "name": "Midnight Classic",
+        "style": "midnight"
+      },
+      {
+        "id": "EmailSignature-CrimsonClassic",
+        "name": "Crimson Classic",
+        "style": "crimson"
+      },
+      {
+        "id": "EmailSignature-LavenderClassic",
+        "name": "Lavender Classic",
+        "style": "lavender"
+      },
+      {
+        "id": "EmailSignature-ArcticClassic",
+        "name": "Arctic Classic",
+        "style": "arctic"
+      },
+      {
+        "id": "EmailSignature-EspressoClassic",
+        "name": "Espresso Classic",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "EmailSignature-DarkClassic"
+  },
+  {
+    "slug": "timetracking",
+    "camel": "TimeTracking",
+    "name": "Time Tracking Summary",
+    "description": "Weekly/monthly time reports with hours breakdown, project allocation charts, and billable vs non-billable.",
+    "icon": "clock",
+    "color": "green",
+    "primaryVariant": "DarkWeekly",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "TimeTracking-DarkWeekly",
+        "name": "Dark Weekly",
+        "style": "dark"
+      },
+      {
+        "id": "TimeTracking-DarkMonthly",
+        "name": "Dark Monthly",
+        "style": "dark"
+      },
+      {
+        "id": "TimeTracking-DarkBreakdown",
+        "name": "Dark Breakdown",
+        "style": "dark"
+      },
+      {
+        "id": "TimeTracking-BoldWeekly",
+        "name": "Bold Weekly",
+        "style": "bold"
+      },
+      {
+        "id": "TimeTracking-BoldMonthly",
+        "name": "Bold Monthly",
+        "style": "bold"
+      },
+      {
+        "id": "TimeTracking-BoldBreakdown",
+        "name": "Bold Breakdown",
+        "style": "bold"
+      },
+      {
+        "id": "TimeTracking-OceanWeekly",
+        "name": "Ocean Weekly",
+        "style": "ocean"
+      },
+      {
+        "id": "TimeTracking-SunsetWeekly",
+        "name": "Sunset Weekly",
+        "style": "sunset"
+      },
+      {
+        "id": "TimeTracking-ForestWeekly",
+        "name": "Forest Weekly",
+        "style": "forest"
+      },
+      {
+        "id": "TimeTracking-RoseWeekly",
+        "name": "Rose Weekly",
+        "style": "rose"
+      },
+      {
+        "id": "TimeTracking-GoldWeekly",
+        "name": "Gold Weekly",
+        "style": "gold"
+      },
+      {
+        "id": "TimeTracking-MidnightWeekly",
+        "name": "Midnight Weekly",
+        "style": "midnight"
+      },
+      {
+        "id": "TimeTracking-CrimsonWeekly",
+        "name": "Crimson Weekly",
+        "style": "crimson"
+      },
+      {
+        "id": "TimeTracking-LavenderWeekly",
+        "name": "Lavender Weekly",
+        "style": "lavender"
+      },
+      {
+        "id": "TimeTracking-ArcticWeekly",
+        "name": "Arctic Weekly",
+        "style": "arctic"
+      },
+      {
+        "id": "TimeTracking-EspressoWeekly",
+        "name": "Espresso Weekly",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "TimeTracking-DarkWeekly"
+  },
+  {
+    "slug": "expensereport",
+    "camel": "ExpenseReport",
+    "name": "Expense Report",
+    "description": "Itemized expense summaries with category breakdowns, receipt highlights, and total calculations.",
+    "icon": "receipt",
+    "color": "amber",
+    "primaryVariant": "DarkSummary",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ExpenseReport-DarkSummary",
+        "name": "Dark Summary",
+        "style": "dark"
+      },
+      {
+        "id": "ExpenseReport-DarkDetail",
+        "name": "Dark Detail",
+        "style": "dark"
+      },
+      {
+        "id": "ExpenseReport-DarkCategory",
+        "name": "Dark Category",
+        "style": "dark"
+      },
+      {
+        "id": "ExpenseReport-BoldSummary",
+        "name": "Bold Summary",
+        "style": "bold"
+      },
+      {
+        "id": "ExpenseReport-BoldDetail",
+        "name": "Bold Detail",
+        "style": "bold"
+      },
+      {
+        "id": "ExpenseReport-BoldCategory",
+        "name": "Bold Category",
+        "style": "bold"
+      },
+      {
+        "id": "ExpenseReport-OceanSummary",
+        "name": "Ocean Summary",
+        "style": "ocean"
+      },
+      {
+        "id": "ExpenseReport-SunsetSummary",
+        "name": "Sunset Summary",
+        "style": "sunset"
+      },
+      {
+        "id": "ExpenseReport-ForestSummary",
+        "name": "Forest Summary",
+        "style": "forest"
+      },
+      {
+        "id": "ExpenseReport-RoseSummary",
+        "name": "Rose Summary",
+        "style": "rose"
+      },
+      {
+        "id": "ExpenseReport-GoldSummary",
+        "name": "Gold Summary",
+        "style": "gold"
+      },
+      {
+        "id": "ExpenseReport-MidnightSummary",
+        "name": "Midnight Summary",
+        "style": "midnight"
+      },
+      {
+        "id": "ExpenseReport-CrimsonSummary",
+        "name": "Crimson Summary",
+        "style": "crimson"
+      },
+      {
+        "id": "ExpenseReport-LavenderSummary",
+        "name": "Lavender Summary",
+        "style": "lavender"
+      },
+      {
+        "id": "ExpenseReport-ArcticSummary",
+        "name": "Arctic Summary",
+        "style": "arctic"
+      },
+      {
+        "id": "ExpenseReport-EspressoSummary",
+        "name": "Espresso Summary",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ExpenseReport-DarkSummary"
+  },
+  {
+    "slug": "contractsummary",
+    "camel": "ContractSummary",
+    "name": "Contract Summary",
+    "description": "Key terms overview with deliverables, timelines, payment terms, and renewal dates.",
+    "icon": "file-text",
+    "color": "slate",
+    "primaryVariant": "DarkTerms",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ContractSummary-DarkTerms",
+        "name": "Dark Terms",
+        "style": "dark"
+      },
+      {
+        "id": "ContractSummary-DarkTimeline",
+        "name": "Dark Timeline",
+        "style": "dark"
+      },
+      {
+        "id": "ContractSummary-DarkPayment",
+        "name": "Dark Payment",
+        "style": "dark"
+      },
+      {
+        "id": "ContractSummary-BoldTerms",
+        "name": "Bold Terms",
+        "style": "bold"
+      },
+      {
+        "id": "ContractSummary-BoldTimeline",
+        "name": "Bold Timeline",
+        "style": "bold"
+      },
+      {
+        "id": "ContractSummary-BoldPayment",
+        "name": "Bold Payment",
+        "style": "bold"
+      },
+      {
+        "id": "ContractSummary-OceanTerms",
+        "name": "Ocean Terms",
+        "style": "ocean"
+      },
+      {
+        "id": "ContractSummary-SunsetTerms",
+        "name": "Sunset Terms",
+        "style": "sunset"
+      },
+      {
+        "id": "ContractSummary-ForestTerms",
+        "name": "Forest Terms",
+        "style": "forest"
+      },
+      {
+        "id": "ContractSummary-RoseTerms",
+        "name": "Rose Terms",
+        "style": "rose"
+      },
+      {
+        "id": "ContractSummary-GoldTerms",
+        "name": "Gold Terms",
+        "style": "gold"
+      },
+      {
+        "id": "ContractSummary-MidnightTerms",
+        "name": "Midnight Terms",
+        "style": "midnight"
+      },
+      {
+        "id": "ContractSummary-CrimsonTerms",
+        "name": "Crimson Terms",
+        "style": "crimson"
+      },
+      {
+        "id": "ContractSummary-LavenderTerms",
+        "name": "Lavender Terms",
+        "style": "lavender"
+      },
+      {
+        "id": "ContractSummary-ArcticTerms",
+        "name": "Arctic Terms",
+        "style": "arctic"
+      },
+      {
+        "id": "ContractSummary-EspressoTerms",
+        "name": "Espresso Terms",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ContractSummary-DarkTerms"
+  },
+  {
+    "slug": "projectcloseout",
+    "camel": "ProjectCloseout",
+    "name": "Project Closeout",
+    "description": "Final project handoff with deliverables checklist, lessons learned, and next steps.",
+    "icon": "check-circle",
+    "color": "teal",
+    "primaryVariant": "DarkChecklist",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ProjectCloseout-DarkChecklist",
+        "name": "Dark Checklist",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectCloseout-DarkLessons",
+        "name": "Dark Lessons",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectCloseout-DarkNextSteps",
+        "name": "Dark NextSteps",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectCloseout-BoldChecklist",
+        "name": "Bold Checklist",
+        "style": "bold"
+      },
+      {
+        "id": "ProjectCloseout-BoldLessons",
+        "name": "Bold Lessons",
+        "style": "bold"
+      },
+      {
+        "id": "ProjectCloseout-BoldNextSteps",
+        "name": "Bold NextSteps",
+        "style": "bold"
+      },
+      {
+        "id": "ProjectCloseout-OceanChecklist",
+        "name": "Ocean Checklist",
+        "style": "ocean"
+      },
+      {
+        "id": "ProjectCloseout-SunsetChecklist",
+        "name": "Sunset Checklist",
+        "style": "sunset"
+      },
+      {
+        "id": "ProjectCloseout-ForestChecklist",
+        "name": "Forest Checklist",
+        "style": "forest"
+      },
+      {
+        "id": "ProjectCloseout-RoseChecklist",
+        "name": "Rose Checklist",
+        "style": "rose"
+      },
+      {
+        "id": "ProjectCloseout-GoldChecklist",
+        "name": "Gold Checklist",
+        "style": "gold"
+      },
+      {
+        "id": "ProjectCloseout-MidnightChecklist",
+        "name": "Midnight Checklist",
+        "style": "midnight"
+      },
+      {
+        "id": "ProjectCloseout-CrimsonChecklist",
+        "name": "Crimson Checklist",
+        "style": "crimson"
+      },
+      {
+        "id": "ProjectCloseout-LavenderChecklist",
+        "name": "Lavender Checklist",
+        "style": "lavender"
+      },
+      {
+        "id": "ProjectCloseout-ArcticChecklist",
+        "name": "Arctic Checklist",
+        "style": "arctic"
+      },
+      {
+        "id": "ProjectCloseout-EspressoChecklist",
+        "name": "Espresso Checklist",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ProjectCloseout-DarkChecklist"
+  },
+  {
+    "slug": "weeklyupdate",
+    "camel": "WeeklyUpdate",
+    "name": "Weekly Update",
+    "description": "Short weekly status videos with accomplished/planned/blocked sections.",
+    "icon": "calendar",
+    "color": "purple",
+    "primaryVariant": "DarkStatus",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "WeeklyUpdate-DarkStatus",
+        "name": "Dark Status",
+        "style": "dark"
+      },
+      {
+        "id": "WeeklyUpdate-DarkProgress",
+        "name": "Dark Progress",
+        "style": "dark"
+      },
+      {
+        "id": "WeeklyUpdate-DarkBlocked",
+        "name": "Dark Blocked",
+        "style": "dark"
+      },
+      {
+        "id": "WeeklyUpdate-BoldStatus",
+        "name": "Bold Status",
+        "style": "bold"
+      },
+      {
+        "id": "WeeklyUpdate-BoldProgress",
+        "name": "Bold Progress",
+        "style": "bold"
+      },
+      {
+        "id": "WeeklyUpdate-BoldBlocked",
+        "name": "Bold Blocked",
+        "style": "bold"
+      },
+      {
+        "id": "WeeklyUpdate-OceanStatus",
+        "name": "Ocean Status",
+        "style": "ocean"
+      },
+      {
+        "id": "WeeklyUpdate-SunsetStatus",
+        "name": "Sunset Status",
+        "style": "sunset"
+      },
+      {
+        "id": "WeeklyUpdate-ForestStatus",
+        "name": "Forest Status",
+        "style": "forest"
+      },
+      {
+        "id": "WeeklyUpdate-RoseStatus",
+        "name": "Rose Status",
+        "style": "rose"
+      },
+      {
+        "id": "WeeklyUpdate-GoldStatus",
+        "name": "Gold Status",
+        "style": "gold"
+      },
+      {
+        "id": "WeeklyUpdate-MidnightStatus",
+        "name": "Midnight Status",
+        "style": "midnight"
+      },
+      {
+        "id": "WeeklyUpdate-CrimsonStatus",
+        "name": "Crimson Status",
+        "style": "crimson"
+      },
+      {
+        "id": "WeeklyUpdate-LavenderStatus",
+        "name": "Lavender Status",
+        "style": "lavender"
+      },
+      {
+        "id": "WeeklyUpdate-ArcticStatus",
+        "name": "Arctic Status",
+        "style": "arctic"
+      },
+      {
+        "id": "WeeklyUpdate-EspressoStatus",
+        "name": "Espresso Status",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "WeeklyUpdate-DarkStatus"
+  },
+  {
+    "slug": "clientfeedback",
+    "camel": "ClientFeedback",
+    "name": "Client Feedback",
+    "description": "Structured feedback collection with rating cards, comment highlights, and NPS-style scores.",
+    "icon": "message-circle",
+    "color": "rose",
+    "primaryVariant": "DarkRating",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ClientFeedback-DarkRating",
+        "name": "Dark Rating",
+        "style": "dark"
+      },
+      {
+        "id": "ClientFeedback-DarkComments",
+        "name": "Dark Comments",
+        "style": "dark"
+      },
+      {
+        "id": "ClientFeedback-DarkNPS",
+        "name": "Dark NPS",
+        "style": "dark"
+      },
+      {
+        "id": "ClientFeedback-BoldRating",
+        "name": "Bold Rating",
+        "style": "bold"
+      },
+      {
+        "id": "ClientFeedback-BoldComments",
+        "name": "Bold Comments",
+        "style": "bold"
+      },
+      {
+        "id": "ClientFeedback-BoldNPS",
+        "name": "Bold NPS",
+        "style": "bold"
+      },
+      {
+        "id": "ClientFeedback-OceanRating",
+        "name": "Ocean Rating",
+        "style": "ocean"
+      },
+      {
+        "id": "ClientFeedback-SunsetRating",
+        "name": "Sunset Rating",
+        "style": "sunset"
+      },
+      {
+        "id": "ClientFeedback-ForestRating",
+        "name": "Forest Rating",
+        "style": "forest"
+      },
+      {
+        "id": "ClientFeedback-RoseRating",
+        "name": "Rose Rating",
+        "style": "rose"
+      },
+      {
+        "id": "ClientFeedback-GoldRating",
+        "name": "Gold Rating",
+        "style": "gold"
+      },
+      {
+        "id": "ClientFeedback-MidnightRating",
+        "name": "Midnight Rating",
+        "style": "midnight"
+      },
+      {
+        "id": "ClientFeedback-CrimsonRating",
+        "name": "Crimson Rating",
+        "style": "crimson"
+      },
+      {
+        "id": "ClientFeedback-LavenderRating",
+        "name": "Lavender Rating",
+        "style": "lavender"
+      },
+      {
+        "id": "ClientFeedback-ArcticRating",
+        "name": "Arctic Rating",
+        "style": "arctic"
+      },
+      {
+        "id": "ClientFeedback-EspressoRating",
+        "name": "Espresso Rating",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ClientFeedback-DarkRating"
   }
 ]
