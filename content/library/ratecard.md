@@ -6,7 +6,7 @@ icon: "credit-card"
 camel: "RateCard"
 primaryVariant: "DarkDashboard"
 primaryId: "RateCard-DarkDashboard"
-variantCount: 16
+variantCount: 21
 variants:
   - id: "RateCard-DarkDashboard"
     name: "Dark Dashboard"
@@ -56,6 +56,21 @@ variants:
   - id: "RateCard-EspressoDashboard"
     name: "Espresso Dashboard"
     style: "espresso"
+  - id: "RateCard-CorporateDashboard"
+    name: "Corporate Dashboard"
+    style: "corporate"
+  - id: "RateCard-IndustrialDashboard"
+    name: "Industrial Dashboard"
+    style: "industrial"
+  - id: "RateCard-ViennaDashboard"
+    name: "Vienna Dashboard"
+    style: "vienna"
+  - id: "RateCard-AlpineDashboard"
+    name: "Alpine Dashboard"
+    style: "alpine"
+  - id: "RateCard-FinanceDashboard"
+    name: "Finance Dashboard"
+    style: "finance"
 layout: library/single
 ---
 

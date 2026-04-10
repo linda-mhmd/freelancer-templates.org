@@ -6570,7 +6570,7 @@
     "icon": "clipboard-list",
     "color": "blue",
     "primaryVariant": "DarkDashboard",
-    "variantCount": 16,
+    "variantCount": 21,
     "variants": [
       {
         "id": "ClientReport-DarkDashboard",
@@ -6651,6 +6651,31 @@
         "id": "ClientReport-EspressoDashboard",
         "name": "Espresso Dashboard",
         "style": "espresso"
+      },
+      {
+        "id": "ClientReport-CorporateDashboard",
+        "name": "Corporate Dashboard",
+        "style": "corporate"
+      },
+      {
+        "id": "ClientReport-IndustrialDashboard",
+        "name": "Industrial Dashboard",
+        "style": "industrial"
+      },
+      {
+        "id": "ClientReport-ViennaDashboard",
+        "name": "Vienna Dashboard",
+        "style": "vienna"
+      },
+      {
+        "id": "ClientReport-AlpineDashboard",
+        "name": "Alpine Dashboard",
+        "style": "alpine"
+      },
+      {
+        "id": "ClientReport-FinanceDashboard",
+        "name": "Finance Dashboard",
+        "style": "finance"
       }
     ],
     "primaryId": "ClientReport-DarkDashboard"
@@ -6663,7 +6688,7 @@
     "icon": "gantt-chart",
     "color": "violet",
     "primaryVariant": "DarkDashboard",
-    "variantCount": 16,
+    "variantCount": 21,
     "variants": [
       {
         "id": "ProjectTimeline-DarkDashboard",
@@ -6744,6 +6769,31 @@
         "id": "ProjectTimeline-EspressoDashboard",
         "name": "Espresso Dashboard",
         "style": "espresso"
+      },
+      {
+        "id": "ProjectTimeline-CorporateDashboard",
+        "name": "Corporate Dashboard",
+        "style": "corporate"
+      },
+      {
+        "id": "ProjectTimeline-IndustrialDashboard",
+        "name": "Industrial Dashboard",
+        "style": "industrial"
+      },
+      {
+        "id": "ProjectTimeline-ViennaDashboard",
+        "name": "Vienna Dashboard",
+        "style": "vienna"
+      },
+      {
+        "id": "ProjectTimeline-AlpineDashboard",
+        "name": "Alpine Dashboard",
+        "style": "alpine"
+      },
+      {
+        "id": "ProjectTimeline-FinanceDashboard",
+        "name": "Finance Dashboard",
+        "style": "finance"
       }
     ],
     "primaryId": "ProjectTimeline-DarkDashboard"
@@ -6756,7 +6806,7 @@
     "icon": "hand-shake",
     "color": "green",
     "primaryVariant": "DarkDashboard",
-    "variantCount": 16,
+    "variantCount": 21,
     "variants": [
       {
         "id": "ClientWelcome-DarkDashboard",
@@ -6837,6 +6887,31 @@
         "id": "ClientWelcome-EspressoDashboard",
         "name": "Espresso Dashboard",
         "style": "espresso"
+      },
+      {
+        "id": "ClientWelcome-CorporateDashboard",
+        "name": "Corporate Dashboard",
+        "style": "corporate"
+      },
+      {
+        "id": "ClientWelcome-IndustrialDashboard",
+        "name": "Industrial Dashboard",
+        "style": "industrial"
+      },
+      {
+        "id": "ClientWelcome-ViennaDashboard",
+        "name": "Vienna Dashboard",
+        "style": "vienna"
+      },
+      {
+        "id": "ClientWelcome-AlpineDashboard",
+        "name": "Alpine Dashboard",
+        "style": "alpine"
+      },
+      {
+        "id": "ClientWelcome-FinanceDashboard",
+        "name": "Finance Dashboard",
+        "style": "finance"
       }
     ],
     "primaryId": "ClientWelcome-DarkDashboard"
@@ -6849,7 +6924,7 @@
     "icon": "git-branch",
     "color": "amber",
     "primaryVariant": "DarkDashboard",
-    "variantCount": 16,
+    "variantCount": 21,
     "variants": [
       {
         "id": "ScopeChange-DarkDashboard",
@@ -6930,6 +7005,31 @@
         "id": "ScopeChange-EspressoDashboard",
         "name": "Espresso Dashboard",
         "style": "espresso"
+      },
+      {
+        "id": "ScopeChange-CorporateDashboard",
+        "name": "Corporate Dashboard",
+        "style": "corporate"
+      },
+      {
+        "id": "ScopeChange-IndustrialDashboard",
+        "name": "Industrial Dashboard",
+        "style": "industrial"
+      },
+      {
+        "id": "ScopeChange-ViennaDashboard",
+        "name": "Vienna Dashboard",
+        "style": "vienna"
+      },
+      {
+        "id": "ScopeChange-AlpineDashboard",
+        "name": "Alpine Dashboard",
+        "style": "alpine"
+      },
+      {
+        "id": "ScopeChange-FinanceDashboard",
+        "name": "Finance Dashboard",
+        "style": "finance"
       }
     ],
     "primaryId": "ScopeChange-DarkDashboard"
@@ -6942,7 +7042,7 @@
     "icon": "credit-card",
     "color": "emerald",
     "primaryVariant": "DarkDashboard",
-    "variantCount": 16,
+    "variantCount": 21,
     "variants": [
       {
         "id": "RateCard-DarkDashboard",
@@ -7023,6 +7123,31 @@
         "id": "RateCard-EspressoDashboard",
         "name": "Espresso Dashboard",
         "style": "espresso"
+      },
+      {
+        "id": "RateCard-CorporateDashboard",
+        "name": "Corporate Dashboard",
+        "style": "corporate"
+      },
+      {
+        "id": "RateCard-IndustrialDashboard",
+        "name": "Industrial Dashboard",
+        "style": "industrial"
+      },
+      {
+        "id": "RateCard-ViennaDashboard",
+        "name": "Vienna Dashboard",
+        "style": "vienna"
+      },
+      {
+        "id": "RateCard-AlpineDashboard",
+        "name": "Alpine Dashboard",
+        "style": "alpine"
+      },
+      {
+        "id": "RateCard-FinanceDashboard",
+        "name": "Finance Dashboard",
+        "style": "finance"
       }
     ],
     "primaryId": "RateCard-DarkDashboard"
@@ -7035,7 +7160,7 @@
     "icon": "users",
     "color": "sky",
     "primaryVariant": "DarkDashboard",
-    "variantCount": 16,
+    "variantCount": 21,
     "variants": [
       {
         "id": "MeetingRecap-DarkDashboard",
@@ -7116,6 +7241,31 @@
         "id": "MeetingRecap-EspressoDashboard",
         "name": "Espresso Dashboard",
         "style": "espresso"
+      },
+      {
+        "id": "MeetingRecap-CorporateDashboard",
+        "name": "Corporate Dashboard",
+        "style": "corporate"
+      },
+      {
+        "id": "MeetingRecap-IndustrialDashboard",
+        "name": "Industrial Dashboard",
+        "style": "industrial"
+      },
+      {
+        "id": "MeetingRecap-ViennaDashboard",
+        "name": "Vienna Dashboard",
+        "style": "vienna"
+      },
+      {
+        "id": "MeetingRecap-AlpineDashboard",
+        "name": "Alpine Dashboard",
+        "style": "alpine"
+      },
+      {
+        "id": "MeetingRecap-FinanceDashboard",
+        "name": "Finance Dashboard",
+        "style": "finance"
       }
     ],
     "primaryId": "MeetingRecap-DarkDashboard"
@@ -7128,7 +7278,7 @@
     "icon": "trending-up",
     "color": "rose",
     "primaryVariant": "DarkDashboard",
-    "variantCount": 16,
+    "variantCount": 21,
     "variants": [
       {
         "id": "ResultsShowcase-DarkDashboard",
@@ -7209,6 +7359,31 @@
         "id": "ResultsShowcase-EspressoDashboard",
         "name": "Espresso Dashboard",
         "style": "espresso"
+      },
+      {
+        "id": "ResultsShowcase-CorporateDashboard",
+        "name": "Corporate Dashboard",
+        "style": "corporate"
+      },
+      {
+        "id": "ResultsShowcase-IndustrialDashboard",
+        "name": "Industrial Dashboard",
+        "style": "industrial"
+      },
+      {
+        "id": "ResultsShowcase-ViennaDashboard",
+        "name": "Vienna Dashboard",
+        "style": "vienna"
+      },
+      {
+        "id": "ResultsShowcase-AlpineDashboard",
+        "name": "Alpine Dashboard",
+        "style": "alpine"
+      },
+      {
+        "id": "ResultsShowcase-FinanceDashboard",
+        "name": "Finance Dashboard",
+        "style": "finance"
       }
     ],
     "primaryId": "ResultsShowcase-DarkDashboard"
@@ -7221,7 +7396,7 @@
     "icon": "briefcase",
     "color": "indigo",
     "primaryVariant": "DarkDashboard",
-    "variantCount": 16,
+    "variantCount": 21,
     "variants": [
       {
         "id": "ServiceOverview-DarkDashboard",
@@ -7302,6 +7477,31 @@
         "id": "ServiceOverview-EspressoDashboard",
         "name": "Espresso Dashboard",
         "style": "espresso"
+      },
+      {
+        "id": "ServiceOverview-CorporateDashboard",
+        "name": "Corporate Dashboard",
+        "style": "corporate"
+      },
+      {
+        "id": "ServiceOverview-IndustrialDashboard",
+        "name": "Industrial Dashboard",
+        "style": "industrial"
+      },
+      {
+        "id": "ServiceOverview-ViennaDashboard",
+        "name": "Vienna Dashboard",
+        "style": "vienna"
+      },
+      {
+        "id": "ServiceOverview-AlpineDashboard",
+        "name": "Alpine Dashboard",
+        "style": "alpine"
+      },
+      {
+        "id": "ServiceOverview-FinanceDashboard",
+        "name": "Finance Dashboard",
+        "style": "finance"
       }
     ],
     "primaryId": "ServiceOverview-DarkDashboard"

@@ -6,7 +6,7 @@ icon: "users"
 camel: "MeetingRecap"
 primaryVariant: "DarkDashboard"
 primaryId: "MeetingRecap-DarkDashboard"
-variantCount: 16
+variantCount: 21
 variants:
   - id: "MeetingRecap-DarkDashboard"
     name: "Dark Dashboard"
@@ -56,6 +56,21 @@ variants:
   - id: "MeetingRecap-EspressoDashboard"
     name: "Espresso Dashboard"
     style: "espresso"
+  - id: "MeetingRecap-CorporateDashboard"
+    name: "Corporate Dashboard"
+    style: "corporate"
+  - id: "MeetingRecap-IndustrialDashboard"
+    name: "Industrial Dashboard"
+    style: "industrial"
+  - id: "MeetingRecap-ViennaDashboard"
+    name: "Vienna Dashboard"
+    style: "vienna"
+  - id: "MeetingRecap-AlpineDashboard"
+    name: "Alpine Dashboard"
+    style: "alpine"
+  - id: "MeetingRecap-FinanceDashboard"
+    name: "Finance Dashboard"
+    style: "finance"
 layout: library/single
 ---
 

@@ -6,7 +6,7 @@ icon: "hand-shake"
 camel: "ClientWelcome"
 primaryVariant: "DarkDashboard"
 primaryId: "ClientWelcome-DarkDashboard"
-variantCount: 16
+variantCount: 21
 variants:
   - id: "ClientWelcome-DarkDashboard"
     name: "Dark Dashboard"
@@ -56,6 +56,21 @@ variants:
   - id: "ClientWelcome-EspressoDashboard"
     name: "Espresso Dashboard"
     style: "espresso"
+  - id: "ClientWelcome-CorporateDashboard"
+    name: "Corporate Dashboard"
+    style: "corporate"
+  - id: "ClientWelcome-IndustrialDashboard"
+    name: "Industrial Dashboard"
+    style: "industrial"
+  - id: "ClientWelcome-ViennaDashboard"
+    name: "Vienna Dashboard"
+    style: "vienna"
+  - id: "ClientWelcome-AlpineDashboard"
+    name: "Alpine Dashboard"
+    style: "alpine"
+  - id: "ClientWelcome-FinanceDashboard"
+    name: "Finance Dashboard"
+    style: "finance"
 layout: library/single
 ---
 

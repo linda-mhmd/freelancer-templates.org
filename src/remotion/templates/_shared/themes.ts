@@ -388,6 +388,111 @@ export const THEME_ESPRESSO: Theme = {
   bodyWeight: 400,
 };
 
+// ── Corporate Banking / Vienna Boardroom ─────────────────────────
+// Deep navy bg, warm gold accents, IBM Plex Sans. Formal and authoritative.
+// Modelled on central-European corporate banking visual identity systems.
+export const THEME_CORPORATE: Theme = {
+  name: "corporate",
+  bg: "#0a1628",
+  bgSecondary: "rgba(200,169,78,0.06)",
+  bgGlass: "rgba(200,169,78,0.08)",
+  textPrimary: "#f8f6ef",
+  textSecondary: "#faf8f0",
+  textMuted: "#5a6a7a",
+  accent: "#c8a94e",
+  accentSecondary: "#e8c97a",
+  accentGradient: "linear-gradient(135deg, #c8a94e, #e8c97a)",
+  cardBorder: "rgba(200,169,78,0.22)",
+  cardShadow: "0 4px 24px rgba(0,0,0,0.45)",
+  fontFamily: "'IBM Plex Sans', sans-serif",
+  headingWeight: 600,
+  bodyWeight: 400,
+};
+
+// ── Industrial / Energy & Infrastructure ─────────────────────────
+// Dark slate bg, muted steel teal accent, Space Grotesk. Geometric and precise.
+// Draws from industrial design systems: flat, structured, no decorative flourishes.
+export const THEME_INDUSTRIAL: Theme = {
+  name: "industrial",
+  bg: "#0d1b2a",
+  bgSecondary: "rgba(46,139,139,0.06)",
+  bgGlass: "rgba(46,139,139,0.08)",
+  textPrimary: "#e4f0f0",
+  textSecondary: "#8ab4b4",
+  textMuted: "#3e5f5f",
+  accent: "#2e8b8b",
+  accentSecondary: "#4ab8b8",
+  accentGradient: "linear-gradient(135deg, #2e8b8b, #4ab8b8)",
+  cardBorder: "rgba(46,139,139,0.22)",
+  cardShadow: "0 4px 24px rgba(0,0,0,0.38)",
+  fontFamily: "'Space Grotesk', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Vienna Modern / Cultural & Creative Institutions ─────────────
+// Deep charcoal bg, lavender/violet accents, sharp Inter typography.
+// Inspired by the graphic language of Viennese Secession — contrast and clarity.
+export const THEME_VIENNA: Theme = {
+  name: "vienna",
+  bg: "#1a1a2e",
+  bgSecondary: "rgba(167,139,250,0.06)",
+  bgGlass: "rgba(167,139,250,0.08)",
+  textPrimary: "#f0ecff",
+  textSecondary: "#c4b5fd",
+  textMuted: "#4c3a6e",
+  accent: "#a78bfa",
+  accentSecondary: "#7c3aed",
+  accentGradient: "linear-gradient(135deg, #7c3aed, #a78bfa)",
+  cardBorder: "rgba(167,139,250,0.2)",
+  cardShadow: "0 4px 24px rgba(124,58,237,0.2)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Alpine / Clean Precision ──────────────────────────────────────
+// Off-white bg, deep teal accent, DM Serif Display editorial typography.
+// The visual register of high-end Alpine hospitality and consultancy brands.
+export const THEME_ALPINE: Theme = {
+  name: "alpine",
+  bg: "#f8fafb",
+  bgSecondary: "#ffffff",
+  bgGlass: "rgba(13,107,110,0.06)",
+  textPrimary: "#0d2b2c",
+  textSecondary: "#1a4a4b",
+  textMuted: "#6b9a9b",
+  accent: "#0d6b6e",
+  accentSecondary: "#1a9a9e",
+  accentGradient: "linear-gradient(135deg, #0d6b6e, #1a9a9e)",
+  cardBorder: "rgba(13,107,110,0.15)",
+  cardShadow: "0 4px 24px rgba(0,0,0,0.06)",
+  fontFamily: "'DM Serif Display', 'Georgia', serif",
+  headingWeight: 400,
+  bodyWeight: 400,
+};
+
+// ── Finance / Warm Capital ────────────────────────────────────────
+// Warm dark bg, amber gold accent, cream text, Urbanist typeface.
+// Positions value and trust without the cold formality of classic finance blue.
+export const THEME_FINANCE: Theme = {
+  name: "finance",
+  bg: "#1a1510",
+  bgSecondary: "rgba(212,160,23,0.07)",
+  bgGlass: "rgba(212,160,23,0.09)",
+  textPrimary: "#fef9e7",
+  textSecondary: "#fef3c7",
+  textMuted: "#7a5c0a",
+  accent: "#d4a017",
+  accentSecondary: "#f0b429",
+  accentGradient: "linear-gradient(135deg, #d4a017, #f0b429)",
+  cardBorder: "rgba(212,160,23,0.25)",
+  cardShadow: "0 4px 24px rgba(212,160,23,0.15)",
+  fontFamily: "'Urbanist', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
 // ── Theme Registry ──────────────────────────────────────────────
 // Use this to look up themes by name string (useful for AgentCore integration)
 export const THEMES: Record<string, Theme> = {
@@ -410,6 +515,12 @@ export const THEMES: Record<string, Theme> = {
   lavender:  THEME_LAVENDER,
   arctic:    THEME_ARCTIC,
   espresso:  THEME_ESPRESSO,
+  // 5 grounded European-inspired themes
+  corporate:  THEME_CORPORATE,
+  industrial: THEME_INDUSTRIAL,
+  vienna:     THEME_VIENNA,
+  alpine:     THEME_ALPINE,
+  finance:    THEME_FINANCE,
 };
 
 // ── Brand Kit ───────────────────────────────────────────────────

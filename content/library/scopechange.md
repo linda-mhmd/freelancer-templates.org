@@ -6,7 +6,7 @@ icon: "git-branch"
 camel: "ScopeChange"
 primaryVariant: "DarkDashboard"
 primaryId: "ScopeChange-DarkDashboard"
-variantCount: 16
+variantCount: 21
 variants:
   - id: "ScopeChange-DarkDashboard"
     name: "Dark Dashboard"
@@ -56,6 +56,21 @@ variants:
   - id: "ScopeChange-EspressoDashboard"
     name: "Espresso Dashboard"
     style: "espresso"
+  - id: "ScopeChange-CorporateDashboard"
+    name: "Corporate Dashboard"
+    style: "corporate"
+  - id: "ScopeChange-IndustrialDashboard"
+    name: "Industrial Dashboard"
+    style: "industrial"
+  - id: "ScopeChange-ViennaDashboard"
+    name: "Vienna Dashboard"
+    style: "vienna"
+  - id: "ScopeChange-AlpineDashboard"
+    name: "Alpine Dashboard"
+    style: "alpine"
+  - id: "ScopeChange-FinanceDashboard"
+    name: "Finance Dashboard"
+    style: "finance"
 layout: library/single
 ---
 

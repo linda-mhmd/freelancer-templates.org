@@ -6,7 +6,7 @@ icon: "trending-up"
 camel: "ResultsShowcase"
 primaryVariant: "DarkDashboard"
 primaryId: "ResultsShowcase-DarkDashboard"
-variantCount: 16
+variantCount: 21
 variants:
   - id: "ResultsShowcase-DarkDashboard"
     name: "Dark Dashboard"
@@ -56,6 +56,21 @@ variants:
   - id: "ResultsShowcase-EspressoDashboard"
     name: "Espresso Dashboard"
     style: "espresso"
+  - id: "ResultsShowcase-CorporateDashboard"
+    name: "Corporate Dashboard"
+    style: "corporate"
+  - id: "ResultsShowcase-IndustrialDashboard"
+    name: "Industrial Dashboard"
+    style: "industrial"
+  - id: "ResultsShowcase-ViennaDashboard"
+    name: "Vienna Dashboard"
+    style: "vienna"
+  - id: "ResultsShowcase-AlpineDashboard"
+    name: "Alpine Dashboard"
+    style: "alpine"
+  - id: "ResultsShowcase-FinanceDashboard"
+    name: "Finance Dashboard"
+    style: "finance"
 layout: library/single
 ---
 

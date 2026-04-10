@@ -6,7 +6,7 @@ icon: "briefcase"
 camel: "ServiceOverview"
 primaryVariant: "DarkDashboard"
 primaryId: "ServiceOverview-DarkDashboard"
-variantCount: 16
+variantCount: 21
 variants:
   - id: "ServiceOverview-DarkDashboard"
     name: "Dark Dashboard"
@@ -56,6 +56,21 @@ variants:
   - id: "ServiceOverview-EspressoDashboard"
     name: "Espresso Dashboard"
     style: "espresso"
+  - id: "ServiceOverview-CorporateDashboard"
+    name: "Corporate Dashboard"
+    style: "corporate"
+  - id: "ServiceOverview-IndustrialDashboard"
+    name: "Industrial Dashboard"
+    style: "industrial"
+  - id: "ServiceOverview-ViennaDashboard"
+    name: "Vienna Dashboard"
+    style: "vienna"
+  - id: "ServiceOverview-AlpineDashboard"
+    name: "Alpine Dashboard"
+    style: "alpine"
+  - id: "ServiceOverview-FinanceDashboard"
+    name: "Finance Dashboard"
+    style: "finance"
 layout: library/single
 ---
 

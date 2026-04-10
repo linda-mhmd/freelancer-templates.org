@@ -6,7 +6,7 @@ icon: "clipboard-list"
 camel: "ClientReport"
 primaryVariant: "DarkDashboard"
 primaryId: "ClientReport-DarkDashboard"
-variantCount: 16
+variantCount: 21
 variants:
   - id: "ClientReport-DarkDashboard"
     name: "Dark Dashboard"
@@ -56,6 +56,21 @@ variants:
   - id: "ClientReport-EspressoDashboard"
     name: "Espresso Dashboard"
     style: "espresso"
+  - id: "ClientReport-CorporateDashboard"
+    name: "Corporate Dashboard"
+    style: "corporate"
+  - id: "ClientReport-IndustrialDashboard"
+    name: "Industrial Dashboard"
+    style: "industrial"
+  - id: "ClientReport-ViennaDashboard"
+    name: "Vienna Dashboard"
+    style: "vienna"
+  - id: "ClientReport-AlpineDashboard"
+    name: "Alpine Dashboard"
+    style: "alpine"
+  - id: "ClientReport-FinanceDashboard"
+    name: "Finance Dashboard"
+    style: "finance"
 layout: library/single
 ---
 
