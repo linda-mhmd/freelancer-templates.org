@@ -64,8 +64,8 @@
     <div class="content-card-grid">
       {{ range .Params.relatedTips }}
         {{ partial "content-card.html" (dict
-          "href" (printf "/tips/%s/" .slug)
-          "image" (printf "/images/tips/%s.png" .slug)
+          "href" (printf "tips/%s/" .slug | relURL)
+          "image" (printf "images/tips/%s.png" .slug | relURL)
           "icon" .icon
           "title" .title
           "description" .description
@@ -90,7 +90,7 @@
     "title" "Ready to start creating?"
     "description" "Browse our full template library and find the perfect starting point for your next video project."
     "buttons" (slice
-      (dict "text" "Browse Templates" "href" "/library/" "style" "primary" "icon" "grid")
+      (dict "text" "Browse Templates" "href" ("library/" | relURL) "style" "primary" "icon" "grid")
     )
   ) }}
 {{ end }}

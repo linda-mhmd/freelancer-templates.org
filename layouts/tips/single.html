@@ -49,8 +49,8 @@
     <div class="content-card-grid">
       {{ range .Params.relatedTips }}
         {{ partial "content-card.html" (dict
-          "href" (printf "/tips/%s/" .slug)
-          "image" (printf "/images/tips/%s.png" .slug)
+          "href" (printf "tips/%s/" .slug | relURL)
+          "image" (printf "images/tips/%s.png" .slug | relURL)
           "icon" .icon
           "title" .title
           "description" .description
