@@ -1,0 +1,43 @@
+{
+  "id": "edit-text-prop",
+  "name": "Editing Text Properties",
+  "cursor": {
+    "enabled": true,
+    "style": "text",
+    "smoothing": 0.3
+  },
+  "overlays": [
+    {
+      "type": "highlight",
+      "startFrame": 30,
+      "endFrame": 120,
+      "region": { "x": 900, "y": 200, "width": 300, "height": 40 },
+      "style": {
+        "color": "#10b981",
+        "width": 2,
+        "radius": 4,
+        "glow": true
+      }
+    },
+    {
+      "type": "annotation",
+      "startFrame": 30,
+      "endFrame": 120,
+      "text": "Edit text content here",
+      "position": { "x": 900, "y": 160 },
+      "style": {
+        "fontSize": 16,
+        "color": "#ffffff",
+        "background": "#10b981"
+      }
+    },
+    {
+      "type": "zoom",
+      "startFrame": 45,
+      "endFrame": 105,
+      "zoomLevel": 2,
+      "targetRegion": { "x": 1050, "y": 220 },
+      "transitionDuration": 15
+    }
+  ]
+}

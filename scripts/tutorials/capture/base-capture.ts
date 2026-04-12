@@ -59,7 +59,7 @@ export class BaseCapture {
     // Ensure output directory exists
     fs.mkdirSync(this.config.outputDir, { recursive: true });
 
-    this.browser = await chromium.launch({ headless: false });
+    this.browser = await chromium.launch({ headless: true });
     this.page = await this.browser.newPage();
     await this.page.setViewportSize({
       width: this.config.width,

@@ -1,0 +1,35 @@
+{
+  "id": "open-props-panel",
+  "name": "Opening the Props Panel",
+  "cursor": {
+    "enabled": true,
+    "style": "pointer",
+    "smoothing": 0.3
+  },
+  "overlays": [
+    {
+      "type": "highlight",
+      "startFrame": 30,
+      "endFrame": 90,
+      "region": { "x": 20, "y": 100, "width": 200, "height": 40 },
+      "style": {
+        "color": "#3b82f6",
+        "width": 2,
+        "radius": 8,
+        "glow": true
+      }
+    },
+    {
+      "type": "annotation",
+      "startFrame": 30,
+      "endFrame": 90,
+      "text": "Click to open Props panel",
+      "position": { "x": 240, "y": 110 },
+      "style": {
+        "fontSize": 16,
+        "color": "#ffffff",
+        "background": "#3b82f6"
+      }
+    }
+  ]
+}

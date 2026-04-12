@@ -14,6 +14,9 @@ import { Composition, Folder } from "remotion";
 // ── Theme Framework - Dynamic Composition Generation ─────────────────────────
 import { compositions } from "./themes/scripts/generate-compositions";
 
+// ── Tutorial Screencasts ─────────────────────────────────────────────
+import { ScreencastSlideshow } from "./tutorials/ScreencastSlideshow";
+
 // ── Linda Mohamed (personal deck) ────────────────────────────────
 import { Folie1Cover, Folie2AboutMe, Folie3WhatIOffer, Folie4CostsPackages } from "./templates/lindamohamed/LindaMohamed";
 import { Folie1CoverV2, Folie2AboutMeV2, Folie3WhatIOfferV2, Folie4CostsPackagesV2, Folie5WorkshopsV2 } from "./templates/lindamohamed/LindaMohamedV2";
@@ -2170,6 +2173,27 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="CallToAction-CandyMinimalVertical"    component={CallToActionCandyMinimalVertical}    durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
       <Composition id="CallToAction-PeachCenteredVertical"   component={CallToActionPeachCenteredVertical}   durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
       <Composition id="CallToAction-ElectricSplitVertical"   component={CallToActionElectricSplitVertical}   durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    {/* ═══════════════════════════════════════════════════════════════════════════
+        Tutorial Screencasts - Stop-motion style tutorials
+        ═══════════════════════════════════════════════════════════════════════════ */}
+    <Folder name="Tutorials">
+      <Composition
+        id="ScreencastSlideshow"
+        component={ScreencastSlideshow}
+        durationInFrames={180}
+        fps={30}
+        width={1280}
+        height={720}
+        defaultProps={{
+          screenshots: ['tutorials/demo/placeholder.png'],
+          title: 'Tutorial Demo',
+          frameDuration: 45,
+          transitionDuration: 15,
+          annotations: [],
+        }}
+      />
     </Folder>
 
     {/* ═══════════════════════════════════════════════════════════════════════════

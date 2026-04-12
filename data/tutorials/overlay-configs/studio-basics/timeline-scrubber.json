@@ -1,0 +1,35 @@
+{
+  "id": "timeline-scrubber",
+  "name": "Using the Timeline Scrubber",
+  "cursor": {
+    "enabled": true,
+    "style": "pointer",
+    "smoothing": 0.3
+  },
+  "overlays": [
+    {
+      "type": "highlight",
+      "startFrame": 20,
+      "endFrame": 100,
+      "region": { "x": 200, "y": 650, "width": 800, "height": 50 },
+      "style": {
+        "color": "#8b5cf6",
+        "width": 2,
+        "radius": 8,
+        "glow": true
+      }
+    },
+    {
+      "type": "annotation",
+      "startFrame": 20,
+      "endFrame": 100,
+      "text": "Drag to scrub through frames",
+      "position": { "x": 500, "y": 610 },
+      "style": {
+        "fontSize": 16,
+        "color": "#ffffff",
+        "background": "#8b5cf6"
+      }
+    }
+  ]
+}

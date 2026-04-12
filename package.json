@@ -11,7 +11,12 @@
     "render:thumbnails:missing": "./scripts/render-thumbnails.sh missing",
     "generate:themes": "node scripts/generate-theme-data.js",
     "build:player": "cd player && npm run build",
-    "install:player": "cd player && npm install"
+    "install:player": "cd player && npm install",
+    "tutorial:render": "npx tsx scripts/tutorials/render-pipeline.ts",
+    "tutorial:render:all": "npx tsx scripts/tutorials/batch-render.ts",
+    "tutorial:render:demo": "npx tsx scripts/tutorials/batch-render.ts --id=open-props-panel",
+    "tutorial:scaffold": "npx tsx scripts/tutorials/scaffold-tutorial.ts",
+    "tutorial:validate": "npx tsx scripts/tutorials/validate-configs.ts"
   },
   "dependencies": {
     "@remotion/cli": "4.0.427",
@@ -28,6 +33,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "fast-check": "^4.6.0",
+    "playwright": "^1.59.1",
     "typescript": "^5.6.3",
     "vitest": "^4.1.4"
   }

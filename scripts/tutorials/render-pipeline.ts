@@ -47,7 +47,7 @@ export async function renderTutorial(
   if (!fs.existsSync(path.join(framesDir, 'metadata.json'))) {
     if (verbose) console.log('  - Running capture...');
     try {
-      execSync(`npx ts-node ${definition.captureScript}`, { stdio: 'inherit' });
+      execSync(`npx tsx ${definition.captureScript}`, { stdio: 'inherit' });
     } catch (error) {
       throw new Error(`Capture failed for ${definition.id}`);
     }

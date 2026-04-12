@@ -7,6 +7,9 @@
 // Main composition
 export { TutorialComposition, GIF_OPTIMIZED, getOptimizedSettings } from './TutorialComposition';
 
+// Simple slideshow composition
+export { ScreencastSlideshow } from './ScreencastSlideshow';
+
 // Overlay components
 export { CursorOverlay } from './overlays/CursorOverlay';
 export { ZoomEffect } from './overlays/ZoomEffect';
@@ -41,3 +44,5 @@ export type {
   Position,
   Region,
 } from './types';
+
+export type { ScreencastSlideshowProps } from './ScreencastSlideshow';

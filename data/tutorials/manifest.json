@@ -1,0 +1,48 @@
+{
+  "tutorials": [
+    {
+      "id": "open-props-panel",
+      "category": "studio-basics",
+      "page": "remotion-studio-basics",
+      "title": "Opening the Props Panel",
+      "duration": 8,
+      "captureScript": "scripts/tutorials/capture/studio-basics/open-props-panel.ts",
+      "overlayConfig": "data/tutorials/overlay-configs/studio-basics/open-props-panel.json",
+      "outputDir": "static/tutorials/studio-basics",
+      "formats": ["mp4", "gif", "webm"]
+    },
+    {
+      "id": "timeline-scrubber",
+      "category": "studio-basics",
+      "page": "remotion-studio-basics",
+      "title": "Using the Timeline Scrubber",
+      "duration": 10,
+      "captureScript": "scripts/tutorials/capture/studio-basics/timeline-scrubber.ts",
+      "overlayConfig": "data/tutorials/overlay-configs/studio-basics/timeline-scrubber.json",
+      "outputDir": "static/tutorials/studio-basics",
+      "formats": ["mp4", "gif", "webm"]
+    },
+    {
+      "id": "edit-text-prop",
+      "category": "editing-props",
+      "page": "editing-props",
+      "title": "Editing Text Properties",
+      "duration": 12,
+      "captureScript": "scripts/tutorials/capture/editing-props/edit-text-prop.ts",
+      "overlayConfig": "data/tutorials/overlay-configs/editing-props/edit-text-prop.json",
+      "outputDir": "static/tutorials/editing-props",
+      "formats": ["mp4", "gif", "webm"]
+    },
+    {
+      "id": "basic-render",
+      "category": "cli-rendering",
+      "page": "cli-rendering",
+      "title": "Basic CLI Rendering",
+      "duration": 15,
+      "captureScript": "scripts/tutorials/capture/cli-rendering/basic-render.ts",
+      "overlayConfig": "data/tutorials/overlay-configs/cli-rendering/basic-render.json",
+      "outputDir": "static/tutorials/cli-rendering",
+      "formats": ["mp4", "gif", "webm"]
+    }
+  ]
+}

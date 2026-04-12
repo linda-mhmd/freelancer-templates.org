@@ -1,0 +1,33 @@
+{
+  "id": "basic-render",
+  "name": "Basic CLI Rendering",
+  "cursor": {
+    "enabled": false
+  },
+  "overlays": [
+    {
+      "type": "highlight",
+      "startFrame": 15,
+      "endFrame": 90,
+      "region": { "x": 50, "y": 100, "width": 600, "height": 30 },
+      "style": {
+        "color": "#f59e0b",
+        "width": 2,
+        "radius": 4,
+        "glow": false
+      }
+    },
+    {
+      "type": "annotation",
+      "startFrame": 15,
+      "endFrame": 90,
+      "text": "npx remotion render <composition>",
+      "position": { "x": 50, "y": 60 },
+      "style": {
+        "fontSize": 18,
+        "color": "#ffffff",
+        "background": "#f59e0b"
+      }
+    }
+  ]
+}
