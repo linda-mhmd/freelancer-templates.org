@@ -133,7 +133,7 @@ import { QuestUpdate } from "@gameday/compositions/inserts/quest/QuestUpdate";
 import { SurveyReminder } from "@gameday/compositions/inserts/quest/SurveyReminder";
 
 // Content Creator Templates (vertical/square formats)
-import { ListicleDarkStack, ListicleNeonCards, ListicleSunsetReveal, ListicleCandyStack, ListicleMintCards, ListicleCoralStack, ListicleSkyCards, ListicleGrapeReveal, ListicleCharcoalStack, ListicleElectricCards, ListicleOceanDarkReveal, ListicleDarkStackSquare, ListicleCandyCardsSquare, ListicleMintStackSquare, ListicleElectricRevealSquare } from "@templates/listicle/ListicleShowcase";
+import { ListicleDarkStack, ListicleNeonCards, ListicleSunsetReveal, ListicleCandyStack, ListicleMintCards, ListicleCoralStack, ListicleSkyCards, ListicleGrapeReveal, ListicleCharcoalStack, ListicleElectricCards, ListicleOceanDarkReveal } from "@templates/listicle/ListicleShowcase";
 import { QuoteCardDarkCentered, QuoteCardMinimalMinimal, QuoteCardCandyBold, QuoteCardMintCentered, QuoteCardGrapeBold, QuoteCardCharcoalMinimal, QuoteCardPeachCentered, QuoteCardCreamMinimal, QuoteCardPaperMinimal, QuoteCardSwissCentered, QuoteCardDarkCenteredVertical, QuoteCardCandyBoldVertical, QuoteCardGrapeBoldVertical, QuoteCardCharcoalMinimalVertical } from "@templates/quotecard/QuoteCardShowcase";
 import { TipOfTheDayDarkCard, TipOfTheDayNeonFullscreen, TipOfTheDayCandyCard, TipOfTheDayMintMinimal, TipOfTheDayCoralCard, TipOfTheDaySkyFullscreen, TipOfTheDayGrapeCard, TipOfTheDayCharcoalMinimal, TipOfTheDayCreamCard, TipOfTheDayOceanDarkFullscreen, TipOfTheDayDarkCardVertical, TipOfTheDayNeonFullscreenVertical, TipOfTheDayCandyCardVertical, TipOfTheDayPeachMinimalVertical, TipOfTheDayElectricFullscreenVertical } from "@templates/tipoftheday/TipOfTheDayShowcase";
 import { AnnouncementDarkBanner, AnnouncementNeonCard, AnnouncementCandyBanner, AnnouncementMintCard, AnnouncementCoralMinimal, AnnouncementSkyBanner, AnnouncementGrapeCard, AnnouncementCharcoalMinimal, AnnouncementCreamCard, AnnouncementOceanDarkBanner, AnnouncementDarkBannerVertical, AnnouncementNeonCardVertical, AnnouncementCandyBannerVertical, AnnouncementPeachMinimalVertical, AnnouncementElectricBannerVertical } from "@templates/announcement/AnnouncementShowcase";
@@ -1379,11 +1379,6 @@ export const COMPOSITIONS: CompSpec[] = [
   cShort("Listicle-CharcoalStack",   ListicleCharcoalStack,   "listicle"),
   cShort("Listicle-ElectricCards",   ListicleElectricCards,   "listicle"),
   cShort("Listicle-OceanDarkReveal", ListicleOceanDarkReveal, "listicle"),
-  // Listicle - Square (1080x1080) for Instagram Feed
-  cSquare("Listicle-DarkStackSquare",      ListicleDarkStackSquare,      "listicle"),
-  cSquare("Listicle-CandyCardsSquare",     ListicleCandyCardsSquare,     "listicle"),
-  cSquare("Listicle-MintStackSquare",      ListicleMintStackSquare,      "listicle"),
-  cSquare("Listicle-ElectricRevealSquare", ListicleElectricRevealSquare, "listicle"),
 
   // QuoteCard - Square (1080x1080) for Instagram Feed
   cSquare("QuoteCard-DarkCentered",    QuoteCardDarkCentered,    "quotecard"),
