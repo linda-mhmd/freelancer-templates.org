@@ -3268,11 +3268,52 @@ html.dark .tpl-themes-section {
 }
 
 .tips-hero__player {
+  position: relative;
   width: 100%;
   max-width: 560px;
   border-radius: var(--r-md);
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+}
+
+.tips-hero__video-player,
+.tips-hero__gif {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+}
+
+.tips-hero__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  z-index: 10;
+}
+
+.tips-hero__play-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.tips-hero__play-btn svg {
+  display: block;
+}
+
+.tips-hero__player.is-playing .tips-hero__play-btn {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .tips-hero__player-wrapper {

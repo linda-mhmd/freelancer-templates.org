@@ -67,23 +67,57 @@
       {{ if .video }}
       <div class="tips-hero__video">
         <div class="tips-hero__player">
-          {{/* Remotion Player Embed */}}
-          <div class="tips-hero__player-wrapper" data-composition="{{ .video }}">
-            {{ if .videoFallback }}
-            <img 
-              src="{{ .videoFallback }}" 
-              alt="{{ .title }} video preview" 
-              class="tips-hero__poster"
-              loading="eager"
-            >
+          {{ if .video.id }}
+            {{/* Pre-rendered tutorial video file */}}
+            {{ $basePath := printf "/tutorials/%s/%s" .video.category .video.id }}
+            {{ $posterPath := printf "%s-poster.png" $basePath }}
+            {{ $format := .video.format | default "mp4" }}
+            
+            {{ if eq $format "gif" }}
+              <img 
+                src="{{ $basePath }}.gif" 
+                alt="{{ .title }} tutorial" 
+                class="tips-hero__gif"
+                loading="eager"
+              />
             {{ else }}
-            {{/* Placeholder when no video or fallback is available */}}
-            <div class="tips-hero__placeholder">
-              <i data-lucide="play-circle"></i>
-              <span>Video preview</span>
-            </div>
+              <video 
+                class="tips-hero__video-player"
+                poster="{{ $posterPath }}"
+                loop
+                muted
+                playsinline
+                preload="metadata"
+              >
+                <source src="{{ $basePath }}.mp4" type="video/mp4">
+                <source src="{{ $basePath }}.webm" type="video/webm">
+                Your browser does not support video playback.
+              </video>
+              <button class="tips-hero__play-btn" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
             {{ end }}
-          </div>
+          {{ else }}
+            {{/* Remotion Player Embed (composition ID) */}}
+            <div class="tips-hero__player-wrapper" data-composition="{{ .video }}">
+              {{ if .videoFallback }}
+              <img 
+                src="{{ .videoFallback }}" 
+                alt="{{ .title }} video preview" 
+                class="tips-hero__poster"
+                loading="eager"
+              >
+              {{ else }}
+              {{/* Placeholder when no video or fallback is available */}}
+              <div class="tips-hero__placeholder">
+                <i data-lucide="play-circle"></i>
+                <span>Video preview</span>
+              </div>
+              {{ end }}
+            </div>
+          {{ end }}
         </div>
       </div>
       {{ end }}

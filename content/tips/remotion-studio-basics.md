@@ -14,6 +14,10 @@ hero:
     - "Props"
     - "Timeline"
     - "Shortcuts"
+  video:
+    category: "studio-basics"
+    id: "open-props-panel"
+    format: "mp4"
 
 sections:
   - title: "Interface Navigation and Panels"

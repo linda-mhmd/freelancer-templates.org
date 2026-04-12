@@ -14,6 +14,10 @@ hero:
     - "Quality"
     - "Batch"
     - "Automation"
+  video:
+    category: "cli-rendering"
+    id: "basic-render"
+    format: "mp4"
 
 sections:
   - title: "Basic Commands"

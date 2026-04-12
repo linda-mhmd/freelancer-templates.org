@@ -14,6 +14,10 @@ hero:
     - "Colors"
     - "Media"
     - "Timing"
+  video:
+    category: "editing-props"
+    id: "edit-text-prop"
+    format: "mp4"
 
 sections:
   - title: "Understanding the Props Interface"

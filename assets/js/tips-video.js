@@ -8,29 +8,24 @@
 
   // Initialize all video containers
   function initTipsVideos() {
+    // Handle .tips-video containers
     const videos = document.querySelectorAll('.tips-video');
+    videos.forEach(container => initVideoContainer(container, '.tips-video__player', '.tips-video__play-btn'));
     
-    videos.forEach(container => {
-      const video = container.querySelector('.tips-video__player');
-      const playBtn = container.querySelector('.tips-video__play-btn');
-      
-      if (!video) return;
+    // Handle .tips-hero__player containers (hero videos)
+    const heroVideos = document.querySelectorAll('.tips-hero__player');
+    heroVideos.forEach(container => initVideoContainer(container, '.tips-hero__video-player', '.tips-hero__play-btn'));
+  }
 
-      // Play button click
-      if (playBtn) {
-        playBtn.addEventListener('click', () => {
-          if (video.paused) {
-            video.play();
-            container.classList.add('is-playing');
-          } else {
-            video.pause();
-            container.classList.remove('is-playing');
-          }
-        });
-      }
+  function initVideoContainer(container, videoSelector, playBtnSelector) {
+    const video = container.querySelector(videoSelector);
+    const playBtn = container.querySelector(playBtnSelector);
+    
+    if (!video) return;
 
-      // Video click to toggle
-      video.addEventListener('click', () => {
+    // Play button click
+    if (playBtn) {
+      playBtn.addEventListener('click', () => {
         if (video.paused) {
           video.play();
           container.classList.add('is-playing');
@@ -39,17 +34,28 @@
           container.classList.remove('is-playing');
         }
       });
+    }
 
-      // Update state on video events
-      video.addEventListener('play', () => container.classList.add('is-playing'));
-      video.addEventListener('pause', () => container.classList.remove('is-playing'));
-      video.addEventListener('ended', () => container.classList.remove('is-playing'));
-
-      // Viewport autoplay
-      if (container.dataset.autoplay === 'true' || video.dataset.autoplay === 'true') {
-        setupViewportAutoplay(container, video);
+    // Video click to toggle
+    video.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        container.classList.add('is-playing');
+      } else {
+        video.pause();
+        container.classList.remove('is-playing');
       }
     });
+
+    // Update state on video events
+    video.addEventListener('play', () => container.classList.add('is-playing'));
+    video.addEventListener('pause', () => container.classList.remove('is-playing'));
+    video.addEventListener('ended', () => container.classList.remove('is-playing'));
+
+    // Viewport autoplay
+    if (container.dataset.autoplay === 'true' || video.dataset.autoplay === 'true') {
+      setupViewportAutoplay(container, video);
+    }
   }
 
   // Autoplay when scrolled into view

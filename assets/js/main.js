@@ -217,3 +217,65 @@ document.addEventListener('DOMContentLoaded', function () {
     lucide.createIcons();
   }
 });
+
+// Tips video player - play/pause controls for hero and embedded videos
+(function() {
+  'use strict';
+
+  function initTipsVideos() {
+    // Handle .tips-video containers
+    var videos = document.querySelectorAll('.tips-video');
+    videos.forEach(function(container) {
+      initVideoContainer(container, '.tips-video__player', '.tips-video__play-btn');
+    });
+    
+    // Handle .tips-hero__player containers (hero videos)
+    var heroVideos = document.querySelectorAll('.tips-hero__player');
+    heroVideos.forEach(function(container) {
+      initVideoContainer(container, '.tips-hero__video-player', '.tips-hero__play-btn');
+    });
+  }
+
+  function initVideoContainer(container, videoSelector, playBtnSelector) {
+    var video = container.querySelector(videoSelector);
+    var playBtn = container.querySelector(playBtnSelector);
+    
+    if (!video) return;
+
+    // Play button click
+    if (playBtn) {
+      playBtn.addEventListener('click', function() {
+        if (video.paused) {
+          video.play();
+          container.classList.add('is-playing');
+        } else {
+          video.pause();
+          container.classList.remove('is-playing');
+        }
+      });
+    }
+
+    // Video click to toggle
+    video.addEventListener('click', function() {
+      if (video.paused) {
+        video.play();
+        container.classList.add('is-playing');
+      } else {
+        video.pause();
+        container.classList.remove('is-playing');
+      }
+    });
+
+    // Update state on video events
+    video.addEventListener('play', function() { container.classList.add('is-playing'); });
+    video.addEventListener('pause', function() { container.classList.remove('is-playing'); });
+    video.addEventListener('ended', function() { container.classList.remove('is-playing'); });
+  }
+
+  // Initialize on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTipsVideos);
+  } else {
+    initTipsVideos();
+  }
+})();
