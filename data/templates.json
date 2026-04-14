@@ -9349,5 +9349,65 @@
       }
     ],
     "primaryId": "CallToAction-CandyCentered"
+  },
+  {
+    "slug": "grwmreel",
+    "camel": "GRWMReel",
+    "name": "GRWM Reel",
+    "description": "Get Ready With Me — 4-scene auto-cut portrait reel (8s) with platform-safe captions, step counter sticker badge, and ConfettiBurst on the final outfit reveal.",
+    "icon": "sparkles",
+    "color": "pink",
+    "primaryVariant": "TikTok",
+    "variantCount": 2,
+    "variants": [
+      { "id": "GRWMReel-TikTok", "name": "TikTok", "style": "bold", "format": "vertical" },
+      { "id": "GRWMReel-Reels",  "name": "Reels",  "style": "dark", "format": "vertical" }
+    ],
+    "primaryId": "GRWMReel-TikTok"
+  },
+  {
+    "slug": "outfitreveal",
+    "camel": "OutfitReveal",
+    "name": "Outfit Reveal",
+    "description": "Hero outfit shot with WavyText headline, AnimatedSparkles, and a StickerBadge brand callout. Two visual flavors: hot pink neon energy or soft pastel dream.",
+    "icon": "star",
+    "color": "purple",
+    "primaryVariant": "BoldNeon",
+    "variantCount": 2,
+    "variants": [
+      { "id": "OutfitReveal-BoldNeon",    "name": "Bold Neon",    "style": "bold",   "format": "vertical" },
+      { "id": "OutfitReveal-PastelDream", "name": "Pastel Dream", "style": "pastel", "format": "vertical" }
+    ],
+    "primaryId": "OutfitReveal-BoldNeon"
+  },
+  {
+    "slug": "festivallineup",
+    "camel": "FestivalLineup",
+    "name": "Festival Lineup",
+    "description": "Concert and festival lineup announcement — WavyText hero name, date, venue, and up to 8 artists in a staggered 2-column grid. Neon purple-pink or warm sunset gradient overlays.",
+    "icon": "music",
+    "color": "orange",
+    "primaryVariant": "NeonGradient",
+    "variantCount": 2,
+    "variants": [
+      { "id": "FestivalLineup-NeonGradient", "name": "Neon Gradient", "style": "neon",   "format": "vertical" },
+      { "id": "FestivalLineup-SunsetWarm",   "name": "Sunset Warm",   "style": "sunset", "format": "vertical" }
+    ],
+    "primaryId": "FestivalLineup-NeonGradient"
+  },
+  {
+    "slug": "creatorrecap",
+    "camel": "CreatorRecap",
+    "name": "Creator Recap",
+    "description": "Week-in-review portrait montage — 5 quick scenes with sticker day badges, platform-correct captions, and a BlobShape creator handle outro.",
+    "icon": "video",
+    "color": "teal",
+    "primaryVariant": "TikTok",
+    "variantCount": 2,
+    "variants": [
+      { "id": "CreatorRecap-TikTok", "name": "TikTok", "style": "bold", "format": "vertical" },
+      { "id": "CreatorRecap-Reels",  "name": "Reels",  "style": "dark", "format": "vertical" }
+    ],
+    "primaryId": "CreatorRecap-TikTok"
   }
 ]

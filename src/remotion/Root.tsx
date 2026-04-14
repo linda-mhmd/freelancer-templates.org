@@ -75,6 +75,7 @@ import { ComponentInventoryArchitectureGridDark, ComponentInventoryArchitectureG
 import { ConceptPitchArcDark, ConceptPitchArcBold, ConceptPitchBoardDark, ConceptPitchBoardBold, ConceptPitchBriefDark, ConceptPitchBriefBold, ConceptPitchOceanArc, ConceptPitchSunsetBoard, ConceptPitchForestBrief, ConceptPitchRoseArc, ConceptPitchGoldBoard, ConceptPitchMidnightBrief, ConceptPitchCrimsonArc, ConceptPitchLavenderBoard, ConceptPitchArcticBrief, ConceptPitchEspressoArc } from "./templates/conceptpitch/ConceptPitchShowcase";
 import { CountdownHypeDarkTimer, CountdownHypeNeonTimer, CountdownHypeDarkTeaser, CountdownHypeNeonTeaser, CountdownHypeDarkUrgency, CountdownHypeNeonUrgency, CountdownHypeOceanTimer, CountdownHypeSunsetTimer, CountdownHypeForestTeaser, CountdownHypeRoseTeaser, CountdownHypeGoldUrgency, CountdownHypeMidnightUrgency, CountdownHypeCrimsonTimer, CountdownHypeLavenderTimer, CountdownHypeArcticTeaser, CountdownHypeEspressoTeaser } from "./templates/countdownhype/CountdownHypeShowcase";
 import { CoursePromoDarkOverview, CoursePromoCleanOverview, CoursePromoDarkCurriculum, CoursePromoCleanCurriculum, CoursePromoDarkInstructor, CoursePromoCleanInstructor, CoursePromoOceanOverview, CoursePromoSunsetOverview, CoursePromoForestCurriculum, CoursePromoRoseCurriculum, CoursePromoGoldInstructor, CoursePromoMidnightInstructor, CoursePromoCrimsonOverview, CoursePromoLavenderOverview, CoursePromoArcticCurriculum, CoursePromoEspressoCurriculum } from "./templates/coursepromo/CoursePromoShowcase";
+import { CreatorRecapTikTok, CreatorRecapReels } from "./templates/creatorrecap/CreatorRecapShowcase";
 import { DeploymentStatusEnvironmentCardsDark, DeploymentStatusEnvironmentCardsNeon, DeploymentStatusPipelineViewDark, DeploymentStatusPipelineViewNeon, DeploymentStatusHealthDashboardDark, DeploymentStatusHealthDashboardNeon, DeploymentStatusOceanEnvironmentCards, DeploymentStatusSunsetEnvironmentCards, DeploymentStatusForestPipelineView, DeploymentStatusRosePipelineView, DeploymentStatusGoldHealthDashboard, DeploymentStatusMidnightHealthDashboard, DeploymentStatusCrimsonEnvironmentCards, DeploymentStatusLavenderEnvironmentCards, DeploymentStatusArcticPipelineView, DeploymentStatusEspressoPipelineView } from "./templates/deploymentstatus/DeploymentStatusShowcase";
 import { EffortTrackingTeamAllocationDark, EffortTrackingTeamAllocationWarm, EffortTrackingCapacityDark, EffortTrackingCapacityWarm, EffortTrackingBreakdownDark, EffortTrackingBreakdownWarm, EffortTrackingOceanTeamAllocation, EffortTrackingSunsetTeamAllocation, EffortTrackingForestCapacity, EffortTrackingRoseCapacity, EffortTrackingGoldBreakdown, EffortTrackingMidnightBreakdown, EffortTrackingCrimsonTeamAllocation, EffortTrackingLavenderTeamAllocation, EffortTrackingArcticCapacity, EffortTrackingEspressoCapacity } from "./templates/efforttracking/EffortTrackingShowcase";
 import { EventDarkHero, EventCleanSpeakers, EventBoldCountdown, EventWarmHero, EventMinimalSpeakers, EventNeonCountdown, EventOceanHero, EventSunsetSpeakers, EventForestCountdown, EventRoseHero, EventGoldSpeakers, EventMidnightCountdown, EventCrimsonHero, EventLavenderSpeakers, EventArcticCountdown, EventEspressoHero } from "./templates/event/EventShowcase";
@@ -83,6 +84,7 @@ import { ExplainerDarkCinematic, ExplainerCleanWhiteboard, ExplainerBoldProcess,
 import { FAQDarkAccordion, FAQCleanCards, FAQBoldInterview, FAQWarmAccordion, FAQMinimalCards, FAQNeonInterview, FAQOceanAccordion, FAQSunsetCards, FAQForestAccordion, FAQRoseCards, FAQGoldAccordion, FAQMidnightCards, FAQCrimsonAccordion, FAQLavenderCards, FAQArcticAccordion, FAQEspressoCards } from "./templates/faq/FAQShowcase";
 import { FeatureFlagsExperimentBoardDark, FeatureFlagsExperimentBoardNeon, FeatureFlagsResultsViewDark, FeatureFlagsResultsViewNeon, FeatureFlagsRolloutTrackerDark, FeatureFlagsRolloutTrackerNeon, FeatureFlagsOceanExperimentBoard, FeatureFlagsSunsetExperimentBoard, FeatureFlagsForestResultsView, FeatureFlagsRoseResultsView, FeatureFlagsGoldRolloutTracker, FeatureFlagsMidnightRolloutTracker, FeatureFlagsCrimsonExperimentBoard, FeatureFlagsLavenderExperimentBoard, FeatureFlagsArcticResultsView, FeatureFlagsEspressoResultsView } from "./templates/featureflags/FeatureFlagsShowcase";
 import { FeatureRoadmapTimelineDark, FeatureRoadmapTimelineClean, FeatureRoadmapSwimlaneDark, FeatureRoadmapSwimlaneClean, FeatureRoadmapGridDark, FeatureRoadmapGridClean, FeatureRoadmapOceanTimeline, FeatureRoadmapSunsetTimeline, FeatureRoadmapForestSwimlane, FeatureRoadmapRoseSwimlane, FeatureRoadmapGoldGrid, FeatureRoadmapMidnightGrid, FeatureRoadmapCrimsonTimeline, FeatureRoadmapLavenderTimeline, FeatureRoadmapArcticSwimlane, FeatureRoadmapEspressoSwimlane } from "./templates/featureroadmap/FeatureRoadmapShowcase";
+import { FestivalLineupNeonGradient, FestivalLineupSunsetWarm } from "./templates/festivallineup/FestivalLineupShowcase";
 import { FitnessRoutineBoldExerciseList, FitnessRoutineNeonExerciseList, FitnessRoutineBoldTimerFocus, FitnessRoutineNeonTimerFocus, FitnessRoutineBoldCircuit, FitnessRoutineNeonCircuit, FitnessRoutineOceanExerciseList, FitnessRoutineSunsetExerciseList, FitnessRoutineForestTimerFocus, FitnessRoutineRoseTimerFocus, FitnessRoutineGoldCircuit, FitnessRoutineMidnightCircuit, FitnessRoutineCrimsonExerciseList, FitnessRoutineLavenderExerciseList, FitnessRoutineArcticTimerFocus, FitnessRoutineEspressoTimerFocus } from "./templates/fitnessroutine/FitnessRoutineShowcase";
 import { IntegrationStatusStatusWallDark, IntegrationStatusStatusWallClean, IntegrationStatusCategoryGroupsDark, IntegrationStatusCategoryGroupsClean, IntegrationStatusHealthMonitorDark, IntegrationStatusHealthMonitorClean, IntegrationStatusOceanStatusWall, IntegrationStatusSunsetStatusWall, IntegrationStatusForestCategoryGroups, IntegrationStatusRoseCategoryGroups, IntegrationStatusGoldHealthMonitor, IntegrationStatusMidnightHealthMonitor, IntegrationStatusCrimsonStatusWall, IntegrationStatusLavenderStatusWall, IntegrationStatusArcticCategoryGroups, IntegrationStatusEspressoCategoryGroups } from "./templates/integrationstatus/IntegrationStatusShowcase";
 import { InvoiceDarkProfessional, InvoiceCleanProfessional, InvoiceBoldUrgent, InvoiceWarmFriendly, InvoiceMinimalProfessional, InvoiceNeonUrgent, InvoiceOceanProfessional, InvoiceSunsetFriendly, InvoiceForestProfessional, InvoiceRoseFriendly, InvoiceGoldProfessional, InvoiceMidnightProfessional, InvoiceCrimsonUrgent, InvoiceLavenderFriendly, InvoiceArcticProfessional, InvoiceEspressoFriendly } from "./templates/invoice/InvoiceShowcase";
@@ -93,6 +95,7 @@ import { NeighborhoodGuideExplorerWarm, NeighborhoodGuideExplorerNeon, Neighborh
 import { NewsletterPromoDarkSubscribeCta, NewsletterPromoCleanSubscribeCta, NewsletterPromoDarkIssuePreview, NewsletterPromoCleanIssuePreview, NewsletterPromoDarkTestimonialBlend, NewsletterPromoCleanTestimonialBlend, NewsletterPromoOceanSubscribeCta, NewsletterPromoSunsetSubscribeCta, NewsletterPromoForestIssuePreview, NewsletterPromoRoseIssuePreview, NewsletterPromoGoldTestimonialBlend, NewsletterPromoMidnightTestimonialBlend, NewsletterPromoCrimsonSubscribeCta, NewsletterPromoLavenderSubscribeCta, NewsletterPromoArcticIssuePreview, NewsletterPromoEspressoIssuePreview } from "./templates/newsletterpromo/NewsletterPromoShowcase";
 import { OfficeDirectoryWorldViewDark, OfficeDirectoryWorldViewClean, OfficeDirectoryCardListDark, OfficeDirectoryCardListClean, OfficeDirectoryRegionGroupsDark, OfficeDirectoryRegionGroupsClean, OfficeDirectoryOceanWorldView, OfficeDirectorySunsetWorldView, OfficeDirectoryForestCardList, OfficeDirectoryRoseCardList, OfficeDirectoryGoldRegionGroups, OfficeDirectoryMidnightRegionGroups, OfficeDirectoryCrimsonWorldView, OfficeDirectoryLavenderWorldView, OfficeDirectoryArcticCardList, OfficeDirectoryEspressoCardList } from "./templates/officedirectory/OfficeDirectoryShowcase";
 import { OnboardingDarkProfessional, OnboardingCleanProfessional, OnboardingBoldCreative, OnboardingWarmFriendly, OnboardingMinimalProfessional, OnboardingNeonCreative, OnboardingOceanProfessional, OnboardingSunsetCreative, OnboardingForestProfessional, OnboardingRoseCreative, OnboardingGoldProfessional, OnboardingMidnightProfessional, OnboardingCrimsonCreative, OnboardingLavenderFriendly, OnboardingArcticProfessional, OnboardingEspressoFriendly } from "./templates/onboarding/OnboardingShowcase";
+import { OutfitRevealBoldNeon, OutfitRevealPastelDream } from "./templates/outfitreveal/OutfitRevealShowcase";
 import { PinCollectionCardGalleryWarm, PinCollectionCardGalleryClean, PinCollectionMapListWarm, PinCollectionMapListClean, PinCollectionCategoryGridWarm, PinCollectionCategoryGridClean, PinCollectionOceanCardGallery, PinCollectionSunsetMapList, PinCollectionForestCardGallery, PinCollectionRoseCategoryGrid, PinCollectionGoldMapList, PinCollectionMidnightCardGallery, PinCollectionCrimsonCategoryGrid, PinCollectionLavenderMapList, PinCollectionArcticCardGallery, PinCollectionEspressoCategoryGrid } from "./templates/pincollection/PinCollectionShowcase";
 import { PlatformOverviewCommandCenterDark, PlatformOverviewCommandCenterNeon, PlatformOverviewModuleGridDark, PlatformOverviewModuleGridNeon, PlatformOverviewStackDark, PlatformOverviewStackNeon, PlatformOverviewOceanCommandCenter, PlatformOverviewSunsetCommandCenter, PlatformOverviewForestModuleGrid, PlatformOverviewRoseModuleGrid, PlatformOverviewGoldStack, PlatformOverviewMidnightStack, PlatformOverviewCrimsonCommandCenter, PlatformOverviewLavenderCommandCenter, PlatformOverviewArcticModuleGrid, PlatformOverviewEspressoModuleGrid } from "./templates/platformoverview/PlatformOverviewShowcase";
 import { PodcastAudiogramDarkWaveform, PodcastAudiogramWarmWaveform, PodcastAudiogramDarkQuoteCard, PodcastAudiogramWarmQuoteCard, PodcastAudiogramDarkEpisodePromo, PodcastAudiogramWarmEpisodePromo, PodcastAudiogramOceanWaveform, PodcastAudiogramSunsetWaveform, PodcastAudiogramForestQuoteCard, PodcastAudiogramRoseQuoteCard, PodcastAudiogramGoldEpisodePromo, PodcastAudiogramMidnightEpisodePromo, PodcastAudiogramCrimsonWaveform, PodcastAudiogramLavenderWaveform, PodcastAudiogramArcticQuoteCard, PodcastAudiogramEspressoQuoteCard } from "./templates/podcastaudiogram/PodcastAudiogramShowcase";
@@ -176,6 +179,7 @@ import { CardFlipDark, CardFlipClean, CardFlipBold, CardFlipWarm, CardFlipMinima
 import { FloatingBubbleDark, FloatingBubbleClean, FloatingBubbleBold, FloatingBubbleWarm, FloatingBubbleMinimal, FloatingBubbleNeon, FloatingBubbleOcean, FloatingBubbleSunset, FloatingBubbleForest, FloatingBubbleRose, FloatingBubbleGold, FloatingBubbleMidnight, FloatingBubbleCrimson, FloatingBubbleLavender, FloatingBubbleArctic, FloatingBubbleEspresso } from "./templates/floatingbubble/FloatingBubbleShowcase";
 import { GeometricPatternsDark, GeometricPatternsClean, GeometricPatternsBold, GeometricPatternsWarm, GeometricPatternsMinimal, GeometricPatternsNeon, GeometricPatternsOcean, GeometricPatternsSunset, GeometricPatternsForest, GeometricPatternsRose, GeometricPatternsGold, GeometricPatternsMidnight, GeometricPatternsCrimson, GeometricPatternsLavender, GeometricPatternsArctic, GeometricPatternsEspresso } from "./templates/geometricpatterns/GeometricPatternsShowcase";
 import { GlitchTextDark, GlitchTextClean, GlitchTextBold, GlitchTextWarm, GlitchTextMinimal, GlitchTextNeon, GlitchTextOcean, GlitchTextSunset, GlitchTextForest, GlitchTextRose, GlitchTextGold, GlitchTextMidnight, GlitchTextCrimson, GlitchTextLavender, GlitchTextArctic, GlitchTextEspresso } from "./templates/glitchtext/GlitchTextShowcase";
+import { GRWMReelTikTok, GRWMReelReels } from "./templates/grwmreel/GRWMReelShowcase";
 import { LiquidWaveDark, LiquidWaveClean, LiquidWaveBold, LiquidWaveWarm, LiquidWaveMinimal, LiquidWaveNeon, LiquidWaveOcean, LiquidWaveSunset, LiquidWaveForest, LiquidWaveRose, LiquidWaveGold, LiquidWaveMidnight, LiquidWaveCrimson, LiquidWaveLavender, LiquidWaveArctic, LiquidWaveEspresso } from "./templates/liquidwave/LiquidWaveShowcase";
 import { MatrixRainDark, MatrixRainClean, MatrixRainBold, MatrixRainWarm, MatrixRainMinimal, MatrixRainNeon, MatrixRainOcean, MatrixRainSunset, MatrixRainForest, MatrixRainRose, MatrixRainGold, MatrixRainMidnight, MatrixRainCrimson, MatrixRainLavender, MatrixRainArctic, MatrixRainEspresso } from "./templates/matrixrain/MatrixRainShowcase";
 import { ParticleExplosionDark, ParticleExplosionClean, ParticleExplosionBold, ParticleExplosionWarm, ParticleExplosionMinimal, ParticleExplosionNeon, ParticleExplosionOcean, ParticleExplosionSunset, ParticleExplosionForest, ParticleExplosionRose, ParticleExplosionGold, ParticleExplosionMidnight, ParticleExplosionCrimson, ParticleExplosionLavender, ParticleExplosionArctic, ParticleExplosionEspresso } from "./templates/particleexplosion/ParticleExplosionShowcase";
@@ -246,6 +250,34 @@ import { CallToActionDarkCentered, CallToActionNeonSplit, CallToActionCandyCente
 
 // Standard composition defaults: 1280x720, 30fps, 10s
 const W = 1280, H = 720, FPS = 30, DUR = 300;
+
+// ── Screencast Preset Composition Definitions ────────────────────────────────
+// All 17 presets for ScreencastSlideshow compositions
+// Requirements: 5.1, 5.5
+const SCREENCAST_PRESETS = [
+  // Tutorial presets (9)
+  { id: 'StudioBasics', preset: 'studio-basics', slides: 5 },
+  { id: 'EditingProps', preset: 'editing-props', slides: 5 },
+  { id: 'CliRendering', preset: 'cli-rendering', slides: 5 },
+  { id: 'CompositionStructure', preset: 'composition-structure', slides: 5 },
+  { id: 'CustomThemes', preset: 'custom-themes', slides: 5 },
+  { id: 'BrandIntegration', preset: 'brand-integration', slides: 5 },
+  { id: 'LayoutModifications', preset: 'layout-modifications', slides: 5 },
+  { id: 'LambdaDeployment', preset: 'lambda-deployment', slides: 5 },
+  { id: 'TestimonialsTutorial', preset: 'testimonials-tutorial', slides: 6 },
+  // Showcase presets (4)
+  { id: 'ShowcaseTestimonials', preset: 'showcase-testimonials', slides: 5 },
+  { id: 'ShowcaseProductLaunches', preset: 'showcase-product-launches', slides: 5 },
+  { id: 'ShowcaseSocialContent', preset: 'showcase-social-content', slides: 5 },
+  { id: 'ShowcaseEducational', preset: 'showcase-educational', slides: 5 },
+  // Project presets (4)
+  { id: 'ProjectAgencyWorkflow', preset: 'project-agency-workflow', slides: 5 },
+  { id: 'ProjectContentCreator', preset: 'project-content-creator', slides: 5 },
+  { id: 'ProjectFreelancerPortfolio', preset: 'project-freelancer-portfolio', slides: 5 },
+  { id: 'ProjectSaasMarketing', preset: 'project-saas-marketing', slides: 5 },
+  // Design tips preset (1)
+  { id: 'VideoDesignTips', preset: 'video-design-tips', slides: 5 },
+];
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -554,6 +586,12 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="CoursePromo-EspressoCurriculum" component={CoursePromoEspressoCurriculum} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
+    {/* ── Creator Recap — 5-scene week recap + BlobShape outro, portrait ── */}
+    <Folder name="Creator-Recap">
+      <Composition id="CreatorRecap-TikTok" component={CreatorRecapTikTok} durationInFrames={210} fps={FPS} width={1080} height={1920} />
+      <Composition id="CreatorRecap-Reels"  component={CreatorRecapReels}  durationInFrames={210} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
     <Folder name="Deployment-Status">
       <Composition id="DeploymentStatus-EnvironmentCardsDark" component={DeploymentStatusEnvironmentCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="DeploymentStatus-EnvironmentCardsNeon" component={DeploymentStatusEnvironmentCardsNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -704,6 +742,12 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="FeatureRoadmap-LavenderTimeline" component={FeatureRoadmapLavenderTimeline} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="FeatureRoadmap-ArcticSwimlane" component={FeatureRoadmapArcticSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="FeatureRoadmap-EspressoSwimlane" component={FeatureRoadmapEspressoSwimlane} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    </Folder>
+
+    {/* ── Festival Lineup — 2-col artist poster, WavyText headliner, portrait ── */}
+    <Folder name="Festival-Lineup">
+      <Composition id="FestivalLineup-NeonGradient" component={FestivalLineupNeonGradient} durationInFrames={360} fps={FPS} width={1080} height={1920} />
+      <Composition id="FestivalLineup-SunsetWarm"   component={FestivalLineupSunsetWarm}   durationInFrames={360} fps={FPS} width={1080} height={1920} />
     </Folder>
 
     <Folder name="Fitness-Routine">
@@ -894,6 +938,12 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Onboarding-LavenderFriendly" component={OnboardingLavenderFriendly} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Onboarding-ArcticProfessional" component={OnboardingArcticProfessional} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Onboarding-EspressoFriendly" component={OnboardingEspressoFriendly} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    </Folder>
+
+    {/* ── Outfit Reveal — single hero shot, WavyText + sparkles + sticker, portrait ── */}
+    <Folder name="Outfit-Reveal">
+      <Composition id="OutfitReveal-BoldNeon"    component={OutfitRevealBoldNeon}    durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="OutfitReveal-PastelDream" component={OutfitRevealPastelDream} durationInFrames={240} fps={FPS} width={1080} height={1920} />
     </Folder>
 
     <Folder name="Pin-Collection">
@@ -1675,6 +1725,12 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="GlitchText-Espresso" component={GlitchTextEspresso} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
+    {/* ── GRWM Reel — 4 × 60-frame auto-cut, platform-safe captions, portrait ── */}
+    <Folder name="GRWM-Reel">
+      <Composition id="GRWMReel-TikTok" component={GRWMReelTikTok} durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="GRWMReel-Reels"  component={GRWMReelReels}  durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
     <Folder name="Liquid-Wave">
       <Composition id="LiquidWave-Dark" component={LiquidWaveDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="LiquidWave-Clean" component={LiquidWaveClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -2194,6 +2250,25 @@ export const RemotionRoot: React.FC = () => (
           annotations: [],
         }}
       />
+    </Folder>
+
+    {/* ═══════════════════════════════════════════════════════════════════════════
+        Screencast Tutorials - Individual preset compositions
+        Requirements: 5.1, 5.2, 5.3, 5.4, 5.5
+        ═══════════════════════════════════════════════════════════════════════════ */}
+    <Folder name="Screencast-Tutorials">
+      {SCREENCAST_PRESETS.map(({ id, preset, slides }) => (
+        <Composition
+          key={id}
+          id={`ScreencastSlideshow-${id}`}
+          component={ScreencastSlideshow}
+          durationInFrames={slides * 90}
+          fps={30}
+          width={1280}
+          height={720}
+          defaultProps={{ preset }}
+        />
+      ))}
     </Folder>
 
     {/* ═══════════════════════════════════════════════════════════════════════════
