@@ -19,4 +19,5 @@ node_modules/
 # Tool state - never commit
 .claude/
 .claire/
-CLAUDE.md
+# CLAUDE.md is intentionally tracked (repo-level AI guidance)
+# .gitignore entry removed so it stays in git
