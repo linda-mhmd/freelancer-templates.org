@@ -15,6 +15,10 @@ hero:
     - "Grid"
     - "Flexbox"
     - "Responsive"
+  video:
+    composition: "ScreencastSlideshow"
+    props:
+      preset: "layout-modifications"
 
 sections:
   - title: "Understanding Layout Components"

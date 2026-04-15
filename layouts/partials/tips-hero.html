@@ -67,7 +67,17 @@
       {{ if .video }}
       <div class="tips-hero__video">
         <div class="tips-hero__player">
-          {{ if .video.id }}
+          {{ if .video.composition }}
+            {{/* Remotion Player Embed via iframe */}}
+            <iframe 
+              src="{{ printf "/player/?comp=%s&embed=1" .video.composition | relURL }}"
+              class="tips-hero__iframe"
+              title="{{ .title }} tutorial"
+              loading="lazy"
+              allow="autoplay"
+              frameborder="0"
+            ></iframe>
+          {{ else if .video.id }}
             {{/* Pre-rendered tutorial video file */}}
             {{ $basePath := printf "/tutorials/%s/%s" .video.category .video.id }}
             {{ $posterPath := printf "%s-poster.png" $basePath }}
@@ -100,7 +110,7 @@
               </button>
             {{ end }}
           {{ else }}
-            {{/* Remotion Player Embed (composition ID) */}}
+            {{/* Remotion Player Embed (legacy - composition ID string) */}}
             <div class="tips-hero__player-wrapper" data-composition="{{ .video }}">
               {{ if .videoFallback }}
               <img 

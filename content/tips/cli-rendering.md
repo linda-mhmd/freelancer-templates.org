@@ -15,9 +15,9 @@ hero:
     - "Batch"
     - "Automation"
   video:
-    category: "cli-rendering"
-    id: "basic-render"
-    format: "mp4"
+    composition: "ScreencastSlideshow"
+    props:
+      preset: "cli-rendering"
 
 sections:
   - title: "Basic Commands"

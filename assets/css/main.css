@@ -3357,6 +3357,16 @@ html.dark .tpl-themes-section {
   font-weight: 500;
 }
 
+/* Remotion Player iframe embed */
+.tips-hero__iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: var(--r-md);
+  background: #0a1628;
+}
+
 /* Lucide icon in eyebrow */
 .tips-hero__eyebrow i,
 .tips-hero__eyebrow svg {

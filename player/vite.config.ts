@@ -22,6 +22,8 @@ export default defineConfig({
       "@remotion/shapes": path.resolve(__dirname, "node_modules/@remotion/shapes"),
       // Templates live at the repo root, not inside player/
       "@templates": path.resolve(__dirname, "../src/remotion/templates"),
+      // Tutorial screencasts
+      "@tutorials": path.resolve(__dirname, "../src/remotion/tutorials"),
       // Community GameDay stream templates
       "@gameday": path.resolve(__dirname, "../src/remotion/GameDay/src"),
     },

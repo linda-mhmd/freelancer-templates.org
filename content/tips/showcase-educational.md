@@ -2,6 +2,7 @@
 title: "Educational Content"
 description: "Discover how educators and course creators use video templates to produce tutorials, explainers, and course content that engages learners and improves retention."
 layout: "premium-tips"
+screencast: "showcase-educational"
 
 hero:
   category: "Inspiration Gallery"

@@ -2,6 +2,7 @@
 title: "Agency Workflow Automation"
 description: "How a creative agency automated their video production pipeline to deliver 10x more content with the same team size."
 layout: "premium-tips"
+screencast: "project-agency-workflow"
 
 hero:
   category: "Featured Projects"

@@ -2,6 +2,7 @@
 title: "Product Launches"
 description: "Discover how creators use announcement and launch templates to build excitement and drive engagement for new products and features."
 layout: "premium-tips"
+screencast: "showcase-product-launches"
 
 hero:
   category: "Inspiration Gallery"

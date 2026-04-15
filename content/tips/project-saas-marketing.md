@@ -2,6 +2,7 @@
 title: "SaaS Marketing at Scale"
 description: "How a startup scaled their video marketing from 5 to 200+ videos per month while reducing production costs by 75%."
 layout: "premium-tips"
+screencast: "project-saas-marketing"
 
 hero:
   category: "Featured Projects"

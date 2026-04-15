@@ -14,6 +14,10 @@ hero:
     - "Serverless"
     - "Scaling"
     - "API"
+  video:
+    composition: "ScreencastSlideshow"
+    props:
+      preset: "lambda-deployment"
 
 sections:
   - title: "AWS Setup and Prerequisites"

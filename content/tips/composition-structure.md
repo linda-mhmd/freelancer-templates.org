@@ -14,6 +14,10 @@ hero:
     - "Scenes"
     - "Timing"
     - "Organization"
+  video:
+    composition: "ScreencastSlideshow"
+    props:
+      preset: "composition-structure"
 
 sections:
   - title: "Composition Basics"

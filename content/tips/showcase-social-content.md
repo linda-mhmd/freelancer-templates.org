@@ -2,6 +2,7 @@
 title: "Social Media Content"
 description: "Explore how creators produce Instagram Reels, TikToks, and YouTube Shorts using video templates for consistent, engaging social content."
 layout: "premium-tips"
+screencast: "showcase-social-content"
 
 hero:
   category: "Inspiration Gallery"

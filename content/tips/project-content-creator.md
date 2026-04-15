@@ -2,6 +2,7 @@
 title: "Content Creator Setup"
 description: "How a YouTuber built a branded content system to produce consistent, professional videos while growing from 10K to 250K subscribers."
 layout: "premium-tips"
+screencast: "project-content-creator"
 
 hero:
   category: "Featured Projects"

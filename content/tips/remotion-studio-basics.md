@@ -15,9 +15,9 @@ hero:
     - "Timeline"
     - "Shortcuts"
   video:
-    category: "studio-basics"
-    id: "open-props-panel"
-    format: "mp4"
+    composition: "ScreencastSlideshow"
+    props:
+      preset: "studio-basics"
 
 sections:
   - title: "Interface Navigation and Panels"

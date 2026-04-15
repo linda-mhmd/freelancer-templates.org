@@ -2,6 +2,7 @@
 title: "Freelancer Portfolio"
 description: "How a freelance video editor built a portfolio that wins clients, landing $15K+ monthly retainers with a systematic approach to showcasing work."
 layout: "premium-tips"
+screencast: "project-freelancer-portfolio"
 
 hero:
   category: "Featured Projects"

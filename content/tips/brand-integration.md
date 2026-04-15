@@ -14,6 +14,10 @@ hero:
     - "Colors"
     - "Typography"
     - "Assets"
+  video:
+    composition: "ScreencastSlideshow"
+    props:
+      preset: "brand-integration"
 
 sections:
   - title: "Logo Placement and Sizing"

@@ -82,6 +82,7 @@ import { ServiceOverviewDarkDashboard, ServiceOverviewBoldDashboard, ServiceOver
 import { ProjectTimelineDarkDashboard, ProjectTimelineBoldDashboard, ProjectTimelineCleanDashboard, ProjectTimelineWarmDashboard, ProjectTimelineMinimalDashboard, ProjectTimelineNeonDashboard, ProjectTimelineOceanDashboard, ProjectTimelineSunsetDashboard, ProjectTimelineForestDashboard, ProjectTimelineRoseDashboard, ProjectTimelineGoldDashboard, ProjectTimelineMidnightDashboard, ProjectTimelineCrimsonDashboard, ProjectTimelineLavenderDashboard, ProjectTimelineArcticDashboard, ProjectTimelineEspressoDashboard, ProjectTimelineCorporateDashboard, ProjectTimelineIndustrialDashboard, ProjectTimelineViennaDashboard, ProjectTimelineAlpineDashboard, ProjectTimelineFinanceDashboard, ProjectTimelineMaterialBlueDashboard, ProjectTimelineMaterialDarkDashboard, ProjectTimelineFlatRedDashboard, ProjectTimelineFlatNavyDashboard, ProjectTimelineSwissDashboard, ProjectTimelineBauhausDashboard, ProjectTimelineMonoDashboard, ProjectTimelinePaperDashboard, ProjectTimelineSlateDashboard, ProjectTimelineBlueprintDashboard } from "@templates/projecttimeline/ProjectTimelineShowcase";
 import { VideoFlowPipelineTutorial } from "@templates/youtubetuorial/tutorials/VideoFlowPipeline";
 import { AIDemoToEnterpriseTutorial } from "@templates/youtubetuorial/tutorials/AIDemoToEnterprise";
+import { ScreencastSlideshow } from "@tutorials/ScreencastSlideshow";
 import {
   Folie1CoverV2, Folie2AboutMeV2, Folie3WhatIOfferV2, Folie4CostsPackagesV2,
   Folie5WorkshopsV2, Folie6WorkshopModulesV2, Folie7FirstWorkshopV2,
@@ -1340,6 +1341,9 @@ export const COMPOSITIONS: CompSpec[] = [
   // YouTube Tutorial
   c("YouTubeTutorial-VideoFlowPipeline",    VideoFlowPipelineTutorial,    "youtubetuorial"),
   c("YouTubeTutorial-AIDemoToEnterprise",   AIDemoToEnterpriseTutorial,   "youtubetuorial", 1138),
+
+  // Tutorial Screencasts (for tips pages)
+  c("ScreencastSlideshow",                  ScreencastSlideshow,          "tutorials", 450),
 
   // Linda Mohamed Deck (individual slides 150 frames = 5s each)
   c("LindaMohamed-Cover",            Folie1CoverV2,            "lindamohamed", 150),

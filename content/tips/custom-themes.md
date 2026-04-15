@@ -14,6 +14,10 @@ hero:
     - "Gradients"
     - "Branding"
     - "Presets"
+  video:
+    composition: "ScreencastSlideshow"
+    props:
+      preset: "custom-themes"
 
 sections:
   - title: "Theme Structure and Tokens"

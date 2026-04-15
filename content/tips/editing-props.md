@@ -15,9 +15,9 @@ hero:
     - "Media"
     - "Timing"
   video:
-    category: "editing-props"
-    id: "edit-text-prop"
-    format: "mp4"
+    composition: "ScreencastSlideshow"
+    props:
+      preset: "editing-props"
 
 sections:
   - title: "Understanding the Props Interface"

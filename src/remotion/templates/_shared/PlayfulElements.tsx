@@ -328,3 +328,386 @@ export const WavyText: React.FC<WavyTextProps> = ({
     </div>
   );
 };
+
+// ────────────────────────────────────────────────────────────────────
+// SpeechBubble — comic-style speech bubble with tail
+// ────────────────────────────────────────────────────────────────────
+
+interface SpeechBubbleProps {
+  text: string;
+  color?: string;
+  textColor?: string;
+  /** Tail direction: "bl" bottom-left, "br" bottom-right, "tl" top-left */
+  tail?: "bl" | "br" | "tl";
+  enterAt?: number;
+  fontSize?: number;
+  maxWidth?: number;
+  borderColor?: string;
+}
+
+export const SpeechBubble: React.FC<SpeechBubbleProps> = ({
+  text,
+  color = "#ffffff",
+  textColor = "#000000",
+  tail = "bl",
+  enterAt = 0,
+  fontSize = 40,
+  maxWidth = 400,
+  borderColor = "#000000",
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const enter = spring({ frame: Math.max(0, frame - enterAt), fps, config: { damping: 8, stiffness: 150 } });
+  const borderW = 5;
+
+  const tailPaths: Record<string, string> = {
+    bl: `M 0 ${fontSize * 2} L -40 ${fontSize * 3 + 20} L 50 ${fontSize * 2}`,
+    br: `M ${maxWidth} ${fontSize * 2} L ${maxWidth + 40} ${fontSize * 3 + 20} L ${maxWidth - 50} ${fontSize * 2}`,
+    tl: `M 0 0 L -40 -50 L 50 0`,
+  };
+
+  return (
+    <div style={{ transform: `scale(${enter})`, transformOrigin: tail === "tl" ? "top left" : "bottom left", position: "relative", display: "inline-block" }}>
+      <div style={{
+        backgroundColor: color,
+        border: `${borderW}px solid ${borderColor}`,
+        borderRadius: 20,
+        padding: `${fontSize * 0.4}px ${fontSize * 0.6}px`,
+        maxWidth,
+        fontFamily: "'Inter', system-ui, sans-serif",
+        fontWeight: 900,
+        fontSize,
+        color: textColor,
+        lineHeight: 1.2,
+        position: "relative",
+        boxShadow: `4px 4px 0px ${borderColor}`,
+      }}>
+        {text}
+      </div>
+      {/* SVG tail */}
+      <svg style={{ position: "absolute", bottom: -40, left: 20, overflow: "visible" }} width={maxWidth} height={60}>
+        <path d={tailPaths[tail]} fill={color} stroke={borderColor} strokeWidth={borderW} strokeLinejoin="round" />
+      </svg>
+    </div>
+  );
+};
+
+// ────────────────────────────────────────────────────────────────────
+// HalftoneBackground — comic halftone dot grid
+// ────────────────────────────────────────────────────────────────────
+
+interface HalftoneBackgroundProps {
+  color?: string;
+  dotSize?: number;
+  spacing?: number;
+  opacity?: number;
+}
+
+export const HalftoneBackground: React.FC<HalftoneBackgroundProps> = ({
+  color = "#000000",
+  dotSize = 6,
+  spacing = 24,
+  opacity = 0.15,
+}) => {
+  const { width, height } = useVideoConfig();
+  const cols = Math.ceil(width / spacing) + 1;
+  const rows = Math.ceil(height / spacing) + 1;
+  const dots: React.ReactNode[] = [];
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      const ox = r % 2 === 0 ? 0 : spacing / 2;
+      dots.push(
+        <circle key={`${r}-${c}`} cx={c * spacing + ox} cy={r * spacing} r={dotSize / 2} fill={color} />
+      );
+    }
+  }
+  return (
+    <AbsoluteFill style={{ opacity, pointerEvents: "none" }}>
+      <svg width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
+        {dots}
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// ────────────────────────────────────────────────────────────────────
+// AnimatedLeaves — floating leaf SVGs for nature scenes
+// ────────────────────────────────────────────────────────────────────
+
+interface AnimatedLeavesProps {
+  count?: number;
+  color?: string;
+  seed?: string;
+  startAt?: number;
+}
+
+export const AnimatedLeaves: React.FC<AnimatedLeavesProps> = ({
+  count = 10,
+  color = "#22c55e",
+  seed = "leaves",
+  startAt = 0,
+}) => {
+  const frame = useCurrentFrame();
+  const { width, height, fps } = useVideoConfig();
+  if (frame < startAt) return null;
+  const t = (frame - startAt) / fps;
+
+  const leaves = Array.from({ length: count }, (_, i) => {
+    const startX = random(`${seed}-sx-${i}`) * width;
+    const startY = random(`${seed}-sy-${i}`) * height * 0.4; // start upper 40%
+    const speed = 60 + random(`${seed}-spd-${i}`) * 80;
+    const drift = (random(`${seed}-dr-${i}`) - 0.5) * 120;
+    const phase = random(`${seed}-ph-${i}`) * Math.PI * 2;
+    const size = 20 + random(`${seed}-sz-${i}`) * 30;
+    const x = startX + drift * Math.sin(t * 0.8 + phase);
+    const y = startY + speed * t;
+    const rot = t * 120 * (random(`${seed}-rt-${i}`) > 0.5 ? 1 : -1) + phase * 30;
+    const opacity = y > height ? 0 : 0.7 + random(`${seed}-op-${i}`) * 0.3;
+
+    return (
+      <svg
+        key={i}
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        style={{ position: "absolute", left: x, top: y % height, transform: `rotate(${rot}deg)`, opacity, pointerEvents: "none" }}
+      >
+        {/* Simple leaf shape */}
+        <path d="M12 2 C18 2 22 8 22 14 C22 18 18 22 12 22 C6 22 2 18 2 14 C2 8 6 2 12 2 Z" fill={color} opacity={0.8} />
+        <path d="M12 22 C12 22 12 12 12 6" stroke={color} strokeWidth="1.5" fill="none" opacity={0.5} />
+      </svg>
+    );
+  });
+
+  return <AbsoluteFill style={{ pointerEvents: "none" }}>{leaves}</AbsoluteFill>;
+};
+
+// ────────────────────────────────────────────────────────────────────
+// AnimatedStars — twinkling star field for night scenes
+// ────────────────────────────────────────────────────────────────────
+
+interface AnimatedStarsProps {
+  count?: number;
+  color?: string;
+  seed?: string;
+  startAt?: number;
+}
+
+export const AnimatedStars: React.FC<AnimatedStarsProps> = ({
+  count = 30,
+  color = "#ffffff",
+  seed = "stars",
+  startAt = 0,
+}) => {
+  const frame = useCurrentFrame();
+  const { width, height, fps } = useVideoConfig();
+  if (frame < startAt) return null;
+  const t = (frame - startAt) / fps;
+
+  const stars = Array.from({ length: count }, (_, i) => {
+    const x = random(`${seed}-x-${i}`) * width;
+    const y = random(`${seed}-y-${i}`) * height;
+    const size = 2 + random(`${seed}-s-${i}`) * 6;
+    const phase = random(`${seed}-p-${i}`) * Math.PI * 2;
+    const twinkle = 0.3 + 0.7 * (0.5 + 0.5 * Math.sin(t * 3 + phase));
+    const isPoly = random(`${seed}-sp-${i}`) > 0.6;
+
+    return (
+      <svg key={i} width={size * 4} height={size * 4} viewBox="-2 -2 4 4"
+        style={{ position: "absolute", left: x - size * 2, top: y - size * 2, opacity: twinkle, pointerEvents: "none" }}>
+        {isPoly ? (
+          // 4-pointed star
+          <path d="M0 -1.5 L0.4 -0.4 L1.5 0 L0.4 0.4 L0 1.5 L-0.4 0.4 L-1.5 0 L-0.4 -0.4 Z" fill={color} />
+        ) : (
+          <circle cx={0} cy={0} r={1} fill={color} />
+        )}
+      </svg>
+    );
+  });
+
+  return <AbsoluteFill style={{ pointerEvents: "none" }}>{stars}</AbsoluteFill>;
+};
+
+// ────────────────────────────────────────────────────────────────────
+// AnimatedFireflies — glowing dots floating upward for night scenes
+// ────────────────────────────────────────────────────────────────────
+
+interface AnimatedFirefliesProps {
+  count?: number;
+  color?: string;
+  seed?: string;
+  startAt?: number;
+}
+
+export const AnimatedFireflies: React.FC<AnimatedFirefliesProps> = ({
+  count = 15,
+  color = "#fbbf24",
+  seed = "ff",
+  startAt = 0,
+}) => {
+  const frame = useCurrentFrame();
+  const { width, height, fps } = useVideoConfig();
+  if (frame < startAt) return null;
+  const t = (frame - startAt) / fps;
+
+  const flies = Array.from({ length: count }, (_, i) => {
+    const startX = random(`${seed}-sx-${i}`) * width;
+    const startYFrac = 0.3 + random(`${seed}-sy-${i}`) * 0.7;
+    const riseSpeed = 30 + random(`${seed}-rs-${i}`) * 60;
+    const driftAmp = 20 + random(`${seed}-da-${i}`) * 40;
+    const phase = random(`${seed}-ph-${i}`) * Math.PI * 2;
+    const glowPhase = random(`${seed}-gp-${i}`) * Math.PI * 2;
+    const x = startX + driftAmp * Math.sin(t * 1.2 + phase);
+    const y = startYFrac * height - riseSpeed * t;
+    const glow = 0.2 + 0.8 * (0.5 + 0.5 * Math.sin(t * 4 + glowPhase));
+    const size = 6 + random(`${seed}-sz-${i}`) * 8;
+    const actualY = ((y % height) + height) % height;
+
+    return (
+      <div key={i} style={{
+        position: "absolute",
+        left: x - size / 2,
+        top: actualY - size / 2,
+        width: size,
+        height: size,
+        borderRadius: "50%",
+        backgroundColor: color,
+        opacity: glow,
+        boxShadow: `0 0 ${size * 2}px ${size}px ${color}`,
+        pointerEvents: "none",
+      }} />
+    );
+  });
+
+  return <AbsoluteFill style={{ pointerEvents: "none" }}>{flies}</AbsoluteFill>;
+};
+
+// ────────────────────────────────────────────────────────────────────
+// NeonGlowBorder — animated neon border around a rect
+// ────────────────────────────────────────────────────────────────────
+
+interface NeonGlowBorderProps {
+  color?: string;
+  width: number;
+  height: number;
+  borderRadius?: number;
+  pulseSpeed?: number;
+  startAt?: number;
+}
+
+export const NeonGlowBorder: React.FC<NeonGlowBorderProps> = ({
+  color = "#00ff88",
+  width,
+  height,
+  borderRadius = 16,
+  pulseSpeed = 1,
+  startAt = 0,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (frame < startAt) return null;
+  const t = (frame - startAt) / fps;
+  const pulse = 0.5 + 0.5 * Math.sin(t * pulseSpeed * Math.PI * 2);
+  const blur = 8 + pulse * 16;
+
+  return (
+    <div style={{
+      position: "absolute",
+      inset: 0,
+      borderRadius,
+      border: `3px solid ${color}`,
+      boxShadow: `0 0 ${blur}px ${color}, inset 0 0 ${blur / 2}px ${color}`,
+      pointerEvents: "none",
+    }} />
+  );
+};
+
+// ────────────────────────────────────────────────────────────────────
+// SteamAnimation — wavy steam lines rising upward (for food shots)
+// ────────────────────────────────────────────────────────────────────
+
+interface SteamAnimationProps {
+  count?: number;
+  color?: string;
+  startAt?: number;
+  x?: number;  // base x position (px from left)
+  y?: number;  // base y position (px from top)
+}
+
+export const SteamAnimation: React.FC<SteamAnimationProps> = ({
+  count = 3,
+  color = "rgba(255,255,255,0.5)",
+  startAt = 0,
+  x = 200,
+  y = 800,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (frame < startAt) return null;
+  const t = (frame - startAt) / fps;
+
+  const streams = Array.from({ length: count }, (_, i) => {
+    const offsetX = (i - Math.floor(count / 2)) * 30;
+    const phase = i * 0.8;
+    const height = 120 + i * 20;
+    const wiggle = 15 * Math.sin(t * 2 + phase);
+    const opacity = 0.6 * (0.5 + 0.5 * Math.sin(t * 1.5 + phase));
+
+    // SVG wavy path going upward
+    const pathD = `M ${x + offsetX + wiggle} ${y} Q ${x + offsetX + wiggle + 20} ${y - height / 3} ${x + offsetX - wiggle} ${y - height * 0.6} Q ${x + offsetX + wiggle} ${y - height * 0.8} ${x + offsetX} ${y - height}`;
+
+    return (
+      <path key={i} d={pathD} fill="none" stroke={color} strokeWidth={4} strokeLinecap="round" opacity={opacity} />
+    );
+  });
+
+  return (
+    <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none" }}>
+      {streams}
+    </svg>
+  );
+};
+
+// ────────────────────────────────────────────────────────────────────
+// AnimatedCloud — floating SVG cloud shape
+// ────────────────────────────────────────────────────────────────────
+
+interface AnimatedCloudProps {
+  x: number;
+  y: number;
+  size?: number;
+  color?: string;
+  opacity?: number;
+  driftSpeed?: number;
+  seed?: string;
+}
+
+export const AnimatedCloud: React.FC<AnimatedCloudProps> = ({
+  x,
+  y,
+  size = 200,
+  color = "#ffffff",
+  opacity = 0.6,
+  driftSpeed = 0.3,
+  seed = "cloud",
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = frame / fps;
+  const driftX = Math.sin(t * driftSpeed + random(`${seed}-ph`) * Math.PI * 2) * 30;
+  const driftY = Math.cos(t * driftSpeed * 0.7) * 10;
+
+  return (
+    <svg
+      width={size}
+      height={size * 0.6}
+      viewBox="0 0 200 120"
+      style={{ position: "absolute", left: x + driftX, top: y + driftY, opacity, pointerEvents: "none" }}
+    >
+      <ellipse cx="100" cy="80" rx="90" ry="40" fill={color} />
+      <ellipse cx="70" cy="65" rx="50" ry="40" fill={color} />
+      <ellipse cx="130" cy="60" rx="45" ry="38" fill={color} />
+      <ellipse cx="100" cy="55" rx="40" ry="35" fill={color} />
+    </svg>
+  );
+};

@@ -2,6 +2,7 @@
 title: "Client Testimonials"
 description: "Discover how creators use testimonial templates to build social proof and showcase customer success stories in compelling video format."
 layout: "premium-tips"
+screencast: "testimonials-tutorial"
 
 hero:
   category: "Inspiration Gallery"
