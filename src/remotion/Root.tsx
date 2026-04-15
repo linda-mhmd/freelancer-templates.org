@@ -186,6 +186,12 @@ import { TravelMontageFilmGrain, TravelMontageSunsetVibes } from "./templates/tr
 import { AestheticQuoteMinimalCream, AestheticQuoteDarkMoody } from "./templates/aestheticquote/AestheticQuoteShowcase";
 import { BTSCreatorChaoticCreator, BTSCreatorCleanStudio } from "./templates/btscreator/BTSCreatorShowcase";
 import { UnboxingMomentTikTokHype, UnboxingMomentReelsEditorial } from "./templates/unboxingmoment/UnboxingMomentShowcase";
+import { ComicStripColorPop, ComicStripNoirClassic } from "./templates/comicstrip/ComicStripShowcase";
+import { NatureEscapeForestMorning, NatureEscapeOceanSunset } from "./templates/natureescape/NatureEscapeShowcase";
+import { FoodieReelWarmBistro, FoodieReelFreshVibes } from "./templates/foodiereel/FoodieReelShowcase";
+import { AnimatedIconsNeonOrbit, AnimatedIconsMinimalFlow } from "./templates/animatedicons/AnimatedIconsShowcase";
+import { MoodBoardVibrantMix, MoodBoardEditorialGrid } from "./templates/moodboard/MoodBoardShowcase";
+import { CityLightsNeonPurple, CityLightsGoldenHour } from "./templates/citylights/CityLightsShowcase";
 import { LiquidWaveDark, LiquidWaveClean, LiquidWaveBold, LiquidWaveWarm, LiquidWaveMinimal, LiquidWaveNeon, LiquidWaveOcean, LiquidWaveSunset, LiquidWaveForest, LiquidWaveRose, LiquidWaveGold, LiquidWaveMidnight, LiquidWaveCrimson, LiquidWaveLavender, LiquidWaveArctic, LiquidWaveEspresso } from "./templates/liquidwave/LiquidWaveShowcase";
 import { MatrixRainDark, MatrixRainClean, MatrixRainBold, MatrixRainWarm, MatrixRainMinimal, MatrixRainNeon, MatrixRainOcean, MatrixRainSunset, MatrixRainForest, MatrixRainRose, MatrixRainGold, MatrixRainMidnight, MatrixRainCrimson, MatrixRainLavender, MatrixRainArctic, MatrixRainEspresso } from "./templates/matrixrain/MatrixRainShowcase";
 import { ParticleExplosionDark, ParticleExplosionClean, ParticleExplosionBold, ParticleExplosionWarm, ParticleExplosionMinimal, ParticleExplosionNeon, ParticleExplosionOcean, ParticleExplosionSunset, ParticleExplosionForest, ParticleExplosionRose, ParticleExplosionGold, ParticleExplosionMidnight, ParticleExplosionCrimson, ParticleExplosionLavender, ParticleExplosionArctic, ParticleExplosionEspresso } from "./templates/particleexplosion/ParticleExplosionShowcase";
@@ -1765,6 +1771,36 @@ export const RemotionRoot: React.FC = () => (
     <Folder name="UnboxingMoment">
       <Composition id="UnboxingMoment-TikTokHype"      component={UnboxingMomentTikTokHype}      durationInFrames={240} fps={FPS} width={1080} height={1920} />
       <Composition id="UnboxingMoment-ReelsEditorial"  component={UnboxingMomentReelsEditorial}  durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="ComicStrip">
+      <Composition id="ComicStrip-ColorPop"    component={ComicStripColorPop}    durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="ComicStrip-NoirClassic" component={ComicStripNoirClassic} durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="NatureEscape">
+      <Composition id="NatureEscape-ForestMorning" component={NatureEscapeForestMorning} durationInFrames={270} fps={FPS} width={1080} height={1920} />
+      <Composition id="NatureEscape-OceanSunset"   component={NatureEscapeOceanSunset}   durationInFrames={270} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="FoodieReel">
+      <Composition id="FoodieReel-WarmBistro"  component={FoodieReelWarmBistro}  durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="FoodieReel-FreshVibes"  component={FoodieReelFreshVibes}  durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="AnimatedIcons">
+      <Composition id="AnimatedIcons-NeonOrbit"    component={AnimatedIconsNeonOrbit}    durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="AnimatedIcons-MinimalFlow"  component={AnimatedIconsMinimalFlow}  durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="MoodBoard">
+      <Composition id="MoodBoard-VibrantMix"    component={MoodBoardVibrantMix}    durationInFrames={270} fps={FPS} width={1080} height={1920} />
+      <Composition id="MoodBoard-EditorialGrid" component={MoodBoardEditorialGrid} durationInFrames={270} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="CityLights">
+      <Composition id="CityLights-NeonPurple"  component={CityLightsNeonPurple}  durationInFrames={270} fps={FPS} width={1080} height={1920} />
+      <Composition id="CityLights-GoldenHour"  component={CityLightsGoldenHour}  durationInFrames={270} fps={FPS} width={1080} height={1920} />
     </Folder>
 
     <Folder name="Liquid-Wave">

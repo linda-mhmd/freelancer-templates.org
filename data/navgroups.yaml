@@ -38,6 +38,12 @@ groups:
       - { slug: "aestheticquote", label: "Aesthetic Quote" }
       - { slug: "btscreator", label: "BTS Creator" }
       - { slug: "unboxingmoment", label: "Unboxing Moment" }
+      - { slug: "comicstrip", label: "Comic Strip" }
+      - { slug: "natureescape", label: "Nature Escape" }
+      - { slug: "foodiereel", label: "Foodie Reel" }
+      - { slug: "animatedicons", label: "Animated Icons" }
+      - { slug: "moodboard", label: "Mood Board" }
+      - { slug: "citylights", label: "City Lights" }
 
   - name: "Tech & Analytics"
     icon: "bar-chart-2"

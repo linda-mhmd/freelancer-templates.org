@@ -90,6 +90,96 @@
     "primaryId": "UnboxingMoment-TikTokHype"
   },
   {
+    "slug": "comicstrip",
+    "camel": "ComicStrip",
+    "name": "Comic Strip",
+    "description": "4-panel pop-art comic with halftone background, speech bubbles, and action-word burst",
+    "icon": "zap",
+    "color": "yellow",
+    "primaryVariant": "ColorPop",
+    "variantCount": 2,
+    "variants": [
+      { "id": "ComicStrip-ColorPop",    "name": "Color Pop",    "style": "bold"    },
+      { "id": "ComicStrip-NoirClassic", "name": "Noir Classic", "style": "minimal" }
+    ],
+    "primaryId": "ComicStrip-ColorPop"
+  },
+  {
+    "slug": "natureescape",
+    "camel": "NatureEscape",
+    "name": "Nature Escape",
+    "description": "Cinematic nature portrait with Ken Burns pan, animated leaves or clouds, and sparkles",
+    "icon": "leaf",
+    "color": "green",
+    "primaryVariant": "ForestMorning",
+    "variantCount": 2,
+    "variants": [
+      { "id": "NatureEscape-ForestMorning", "name": "Forest Morning", "style": "forest" },
+      { "id": "NatureEscape-OceanSunset",   "name": "Ocean Sunset",   "style": "ocean"  }
+    ],
+    "primaryId": "NatureEscape-ForestMorning"
+  },
+  {
+    "slug": "foodiereel",
+    "camel": "FoodieReel",
+    "name": "Foodie Reel",
+    "description": "Food photography portrait with steam animation, blob shape, confetti burst, and price badge",
+    "icon": "utensils",
+    "color": "orange",
+    "primaryVariant": "WarmBistro",
+    "variantCount": 2,
+    "variants": [
+      { "id": "FoodieReel-WarmBistro", "name": "Warm Bistro", "style": "warm"   },
+      { "id": "FoodieReel-FreshVibes", "name": "Fresh Vibes", "style": "forest" }
+    ],
+    "primaryId": "FoodieReel-WarmBistro"
+  },
+  {
+    "slug": "animatedicons",
+    "camel": "AnimatedIcons",
+    "name": "Animated Icons",
+    "description": "Pure SVG portrait with a pulsing center icon and 6 orbiting icons — no photos needed",
+    "icon": "cpu",
+    "color": "purple",
+    "primaryVariant": "NeonOrbit",
+    "variantCount": 2,
+    "variants": [
+      { "id": "AnimatedIcons-NeonOrbit",   "name": "Neon Orbit",   "style": "neon"    },
+      { "id": "AnimatedIcons-MinimalFlow", "name": "Minimal Flow", "style": "minimal" }
+    ],
+    "primaryId": "AnimatedIcons-NeonOrbit"
+  },
+  {
+    "slug": "moodboard",
+    "camel": "MoodBoard",
+    "name": "Mood Board",
+    "description": "9-tile image grid with staggered reveals and a cycling NeonGlowBorder highlight",
+    "icon": "grid",
+    "color": "pink",
+    "primaryVariant": "VibrantMix",
+    "variantCount": 2,
+    "variants": [
+      { "id": "MoodBoard-VibrantMix",    "name": "Vibrant Mix",    "style": "bold"    },
+      { "id": "MoodBoard-EditorialGrid", "name": "Editorial Grid", "style": "minimal" }
+    ],
+    "primaryId": "MoodBoard-VibrantMix"
+  },
+  {
+    "slug": "citylights",
+    "camel": "CityLights",
+    "name": "City Lights",
+    "description": "Night city portrait with procedural SVG skyline, pulsing windows, stars, and fireflies",
+    "icon": "building",
+    "color": "indigo",
+    "primaryVariant": "NeonPurple",
+    "variantCount": 2,
+    "variants": [
+      { "id": "CityLights-NeonPurple", "name": "Neon Purple", "style": "neon"  },
+      { "id": "CityLights-GoldenHour", "name": "Golden Hour", "style": "warm"  }
+    ],
+    "primaryId": "CityLights-NeonPurple"
+  },
+  {
     "slug": "affiliatereview",
     "camel": "AffiliateReview",
     "name": "Affiliate Review",
