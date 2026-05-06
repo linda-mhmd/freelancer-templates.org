@@ -1,0 +1,1832 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+{{ partial "hero.html" (dict
+  "badge" "Icon Library"
+  "badgeIcon" "image"
+  "title" "Cloud & DevOps <span class='hl'>Architecture Icons</span>"
+  "subtitle" "Official cloud service icons, region maps, device mockups, and generic architecture elements for your diagrams, presentations, and documentation."
+  "stats" (slice
+    (dict "value" "2,161" "label" "Total Icons")
+    (dict "value" "1,978" "label" "Cloud Services")
+    (dict "value" "130" "label" "Architecture")
+    (dict "value" "49" "label" "Device Mockups")
+  )
+) }}
+
+<!-- Search and filter controls -->
+<section class="lib-controls-section">
+  <div class="container">
+    <div class="lib-controls">
+      <div class="lib-search-wrap">
+        <i data-lucide="search"></i>
+        <input type="text" id="iconSearch" class="lib-search" placeholder="Search icons (e.g. bedrock, lambda, openai...)">
+      </div>
+      
+      <div class="lib-theme-filters">
+        <div class="lib-theme-filters__label">Platform:</div>
+        <div class="lib-style-filters" id="platformFilters">
+          <button class="lib-sf active" data-platform="all">
+            <i data-lucide="layers"></i>
+            All
+          </button>
+          <button class="lib-sf" data-platform="aws" style="--theme-accent: #FF9900">
+            <span class="lib-sf__swatch" style="background: #FF9900;"></span>
+            AWS
+          </button>
+          <button class="lib-sf" data-platform="azure" style="--theme-accent: #0078D4">
+            <span class="lib-sf__swatch" style="background: #0078D4;"></span>
+            Azure
+          </button>
+          <button class="lib-sf" data-platform="gcp" style="--theme-accent: #4285F4">
+            <span class="lib-sf__swatch" style="background: #4285F4;"></span>
+            GCP
+          </button>
+          <button class="lib-sf" data-platform="community" style="--theme-accent: #6366F1">
+            <span class="lib-sf__swatch" style="background: #6366F1;"></span>
+            Community
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Category Quick Filters -->
+    <div class="icon-filters">
+      <div class="icon-filters__row">
+        <span class="icon-filters__label">Type:</span>
+        <div class="icon-chips" id="typeFilters">
+          <button class="icon-chip active" data-type="all">All</button>
+          <button class="icon-chip" data-type="service">
+            <i data-lucide="cloud"></i> Cloud Services
+          </button>
+          <button class="icon-chip" data-type="vendor">
+            <i data-lucide="building-2"></i> Tools & Vendors
+          </button>
+          <button class="icon-chip" data-type="architecture">
+            <i data-lucide="shapes"></i> Architecture
+          </button>
+          <button class="icon-chip" data-type="devices">
+            <i data-lucide="smartphone"></i> Devices
+          </button>
+          <button class="icon-chip" data-type="maps">
+            <i data-lucide="map"></i> Region Maps
+          </button>
+        </div>
+      </div>
+      
+      <div class="icon-filters__row icon-filters__row--services" id="serviceFiltersRow">
+        <span class="icon-filters__label">Service:</span>
+        <div class="icon-chips" id="categoryFilters">
+          <button class="icon-chip active" data-category="all">All</button>
+          <button class="icon-chip" data-category="ai-ml">
+            <i data-lucide="brain"></i> AI & ML
+          </button>
+          <button class="icon-chip" data-category="compute">
+            <i data-lucide="cpu"></i> Compute
+          </button>
+          <button class="icon-chip" data-category="database">
+            <i data-lucide="database"></i> Database
+          </button>
+          <button class="icon-chip" data-category="storage">
+            <i data-lucide="hard-drive"></i> Storage
+          </button>
+          <button class="icon-chip" data-category="networking">
+            <i data-lucide="network"></i> Networking
+          </button>
+          <button class="icon-chip" data-category="security">
+            <i data-lucide="shield"></i> Security
+          </button>
+          <button class="icon-chip" data-category="analytics">
+            <i data-lucide="bar-chart-3"></i> Analytics
+          </button>
+          <button class="icon-chip" data-category="containers">
+            <i data-lucide="box"></i> Containers
+          </button>
+          <button class="icon-chip" data-category="serverless">
+            <i data-lucide="zap"></i> Serverless
+          </button>
+          <button class="icon-chip" data-category="iot">
+            <i data-lucide="wifi"></i> IoT
+          </button>
+          <button class="icon-chip" data-category="management">
+            <i data-lucide="settings"></i> Management
+          </button>
+        </div>
+      </div>
+      
+      <div class="icon-filters__row icon-filters__row--vendors" id="vendorFiltersRow" style="display: none;">
+        <span class="icon-filters__label">Vendor:</span>
+        <div class="icon-chips" id="vendorFilters">
+          <button class="icon-chip active" data-vendor="all">All</button>
+          <button class="icon-chip" data-vendor="devtools">
+            <i data-lucide="code-2"></i> Dev Tools
+          </button>
+          <button class="icon-chip" data-vendor="frameworks">
+            <i data-lucide="layers"></i> Frameworks
+          </button>
+          <button class="icon-chip" data-vendor="frontend">
+            <i data-lucide="layout"></i> Frontend
+          </button>
+          <button class="icon-chip" data-vendor="mobile">
+            <i data-lucide="smartphone"></i> Mobile
+          </button>
+          <button class="icon-chip" data-vendor="testing">
+            <i data-lucide="test-tube-2"></i> Testing
+          </button>
+          <button class="icon-chip" data-vendor="productivity">
+            <i data-lucide="briefcase"></i> Productivity
+          </button>
+          <button class="icon-chip" data-vendor="payments">
+            <i data-lucide="credit-card"></i> Payments
+          </button>
+          <button class="icon-chip" data-vendor="blockchain">
+            <i data-lucide="link"></i> Blockchain
+          </button>
+          <button class="icon-chip" data-vendor="hardware">
+            <i data-lucide="monitor"></i> Hardware
+          </button>
+        </div>
+      </div>
+      
+      <div class="icon-filters__row icon-filters__row--architecture" id="architectureFiltersRow" style="display: none;">
+        <span class="icon-filters__label">Category:</span>
+        <div class="icon-chips" id="architectureFilters">
+          <button class="icon-chip active" data-arch="all">All</button>
+          <button class="icon-chip" data-arch="people">
+            <i data-lucide="users"></i> People
+          </button>
+          <button class="icon-chip" data-arch="devices">
+            <i data-lucide="monitor"></i> Devices
+          </button>
+          <button class="icon-chip" data-arch="infrastructure">
+            <i data-lucide="server"></i> Infrastructure
+          </button>
+          <button class="icon-chip" data-arch="networking">
+            <i data-lucide="network"></i> Networking
+          </button>
+          <button class="icon-chip" data-arch="security">
+            <i data-lucide="shield"></i> Security
+          </button>
+          <button class="icon-chip" data-arch="integration">
+            <i data-lucide="plug"></i> Integration
+          </button>
+          <button class="icon-chip" data-arch="flow">
+            <i data-lucide="arrow-right"></i> Data Flow
+          </button>
+          <button class="icon-chip" data-arch="status">
+            <i data-lucide="check-circle"></i> Status
+          </button>
+          <button class="icon-chip" data-arch="business">
+            <i data-lucide="file-text"></i> Business
+          </button>
+          <button class="icon-chip" data-arch="analytics">
+            <i data-lucide="bar-chart-3"></i> Analytics
+          </button>
+          <button class="icon-chip" data-arch="ai">
+            <i data-lucide="brain"></i> AI & ML
+          </button>
+        </div>
+      </div>
+      
+      <div class="icon-filters__row icon-filters__row--devices" id="devicesFiltersRow" style="display: none;">
+        <span class="icon-filters__label">Device:</span>
+        <div class="icon-chips" id="devicesFilters">
+          <button class="icon-chip active" data-device="all">All</button>
+          <button class="icon-chip" data-device="phones">
+            <i data-lucide="smartphone"></i> Phones
+          </button>
+          <button class="icon-chip" data-device="tablets">
+            <i data-lucide="tablet"></i> Tablets
+          </button>
+          <button class="icon-chip" data-device="laptops">
+            <i data-lucide="laptop"></i> Laptops
+          </button>
+          <button class="icon-chip" data-device="desktops">
+            <i data-lucide="monitor"></i> Desktops
+          </button>
+          <button class="icon-chip" data-device="displays">
+            <i data-lucide="tv"></i> Displays
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Icon Grid -->
+<section class="lib-section-block">
+  <div class="container">
+    <div class="lib-section-hd">
+      <h2 class="lib-section-hd__title">Service Icons</h2>
+      <span class="lib-section-hd__count" id="iconCount">Loading...</span>
+    </div>
+
+    <div class="icon-grid" id="iconGrid">
+      <!-- Icons loaded via JS -->
+    </div>
+    
+    <div id="loadMore" class="icon-load-more" style="display: none;">
+      <button class="btn btn--outline" onclick="loadMoreIcons()">
+        <i data-lucide="plus"></i>
+        Load More Icons
+      </button>
+      <span id="loadMoreCount"></span>
+    </div>
+  </div>
+</section>
+
+<!-- Icon Detail Modal -->
+<div id="iconModal" class="icon-modal">
+  <div class="icon-modal__backdrop" onclick="closeModal()"></div>
+  <div class="icon-modal__content">
+    <button class="icon-modal__close" onclick="closeModal()">
+      <i data-lucide="x"></i>
+    </button>
+    
+    <div class="icon-modal__preview">
+      <img id="modalIcon" src="" alt="">
+    </div>
+    
+    <div class="icon-modal__info">
+      <h3 id="modalTitle" class="icon-modal__title"></h3>
+      <div class="icon-modal__meta">
+        <span id="modalPlatform" class="icon-modal__badge"></span>
+        <span id="modalCategory" class="icon-modal__badge icon-modal__badge--cat"></span>
+        <code id="modalId" class="icon-modal__id"></code>
+      </div>
+    </div>
+    
+    <div class="icon-modal__downloads">
+      <p class="icon-modal__label">Download</p>
+      <div class="icon-modal__btns">
+        <a id="downloadSvg" class="btn btn--sm" download>
+          <i data-lucide="file-code"></i> SVG
+        </a>
+        <a id="downloadPng" class="btn btn--sm btn--outline" download>
+          <i data-lucide="image"></i> PNG 256px
+        </a>
+        <a id="downloadPng2x" class="btn btn--sm btn--outline" download>
+          <i data-lucide="image"></i> PNG 512px
+        </a>
+      </div>
+    </div>
+    
+    <div class="icon-modal__path">
+      <p class="icon-modal__label">Path (click to copy)</p>
+      <input id="copyPath" type="text" readonly onclick="copyToClipboard(this)">
+    </div>
+    
+    <div class="icon-modal__license">
+      <p class="icon-modal__label">License & Attribution</p>
+      <div class="icon-modal__license-info">
+        <span id="modalSource" class="icon-modal__source"></span>
+        <a id="modalLicenseLink" href="#" target="_blank" class="icon-modal__license-link">
+          <i data-lucide="external-link"></i> View License
+        </a>
+      </div>
+      <p id="modalAttribution" class="icon-modal__attribution"></p>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Icon Filters */
+.icon-filters {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.icon-filters__row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-filters__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-3);
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+.icon-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.icon-chips--scroll {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.icon-chips--scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.icon-chips--scroll::-webkit-scrollbar-track {
+  background: var(--surface-2);
+  border-radius: 2px;
+}
+
+.icon-chips--scroll::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.icon-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-2);
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.icon-chip:hover {
+  border-color: var(--accent);
+  color: var(--text-1);
+}
+
+.icon-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.icon-chip svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Icon Grid */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.icon-card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.icon-card__img {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.75rem;
+  object-fit: contain;
+}
+
+.icon-card__name {
+  font-size: 0.75rem;
+  color: var(--text-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Tooltip for full name on hover */
+.icon-card {
+  position: relative;
+}
+
+.icon-card__tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-2);
+  color: var(--text-1);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 1px solid var(--border);
+  pointer-events: none;
+  margin-bottom: 8px;
+}
+
+.icon-card__tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--surface-2);
+}
+
+.icon-card:hover .icon-card__tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon-card__platform {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.icon-card__platform--aws {
+  background: rgba(255, 153, 0, 0.15);
+  color: #FF9900;
+}
+
+.icon-card__platform--azure {
+  background: rgba(0, 120, 212, 0.15);
+  color: #0078D4;
+}
+
+.icon-card__platform--community {
+  background: rgba(99, 102, 241, 0.15);
+  color: #6366F1;
+}
+
+.icon-card__platform--gcp {
+  background: rgba(66, 133, 244, 0.15);
+  color: #4285F4;
+}
+
+.icon-card__platform--architecture {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8B5CF6;
+}
+
+.icon-card__platform--devices {
+  background: rgba(236, 72, 153, 0.15);
+  color: #EC4899;
+}
+
+.icon-card__platform--maps {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22C55E;
+}
+
+/* Lucide icon cards */
+.icon-card--lucide .icon-card__lucide {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-1);
+}
+
+.icon-card--lucide .icon-card__lucide svg {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1.5;
+}
+
+/* Map icon cards - larger preview */
+.icon-card--map {
+  grid-column: span 2;
+}
+
+.icon-card__img--map {
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Modal Lucide preview */
+.modal-lucide-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-1);
+}
+
+.modal-lucide-preview svg {
+  width: 96px;
+  height: 96px;
+}
+
+/* Load More */
+.icon-load-more {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.icon-load-more span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-3);
+}
+
+/* Modal */
+.icon-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.icon-modal.active {
+  display: flex;
+}
+
+.icon-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.icon-modal__content {
+  position: relative;
+  background: var(--surface-1);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.2);
+}
+
+.icon-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-3);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.icon-modal__close:hover {
+  color: var(--text-1);
+}
+
+.icon-modal__preview {
+  background: var(--surface-2);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-modal__preview img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+
+.icon-modal__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.icon-modal__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.icon-modal__badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.icon-modal__badge.aws {
+  background: rgba(255, 153, 0, 0.15);
+  color: #FF9900;
+}
+
+.icon-modal__badge.azure {
+  background: rgba(0, 120, 212, 0.15);
+  color: #0078D4;
+}
+
+.icon-modal__badge.community {
+  background: rgba(99, 102, 241, 0.15);
+  color: #6366F1;
+}
+
+.icon-modal__badge.gcp {
+  background: rgba(66, 133, 244, 0.15);
+  color: #4285F4;
+}
+
+.icon-modal__badge.architecture {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8B5CF6;
+}
+
+.icon-modal__badge.devices {
+  background: rgba(236, 72, 153, 0.15);
+  color: #EC4899;
+}
+
+.icon-modal__badge.maps {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22C55E;
+}
+
+.icon-modal__badge--cat {
+  background: var(--surface-2);
+  color: var(--text-2);
+}
+
+.icon-modal__id {
+  font-size: 0.75rem;
+  background: var(--surface-2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.icon-modal__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.icon-modal__btns {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.icon-modal__downloads {
+  margin-bottom: 1.5rem;
+}
+
+.icon-modal__path input {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--text-1);
+  cursor: pointer;
+}
+
+.icon-modal__path input:hover {
+  border-color: var(--accent);
+}
+
+/* License section */
+.icon-modal__license {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.icon-modal__license-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon-modal__source {
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+
+.icon-modal__license-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.icon-modal__license-link:hover {
+  text-decoration: underline;
+}
+
+.icon-modal__license-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.icon-modal__attribution {
+  font-size: 0.75rem;
+  color: var(--text-3);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Button styles */
+.btn--sm {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .icon-filters__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .icon-filters__label {
+    min-width: auto;
+  }
+  
+  .icon-chips {
+    width: 100%;
+  }
+}
+</style>
+
+<script>
+let manifest = null;
+let allIcons = [];
+let displayedCount = 0;
+const BATCH_SIZE = 100;
+let currentPlatform = 'all';
+let currentType = 'all';
+let currentCategory = 'all';
+let currentVendor = 'all';
+let currentArch = 'all';
+let currentDevice = 'all';
+let currentSearch = '';
+
+// Service categories (for cloud services)
+const SERVICE_CATEGORIES = ['ai-ml', 'compute', 'database', 'storage', 'networking', 'security', 'analytics', 'containers', 'serverless', 'iot', 'management'];
+
+// Vendor categories (for tools & vendors)
+const VENDOR_CATEGORIES = ['devtools', 'frameworks', 'frontend', 'mobile', 'testing', 'productivity', 'payments', 'blockchain', 'hardware'];
+
+// Architecture categories
+const ARCHITECTURE_CATEGORIES = ['people', 'locations', 'devices', 'infrastructure', 'networking', 'security', 'integration', 'flow', 'status', 'business', 'analytics', 'config', 'ai', 'commerce'];
+
+// Device categories
+const DEVICE_CATEGORIES = ['phones', 'tablets', 'laptops', 'desktops', 'displays'];
+
+// Category classification based on icon name patterns
+const CATEGORY_PATTERNS = {
+  'ai-ml': [
+    'bedrock', 'sagemaker', 'comprehend', 'rekognition', 'polly', 'transcribe', 
+    'translate', 'lex', 'personalize', 'forecast', 'textract', 'kendra',
+    'lookout', 'panorama', 'monitron', 'healthlake', 'omics', 'nova',
+    'machine-learning', 'cognitive', 'openai', 'bot-service', 'language',
+    'speech', 'vision', 'anomaly', 'metrics-advisor', 'form-recognizer',
+    'immersive-reader', 'content-moderator', 'personalizer', 'q-business',
+    'q-developer', 'codewhisperer', 'codeguru', 'devops-guru', 'fraud-detector'
+  ],
+  'compute': [
+    'ec2', 'lambda', 'batch', 'lightsail', 'elastic-beanstalk', 'outposts',
+    'wavelength', 'local-zones', 'app-runner', 'compute', 'virtual-machine',
+    'vmware', 'functions', 'container-apps', 'spring-apps', 'nitro'
+  ],
+  'database': [
+    'rds', 'dynamodb', 'aurora', 'redshift', 'elasticache', 'neptune',
+    'documentdb', 'keyspaces', 'timestream', 'memorydb', 'qldb',
+    'database', 'cosmos', 'sql', 'mysql', 'postgresql', 'mariadb', 'mongodb',
+    'cassandra', 'redis', 'cache'
+  ],
+  'storage': [
+    's3', 'efs', 'fsx', 'storage-gateway', 'backup', 'snow', 'datasync',
+    'transfer', 'storage', 'blob', 'file', 'disk', 'archive', 'glacier',
+    'elastic-block', 'ebs'
+  ],
+  'networking': [
+    'vpc', 'cloudfront', 'route-53', 'api-gateway', 'direct-connect',
+    'global-accelerator', 'transit-gateway', 'privatelink', 'app-mesh',
+    'cloud-map', 'network', 'load-balancer', 'elb', 'alb', 'nlb',
+    'virtual-network', 'cdn', 'front-door', 'traffic-manager', 'dns',
+    'express-route', 'vpn', 'firewall', 'waf', 'bastion', 'nat-gateway'
+  ],
+  'security': [
+    'iam', 'cognito', 'secrets-manager', 'kms', 'certificate-manager',
+    'waf', 'shield', 'firewall', 'guardduty', 'inspector', 'macie',
+    'detective', 'security-hub', 'artifact', 'audit-manager', 'sso',
+    'directory-service', 'identity', 'key-vault', 'sentinel', 'defender',
+    'security', 'access', 'permission', 'policy', 'encryption'
+  ],
+  'analytics': [
+    'athena', 'emr', 'kinesis', 'glue', 'lake-formation', 'quicksight',
+    'data-exchange', 'data-pipeline', 'msk', 'opensearch', 'elasticsearch',
+    'analytics', 'synapse', 'data-factory', 'databricks', 'stream-analytics',
+    'event-hubs', 'hdinsight', 'data-lake', 'data-explorer', 'purview'
+  ],
+  'devtools': [
+    'codecommit', 'codebuild', 'codedeploy', 'codepipeline', 'codestar',
+    'cloud9', 'x-ray', 'cloudformation', 'cdk', 'sam', 'amplify',
+    'devops', 'repos', 'pipelines', 'artifacts', 'boards', 'test-plans',
+    'github', 'gitlab', 'jenkins', 'terraform', 'ansible', 'chef', 'puppet'
+  ],
+  'containers': [
+    'ecs', 'eks', 'fargate', 'ecr', 'container', 'kubernetes', 'docker',
+    'aks', 'acr', 'openshift', 'rancher', 'helm', 'service-fabric'
+  ],
+  'serverless': [
+    'lambda', 'step-functions', 'eventbridge', 'sqs', 'sns', 'appsync',
+    'api-gateway', 'functions', 'logic-apps', 'event-grid', 'service-bus',
+    'durable-functions', 'serverless'
+  ],
+  'iot': [
+    'iot', 'greengrass', 'sitewise', 'twinmaker', 'fleetwise', 'robomaker',
+    'freertos', 'device', 'hub', 'central', 'edge', 'sphere', 'digital-twins'
+  ],
+  'management': [
+    'cloudwatch', 'cloudtrail', 'config', 'systems-manager', 'organizations',
+    'control-tower', 'service-catalog', 'trusted-advisor', 'health',
+    'license-manager', 'compute-optimizer', 'well-architected', 'chatbot',
+    'monitor', 'advisor', 'policy', 'blueprints', 'lighthouse', 'arc',
+    'resource-manager', 'cost-management', 'billing', 'budgets'
+  ]
+};
+
+// Type classification - service (cloud services) vs vendor (tools & vendors)
+function getIconType(icon) {
+  // Special types
+  if (icon.iconType === 'map') return 'maps';
+  if (icon.iconType === 'architecture') return 'architecture';
+  if (icon.iconType === 'device') return 'devices';
+  
+  const id = icon.id.toLowerCase();
+  const cat = icon.category || '';
+  
+  // AWS and Azure are always cloud services
+  if (icon.platform === 'aws' || icon.platform === 'azure' || icon.platform === 'gcp') {
+    return 'service';
+  }
+  
+  // Community icons - check their category
+  if (icon.platform === 'community') {
+    // These community categories are vendor/tool categories
+    const vendorCategories = ['devops', 'web', 'vendors', 'frameworks', 'frontend', 'mobile', 'testing', 'api', 'monitoring', 'messaging', 'productivity', 'payments', 'crm', 'version-control', 'editors', 'hardware', 'blockchain'];
+    if (vendorCategories.includes(cat)) {
+      return 'vendor';
+    }
+    // These are service-like categories
+    const serviceCategories = ['cloud', 'containers', 'databases', 'infrastructure', 'ai-ml', 'security', 'analytics', 'data-engineering', 'vector-db'];
+    if (serviceCategories.includes(cat)) {
+      return 'service';
+    }
+    return 'vendor'; // Default community icons to vendor
+  }
+  
+  return 'service';
+}
+
+// Category classification
+function getIconCategory(icon) {
+  // Special types have their own category
+  if (icon.iconType === 'map') return icon.category || 'maps';
+  if (icon.iconType === 'architecture') return icon.category || 'other';
+  if (icon.iconType === 'device') return icon.category || 'devices';
+  
+  // Community icons already have proper categories
+  if (icon.platform === 'community' || icon.sourcePlatform === 'community') {
+    const cat = icon.category || '';
+    // Map community categories to our filter categories
+    const categoryMap = {
+      'devops': 'devtools',
+      'containers': 'containers',
+      'cloud': 'compute',
+      'databases': 'database',
+      'infrastructure': 'networking',
+      'ai-ml': 'ai-ml',
+      'web': 'devtools',
+      'vendors': 'vendors',
+      'sponsors': 'sponsors',
+      'frameworks': 'frameworks',
+      'frontend': 'frontend',
+      'mobile': 'mobile',
+      'testing': 'testing',
+      'api': 'devtools',
+      'monitoring': 'management',
+      'security': 'security',
+      'messaging': 'productivity',
+      'productivity': 'productivity',
+      'analytics': 'analytics',
+      'data-engineering': 'analytics',
+      'vector-db': 'database',
+      'payments': 'payments',
+      'crm': 'productivity',
+      'version-control': 'devtools',
+      'editors': 'devtools',
+      'hardware': 'hardware',
+      'blockchain': 'blockchain'
+    };
+    return categoryMap[cat] || 'other';
+  }
+  
+  // GCP icons - map based on name patterns
+  if (icon.platform === 'gcp') {
+    const id = icon.id.toLowerCase();
+    if (id.includes('bigquery') || id.includes('analytics') || id.includes('looker')) return 'analytics';
+    if (id.includes('storage') || id.includes('drive')) return 'storage';
+    if (id.includes('cloud')) return 'compute';
+    if (id.includes('maps') || id.includes('earth')) return 'iot';
+    if (id.includes('assistant') || id.includes('dialogflow') || id.includes('translate') || id.includes('lens')) return 'ai-ml';
+    if (id.includes('ads') || id.includes('tag') || id.includes('search')) return 'analytics';
+    if (id.includes('pay')) return 'security';
+    return 'management';
+  }
+  
+  const id = icon.id.toLowerCase();
+  const name = icon.name.toLowerCase();
+  const searchText = id + ' ' + name;
+  
+  for (const [category, patterns] of Object.entries(CATEGORY_PATTERNS)) {
+    for (const pattern of patterns) {
+      if (searchText.includes(pattern)) {
+        return category;
+      }
+    }
+  }
+  return 'other';
+}
+
+async function loadManifest() {
+  try {
+    const response = await fetch('/icons/manifest.json');
+    manifest = await response.json();
+    
+    allIcons = [];
+    
+    // Load platform icons
+    for (const [platform, data] of Object.entries(manifest.platforms)) {
+      if (data.services) {
+        for (const icon of data.services) {
+          // Treat GCP category icons as a separate "gcp" platform for filtering
+          let effectivePlatform = platform;
+          if (platform === 'community' && icon.category === 'gcp') {
+            effectivePlatform = 'gcp';
+          }
+          
+          const enrichedIcon = {
+            ...icon,
+            platform: effectivePlatform,
+            sourcePlatform: platform, // Keep original for path resolution
+            brandColor: data.brand_color,
+            iconType: 'platform',
+          };
+          enrichedIcon.iconTypeCategory = getIconType(enrichedIcon);
+          enrichedIcon.iconCategory = getIconCategory(enrichedIcon);
+          allIcons.push(enrichedIcon);
+        }
+      }
+    }
+    
+    // Load architecture icons (Lucide-based)
+    if (manifest.architecture && manifest.architecture.icons) {
+      for (const icon of manifest.architecture.icons) {
+        const enrichedIcon = {
+          ...icon,
+          platform: 'architecture',
+          iconType: 'architecture',
+          iconTypeCategory: 'architecture',
+          iconCategory: icon.category,
+          // For Lucide icons, we'll use the lucide icon directly
+          isLucide: true,
+        };
+        allIcons.push(enrichedIcon);
+      }
+    }
+    
+    // Load device mockups
+    if (manifest.devices && manifest.devices.devices) {
+      for (const device of manifest.devices.devices) {
+        const enrichedIcon = {
+          ...device,
+          platform: 'devices',
+          iconType: 'device',
+          iconTypeCategory: 'devices',
+          iconCategory: device.category,
+        };
+        allIcons.push(enrichedIcon);
+      }
+    }
+    
+    // Load maps
+    if (manifest.maps && manifest.maps.maps) {
+      for (const map of manifest.maps.maps) {
+        const enrichedIcon = {
+          ...map,
+          platform: 'maps',
+          iconType: 'map',
+          iconTypeCategory: 'maps',
+          iconCategory: 'maps',
+        };
+        allIcons.push(enrichedIcon);
+      }
+    }
+    
+    renderIcons();
+    updateCategoryCounts();
+    lucide.createIcons();
+  } catch (error) {
+    document.getElementById('iconCount').textContent = 'Error loading icons';
+    console.error(error);
+  }
+}
+
+function updateCategoryCounts() {
+  // Update category chip counts
+  const categories = {};
+  const types = {};
+  
+  allIcons.forEach(icon => {
+    // Only count if matches current platform filter
+    if (currentPlatform !== 'all' && icon.platform !== currentPlatform) return;
+    
+    categories[icon.iconCategory] = (categories[icon.iconCategory] || 0) + 1;
+    types[icon.iconTypeCategory] = (types[icon.iconTypeCategory] || 0) + 1;
+  });
+}
+
+function getFilteredIcons() {
+  let filtered = allIcons;
+  
+  if (currentPlatform !== 'all') {
+    filtered = filtered.filter(i => i.platform === currentPlatform);
+  }
+  
+  if (currentType !== 'all') {
+    filtered = filtered.filter(i => i.iconTypeCategory === currentType);
+  }
+  
+  // Apply category filter (for services)
+  if (currentCategory !== 'all' && (currentType === 'all' || currentType === 'service')) {
+    if (currentType === 'service' || currentType === 'all') {
+      filtered = filtered.filter(i => i.iconTypeCategory !== 'service' || i.iconCategory === currentCategory);
+    }
+  }
+  
+  // Apply vendor filter (for tools & vendors)
+  if (currentVendor !== 'all' && currentType === 'vendor') {
+    filtered = filtered.filter(i => i.iconCategory === currentVendor);
+  }
+  
+  // Apply architecture filter
+  if (currentArch !== 'all' && currentType === 'architecture') {
+    filtered = filtered.filter(i => i.iconCategory === currentArch);
+  }
+  
+  // Apply device filter
+  if (currentDevice !== 'all' && currentType === 'devices') {
+    filtered = filtered.filter(i => i.iconCategory === currentDevice);
+  }
+  
+  if (currentSearch) {
+    const q = currentSearch.toLowerCase();
+    filtered = filtered.filter(i => 
+      i.id.toLowerCase().includes(q) || 
+      i.name.toLowerCase().includes(q) ||
+      (i.description && i.description.toLowerCase().includes(q))
+    );
+  }
+  
+  return filtered;
+}
+
+function renderIconCard(icon) {
+  // Handle different icon types
+  if (icon.isLucide) {
+    // Architecture icons use Lucide
+    return `
+      <div class="icon-card icon-card--lucide" onclick="showModal('${icon.id}', '${icon.platform}')">
+        <span class="icon-card__tooltip">${icon.name}</span>
+        <div class="icon-card__lucide">
+          <i data-lucide="${icon.lucide_source || icon.id}"></i>
+        </div>
+        <div class="icon-card__name">${icon.name}</div>
+        <span class="icon-card__platform icon-card__platform--architecture">Architecture</span>
+      </div>
+    `;
+  } else if (icon.iconType === 'device') {
+    // Device mockups use PNG
+    const imgPath = icon.png || `/icons/devices/${icon.id}.png`;
+    return `
+      <div class="icon-card icon-card--device" onclick="showModal('${icon.id}', '${icon.platform}')">
+        <span class="icon-card__tooltip">${icon.name}</span>
+        <img src="${imgPath}" alt="${icon.name}" class="icon-card__img" loading="lazy">
+        <div class="icon-card__name">${icon.name}</div>
+        <span class="icon-card__platform icon-card__platform--devices">Device</span>
+      </div>
+    `;
+  } else if (icon.iconType === 'map') {
+    // Maps use SVG but with larger preview
+    return `
+      <div class="icon-card icon-card--map" onclick="showModal('${icon.id}', '${icon.platform}')">
+        <span class="icon-card__tooltip">${icon.name}</span>
+        <img src="${icon.svg}" alt="${icon.name}" class="icon-card__img icon-card__img--map" loading="lazy">
+        <div class="icon-card__name">${icon.name}</div>
+        <span class="icon-card__platform icon-card__platform--maps">Map</span>
+      </div>
+    `;
+  } else {
+    // Standard platform icons (AWS, Azure, GCP, Community)
+    return `
+      <div class="icon-card" onclick="showModal('${icon.id}', '${icon.platform}')">
+        <span class="icon-card__tooltip">${icon.name}</span>
+        <img src="${icon.svg}" alt="${icon.name}" class="icon-card__img" loading="lazy">
+        <div class="icon-card__name">${icon.id}</div>
+        <span class="icon-card__platform icon-card__platform--${icon.platform}">${icon.platform}</span>
+      </div>
+    `;
+  }
+}
+
+function renderIcons() {
+  const filtered = getFilteredIcons();
+  const grid = document.getElementById('iconGrid');
+  
+  displayedCount = Math.min(BATCH_SIZE, filtered.length);
+  
+  grid.innerHTML = filtered.slice(0, displayedCount).map(icon => renderIconCard(icon)).join('');
+  
+  // Update count with breakdown
+  const awsCount = filtered.filter(i => i.platform === 'aws').length;
+  const azureCount = filtered.filter(i => i.platform === 'azure').length;
+  const gcpCount = filtered.filter(i => i.platform === 'gcp').length;
+  const communityCount = filtered.filter(i => i.platform === 'community').length;
+  const archCount = filtered.filter(i => i.iconType === 'architecture').length;
+  const deviceCount = filtered.filter(i => i.iconType === 'device').length;
+  const mapCount = filtered.filter(i => i.iconType === 'map').length;
+  
+  let countParts = [];
+  if (awsCount > 0) countParts.push(`AWS: ${awsCount}`);
+  if (azureCount > 0) countParts.push(`Azure: ${azureCount}`);
+  if (gcpCount > 0) countParts.push(`GCP: ${gcpCount}`);
+  if (communityCount > 0) countParts.push(`Community: ${communityCount}`);
+  if (archCount > 0) countParts.push(`Architecture: ${archCount}`);
+  if (deviceCount > 0) countParts.push(`Devices: ${deviceCount}`);
+  if (mapCount > 0) countParts.push(`Maps: ${mapCount}`);
+  
+  document.getElementById('iconCount').textContent = `${filtered.length} icons` + (countParts.length > 0 ? ` (${countParts.join(', ')})` : '');
+  
+  // Show/hide load more
+  const loadMore = document.getElementById('loadMore');
+  if (filtered.length > displayedCount) {
+    loadMore.style.display = 'block';
+    document.getElementById('loadMoreCount').textContent = `Showing ${displayedCount} of ${filtered.length}`;
+  } else {
+    loadMore.style.display = 'none';
+  }
+  
+  lucide.createIcons();
+}
+
+function loadMoreIcons() {
+  const filtered = getFilteredIcons();
+  const grid = document.getElementById('iconGrid');
+  const nextBatch = filtered.slice(displayedCount, displayedCount + BATCH_SIZE);
+  
+  nextBatch.forEach(icon => {
+    const div = document.createElement('div');
+    div.innerHTML = renderIconCard(icon);
+    grid.appendChild(div.firstElementChild);
+  });
+  
+  displayedCount += nextBatch.length;
+  
+  if (displayedCount >= filtered.length) {
+    document.getElementById('loadMore').style.display = 'none';
+  } else {
+    document.getElementById('loadMoreCount').textContent = `Showing ${displayedCount} of ${filtered.length}`;
+  }
+  
+  lucide.createIcons();
+}
+
+function showModal(id, platform) {
+  const icon = allIcons.find(i => i.id === id && i.platform === platform);
+  if (!icon) return;
+  
+  document.getElementById('modalTitle').textContent = icon.name;
+  
+  const modalIcon = document.getElementById('modalIcon');
+  const modalPreview = document.querySelector('.icon-modal__preview');
+  
+  // Handle different icon types for preview
+  if (icon.isLucide) {
+    // Architecture icons - show Lucide icon
+    modalIcon.style.display = 'none';
+    let lucidePreview = modalPreview.querySelector('.modal-lucide-preview');
+    if (!lucidePreview) {
+      lucidePreview = document.createElement('div');
+      lucidePreview.className = 'modal-lucide-preview';
+      modalPreview.appendChild(lucidePreview);
+    }
+    lucidePreview.innerHTML = `<i data-lucide="${icon.lucide_source || icon.id}" style="width: 96px; height: 96px; stroke-width: 1.5;"></i>`;
+    lucidePreview.style.display = 'flex';
+  } else {
+    // Standard icons - show image
+    modalIcon.style.display = '';
+    const lucidePreview = modalPreview.querySelector('.modal-lucide-preview');
+    if (lucidePreview) lucidePreview.style.display = 'none';
+    
+    if (icon.iconType === 'device') {
+      modalIcon.src = icon.png || `/icons/devices/${icon.id}.png`;
+    } else if (icon.iconType === 'map') {
+      modalIcon.src = icon.svg;
+      modalIcon.style.width = '200px';
+      modalIcon.style.height = 'auto';
+    } else {
+      modalIcon.src = icon.svg;
+      modalIcon.style.width = '';
+      modalIcon.style.height = '';
+    }
+  }
+  
+  document.getElementById('modalId').textContent = icon.id;
+  
+  const badge = document.getElementById('modalPlatform');
+  if (icon.iconType === 'architecture') {
+    badge.textContent = 'ARCHITECTURE';
+    badge.className = 'icon-modal__badge architecture';
+  } else if (icon.iconType === 'device') {
+    badge.textContent = 'DEVICE';
+    badge.className = 'icon-modal__badge devices';
+  } else if (icon.iconType === 'map') {
+    badge.textContent = 'MAP';
+    badge.className = 'icon-modal__badge maps';
+  } else {
+    badge.textContent = icon.platform.toUpperCase();
+    badge.className = 'icon-modal__badge ' + icon.platform;
+  }
+  
+  const catBadge = document.getElementById('modalCategory');
+  catBadge.textContent = (icon.iconCategory || icon.category || 'general').replace('-', '/').toUpperCase();
+  
+  // Download buttons
+  const downloadSvg = document.getElementById('downloadSvg');
+  const pngBtn = document.getElementById('downloadPng');
+  const png2xBtn = document.getElementById('downloadPng2x');
+  
+  if (icon.isLucide) {
+    // Lucide icons - link to Lucide source
+    downloadSvg.href = `https://lucide.dev/icons/${icon.lucide_source || icon.id}`;
+    downloadSvg.innerHTML = '<i data-lucide="external-link"></i> View on Lucide';
+    downloadSvg.target = '_blank';
+    pngBtn.style.display = 'none';
+    png2xBtn.style.display = 'none';
+  } else if (icon.iconType === 'device') {
+    // Device mockups - PNG only
+    downloadSvg.style.display = 'none';
+    if (icon.png) {
+      pngBtn.href = icon.png;
+      pngBtn.style.display = '';
+      pngBtn.innerHTML = '<i data-lucide="image"></i> PNG';
+    } else {
+      pngBtn.style.display = 'none';
+    }
+    png2xBtn.style.display = 'none';
+  } else if (icon.iconType === 'map') {
+    // Maps - SVG only
+    downloadSvg.href = icon.svg;
+    downloadSvg.innerHTML = '<i data-lucide="file-code"></i> SVG';
+    downloadSvg.target = '';
+    downloadSvg.style.display = '';
+    pngBtn.style.display = 'none';
+    png2xBtn.style.display = 'none';
+  } else {
+    // Standard platform icons
+    downloadSvg.href = icon.svg;
+    downloadSvg.innerHTML = '<i data-lucide="file-code"></i> SVG';
+    downloadSvg.target = '';
+    downloadSvg.style.display = '';
+    
+    if (icon.png) {
+      pngBtn.href = icon.png;
+      pngBtn.innerHTML = '<i data-lucide="image"></i> PNG 256px';
+      pngBtn.style.display = '';
+      png2xBtn.href = icon.png_2x;
+      png2xBtn.style.display = '';
+    } else {
+      pngBtn.style.display = 'none';
+      png2xBtn.style.display = 'none';
+    }
+  }
+  
+  // Copy path
+  if (icon.isLucide) {
+    document.getElementById('copyPath').value = `<i data-lucide="${icon.lucide_source || icon.id}"></i>`;
+  } else if (icon.iconType === 'device') {
+    document.getElementById('copyPath').value = icon.png || `/icons/devices/${icon.id}.png`;
+  } else {
+    document.getElementById('copyPath').value = icon.svg;
+  }
+  
+  // License info
+  let sourceInfo, licenseUrl, attribution;
+  
+  if (icon.iconType === 'architecture') {
+    sourceInfo = 'Lucide Icons';
+    licenseUrl = 'https://lucide.dev/license';
+    attribution = 'Lucide Contributors - https://lucide.dev';
+  } else if (icon.iconType === 'device') {
+    sourceInfo = 'HTML5 Device Mockups';
+    licenseUrl = 'https://github.com/pixelsign/html5-device-mockups/blob/master/LICENSE';
+    attribution = 'pixelsign and contributors - MIT License';
+  } else if (icon.iconType === 'map') {
+    sourceInfo = 'Generated Cloud Region Maps';
+    licenseUrl = null;
+    attribution = 'Generated for freelancer-templates.org';
+  } else {
+    const platformData = manifest.platforms[icon.sourcePlatform || icon.platform] || {};
+    sourceInfo = icon.source || platformData.source || 'Unknown source';
+    licenseUrl = platformData.license_url;
+    attribution = platformData.attribution || 'Please check the source for attribution requirements.';
+  }
+  
+  document.getElementById('modalSource').textContent = sourceInfo;
+  
+  const licenseLink = document.getElementById('modalLicenseLink');
+  if (licenseUrl) {
+    licenseLink.href = licenseUrl;
+    licenseLink.style.display = '';
+  } else {
+    licenseLink.style.display = 'none';
+  }
+  
+  document.getElementById('modalAttribution').textContent = attribution;
+  
+  document.getElementById('iconModal').classList.add('active');
+  lucide.createIcons();
+}
+
+function closeModal() {
+  document.getElementById('iconModal').classList.remove('active');
+}
+
+function copyToClipboard(input) {
+  input.select();
+  navigator.clipboard.writeText(input.value);
+  input.style.borderColor = 'var(--accent)';
+  setTimeout(() => { input.style.borderColor = ''; }, 1000);
+}
+
+// Event listeners
+document.getElementById('iconSearch').addEventListener('input', function(e) {
+  currentSearch = e.target.value;
+  renderIcons();
+});
+
+document.querySelectorAll('[data-platform]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-platform]').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    currentPlatform = this.dataset.platform;
+    renderIcons();
+  });
+});
+
+document.querySelectorAll('[data-type]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-type]').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    currentType = this.dataset.type;
+    
+    // Show/hide appropriate sub-filter row
+    const serviceRow = document.getElementById('serviceFiltersRow');
+    const vendorRow = document.getElementById('vendorFiltersRow');
+    const archRow = document.getElementById('architectureFiltersRow');
+    const devicesRow = document.getElementById('devicesFiltersRow');
+    
+    // Hide all sub-filter rows first
+    serviceRow.style.display = 'none';
+    vendorRow.style.display = 'none';
+    archRow.style.display = 'none';
+    devicesRow.style.display = 'none';
+    
+    // Reset all sub-filters
+    currentCategory = 'all';
+    currentVendor = 'all';
+    currentArch = 'all';
+    currentDevice = 'all';
+    document.querySelectorAll('[data-category]').forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-category="all"]').classList.add('active');
+    document.querySelectorAll('[data-vendor]').forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-vendor="all"]').classList.add('active');
+    document.querySelectorAll('[data-arch]').forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-arch="all"]').classList.add('active');
+    document.querySelectorAll('[data-device]').forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-device="all"]').classList.add('active');
+    
+    // Show appropriate sub-filter row
+    if (currentType === 'service') {
+      serviceRow.style.display = 'flex';
+    } else if (currentType === 'vendor') {
+      vendorRow.style.display = 'flex';
+    } else if (currentType === 'architecture') {
+      archRow.style.display = 'flex';
+    } else if (currentType === 'devices') {
+      devicesRow.style.display = 'flex';
+    } else if (currentType === 'all') {
+      // "All" type - show services row by default
+      serviceRow.style.display = 'flex';
+    }
+    // Maps type has no sub-filters
+    
+    renderIcons();
+  });
+});
+
+document.querySelectorAll('[data-category]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-category]').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    currentCategory = this.dataset.category;
+    renderIcons();
+  });
+});
+
+document.querySelectorAll('[data-vendor]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-vendor]').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    currentVendor = this.dataset.vendor;
+    renderIcons();
+  });
+});
+
+document.querySelectorAll('[data-arch]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-arch]').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    currentArch = this.dataset.arch;
+    renderIcons();
+  });
+});
+
+document.querySelectorAll('[data-device]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('[data-device]').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    currentDevice = this.dataset.device;
+    renderIcons();
+  });
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+
+// Load on ready
+loadManifest();
+</script>
+
+<!-- Icon Sources & Licensing Footer -->
+<section class="icon-sources-section">
+  <div class="container">
+    <div class="icon-sources">
+      <h3 class="icon-sources__title">
+        <i data-lucide="info"></i>
+        About These Icons
+      </h3>
+      <p class="icon-sources__intro">
+        This icon library aggregates official architecture icons from major cloud providers and community sources. 
+        All icons are provided for use in technical documentation, architecture diagrams, presentations, and educational materials.
+      </p>
+      
+      <div class="icon-sources__grid">
+        <div class="icon-source-card">
+          <div class="icon-source-card__header">
+            <span class="icon-source-card__badge" style="background: rgba(255, 153, 0, 0.15); color: #FF9900;">AWS</span>
+            <h4>AWS Architecture Icons</h4>
+          </div>
+          <p>Official icons from Amazon Web Services for creating architecture diagrams.</p>
+          <div class="icon-source-card__meta">
+            <span class="icon-source-card__license">
+              <i data-lucide="scale"></i>
+              AWS Trademark Guidelines
+            </span>
+            <a href="https://aws.amazon.com/architecture/icons/" target="_blank" rel="noopener" class="icon-source-card__link">
+              <i data-lucide="external-link"></i>
+              Official Source
+            </a>
+          </div>
+          <p class="icon-source-card__note">
+            Free for use in architecture diagrams and documentation. Must comply with AWS Trademark Guidelines.
+          </p>
+        </div>
+        
+        <div class="icon-source-card">
+          <div class="icon-source-card__header">
+            <span class="icon-source-card__badge" style="background: rgba(0, 120, 212, 0.15); color: #0078D4;">Azure</span>
+            <h4>Azure Architecture Icons</h4>
+          </div>
+          <p>Official icons from Microsoft Azure for cloud architecture documentation.</p>
+          <div class="icon-source-card__meta">
+            <span class="icon-source-card__license">
+              <i data-lucide="scale"></i>
+              Microsoft Terms of Use
+            </span>
+            <a href="https://learn.microsoft.com/en-us/azure/architecture/icons/" target="_blank" rel="noopener" class="icon-source-card__link">
+              <i data-lucide="external-link"></i>
+              Official Source
+            </a>
+          </div>
+          <p class="icon-source-card__note">
+            Free for non-commercial documentation purposes. Commercial use requires Microsoft approval.
+          </p>
+        </div>
+        
+        <div class="icon-source-card">
+          <div class="icon-source-card__header">
+            <span class="icon-source-card__badge" style="background: rgba(99, 102, 241, 0.15); color: #6366F1;">Community</span>
+            <h4>Simple Icons</h4>
+          </div>
+          <p>Community-maintained SVG icons for popular brands, tools, and services.</p>
+          <div class="icon-source-card__meta">
+            <span class="icon-source-card__license">
+              <i data-lucide="scale"></i>
+              CC0 1.0 (Public Domain)
+            </span>
+            <a href="https://simpleicons.org/" target="_blank" rel="noopener" class="icon-source-card__link">
+              <i data-lucide="external-link"></i>
+              Official Source
+            </a>
+          </div>
+          <p class="icon-source-card__note">
+            Icons are CC0 licensed. Individual brand trademarks belong to their respective owners.
+          </p>
+        </div>
+        
+        <div class="icon-source-card">
+          <div class="icon-source-card__header">
+            <span class="icon-source-card__badge" style="background: rgba(139, 92, 246, 0.15); color: #8B5CF6;">Architecture</span>
+            <h4>Lucide Icons</h4>
+          </div>
+          <p>Beautiful, consistent icons for architecture diagrams - users, devices, infrastructure, and more.</p>
+          <div class="icon-source-card__meta">
+            <span class="icon-source-card__license">
+              <i data-lucide="scale"></i>
+              ISC License (MIT-like)
+            </span>
+            <a href="https://lucide.dev/" target="_blank" rel="noopener" class="icon-source-card__link">
+              <i data-lucide="external-link"></i>
+              Official Source
+            </a>
+          </div>
+          <p class="icon-source-card__note">
+            Free for commercial and personal use. No attribution required but appreciated.
+          </p>
+        </div>
+        
+        <div class="icon-source-card">
+          <div class="icon-source-card__header">
+            <span class="icon-source-card__badge" style="background: rgba(236, 72, 153, 0.15); color: #EC4899;">Devices</span>
+            <h4>HTML5 Device Mockups</h4>
+          </div>
+          <p>High-quality device frames for phones, tablets, laptops, and desktops.</p>
+          <div class="icon-source-card__meta">
+            <span class="icon-source-card__license">
+              <i data-lucide="scale"></i>
+              MIT License
+            </span>
+            <a href="https://github.com/pixelsign/html5-device-mockups" target="_blank" rel="noopener" class="icon-source-card__link">
+              <i data-lucide="external-link"></i>
+              Official Source
+            </a>
+          </div>
+          <p class="icon-source-card__note">
+            Free for commercial and personal use under MIT License.
+          </p>
+        </div>
+      </div>
+      
+      <div class="icon-sources__footer">
+        <p>
+          <strong>Usage Guidelines:</strong> These icons are intended for technical documentation, architecture diagrams, 
+          presentations, and educational materials. When using vendor icons, please ensure compliance with each provider's 
+          trademark and usage guidelines. Click any icon to see its specific source and license information.
+        </p>
+        <p class="icon-sources__sync">
+          <i data-lucide="refresh-cw"></i>
+          Icons are automatically synced weekly from official sources via 
+          <a href="https://github.com/freelancer-templates/freelancer-templates.org/actions" target="_blank" rel="noopener">GitHub Actions</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Icon Sources Section */
+.icon-sources-section {
+  padding: 4rem 0;
+  background: var(--surface-1);
+  border-top: 1px solid var(--border);
+}
+
+.icon-sources__title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.icon-sources__title svg {
+  width: 24px;
+  height: 24px;
+  color: var(--accent);
+}
+
+.icon-sources__intro {
+  font-size: 1rem;
+  color: var(--text-2);
+  max-width: 800px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.icon-sources__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.icon-source-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.icon-source-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.icon-source-card__header h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.icon-source-card__badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.icon-source-card p {
+  font-size: 0.9rem;
+  color: var(--text-2);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.icon-source-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.icon-source-card__license {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.icon-source-card__license svg {
+  width: 14px;
+  height: 14px;
+}
+
+.icon-source-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.icon-source-card__link:hover {
+  text-decoration: underline;
+}
+
+.icon-source-card__link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.icon-source-card__note {
+  font-size: 0.8rem !important;
+  color: var(--text-3) !important;
+  background: var(--surface-1);
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0 !important;
+}
+
+.icon-sources__footer {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.icon-sources__footer p {
+  font-size: 0.9rem;
+  color: var(--text-2);
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.icon-sources__footer p:last-child {
+  margin-bottom: 0;
+}
+
+.icon-sources__sync {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem !important;
+  color: var(--text-3) !important;
+}
+
+.icon-sources__sync svg {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-sources__sync a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.icon-sources__sync a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .icon-sources__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .icon-source-card__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
+
+{{ partial "site-footer.html" . }}
+{{ end }}

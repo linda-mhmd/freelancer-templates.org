@@ -1,0 +1,604 @@
+[
+  {
+    "id": "bedrock",
+    "platform": "aws",
+    "mention_count": 7859,
+    "file_count": 1605,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "sagemaker",
+    "platform": "aws",
+    "mention_count": 4847,
+    "file_count": 1372,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "lambda",
+    "platform": "aws",
+    "mention_count": 3976,
+    "file_count": 1107,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "ecr",
+    "platform": "aws",
+    "mention_count": 2199,
+    "file_count": 786,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "s3",
+    "platform": "aws",
+    "mention_count": 2156,
+    "file_count": 843,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "bedrock-knowledge-bases",
+    "platform": "aws",
+    "mention_count": 2122,
+    "file_count": 570,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "opensearch",
+    "platform": "aws",
+    "mention_count": 1946,
+    "file_count": 352,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "dynamodb",
+    "platform": "aws",
+    "mention_count": 1428,
+    "file_count": 581,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "bedrock-agents",
+    "platform": "aws",
+    "mention_count": 1360,
+    "file_count": 308,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "stepfunctions",
+    "platform": "aws",
+    "mention_count": 1351,
+    "file_count": 532,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "translate",
+    "platform": "aws",
+    "mention_count": 1317,
+    "file_count": 533,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "textract",
+    "platform": "aws",
+    "mention_count": 1239,
+    "file_count": 287,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "cloudwatch",
+    "platform": "aws",
+    "mention_count": 1219,
+    "file_count": 399,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "rekognition",
+    "platform": "aws",
+    "mention_count": 1208,
+    "file_count": 287,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "transcribe",
+    "platform": "aws",
+    "mention_count": 1002,
+    "file_count": 267,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "comprehend",
+    "platform": "aws",
+    "mention_count": 794,
+    "file_count": 154,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "bedrock-agentcore",
+    "platform": "aws",
+    "mention_count": 714,
+    "file_count": 84,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "apigateway",
+    "platform": "aws",
+    "mention_count": 551,
+    "file_count": 322,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "fargate",
+    "platform": "aws",
+    "mention_count": 539,
+    "file_count": 91,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "azure-openai",
+    "platform": "azure",
+    "mention_count": 532,
+    "file_count": 161,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "vision-services",
+    "platform": "azure",
+    "mention_count": 527,
+    "file_count": 280,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "databricks",
+    "platform": "azure",
+    "mention_count": 513,
+    "file_count": 127,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "eventbridge",
+    "platform": "aws",
+    "mention_count": 513,
+    "file_count": 175,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "polly",
+    "platform": "aws",
+    "mention_count": 469,
+    "file_count": 77,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "kendra",
+    "platform": "aws",
+    "mention_count": 408,
+    "file_count": 35,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "ecs",
+    "platform": "aws",
+    "mention_count": 371,
+    "file_count": 196,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "entra-id",
+    "platform": "azure",
+    "mention_count": 358,
+    "file_count": 112,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "blob-storage",
+    "platform": "azure",
+    "mention_count": 350,
+    "file_count": 126,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "mediaconvert",
+    "platform": "aws",
+    "mention_count": 322,
+    "file_count": 70,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "data-factory",
+    "platform": "azure",
+    "mention_count": 319,
+    "file_count": 88,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "ec2",
+    "platform": "aws",
+    "mention_count": 315,
+    "file_count": 189,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "cognito",
+    "platform": "aws",
+    "mention_count": 312,
+    "file_count": 70,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "iam",
+    "platform": "aws",
+    "mention_count": 272,
+    "file_count": 209,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "vpc",
+    "platform": "aws",
+    "mention_count": 265,
+    "file_count": 147,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "azure-machine-learning",
+    "platform": "azure",
+    "mention_count": 259,
+    "file_count": 112,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "aurora",
+    "platform": "aws",
+    "mention_count": 256,
+    "file_count": 70,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "event-grid",
+    "platform": "azure",
+    "mention_count": 245,
+    "file_count": 49,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "monitor",
+    "platform": "azure",
+    "mention_count": 217,
+    "file_count": 77,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "cloudformation",
+    "platform": "aws",
+    "mention_count": 217,
+    "file_count": 84,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "synapse-analytics",
+    "platform": "azure",
+    "mention_count": 210,
+    "file_count": 63,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "waf",
+    "platform": "aws",
+    "mention_count": 210,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "secretsmanager",
+    "platform": "aws",
+    "mention_count": 210,
+    "file_count": 77,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "azure-functions",
+    "platform": "azure",
+    "mention_count": 203,
+    "file_count": 98,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "hdinsight",
+    "platform": "azure",
+    "mention_count": 203,
+    "file_count": 21,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "cloudfront",
+    "platform": "aws",
+    "mention_count": 198,
+    "file_count": 84,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "glue",
+    "platform": "aws",
+    "mention_count": 197,
+    "file_count": 119,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "document-intelligence",
+    "platform": "azure",
+    "mention_count": 196,
+    "file_count": 70,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "kms",
+    "platform": "aws",
+    "mention_count": 182,
+    "file_count": 112,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "cognitive-services",
+    "platform": "azure",
+    "mention_count": 182,
+    "file_count": 70,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "eks",
+    "platform": "aws",
+    "mention_count": 182,
+    "file_count": 70,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "speech-services",
+    "platform": "azure",
+    "mention_count": 175,
+    "file_count": 63,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "azure-ai-search",
+    "platform": "azure",
+    "mention_count": 175,
+    "file_count": 63,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "logic-apps",
+    "platform": "azure",
+    "mention_count": 168,
+    "file_count": 42,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "cosmos-db",
+    "platform": "azure",
+    "mention_count": 154,
+    "file_count": 56,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "codepipeline",
+    "platform": "aws",
+    "mention_count": 140,
+    "file_count": 21,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "cloudtrail",
+    "platform": "aws",
+    "mention_count": 105,
+    "file_count": 70,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "azure-devops",
+    "platform": "azure",
+    "mention_count": 70,
+    "file_count": 42,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "redshift",
+    "platform": "aws",
+    "mention_count": 70,
+    "file_count": 42,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "kinesis",
+    "platform": "aws",
+    "mention_count": 64,
+    "file_count": 49,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "log-analytics",
+    "platform": "azure",
+    "mention_count": 63,
+    "file_count": 49,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "translator",
+    "platform": "azure",
+    "mention_count": 63,
+    "file_count": 21,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "athena",
+    "platform": "aws",
+    "mention_count": 63,
+    "file_count": 35,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "codebuild",
+    "platform": "aws",
+    "mention_count": 63,
+    "file_count": 7,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "azure-policy",
+    "platform": "azure",
+    "mention_count": 63,
+    "file_count": 35,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "q",
+    "platform": "aws",
+    "mention_count": 56,
+    "file_count": 42,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "language-services",
+    "platform": "azure",
+    "mention_count": 42,
+    "file_count": 28,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "direct-connect",
+    "platform": "aws",
+    "mention_count": 42,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "outposts",
+    "platform": "aws",
+    "mention_count": 42,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "app-service",
+    "platform": "azure",
+    "mention_count": 35,
+    "file_count": 21,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "stream-analytics",
+    "platform": "azure",
+    "mention_count": 35,
+    "file_count": 21,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "azure-sql",
+    "platform": "azure",
+    "mention_count": 35,
+    "file_count": 28,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "front-door",
+    "platform": "azure",
+    "mention_count": 35,
+    "file_count": 28,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "sqs",
+    "platform": "aws",
+    "mention_count": 35,
+    "file_count": 28,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "guardduty",
+    "platform": "aws",
+    "mention_count": 35,
+    "file_count": 28,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "defender-for-cloud",
+    "platform": "azure",
+    "mention_count": 35,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "purview",
+    "platform": "azure",
+    "mention_count": 28,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "sns",
+    "platform": "aws",
+    "mention_count": 28,
+    "file_count": 21,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "aks",
+    "platform": "azure",
+    "mention_count": 28,
+    "file_count": 21,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "ai-foundry",
+    "platform": "azure",
+    "mention_count": 28,
+    "file_count": 7,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "key-vault",
+    "platform": "azure",
+    "mention_count": 28,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "batch",
+    "platform": "aws",
+    "mention_count": 21,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "api-management",
+    "platform": "azure",
+    "mention_count": 14,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "codecommit",
+    "platform": "aws",
+    "mention_count": 14,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "route53",
+    "platform": "aws",
+    "mention_count": 14,
+    "file_count": 14,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "container-apps",
+    "platform": "azure",
+    "mention_count": 14,
+    "file_count": 7,
+    "wiki_mentioned": true
+  },
+  {
+    "id": "microsoft-365-copilot",
+    "platform": "azure",
+    "mention_count": 7,
+    "file_count": 7,
+    "wiki_mentioned": true
+  }
+]

@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <title>AZURE Cloud Regions Map</title>
+  <desc>World map showing AZURE cloud region locations</desc>
+  
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#fafafa"/>
+  
+  
+<!-- Simplified world map outline -->
+<path d="M50,200 Q100,180 150,190 L200,180 Q250,170 300,175 L350,180 Q400,185 450,175 
+         L500,170 Q550,165 600,175 L650,180 Q700,185 750,180 L800,175 Q850,170 900,180 
+         L950,190" fill="none" stroke="#e5e7eb" stroke-width="1"/>
+
+<!-- North America -->
+<path d="M100,120 Q150,100 200,110 L280,130 Q320,140 350,160 L320,200 Q280,220 240,210 
+         L180,190 Q140,180 120,160 Z" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.5"/>
+
+<!-- South America -->
+<path d="M280,280 Q300,260 320,270 L340,320 Q350,360 330,400 L300,420 Q270,400 280,350 Z" 
+      fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.5"/>
+
+<!-- Europe -->
+<path d="M450,120 Q480,110 520,115 L560,130 Q580,140 570,160 L540,175 Q500,180 470,170 
+         L450,150 Z" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.5"/>
+
+<!-- Africa -->
+<path d="M480,200 Q520,190 560,200 L580,250 Q590,300 570,350 L540,400 Q500,410 480,380 
+         L470,320 Q460,260 480,200 Z" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.5"/>
+
+<!-- Asia -->
+<path d="M580,100 Q650,90 720,100 L800,120 Q850,140 880,180 L860,220 Q820,250 760,240 
+         L700,220 Q640,200 600,170 L580,140 Z" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.5"/>
+
+<!-- Australia -->
+<path d="M820,340 Q860,330 900,350 L910,390 Q900,420 860,420 L830,400 Q810,370 820,340 Z" 
+      fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.5"/>
+
+  
+  <!-- Region markers -->
+  <g id="regions">
+    
+    <g class="region" data-region="eastus">
+      <circle cx="280" cy="180" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="280" cy="180" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="eastus2">
+      <circle cx="275" cy="185" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="275" cy="185" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="westus">
+      <circle cx="140" cy="185" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="140" cy="185" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="westus2">
+      <circle cx="145" cy="170" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="145" cy="170" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="westus3">
+      <circle cx="160" cy="195" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="160" cy="195" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="centralus">
+      <circle cx="230" cy="180" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="230" cy="180" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="northcentralus">
+      <circle cx="240" cy="170" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="240" cy="170" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="southcentralus">
+      <circle cx="220" cy="200" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="220" cy="200" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="canadacentral">
+      <circle cx="250" cy="150" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="250" cy="150" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="canadaeast">
+      <circle cx="280" cy="145" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="280" cy="145" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="northeurope">
+      <circle cx="460" cy="155" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="460" cy="155" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="westeurope">
+      <circle cx="480" cy="160" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="480" cy="160" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="uksouth">
+      <circle cx="475" cy="155" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="475" cy="155" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="ukwest">
+      <circle cx="465" cy="155" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="465" cy="155" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="francecentral">
+      <circle cx="485" cy="165" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="485" cy="165" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="germanywestcentral">
+      <circle cx="505" cy="155" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="505" cy="155" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="switzerlandnorth">
+      <circle cx="500" cy="165" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="500" cy="165" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="norwayeast">
+      <circle cx="510" cy="125" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="510" cy="125" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="swedencentral">
+      <circle cx="520" cy="125" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="520" cy="125" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="italynorth">
+      <circle cx="505" cy="175" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="505" cy="175" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="spaincentral">
+      <circle cx="470" cy="180" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="470" cy="180" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="polandcentral">
+      <circle cx="525" cy="155" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="525" cy="155" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="eastasia">
+      <circle cx="760" cy="225" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="760" cy="225" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="southeastasia">
+      <circle cx="730" cy="280" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="730" cy="280" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="japaneast">
+      <circle cx="820" cy="185" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="820" cy="185" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="japanwest">
+      <circle cx="815" cy="190" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="815" cy="190" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="koreacentral">
+      <circle cx="795" cy="180" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="795" cy="180" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="koreasouth">
+      <circle cx="800" cy="190" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="800" cy="190" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="centralindia">
+      <circle cx="640" cy="230" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="640" cy="230" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="southindia">
+      <circle cx="645" cy="255" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="645" cy="255" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="westindia">
+      <circle cx="625" cy="235" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="625" cy="235" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="australiaeast">
+      <circle cx="870" cy="380" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="870" cy="380" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="australiasoutheast">
+      <circle cx="865" cy="395" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="865" cy="395" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="australiacentral">
+      <circle cx="850" cy="375" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="850" cy="375" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="brazilsouth">
+      <circle cx="330" cy="350" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="330" cy="350" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="southafricanorth">
+      <circle cx="540" cy="365" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="540" cy="365" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="southafricawest">
+      <circle cx="530" cy="380" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="530" cy="380" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="uaenorth">
+      <circle cx="595" cy="225" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="595" cy="225" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="uaecentral">
+      <circle cx="590" cy="230" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="590" cy="230" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="qatarcentral">
+      <circle cx="580" cy="225" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="580" cy="225" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g class="region" data-region="israelcentral">
+      <circle cx="555" cy="195" r="4" fill="#0078D4" opacity="0.8"/>
+      <circle cx="555" cy="195" r="6" fill="none" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+    </g>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(20, 460)">
+    <circle cx="0" cy="0" r="4" fill="#0078D4"/>
+    <text x="12" y="4" font-family="system-ui, sans-serif" font-size="12" fill="#374151">AZURE Region</text>
+  </g>
+</svg>

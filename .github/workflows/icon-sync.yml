@@ -77,7 +77,7 @@ jobs:
           
           PLATFORMS="${{ github.event.inputs.platforms }}"
           if [[ -z "$PLATFORMS" || "$PLATFORMS" == "all" ]]; then
-            PLATFORMS="aws,azure"
+            PLATFORMS="aws,azure,community"
           fi
           echo "platforms=$PLATFORMS" >> "$GITHUB_OUTPUT"
 
@@ -96,6 +96,31 @@ jobs:
         run: |
           echo "::group::Azure Icon Sync"
           python scripts/icons/sync_azure.py ${{ steps.params.outputs.force_flag }} | tee azure-sync.log
+          echo "::endgroup::"
+        continue-on-error: true
+
+      - name: Sync Community icons
+        id: sync-community
+        if: contains(steps.params.outputs.platforms, 'community')
+        run: |
+          echo "::group::Community Icon Sync"
+          python scripts/icons/sync_community.py ${{ steps.params.outputs.force_flag }} | tee community-sync.log
+          echo "::endgroup::"
+        continue-on-error: true
+
+      - name: Sync Architecture icons (Lucide)
+        id: sync-architecture
+        run: |
+          echo "::group::Architecture Icon Sync"
+          python scripts/icons/sync_architecture.py | tee architecture-sync.log
+          echo "::endgroup::"
+        continue-on-error: true
+
+      - name: Generate Region Maps
+        id: sync-maps
+        run: |
+          echo "::group::Region Maps Generation"
+          python scripts/icons/sync_maps.py | tee maps-sync.log
           echo "::endgroup::"
         continue-on-error: true
 
@@ -157,6 +182,7 @@ jobs:
             ### What changed
             - Checked AWS Architecture Icons for updates
             - Checked Azure Architecture Icons for updates
+            - Synced Community icons (DevOps, databases, cloud providers, etc.)
             - Scanned ai-solutions.wiki for service mentions
             - Regenerated manifest.json
             - Updated CHANGELOG.md
@@ -192,3 +218,6 @@ jobs:
           echo "|----------|--------|" >> $GITHUB_STEP_SUMMARY
           echo "| AWS | ${{ steps.sync-aws.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Azure | ${{ steps.sync-azure.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Community | ${{ steps.sync-community.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Architecture | ${{ steps.sync-architecture.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Maps | ${{ steps.sync-maps.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY

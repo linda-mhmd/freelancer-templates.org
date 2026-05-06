@@ -151,6 +151,13 @@ def _normalise_aws_name(filename: str) -> str:
 def _classify_aws_file(zip_path: str) -> Optional[str]:
     """Return 'service', 'group', 'brand', or None (skip)."""
     lp = zip_path.lower()
+    filename = Path(zip_path).name.lower()
+    
+    # Skip files that are already lowercase arch- prefixed (these are duplicates
+    # of the properly-named Arch_ files that we normalize)
+    if filename.startswith("arch-"):
+        return None
+    
     if "arch-group" in lp or "architecture-group" in lp:
         return "group"
     if "arch_" in lp or "/arch/" in lp:

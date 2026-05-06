@@ -36,6 +36,7 @@ PLATFORM_META: dict[str, dict] = {
         "license":          "AWS Trademark Guidelines — free for documentation",
         "license_url":      "https://aws.amazon.com/architecture/icons/",
         "attribution":      "Amazon Web Services, Inc. or its affiliates.",
+        "source":           "AWS Architecture Icons",
     },
     "azure": {
         "brand_color":      "#0078D4",
@@ -44,6 +45,17 @@ PLATFORM_META: dict[str, dict] = {
         "license":          "Microsoft Azure Architecture Icons — free for non-commercial docs",
         "license_url":      "https://learn.microsoft.com/en-us/azure/architecture/icons/",
         "attribution":      "Microsoft Corporation.",
+        "source":           "Azure Architecture Icons",
+    },
+    "community": {
+        "brand_color":      "#6366F1",
+        "brand_color_dark": "#4338CA",
+        "brand_logo":       None,
+        "license":          "Simple Icons — CC0 1.0 Universal (Public Domain)",
+        "license_url":      "https://simpleicons.org/",
+        "attribution":      "Simple Icons contributors. Individual icons are trademarks of their respective owners.",
+        "source":           "Simple Icons (https://simpleicons.org)",
+        "license_note":     "Icons are released under CC0 1.0 Universal. Trademarks belong to their respective owners. Usage must comply with each brand's guidelines.",
     },
 }
 
@@ -85,6 +97,36 @@ def _public_url(path: Path) -> str:
 
 # ── Platform icons ────────────────────────────────────────────────────────────
 
+def _should_skip_icon(icon_id: str, platform: str) -> bool:
+    """
+    Returns True if this icon should be skipped from the manifest.
+    
+    Filters out:
+    - res- prefixed files (AWS resource icons without proper PNGs)
+    - arch- prefixed files (duplicate lowercase versions)
+    - Files with size suffixes like -48-dark, -48-light (variants, not main icons)
+    """
+    lid = icon_id.lower()
+    
+    # Skip res- prefixed files (these are duplicates without PNGs)
+    if lid.startswith("res-"):
+        return True
+    
+    # Skip arch- prefixed files (lowercase duplicates)
+    if lid.startswith("arch-"):
+        return True
+    
+    # Skip size/variant suffixes for AWS (these are duplicates)
+    if platform == "aws":
+        # Skip -48-dark, -48-light, -32, -16 variants
+        if re.search(r"-\d+-(dark|light)$", lid):
+            return True
+        if re.search(r"-\d+$", lid) and not lid.endswith("-53"):  # Keep route-53
+            return True
+    
+    return False
+
+
 def _build_platform_section(platform: str, priority: dict) -> dict:
     platform_dir = ICONS_DIR / "platforms" / platform
     if not platform_dir.exists():
@@ -95,20 +137,42 @@ def _build_platform_section(platform: str, priority: dict) -> dict:
     cats     = _load_category_map(platform)
     services = []
 
-    for category in ("service", "group", "brand"):
+    # Community platform uses different category structure
+    if platform == "community":
+        categories = ["devops", "containers", "cloud", "gcp", "databases", "infrastructure", 
+                      "ai-ml", "web", "vendors", "frameworks", "frontend", "mobile", "testing", "api",
+                      "monitoring", "security", "messaging", "productivity", "analytics",
+                      "data-engineering", "vector-db", "payments", "crm", "version-control",
+                      "editors", "hardware", "blockchain", "sponsors"]
+    else:
+        categories = ["service", "group", "brand"]
+
+    for category in categories:
         cat_dir = platform_dir / category
         if not cat_dir.exists():
             continue
         for svg_path in sorted(cat_dir.glob("*.svg")):
             icon_id = _icon_id_from_path(svg_path)
+            
+            # Skip problematic icons (res- prefixed, variants, etc.)
+            if _should_skip_icon(icon_id, platform):
+                continue
+            
             png     = cat_dir / f"{icon_id}.png"
             png_2x  = cat_dir / f"{icon_id}@2x.png"
+            
+            # For AWS/Azure, require PNG to exist (ensures icon was properly processed)
+            if platform in ("aws", "azure") and not png.exists():
+                logger.debug("Skipping %s/%s - no PNG found", platform, icon_id)
+                continue
 
             entry: dict = {
                 "id":       icon_id,
                 "name":     names.get(icon_id, _id_to_name(icon_id)),
                 "category": cats.get(icon_id, category),
                 "svg":      _public_url(svg_path),
+                "source":   meta.get("source", "Unknown"),
+                "license":  meta.get("license", "See platform license"),
             }
             if png.exists():
                 entry["png"] = _public_url(png)
@@ -152,6 +216,84 @@ def _build_icon_list(subdir: str) -> list[dict]:
     return entries
 
 
+# ── Maps section ──────────────────────────────────────────────────────────────
+
+def _build_maps_section() -> dict:
+    """Build the maps section from static/icons/maps/."""
+    maps_dir = ICONS_DIR / "maps"
+    if not maps_dir.exists():
+        return {}
+    
+    metadata_path = maps_dir / "metadata.json"
+    if not metadata_path.exists():
+        return {}
+    
+    metadata = json.loads(metadata_path.read_text())
+    
+    maps_list = []
+    for svg_path in sorted(maps_dir.glob("*.svg")):
+        map_id = _icon_id_from_path(svg_path)
+        map_info = metadata.get("maps", {}).get(map_id, {})
+        
+        entry = {
+            "id": map_id,
+            "name": map_info.get("name", _id_to_name(map_id)),
+            "description": map_info.get("description", ""),
+            "region_count": map_info.get("region_count", 0),
+            "svg": _public_url(svg_path),
+            "source": metadata.get("source", "Custom generated"),
+            "license": metadata.get("license", "CC-BY-NC-SA 4.0"),
+        }
+        maps_list.append(entry)
+    
+    return {
+        "source": metadata.get("source", "Custom generated"),
+        "license": metadata.get("license", "CC-BY-NC-SA 4.0"),
+        "attribution": metadata.get("attribution", "freelancer-templates.org"),
+        "maps": maps_list,
+        "regions": metadata.get("regions", {}),
+    }
+
+
+# ── Architecture icons section ────────────────────────────────────────────────
+
+def _build_architecture_section() -> dict:
+    """Build the architecture icons section from static/icons/architecture/."""
+    arch_dir = ICONS_DIR / "architecture"
+    if not arch_dir.exists():
+        return {}
+    
+    metadata_path = arch_dir / "metadata.json"
+    if not metadata_path.exists():
+        return {}
+    
+    metadata = json.loads(metadata_path.read_text())
+    
+    icons_list = []
+    icons_meta = metadata.get("icons", {})
+    
+    for icon_id, icon_info in icons_meta.items():
+        entry = {
+            "id": icon_id,
+            "name": icon_info.get("name", _id_to_name(icon_id)),
+            "category": icon_info.get("category", "other"),
+            "lucide_source": icon_info.get("lucide_source", icon_id),
+            "source": metadata.get("source", "Lucide Icons"),
+            "license": metadata.get("license", "MIT License (ISC)"),
+            "license_url": metadata.get("license_url", "https://lucide.dev/license"),
+        }
+        icons_list.append(entry)
+    
+    return {
+        "source": metadata.get("source", "Lucide Icons"),
+        "license": metadata.get("license", "MIT License (ISC)"),
+        "license_url": metadata.get("license_url", "https://lucide.dev/license"),
+        "attribution": metadata.get("attribution", "Lucide Contributors"),
+        "categories": metadata.get("categories", {}),
+        "icons": icons_list,
+    }
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def generate_manifest() -> dict:
@@ -168,20 +310,37 @@ def generate_manifest() -> dict:
         "process":       _build_icon_list("process"),
     }
 
-    for platform in ("aws", "azure", "gcp", "redhat", "onprem", "multicloud", "hybrid"):
+    for platform in ("aws", "azure", "community", "gcp", "redhat", "onprem", "multicloud", "hybrid"):
         section = _build_platform_section(platform, priority)
         if section:
             manifest["platforms"][platform] = section
 
+    # Add new sections
+    maps_section = _build_maps_section()
+    if maps_section:
+        manifest["maps"] = maps_section
+    
+    architecture_section = _build_architecture_section()
+    if architecture_section:
+        manifest["architecture"] = architecture_section
+
     # Stats
-    total_icons = sum(
+    platform_icons = sum(
         len(p.get("services", []))
         for p in manifest["platforms"].values()
-    ) + len(manifest["industries"]) + len(manifest["ai_capability"]) + len(manifest["process"])
+    )
+    custom_icons = len(manifest["industries"]) + len(manifest["ai_capability"]) + len(manifest["process"])
+    maps_count = len(manifest.get("maps", {}).get("maps", []))
+    architecture_count = len(manifest.get("architecture", {}).get("icons", []))
+    
+    total_icons = platform_icons + custom_icons + maps_count + architecture_count
 
     manifest["stats"] = {
         "total_icons":  total_icons,
         "platforms":    len(manifest["platforms"]),
+        "platform_icons": platform_icons,
+        "maps": maps_count,
+        "architecture_icons": architecture_count,
         "wiki_tagged":  sum(
             1 for p in manifest["platforms"].values()
             for s in p.get("services", [])
@@ -191,8 +350,8 @@ def generate_manifest() -> dict:
 
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2))
     logger.info(
-        "Manifest written: %d total icons across %d platforms (%d wiki-tagged)",
-        total_icons, len(manifest["platforms"]), manifest["stats"]["wiki_tagged"],
+        "Manifest written: %d total icons (%d platform, %d maps, %d architecture)",
+        total_icons, platform_icons, maps_count, architecture_count,
     )
     return manifest
 

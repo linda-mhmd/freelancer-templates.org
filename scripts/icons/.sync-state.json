@@ -1,8 +1,9 @@
 {
-  "aws_zip_url": "",
-  "aws_zip_sha256": "",
-  "azure_zip_url": "",
-  "azure_etag": "",
-  "azure_zip_sha256": "",
-  "last_sync": ""
+  "aws_zip_url": "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/architecture/approved/architecture-icons/Icon-package_01302026.31b40d126ed27079b708594940ad577a86150582.zip",
+  "aws_zip_sha256": "9a2e0ae9ba10b785cfb080913ecf66eee293d614b4556723d5640f36cd5e08df",
+  "azure_zip_url": "https://arch-center.azureedge.net/icons/Azure_Public_Service_Icons_V23.zip",
+  "azure_etag": "\"0x8DE1D86870C185E\"",
+  "azure_zip_sha256": "45fe30b7d2868b1c7eaa76261885e0e36d7534d67fd283fa83a300a6b7afcf1a",
+  "last_sync": "",
+  "community_last_sync": "2026-05-06"
 }
