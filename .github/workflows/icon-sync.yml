@@ -1,0 +1,194 @@
+name: Icon Library Sync
+
+on:
+  schedule:
+    # Run every Monday at 06:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force re-download even if no new version detected'
+        required: false
+        default: 'false'
+        type: boolean
+      platforms:
+        description: 'Platforms to sync (comma-separated: aws,azure or "all")'
+        required: false
+        default: 'all'
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: icon-sync
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+  PYTHON_VERSION: "3.12"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  sync-icons:
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check-changes.outputs.has_changes }}
+      diff_summary: ${{ steps.diff.outputs.summary }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Checkout ai-solutions.wiki (for service mention scan)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          repository: mzzavaa/ai-solutions-wiki
+          path: wiki-content
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          cache-dependency-path: scripts/icons/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r scripts/icons/requirements.txt
+
+      - name: Determine sync parameters
+        id: params
+        run: |
+          FORCE_FLAG=""
+          if [[ "${{ github.event.inputs.force }}" == "true" ]]; then
+            FORCE_FLAG="--force"
+          fi
+          echo "force_flag=$FORCE_FLAG" >> "$GITHUB_OUTPUT"
+          
+          PLATFORMS="${{ github.event.inputs.platforms }}"
+          if [[ -z "$PLATFORMS" || "$PLATFORMS" == "all" ]]; then
+            PLATFORMS="aws,azure"
+          fi
+          echo "platforms=$PLATFORMS" >> "$GITHUB_OUTPUT"
+
+      - name: Sync AWS icons
+        id: sync-aws
+        if: contains(steps.params.outputs.platforms, 'aws')
+        run: |
+          echo "::group::AWS Icon Sync"
+          python scripts/icons/sync_aws.py ${{ steps.params.outputs.force_flag }} | tee aws-sync.log
+          echo "::endgroup::"
+        continue-on-error: true
+
+      - name: Sync Azure icons
+        id: sync-azure
+        if: contains(steps.params.outputs.platforms, 'azure')
+        run: |
+          echo "::group::Azure Icon Sync"
+          python scripts/icons/sync_azure.py ${{ steps.params.outputs.force_flag }} | tee azure-sync.log
+          echo "::endgroup::"
+        continue-on-error: true
+
+      - name: Scan wiki for service mentions
+        id: scan-wiki
+        run: |
+          echo "::group::Wiki Service Scan"
+          python scripts/icons/scan_wiki.py \
+            --wiki-dir wiki-content \
+            --out scripts/icons/priority_services.json
+          echo "::endgroup::"
+
+      - name: Generate manifest
+        run: |
+          echo "::group::Manifest Generation"
+          python scripts/icons/generate_manifest.py
+          echo "::endgroup::"
+
+      - name: Generate diff and update changelog
+        id: diff
+        run: |
+          echo "::group::Diff & Changelog"
+          python scripts/icons/diff_changelog.py --json-out diff-output.json
+          
+          # Extract summary for PR body
+          ADDED=$(jq -r '.added | length' diff-output.json)
+          REMOVED=$(jq -r '.removed | length' diff-output.json)
+          TOTAL=$(jq -r '.new_stats.total_icons' diff-output.json)
+          
+          SUMMARY="**Icon sync complete**: ${TOTAL} total icons (+${ADDED} added, -${REMOVED} removed)"
+          echo "summary=$SUMMARY" >> "$GITHUB_OUTPUT"
+          echo "::endgroup::"
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected:"
+            git diff --cached --stat
+          fi
+
+      - name: Create Pull Request
+        if: steps.check-changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(icons): weekly icon library sync"
+          title: "🎨 Icon Library Update"
+          body: |
+            ## Automated Icon Sync
+            
+            ${{ steps.diff.outputs.summary }}
+            
+            ### What changed
+            - Checked AWS Architecture Icons for updates
+            - Checked Azure Architecture Icons for updates
+            - Scanned ai-solutions.wiki for service mentions
+            - Regenerated manifest.json
+            - Updated CHANGELOG.md
+            
+            ### Review checklist
+            - [ ] Spot-check a few new icons render correctly
+            - [ ] Verify manifest.json is valid JSON
+            - [ ] Check CHANGELOG.md entry is accurate
+            
+            ---
+            *This PR was automatically created by the weekly icon-sync workflow.*
+          branch: chore/icon-sync-${{ github.run_number }}
+          delete-branch: true
+          labels: |
+            automated
+            icons
+            dependencies
+
+      - name: Summary
+        run: |
+          echo "## Icon Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [[ "${{ steps.check-changes.outputs.has_changes }}" == "true" ]]; then
+            echo "✅ Changes detected and PR created" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "${{ steps.diff.outputs.summary }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No changes detected - icons are up to date" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Sync Status" >> $GITHUB_STEP_SUMMARY
+          echo "| Platform | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|----------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| AWS | ${{ steps.sync-aws.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Azure | ${{ steps.sync-azure.outcome || 'skipped' }} |" >> $GITHUB_STEP_SUMMARY

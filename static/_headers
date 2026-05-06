@@ -1,0 +1,18 @@
+# CORS headers for icon library
+# Allows cross-origin fetching from deck builders and other tools
+
+/icons/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Cache-Control: public, max-age=31536000, immutable
+
+/icons/manifest.json
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Cache-Control: public, max-age=3600
+  Content-Type: application/json
+
+# Preview images for templates
+/previews/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
