@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-11",
+  "added": [],
+  "removed": [],
+  "newly_tagged": [],
+  "newly_untagged": [],
+  "stats_delta": {
+    "total_icons": -122,
+    "wiki_tagged": 0
+  },
+  "new_stats": {
+    "total_icons": 2112,
+    "platforms": 3,
+    "platform_icons": 1978,
+    "maps": 4,
+    "architecture_icons": 130,
+    "wiki_tagged": 45
+  }
+}

@@ -1,5 +1,10 @@
 # Icon Library Changelog
 
+## 2026-05-11
+**2112 total icons**, -122 removed, 45 wiki-tagged
+
+No icon changes — metadata refresh only.
+
 ## 2026-05-06
 **2267 total icons**, +2267 new, 40 wiki-tagged
 

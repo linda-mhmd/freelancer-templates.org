@@ -1,6 +1,6 @@
 {
   "version": "2026.05",
-  "updated": "2026-05-06",
+  "updated": "2026-05-11",
   "canonical_url": "https://freelancer-templates.org/icons/manifest.json",
   "license_note": "Vendor icons retain their original licenses. Custom icons (industries, ai-capability, process) are CC-BY-NC-SA 4.0.",
   "platforms": {
@@ -293,8 +293,8 @@
           "png": "/icons/platforms/aws/service/athena.png",
           "png_2x": "/icons/platforms/aws/service/athena@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 63,
-          "wiki_files": 35
+          "wiki_mentions": 9,
+          "wiki_files": 5
         },
         {
           "id": "audit-manager",
@@ -486,8 +486,8 @@
           "png": "/icons/platforms/aws/service/aurora.png",
           "png_2x": "/icons/platforms/aws/service/aurora@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 256,
-          "wiki_files": 70
+          "wiki_mentions": 40,
+          "wiki_files": 10
         },
         {
           "id": "auto-scaling",
@@ -729,8 +729,8 @@
           "png": "/icons/platforms/aws/service/batch.png",
           "png_2x": "/icons/platforms/aws/service/batch@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 21,
-          "wiki_files": 14
+          "wiki_mentions": 3,
+          "wiki_files": 2
         },
         {
           "id": "bedrock-agentcore",
@@ -742,8 +742,8 @@
           "png": "/icons/platforms/aws/service/bedrock-agentcore.png",
           "png_2x": "/icons/platforms/aws/service/bedrock-agentcore@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 714,
-          "wiki_files": 84
+          "wiki_mentions": 168,
+          "wiki_files": 17
         },
         {
           "id": "bedrock",
@@ -755,8 +755,8 @@
           "png": "/icons/platforms/aws/service/bedrock.png",
           "png_2x": "/icons/platforms/aws/service/bedrock@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 7859,
-          "wiki_files": 1605
+          "wiki_mentions": 1266,
+          "wiki_files": 240
         },
         {
           "id": "billing-conductor",
@@ -1138,8 +1138,8 @@
           "png": "/icons/platforms/aws/service/cloudformation.png",
           "png_2x": "/icons/platforms/aws/service/cloudformation@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 217,
-          "wiki_files": 84
+          "wiki_mentions": 31,
+          "wiki_files": 12
         },
         {
           "id": "cloudfront-download-distribution",
@@ -1191,8 +1191,8 @@
           "png": "/icons/platforms/aws/service/cloudfront.png",
           "png_2x": "/icons/platforms/aws/service/cloudfront@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 198,
-          "wiki_files": 84
+          "wiki_mentions": 30,
+          "wiki_files": 12
         },
         {
           "id": "cloudhsm",
@@ -1254,8 +1254,8 @@
           "png": "/icons/platforms/aws/service/cloudtrail.png",
           "png_2x": "/icons/platforms/aws/service/cloudtrail@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 105,
-          "wiki_files": 70
+          "wiki_mentions": 15,
+          "wiki_files": 10
         },
         {
           "id": "cloudwatch-alarm",
@@ -1377,8 +1377,8 @@
           "png": "/icons/platforms/aws/service/cloudwatch.png",
           "png_2x": "/icons/platforms/aws/service/cloudwatch@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 1219,
-          "wiki_files": 399
+          "wiki_mentions": 182,
+          "wiki_files": 58
         },
         {
           "id": "codeartifact",
@@ -1400,8 +1400,8 @@
           "png": "/icons/platforms/aws/service/codebuild.png",
           "png_2x": "/icons/platforms/aws/service/codebuild@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 63,
-          "wiki_files": 7
+          "wiki_mentions": 9,
+          "wiki_files": 1
         },
         {
           "id": "codecatalyst",
@@ -1423,8 +1423,8 @@
           "png": "/icons/platforms/aws/service/codecommit.png",
           "png_2x": "/icons/platforms/aws/service/codecommit@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 14,
-          "wiki_files": 14
+          "wiki_mentions": 2,
+          "wiki_files": 2
         },
         {
           "id": "codedeploy",
@@ -1456,8 +1456,8 @@
           "png": "/icons/platforms/aws/service/codepipeline.png",
           "png_2x": "/icons/platforms/aws/service/codepipeline@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 140,
-          "wiki_files": 21
+          "wiki_mentions": 20,
+          "wiki_files": 3
         },
         {
           "id": "codewhisperer",
@@ -1479,8 +1479,8 @@
           "png": "/icons/platforms/aws/service/cognito.png",
           "png_2x": "/icons/platforms/aws/service/cognito@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 312,
-          "wiki_files": 70
+          "wiki_mentions": 61,
+          "wiki_files": 11
         },
         {
           "id": "command-line-interface",
@@ -1512,8 +1512,8 @@
           "png": "/icons/platforms/aws/service/comprehend.png",
           "png_2x": "/icons/platforms/aws/service/comprehend@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 794,
-          "wiki_files": 154
+          "wiki_mentions": 116,
+          "wiki_files": 22
         },
         {
           "id": "compute-optimizer",
@@ -1845,8 +1845,8 @@
           "png": "/icons/platforms/aws/service/direct-connect.png",
           "png_2x": "/icons/platforms/aws/service/direct-connect@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 42,
-          "wiki_files": 14
+          "wiki_mentions": 6,
+          "wiki_files": 2
         },
         {
           "id": "directory-service-ad-connector",
@@ -2028,8 +2028,8 @@
           "png": "/icons/platforms/aws/service/dynamodb.png",
           "png_2x": "/icons/platforms/aws/service/dynamodb@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 1428,
-          "wiki_files": 581
+          "wiki_mentions": 210,
+          "wiki_files": 83
         },
         {
           "id": "ec2-ami",
@@ -2151,8 +2151,8 @@
           "png": "/icons/platforms/aws/service/ec2.png",
           "png_2x": "/icons/platforms/aws/service/ec2@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 315,
-          "wiki_files": 189
+          "wiki_mentions": 45,
+          "wiki_files": 27
         },
         {
           "id": "ecs-anywhere",
@@ -2884,8 +2884,8 @@
           "png": "/icons/platforms/aws/service/eventbridge.png",
           "png_2x": "/icons/platforms/aws/service/eventbridge@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 513,
-          "wiki_files": 175
+          "wiki_mentions": 75,
+          "wiki_files": 25
         },
         {
           "id": "express-workflows",
@@ -2907,8 +2907,8 @@
           "png": "/icons/platforms/aws/service/fargate.png",
           "png_2x": "/icons/platforms/aws/service/fargate@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 539,
-          "wiki_files": 91
+          "wiki_mentions": 77,
+          "wiki_files": 13
         },
         {
           "id": "fault-injection-service",
@@ -3150,8 +3150,8 @@
           "png": "/icons/platforms/aws/service/glue.png",
           "png_2x": "/icons/platforms/aws/service/glue@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 197,
-          "wiki_files": 119
+          "wiki_mentions": 29,
+          "wiki_files": 17
         },
         {
           "id": "ground-station",
@@ -3173,8 +3173,8 @@
           "png": "/icons/platforms/aws/service/guardduty.png",
           "png_2x": "/icons/platforms/aws/service/guardduty@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 35,
-          "wiki_files": 28
+          "wiki_mentions": 5,
+          "wiki_files": 4
         },
         {
           "id": "health-dashboard",
@@ -4266,8 +4266,8 @@
           "png": "/icons/platforms/aws/service/kendra.png",
           "png_2x": "/icons/platforms/aws/service/kendra@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 408,
-          "wiki_files": 35
+          "wiki_mentions": 62,
+          "wiki_files": 6
         },
         {
           "id": "key-management-service-external-key-store",
@@ -4329,8 +4329,8 @@
           "png": "/icons/platforms/aws/service/kinesis.png",
           "png_2x": "/icons/platforms/aws/service/kinesis@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 64,
-          "wiki_files": 49
+          "wiki_mentions": 10,
+          "wiki_files": 7
         },
         {
           "id": "lake-formation-data-lake",
@@ -4372,8 +4372,8 @@
           "png": "/icons/platforms/aws/service/lambda.png",
           "png_2x": "/icons/platforms/aws/service/lambda@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 3976,
-          "wiki_files": 1107
+          "wiki_mentions": 580,
+          "wiki_files": 160
         },
         {
           "id": "launch-wizard",
@@ -5155,8 +5155,8 @@
           "png": "/icons/platforms/aws/service/polly.png",
           "png_2x": "/icons/platforms/aws/service/polly@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 469,
-          "wiki_files": 77
+          "wiki_mentions": 67,
+          "wiki_files": 11
         },
         {
           "id": "private-certificate-authority",
@@ -5218,8 +5218,8 @@
           "png": "/icons/platforms/aws/service/q.png",
           "png_2x": "/icons/platforms/aws/service/q@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 56,
-          "wiki_files": 42
+          "wiki_mentions": 8,
+          "wiki_files": 6
         },
         {
           "id": "quick-suite",
@@ -5401,8 +5401,8 @@
           "png": "/icons/platforms/aws/service/redshift.png",
           "png_2x": "/icons/platforms/aws/service/redshift@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 70,
-          "wiki_files": 42
+          "wiki_mentions": 10,
+          "wiki_files": 6
         },
         {
           "id": "rekognition-image",
@@ -5434,8 +5434,8 @@
           "png": "/icons/platforms/aws/service/rekognition.png",
           "png_2x": "/icons/platforms/aws/service/rekognition@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 1208,
-          "wiki_files": 287
+          "wiki_mentions": 170,
+          "wiki_files": 41
         },
         {
           "id": "repost-private",
@@ -5697,8 +5697,8 @@
           "png": "/icons/platforms/aws/service/sagemaker.png",
           "png_2x": "/icons/platforms/aws/service/sagemaker@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 4847,
-          "wiki_files": 1372
+          "wiki_mentions": 699,
+          "wiki_files": 198
         },
         {
           "id": "savings-plans",
@@ -6600,8 +6600,8 @@
           "png": "/icons/platforms/aws/service/textract.png",
           "png_2x": "/icons/platforms/aws/service/textract@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 1239,
-          "wiki_files": 287
+          "wiki_mentions": 177,
+          "wiki_files": 41
         },
         {
           "id": "thinkbox-deadline",
@@ -6693,8 +6693,8 @@
           "png": "/icons/platforms/aws/service/transcribe.png",
           "png_2x": "/icons/platforms/aws/service/transcribe@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 1002,
-          "wiki_files": 267
+          "wiki_mentions": 144,
+          "wiki_files": 39
         },
         {
           "id": "transfer-family-aws-as2",
@@ -6786,8 +6786,8 @@
           "png": "/icons/platforms/aws/service/translate.png",
           "png_2x": "/icons/platforms/aws/service/translate@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 1317,
-          "wiki_files": 533
+          "wiki_mentions": 190,
+          "wiki_files": 78
         },
         {
           "id": "trusted-advisor-checklist-cost",
@@ -7149,8 +7149,8 @@
           "png": "/icons/platforms/aws/service/waf.png",
           "png_2x": "/icons/platforms/aws/service/waf@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 210,
-          "wiki_files": 14
+          "wiki_mentions": 30,
+          "wiki_files": 2
         },
         {
           "id": "wavelength",
@@ -8133,8 +8133,8 @@
           "png": "/icons/platforms/azure/service/azure-devops.png",
           "png_2x": "/icons/platforms/azure/service/azure-devops@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 70,
-          "wiki_files": 42
+          "wiki_mentions": 10,
+          "wiki_files": 6
         },
         {
           "id": "azure-edge-hardware-center",
@@ -8406,8 +8406,8 @@
           "png": "/icons/platforms/azure/service/azure-openai.png",
           "png_2x": "/icons/platforms/azure/service/azure-openai@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 532,
-          "wiki_files": 161
+          "wiki_mentions": 81,
+          "wiki_files": 23
         },
         {
           "id": "azure-operator-5g-core",
@@ -8569,8 +8569,8 @@
           "png": "/icons/platforms/azure/service/azure-sql.png",
           "png_2x": "/icons/platforms/azure/service/azure-sql@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 35,
-          "wiki_files": 28
+          "wiki_mentions": 5,
+          "wiki_files": 4
         },
         {
           "id": "azure-stack-edge",
@@ -9072,8 +9072,8 @@
           "png": "/icons/platforms/azure/service/cognitive-services.png",
           "png_2x": "/icons/platforms/azure/service/cognitive-services@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 182,
-          "wiki_files": 70
+          "wiki_mentions": 26,
+          "wiki_files": 10
         },
         {
           "id": "collaborative-service",
@@ -11275,8 +11275,8 @@
           "png": "/icons/platforms/azure/service/logic-apps.png",
           "png_2x": "/icons/platforms/azure/service/logic-apps@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 168,
-          "wiki_files": 42
+          "wiki_mentions": 24,
+          "wiki_files": 6
         },
         {
           "id": "machine-learning-studio-classic-web-services",
@@ -11668,8 +11668,8 @@
           "png": "/icons/platforms/azure/service/monitor.png",
           "png_2x": "/icons/platforms/azure/service/monitor@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 217,
-          "wiki_files": 77
+          "wiki_mentions": 31,
+          "wiki_files": 11
         },
         {
           "id": "multi-factor-authentication",
@@ -12671,8 +12671,8 @@
           "png": "/icons/platforms/azure/service/speech-services.png",
           "png_2x": "/icons/platforms/azure/service/speech-services@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 175,
-          "wiki_files": 63
+          "wiki_mentions": 25,
+          "wiki_files": 9
         },
         {
           "id": "spot-vm",
@@ -14726,8 +14726,8 @@
           "png": "/icons/platforms/community/databases/databricks.png",
           "png_2x": "/icons/platforms/community/databases/databricks@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 513,
-          "wiki_files": 127
+          "wiki_mentions": 75,
+          "wiki_files": 19
         },
         {
           "id": "dgraph",
@@ -14849,8 +14849,8 @@
           "png": "/icons/platforms/community/databases/opensearch.png",
           "png_2x": "/icons/platforms/community/databases/opensearch@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 1946,
-          "wiki_files": 352
+          "wiki_mentions": 298,
+          "wiki_files": 52
         },
         {
           "id": "planetscale",
@@ -16372,8 +16372,8 @@
           "png": "/icons/platforms/community/vendors/databricks.png",
           "png_2x": "/icons/platforms/community/vendors/databricks@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 513,
-          "wiki_files": 127
+          "wiki_mentions": 75,
+          "wiki_files": 19
         },
         {
           "id": "datadog",
@@ -18665,8 +18665,8 @@
           "png": "/icons/platforms/community/vector-db/opensearch.png",
           "png_2x": "/icons/platforms/community/vector-db/opensearch@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 1946,
-          "wiki_files": 352
+          "wiki_mentions": 298,
+          "wiki_files": 52
         },
         {
           "id": "qdrant",
@@ -19718,8 +19718,8 @@
           "png": "/icons/platforms/community/sponsors/databricks.png",
           "png_2x": "/icons/platforms/community/sponsors/databricks@2x.png",
           "wiki_mentioned": true,
-          "wiki_mentions": 513,
-          "wiki_files": 127
+          "wiki_mentions": 75,
+          "wiki_files": 19
         },
         {
           "id": "datadog",
@@ -20139,10 +20139,6 @@
         "name": "Infrastructure",
         "description": "Cloud and infrastructure elements"
       },
-      "servers": {
-        "name": "Servers & Instances",
-        "description": "Server types and compute instances"
-      },
       "networking": {
         "name": "Networking",
         "description": "Network and connectivity icons"
@@ -20177,15 +20173,7 @@
       },
       "ai": {
         "name": "AI & ML",
-        "description": "Artificial intelligence and machine learning icons"
-      },
-      "data": {
-        "name": "Data & Artifacts",
-        "description": "Datasets, models, and data artifacts"
-      },
-      "applications": {
-        "name": "Applications",
-        "description": "Application types and software"
+        "description": "Artificial intelligence icons"
       },
       "commerce": {
         "name": "Commerce",
@@ -20225,42 +20213,6 @@
         "name": "Admin User",
         "category": "people",
         "lucide_source": "user-cog",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "user-plus",
-        "name": "Add User",
-        "category": "people",
-        "lucide_source": "user-plus",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "user-minus",
-        "name": "Remove User",
-        "category": "people",
-        "lucide_source": "user-minus",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "user-x",
-        "name": "Blocked User",
-        "category": "people",
-        "lucide_source": "user-x",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "contact",
-        "name": "Contact",
-        "category": "people",
-        "lucide_source": "contact",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -20315,33 +20267,6 @@
         "name": "Location",
         "category": "locations",
         "lucide_source": "map-pin",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "landmark",
-        "name": "Institution / Bank",
-        "category": "locations",
-        "lucide_source": "landmark",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "hospital",
-        "name": "Hospital / Healthcare",
-        "category": "locations",
-        "lucide_source": "hospital",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "school",
-        "name": "School / Education",
-        "category": "locations",
-        "lucide_source": "school",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -20410,15 +20335,6 @@
         "license_url": "https://lucide.dev/license"
       },
       {
-        "id": "tablet-smartphone",
-        "name": "Mobile Devices",
-        "category": "devices",
-        "lucide_source": "tablet-smartphone",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
         "id": "watch",
         "name": "Smartwatch",
         "category": "devices",
@@ -20432,15 +20348,6 @@
         "name": "Display / TV",
         "category": "devices",
         "lucide_source": "tv",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "monitor-smartphone",
-        "name": "Responsive",
-        "category": "devices",
-        "lucide_source": "monitor-smartphone",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -20468,78 +20375,6 @@
         "name": "Storage Drive",
         "category": "devices",
         "lucide_source": "hard-drive",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "usb",
-        "name": "USB Device",
-        "category": "devices",
-        "lucide_source": "usb",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "headphones",
-        "name": "Audio Device",
-        "category": "devices",
-        "lucide_source": "headphones",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "camera",
-        "name": "Camera / IoT",
-        "category": "devices",
-        "lucide_source": "camera",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "gamepad",
-        "name": "Gaming Device",
-        "category": "devices",
-        "lucide_source": "gamepad-2",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "keyboard",
-        "name": "Keyboard",
-        "category": "devices",
-        "lucide_source": "keyboard",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "mouse",
-        "name": "Mouse",
-        "category": "devices",
-        "lucide_source": "mouse",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "nfc",
-        "name": "NFC Device",
-        "category": "devices",
-        "lucide_source": "nfc",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "bluetooth",
-        "name": "Bluetooth",
-        "category": "devices",
-        "lucide_source": "bluetooth",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -20608,15 +20443,6 @@
         "license_url": "https://lucide.dev/license"
       },
       {
-        "id": "database-zap",
-        "name": "Fast Database",
-        "category": "infrastructure",
-        "lucide_source": "database-zap",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
         "id": "cylinder",
         "name": "Data Store",
         "category": "infrastructure",
@@ -20648,213 +20474,6 @@
         "name": "Package / Module",
         "category": "infrastructure",
         "lucide_source": "package",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "layers",
-        "name": "Layers / Stack",
-        "category": "infrastructure",
-        "lucide_source": "layers",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "blocks",
-        "name": "Building Blocks",
-        "category": "infrastructure",
-        "lucide_source": "blocks",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "component",
-        "name": "Component",
-        "category": "infrastructure",
-        "lucide_source": "component",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "server-instance",
-        "name": "Server Instance",
-        "category": "servers",
-        "lucide_source": "server",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "compute",
-        "name": "Compute Instance",
-        "category": "servers",
-        "lucide_source": "cpu",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "vm",
-        "name": "Virtual Machine",
-        "category": "servers",
-        "lucide_source": "monitor-dot",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "container-instance",
-        "name": "Container Instance",
-        "category": "servers",
-        "lucide_source": "box",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "serverless",
-        "name": "Serverless / Lambda",
-        "category": "servers",
-        "lucide_source": "zap",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "microservice",
-        "name": "Microservice",
-        "category": "servers",
-        "lucide_source": "hexagon",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "cluster",
-        "name": "Cluster",
-        "category": "servers",
-        "lucide_source": "boxes",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "node",
-        "name": "Node",
-        "category": "servers",
-        "lucide_source": "circle-dot",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "pod",
-        "name": "Pod / Container Group",
-        "category": "servers",
-        "lucide_source": "group",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "replica",
-        "name": "Replica Set",
-        "category": "servers",
-        "lucide_source": "copy",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "load-balancer",
-        "name": "Load Balancer",
-        "category": "servers",
-        "lucide_source": "scale",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "auto-scaling",
-        "name": "Auto Scaling",
-        "category": "servers",
-        "lucide_source": "scaling",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "spot-instance",
-        "name": "Spot Instance",
-        "category": "servers",
-        "lucide_source": "badge-dollar-sign",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "reserved-instance",
-        "name": "Reserved Instance",
-        "category": "servers",
-        "lucide_source": "badge-check",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "dedicated-host",
-        "name": "Dedicated Host",
-        "category": "servers",
-        "lucide_source": "server-cog",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "bare-metal",
-        "name": "Bare Metal",
-        "category": "servers",
-        "lucide_source": "hard-drive",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "edge-server",
-        "name": "Edge Server",
-        "category": "servers",
-        "lucide_source": "radio-tower",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "cdn-node",
-        "name": "CDN Node",
-        "category": "servers",
-        "lucide_source": "globe",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "proxy",
-        "name": "Proxy Server",
-        "category": "servers",
-        "lucide_source": "arrow-right-left",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "gateway",
-        "name": "API Gateway",
-        "category": "servers",
-        "lucide_source": "door-open",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -20927,60 +20546,6 @@
         "name": "Antenna",
         "category": "networking",
         "lucide_source": "antenna",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "radio-tower",
-        "name": "Radio Tower",
-        "category": "networking",
-        "lucide_source": "radio-tower",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "vpn",
-        "name": "VPN / Tunnel",
-        "category": "networking",
-        "lucide_source": "shield",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "firewall",
-        "name": "Firewall",
-        "category": "networking",
-        "lucide_source": "flame",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "dns",
-        "name": "DNS",
-        "category": "networking",
-        "lucide_source": "at-sign",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "subnet",
-        "name": "Subnet",
-        "category": "networking",
-        "lucide_source": "git-branch",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "vpc",
-        "name": "VPC / Virtual Network",
-        "category": "networking",
-        "lucide_source": "square-dashed",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -21094,24 +20659,6 @@
         "license_url": "https://lucide.dev/license"
       },
       {
-        "id": "scan-face",
-        "name": "Face Recognition",
-        "category": "security",
-        "lucide_source": "scan-face",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "badge",
-        "name": "Badge / Identity",
-        "category": "security",
-        "lucide_source": "badge",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
         "id": "api",
         "name": "API / Integration",
         "category": "integration",
@@ -21179,24 +20726,6 @@
         "name": "Pull Request",
         "category": "integration",
         "lucide_source": "git-pull-request",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "git-commit",
-        "name": "Commit",
-        "category": "integration",
-        "lucide_source": "git-commit-horizontal",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "workflow",
-        "name": "Workflow",
-        "category": "integration",
-        "lucide_source": "workflow",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -21287,15 +20816,6 @@
         "name": "Merge / Join",
         "category": "flow",
         "lucide_source": "merge",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "iteration",
-        "name": "Iteration",
-        "category": "flow",
-        "lucide_source": "iteration-cw",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -21436,24 +20956,6 @@
         "license_url": "https://lucide.dev/license"
       },
       {
-        "id": "circle-dot",
-        "name": "Active",
-        "category": "status",
-        "lucide_source": "circle-dot",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "circle-dashed",
-        "name": "Pending",
-        "category": "status",
-        "lucide_source": "circle-dashed",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
         "id": "file",
         "name": "File / Document",
         "category": "business",
@@ -21589,15 +21091,6 @@
         "license_url": "https://lucide.dev/license"
       },
       {
-        "id": "presentation",
-        "name": "Presentation",
-        "category": "business",
-        "lucide_source": "presentation",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
         "id": "chart-bar",
         "name": "Bar Chart",
         "category": "analytics",
@@ -21620,24 +21113,6 @@
         "name": "Pie Chart",
         "category": "analytics",
         "lucide_source": "pie-chart",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "chart-area",
-        "name": "Area Chart",
-        "category": "analytics",
-        "lucide_source": "area-chart",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "chart-scatter",
-        "name": "Scatter Plot",
-        "category": "analytics",
-        "lucide_source": "scatter-chart",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -21683,15 +21158,6 @@
         "name": "Target / Goal",
         "category": "analytics",
         "lucide_source": "target",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "telescope",
-        "name": "Observability",
-        "category": "analytics",
-        "lucide_source": "telescope",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -21787,24 +21253,6 @@
         "license_url": "https://lucide.dev/license"
       },
       {
-        "id": "variable",
-        "name": "Variable",
-        "category": "config",
-        "lucide_source": "variable",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "regex",
-        "name": "Regex / Pattern",
-        "category": "config",
-        "lucide_source": "regex",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
         "id": "brain",
         "name": "AI / Brain",
         "category": "ai",
@@ -21814,37 +21262,10 @@
         "license_url": "https://lucide.dev/license"
       },
       {
-        "id": "brain-circuit",
-        "name": "Neural Network",
-        "category": "ai",
-        "lucide_source": "brain-circuit",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "brain-cog",
-        "name": "AI Processing",
-        "category": "ai",
-        "lucide_source": "brain-cog",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
         "id": "bot",
         "name": "Bot / Agent",
         "category": "ai",
         "lucide_source": "bot",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "bot-message",
-        "name": "Chatbot",
-        "category": "ai",
-        "lucide_source": "bot-message-square",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -21872,519 +21293,6 @@
         "name": "Fast / Lightning",
         "category": "ai",
         "lucide_source": "zap",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "lightbulb",
-        "name": "Idea / Insight",
-        "category": "ai",
-        "lucide_source": "lightbulb",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "scan-search",
-        "name": "AI Search",
-        "category": "ai",
-        "lucide_source": "scan-search",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "audio-waveform",
-        "name": "Speech / Audio AI",
-        "category": "ai",
-        "lucide_source": "audio-waveform",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "image",
-        "name": "Image / Vision AI",
-        "category": "ai",
-        "lucide_source": "image",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "languages",
-        "name": "NLP / Translation",
-        "category": "ai",
-        "lucide_source": "languages",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "ml-model",
-        "name": "ML Model",
-        "category": "data",
-        "lucide_source": "brain-circuit",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "dataset",
-        "name": "Dataset",
-        "category": "data",
-        "lucide_source": "table-2",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "training-data",
-        "name": "Training Data",
-        "category": "data",
-        "lucide_source": "database",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "feature-store",
-        "name": "Feature Store",
-        "category": "data",
-        "lucide_source": "library",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "model-registry",
-        "name": "Model Registry",
-        "category": "data",
-        "lucide_source": "archive",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "experiment",
-        "name": "Experiment",
-        "category": "data",
-        "lucide_source": "flask-conical",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "pipeline",
-        "name": "Pipeline",
-        "category": "data",
-        "lucide_source": "git-branch",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "artifact",
-        "name": "Artifact",
-        "category": "data",
-        "lucide_source": "package",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "checkpoint",
-        "name": "Checkpoint",
-        "category": "data",
-        "lucide_source": "save",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "weights",
-        "name": "Model Weights",
-        "category": "data",
-        "lucide_source": "weight",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "embeddings",
-        "name": "Embeddings",
-        "category": "data",
-        "lucide_source": "grid-3x3",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "vector-db",
-        "name": "Vector Database",
-        "category": "data",
-        "lucide_source": "database-zap",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "data-lake",
-        "name": "Data Lake",
-        "category": "data",
-        "lucide_source": "waves",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "data-warehouse",
-        "name": "Data Warehouse",
-        "category": "data",
-        "lucide_source": "warehouse",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "etl",
-        "name": "ETL Pipeline",
-        "category": "data",
-        "lucide_source": "workflow",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "stream",
-        "name": "Data Stream",
-        "category": "data",
-        "lucide_source": "activity",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "batch",
-        "name": "Batch Processing",
-        "category": "data",
-        "lucide_source": "layers",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "schema",
-        "name": "Schema",
-        "category": "data",
-        "lucide_source": "file-json",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "csv",
-        "name": "CSV File",
-        "category": "data",
-        "lucide_source": "file-spreadsheet",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "parquet",
-        "name": "Parquet / Columnar",
-        "category": "data",
-        "lucide_source": "columns-3",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "json-data",
-        "name": "JSON Data",
-        "category": "data",
-        "lucide_source": "braces",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "web-app",
-        "name": "Web Application",
-        "category": "applications",
-        "lucide_source": "globe",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "mobile-app",
-        "name": "Mobile App",
-        "category": "applications",
-        "lucide_source": "smartphone",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "desktop-app",
-        "name": "Desktop App",
-        "category": "applications",
-        "lucide_source": "monitor",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "api-app",
-        "name": "API Service",
-        "category": "applications",
-        "lucide_source": "plug",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "microservice-app",
-        "name": "Microservice",
-        "category": "applications",
-        "lucide_source": "hexagon",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "monolith",
-        "name": "Monolith",
-        "category": "applications",
-        "lucide_source": "square",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "spa",
-        "name": "Single Page App",
-        "category": "applications",
-        "lucide_source": "app-window",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "pwa",
-        "name": "Progressive Web App",
-        "category": "applications",
-        "lucide_source": "smartphone",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "cli-app",
-        "name": "CLI Application",
-        "category": "applications",
-        "lucide_source": "terminal",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "batch-job",
-        "name": "Batch Job",
-        "category": "applications",
-        "lucide_source": "clock",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "cron-job",
-        "name": "Scheduled Job",
-        "category": "applications",
-        "lucide_source": "calendar-clock",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "worker",
-        "name": "Background Worker",
-        "category": "applications",
-        "lucide_source": "cog",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "queue-consumer",
-        "name": "Queue Consumer",
-        "category": "applications",
-        "lucide_source": "inbox",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "event-handler",
-        "name": "Event Handler",
-        "category": "applications",
-        "lucide_source": "zap",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "websocket",
-        "name": "WebSocket Service",
-        "category": "applications",
-        "lucide_source": "plug-zap",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "graphql",
-        "name": "GraphQL API",
-        "category": "applications",
-        "lucide_source": "git-graph",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "rest-api",
-        "name": "REST API",
-        "category": "applications",
-        "lucide_source": "route",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "grpc",
-        "name": "gRPC Service",
-        "category": "applications",
-        "lucide_source": "binary",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "static-site",
-        "name": "Static Site",
-        "category": "applications",
-        "lucide_source": "file-text",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "cms",
-        "name": "CMS",
-        "category": "applications",
-        "lucide_source": "layout-dashboard",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "ecommerce",
-        "name": "E-commerce",
-        "category": "applications",
-        "lucide_source": "shopping-cart",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "dashboard",
-        "name": "Dashboard",
-        "category": "applications",
-        "lucide_source": "layout-dashboard",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "admin-panel",
-        "name": "Admin Panel",
-        "category": "applications",
-        "lucide_source": "settings",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "auth-service",
-        "name": "Auth Service",
-        "category": "applications",
-        "lucide_source": "key",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "notification-service",
-        "name": "Notification Service",
-        "category": "applications",
-        "lucide_source": "bell",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "search-service",
-        "name": "Search Service",
-        "category": "applications",
-        "lucide_source": "search",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "media-service",
-        "name": "Media Service",
-        "category": "applications",
-        "lucide_source": "image",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "payment-service",
-        "name": "Payment Service",
-        "category": "applications",
-        "lucide_source": "credit-card",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "analytics-service",
-        "name": "Analytics Service",
-        "category": "applications",
-        "lucide_source": "bar-chart-3",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "logging-service",
-        "name": "Logging Service",
-        "category": "applications",
-        "lucide_source": "scroll-text",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "monitoring-service",
-        "name": "Monitoring Service",
-        "category": "applications",
-        "lucide_source": "activity",
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
@@ -22442,33 +21350,15 @@
         "source": "Lucide Icons",
         "license": "MIT License (ISC)",
         "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "coins",
-        "name": "Coins / Currency",
-        "category": "commerce",
-        "lucide_source": "coins",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
-      },
-      {
-        "id": "piggy-bank",
-        "name": "Savings",
-        "category": "commerce",
-        "lucide_source": "piggy-bank",
-        "source": "Lucide Icons",
-        "license": "MIT License (ISC)",
-        "license_url": "https://lucide.dev/license"
       }
     ]
   },
   "stats": {
-    "total_icons": 2234,
+    "total_icons": 2112,
     "platforms": 3,
     "platform_icons": 1978,
     "maps": 4,
-    "architecture_icons": 252,
+    "architecture_icons": 130,
     "wiki_tagged": 45
   }
 }
