@@ -1,5 +1,15 @@
 # Icon Library Changelog
 
+## 2026-05-25
+**2117 total icons**, -117 removed, 45 wiki-tagged
+
+**Added**
+- `aws/elemental-inference`
+- `aws/interconnect`
+- `aws/quick`
+- `aws/simple-storage-service-s3-files`
+- `aws/sustainability`
+
 ## 2026-05-06
 **2267 total icons**, +2267 new, 40 wiki-tagged
 
