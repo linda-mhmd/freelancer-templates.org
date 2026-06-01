@@ -1,0 +1,25 @@
+{
+  "date": "2026-06-01",
+  "added": [
+    "aws/elemental-inference",
+    "aws/interconnect",
+    "aws/quick",
+    "aws/simple-storage-service-s3-files",
+    "aws/sustainability"
+  ],
+  "removed": [],
+  "newly_tagged": [],
+  "newly_untagged": [],
+  "stats_delta": {
+    "total_icons": -117,
+    "wiki_tagged": 0
+  },
+  "new_stats": {
+    "total_icons": 2117,
+    "platforms": 3,
+    "platform_icons": 1983,
+    "maps": 4,
+    "architecture_icons": 130,
+    "wiki_tagged": 45
+  }
+}
