@@ -1,5 +1,18 @@
 # Icon Library Changelog
 
+## 2026-07-06
+**2117 total icons**, -117 removed, 46 wiki-tagged
+
+**Added**
+- `aws/elemental-inference`
+- `aws/interconnect`
+- `aws/quick`
+- `aws/simple-storage-service-s3-files`
+- `aws/sustainability`
+
+**Newly wiki-tagged**
+- `azure/azure-arc`
+
 ## 2026-05-06
 **2267 total icons**, +2267 new, 40 wiki-tagged
 
