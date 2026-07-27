@@ -1,0 +1,40 @@
+{
+  "platform": "azure",
+  "status": "updated",
+  "added": [
+    "service/ai-foundry",
+    "service/foundry-application",
+    "service/foundry-project",
+    "service/azure-ai-foundry-iq",
+    "service/azure-machine-learning",
+    "service/foundry-agent-service",
+    "service/foundry-control-plane",
+    "service/foundry-labs",
+    "service/foundry-local",
+    "service/foundry-models",
+    "service/azure-documentdb",
+    "service/service-group-relationships",
+    "service/azure-access-point",
+    "service/azure-data-transfer",
+    "service/agentic-web-apps",
+    "service/resiliency",
+    "service/ddos-custom-policy",
+    "service/disconnected-operations",
+    "service/azure-data-sharing",
+    "service/ai-gateway",
+    "service/azure-enclaves"
+  ],
+  "removed": [
+    "azure-stack",
+    "azure-stack-edge",
+    "capacity",
+    "plans",
+    "monitor-issues",
+    "offers",
+    "operation-center",
+    "infrastructure-backup",
+    "updates",
+    "virtual-enclaves"
+  ],
+  "changed": []
+}
