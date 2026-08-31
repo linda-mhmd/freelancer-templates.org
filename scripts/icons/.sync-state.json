@@ -1,9 +1,9 @@
 {
-  "aws_zip_url": "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/architecture/approved/architecture-icons/Icon-package_01302026.31b40d126ed27079b708594940ad577a86150582.zip",
-  "aws_zip_sha256": "9a2e0ae9ba10b785cfb080913ecf66eee293d614b4556723d5640f36cd5e08df",
-  "azure_zip_url": "https://arch-center.azureedge.net/icons/Azure_Public_Service_Icons_V23.zip",
-  "azure_etag": "\"0x8DE1D86870C185E\"",
-  "azure_zip_sha256": "45fe30b7d2868b1c7eaa76261885e0e36d7534d67fd283fa83a300a6b7afcf1a",
+  "aws_zip_url": "https://d1.awsstatic.com/onedam/marketing-channels/website/public/shared/architecture-icon-release/Icon-package_07312026.5846e92413caa21490223536cc97f1269e44fa92.zip",
+  "aws_zip_sha256": "d2d166c453526471749d520e0db022c459abef759d2946cf2dd1d1c992dc6526",
+  "azure_zip_url": "https://arch-center.azureedge.net/icons/Azure_Public_Service_Icons_V24.zip",
+  "azure_etag": "\"0x8DEDD3F49332567\"",
+  "azure_zip_sha256": "921594ccd1bf3d9c0a1bd7b6d924e050551a59342f2b353bb74bdcf761c35141",
   "last_sync": "",
-  "community_last_sync": "2026-05-06"
+  "community_last_sync": "2026-08-31"
 }
