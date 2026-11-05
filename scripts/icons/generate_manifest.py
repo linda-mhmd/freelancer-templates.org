@@ -25,6 +25,7 @@ REPO_ROOT        = Path(__file__).resolve().parents[2]
 ICONS_DIR        = REPO_ROOT / "static/icons"
 MANIFEST_PATH    = ICONS_DIR / "manifest.json"
 PRIORITY_JSON    = REPO_ROOT / "scripts/icons/priority_services.json"
+OVERRIDES_JSON   = REPO_ROOT / "scripts/icons/metadata/source_overrides.json"
 METADATA_DIR     = REPO_ROOT / "scripts/icons/metadata"
 
 # Platform brand colours and license info
@@ -82,6 +83,15 @@ def _load_category_map(platform: str) -> dict[str, str]:
     path = METADATA_DIR / f"{platform}_categories.json"
     if path.exists():
         return json.loads(path.read_text())
+    return {}
+
+
+def _load_overrides() -> dict[str, dict]:
+    """platform/icon_id -> fields that replace the platform defaults (name, source, license, attribution, note).
+    For icons that do not come from the platform's own pack: retired or renamed AWS services (aws/legacy) and product
+    logos in the community set that are not from Simple Icons."""
+    if OVERRIDES_JSON.exists():
+        return {k: v for k, v in json.loads(OVERRIDES_JSON.read_text()).items() if not k.startswith("_")}
     return {}
 
 
@@ -145,7 +155,10 @@ def _build_platform_section(platform: str, priority: dict) -> dict:
                       "data-engineering", "vector-db", "payments", "crm", "version-control",
                       "editors", "hardware", "blockchain", "sponsors"]
     else:
-        categories = ["service", "group", "brand"]
+        # legacy: official icons of retired or renamed services that the current pack no longer ships
+        # (never written by sync_aws.py, so a sync does not touch them)
+        categories = ["service", "group", "brand", "legacy"]
+    overrides = _load_overrides()
 
     for category in categories:
         cat_dir = platform_dir / category
@@ -178,6 +191,8 @@ def _build_platform_section(platform: str, priority: dict) -> dict:
                 entry["png"] = _public_url(png)
             if png_2x.exists():
                 entry["png_2x"] = _public_url(png_2x)
+
+            entry.update(overrides.get(f"{platform}/{icon_id}", {}))
 
             pdata = priority.get(icon_id)
             if pdata:

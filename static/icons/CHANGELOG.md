@@ -1,5 +1,15 @@
 # Icon Library Changelog
 
+## 2026-11-05
+**+5 icons** for services and products the current packs do not ship (each entry names its source in the manifest; see scripts/icons/metadata/source_overrides.json)
+
+**Added**
+- `aws/simpledb` (legacy: AWS Simple Icons, the pre-2018 official set)
+- `aws/snowmobile` (legacy: 2024 AWS Architecture Icons pack, service retired)
+- `aws/quicksight` (legacy: 2025 pack, now Amazon Quick Suite)
+- `community/kiro` (Kiro's own icon, kiro.dev)
+- `community/partyrock` (PartyRock's own wordmark, partyrock.aws)
+
 ## 2026-05-06
 **2267 total icons**, +2267 new, 40 wiki-tagged
 
