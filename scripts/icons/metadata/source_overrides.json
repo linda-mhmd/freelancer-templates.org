@@ -1,0 +1,34 @@
+{
+  "_about": "platform/icon_id -> manifest fields replacing the platform defaults, for icons not taken from that platform's current pack. Read by generate_manifest.py.",
+  "aws/simpledb": {
+    "name": "Amazon SimpleDB",
+    "source": "AWS Simple Icons (the official AWS icon set before AWS Architecture Icons); SimpleDB is in no Architecture Icons release",
+    "source_url": "https://commons.wikimedia.org/wiki/File:AWS_Simple_Icons_Database_Amazon_SimpleDB.svg",
+    "note": "Legacy style (pre-2018). Service still runs but receives no new icon."
+  },
+  "aws/snowmobile": {
+    "name": "AWS Snowmobile",
+    "source": "AWS Architecture Icons, 2024 pack (via npm aws-icons 2.1.0); retired service, no longer in the current pack",
+    "note": "Retired service."
+  },
+  "aws/quicksight": {
+    "name": "Amazon QuickSight",
+    "source": "AWS Architecture Icons, 2025 pack (via npm aws-icons 3.2.0); now part of Amazon Quick Suite, see quick-suite",
+    "note": "Renamed into Amazon Quick Suite; use quick-suite for the current product."
+  },
+  "community/kiro": {
+    "name": "Kiro",
+    "source": "Kiro's own icon (kiro.dev/icon.svg)",
+    "source_url": "https://kiro.dev/",
+    "license": "Trademark of Amazon.com, Inc. or its affiliates; use per the brand owner's guidelines",
+    "attribution": "Amazon.com, Inc. or its affiliates."
+  },
+  "community/partyrock": {
+    "name": "PartyRock",
+    "source": "PartyRock's own wordmark (partyrock.aws site header)",
+    "source_url": "https://partyrock.aws/",
+    "license": "Trademark of Amazon.com, Inc. or its affiliates; use per the brand owner's guidelines",
+    "attribution": "Amazon.com, Inc. or its affiliates.",
+    "note": "Wordmark, not a square app icon (PartyRock has none)."
+  }
+}

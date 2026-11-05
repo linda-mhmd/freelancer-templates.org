@@ -1,6 +1,6 @@
 {
-  "version": "2026.05",
-  "updated": "2026-05-06",
+  "version": "2026.11",
+  "updated": "2026-11-05",
   "canonical_url": "https://freelancer-templates.org/icons/manifest.json",
   "license_note": "Vendor icons retain their original licenses. Custom icons (industries, ai-capability, process) are CC-BY-NC-SA 4.0.",
   "platforms": {
@@ -7361,6 +7361,40 @@
           "license": "AWS Trademark Guidelines \u2014 free for documentation",
           "png": "/icons/platforms/aws/group/virtual-private-cloud-vpc.png",
           "png_2x": "/icons/platforms/aws/group/virtual-private-cloud-vpc@2x.png"
+        },
+        {
+          "id": "quicksight",
+          "name": "Amazon QuickSight",
+          "category": "legacy",
+          "svg": "/icons/platforms/aws/legacy/quicksight.svg",
+          "source": "AWS Architecture Icons, 2025 pack (via npm aws-icons 3.2.0); now part of Amazon Quick Suite, see quick-suite",
+          "license": "AWS Trademark Guidelines \u2014 free for documentation",
+          "png": "/icons/platforms/aws/legacy/quicksight.png",
+          "png_2x": "/icons/platforms/aws/legacy/quicksight@2x.png",
+          "note": "Renamed into Amazon Quick Suite; use quick-suite for the current product."
+        },
+        {
+          "id": "simpledb",
+          "name": "Amazon SimpleDB",
+          "category": "legacy",
+          "svg": "/icons/platforms/aws/legacy/simpledb.svg",
+          "source": "AWS Simple Icons (the official AWS icon set before AWS Architecture Icons); SimpleDB is in no Architecture Icons release",
+          "license": "AWS Trademark Guidelines \u2014 free for documentation",
+          "png": "/icons/platforms/aws/legacy/simpledb.png",
+          "png_2x": "/icons/platforms/aws/legacy/simpledb@2x.png",
+          "source_url": "https://commons.wikimedia.org/wiki/File:AWS_Simple_Icons_Database_Amazon_SimpleDB.svg",
+          "note": "Legacy style (pre-2018). Service still runs but receives no new icon."
+        },
+        {
+          "id": "snowmobile",
+          "name": "AWS Snowmobile",
+          "category": "legacy",
+          "svg": "/icons/platforms/aws/legacy/snowmobile.svg",
+          "source": "AWS Architecture Icons, 2024 pack (via npm aws-icons 2.1.0); retired service, no longer in the current pack",
+          "license": "AWS Trademark Guidelines \u2014 free for documentation",
+          "png": "/icons/platforms/aws/legacy/snowmobile.png",
+          "png_2x": "/icons/platforms/aws/legacy/snowmobile@2x.png",
+          "note": "Retired service."
         }
       ]
     },
@@ -15543,6 +15577,19 @@
           "png_2x": "/icons/platforms/community/ai-ml/onnx@2x.png"
         },
         {
+          "id": "partyrock",
+          "name": "PartyRock",
+          "category": "ai-ml",
+          "svg": "/icons/platforms/community/ai-ml/partyrock.svg",
+          "source": "PartyRock's own wordmark (partyrock.aws site header)",
+          "license": "Trademark of Amazon.com, Inc. or its affiliates; use per the brand owner's guidelines",
+          "png": "/icons/platforms/community/ai-ml/partyrock.png",
+          "png_2x": "/icons/platforms/community/ai-ml/partyrock@2x.png",
+          "source_url": "https://partyrock.aws/",
+          "attribution": "Amazon.com, Inc. or its affiliates.",
+          "note": "Wordmark, not a square app icon (PartyRock has none)."
+        },
+        {
           "id": "perplexity",
           "name": "Perplexity",
           "category": "ai-ml",
@@ -19109,6 +19156,18 @@
           "png_2x": "/icons/platforms/community/editors/jetbrains@2x.png"
         },
         {
+          "id": "kiro",
+          "name": "Kiro",
+          "category": "editors",
+          "svg": "/icons/platforms/community/editors/kiro.svg",
+          "source": "Kiro's own icon (kiro.dev/icon.svg)",
+          "license": "Trademark of Amazon.com, Inc. or its affiliates; use per the brand owner's guidelines",
+          "png": "/icons/platforms/community/editors/kiro.png",
+          "png_2x": "/icons/platforms/community/editors/kiro@2x.png",
+          "source_url": "https://kiro.dev/",
+          "attribution": "Amazon.com, Inc. or its affiliates."
+        },
+        {
           "id": "lapce",
           "name": "Lapce",
           "category": "editors",
@@ -22464,9 +22523,9 @@
     ]
   },
   "stats": {
-    "total_icons": 2234,
+    "total_icons": 2239,
     "platforms": 3,
-    "platform_icons": 1978,
+    "platform_icons": 1983,
     "maps": 4,
     "architecture_icons": 252,
     "wiki_tagged": 45
