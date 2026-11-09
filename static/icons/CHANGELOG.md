@@ -1,5 +1,49 @@
 # Icon Library Changelog
 
+## 2026-11-09
+**2148 total icons**, -86 removed, 48 wiki-tagged
+
+**Added**
+- `aws/elemental-inference`
+- `aws/finops-agent`
+- `aws/interconnect`
+- `aws/quick`
+- `aws/simple-storage-service-s3-files`
+- `aws/sustainability`
+- `azure/aca-sandboxes`
+- `azure/agentic-web-apps`
+- `azure/ai-foundry`
+- `azure/ai-gateway`
+- `azure/ai-manager`
+- `azure/app-service-builder`
+- `azure/azure-access-point`
+- `azure/azure-ai-foundry-iq`
+- `azure/azure-confidential-clean-rooms`
+- `azure/azure-data-sharing`
+- `azure/azure-data-transfer`
+- `azure/azure-device-registry`
+- `azure/azure-documentdb`
+- `azure/azure-enclaves`
+- `azure/azure-encrypted-transport`
+- `azure/azure-horizondb`
+- `azure/azure-machine-learning`
+- `azure/ddos-custom-policy`
+- `azure/disconnected-operations`
+- `azure/foundry-agent-service`
+- `azure/foundry-application`
+- `azure/foundry-control-plane`
+- `azure/foundry-labs`
+- `azure/foundry-local`
+- `azure/foundry-models`
+- `azure/foundry-project`
+- `azure/resiliency`
+- `azure/service-group-relationships`
+- `community/haproxy`
+- `community/zilliz`
+
+**Newly wiki-tagged**
+- `azure/azure-arc`
+
 ## 2026-05-06
 **2267 total icons**, +2267 new, 40 wiki-tagged
 
